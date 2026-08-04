@@ -1,0 +1,1064 @@
+{
+  "schema_version": 2,
+  "case": "case05_ieee73_scots",
+  "problem": "scots",
+  "source": {
+    "pglib_file": "pglib_opf_case73_ieee_rts.m",
+    "pglib_stem": "pglib_opf_case73_ieee_rts",
+    "sha256": "fe8f15a2391e2c92138b712d146b04c038f0727e8e9220e1c6065507ea12a22c",
+    "path_relative": "pglib-opf-master/pglib_opf_case73_ieee_rts.m"
+  },
+  "switchable_idx": [
+    69,
+    100,
+    62,
+    30,
+    101,
+    66,
+    67,
+    63,
+    85,
+    6,
+    107,
+    19
+  ],
+  "max_open": 2,
+  "contingencies": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "excluded_for_islanding": [
+    {
+      "branch_id": 52,
+      "fbus": 207,
+      "tbus": 208,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 90,
+      "fbus": 307,
+      "tbus": 308,
+      "reason": "islanding"
+    }
+  ],
+  "redispatch_frac": 0.2,
+  "redispatch_note": "Synthetic \u00b1redispatch_frac*(Pmax-Pmin) band; PGLib OPF cases do not provide generator ramp rates.",
+  "load_shedding": false,
+  "canonicalize_contingencies": true,
+  "load_scale": 1.0,
+  "ratings_scaled": false,
+  "mip_gap": 1e-07,
+  "time_limit": 1800,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",
+  "selection": {
+    "n_candidates": 12,
+    "max_open": 2,
+    "eligible_switchable": [
+      1,
+      2,
+      6,
+      13,
+      14,
+      19,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      42,
+      43,
+      47,
+      59,
+      61,
+      62,
+      63,
+      65,
+      66,
+      67,
+      69,
+      70,
+      71,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      80,
+      81,
+      85,
+      97,
+      99,
+      100,
+      101,
+      103,
+      104,
+      105,
+      107,
+      108,
+      109,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
+    "eligible_count": 61,
+    "prescreen_cap": 36,
+    "prescreen_idx": [
+      69,
+      100,
+      62,
+      30,
+      101,
+      66,
+      67,
+      63,
+      85,
+      6,
+      107,
+      19,
+      27,
+      28,
+      104,
+      105,
+      97,
+      59,
+      22,
+      13,
+      26,
+      23,
+      65,
+      103,
+      115,
+      116,
+      77,
+      78,
+      47,
+      31,
+      71,
+      21,
+      108,
+      32,
+      70,
+      38
+    ],
+    "candidate_objective_tie_tolerance_usd": 0.01,
+    "util_rank": [
+      {
+        "branch_id": 69,
+        "max_contingency_util": 0.6001741206711051
+      },
+      {
+        "branch_id": 100,
+        "max_contingency_util": 0.5541549704136466
+      },
+      {
+        "branch_id": 62,
+        "max_contingency_util": 0.5532493520746596
+      },
+      {
+        "branch_id": 30,
+        "max_contingency_util": 0.549609286415139
+      },
+      {
+        "branch_id": 101,
+        "max_contingency_util": 0.5488367645187748
+      },
+      {
+        "branch_id": 66,
+        "max_contingency_util": 0.5471966619542055
+      },
+      {
+        "branch_id": 67,
+        "max_contingency_util": 0.5471966619542055
+      },
+      {
+        "branch_id": 63,
+        "max_contingency_util": 0.5463286838786504
+      },
+      {
+        "branch_id": 85,
+        "max_contingency_util": 0.5422752905613045
+      },
+      {
+        "branch_id": 6,
+        "max_contingency_util": 0.5418106212408723
+      },
+      {
+        "branch_id": 107,
+        "max_contingency_util": 0.5356998483652299
+      },
+      {
+        "branch_id": 19,
+        "max_contingency_util": 0.5061920103765868
+      },
+      {
+        "branch_id": 27,
+        "max_contingency_util": 0.5016842147801652
+      },
+      {
+        "branch_id": 28,
+        "max_contingency_util": 0.5016842147801652
+      },
+      {
+        "branch_id": 104,
+        "max_contingency_util": 0.4963145840315166
+      },
+      {
+        "branch_id": 105,
+        "max_contingency_util": 0.4963145840315166
+      },
+      {
+        "branch_id": 97,
+        "max_contingency_util": 0.4802740986661892
+      },
+      {
+        "branch_id": 59,
+        "max_contingency_util": 0.47582479081444323
+      },
+      {
+        "branch_id": 22,
+        "max_contingency_util": 0.4363174697290269
+      },
+      {
+        "branch_id": 13,
+        "max_contingency_util": 0.43446594502079067
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.42080725983974415
+      },
+      {
+        "branch_id": 23,
+        "max_contingency_util": 0.41704236958849633
+      },
+      {
+        "branch_id": 65,
+        "max_contingency_util": 0.40799931371639925
+      },
+      {
+        "branch_id": 103,
+        "max_contingency_util": 0.40408067524175434
+      },
+      {
+        "branch_id": 115,
+        "max_contingency_util": 0.38857163410043405
+      },
+      {
+        "branch_id": 116,
+        "max_contingency_util": 0.38857163410043405
+      },
+      {
+        "branch_id": 77,
+        "max_contingency_util": 0.3885299044664268
+      },
+      {
+        "branch_id": 78,
+        "max_contingency_util": 0.3885299044664268
+      },
+      {
+        "branch_id": 47,
+        "max_contingency_util": 0.38796342220299784
+      },
+      {
+        "branch_id": 31,
+        "max_contingency_util": 0.3852611490073005
+      },
+      {
+        "branch_id": 71,
+        "max_contingency_util": 0.3798942807410295
+      },
+      {
+        "branch_id": 21,
+        "max_contingency_util": 0.376840913326811
+      },
+      {
+        "branch_id": 108,
+        "max_contingency_util": 0.36772002488042516
+      },
+      {
+        "branch_id": 32,
+        "max_contingency_util": 0.36475793664375594
+      },
+      {
+        "branch_id": 70,
+        "max_contingency_util": 0.35966198201547567
+      },
+      {
+        "branch_id": 38,
+        "max_contingency_util": 0.35846915078130437
+      },
+      {
+        "branch_id": 39,
+        "max_contingency_util": 0.35846915078130437
+      },
+      {
+        "branch_id": 99,
+        "max_contingency_util": 0.3582674848423584
+      },
+      {
+        "branch_id": 80,
+        "max_contingency_util": 0.35734238918707817
+      },
+      {
+        "branch_id": 42,
+        "max_contingency_util": 0.3569568182085401
+      },
+      {
+        "branch_id": 61,
+        "max_contingency_util": 0.35607069491052556
+      },
+      {
+        "branch_id": 1,
+        "max_contingency_util": 0.3559473319366864
+      },
+      {
+        "branch_id": 109,
+        "max_contingency_util": 0.34771330213968854
+      },
+      {
+        "branch_id": 14,
+        "max_contingency_util": 0.34280678225193645
+      },
+      {
+        "branch_id": 2,
+        "max_contingency_util": 0.27637119694094575
+      },
+      {
+        "branch_id": 81,
+        "max_contingency_util": 0.27590652762051354
+      },
+      {
+        "branch_id": 24,
+        "max_contingency_util": 0.22163826442275564
+      },
+      {
+        "branch_id": 111,
+        "max_contingency_util": 0.19496389974035225
+      },
+      {
+        "branch_id": 112,
+        "max_contingency_util": 0.19496389974035225
+      },
+      {
+        "branch_id": 113,
+        "max_contingency_util": 0.18731825328882779
+      },
+      {
+        "branch_id": 114,
+        "max_contingency_util": 0.18731825328882779
+      },
+      {
+        "branch_id": 75,
+        "max_contingency_util": 0.1871430270515671
+      },
+      {
+        "branch_id": 76,
+        "max_contingency_util": 0.1871430270515671
+      },
+      {
+        "branch_id": 43,
+        "max_contingency_util": 0.18389824972949737
+      },
+      {
+        "branch_id": 36,
+        "max_contingency_util": 0.1585795274035543
+      },
+      {
+        "branch_id": 37,
+        "max_contingency_util": 0.1585795274035543
+      },
+      {
+        "branch_id": 73,
+        "max_contingency_util": 0.1483172125534423
+      },
+      {
+        "branch_id": 74,
+        "max_contingency_util": 0.1483172125534423
+      },
+      {
+        "branch_id": 34,
+        "max_contingency_util": 0.14063732154098804
+      },
+      {
+        "branch_id": 35,
+        "max_contingency_util": 0.14063732154098804
+      },
+      {
+        "branch_id": 41,
+        "max_contingency_util": 0.1074431212987885
+      }
+    ],
+    "singleton_results": [
+      {
+        "branch_id": 69,
+        "max_contingency_util": 0.6001741206711051,
+        "status": "OPTIMAL",
+        "obj": 183003.72092410043,
+        "runtime": 0.3596339225769043,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.2516218703240156e-05
+      },
+      {
+        "branch_id": 100,
+        "max_contingency_util": 0.5541549704136466,
+        "status": "OPTIMAL",
+        "obj": 183003.72091777984,
+        "runtime": 0.3959779739379883,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.883681397885084e-05
+      },
+      {
+        "branch_id": 62,
+        "max_contingency_util": 0.5532493520746596,
+        "status": "OPTIMAL",
+        "obj": 183003.72089812576,
+        "runtime": 0.3608708381652832,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 3.849089262075722e-05
+      },
+      {
+        "branch_id": 30,
+        "max_contingency_util": 0.549609286415139,
+        "status": "OPTIMAL",
+        "obj": 183003.72093547822,
+        "runtime": 0.3553957939147949,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.1384254321455956e-06
+      },
+      {
+        "branch_id": 101,
+        "max_contingency_util": 0.5488367645187748,
+        "status": "OPTIMAL",
+        "obj": 183003.72092428582,
+        "runtime": 0.3650400638580322,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.2330827303230762e-05
+      },
+      {
+        "branch_id": 66,
+        "max_contingency_util": 0.5471966619542055,
+        "status": "OPTIMAL",
+        "obj": 183003.72092583796,
+        "runtime": 0.40346717834472656,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0778690921142697e-05
+      },
+      {
+        "branch_id": 67,
+        "max_contingency_util": 0.5471966619542055,
+        "status": "OPTIMAL",
+        "obj": 183003.7209258379,
+        "runtime": 0.37276315689086914,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.077874912880361e-05
+      },
+      {
+        "branch_id": 63,
+        "max_contingency_util": 0.5463286838786504,
+        "status": "OPTIMAL",
+        "obj": 183003.72093466396,
+        "runtime": 0.35956788063049316,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.952692400664091e-06
+      },
+      {
+        "branch_id": 85,
+        "max_contingency_util": 0.5422752905613045,
+        "status": "OPTIMAL",
+        "obj": 183003.72093033782,
+        "runtime": 0.3631458282470703,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 6.2788312789052725e-06
+      },
+      {
+        "branch_id": 6,
+        "max_contingency_util": 0.5418106212408723,
+        "status": "OPTIMAL",
+        "obj": 183003.72093362958,
+        "runtime": 0.36975812911987305,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.9870716389268637e-06
+      },
+      {
+        "branch_id": 107,
+        "max_contingency_util": 0.5356998483652299,
+        "status": "OPTIMAL",
+        "obj": 183003.7209343892,
+        "runtime": 0.37465810775756836,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.227461664006114e-06
+      },
+      {
+        "branch_id": 19,
+        "max_contingency_util": 0.5061920103765868,
+        "status": "OPTIMAL",
+        "obj": 183003.72093803363,
+        "runtime": 0.36770009994506836,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.4169781934469938e-06
+      },
+      {
+        "branch_id": 27,
+        "max_contingency_util": 0.5016842147801652,
+        "status": "OPTIMAL",
+        "obj": 183003.72093555715,
+        "runtime": 0.3711380958557129,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0594958439469337e-06
+      },
+      {
+        "branch_id": 28,
+        "max_contingency_util": 0.5016842147801652,
+        "status": "OPTIMAL",
+        "obj": 183003.72093555424,
+        "runtime": 0.3746938705444336,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0624062269926071e-06
+      },
+      {
+        "branch_id": 104,
+        "max_contingency_util": 0.4963145840315166,
+        "status": "OPTIMAL",
+        "obj": 183003.72090335595,
+        "runtime": 0.3735780715942383,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 3.326070145703852e-05
+      },
+      {
+        "branch_id": 105,
+        "max_contingency_util": 0.4963145840315166,
+        "status": "OPTIMAL",
+        "obj": 183003.72090335606,
+        "runtime": 0.3725321292877197,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 3.3260585041716695e-05
+      },
+      {
+        "branch_id": 97,
+        "max_contingency_util": 0.4802740986661892,
+        "status": "OPTIMAL",
+        "obj": 183003.72093558387,
+        "runtime": 0.3673701286315918,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0327785275876522e-06
+      },
+      {
+        "branch_id": 59,
+        "max_contingency_util": 0.47582479081444323,
+        "status": "OPTIMAL",
+        "obj": 183003.72093547534,
+        "runtime": 0.3755218982696533,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.1413067113608122e-06
+      },
+      {
+        "branch_id": 22,
+        "max_contingency_util": 0.4363174697290269,
+        "status": "OPTIMAL",
+        "obj": 183003.72088102927,
+        "runtime": 0.37112903594970703,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.558738484978676e-05
+      },
+      {
+        "branch_id": 13,
+        "max_contingency_util": 0.43446594502079067,
+        "status": "OPTIMAL",
+        "obj": 183003.72092974334,
+        "runtime": 0.3651599884033203,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 6.873306119814515e-06
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.42080725983974415,
+        "status": "OPTIMAL",
+        "obj": 183003.72093385478,
+        "runtime": 0.3650081157684326,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.7618661988526583e-06
+      },
+      {
+        "branch_id": 23,
+        "max_contingency_util": 0.41704236958849633,
+        "status": "OPTIMAL",
+        "obj": 183003.72093250777,
+        "runtime": 0.36336207389831543,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.108878783881664e-06
+      },
+      {
+        "branch_id": 65,
+        "max_contingency_util": 0.40799931371639925,
+        "status": "OPTIMAL",
+        "obj": 183003.72093525543,
+        "runtime": 0.36614012718200684,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.361215254291892e-06
+      },
+      {
+        "branch_id": 103,
+        "max_contingency_util": 0.40408067524175434,
+        "status": "OPTIMAL",
+        "obj": 183003.72093512563,
+        "runtime": 0.3837089538574219,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.4910183381289244e-06
+      },
+      {
+        "branch_id": 115,
+        "max_contingency_util": 0.38857163410043405,
+        "status": "OPTIMAL",
+        "obj": 183003.72093543236,
+        "runtime": 0.3705718517303467,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.1842930689454079e-06
+      },
+      {
+        "branch_id": 116,
+        "max_contingency_util": 0.38857163410043405,
+        "status": "OPTIMAL",
+        "obj": 183003.72093543233,
+        "runtime": 0.38671374320983887,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.1843221727758646e-06
+      },
+      {
+        "branch_id": 77,
+        "max_contingency_util": 0.3885299044664268,
+        "status": "OPTIMAL",
+        "obj": 183003.72093579193,
+        "runtime": 0.3664581775665283,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 8.24715243652463e-07
+      },
+      {
+        "branch_id": 78,
+        "max_contingency_util": 0.3885299044664268,
+        "status": "OPTIMAL",
+        "obj": 183003.72093579193,
+        "runtime": 0.37885308265686035,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 8.24715243652463e-07
+      },
+      {
+        "branch_id": 47,
+        "max_contingency_util": 0.38796342220299784,
+        "status": "OPTIMAL",
+        "obj": 183003.72092639233,
+        "runtime": 0.3689999580383301,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0224321158602834e-05
+      },
+      {
+        "branch_id": 31,
+        "max_contingency_util": 0.3852611490073005,
+        "status": "OPTIMAL",
+        "obj": 183003.7209017388,
+        "runtime": 0.3691880702972412,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 3.487785579636693e-05
+      },
+      {
+        "branch_id": 71,
+        "max_contingency_util": 0.3798942807410295,
+        "status": "OPTIMAL",
+        "obj": 183003.7209324378,
+        "runtime": 0.37945103645324707,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.178844392299652e-06
+      },
+      {
+        "branch_id": 21,
+        "max_contingency_util": 0.376840913326811,
+        "status": "OPTIMAL",
+        "obj": 183003.7209345315,
+        "runtime": 0.36661505699157715,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.085143933072686e-06
+      },
+      {
+        "branch_id": 108,
+        "max_contingency_util": 0.36772002488042516,
+        "status": "OPTIMAL",
+        "obj": 183003.7209310891,
+        "runtime": 0.38831472396850586,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.527544999495149e-06
+      },
+      {
+        "branch_id": 32,
+        "max_contingency_util": 0.36475793664375594,
+        "status": "OPTIMAL",
+        "obj": 183003.72093557206,
+        "runtime": 0.3638012409210205,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.044594682753086e-06
+      },
+      {
+        "branch_id": 70,
+        "max_contingency_util": 0.35966198201547567,
+        "status": "OPTIMAL",
+        "obj": 183003.72093107813,
+        "runtime": 0.3666832447052002,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.538517143577337e-06
+      },
+      {
+        "branch_id": 38,
+        "max_contingency_util": 0.35846915078130437,
+        "status": "OPTIMAL",
+        "obj": 183003.72090975224,
+        "runtime": 0.36962199211120605,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.6864407118409872e-05
+      }
+    ],
+    "selected": [
+      69,
+      100,
+      62,
+      30,
+      101,
+      66,
+      67,
+      63,
+      85,
+      6,
+      107,
+      19
+    ],
+    "scopF_obj_at_unit_load": 183003.72093661665,
+    "scopF_status_at_unit_load": "OPTIMAL",
+    "load_search": {
+      "load_multipliers_tested": [
+        1.0,
+        1.025,
+        1.05,
+        1.075,
+        1.1,
+        1.125,
+        1.15
+      ],
+      "trials": [
+        {
+          "load_scale": 1.0,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 183003.72093661665,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 183003.7209365462,
+          "opened_lines": [
+            19,
+            100
+          ],
+          "scopF_runtime": 0.31583714485168457,
+          "scots_runtime": 12.210386037826538,
+          "savings": 7.04603735357523e-08,
+          "savings_threshold": 18.300372093661665,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.025,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 193653.5660142181,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 193653.5660140203,
+          "opened_lines": [
+            6,
+            100
+          ],
+          "scopF_runtime": 0.33153510093688965,
+          "scots_runtime": 11.809370040893555,
+          "savings": 1.9778963178396225e-07,
+          "savings_threshold": 19.36535660142181,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.05,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 204367.4866791352,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 204367.48667917578,
+          "opened_lines": [
+            62,
+            100
+          ],
+          "scopF_runtime": 0.33037400245666504,
+          "scots_runtime": 9.619970083236694,
+          "savings": -4.057073965668678e-08,
+          "savings_threshold": 20.436748667913523,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.075,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 215145.48293205537,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 215145.48293201227,
+          "opened_lines": [
+            6,
+            100
+          ],
+          "scopF_runtime": 0.33620476722717285,
+          "scots_runtime": 9.768972158432007,
+          "savings": 4.3102772906422615e-08,
+          "savings_threshold": 21.51454829320554,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.1,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 225987.55477265338,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 225987.55477253042,
+          "opened_lines": [
+            6,
+            101
+          ],
+          "scopF_runtime": 0.3415238857269287,
+          "scots_runtime": 8.861401796340942,
+          "savings": 1.229636836796999e-07,
+          "savings_threshold": 22.59875547726534,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.125,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 236893.70220069174,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 236893.7022007273,
+          "opened_lines": [
+            85,
+            100
+          ],
+          "scopF_runtime": 0.3229491710662842,
+          "scots_runtime": 12.001411199569702,
+          "savings": -3.5564880818128586e-08,
+          "savings_threshold": 23.689370220069176,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.15,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 247875.74744522118,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 247875.74739279947,
+          "opened_lines": [
+            62,
+            100
+          ],
+          "scopF_runtime": 0.35825300216674805,
+          "scots_runtime": 13.260946273803711,
+          "savings": 5.242170300334692e-05,
+          "savings_threshold": 24.787574744522118,
+          "n_opened": 2,
+          "accepted": false
+        }
+      ],
+      "chosen_load_scale": 1.0,
+      "chosen_reason": "no_economic_improvement",
+      "chosen_trial": {
+        "load_scale": 1.0,
+        "scopF_status": "OPTIMAL",
+        "scopF_obj": 183003.72093661665,
+        "scots_status": "OPTIMAL",
+        "scots_obj": 183003.7209365462,
+        "opened_lines": [
+          19,
+          100
+        ],
+        "scopF_runtime": 0.31583714485168457,
+        "scots_runtime": 12.210386037826538,
+        "savings": 7.04603735357523e-08,
+        "savings_threshold": 18.300372093661665,
+        "n_opened": 2,
+        "accepted": false
+      },
+      "economic_threshold_rule": "max($1/h, 0.01% of all-closed SCOPF objective)"
+    },
+    "method": "eligible=online non-xfmr zero-phase connected after preventive open + every credible N-1; rank by max contingency util at unit-load all-closed SCOPF; prescreen min(3N,|eligible|); singleton fixed_open screen; rank OPTIMAL forced-open candidates by cost improvement desc (absolute changes <= $0.01 treated as numerical ties), util desc, id asc; take N; search load multipliers for first economic SC-OTS"
+  },
+  "notes": [
+    "Source: pglib_opf_case73_ieee_rts (sha256=fe8f15a2391e2c92138b712d146b04c038f0727e8e9220e1c6065507ea12a22c).",
+    "Branch thermal ratings preserved from PGLib (rateA/B/C unscaled).",
+    "Load Pd/Qd scaled by 1.0.",
+    "Credible contingencies: 118; bridges excluded for islanding: 2.",
+    "Switchable set size N=12, max_open K=2.",
+    "Load search reason: no_economic_improvement."
+  ]
+}

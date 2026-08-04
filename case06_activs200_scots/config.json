@@ -1,0 +1,1755 @@
+{
+  "schema_version": 2,
+  "case": "case06_activs200_scots",
+  "problem": "scots",
+  "source": {
+    "pglib_file": "pglib_opf_case200_activ.m",
+    "pglib_stem": "pglib_opf_case200_activ",
+    "sha256": "676e6f54a3b6726b199b531e7758ad8bf75ba2b076ea3fee86dc3f5cf5846f6b",
+    "path_relative": "pglib-opf-master/pglib_opf_case200_activ.m"
+  },
+  "switchable_idx": [
+    184,
+    154,
+    162,
+    217,
+    87,
+    235,
+    174,
+    26,
+    73,
+    86,
+    143,
+    75,
+    228,
+    189,
+    135,
+    173,
+    191,
+    151,
+    238,
+    159
+  ],
+  "max_open": 3,
+  "contingencies": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    33,
+    34,
+    37,
+    38,
+    40,
+    41,
+    43,
+    44,
+    46,
+    47,
+    50,
+    51,
+    53,
+    54,
+    57,
+    58,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    111,
+    112,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    139,
+    140,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    209,
+    210,
+    216,
+    217,
+    218,
+    220,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    241,
+    242
+  ],
+  "excluded_for_islanding": [
+    {
+      "branch_id": 1,
+      "fbus": 2,
+      "tbus": 1,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 5,
+      "fbus": 4,
+      "tbus": 3,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 8,
+      "fbus": 6,
+      "tbus": 5,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 11,
+      "fbus": 8,
+      "tbus": 7,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 15,
+      "fbus": 10,
+      "tbus": 9,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 20,
+      "fbus": 12,
+      "tbus": 11,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 21,
+      "fbus": 13,
+      "tbus": 11,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 28,
+      "fbus": 16,
+      "tbus": 15,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 29,
+      "fbus": 18,
+      "tbus": 17,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 30,
+      "fbus": 19,
+      "tbus": 17,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 31,
+      "fbus": 20,
+      "tbus": 17,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 32,
+      "fbus": 21,
+      "tbus": 17,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 35,
+      "fbus": 23,
+      "tbus": 22,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 36,
+      "fbus": 24,
+      "tbus": 22,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 39,
+      "fbus": 26,
+      "tbus": 25,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 42,
+      "fbus": 28,
+      "tbus": 27,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 45,
+      "fbus": 30,
+      "tbus": 29,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 48,
+      "fbus": 32,
+      "tbus": 31,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 49,
+      "fbus": 33,
+      "tbus": 31,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 52,
+      "fbus": 35,
+      "tbus": 34,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 55,
+      "fbus": 37,
+      "tbus": 36,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 56,
+      "fbus": 38,
+      "tbus": 36,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 59,
+      "fbus": 40,
+      "tbus": 39,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 78,
+      "fbus": 49,
+      "tbus": 48,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 79,
+      "fbus": 50,
+      "tbus": 48,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 80,
+      "fbus": 51,
+      "tbus": 48,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 81,
+      "fbus": 52,
+      "tbus": 48,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 82,
+      "fbus": 53,
+      "tbus": 48,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 103,
+      "fbus": 65,
+      "tbus": 64,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 104,
+      "fbus": 67,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 105,
+      "fbus": 68,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 106,
+      "fbus": 69,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 107,
+      "fbus": 70,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 108,
+      "fbus": 71,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 109,
+      "fbus": 72,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 110,
+      "fbus": 73,
+      "tbus": 66,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 113,
+      "fbus": 76,
+      "tbus": 75,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 114,
+      "fbus": 77,
+      "tbus": 75,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 115,
+      "fbus": 78,
+      "tbus": 75,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 116,
+      "fbus": 79,
+      "tbus": 75,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 136,
+      "fbus": 90,
+      "tbus": 89,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 137,
+      "fbus": 91,
+      "tbus": 89,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 138,
+      "fbus": 92,
+      "tbus": 89,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 141,
+      "fbus": 94,
+      "tbus": 93,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 157,
+      "fbus": 104,
+      "tbus": 102,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 158,
+      "fbus": 105,
+      "tbus": 102,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 171,
+      "fbus": 114,
+      "tbus": 112,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 172,
+      "fbus": 115,
+      "tbus": 112,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 186,
+      "fbus": 125,
+      "tbus": 123,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 187,
+      "fbus": 126,
+      "tbus": 123,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 188,
+      "fbus": 127,
+      "tbus": 123,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 196,
+      "fbus": 135,
+      "tbus": 133,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 197,
+      "fbus": 136,
+      "tbus": 133,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 208,
+      "fbus": 147,
+      "tbus": 146,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 211,
+      "fbus": 151,
+      "tbus": 149,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 212,
+      "fbus": 152,
+      "tbus": 149,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 213,
+      "fbus": 153,
+      "tbus": 149,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 214,
+      "fbus": 154,
+      "tbus": 149,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 215,
+      "fbus": 155,
+      "tbus": 149,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 219,
+      "fbus": 161,
+      "tbus": 160,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 221,
+      "fbus": 164,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 222,
+      "fbus": 165,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 223,
+      "fbus": 166,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 224,
+      "fbus": 167,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 225,
+      "fbus": 168,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 226,
+      "fbus": 169,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 227,
+      "fbus": 170,
+      "tbus": 163,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 239,
+      "fbus": 182,
+      "tbus": 181,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 240,
+      "fbus": 183,
+      "tbus": 181,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 243,
+      "fbus": 189,
+      "tbus": 187,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 244,
+      "fbus": 196,
+      "tbus": 195,
+      "reason": "islanding"
+    },
+    {
+      "branch_id": 245,
+      "fbus": 197,
+      "tbus": 195,
+      "reason": "islanding"
+    }
+  ],
+  "redispatch_frac": 0.2,
+  "redispatch_note": "Synthetic \u00b1redispatch_frac*(Pmax-Pmin) band; PGLib OPF cases do not provide generator ramp rates.",
+  "load_shedding": false,
+  "canonicalize_contingencies": true,
+  "load_scale": 1.0,
+  "ratings_scaled": false,
+  "mip_gap": 1e-07,
+  "time_limit": 1800,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",
+  "selection": {
+    "n_candidates": 20,
+    "max_open": 3,
+    "eligible_switchable": [
+      3,
+      4,
+      12,
+      13,
+      16,
+      18,
+      19,
+      23,
+      24,
+      26,
+      43,
+      44,
+      62,
+      63,
+      64,
+      71,
+      72,
+      73,
+      75,
+      84,
+      86,
+      87,
+      88,
+      89,
+      93,
+      111,
+      122,
+      125,
+      128,
+      130,
+      133,
+      135,
+      143,
+      145,
+      150,
+      151,
+      154,
+      155,
+      159,
+      162,
+      164,
+      173,
+      174,
+      180,
+      183,
+      184,
+      189,
+      190,
+      191,
+      193,
+      198,
+      200,
+      204,
+      217,
+      228,
+      235,
+      238
+    ],
+    "eligible_count": 57,
+    "prescreen_cap": 60,
+    "prescreen_idx": [
+      184,
+      154,
+      162,
+      217,
+      87,
+      235,
+      174,
+      26,
+      73,
+      86,
+      143,
+      75,
+      228,
+      189,
+      135,
+      173,
+      191,
+      151,
+      238,
+      159,
+      180,
+      133,
+      3,
+      64,
+      183,
+      16,
+      122,
+      198,
+      164,
+      145,
+      111,
+      150,
+      93,
+      62,
+      84,
+      63,
+      125,
+      72,
+      200,
+      4,
+      190,
+      13,
+      24,
+      12,
+      130,
+      89,
+      71,
+      155,
+      193,
+      19,
+      128,
+      204,
+      23,
+      88,
+      18,
+      43,
+      44
+    ],
+    "candidate_objective_tie_tolerance_usd": 0.01,
+    "util_rank": [
+      {
+        "branch_id": 184,
+        "max_contingency_util": 0.6285396436022391
+      },
+      {
+        "branch_id": 154,
+        "max_contingency_util": 0.3758622831167613
+      },
+      {
+        "branch_id": 162,
+        "max_contingency_util": 0.36988888004198217
+      },
+      {
+        "branch_id": 217,
+        "max_contingency_util": 0.36368416545810756
+      },
+      {
+        "branch_id": 87,
+        "max_contingency_util": 0.3501620614902885
+      },
+      {
+        "branch_id": 235,
+        "max_contingency_util": 0.34578715371731406
+      },
+      {
+        "branch_id": 174,
+        "max_contingency_util": 0.3293921365381496
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.32778473995027513
+      },
+      {
+        "branch_id": 73,
+        "max_contingency_util": 0.3246597682017869
+      },
+      {
+        "branch_id": 86,
+        "max_contingency_util": 0.323169940325183
+      },
+      {
+        "branch_id": 143,
+        "max_contingency_util": 0.3182165266372435
+      },
+      {
+        "branch_id": 75,
+        "max_contingency_util": 0.3110207265155361
+      },
+      {
+        "branch_id": 228,
+        "max_contingency_util": 0.30113238713048424
+      },
+      {
+        "branch_id": 189,
+        "max_contingency_util": 0.293626562137812
+      },
+      {
+        "branch_id": 135,
+        "max_contingency_util": 0.2924053838939779
+      },
+      {
+        "branch_id": 173,
+        "max_contingency_util": 0.28854318246427085
+      },
+      {
+        "branch_id": 191,
+        "max_contingency_util": 0.28681242479071006
+      },
+      {
+        "branch_id": 151,
+        "max_contingency_util": 0.2863626333275532
+      },
+      {
+        "branch_id": 238,
+        "max_contingency_util": 0.2757522976836005
+      },
+      {
+        "branch_id": 159,
+        "max_contingency_util": 0.2727282990141765
+      },
+      {
+        "branch_id": 180,
+        "max_contingency_util": 0.26982518784633897
+      },
+      {
+        "branch_id": 133,
+        "max_contingency_util": 0.26859337813913536
+      },
+      {
+        "branch_id": 3,
+        "max_contingency_util": 0.26509681799876433
+      },
+      {
+        "branch_id": 64,
+        "max_contingency_util": 0.26298704408673257
+      },
+      {
+        "branch_id": 183,
+        "max_contingency_util": 0.2513254103446729
+      },
+      {
+        "branch_id": 16,
+        "max_contingency_util": 0.24608438120784715
+      },
+      {
+        "branch_id": 122,
+        "max_contingency_util": 0.2412487982773044
+      },
+      {
+        "branch_id": 198,
+        "max_contingency_util": 0.23342058242473815
+      },
+      {
+        "branch_id": 164,
+        "max_contingency_util": 0.21717579657493327
+      },
+      {
+        "branch_id": 145,
+        "max_contingency_util": 0.2098201767283006
+      },
+      {
+        "branch_id": 111,
+        "max_contingency_util": 0.20620969502301148
+      },
+      {
+        "branch_id": 150,
+        "max_contingency_util": 0.20574960070539608
+      },
+      {
+        "branch_id": 93,
+        "max_contingency_util": 0.20418812273857204
+      },
+      {
+        "branch_id": 62,
+        "max_contingency_util": 0.20128215857641055
+      },
+      {
+        "branch_id": 84,
+        "max_contingency_util": 0.1884327237349103
+      },
+      {
+        "branch_id": 63,
+        "max_contingency_util": 0.18390514997775456
+      },
+      {
+        "branch_id": 125,
+        "max_contingency_util": 0.17907742122442818
+      },
+      {
+        "branch_id": 72,
+        "max_contingency_util": 0.1748794093511415
+      },
+      {
+        "branch_id": 200,
+        "max_contingency_util": 0.17202795555242942
+      },
+      {
+        "branch_id": 4,
+        "max_contingency_util": 0.16607834615444894
+      },
+      {
+        "branch_id": 190,
+        "max_contingency_util": 0.16327251761931877
+      },
+      {
+        "branch_id": 13,
+        "max_contingency_util": 0.16009364958252803
+      },
+      {
+        "branch_id": 24,
+        "max_contingency_util": 0.14681853052584032
+      },
+      {
+        "branch_id": 12,
+        "max_contingency_util": 0.14086039830143982
+      },
+      {
+        "branch_id": 130,
+        "max_contingency_util": 0.13918778473096569
+      },
+      {
+        "branch_id": 89,
+        "max_contingency_util": 0.13884973910705978
+      },
+      {
+        "branch_id": 71,
+        "max_contingency_util": 0.13772961602928138
+      },
+      {
+        "branch_id": 155,
+        "max_contingency_util": 0.1319042513959611
+      },
+      {
+        "branch_id": 193,
+        "max_contingency_util": 0.12387028891538389
+      },
+      {
+        "branch_id": 19,
+        "max_contingency_util": 0.12372662108239624
+      },
+      {
+        "branch_id": 128,
+        "max_contingency_util": 0.11530290833154855
+      },
+      {
+        "branch_id": 204,
+        "max_contingency_util": 0.11351633028274324
+      },
+      {
+        "branch_id": 23,
+        "max_contingency_util": 0.09747661015865355
+      },
+      {
+        "branch_id": 88,
+        "max_contingency_util": 0.08976928817788024
+      },
+      {
+        "branch_id": 18,
+        "max_contingency_util": 0.06949506688671216
+      },
+      {
+        "branch_id": 43,
+        "max_contingency_util": 0.03442214367612335
+      },
+      {
+        "branch_id": 44,
+        "max_contingency_util": 0.017954130686355787
+      }
+    ],
+    "singleton_results": [
+      {
+        "branch_id": 184,
+        "max_contingency_util": 0.6285396436022391,
+        "status": "OPTIMAL",
+        "obj": 27479.643306021164,
+        "runtime": 0.6839828491210938,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.3184838937595487e-07
+      },
+      {
+        "branch_id": 154,
+        "max_contingency_util": 0.3758622831167613,
+        "status": "OPTIMAL",
+        "obj": 27479.64330607328,
+        "runtime": 0.664435863494873,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.7973070498555899e-07
+      },
+      {
+        "branch_id": 162,
+        "max_contingency_util": 0.36988888004198217,
+        "status": "OPTIMAL",
+        "obj": 27479.643306058584,
+        "runtime": 0.7290279865264893,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.944281393662095e-07
+      },
+      {
+        "branch_id": 217,
+        "max_contingency_util": 0.36368416545810756,
+        "status": "OPTIMAL",
+        "obj": 27479.643307032304,
+        "runtime": 0.6485466957092285,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -7.792914402671158e-07
+      },
+      {
+        "branch_id": 87,
+        "max_contingency_util": 0.3501620614902885,
+        "status": "OPTIMAL",
+        "obj": 27479.64330607817,
+        "runtime": 0.6537332534790039,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.7484126146882772e-07
+      },
+      {
+        "branch_id": 235,
+        "max_contingency_util": 0.34578715371731406,
+        "status": "OPTIMAL",
+        "obj": 27479.64330605299,
+        "runtime": 0.6631920337677002,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.0002335077151656e-07
+      },
+      {
+        "branch_id": 174,
+        "max_contingency_util": 0.3293921365381496,
+        "status": "OPTIMAL",
+        "obj": 27479.643306959548,
+        "runtime": 0.655940055847168,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -7.065355021040887e-07
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.32778473995027513,
+        "status": "OPTIMAL",
+        "obj": 27479.643306075945,
+        "runtime": 0.6788420677185059,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.7706770449876785e-07
+      },
+      {
+        "branch_id": 73,
+        "max_contingency_util": 0.3246597682017869,
+        "status": "OPTIMAL",
+        "obj": 27479.64330602769,
+        "runtime": 0.6692228317260742,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.2532185539603233e-07
+      },
+      {
+        "branch_id": 86,
+        "max_contingency_util": 0.323169940325183,
+        "status": "OPTIMAL",
+        "obj": 27479.643306103568,
+        "runtime": 0.7313709259033203,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.4944453141652048e-07
+      },
+      {
+        "branch_id": 143,
+        "max_contingency_util": 0.3182165266372435,
+        "status": "OPTIMAL",
+        "obj": 27479.643306110687,
+        "runtime": 0.6682841777801514,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.42325006891042e-07
+      },
+      {
+        "branch_id": 75,
+        "max_contingency_util": 0.3110207265155361,
+        "status": "OPTIMAL",
+        "obj": 27479.64330708449,
+        "runtime": 0.6723690032958984,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -8.314782462548465e-07
+      },
+      {
+        "branch_id": 228,
+        "max_contingency_util": 0.30113238713048424,
+        "status": "OPTIMAL",
+        "obj": 27479.643306035963,
+        "runtime": 0.6640927791595459,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.1704909158870578e-07
+      },
+      {
+        "branch_id": 189,
+        "max_contingency_util": 0.293626562137812,
+        "status": "OPTIMAL",
+        "obj": 27479.64330614547,
+        "runtime": 0.6769258975982666,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.0754229151643813e-07
+      },
+      {
+        "branch_id": 135,
+        "max_contingency_util": 0.2924053838939779,
+        "status": "OPTIMAL",
+        "obj": 27479.64330604246,
+        "runtime": 0.6705076694488525,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.1055166143923998e-07
+      },
+      {
+        "branch_id": 173,
+        "max_contingency_util": 0.28854318246427085,
+        "status": "OPTIMAL",
+        "obj": 27479.643306180482,
+        "runtime": 0.6823887825012207,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 7.253038347698748e-08
+      },
+      {
+        "branch_id": 191,
+        "max_contingency_util": 0.28681242479071006,
+        "status": "OPTIMAL",
+        "obj": 27479.64330690979,
+        "runtime": 0.6950011253356934,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -6.567788659594953e-07
+      },
+      {
+        "branch_id": 151,
+        "max_contingency_util": 0.2863626333275532,
+        "status": "OPTIMAL",
+        "obj": 27479.64330604455,
+        "runtime": 0.6714742183685303,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.0846346160396934e-07
+      },
+      {
+        "branch_id": 238,
+        "max_contingency_util": 0.2757522976836005,
+        "status": "OPTIMAL",
+        "obj": 27479.643307731603,
+        "runtime": 0.6685230731964111,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.478591002523899e-06
+      },
+      {
+        "branch_id": 159,
+        "max_contingency_util": 0.2727282990141765,
+        "status": "OPTIMAL",
+        "obj": 27479.643306768667,
+        "runtime": 0.6537668704986572,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -5.156543920747936e-07
+      },
+      {
+        "branch_id": 180,
+        "max_contingency_util": 0.26982518784633897,
+        "status": "OPTIMAL",
+        "obj": 27479.643306972917,
+        "runtime": 0.6524739265441895,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -7.199050742201507e-07
+      },
+      {
+        "branch_id": 133,
+        "max_contingency_util": 0.26859337813913536,
+        "status": "OPTIMAL",
+        "obj": 27479.643308146326,
+        "runtime": 0.6816360950469971,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.8933133105747402e-06
+      },
+      {
+        "branch_id": 3,
+        "max_contingency_util": 0.26509681799876433,
+        "status": "OPTIMAL",
+        "obj": 27479.64330680859,
+        "runtime": 0.6633408069610596,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -5.55577571503818e-07
+      },
+      {
+        "branch_id": 64,
+        "max_contingency_util": 0.26298704408673257,
+        "status": "OPTIMAL",
+        "obj": 27479.643307382576,
+        "runtime": 0.6688101291656494,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.1295633157715201e-06
+      },
+      {
+        "branch_id": 183,
+        "max_contingency_util": 0.2513254103446729,
+        "status": "OPTIMAL",
+        "obj": 27479.643306033282,
+        "runtime": 0.6822679042816162,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.1973028196953237e-07
+      },
+      {
+        "branch_id": 16,
+        "max_contingency_util": 0.24608438120784715,
+        "status": "OPTIMAL",
+        "obj": 27479.643306005444,
+        "runtime": 0.7456347942352295,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.4756809580139816e-07
+      },
+      {
+        "branch_id": 122,
+        "max_contingency_util": 0.2412487982773044,
+        "status": "OPTIMAL",
+        "obj": 27479.64330628809,
+        "runtime": 0.6618733406066895,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -3.5077391657978296e-08
+      },
+      {
+        "branch_id": 198,
+        "max_contingency_util": 0.23342058242473815,
+        "status": "OPTIMAL",
+        "obj": 27479.64330685677,
+        "runtime": 0.6670467853546143,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -6.037589628249407e-07
+      },
+      {
+        "branch_id": 164,
+        "max_contingency_util": 0.21717579657493327,
+        "status": "OPTIMAL",
+        "obj": 27479.643307041286,
+        "runtime": 0.6873788833618164,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -7.882736099418253e-07
+      },
+      {
+        "branch_id": 145,
+        "max_contingency_util": 0.2098201767283006,
+        "status": "OPTIMAL",
+        "obj": 27479.643306126603,
+        "runtime": 0.6736960411071777,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.2640884961001575e-07
+      },
+      {
+        "branch_id": 111,
+        "max_contingency_util": 0.20620969502301148,
+        "status": "OPTIMAL",
+        "obj": 27479.643306153044,
+        "runtime": 0.6552839279174805,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 9.996801964007318e-08
+      },
+      {
+        "branch_id": 150,
+        "max_contingency_util": 0.20574960070539608,
+        "status": "OPTIMAL",
+        "obj": 27479.64330618386,
+        "runtime": 0.6885268688201904,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 6.915070116519928e-08
+      },
+      {
+        "branch_id": 93,
+        "max_contingency_util": 0.20418812273857204,
+        "status": "OPTIMAL",
+        "obj": 27479.64330599176,
+        "runtime": 0.6856451034545898,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.612505340948701e-07
+      },
+      {
+        "branch_id": 62,
+        "max_contingency_util": 0.20128215857641055,
+        "status": "OPTIMAL",
+        "obj": 27479.643306649505,
+        "runtime": 0.7554869651794434,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -3.964923962485045e-07
+      },
+      {
+        "branch_id": 84,
+        "max_contingency_util": 0.1884327237349103,
+        "status": "OPTIMAL",
+        "obj": 27479.64330599355,
+        "runtime": 0.6935198307037354,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.5946064852178097e-07
+      },
+      {
+        "branch_id": 63,
+        "max_contingency_util": 0.18390514997775456,
+        "status": "OPTIMAL",
+        "obj": 27479.64330723208,
+        "runtime": 0.6589500904083252,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -9.790674084797502e-07
+      },
+      {
+        "branch_id": 125,
+        "max_contingency_util": 0.17907742122442818,
+        "status": "OPTIMAL",
+        "obj": 27479.643306382655,
+        "runtime": 0.662877082824707,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.2964301276952028e-07
+      },
+      {
+        "branch_id": 72,
+        "max_contingency_util": 0.1748794093511415,
+        "status": "OPTIMAL",
+        "obj": 27479.643308131024,
+        "runtime": 0.6872520446777344,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -1.8780119717121124e-06
+      },
+      {
+        "branch_id": 200,
+        "max_contingency_util": 0.17202795555242942,
+        "status": "OPTIMAL",
+        "obj": 27479.643306007623,
+        "runtime": 0.6719791889190674,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.453889464959502e-07
+      },
+      {
+        "branch_id": 4,
+        "max_contingency_util": 0.16607834615444894,
+        "status": "OPTIMAL",
+        "obj": 27479.643306027247,
+        "runtime": 0.6873049736022949,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.2576568881049752e-07
+      },
+      {
+        "branch_id": 190,
+        "max_contingency_util": 0.16327251761931877,
+        "status": "OPTIMAL",
+        "obj": 27479.643306025388,
+        "runtime": 0.6814489364624023,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.276246959809214e-07
+      },
+      {
+        "branch_id": 13,
+        "max_contingency_util": 0.16009364958252803,
+        "status": "OPTIMAL",
+        "obj": 27479.643306045702,
+        "runtime": 0.682746171951294,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.0731022232212126e-07
+      },
+      {
+        "branch_id": 24,
+        "max_contingency_util": 0.14681853052584032,
+        "status": "OPTIMAL",
+        "obj": 27479.64330606157,
+        "runtime": 0.6831920146942139,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.914413587655872e-07
+      },
+      {
+        "branch_id": 12,
+        "max_contingency_util": 0.14086039830143982,
+        "status": "OPTIMAL",
+        "obj": 27479.64330625948,
+        "runtime": 0.6504237651824951,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -6.468326319009066e-09
+      },
+      {
+        "branch_id": 130,
+        "max_contingency_util": 0.13918778473096569,
+        "status": "OPTIMAL",
+        "obj": 27479.643306030946,
+        "runtime": 0.6870017051696777,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.2206586436368525e-07
+      },
+      {
+        "branch_id": 89,
+        "max_contingency_util": 0.13884973910705978,
+        "status": "OPTIMAL",
+        "obj": 27479.643306197355,
+        "runtime": 0.6736180782318115,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.5657437769696116e-08
+      },
+      {
+        "branch_id": 71,
+        "max_contingency_util": 0.13772961602928138,
+        "status": "OPTIMAL",
+        "obj": 27479.64330596496,
+        "runtime": 0.691051721572876,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.8805152396671474e-07
+      },
+      {
+        "branch_id": 155,
+        "max_contingency_util": 0.1319042513959611,
+        "status": "OPTIMAL",
+        "obj": 27479.643306478385,
+        "runtime": 0.6969661712646484,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -2.2537278709933162e-07
+      },
+      {
+        "branch_id": 193,
+        "max_contingency_util": 0.12387028891538389,
+        "status": "OPTIMAL",
+        "obj": 27479.643307114453,
+        "runtime": 0.7039890289306641,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -8.614406397100538e-07
+      },
+      {
+        "branch_id": 19,
+        "max_contingency_util": 0.12372662108239624,
+        "status": "OPTIMAL",
+        "obj": 27479.643306628823,
+        "runtime": 0.6569230556488037,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -3.7581048673018813e-07
+      },
+      {
+        "branch_id": 128,
+        "max_contingency_util": 0.11530290833154855,
+        "status": "OPTIMAL",
+        "obj": 27479.643306046208,
+        "runtime": 0.6499118804931641,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.0680454326793551e-07
+      },
+      {
+        "branch_id": 204,
+        "max_contingency_util": 0.11351633028274324,
+        "status": "OPTIMAL",
+        "obj": 27479.643306581238,
+        "runtime": 0.7021570205688477,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": -3.282257239334285e-07
+      },
+      {
+        "branch_id": 23,
+        "max_contingency_util": 0.09747661015865355,
+        "status": "OPTIMAL",
+        "obj": 27479.64330611365,
+        "runtime": 0.6673200130462646,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.3936369214206934e-07
+      },
+      {
+        "branch_id": 88,
+        "max_contingency_util": 0.08976928817788024,
+        "status": "OPTIMAL",
+        "obj": 27479.643306142734,
+        "runtime": 0.6885480880737305,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.102780515793711e-07
+      },
+      {
+        "branch_id": 18,
+        "max_contingency_util": 0.06949506688671216,
+        "status": "OPTIMAL",
+        "obj": 27479.643306053917,
+        "runtime": 0.6855001449584961,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.9909566617570817e-07
+      },
+      {
+        "branch_id": 43,
+        "max_contingency_util": 0.03442214367612335,
+        "status": "OPTIMAL",
+        "obj": 27479.643306011734,
+        "runtime": 0.6868610382080078,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.412780304439366e-07
+      },
+      {
+        "branch_id": 44,
+        "max_contingency_util": 0.017954130686355787,
+        "status": "OPTIMAL",
+        "obj": 27479.64330615427,
+        "runtime": 0.6864910125732422,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 9.874202078208327e-08
+      }
+    ],
+    "selected": [
+      184,
+      154,
+      162,
+      217,
+      87,
+      235,
+      174,
+      26,
+      73,
+      86,
+      143,
+      75,
+      228,
+      189,
+      135,
+      173,
+      191,
+      151,
+      238,
+      159
+    ],
+    "scopF_obj_at_unit_load": 27479.643306253012,
+    "scopF_status_at_unit_load": "OPTIMAL",
+    "load_search": {
+      "load_multipliers_tested": [
+        1.0,
+        1.025,
+        1.05,
+        1.075,
+        1.1,
+        1.125,
+        1.15
+      ],
+      "trials": [
+        {
+          "load_scale": 1.0,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 27479.643306253012,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 27479.643306000013,
+          "opened_lines": [
+            73
+          ],
+          "scopF_runtime": 0.6843631267547607,
+          "scots_runtime": 6.259286165237427,
+          "savings": 2.529995981603861e-07,
+          "savings_threshold": 2.7479643306253014,
+          "n_opened": 1,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.025,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 27727.19030349411,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 27727.190303500007,
+          "opened_lines": [
+            73,
+            159
+          ],
+          "scopF_runtime": 0.6961069107055664,
+          "scots_runtime": 5.506416082382202,
+          "savings": -5.897163646295667e-09,
+          "savings_threshold": 2.772719030349411,
+          "n_opened": 2,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.05,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 27974.737300975896,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 27974.73730100001,
+          "opened_lines": [
+            73
+          ],
+          "scopF_runtime": 0.703881025314331,
+          "scots_runtime": 6.295802116394043,
+          "savings": -2.4112523533403873e-08,
+          "savings_threshold": 2.7974737300975896,
+          "n_opened": 1,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.075,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 28222.28429869448,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 28222.284298499995,
+          "opened_lines": [],
+          "scopF_runtime": 0.6622798442840576,
+          "scots_runtime": 5.143036127090454,
+          "savings": 1.9448634702712297e-07,
+          "savings_threshold": 2.8222284298694484,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.1,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 28469.83129601007,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 28469.831295999917,
+          "opened_lines": [
+            189
+          ],
+          "scopF_runtime": 0.7132389545440674,
+          "scots_runtime": 5.188961744308472,
+          "savings": 1.0153598850592971e-08,
+          "savings_threshold": 2.846983129601007,
+          "n_opened": 1,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.125,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 28717.37829348959,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 28717.378293500013,
+          "opened_lines": [],
+          "scopF_runtime": 0.720224142074585,
+          "scots_runtime": 4.885429859161377,
+          "savings": -1.0422809282317758e-08,
+          "savings_threshold": 2.8717378293489593,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.15,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 29260.126633189633,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 29260.126633188105,
+          "opened_lines": [
+            217
+          ],
+          "scopF_runtime": 0.7701599597930908,
+          "scots_runtime": 34.50347304344177,
+          "savings": 1.5279510989785194e-09,
+          "savings_threshold": 2.9260126633189634,
+          "n_opened": 1,
+          "accepted": false
+        }
+      ],
+      "chosen_load_scale": 1.0,
+      "chosen_reason": "no_economic_improvement",
+      "chosen_trial": {
+        "load_scale": 1.0,
+        "scopF_status": "OPTIMAL",
+        "scopF_obj": 27479.643306253012,
+        "scots_status": "OPTIMAL",
+        "scots_obj": 27479.643306000013,
+        "opened_lines": [
+          73
+        ],
+        "scopF_runtime": 0.6843631267547607,
+        "scots_runtime": 6.259286165237427,
+        "savings": 2.529995981603861e-07,
+        "savings_threshold": 2.7479643306253014,
+        "n_opened": 1,
+        "accepted": false
+      },
+      "economic_threshold_rule": "max($1/h, 0.01% of all-closed SCOPF objective)"
+    },
+    "method": "eligible=online non-xfmr zero-phase connected after preventive open + every credible N-1; rank by max contingency util at unit-load all-closed SCOPF; prescreen min(3N,|eligible|); singleton fixed_open screen; rank OPTIMAL forced-open candidates by cost improvement desc (absolute changes <= $0.01 treated as numerical ties), util desc, id asc; take N; search load multipliers for first economic SC-OTS"
+  },
+  "notes": [
+    "Source: pglib_opf_case200_activ (sha256=676e6f54a3b6726b199b531e7758ad8bf75ba2b076ea3fee86dc3f5cf5846f6b).",
+    "Branch thermal ratings preserved from PGLib (rateA/B/C unscaled).",
+    "Load Pd/Qd scaled by 1.0.",
+    "Credible contingencies: 173; bridges excluded for islanding: 72.",
+    "Switchable set size N=20, max_open K=3.",
+    "Load search reason: no_economic_improvement."
+  ]
+}

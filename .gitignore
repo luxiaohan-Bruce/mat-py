@@ -1,34 +1,22 @@
-# OS / editor
-.DS_Store
-*.swp
-.idea/
-.vscode/
-
-# Third-party toolboxes (clone locally; do not commit)
-# See scripts/bootstrap_deps.sh
-matlab/matpower/
-matlab/most/
-matlab/pglib-opf/
-
-# Matlab
-*.asv
-*.mex*
-slprj/
-*.autosave
-
-# Python (future)
+# Python
 __pycache__/
+*.py[cod]
+.pytest_cache/
 .venv/
 venv/
-*.pyc
-.pytest_cache/
-*.egg-info/
 
-# Solver / local secrets
-*.lic
+# Gurobi and local runtime files
 gurobi.lic
-.python-version
-
-# Results / logs (optional local artifacts)
-results/
 *.log
+results/
+
+# Editors and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local construction sources and generated reports (not published)
+dcots_cases/
+pglib-opf-master/
+outputs/

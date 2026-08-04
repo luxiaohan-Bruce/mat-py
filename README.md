@@ -1,73 +1,108 @@
-# mat-py
+# DC-OTS / SC-OTS Python Cases
 
-你自己的电力系统难优化实验仓库：用 **Matlab 基准（MATPOWER / MOST / PGLib）** 跑通，以后再迁 **Python**。
+Six reproducible optimal transmission switching examples implemented in Python
+with `gurobipy`. The repository contains three DC-OTS cases and three preventive
+N-1 SC-OTS cases derived from PGLib-OPF data.
 
-**当前阶段：** 自有脚本 + 笔记；第三方工具箱仅作本地依赖，不进 Git。
+## Cases
 
-## 双主线
+| Folder | Problem | Buses | Branches | N-1 contingencies | Switchable lines | Max open |
+|---|---|---:|---:|---:|---:|---:|
+| `case01_pjm5_dcots` | DC-OTS | 5 | 6 | — | 6 | 2 |
+| `case02_ieee14_dcots` | DC-OTS | 14 | 20 | — | 8 | 2 |
+| `case03_ieee118_dcots` | DC-OTS | 118 | 186 | — | 20 | 3 |
+| `case04_ieee24_scots` | SC-OTS | 24 | 38 | 37 | 8 | 1 |
+| `case05_ieee73_scots` | SC-OTS | 73 | 120 | 118 | 12 | 2 |
+| `case06_activs200_scots` | SC-OTS | 200 | 245 | 173 | 20 | 3 |
 
-| 主线 | 问题 | 本地依赖 | 难度 |
-|------|------|----------|------|
-| **A** | AC-OPF | MATPOWER + PGLib-OPF | 非凸 NLP |
-| **B** | UC / SCUC | MOST + Gurobi/CPLEX | 大规模 MILP |
+Each case directory contains only:
 
-## 目录
+- `network.json`: buses, generators, branches, costs, ratings, taps, and shifts.
+- `config.json`: switchable branches, cardinality, contingencies, solver settings,
+  and data provenance.
+- `solve.py`: the Python entry point for that case.
+
+## Formulation
+
+- DC branch flow follows the MATPOWER tap/phase-shift convention:
+  `f = b * (theta_from - theta_to - shift)`, with `b = 1 / (x * tap)`.
+- Gurobi indicator constraints decouple flow physics and angle limits when a
+  switchable line is open; no global angle box or legacy big-M is used.
+- A signed single-commodity flow keeps the base state and every contingency
+  state connected.
+- Only online generators contribute generation cost; invalid bounds are rejected.
+- Preventive SC-OTS shares one topology across the base state and all N-1 states.
+  Post-contingency actions are limited to generator redispatch within
+  `±20% * (Pmax - Pmin)`; load shedding and post-contingency switching are disabled.
+- Base-state limits use `rateA`; contingency limits use the original `rateC`.
+- After the primary SC-OTS optimum, a strictly convex secondary objective selects
+  a deterministic representative contingency dispatch without changing the
+  reported primary objective, bound, or MIP gap.
+
+## Requirements
+
+- Python 3.10 or newer
+- Gurobi 13.x and a valid Gurobi license
+
+Install the Python package:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run
+
+Solve all cases:
+
+```bash
+python run_all.py
+```
+
+Solve one case:
+
+```bash
+python case04_ieee24_scots/solve.py
+```
+
+Each run writes a detailed result to `<case>/results/python_result.json`.
+Generated result directories are ignored by Git.
+
+## Reference results
+
+Results below were obtained with Python, gurobipy 13.0.2, one solver thread, and
+the parameters recorded in each `config.json`.
+
+| Case | Baseline objective | OTS objective | Savings | Opened lines |
+|---|---:|---:|---:|---|
+| case01 | 23092.091473 | 18290.000000 | 4802.091473 | `4, 6` |
+| case02 | 2799.992284 | 2461.831571 | 338.160714 | `2, 17` |
+| case03 | 99172.899106 | 98631.580859 | 541.318247 | `31, 66, 67` |
+| case04 | 61001.240313 | 61001.240312 | 0.000001 | none |
+| case05 | 183003.720937 | 183003.720937 | 0.000000 | `19, 100` |
+| case06 | 27479.643306 | 27479.643306 | 0.000000 | `73` |
+
+The three SC-OTS cases tested load multipliers from 1.000 through 1.150. None met
+the configured economic-improvement threshold, so their published networks keep
+the original 1.000 load scale and unmodified branch ratings.
+
+## Repository layout
 
 ```text
-mat-py/
-  scripts/          # ★ 你改代码的地方
-  notes/            # 公式、跑分记录
-  refs/             # 文献与基准链接
-  matlab/           # 本地依赖（gitignore，不提交）
-    matpower/
-    most/
-    pglib-opf/
+README.md
+requirements.txt
+run_all.py
+dcots_model.py
+validate_data.py
+validate_residuals.py
+case01_pjm5_dcots/
+case02_ieee14_dcots/
+case03_ieee118_dcots/
+case04_ieee24_scots/
+case05_ieee73_scots/
+case06_activs200_scots/
 ```
 
-## 快速开始
-
-```bash
-# 1. 克隆第三方依赖（若还没有）
-bash scripts/bootstrap_deps.sh
-
-# 2. 初始化本仓库 Git（若尚未 init）
-git status
-```
-
-MATLAB：
-
-```matlab
-cd('/Users/bruce/Documents/mat-py/scripts')
-setup_paths
-smoke_acopf
-```
-
-需要本机已安装 **MATLAB**；UC 建议配置 **Gurobi/CPLEX**。
-
-## 改代码约定
-
-- **只提交** `scripts/`、`notes/`、`refs/`、顶层文档。
-- **不提交** `matlab/matpower` 等第三方树（体积大、有独立 license/版本）。
-- 实验目标值记到 `notes/solver-baselines.md`。
-
-## 推到 GitHub（账号连好后）
-
-```bash
-# 装 CLI 并登录（任选一次）
-brew install gh && gh auth login
-
-# 在 GitHub 建空仓库后：
-git remote add origin git@github.com:你的用户名/mat-py.git
-git push -u origin main
-```
-
-## 阶段计划
-
-1. AC-OPF 冒烟与 PGLib 对标 → 记 `notes/`
-2. MOST `ex1`→`ex6`→`ex7` UC/SCUC
-3. （可选）SCOPF / 更大算例
-4. （以后）Python 只移植选定模型 + 算例
-
-## License
-
-本仓库自有脚本按你后续声明的许可；MATPOWER/MOST 为 BSD 等，见各自 `LICENSE`。PGLib 再分发前请核对其许可证。
+The source cases and SHA-256 hashes are recorded in each configuration file.
+PGLib-OPF project: <https://github.com/power-grid-lib/pglib-opf>.

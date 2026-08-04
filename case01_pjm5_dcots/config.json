@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "case": "case01_pjm5_dcots",
+  "problem": "dcots",
+  "source": {
+    "pglib_file": "pglib_opf_case5_pjm.m",
+    "pglib_stem": "pglib_opf_case5_pjm",
+    "sha256": "cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f",
+    "path_relative": "pglib-opf-master/pglib_opf_case5_pjm.m"
+  },
+  "switchable_idx": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "max_open": 2,
+  "mip_gap": 1e-06,
+  "time_limit": 60,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",
+  "load_shedding": false,
+  "contingencies": [],
+  "excluded_for_islanding": [],
+  "transformations": [
+    "Preserved legacy switchable set and max_open.",
+    "Legacy branch 6 rateA/rateB/rateC changed from 240 MW to 150 MW."
+  ],
+  "gurobi_parameters": {
+    "MIPGap": 1e-06,
+    "TimeLimit": 60,
+    "Seed": 1,
+    "Threads": 1
+  },
+  "notes": [
+    "Source: pglib_opf_case5_pjm (5-bus PJM classic).",
+    "All 6 branches are switchable (small meshed system, no transformers).",
+    "Congestion design: tighten branch 4-5 rateA 240->150 MW to create binding thermal limit.",
+    "max_open=2 allows economically motivated topology changes.",
+    "Modified branch id=6 4-5 rateA: 240.0 -> 150.0 MW"
+  ]
+}
