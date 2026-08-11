@@ -1,0 +1,35 @@
+{
+  "case": "case23_snem1803_scuc",
+  "problem": "scuc",
+  "source": "pglib_opf_case1803_snem",
+  "T": 6,
+  "load_mult": [
+    0.72,
+    0.85,
+    0.95,
+    0.99,
+    1.0,
+    1.02
+  ],
+  "load_scale": 0.8,
+  "contingencies": [
+    425,
+    594
+  ],
+  "emergency_rate_factor": 1.0,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 1803,
+  "notes": [
+    "Source: pglib_opf_case1803_snem (1803 buses).",
+    "Preventive DC-SCUC T=6 Nc=2 \u03bb=0.8.",
+    "bucket=XL tier=skip.",
+    "Active gens=230; Pd0=29226.9 MW.",
+    "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
+    "Contingencies: [425, 594]"
+  ]
+}

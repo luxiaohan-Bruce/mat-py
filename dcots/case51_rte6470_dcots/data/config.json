@@ -1,0 +1,39 @@
+{
+  "case": "case51_rte6470_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case6470_rte",
+  "switchable_idx": [
+    5216,
+    4200,
+    1366,
+    6692,
+    3900,
+    843,
+    5601,
+    7101,
+    2119,
+    2865
+  ],
+  "max_open": 1,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 6470,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case6470_rte (6470 buses).",
+    "Auto-built DC-OTS; size_bucket=XL solve_tier=skip.",
+    "Load scale Pd/Qd *= 1.0.",
+    "Switchable rate scale *= 1.0.",
+    "max_open=1, n_switchable=10.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "No DCOPF probe (size/tier); ranking by inverse rateA.",
+    "Selected 10 switchable lines (wanted 10)."
+  ]
+}

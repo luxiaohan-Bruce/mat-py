@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "case": "case11_c60_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case60_c",
+  "switchable_idx": [
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+  ],
+  "max_open": 2,
+  "contingencies": [
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 1e-05,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.05,
+  "rate_scale_on_switchable": 0.85,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 60,
+  "notes": [
+    "Source: pglib_opf_case60_c (60 buses).",
+    "Auto SC-OTS; bucket=S tier=full.",
+    "load_scale=1.05, rate_scale_on_switchable=0.85.",
+    "max_open=2, redispatch_frac=0.2.",
+    "Contingencies: 10 (wanted 10).",
+    "Switchable: 10 (wanted 10)."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "case": "case42_goc3970_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case3970_goc",
+  "switchable_idx": [
+    3304,
+    3303,
+    3302,
+    3301,
+    3300
+  ],
+  "max_open": 1,
+  "contingencies": [
+    3304,
+    3303,
+    3302
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 3970,
+  "notes": [
+    "Source: pglib_opf_case3970_goc (3970 buses).",
+    "Auto SC-OTS; bucket=XL tier=skip.",
+    "load_scale=1.0, rate_scale_on_switchable=1.0.",
+    "max_open=1, redispatch_frac=0.2.",
+    "Contingencies: 3 (wanted 3).",
+    "Switchable: 5 (wanted 5).",
+    "Connectivity multi-check skipped (n_bus=3970>600)."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "case": "case37_pegase2869_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case2869_pegase",
+  "switchable_idx": [
+    157,
+    193,
+    79,
+    142,
+    155,
+    173,
+    176,
+    94,
+    98,
+    179
+  ],
+  "max_open": 1,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 2869,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case2869_pegase (2869 buses).",
+    "Auto-built DC-OTS; size_bucket=XL solve_tier=skip.",
+    "Load scale Pd/Qd *= 1.0.",
+    "Switchable rate scale *= 1.0.",
+    "max_open=1, n_switchable=10.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "No DCOPF probe (size/tier); ranking by inverse rateA.",
+    "Selected 10 switchable lines (wanted 10)."
+  ]
+}

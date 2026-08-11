@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "case": "case12_pegase89_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case89_pegase",
+  "switchable_idx": [
+    139,
+    103,
+    122,
+    119,
+    101,
+    88,
+    25,
+    125
+  ],
+  "max_open": 1,
+  "contingencies": [
+    139,
+    103,
+    122,
+    119,
+    101,
+    88
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 1e-05,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 0.9,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 89,
+  "notes": [
+    "Contingencies: 6 (wanted 6).",
+    "Switchable: 8 (wanted 8).",
+    "Retuned load_scale=0.9 after INFEASIBLE"
+  ]
+}

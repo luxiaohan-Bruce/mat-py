@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "case": "case41_3375wpk_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case3375wp_k",
+  "switchable_idx": [
+    1576,
+    1583,
+    1582,
+    3421,
+    3437
+  ],
+  "max_open": 1,
+  "contingencies": [
+    1576,
+    1583,
+    1582
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 3374,
+  "notes": [
+    "Source: pglib_opf_case3375wp_k (3374 buses).",
+    "Auto SC-OTS; bucket=XL tier=skip.",
+    "load_scale=1.0, rate_scale_on_switchable=1.0.",
+    "max_open=1, redispatch_frac=0.2.",
+    "Contingencies: 3 (wanted 3).",
+    "Switchable: 5 (wanted 5).",
+    "Connectivity multi-check skipped (n_bus=3374>600)."
+  ]
+}

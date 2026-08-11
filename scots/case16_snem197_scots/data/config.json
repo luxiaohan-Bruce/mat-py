@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "case": "case16_snem197_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case197_snem",
+  "switchable_idx": [
+    119,
+    118,
+    43,
+    45,
+    41,
+    72,
+    66,
+    9,
+    58,
+    18,
+    2,
+    23
+  ],
+  "max_open": 2,
+  "contingencies": [
+    119,
+    118,
+    69,
+    68,
+    14,
+    12,
+    43,
+    11
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 0.0001,
+  "time_limit": 600.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.02,
+  "rate_scale_on_switchable": 0.9,
+  "size_bucket": "M",
+  "solve_tier": "full",
+  "n_bus": 197,
+  "notes": [
+    "Source: pglib_opf_case197_snem (197 buses).",
+    "Auto SC-OTS; bucket=M tier=full.",
+    "load_scale=1.02, rate_scale_on_switchable=0.9.",
+    "max_open=2, redispatch_frac=0.2.",
+    "Contingencies: 8 (wanted 8).",
+    "Switchable: 12 (wanted 12)."
+  ]
+}

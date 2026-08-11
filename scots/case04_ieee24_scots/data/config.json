@@ -1,0 +1,548 @@
+{
+  "schema_version": 2,
+  "case": "case04_ieee24_scots",
+  "problem": "scots",
+  "source": {
+    "pglib_file": "pglib_opf_case24_ieee_rts.m",
+    "pglib_stem": "pglib_opf_case24_ieee_rts",
+    "sha256": "5d4fc2d4a1a282f700c51747e592f5a5ac15fa6d5eadb7df7ae937bbe3063374",
+    "path_relative": "pglib-opf-master/pglib_opf_case24_ieee_rts.m"
+  },
+  "switchable_idx": [
+    24,
+    6,
+    22,
+    21,
+    18,
+    30,
+    36,
+    37
+  ],
+  "max_open": 1,
+  "contingencies": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "excluded_for_islanding": [
+    {
+      "branch_id": 11,
+      "fbus": 7,
+      "tbus": 8,
+      "reason": "islanding"
+    }
+  ],
+  "redispatch_frac": 0.2,
+  "redispatch_note": "Synthetic \u00b1redispatch_frac*(Pmax-Pmin) band; PGLib OPF cases do not provide generator ramp rates.",
+  "load_shedding": false,
+  "canonicalize_contingencies": true,
+  "load_scale": 1.0,
+  "ratings_scaled": false,
+  "mip_gap": 1e-07,
+  "time_limit": 1800,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",
+  "selection": {
+    "n_candidates": 8,
+    "max_open": 1,
+    "eligible_switchable": [
+      1,
+      2,
+      6,
+      18,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "eligible_count": 19,
+    "prescreen_cap": 24,
+    "prescreen_idx": [
+      28,
+      25,
+      26,
+      24,
+      6,
+      22,
+      21,
+      29,
+      18,
+      30,
+      36,
+      37,
+      1,
+      20,
+      2,
+      32,
+      33,
+      34,
+      35
+    ],
+    "candidate_objective_tie_tolerance_usd": 0.01,
+    "util_rank": [
+      {
+        "branch_id": 28,
+        "max_contingency_util": 0.622661844075786
+      },
+      {
+        "branch_id": 25,
+        "max_contingency_util": 0.5801005824892912
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.5801005824892912
+      },
+      {
+        "branch_id": 24,
+        "max_contingency_util": 0.5622224672436821
+      },
+      {
+        "branch_id": 6,
+        "max_contingency_util": 0.5418970340729788
+      },
+      {
+        "branch_id": 22,
+        "max_contingency_util": 0.5146226063207456
+      },
+      {
+        "branch_id": 21,
+        "max_contingency_util": 0.5033156360348638
+      },
+      {
+        "branch_id": 29,
+        "max_contingency_util": 0.49378315808256984
+      },
+      {
+        "branch_id": 18,
+        "max_contingency_util": 0.4724384854405718
+      },
+      {
+        "branch_id": 30,
+        "max_contingency_util": 0.4177743884810546
+      },
+      {
+        "branch_id": 36,
+        "max_contingency_util": 0.3544980529226355
+      },
+      {
+        "branch_id": 37,
+        "max_contingency_util": 0.3544980529226355
+      },
+      {
+        "branch_id": 1,
+        "max_contingency_util": 0.3541946177908373
+      },
+      {
+        "branch_id": 20,
+        "max_contingency_util": 0.3471327105545956
+      },
+      {
+        "branch_id": 2,
+        "max_contingency_util": 0.2762847841088392
+      },
+      {
+        "branch_id": 32,
+        "max_contingency_util": 0.16620514441299508
+      },
+      {
+        "branch_id": 33,
+        "max_contingency_util": 0.16620514441299508
+      },
+      {
+        "branch_id": 34,
+        "max_contingency_util": 0.1604555854056954
+      },
+      {
+        "branch_id": 35,
+        "max_contingency_util": 0.1604555854056954
+      }
+    ],
+    "singleton_results": [
+      {
+        "branch_id": 28,
+        "max_contingency_util": 0.622661844075786,
+        "status": "OPTIMAL",
+        "obj": 61234.22929634426,
+        "runtime": 0.03467106819152832,
+        "feasible": true,
+        "cost_improvement": -232.98898361687316,
+        "cost_improvement_raw": -232.98898361687316
+      },
+      {
+        "branch_id": 25,
+        "max_contingency_util": 0.5801005824892912,
+        "status": "OPTIMAL",
+        "obj": 61234.22929637224,
+        "runtime": 0.04621315002441406,
+        "feasible": true,
+        "cost_improvement": -232.9889836448565,
+        "cost_improvement_raw": -232.9889836448565
+      },
+      {
+        "branch_id": 26,
+        "max_contingency_util": 0.5801005824892912,
+        "status": "OPTIMAL",
+        "obj": 61234.229296263016,
+        "runtime": 0.044655799865722656,
+        "feasible": true,
+        "cost_improvement": -232.9889835356298,
+        "cost_improvement_raw": -232.9889835356298
+      },
+      {
+        "branch_id": 24,
+        "max_contingency_util": 0.5622224672436821,
+        "status": "OPTIMAL",
+        "obj": 61001.24031230532,
+        "runtime": 0.0438840389251709,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.2206374928355217e-07
+      },
+      {
+        "branch_id": 6,
+        "max_contingency_util": 0.5418970340729788,
+        "status": "OPTIMAL",
+        "obj": 61001.2403121813,
+        "runtime": 0.043312788009643555,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.460897227749228e-07
+      },
+      {
+        "branch_id": 22,
+        "max_contingency_util": 0.5146226063207456,
+        "status": "OPTIMAL",
+        "obj": 61001.240312170325,
+        "runtime": 0.04623723030090332,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.570618668571115e-07
+      },
+      {
+        "branch_id": 21,
+        "max_contingency_util": 0.5033156360348638,
+        "status": "OPTIMAL",
+        "obj": 61001.24031217168,
+        "runtime": 0.04509115219116211,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.557085387408733e-07
+      },
+      {
+        "branch_id": 29,
+        "max_contingency_util": 0.49378315808256984,
+        "status": "OPTIMAL",
+        "obj": 62693.40047395768,
+        "runtime": 0.041803836822509766,
+        "feasible": true,
+        "cost_improvement": -1692.1601612302911,
+        "cost_improvement_raw": -1692.1601612302911
+      },
+      {
+        "branch_id": 18,
+        "max_contingency_util": 0.4724384854405718,
+        "status": "OPTIMAL",
+        "obj": 61001.24031228412,
+        "runtime": 0.04599618911743164,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.4326588977128267e-07
+      },
+      {
+        "branch_id": 30,
+        "max_contingency_util": 0.4177743884810546,
+        "status": "OPTIMAL",
+        "obj": 61001.24031214863,
+        "runtime": 0.041825056076049805,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.787587724626064e-07
+      },
+      {
+        "branch_id": 36,
+        "max_contingency_util": 0.3544980529226355,
+        "status": "OPTIMAL",
+        "obj": 61001.24031229032,
+        "runtime": 0.04952812194824219,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.370667738839984e-07
+      },
+      {
+        "branch_id": 37,
+        "max_contingency_util": 0.3544980529226355,
+        "status": "OPTIMAL",
+        "obj": 61001.240312183014,
+        "runtime": 0.051084041595458984,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.443725967779756e-07
+      },
+      {
+        "branch_id": 1,
+        "max_contingency_util": 0.3541946177908373,
+        "status": "OPTIMAL",
+        "obj": 61001.240312228765,
+        "runtime": 0.04501509666442871,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.986213752999902e-07
+      },
+      {
+        "branch_id": 20,
+        "max_contingency_util": 0.3471327105545956,
+        "status": "OPTIMAL",
+        "obj": 61001.24031226488,
+        "runtime": 0.043411970138549805,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.6250352170318365e-07
+      },
+      {
+        "branch_id": 2,
+        "max_contingency_util": 0.2762847841088392,
+        "status": "OPTIMAL",
+        "obj": 61001.24031234489,
+        "runtime": 0.07317996025085449,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 3.824970917776227e-07
+      },
+      {
+        "branch_id": 32,
+        "max_contingency_util": 0.16620514441299508,
+        "status": "OPTIMAL",
+        "obj": 61001.24031223262,
+        "runtime": 0.046317100524902344,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 4.94765117764473e-07
+      },
+      {
+        "branch_id": 33,
+        "max_contingency_util": 0.16620514441299508,
+        "status": "OPTIMAL",
+        "obj": 61001.24031219787,
+        "runtime": 0.04585099220275879,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 5.29515091329813e-07
+      },
+      {
+        "branch_id": 34,
+        "max_contingency_util": 0.1604555854056954,
+        "status": "OPTIMAL",
+        "obj": 61001.24031256912,
+        "runtime": 0.04645586013793945,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 1.5826663002371788e-07
+      },
+      {
+        "branch_id": 35,
+        "max_contingency_util": 0.1604555854056954,
+        "status": "OPTIMAL",
+        "obj": 61001.240312493115,
+        "runtime": 0.0474851131439209,
+        "feasible": true,
+        "cost_improvement": 0.0,
+        "cost_improvement_raw": 2.3427128326147795e-07
+      }
+    ],
+    "selected": [
+      24,
+      6,
+      22,
+      21,
+      18,
+      30,
+      36,
+      37
+    ],
+    "scopF_obj_at_unit_load": 61001.24031272739,
+    "scopF_status_at_unit_load": "OPTIMAL",
+    "load_search": {
+      "load_multipliers_tested": [
+        1.0,
+        1.025,
+        1.05,
+        1.075,
+        1.1,
+        1.125,
+        1.15
+      ],
+      "trials": [
+        {
+          "load_scale": 1.0,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 61001.24031272739,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 61001.240312181995,
+          "opened_lines": [],
+          "scopF_runtime": 0.036380767822265625,
+          "scots_runtime": 0.24452829360961914,
+          "savings": 5.453912308439612e-07,
+          "savings_threshold": 6.100124031272739,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.025,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 64551.18867143558,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 64551.18867134015,
+          "opened_lines": [],
+          "scopF_runtime": 0.035719871520996094,
+          "scots_runtime": 0.24437403678894043,
+          "savings": 9.543146006762981e-08,
+          "savings_threshold": 6.455118867143558,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.05,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 68122.49556191657,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 68122.49555972553,
+          "opened_lines": [],
+          "scopF_runtime": 0.035330772399902344,
+          "scots_runtime": 0.27494287490844727,
+          "savings": 2.1910382201895118e-06,
+          "savings_threshold": 6.812249556191658,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.075,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 71715.16097894555,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 71715.16097733776,
+          "opened_lines": [],
+          "scopF_runtime": 0.035333871841430664,
+          "scots_runtime": 0.2963831424713135,
+          "savings": 1.6077974578365684e-06,
+          "savings_threshold": 7.171516097894556,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.1,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 75329.18492766884,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 75329.18492417692,
+          "opened_lines": [],
+          "scopF_runtime": 0.037097930908203125,
+          "scots_runtime": 0.2962758541107178,
+          "savings": 3.491921233944595e-06,
+          "savings_threshold": 7.532918492766885,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.125,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 78964.56740022701,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 78964.5674002427,
+          "opened_lines": [],
+          "scopF_runtime": 0.03581070899963379,
+          "scots_runtime": 0.3039102554321289,
+          "savings": -1.5686964616179466e-08,
+          "savings_threshold": 7.8964567400227015,
+          "n_opened": 0,
+          "accepted": false
+        },
+        {
+          "load_scale": 1.15,
+          "scopF_status": "OPTIMAL",
+          "scopF_obj": 82625.24913103285,
+          "scots_status": "OPTIMAL",
+          "scots_obj": 82625.24913093323,
+          "opened_lines": [],
+          "scopF_runtime": 0.03932023048400879,
+          "scots_runtime": 0.2952768802642822,
+          "savings": 9.962241165339947e-08,
+          "savings_threshold": 8.262524913103285,
+          "n_opened": 0,
+          "accepted": false
+        }
+      ],
+      "chosen_load_scale": 1.0,
+      "chosen_reason": "no_economic_improvement",
+      "chosen_trial": {
+        "load_scale": 1.0,
+        "scopF_status": "OPTIMAL",
+        "scopF_obj": 61001.24031272739,
+        "scots_status": "OPTIMAL",
+        "scots_obj": 61001.240312181995,
+        "opened_lines": [],
+        "scopF_runtime": 0.036380767822265625,
+        "scots_runtime": 0.24452829360961914,
+        "savings": 5.453912308439612e-07,
+        "savings_threshold": 6.100124031272739,
+        "n_opened": 0,
+        "accepted": false
+      },
+      "economic_threshold_rule": "max($1/h, 0.01% of all-closed SCOPF objective)"
+    },
+    "method": "eligible=online non-xfmr zero-phase connected after preventive open + every credible N-1; rank by max contingency util at unit-load all-closed SCOPF; prescreen min(3N,|eligible|); singleton fixed_open screen; rank OPTIMAL forced-open candidates by cost improvement desc (absolute changes <= $0.01 treated as numerical ties), util desc, id asc; take N; search load multipliers for first economic SC-OTS"
+  },
+  "notes": [
+    "Source: pglib_opf_case24_ieee_rts (sha256=5d4fc2d4a1a282f700c51747e592f5a5ac15fa6d5eadb7df7ae937bbe3063374).",
+    "Branch thermal ratings preserved from PGLib (rateA/B/C unscaled).",
+    "Load Pd/Qd scaled by 1.0.",
+    "Credible contingencies: 37; bridges excluded for islanding: 1.",
+    "Switchable set size N=8, max_open K=1.",
+    "Load search reason: no_economic_improvement."
+  ]
+}

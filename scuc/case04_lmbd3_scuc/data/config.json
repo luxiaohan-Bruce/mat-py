@@ -1,0 +1,32 @@
+{
+  "case": "case04_lmbd3_scuc",
+  "problem": "scuc",
+  "source": "pglib_opf_case3_lmbd",
+  "T": 12,
+  "load_mult": [
+    0.72,
+    0.85,
+    0.95,
+    0.99,
+    1.0,
+    1.02,
+    1.05,
+    1.04,
+    1.02,
+    1.0,
+    1.03,
+    1.08
+  ],
+  "load_scale": 0.7,
+  "contingencies": [],
+  "mip_gap": 0.0001,
+  "time_limit": 120,
+  "seed": 1,
+  "threads": 1,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 3,
+  "notes": [
+    "3-bus: Nc=0, Pmin frac 0.05, all u0=1"
+  ]
+}

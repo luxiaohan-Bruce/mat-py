@@ -1,0 +1,33 @@
+{
+  "case": "case04_lmbd3_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case3_lmbd",
+  "switchable_idx": [
+    2
+  ],
+  "max_open": 2,
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.1,
+  "rate_scale_on_switchable": 0.8,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 3,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case3_lmbd (3 buses).",
+    "Auto-built DC-OTS; size_bucket=S solve_tier=full.",
+    "Load scale Pd/Qd *= 1.1.",
+    "Switchable rate scale *= 0.8.",
+    "max_open=2, n_switchable=1.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "Switchable ranked by |f|/rateA under closed DCOPF.",
+    "Skip branch id=1: opening would risk disconnect with set.",
+    "Skip branch id=3: opening would risk disconnect with set.",
+    "Selected 1 switchable lines (wanted 12).",
+    "id=2 3-2: rateA 50.000->40.000"
+  ]
+}

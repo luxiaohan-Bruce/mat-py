@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "case": "case18_ieee300_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case300_ieee",
+  "switchable_idx": [
+    178,
+    112,
+    289,
+    251,
+    151,
+    12,
+    11,
+    247,
+    291,
+    14,
+    13,
+    172
+  ],
+  "max_open": 2,
+  "contingencies": [
+    178,
+    112,
+    289,
+    251,
+    151,
+    12,
+    11,
+    247
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 0.0001,
+  "time_limit": 600.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.02,
+  "rate_scale_on_switchable": 0.9,
+  "size_bucket": "M",
+  "solve_tier": "full",
+  "n_bus": 300,
+  "notes": [
+    "Source: pglib_opf_case300_ieee (300 buses).",
+    "Auto SC-OTS; bucket=M tier=full.",
+    "load_scale=1.02, rate_scale_on_switchable=0.9.",
+    "max_open=2, redispatch_frac=0.2.",
+    "Contingencies: 8 (wanted 8).",
+    "Switchable: 12 (wanted 12)."
+  ]
+}

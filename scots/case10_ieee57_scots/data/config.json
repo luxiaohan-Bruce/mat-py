@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "case": "case10_ieee57_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case57_ieee",
+  "switchable_idx": [
+    74,
+    56,
+    77,
+    38,
+    34,
+    11,
+    69,
+    70,
+    64,
+    67
+  ],
+  "max_open": 2,
+  "contingencies": [
+    44,
+    29,
+    74,
+    43,
+    30,
+    75,
+    56,
+    55,
+    77,
+    38
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 1e-05,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.05,
+  "rate_scale_on_switchable": 0.85,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 57,
+  "notes": [
+    "Source: pglib_opf_case57_ieee (57 buses).",
+    "Auto SC-OTS; bucket=S tier=full.",
+    "load_scale=1.05, rate_scale_on_switchable=0.85.",
+    "max_open=2, redispatch_frac=0.2.",
+    "Contingencies: 10 (wanted 10).",
+    "Switchable: 10 (wanted 10)."
+  ]
+}

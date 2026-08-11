@@ -1,0 +1,39 @@
+{
+  "case": "case62_goc19402_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case19402_goc",
+  "switchable_idx": [
+    5288,
+    5289,
+    10899,
+    10900,
+    79,
+    86,
+    89,
+    92,
+    93,
+    94
+  ],
+  "max_open": 1,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 19402,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case19402_goc (19402 buses).",
+    "Auto-built DC-OTS; size_bucket=XL solve_tier=skip.",
+    "Load scale Pd/Qd *= 1.0.",
+    "Switchable rate scale *= 1.0.",
+    "max_open=1, n_switchable=10.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "No DCOPF probe (size/tier); ranking by inverse rateA.",
+    "Selected 10 switchable lines (wanted 10)."
+  ]
+}

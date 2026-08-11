@@ -1,0 +1,35 @@
+{
+  "case": "case07_ieee30_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case30_ieee",
+  "switchable_idx": [
+    1,
+    18,
+    5,
+    27,
+    7,
+    6,
+    25,
+    17,
+    28,
+    38,
+    10
+  ],
+  "max_open": 2,
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 0.95,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 30,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Switchable ranked by |f|/rateA under closed DCOPF.",
+    "Selected 11 switchable lines (wanted 11).",
+    "Retuned: load_scale=0.95, rate_scale=1.0 after INFEASIBLE."
+  ]
+}

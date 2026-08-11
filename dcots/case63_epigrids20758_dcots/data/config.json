@@ -1,0 +1,41 @@
+{
+  "case": "case63_epigrids20758_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case20758_epigrids",
+  "switchable_idx": [
+    587,
+    838,
+    849,
+    850,
+    864,
+    1069,
+    1070,
+    1072,
+    1073,
+    1083
+  ],
+  "max_open": 1,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 20758,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case20758_epigrids (20758 buses).",
+    "Auto-built DC-OTS; size_bucket=XL solve_tier=skip.",
+    "Load scale Pd/Qd *= 1.0.",
+    "Switchable rate scale *= 1.0.",
+    "max_open=1, n_switchable=10.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "No DCOPF probe (size/tier); ranking by inverse rateA.",
+    "Skip branch id=863: opening would risk disconnect with set.",
+    "Skip branch id=865: opening would risk disconnect with set.",
+    "Selected 10 switchable lines (wanted 10)."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case": "case43_goc4020_dcots",
+  "problem": "dcots",
+  "source": "pglib_opf_case4020_goc",
+  "switchable_idx": [
+    155,
+    156,
+    157,
+    200,
+    201,
+    202,
+    207,
+    209,
+    210,
+    219
+  ],
+  "max_open": 1,
+  "mip_gap": 0.001,
+  "time_limit": 60.0,
+  "seed": 1,
+  "threads": 1,
+  "bigM_policy": "indicator constraints (see model)",
+  "load_scale": 1.0,
+  "rate_scale_on_switchable": 1.0,
+  "size_bucket": "XL",
+  "solve_tier": "skip",
+  "n_bus": 4020,
+  "selection": "top_util_dcopf_or_invrate",
+  "notes": [
+    "Source: pglib_opf_case4020_goc (4020 buses).",
+    "Auto-built DC-OTS; size_bucket=XL solve_tier=skip.",
+    "Load scale Pd/Qd *= 1.0.",
+    "Switchable rate scale *= 1.0.",
+    "max_open=1, n_switchable=10.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "No DCOPF probe (size/tier); ranking by inverse rateA.",
+    "Skip branch id=158: opening would risk disconnect with set.",
+    "Skip branch id=203: opening would risk disconnect with set.",
+    "Skip branch id=211: opening would risk disconnect with set.",
+    "Selected 10 switchable lines (wanted 10)."
+  ]
+}

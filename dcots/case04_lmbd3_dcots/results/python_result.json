@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "case": "case04_lmbd3_dcots",
+  "solver": "python-gurobipy",
+  "problem": "dcots",
+  "network_name": "case04_lmbd3_dcots",
+  "dcopf": {
+    "status": "OPTIMAL",
+    "obj": 7324.502458144416,
+    "obj_bound": 7324.502447452235,
+    "mip_gap": 0.0,
+    "runtime": 0.002766847610473633,
+    "opened_lines": [],
+    "z": {},
+    "Pg_MW": [
+      196.6000003775981,
+      149.89999962240196,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      -5.723848490870935,
+      -22.91258228046315
+    ],
+    "flow_MW": [
+      64.50000014970851,
+      -39.9999998502915,
+      11.100000227889602
+    ],
+    "force_all_closed": true,
+    "has_quad": true,
+    "n_binary": 0,
+    "max_open": 0,
+    "ref_bus": 1,
+    "baseMVA": 100.0,
+    "problem": "dcopf"
+  },
+  "ots": {
+    "status": "OPTIMAL",
+    "obj": 7324.502450002219,
+    "obj_bound": 7324.502450002219,
+    "mip_gap": 0.0,
+    "runtime": 0.003214120864868164,
+    "opened_lines": [],
+    "z": {
+      "2": 1.0
+    },
+    "Pg_MW": [
+      196.6000000001028,
+      149.8999999998973,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      -5.7238483733889085,
+      -22.9125822272961
+    ],
+    "flow_MW": [
+      64.50000000004077,
+      -40.0,
+      11.100000000062026
+    ],
+    "force_all_closed": false,
+    "has_quad": true,
+    "n_binary": 1,
+    "max_open": 2,
+    "ref_bus": 1,
+    "baseMVA": 100.0,
+    "problem": "dcots"
+  },
+  "savings": 8.142196747940034e-06,
+  "switchable_idx": [
+    2
+  ],
+  "max_open": 2,
+  "notes": [
+    "Source: pglib_opf_case3_lmbd (3 buses).",
+    "Auto-built DC-OTS; size_bucket=S solve_tier=full.",
+    "Load scale Pd/Qd *= 1.1.",
+    "Switchable rate scale *= 0.8.",
+    "max_open=2, n_switchable=1.",
+    "Transformers and radial stubs excluded from switchable when possible.",
+    "Switchable ranked by |f|/rateA under closed DCOPF.",
+    "Skip branch id=1: opening would risk disconnect with set.",
+    "Skip branch id=3: opening would risk disconnect with set.",
+    "Selected 1 switchable lines (wanted 12).",
+    "id=2 3-2: rateA 50.000->40.000"
+  ],
+  "formulation": {
+    "branch_physics": "f = b*(theta_f - theta_t - phi), b=1/(x*tap), tap=1 if ratio==0",
+    "switching": "gurobi_indicators",
+    "angle_limits": "conditional_matpower",
+    "connectivity": "signed_single_commodity_all_states",
+    "cost": "online_generators_only",
+    "load_shedding": false,
+    "scots_rates": {
+      "base": "rateA",
+      "contingency": "rateC"
+    },
+    "redispatch_frac": null,
+    "contingency_solution_selection": null
+  },
+  "validation": {
+    "dcopf": {
+      "state": "dcopf",
+      "passed": true,
+      "connected_all_states": true,
+      "valid_shapes": true,
+      "tolerances": {
+        "power_balance_mw": 0.0001,
+        "flow_equation_mw": 0.0001,
+        "open_flow_mw": 0.0001,
+        "thermal_mw": 0.0001,
+        "generator_bound_mw": 0.0001,
+        "redispatch_mw": 0.0001,
+        "angle_rad": 1e-07,
+        "integrality": 1e-06
+      },
+      "max_power_balance_mw": 4.973799150320701e-14,
+      "max_flow_equation_mw": 1.4210854715202004e-14,
+      "max_open_flow_mw": 0.0,
+      "max_thermal_violation_mw": 0.0,
+      "max_generator_bound_violation_mw": 0.0,
+      "max_angle_violation_rad": 0.0,
+      "max_redispatch_violation_mw": 0.0,
+      "max_integrality_violation": 0.0,
+      "base": {
+        "valid_shape": true,
+        "outaged_branch": null,
+        "connected": true,
+        "max_power_balance_mw": 4.973799150320701e-14,
+        "max_flow_equation_mw": 1.4210854715202004e-14,
+        "max_open_flow_mw": 0.0,
+        "max_thermal_violation_mw": 0.0,
+        "max_generator_bound_violation_mw": 0.0,
+        "max_angle_violation_rad": 0.0,
+        "max_redispatch_violation_mw": 0.0,
+        "max_utilization": 0.9999999962572875,
+        "max_dispatch_change_mw": 0.0
+      },
+      "scenarios": []
+    },
+    "ots": {
+      "state": "dcots",
+      "passed": true,
+      "connected_all_states": true,
+      "valid_shapes": true,
+      "tolerances": {
+        "power_balance_mw": 0.0001,
+        "flow_equation_mw": 0.0001,
+        "open_flow_mw": 0.0001,
+        "thermal_mw": 0.0001,
+        "generator_bound_mw": 0.0001,
+        "redispatch_mw": 0.0001,
+        "angle_rad": 1e-07,
+        "integrality": 1e-06
+      },
+      "max_power_balance_mw": 4.0756731323199347e-11,
+      "max_flow_equation_mw": 4.0735415041126544e-11,
+      "max_open_flow_mw": 0.0,
+      "max_thermal_violation_mw": 0.0,
+      "max_generator_bound_violation_mw": 0.0,
+      "max_angle_violation_rad": 0.0,
+      "max_redispatch_violation_mw": 0.0,
+      "max_integrality_violation": 0.0,
+      "base": {
+        "valid_shape": true,
+        "outaged_branch": null,
+        "connected": true,
+        "max_power_balance_mw": 4.0756731323199347e-11,
+        "max_flow_equation_mw": 4.0735415041126544e-11,
+        "max_open_flow_mw": 0.0,
+        "max_thermal_violation_mw": 0.0,
+        "max_generator_bound_violation_mw": 0.0,
+        "max_angle_violation_rad": 0.0,
+        "max_redispatch_violation_mw": 0.0,
+        "max_utilization": 1.0,
+        "max_dispatch_change_mw": 0.0
+      },
+      "scenarios": []
+    }
+  }
+}

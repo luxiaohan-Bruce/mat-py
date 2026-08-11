@@ -1,0 +1,45 @@
+{
+  "case": "case16_activ200_scuc",
+  "problem": "scuc",
+  "source": "pglib_opf_case200_activ",
+  "T": 12,
+  "load_mult": [
+    0.72,
+    0.85,
+    0.95,
+    0.99,
+    1.0,
+    1.02,
+    1.05,
+    1.04,
+    1.02,
+    1.0,
+    1.03,
+    1.08
+  ],
+  "load_scale": 0.72,
+  "contingencies": [
+    241,
+    238,
+    237,
+    235,
+    234,
+    233
+  ],
+  "emergency_rate_factor": 1.0,
+  "mip_gap": 0.0001,
+  "time_limit": 600.0,
+  "seed": 1,
+  "threads": 1,
+  "size_bucket": "M",
+  "solve_tier": "full",
+  "n_bus": 200,
+  "notes": [
+    "Source: pglib_opf_case200_activ (200 buses).",
+    "Preventive DC-SCUC T=12 Nc=6 \u03bb=0.72.",
+    "bucket=M tier=full.",
+    "Active gens=49; Pd0=1475.7 MW.",
+    "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
+    "Contingencies: [241, 238, 237, 235, 234, 233]"
+  ]
+}

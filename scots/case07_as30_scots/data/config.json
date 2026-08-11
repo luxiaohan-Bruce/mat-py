@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "case": "case07_as30_scots",
+  "problem": "scots",
+  "source": "pglib_opf_case30_as",
+  "switchable_idx": [
+    31,
+    21,
+    20,
+    41,
+    40,
+    29,
+    28,
+    27,
+    26,
+    19
+  ],
+  "max_open": 2,
+  "contingencies": [
+    39,
+    38,
+    37,
+    35,
+    33,
+    32,
+    31,
+    30,
+    23,
+    22
+  ],
+  "redispatch_frac": 0.2,
+  "load_shedding": false,
+  "canonicalize_contingencies": false,
+  "mip_gap": 1e-05,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "load_scale": 1.05,
+  "rate_scale_on_switchable": 0.85,
+  "size_bucket": "S",
+  "solve_tier": "full",
+  "n_bus": 30,
+  "notes": [
+    "Source: pglib_opf_case30_as (30 buses).",
+    "Auto SC-OTS; bucket=S tier=full.",
+    "load_scale=1.05, rate_scale_on_switchable=0.85.",
+    "max_open=2, redispatch_frac=0.2.",
+    "Contingencies: 10 (wanted 10).",
+    "Switchable: 10 (wanted 10)."
+  ]
+}
