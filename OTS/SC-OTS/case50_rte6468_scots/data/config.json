@@ -36,5 +36,30 @@
     "Contingencies: 3 (wanted 3).",
     "Switchable: 5 (wanted 5).",
     "Connectivity multi-check skipped (n_bus=6468>600)."
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case6468_rte",
+  "features": {
+    "n_bus": 6468,
+    "n_branch": 9000,
+    "n_gen": 1295,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 3,
+    "n_scenario": 1,
+    "n_switchable": 5,
+    "max_open": 1,
+    "k": null,
+    "n_bin": 5,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

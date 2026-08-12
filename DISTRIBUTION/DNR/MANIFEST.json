@@ -46,5 +46,12 @@
     "folder": "1-complete_data-mixed-all-2-sw",
     "mode": "meta",
     "solve_tier": "skip"
+  },
+  {
+    "case": "case01_gso_rural_dnr",
+    "folder": "GSO-rural-base_peak-rhs1_1247--rdt137",
+    "mode": "smartds_dnr",
+    "T": 1,
+    "solve_tier": "full"
   }
 ]

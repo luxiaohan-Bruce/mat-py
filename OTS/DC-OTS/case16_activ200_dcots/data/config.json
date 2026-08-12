@@ -78,5 +78,30 @@
     "id=217 194-150: rateA 221.100->187.935",
     "id=228 163-179: rateA 221.100->187.935",
     "id=235 174-188: rateA 221.100->187.935"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case200_activ",
+  "features": {
+    "n_bus": 200,
+    "n_branch": 245,
+    "n_gen": 49,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 25,
+    "max_open": 3,
+    "k": null,
+    "n_bin": 25,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

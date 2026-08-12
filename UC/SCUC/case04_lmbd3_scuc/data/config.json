@@ -28,5 +28,30 @@
   "n_bus": 3,
   "notes": [
     "3-bus: Nc=0, Pmin frac 0.05, all u0=1"
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case3_lmbd",
+  "features": {
+    "n_bus": 3,
+    "n_branch": 3,
+    "n_gen": 3,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 12,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 36,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

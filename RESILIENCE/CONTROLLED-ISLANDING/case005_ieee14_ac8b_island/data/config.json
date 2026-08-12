@@ -12,7 +12,7 @@
   },
   "source": {
     "dataset": "ANDES",
-    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/ieee14/ieee14_ac8b.xlsx",
+    "relative_path": "数据集/ANDES Test Cases/andes-2.0.0/andes/cases/ieee14/ieee14_ac8b.xlsx",
     "sha256": "dc551c515b0c681826a588f3ac860910830d60533f5648f115e4044e9a512bf2"
   },
   "construction": {
@@ -49,5 +49,22 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 120
+  "time_limit": 120,
+  "source_network": "andes:ieee14_ac8b",
+  "features": {
+    "n_bus": 14,
+    "n_branch": 20,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 14,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

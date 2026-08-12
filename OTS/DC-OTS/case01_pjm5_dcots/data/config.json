@@ -41,5 +41,31 @@
     "Congestion design: tighten branch 4-5 rateA 240->150 MW to create binding thermal limit.",
     "max_open=2 allows economically motivated topology changes.",
     "Modified branch id=6 4-5 rateA: 240.0 -> 150.0 MW"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case5_pjm",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 6,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 6,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 6,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  },
+  "solve_tier": "full"
 }

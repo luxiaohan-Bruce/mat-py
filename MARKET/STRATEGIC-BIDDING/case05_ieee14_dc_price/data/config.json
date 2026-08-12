@@ -56,5 +56,22 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 120.0
+  "time_limit": 120.0,
+  "source_network": "pglib-opf:case004_ieee14_dc_ed",
+  "features": {
+    "n_bus": 14,
+    "n_branch": 20,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 8,
+    "math_class": "bilevel",
+    "solver_family": "bilevel"
+  }
 }

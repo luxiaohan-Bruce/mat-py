@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "case": "case017_case57_ieee_dmg_mld",
+  "base_problem": "maximum_load_delivery",
+  "problem": "mld",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "mixed",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case57_ieee.m",
+    "sha256": "aa3b48f7cbaade2afd69cb3790ef72be981db8494dcef9277bee460f754bdb22"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "synthetic_damage",
+      "branches=[33, 1]",
+      "gens_0based=[4]",
+      "seed=1"
+    ]
+  },
+  "damaged_branches": [
+    33,
+    1
+  ],
+  "damaged_gens": [
+    4
+  ],
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 180
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 180,
+  "source_network": "pglib_opf_case57_ieee",
+  "features": {
+    "n_bus": 57,
+    "n_branch": 80,
+    "n_gen": 7,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 57,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
+}

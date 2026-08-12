@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case5658_epigrids.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case5658_epigrids.m",
     "sha256": "391206901084891e4f2c3df1ed2053154195258f9adc2475679adefb4261e97a"
   },
   "construction": {
@@ -33,5 +33,22 @@
   "mip_gap": 1e-06,
   "time_limit": 1.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case5658_epigrids",
+  "features": {
+    "n_bus": 5658,
+    "n_branch": 9078,
+    "n_gen": 474,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  }
 }

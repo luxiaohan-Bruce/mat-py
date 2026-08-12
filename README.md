@@ -1,8 +1,10 @@
 # 电力系统难优化算例（Python + Gurobi）
 
-基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、`solve_*.py` 入口、规模分级（`full` / `relaxed` / `skip`）。
+基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、统一 `solve.py` 入口、`evaluate()` 验收、规模分级（`full` / `relaxed` / `skip`）。
 
 目录按 **基础问题分类** 组织（PLAM：一级 = 优化在决定什么；AC/DC、N-1、多时段等进入各包 `config.variant`，不是一级目录）。
+
+机器可读索引：[`CATALOG.json`](CATALOG.json)（1156 例特征）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)。
 
 ---
 
@@ -13,14 +15,19 @@ github_cases/
   OTS/                 # 输电拓扑切换
   OPF/                 # 最优潮流（线性化安全约束）
   UC/                  # 机组组合族
-  DISTRIBUTION/        # 配网重构 / Volt-VAR / DER
-  DISPATCH/            # 经济调度 / 最大供电
+  DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting
+  DISPATCH/            # 经济调度
   MONITORING/          # PMU 布点 / 状态估计
   PLANNING/            # 输电扩展 / 容量扩展
   SCHEDULING/          # 水火调度 / 检修计划
   MARKET/              # 市场出清 / 策略报价
-  RESILIENCE/          # 恢复 / 孤岛 / 主动停电 / 拦截
+  RESILIENCE/          # 切负荷 / 恢复 / 孤岛 / 主动停电 / 拦截
   MULTI-ENERGY/        # 电–气综合
+  framework/           # 统一入口、特征、evaluate、目录生成
+  CATALOG.json
+  NETWORK_INDEX.json
+  solve.py             # python3 solve.py <case_dir>
+  evaluate.py          # python3 evaluate.py <case_dir>
   README.md
   requirements.txt
 ```
@@ -34,10 +41,10 @@ github_cases/
 | [`UC/`](UC/) | [`SYSTEM-UC/`](UC/SYSTEM-UC/) | 系统级 UC（无网架） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
 | | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 66 | PGLib-OPF 合成时序 |
 | | [`RTS-SCUC/`](UC/RTS-SCUC/) | RTS 网络 SCUC+储能+RE | 12 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) |
-| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | 配网重构 LinDistFlow | 7 | [SimBench](https://simbench.de/) |
-| | [`SMART-DS/`](DISTRIBUTION/SMART-DS/) | DNR / Volt-VAR / DER hosting | 3 | [SMART-DS](https://data.openei.org/submissions/2981) |
+| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | 配网重构 LinDistFlow | 8 | [SimBench](https://simbench.de/) + [SMART-DS](https://data.openei.org/submissions/2981) |
+| | [`VOLT-VAR/`](DISTRIBUTION/VOLT-VAR/) | Volt/VAR | 1 | SMART-DS |
+| | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | DER hosting capacity | 1 | SMART-DS |
 | [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | 网络化 DC 经济调度 | 71 | PGLib-OPF |
-| | [`MAXIMUM-LOAD-DELIVERY/`](DISPATCH/MAXIMUM-LOAD-DELIVERY/) | 最大供电 / 切负荷 | 18 | PowerModelsRestoration + PGLib |
 | [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 66 | PGLib-OPF |
 | | [`STATE-ESTIMATION/`](MONITORING/STATE-ESTIMATION/) | DC WLS / L1 状态估计 | 12 | PGLib + 合成测量 |
 | [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 68 | PowerModels TNEP + PGLib |
@@ -46,7 +53,8 @@ github_cases/
 | | [`MAINTENANCE-SCHEDULING/`](SCHEDULING/MAINTENANCE-SCHEDULING/) | 机组检修计划 | 5 | RTS-GMLC / PGLib-UC |
 | [`MARKET/`](MARKET/) | [`MARKET-CLEARING/`](MARKET/MARKET-CLEARING/) | 福利最大化能量出清 | 56 | PGLib-UC |
 | | [`STRATEGIC-BIDDING/`](MARKET/STRATEGIC-BIDDING/) | 策略性报价 | 8 | Toy / PGLib |
-| [`RESILIENCE/`](RESILIENCE/) | [`POWER-RESTORATION/`](RESILIENCE/POWER-RESTORATION/) | 输电恢复 | 13 | PowerModelsRestoration + ACTIVSg200 |
+| [`RESILIENCE/`](RESILIENCE/) | [`MAXIMUM-LOAD-DELIVERY/`](RESILIENCE/MAXIMUM-LOAD-DELIVERY/) | 最大供电 / 切负荷 | 18 | PowerModelsRestoration + PGLib |
+| | [`POWER-RESTORATION/`](RESILIENCE/POWER-RESTORATION/) | 输电恢复 | 13 | PowerModelsRestoration + ACTIVSg200 |
 | | [`DISTRIBUTION-RESTORATION/`](RESILIENCE/DISTRIBUTION-RESTORATION/) | 配网服务恢复 | 4 | SimBench + SMART-DS |
 | | [`CONTROLLED-ISLANDING/`](RESILIENCE/CONTROLLED-ISLANDING/) | 主动解列 / 受控孤岛 | 82 | ANDES + PGLib |
 | | [`OPTIMAL-POWER-SHUTOFF/`](RESILIENCE/OPTIMAL-POWER-SHUTOFF/) | 最优主动停电（野火） | 35 | PowerModelsWildfire |
@@ -57,9 +65,11 @@ github_cases/
 
 > **说明**
 > - 子包目录名：**大写 + 连字符**。
-> - GO C1 原混合包已按基础问题拆开：`OPF/SC-AC-OPF`（`*_scacopf`）与 `OTS/SC-AC-OTS`（`*_scacots`），不再混放。
-> - `OPF/SC-AC-OPF`、`OTS/SC-AC-OTS`、`DISTRIBUTION/DNR`、`DISTRIBUTION/SMART-DS` 均为**线性化近似**，**不是**精确非凸 AC / 三相潮流。
-> - `UC/SYSTEM-UC` 原公开目录名为 `UC/`，迁入 `UC/` 分类后改名为 `SYSTEM-UC`，避免与分类目录重名。
+> - GO C1 已按基础问题拆开：`OPF/SC-AC-OPF` 与 `OTS/SC-AC-OTS`。
+> - SMART-DS 三个基础问题已拆开：DNR 并入 `DISTRIBUTION/DNR`，Volt-VAR / DER hosting 独立成包。
+> - 最大供电（MLD）已从 `DISPATCH/` 挪到 `RESILIENCE/`（损坏网络上的供电，不是经济调度）。
+> - `OPF/SC-AC-OPF`、`OTS/SC-AC-OTS`、配网 LinDistFlow 均为**线性化近似**，**不是**精确非凸 AC / 三相潮流。
+> - 每个案例目录都有 `solve.py`；`config.json` 含统一 `base_problem` / `variant` / `source_network` / `features`。
 
 ---
 
@@ -95,11 +105,11 @@ python3 UC/RTS-SCUC/run_all_python.py
 
 # —— 配网 ——
 python3 DISTRIBUTION/DNR/run_all_python.py
-python3 DISTRIBUTION/SMART-DS/run_all_python.py
+python3 DISTRIBUTION/VOLT-VAR/run_all_python.py
+python3 DISTRIBUTION/DER-HOSTING/run_all_python.py
 
 # —— 调度 / 监测 ——
 python3 DISPATCH/ECONOMIC-DISPATCH/run_all_python.py --full-only
-python3 DISPATCH/MAXIMUM-LOAD-DELIVERY/run_all_python.py
 python3 MONITORING/PMU-PLACEMENT/run_all_python.py
 python3 MONITORING/STATE-ESTIMATION/run_all_python.py
 
@@ -112,6 +122,7 @@ python3 MARKET/MARKET-CLEARING/run_all_python.py --full-only
 python3 MARKET/STRATEGIC-BIDDING/run_all_python.py
 
 # —— 韧性 / 综合能源 ——
+python3 RESILIENCE/MAXIMUM-LOAD-DELIVERY/run_all_python.py
 python3 RESILIENCE/POWER-RESTORATION/run_all_python.py --full-only
 python3 RESILIENCE/DISTRIBUTION-RESTORATION/run_all_python.py
 python3 RESILIENCE/CONTROLLED-ISLANDING/run_all_python.py --full-only
@@ -120,30 +131,27 @@ python3 RESILIENCE/NETWORK-INTERDICTION/run_all_python.py --full-only
 python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/run_all_python.py --full-only
 ```
 
-### 单案例示例
+### 单案例（统一入口）
+
+每个案例目录都有 `solve.py`。两条命令等价：
 
 ```bash
-python3 OTS/DC-OTS/case01_pjm5_dcots/solve_dcots.py
-python3 OTS/SC-OTS/case04_ieee24_scots/solve_scots.py
-python3 UC/SCUC/case01_ieee39_scuc/solve_scuc.py
-python3 UC/SYSTEM-UC/case01_rts_gmlc_2020_01_27_uc/python/solve_uc.py
-python3 UC/RTS-SCUC/case01_rts_gmlc_2020_01_27_rts_scuc/python/solve_rts_scuc.py
-python3 DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_dc_ed/python/solve_ed.py
-python3 DISPATCH/MAXIMUM-LOAD-DELIVERY/case001_case3_mld_mld/python/solve_mld.py
-python3 MONITORING/PMU-PLACEMENT/case001_case3_lmbd_pmu/python/solve_pmu.py
-python3 MONITORING/STATE-ESTIMATION/case001_case5_pjm_wls_se/python/solve_se.py
-python3 PLANNING/TRANSMISSION-EXPANSION/case001_case3_tnep/python/solve_tep.py
-python3 PLANNING/RESOURCE-CAPACITY-EXPANSION/case01_1_three_zones_cem/python/solve_cem.py
-python3 SCHEDULING/HYDROTHERMAL-SCHEDULING/case07_rcuc_20_10_1_w_ht/python/solve_ht.py
-python3 SCHEDULING/MAINTENANCE-SCHEDULING/case01_rts_gmlc_week168_maint/python/solve_maint.py
-python3 MARKET/MARKET-CLEARING/case01_rts_gmlc_2020_01_27_market/python/solve_market.py
-python3 MARKET/STRATEGIC-BIDDING/case01_toy3_copperplate_price/python/solve_bid.py
-python3 RESILIENCE/POWER-RESTORATION/case001_case3_restoration_total_dmg_restore/python/solve_restore.py
-python3 RESILIENCE/DISTRIBUTION-RESTORATION/case01_mv_rural_restore/python/solve_restore.py
-python3 RESILIENCE/CONTROLLED-ISLANDING/case001_pjm5bus_island/python/solve_island.py
-python3 RESILIENCE/OPTIMAL-POWER-SHUTOFF/case011_case3_rb00_ops/python/solve_ops.py
-python3 RESILIENCE/NETWORK-INTERDICTION/case001_lmbd3_nk_int/python/solve_interdiction.py
-python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_ieg.py
+python3 solve.py OTS/DC-OTS/case01_pjm5_dcots
+python3 OTS/DC-OTS/case01_pjm5_dcots/solve.py
+
+python3 solve.py DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_dc_ed
+python3 solve.py UC/SCUC/case01_ieee39_scuc
+python3 solve.py RESILIENCE/MAXIMUM-LOAD-DELIVERY/case001_case3_mld_mld
+python3 solve.py DISTRIBUTION/VOLT-VAR/case02_gso_rural_voltvar
+```
+
+```bash
+# 验收已有 results/python_result.json（不重新求解）
+python3 evaluate.py OTS/DC-OTS/case01_pjm5_dcots
+
+# 同一张网、跨问题
+python3 evaluate.py --network pglib_opf_case14_ieee
+python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 ```
 
 结果写入对应案例 `results/`。大网 `solve_tier=skip` 仅建议作数据/建模参考；请优先从 `full` / `relaxed` 开始。
@@ -159,10 +167,14 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
   MANIFEST.json        # 若有
   caseXX_*/
     data/network.json
-    data/config.json
-    solve_*.py  或  python/solve_*.py
+    data/config.json   # base_problem, variant, source_network, features
+    python/solve_*.py  # 包内求解器
+    solve.py           # 统一入口（转调 python/solve_*.py）
     results/
 ```
+
+`config.features` 含 `n_bus` / `n_branch` / `n_gen` / `T` / `n_contingency` / `n_bin`。  
+`config.source_network` 把同一张物理网（如 `pglib_opf_case14_ieee`）上的 ED / OTS / UC / PMU / TEP / 拦截等串起来。
 
 ---
 
@@ -182,13 +194,13 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 | OTS | Optimal Transmission Switching | security=none / n-1 |
 | OPF | Optimal Power Flow（线性化 SC） | security=n-1；**非精确 AC** |
 | UC | Unit Commitment | copperplate / network；storage；n-1 |
-| DISTRIBUTION | DNR / Volt-VAR / DER Hosting | power_flow=lindistflow |
-| DISPATCH | Economic Dispatch；Maximum Load Delivery | power_flow=dc |
+| DISTRIBUTION | DNR；Volt/VAR；DER Hosting | power_flow=lindistflow |
+| DISPATCH | Economic Dispatch | power_flow=dc |
 | MONITORING | PMU Placement；State Estimation | WLS / L1 |
 | PLANNING | Transmission Expansion；Capacity Expansion | synthetic candidates / GenX |
 | SCHEDULING | Hydrothermal；Maintenance | multi_period；stochastic scenarios |
 | MARKET | Market Clearing；Strategic Bidding | welfare LP；bid ladder |
-| RESILIENCE | Restoration；Islanding；OPS；Interdiction | multi_period；risk budget；N-k |
+| RESILIENCE | MLD；Restoration；Islanding；OPS；Interdiction | 损坏网络；时序恢复；N-k |
 | MULTI-ENERGY | Integrated Electricity–Gas | Weymouth PWL；coupling |
 
 ---
@@ -216,7 +228,6 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 ### DISPATCH / MONITORING
 
 - **ED**：\(\min\sum c_2P^2+c_1P+c_0\)，DC 潮流，无启停
-- **MLD**：\(\max\sum w_i P_{d,i}x_i\)，损坏元件离线
 - **PMU**：0-1 可观测覆盖
 - **SE**：合成测量下 WLS / L1
 
@@ -231,6 +242,7 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 
 ### RESILIENCE / MULTI-ENERGY
 
+- **MLD**：\(\max\sum w_i P_{d,i}x_i\)，损坏元件离线（静态，不是恢复时序）
 - **Restoration**：带电单调、修复/启动顺序
 - **Islanding**：岛归属、相干组、岛内连通
 - **OPS**：风险预算与切负荷权衡（原生火险字段）
@@ -248,10 +260,10 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 | `UC/SYSTEM-UC` | 56/56 PASS |
 | `UC/RTS-SCUC` | 12/12 PASS |
 | `OPF/SC-AC-OPF` + `OTS/SC-AC-OTS` | 各 158 例；可解档约 26+26（原 52 对半），其余 skip |
-| `DISTRIBUTION/DNR` | 6 求解 + 1 meta |
-| `DISTRIBUTION/SMART-DS` | 3/3 PASS |
+| `DISTRIBUTION/DNR` | 7 求解（含 SMART-DS DNR）+ 1 meta |
+| `DISTRIBUTION/VOLT-VAR` / `DER-HOSTING` | 各 1 例 PASS |
 | `DISPATCH/ECONOMIC-DISPATCH` | 71/71 双端 PASS |
-| `DISPATCH/MAXIMUM-LOAD-DELIVERY` | 18/18 PASS |
+| `RESILIENCE/MAXIMUM-LOAD-DELIVERY` | 18/18 PASS |
 | `MONITORING/PMU-PLACEMENT` | 66/66 PASS |
 | `MONITORING/STATE-ESTIMATION` | 12/12 PASS |
 | `PLANNING/*` | TEP 68、CEM 10 PASS |

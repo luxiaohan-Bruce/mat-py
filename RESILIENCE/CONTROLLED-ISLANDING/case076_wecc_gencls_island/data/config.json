@@ -12,7 +12,7 @@
   },
   "source": {
     "dataset": "ANDES",
-    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/wecc/wecc_gencls.xlsx",
+    "relative_path": "数据集/ANDES Test Cases/andes-2.0.0/andes/cases/wecc/wecc_gencls.xlsx",
     "sha256": "fcf16bcdc30b55d832e31fb801c75a7614cc1876e645cc311209ca451fc786eb"
   },
   "construction": {
@@ -75,5 +75,22 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 300
+  "time_limit": 300,
+  "source_network": "andes:wecc_gencls",
+  "features": {
+    "n_bus": 179,
+    "n_branch": 263,
+    "n_gen": 29,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 179,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

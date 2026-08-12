@@ -17,5 +17,30 @@
     "LinDistFlow radial DNR / multiperiod DOPF (linear approx).",
     "Switchable = Switch.csv edges (+ subset of lines if needed).",
     "ESS only in dnr_ess variants."
-  ]
+  ],
+  "base_problem": "dnr",
+  "variant": {
+    "power_flow": "lindistflow",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "simbench:1-LV-rural2--0-sw",
+  "features": {
+    "n_bus": 289,
+    "n_branch": 287,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 287,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

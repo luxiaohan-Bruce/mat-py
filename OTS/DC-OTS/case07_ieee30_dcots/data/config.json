@@ -31,5 +31,30 @@
     "Switchable ranked by |f|/rateA under closed DCOPF.",
     "Selected 11 switchable lines (wanted 11).",
     "Retuned: load_scale=0.95, rate_scale=1.0 after INFEASIBLE."
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case30_ieee",
+  "features": {
+    "n_bus": 30,
+    "n_branch": 41,
+    "n_gen": 6,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 11,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 11,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

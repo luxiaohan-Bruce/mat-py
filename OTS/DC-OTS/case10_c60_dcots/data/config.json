@@ -84,5 +84,30 @@
     "id=48 36-37: rateA 700.000->560.000",
     "id=52 17-18: rateA 700.000->560.000",
     "id=56 12-13: rateA 700.000->560.000"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case60_c",
+  "features": {
+    "n_bus": 60,
+    "n_branch": 88,
+    "n_gen": 23,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 20,
+    "max_open": 3,
+    "k": null,
+    "n_bin": 20,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

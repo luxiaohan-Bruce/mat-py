@@ -15,7 +15,7 @@
   "source": {
     "dataset": "PGLib-UC",
     "group": "ca",
-    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/ca/2014-12-01_reserves_3.json",
+    "relative_path": "数据集/pglib-uc-master/ca/2014-12-01_reserves_3.json",
     "sha256": "24ba6b81cd994e421578a441ddc62b19e4d9593bf24dbae0e03fa4f6ed104520"
   },
   "construction": {
@@ -40,5 +40,22 @@
   "time_limit": 120.0,
   "seed": 1,
   "threads": 1,
-  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices."
+  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices.",
+  "source_network": "pglib_uc:ca:2014-12-01_reserves_3",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 48,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch"
+  }
 }

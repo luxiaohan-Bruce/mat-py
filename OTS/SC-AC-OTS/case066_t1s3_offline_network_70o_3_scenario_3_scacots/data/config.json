@@ -4,7 +4,7 @@
   "problem": "linearized_scacots",
   "source": {
     "dataset": "GO Competition Challenge 1",
-    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_70O-3/scenario_3/case.raw"
+    "raw": "数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_70O-3/scenario_3/case.raw"
   },
   "enable_ots": true,
   "switchable_branches": [
@@ -29,5 +29,30 @@
     "Contingencies subsampled from case.con (branch+gen).",
     "OTS candidates = top rateA lines; max_open=2.",
     "nB=2312, nG=201, nL=3013, Nc=3, tier=skip"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "linearized_sc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "go_c1:Network_70O-3",
+  "features": {
+    "n_bus": 2312,
+    "n_branch": 3013,
+    "n_gen": 444,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 3,
+    "n_scenario": 1,
+    "n_switchable": 8,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 8,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

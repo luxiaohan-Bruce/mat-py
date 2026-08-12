@@ -5,11 +5,12 @@
   "problem": "ieg",
   "variant": {
     "power_flow": "dc",
-    "gas_model": "pwl",
-    "weymouth": "pwl_sos2",
     "security": "none",
     "uncertainty": "deterministic",
     "horizon": "single_period",
+    "recourse": "none",
+    "gas_model": "pwl",
+    "weymouth": "pwl_sos2",
     "coupling": "synthetic_coupling"
   },
   "source": {
@@ -45,5 +46,22 @@
   "seed": 1,
   "threads": 1,
   "weymouth_pwl_segments": 8,
-  "gas_model": "pwl"
+  "gas_model": "pwl",
+  "source_network": "gaslib:GasLib-39-v1-20231119:pglib_opf_case39_epri",
+  "features": {
+    "n_bus": 39,
+    "n_branch": 46,
+    "n_gen": 10,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 224,
+    "math_class": "milp",
+    "solver_family": "coupled"
+  }
 }

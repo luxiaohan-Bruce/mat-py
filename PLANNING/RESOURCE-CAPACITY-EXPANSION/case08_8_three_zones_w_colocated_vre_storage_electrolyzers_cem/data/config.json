@@ -14,7 +14,7 @@
   "source": {
     "dataset": "GenX Example Systems",
     "system": "8_three_zones_w_colocated_VRE_storage_electrolyzers",
-    "relative_path": "\u6570\u636e\u96c6/GenX Example Systems/upstream/GenX.jl-0.4.5/example_systems/8_three_zones_w_colocated_VRE_storage_electrolyzers",
+    "relative_path": "数据集/GenX Example Systems/upstream/GenX.jl-0.4.5/example_systems/8_three_zones_w_colocated_VRE_storage_electrolyzers",
     "sha256": "1a2ad60df32d3c015013647643b78c4faa6f45e7a9f08b688edfa527b7b96051"
   },
   "construction": {
@@ -53,5 +53,22 @@
   "mip_gap": 1e-06,
   "time_limit": 300.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "genx:8_three_zones_w_colocated_VRE_storage_electrolyzers",
+  "features": {
+    "n_bus": 3,
+    "n_branch": 2,
+    "n_gen": 16,
+    "n_storage": 6,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch"
+  }
 }

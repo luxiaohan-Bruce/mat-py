@@ -55,5 +55,30 @@
     "id=1838 1198-1159: rateA 56.960->51.264",
     "id=1910 1275-1312: rateA 1151.330->1036.197",
     "id=2002 1397-1462: rateA 246.220->221.598"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case2000_goc",
+  "features": {
+    "n_bus": 2000,
+    "n_branch": 3639,
+    "n_gen": 384,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 15,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 15,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

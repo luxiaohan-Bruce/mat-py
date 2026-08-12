@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "CommaLAB RCUC HT-Ramp",
-    "relative_path": "\u6570\u636e\u96c6/CommaLAB Hydrothermal UC/RCUC/HT-Ramp/20_10_2_w.mod",
+    "relative_path": "数据集/CommaLAB Hydrothermal UC/RCUC/HT-Ramp/20_10_2_w.mod",
     "sha256": "7921c31c91e07135a5c7f768943eeda77de4dcc03006bf8c0ee69490873a4926"
   },
   "construction": {
@@ -35,5 +35,22 @@
   "mip_gap": 0.001,
   "time_limit": 180.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "commalab:20_10_2_w.mod",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 20,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 480,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

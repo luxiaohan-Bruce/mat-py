@@ -5,5 +5,30 @@
   "source": {
     "dataset": "SimBench",
     "folder": "1-complete_data-mixed-all-2-sw"
+  },
+  "base_problem": "dnr",
+  "variant": {
+    "power_flow": "lindistflow",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "simbench:1-complete_data-mixed-all-2-sw",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "none",
+    "solver_family": "none"
   }
 }

@@ -6,12 +6,15 @@
   "se_method": "l1",
   "variant": {
     "power_flow": "dc",
-    "estimator": "l1",
-    "horizon": "single_period"
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "estimator": "l1"
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case57_ieee.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case57_ieee.m",
     "sha256": "aa3b48f7cbaade2afd69cb3790ef72be981db8494dcef9277bee460f754bdb22"
   },
   "construction": {
@@ -1205,5 +1208,22 @@
   "seed": 1,
   "threads": 1,
   "time_limit": 120,
-  "mip_gap": 1e-06
+  "mip_gap": 1e-06,
+  "source_network": "pglib_opf_case57_ieee",
+  "features": {
+    "n_bus": 57,
+    "n_branch": 80,
+    "n_gen": 7,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch"
+  }
 }

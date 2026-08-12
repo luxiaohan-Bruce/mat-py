@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PowerModels.jl TNEP test data",
-    "relative_path": "\u6570\u636e\u96c6/PowerModels TNEP/upstream/PowerModels.jl-0.21.6/test/data/matpower/case5_tnep.m",
+    "relative_path": "数据集/PowerModels TNEP/upstream/PowerModels.jl-0.21.6/test/data/matpower/case5_tnep.m",
     "sha256": "512fe6ef1655e771ccdcb48fff9b9bdce5feec4565ccd3a91a727549fbf4de97"
   },
   "construction": {
@@ -34,5 +34,22 @@
   "mip_gap": 1e-06,
   "time_limit": 180.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "powermodels.jl_tnep_test_data:case5_tnep",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 4,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 3,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 3,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

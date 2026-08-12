@@ -36,10 +36,35 @@
   "n_bus": 197,
   "notes": [
     "Source: pglib_opf_case197_snem (197 buses).",
-    "Preventive DC-SCUC T=12 Nc=6 \u03bb=0.72.",
+    "Preventive DC-SCUC T=12 Nc=6 λ=0.72.",
     "bucket=M tier=full.",
     "Active gens=35; Pd0=1474.1 MW.",
     "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
     "Contingencies: [119, 118, 69, 68, 14, 12]"
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case197_snem",
+  "features": {
+    "n_bus": 197,
+    "n_branch": 286,
+    "n_gen": 35,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 12,
+    "n_contingency": 6,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 420,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "case": "case011_case5_restoration_shunt_mld",
+  "base_problem": "maximum_load_delivery",
+  "problem": "mld",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "mixed",
+    "relative_path": "数据集/PowerModelsRestoration/upstream/PowerModelsRestoration.jl-0.9.0/test/data/case5_restoration_shunt.m",
+    "sha256": "fb9e9790ea1bf916358a07135f5772f8fa98d031786d4f62a6f3d69e64c60a51"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_powermodels_restoration",
+      "dc_mld_ignore_storage_q",
+      "synthetic_damage",
+      "branches=[2]",
+      "gens_0based=[4]",
+      "seed=1"
+    ]
+  },
+  "damaged_branches": [
+    2
+  ],
+  "damaged_gens": [
+    4
+  ],
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 180
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 180,
+  "source_network": "restoration:case5_restoration_shunt",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 7,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 5,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "case": "case02_gso_rural_voltvar",
+    "mode": "voltvar",
+    "solve_tier": "full"
+  }
+]

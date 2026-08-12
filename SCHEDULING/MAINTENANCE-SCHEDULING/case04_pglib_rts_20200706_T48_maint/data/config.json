@@ -5,7 +5,7 @@
   "base_problem": "maintenance_scheduling",
   "source": {
     "dataset": "PGLib-UC",
-    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-07-06.json",
+    "relative_path": "数据集/pglib-uc-master/rts_gmlc/2020-07-06.json",
     "sha256": "97a9a4d8ae7e80f6251e47550a60565bb99f0253df4a76bd58b96ede17d1cec8",
     "role": "teaching_short_horizon"
   },
@@ -24,6 +24,30 @@
     "PGLib-UC rts_gmlc 2020-07-06 truncated to T=48.",
     "Thermal PWL costs collapsed to linear c1/c0; renewables zero-cost up to max.",
     "Synthetic maintenance: top-4 thermal, D=8, crew_limit=2, seed=1.",
-    "Teaching case only \u2014 not an annual maintenance plan."
-  ]
+    "Teaching case only — not an annual maintenance plan."
+  ],
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_uc:rts_gmlc:2020-07-06",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 153,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 48,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 192,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

@@ -50,10 +50,35 @@
   "n_bus": 89,
   "notes": [
     "Source: pglib_opf_case89_pegase (89 buses).",
-    "Preventive DC-SCUC T=24 Nc=8 \u03bb=0.7.",
+    "Preventive DC-SCUC T=24 Nc=8 λ=0.7.",
     "bucket=S tier=full.",
     "Active gens=12; Pd0=5727.9 MW.",
     "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
     "Contingencies: [139, 103, 122, 119, 101, 88, 25, 125]"
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case89_pegase",
+  "features": {
+    "n_bus": 89,
+    "n_branch": 210,
+    "n_gen": 12,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 8,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 288,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

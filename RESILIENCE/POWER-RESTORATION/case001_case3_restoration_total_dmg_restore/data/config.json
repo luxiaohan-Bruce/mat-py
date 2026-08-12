@@ -12,7 +12,7 @@
   },
   "source": {
     "dataset": "mixed",
-    "relative_path": "\u6570\u636e\u96c6/PowerModelsRestoration/upstream/PowerModelsRestoration.jl-0.9.0/test/data/case3_restoration_total_dmg.m",
+    "relative_path": "数据集/PowerModelsRestoration/upstream/PowerModelsRestoration.jl-0.9.0/test/data/case3_restoration_total_dmg.m",
     "sha256": "e830599b296ee38ba4fad15a01dcaec8676098d2bea6239aa7e6cc18b0e2be20"
   },
   "construction": {
@@ -59,5 +59,22 @@
     1,
     2
   ],
-  "repairs_per_period": 2
+  "repairs_per_period": 2,
+  "source_network": "restoration:case3_restoration_total_dmg",
+  "features": {
+    "n_bus": 3,
+    "n_branch": 3,
+    "n_gen": 3,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 24,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

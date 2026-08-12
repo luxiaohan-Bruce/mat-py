@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case1951_rte.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case1951_rte.m",
     "sha256": "a8f85eee92219d87816e464f0e8259103ef41ee06f9c8b91f75707418c10e07d"
   },
   "construction": {
@@ -33,5 +33,22 @@
   "mip_gap": 1e-06,
   "time_limit": 300.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case1951_rte",
+  "features": {
+    "n_bus": 1951,
+    "n_branch": 2596,
+    "n_gen": 391,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  }
 }

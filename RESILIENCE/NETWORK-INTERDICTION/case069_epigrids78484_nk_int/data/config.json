@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case78484_epigrids.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case78484_epigrids.m",
     "sha256": "b9d8f673e4e409747f67ccb9989a38609d8327f800e8d18caf3eb4575eb3a7f2"
   },
   "construction": {
@@ -40,5 +40,22 @@
   "mip_gap": 1e-06,
   "time_limit": 1.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case78484_epigrids",
+  "features": {
+    "n_bus": 78484,
+    "n_branch": 126146,
+    "n_gen": 6873,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": 2,
+    "n_bin": 126146,
+    "math_class": "bilevel",
+    "solver_family": "bilevel"
+  }
 }

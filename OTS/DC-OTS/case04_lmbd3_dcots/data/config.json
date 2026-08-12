@@ -29,5 +29,30 @@
     "Skip branch id=3: opening would risk disconnect with set.",
     "Selected 1 switchable lines (wanted 12).",
     "id=2 3-2: rateA 50.000->40.000"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case3_lmbd",
+  "features": {
+    "n_bus": 3,
+    "n_branch": 3,
+    "n_gen": 3,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 1,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 1,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

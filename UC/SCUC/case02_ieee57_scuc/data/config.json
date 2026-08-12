@@ -50,7 +50,7 @@
   "notes": [
     "Source: pglib_opf_case57_ieee",
     "Problem: preventive DC-SCUC, T=24 h, N-1 contingencies=10",
-    "Load scale \u03bb=0.75; profile peak mult=1.1",
+    "Load scale λ=0.75; profile peak mult=1.1",
     "UC: Pmin=max(pglib,0.20Pmax) if pglib Pmin~0; RU=RD=0.5Pmax; UT/DT by size",
     "Startup=50*c1*sqrt(Pmax); shutdown=0.1*startup; c0_nl=0.5*c1*Pmin",
     "Contingencies (branch ids): [8, 7, 11, 16, 9, 12, 22, 38, 17, 5]",
@@ -59,5 +59,31 @@
     "Gen bus 3: Pmin=12.0 Pmax=60.0 UT=2 DT=2 Sup=13197.4 u0=0",
     "Gen bus 8: Pmin=231.8 Pmax=1159.0 UT=3 DT=3 Sup=51816.9 u0=1",
     "Gen bus 12: Pmin=103.8 Pmax=519.0 UT=3 DT=3 Sup=42361.2 u0=0"
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case57_ieee",
+  "features": {
+    "n_bus": 57,
+    "n_branch": 80,
+    "n_gen": 7,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 10,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 168,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  },
+  "solve_tier": "full"
 }

@@ -38,5 +38,30 @@
     "Contingencies: 6 (wanted 6).",
     "Switchable: 8 (wanted 8).",
     "Retuned load_scale=0.9 after INFEASIBLE"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case89_pegase",
+  "features": {
+    "n_bus": 89,
+    "n_branch": 210,
+    "n_gen": 12,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 6,
+    "n_scenario": 1,
+    "n_switchable": 8,
+    "max_open": 1,
+    "k": null,
+    "n_bin": 8,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

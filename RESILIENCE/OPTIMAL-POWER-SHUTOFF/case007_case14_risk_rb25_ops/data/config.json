@@ -17,7 +17,7 @@
   },
   "source": {
     "dataset": "PowerModelsWildfire",
-    "relative_path": "\u6570\u636e\u96c6/PowerModelsWildfire/PowerModelsWildfire.jl-b6ea428f61220ade7677122e5247e2ffd1d950df/test/networks/case14_risk.m",
+    "relative_path": "数据集/PowerModelsWildfire/PowerModelsWildfire.jl-b6ea428f61220ade7677122e5247e2ffd1d950df/test/networks/case14_risk.m",
     "sha256": "4cd870568cfbee311473fa01985db30eca4ec5ef078b4da5d9c425f7bf8184ec"
   },
   "construction": {
@@ -41,5 +41,22 @@
   "mip_gap": 1e-06,
   "time_limit": 120,
   "network_group": "case14_risk",
-  "require_matlab": true
+  "require_matlab": true,
+  "source_network": "wildfire:case14_risk",
+  "features": {
+    "n_bus": 14,
+    "n_branch": 20,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 20,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

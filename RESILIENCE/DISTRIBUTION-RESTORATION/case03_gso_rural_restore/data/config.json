@@ -83,5 +83,30 @@
     "Capacity-constrained transport power balance (simplified LinDistFlow).",
     "Synthetic fault locations with seed=1 (not field-recorded outages)."
   ],
-  "aggregation": "radial tree + ties on 80 buses from OpenDSS feeder"
+  "aggregation": "radial tree + ties on 80 buses from OpenDSS feeder",
+  "base_problem": "distribution_restoration",
+  "variant": {
+    "power_flow": "lindistflow",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source_network": "simbench:GSO-rural-base_peak-rhs1_1247--rdt137",
+  "features": {
+    "n_bus": 80,
+    "n_branch": 85,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 85,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

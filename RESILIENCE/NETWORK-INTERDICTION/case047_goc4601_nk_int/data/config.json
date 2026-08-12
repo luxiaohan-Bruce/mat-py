@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case4601_goc.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case4601_goc.m",
     "sha256": "ea5aa0212fc1d7312ccb44205da700d647666120c4ecbe0b33896d2c0450f91b"
   },
   "construction": {
@@ -40,5 +40,22 @@
   "mip_gap": 1e-06,
   "time_limit": 1.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case4601_goc",
+  "features": {
+    "n_bus": 4601,
+    "n_branch": 7199,
+    "n_gen": 408,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": 2,
+    "n_bin": 7199,
+    "math_class": "bilevel",
+    "solver_family": "bilevel"
+  }
 }

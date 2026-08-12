@@ -4,7 +4,7 @@
   "problem": "rts_scuc",
   "source": {
     "network": "RTS-GMLC",
-    "uc": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-05-05.json"
+    "uc": "数据集/pglib-uc-master/rts_gmlc/2020-05-05.json"
   },
   "T": 24,
   "contingencies": [
@@ -27,5 +27,31 @@
     "Horizon = first 24 periods of the 48h UC instance.",
     "Preventive DC-SCUC with system reserve, ESS, optional load shed, and non-bridge N-1 contingencies.",
     "Thermal production cost: linear envelope of PWL endpoints + startup of longest-lag category."
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive",
+    "storage": "yes"
+  },
+  "source_network": "rts_gmlc_2020-05-05",
+  "features": {
+    "n_bus": 73,
+    "n_branch": 120,
+    "n_gen": 154,
+    "n_storage": 21,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 6,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 3696,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

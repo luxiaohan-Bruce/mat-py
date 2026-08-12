@@ -15,7 +15,7 @@
     "dataset": "CommaLAB System_46buses",
     "system": "E",
     "n_scenarios": 1,
-    "relative_path": "\u6570\u636e\u96c6/CommaLAB Hydrothermal UC/System_46buses/E",
+    "relative_path": "数据集/CommaLAB Hydrothermal UC/System_46buses/E",
     "sha256_parametros": "f1e4f660f8ab1dee57f4dc5e9451968bf9bd2c7ce7fee1cd5f25cc54201947d0"
   },
   "construction": {
@@ -40,5 +40,22 @@
   "mip_gap": 0.001,
   "time_limit": 300.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "commalab:E",
+  "features": {
+    "n_bus": 46,
+    "n_branch": 95,
+    "n_gen": 7,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 48,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 336,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

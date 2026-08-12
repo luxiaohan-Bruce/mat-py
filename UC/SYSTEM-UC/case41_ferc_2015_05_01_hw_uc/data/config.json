@@ -16,5 +16,30 @@
     "All thermal, renewable, demand, reserve, initial-state, ramp, minimum up/down, startup-lag and PWL-cost data are preserved.",
     "The mathematical model follows the official PGLib-UC reference equations and uses gurobipy/Gurobi in Python.",
     "Solver tolerances follow PGLib-UC practice (MIPGap≈1%) with tiered time limits for large instances."
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_uc:ferc:2015-05-01_hw",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 979,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 48,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 46992,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

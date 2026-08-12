@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case179_goc.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case179_goc.m",
     "sha256": "c65eb2650de2849675778bccdfb15b48bc7fb5156207d10411746560a5da8a13"
   },
   "construction": {
@@ -39,5 +39,22 @@
   "mip_gap": 1e-06,
   "time_limit": 180.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case179_goc",
+  "features": {
+    "n_bus": 179,
+    "n_branch": 263,
+    "n_gen": 29,
+    "n_storage": 0,
+    "n_candidate_branch": 12,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 12,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

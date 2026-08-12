@@ -12,9 +12,9 @@
   },
   "source": {
     "dataset": "ACTIVSg200 Restoration",
-    "relative_path": "\u6570\u636e\u96c6/ACTIVSg200 Restoration/data/200bus_case_restoration_scenarios.xlsx",
+    "relative_path": "数据集/ACTIVSg200 Restoration/data/200bus_case_restoration_scenarios.xlsx",
     "sha256": "c222dd966460b73d05785797535f29ac31d86a0049fbc0b7c6cc8ad9a31e9627",
-    "network_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case200_activ.m",
+    "network_path": "数据集/pglib-opf-master/pglib_opf_case200_activ.m",
     "network_sha256": "676e6f54a3b6726b199b531e7758ad8bf75ba2b076ea3fee86dc3f5cf5846f6b"
   },
   "construction": {
@@ -443,5 +443,22 @@
     1440.0,
     20.0,
     20.0
-  ]
+  ],
+  "source_network": "restoration:200bus_case_restoration_scenarios",
+  "features": {
+    "n_bus": 200,
+    "n_branch": 245,
+    "n_gen": 49,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 6,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 1470,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

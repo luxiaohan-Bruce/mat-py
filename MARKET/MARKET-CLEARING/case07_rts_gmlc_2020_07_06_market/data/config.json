@@ -15,7 +15,7 @@
   "source": {
     "dataset": "PGLib-UC",
     "group": "rts_gmlc",
-    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-07-06.json",
+    "relative_path": "数据集/pglib-uc-master/rts_gmlc/2020-07-06.json",
     "sha256": "97a9a4d8ae7e80f6251e47550a60565bb99f0253df4a76bd58b96ede17d1cec8"
   },
   "construction": {
@@ -40,5 +40,22 @@
   "time_limit": 120.0,
   "seed": 1,
   "threads": 1,
-  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices."
+  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices.",
+  "source_network": "pglib_uc:rts_gmlc:2020-07-06",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 48,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch"
+  }
 }

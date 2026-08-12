@@ -6,11 +6,13 @@
   "variant": {
     "power_flow": "topological",
     "security": "none",
-    "horizon": "single_period"
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case793_goc.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case793_goc.m",
     "sha256": "bd4eee7cdbc22f5ea1fdb2b5756a46c0d2b2e871a19df8b6169008435025992f"
   },
   "construction": {
@@ -30,5 +32,22 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 300
+  "time_limit": 300,
+  "source_network": "pglib_opf_case793_goc",
+  "features": {
+    "n_bus": 793,
+    "n_branch": 913,
+    "n_gen": 214,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 793,
+    "math_class": "milp",
+    "solver_family": "covering_mip"
+  }
 }

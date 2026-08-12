@@ -6,12 +6,15 @@
   "se_method": "wls",
   "variant": {
     "power_flow": "dc",
-    "estimator": "wls",
-    "horizon": "single_period"
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "estimator": "wls"
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case300_ieee.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case300_ieee.m",
     "sha256": "7ecf056d5942135765200ad7ae8791c28f0d35fb1dc888ba2c32dfc950f3c2f5"
   },
   "construction": {
@@ -6069,5 +6072,22 @@
   "seed": 1,
   "threads": 1,
   "time_limit": 120,
-  "mip_gap": 1e-06
+  "mip_gap": 1e-06,
+  "source_network": "pglib_opf_case300_ieee",
+  "features": {
+    "n_bus": 300,
+    "n_branch": 411,
+    "n_gen": 69,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  }
 }

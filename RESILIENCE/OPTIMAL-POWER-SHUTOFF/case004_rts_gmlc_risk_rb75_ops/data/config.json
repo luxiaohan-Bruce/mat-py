@@ -17,7 +17,7 @@
   },
   "source": {
     "dataset": "PowerModelsWildfire",
-    "relative_path": "\u6570\u636e\u96c6/PowerModelsWildfire/PowerModelsWildfire.jl-b6ea428f61220ade7677122e5247e2ffd1d950df/test/networks/RTS_GMLC_risk.m",
+    "relative_path": "数据集/PowerModelsWildfire/PowerModelsWildfire.jl-b6ea428f61220ade7677122e5247e2ffd1d950df/test/networks/RTS_GMLC_risk.m",
     "sha256": "069d403298b690e8af048c1edbb2e7dd779850652e862c39e2dbe8dc765626e5"
   },
   "construction": {
@@ -41,5 +41,22 @@
   "mip_gap": 1e-06,
   "time_limit": 300,
   "network_group": "rts_gmlc_risk",
-  "require_matlab": false
+  "require_matlab": false,
+  "source_network": "rts_gmlc",
+  "features": {
+    "n_bus": 73,
+    "n_branch": 120,
+    "n_gen": 158,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 120,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

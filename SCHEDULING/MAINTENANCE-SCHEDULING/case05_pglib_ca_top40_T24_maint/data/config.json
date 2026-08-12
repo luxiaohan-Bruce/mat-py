@@ -5,7 +5,7 @@
   "base_problem": "maintenance_scheduling",
   "source": {
     "dataset": "PGLib-UC",
-    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/ca/2014-09-01_reserves_0.json",
+    "relative_path": "数据集/pglib-uc-master/ca/2014-09-01_reserves_0.json",
     "sha256": "ec49d9a81f9f39ffd36f3065ab4a3942d28c6bce5356de9b24fbd75e83cd0cde",
     "role": "teaching_subset",
     "subset": "top_40_thermal_by_pmax; demand scaled to subset capacity"
@@ -26,5 +26,29 @@
     "Demand scaled to subset capacity; short T=24 horizon.",
     "Synthetic maintenance: top-4 of subset, D=6h, crew_limit=2, seed=1.",
     "Not an annual/real CA maintenance schedule."
-  ]
+  ],
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_uc:ca:2014-09-01_reserves_0",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 40,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 96,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

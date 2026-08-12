@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case8387_pegase.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case8387_pegase.m",
     "sha256": "b49ec5bbde46dfd6c5b2b2abb8146326bcb5234dd7578945198f11e6a886ee06"
   },
   "construction": {
@@ -39,5 +39,22 @@
   "mip_gap": 1e-06,
   "time_limit": 1.0,
   "seed": 1,
-  "threads": 1
+  "threads": 1,
+  "source_network": "pglib_opf_case8387_pegase",
+  "features": {
+    "n_bus": 8387,
+    "n_branch": 14561,
+    "n_gen": 1865,
+    "n_storage": 0,
+    "n_candidate_branch": 3,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 3,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

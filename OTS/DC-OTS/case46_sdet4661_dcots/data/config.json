@@ -49,5 +49,30 @@
     "Skip branch id=5195: opening would risk disconnect with set.",
     "Skip branch id=437: opening would risk disconnect with set.",
     "Selected 10 switchable lines (wanted 10)."
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case4661_sdet",
+  "features": {
+    "n_bus": 4661,
+    "n_branch": 5997,
+    "n_gen": 1176,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 10,
+    "max_open": 1,
+    "k": null,
+    "n_bin": 10,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

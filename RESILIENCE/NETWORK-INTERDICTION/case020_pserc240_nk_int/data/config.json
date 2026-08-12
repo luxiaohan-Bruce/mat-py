@@ -13,7 +13,7 @@
   },
   "source": {
     "dataset": "PGLib-OPF",
-    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case240_pserc.m",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case240_pserc.m",
     "sha256": "57ea179d628ea6e94d9c78a62d842c01165afd515c09dca1c2fa2f2f3360f4cf"
   },
   "construction": {
@@ -42,5 +42,22 @@
   "seed": 1,
   "threads": 1,
   "heuristic_top": 25,
-  "heuristic_random_pairs": 200
+  "heuristic_random_pairs": 200,
+  "source_network": "pglib_opf_case240_pserc",
+  "features": {
+    "n_bus": 240,
+    "n_branch": 448,
+    "n_gen": 143,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": 2,
+    "n_bin": 448,
+    "math_class": "bilevel",
+    "solver_family": "bilevel"
+  }
 }

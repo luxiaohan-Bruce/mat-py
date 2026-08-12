@@ -34,5 +34,30 @@
     "max_open=2, redispatch_frac=0.2.",
     "Contingencies: 6 (wanted 10).",
     "Switchable: 1 (wanted 10)."
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case5_pjm",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 6,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 6,
+    "n_scenario": 1,
+    "n_switchable": 1,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 1,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

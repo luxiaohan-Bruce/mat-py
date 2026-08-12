@@ -12,7 +12,7 @@
   },
   "source": {
     "dataset": "ANDES",
-    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/kundur/kundur_st2cut.xlsx",
+    "relative_path": "数据集/ANDES Test Cases/andes-2.0.0/andes/cases/kundur/kundur_st2cut.xlsx",
     "sha256": "8962472b3a53cff8ec617be3c5d05cf2024ac93875068985f64885dd611d6790"
   },
   "construction": {
@@ -48,5 +48,22 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 120
+  "time_limit": 120,
+  "source_network": "andes:kundur_st2cut",
+  "features": {
+    "n_bus": 10,
+    "n_branch": 15,
+    "n_gen": 4,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 10,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  }
 }

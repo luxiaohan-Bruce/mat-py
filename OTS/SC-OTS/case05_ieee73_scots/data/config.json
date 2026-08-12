@@ -158,7 +158,7 @@
     }
   ],
   "redispatch_frac": 0.2,
-  "redispatch_note": "Synthetic \u00b1redispatch_frac*(Pmax-Pmin) band; PGLib OPF cases do not provide generator ramp rates.",
+  "redispatch_note": "Synthetic ±redispatch_frac*(Pmax-Pmin) band; PGLib OPF cases do not provide generator ramp rates.",
   "load_shedding": false,
   "canonicalize_contingencies": true,
   "load_scale": 1.0,
@@ -1060,5 +1060,31 @@
     "Credible contingencies: 118; bridges excluded for islanding: 2.",
     "Switchable set size N=12, max_open K=2.",
     "Load search reason: no_economic_improvement."
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case73_ieee_rts",
+  "features": {
+    "n_bus": 73,
+    "n_branch": 120,
+    "n_gen": 99,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 118,
+    "n_scenario": 1,
+    "n_switchable": 12,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 12,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  },
+  "solve_tier": "full"
 }

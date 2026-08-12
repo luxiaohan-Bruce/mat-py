@@ -5,7 +5,7 @@
   "base_problem": "maintenance_scheduling",
   "source": {
     "dataset": "RTS-GMLC",
-    "relative_path": "\u6570\u636e\u96c6/RTS-GMLC-master/RTS_Data",
+    "relative_path": "数据集/RTS-GMLC-master/RTS_Data",
     "gen_sha256": "988466f29132b73739de60c9204dd4a2a9ceb0adf572e5966c086611272f4068",
     "load_sha256": "7a9470d32d49068a91334cb36db54cceb2feb5cb1f702b0fa0847af8bac6cf21",
     "load_slice": "hours 0:168 (2020-01-01 week)"
@@ -25,5 +25,29 @@
     "RTS-GMLC thermal+hydro generators with heat-rate linear costs.",
     "Demand = sum of 3-region DAY_AHEAD load, first 168 hours.",
     "Synthetic maintenance: top-5 thermal by Pmax, D=24h, crew_limit=2, seed=1."
-  ]
+  ],
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source_network": "rts_gmlc:hours 0:168 (2020-01-01 week)",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 93,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 168,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 840,
+    "math_class": "milp",
+    "solver_family": "temporal_mip"
+  }
 }

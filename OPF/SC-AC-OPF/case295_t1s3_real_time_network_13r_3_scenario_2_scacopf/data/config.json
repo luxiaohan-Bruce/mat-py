@@ -4,7 +4,7 @@
   "problem": "linearized_scacopf",
   "source": {
     "dataset": "GO Competition Challenge 1",
-    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_13R-3/scenario_2/case.raw"
+    "raw": "数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_13R-3/scenario_2/case.raw"
   },
   "enable_ots": false,
   "switchable_branches": [],
@@ -20,5 +20,30 @@
     "Contingencies subsampled from case.con (branch+gen).",
     "OPF only.",
     "nB=10000, nG=1918, nL=13193, Nc=3, tier=skip"
-  ]
+  ],
+  "base_problem": "opf",
+  "variant": {
+    "power_flow": "linearized_sc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "preventive"
+  },
+  "source_network": "go_c1:Network_13R-3",
+  "features": {
+    "n_bus": 10000,
+    "n_branch": 13193,
+    "n_gen": 2089,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 3,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": 0,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "security_mip"
+  }
 }

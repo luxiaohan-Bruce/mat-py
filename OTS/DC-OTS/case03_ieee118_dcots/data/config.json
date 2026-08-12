@@ -78,5 +78,31 @@
     "Switchable id=139 89-90: util=0.653 (|f|=110.41/169.0 MW)",
     "Switchable id=66 42-49: util=0.653 (|f|=58.11/89.0 MW)",
     "Switchable id=67 42-49: util=0.653 (|f|=58.11/89.0 MW)"
-  ]
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source_network": "pglib_opf_case118_ieee",
+  "features": {
+    "n_bus": 118,
+    "n_branch": 186,
+    "n_gen": 54,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 20,
+    "max_open": 3,
+    "k": null,
+    "n_bin": 20,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  },
+  "solve_tier": "full"
 }

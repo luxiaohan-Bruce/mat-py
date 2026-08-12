@@ -50,10 +50,35 @@
   "n_bus": 73,
   "notes": [
     "Source: pglib_opf_case73_ieee_rts (73 buses).",
-    "Preventive DC-SCUC T=24 Nc=8 \u03bb=0.7.",
+    "Preventive DC-SCUC T=24 Nc=8 λ=0.7.",
     "bucket=S tier=full.",
     "Active gens=96; Pd0=8550.0 MW.",
     "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
     "Contingencies: [92, 91, 89, 88, 87, 85, 84, 83]"
-  ]
+  ],
+  "base_problem": "uc",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-1",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "preventive"
+  },
+  "source_network": "pglib_opf_case73_ieee_rts",
+  "features": {
+    "n_bus": 73,
+    "n_branch": 120,
+    "n_gen": 99,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 8,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 2376,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
 }

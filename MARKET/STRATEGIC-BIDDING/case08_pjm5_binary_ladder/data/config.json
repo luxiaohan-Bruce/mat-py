@@ -59,5 +59,22 @@
   "time_limit": 120.0,
   "mpec_notes": {
     "formulation": "Upper level binary y_k SOS1/sum y=1 selects offer = sum y_k*ladder_k. v1 implements exact enumeration of the same discrete set (dual-match). Single-level KKT/strong-duality MPEC optional later; big-M from 0<=Pg<=Pmax, 0<=d<=Pd, |f|<=rateA, |theta|<=pi."
+  },
+  "source_network": "pglib-opf:case003_pjm5_dc_ed",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 6,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 8,
+    "math_class": "bilevel",
+    "solver_family": "bilevel"
   }
 }
