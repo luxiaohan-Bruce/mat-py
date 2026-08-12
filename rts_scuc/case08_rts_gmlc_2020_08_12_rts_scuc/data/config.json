@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "case": "case08_rts_gmlc_2020_08_12_rts_scuc",
+  "problem": "rts_scuc",
+  "source": {
+    "network": "RTS-GMLC",
+    "uc": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-08-12.json"
+  },
+  "T": 24,
+  "contingencies": [
+    120,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "emergency_rate_factor": 1.0,
+  "load_shed_penalty": 5000.0,
+  "mip_gap": 0.01,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "full",
+  "construction": [
+    "Topology/storage from RTS-GMLC SourceData; thermal/renewable/demand/reserve from PGLib-UC rts_gmlc day file.",
+    "Horizon = first 24 periods of the 48h UC instance.",
+    "Preventive DC-SCUC with system reserve, ESS, optional load shed, and non-bridge N-1 contingencies.",
+    "Thermal production cost: linear envelope of PWL endpoints + startup of longest-lag category."
+  ]
+}

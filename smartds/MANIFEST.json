@@ -1,0 +1,20 @@
+[
+  {
+    "case": "case01_gso_rural_dnr",
+    "mode": "dnr",
+    "solve_tier": "full",
+    "n_bus": 80
+  },
+  {
+    "case": "case02_gso_rural_voltvar",
+    "mode": "voltvar",
+    "solve_tier": "full",
+    "n_bus": 80
+  },
+  {
+    "case": "case03_gso_rural_hosting",
+    "mode": "hosting",
+    "solve_tier": "full",
+    "n_bus": 80
+  }
+]

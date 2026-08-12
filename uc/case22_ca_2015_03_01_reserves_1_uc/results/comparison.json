@@ -1,0 +1,15 @@
+{
+  "case": "case22_ca_2015_03_01_reserves_1_uc",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 31867.559479338113,
+    "obj_mat": 31857.77574361786,
+    "obj_rel_diff": 0.00030701239379799465,
+    "allowed_obj_rel_diff": 0.0023512244027535864,
+    "demand_residual_py_MW": 2.9103830456733704e-11,
+    "demand_residual_mat_MW": 2.9103830456733704e-11
+  }
+}

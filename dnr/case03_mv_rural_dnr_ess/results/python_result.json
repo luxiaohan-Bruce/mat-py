@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case": "case03_mv_rural_dnr_ess",
+  "solver": "python-gurobipy",
+  "problem": "lindistflow_dnr_ess",
+  "dnr": {
+    "status": "OPTIMAL",
+    "obj": 160223.12288485293,
+    "obj_bound": 160223.12288485293,
+    "mip_gap": 0.0,
+    "runtime": 0.019114017486572266,
+    "T": 4,
+    "n_bus": 299,
+    "n_branch": 303,
+    "n_storage": 1,
+    "opened_branches": [],
+    "load_shed": 15.994767000000005,
+    "n_binary": 303
+  }
+}

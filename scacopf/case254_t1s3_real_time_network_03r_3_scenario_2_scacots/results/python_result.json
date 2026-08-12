@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case": "case254_t1s3_real_time_network_03r_3_scenario_2_scacots",
+  "solver": "python-gurobipy",
+  "problem": "linearized_scacots",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_03R-3/scenario_2/case.raw"
+  },
+  "scacopf": {
+    "status": "INFEASIBLE",
+    "obj": null,
+    "runtime": 0.001725912094116211,
+    "n_bus": 793,
+    "n_gen": 78,
+    "n_branch": 912,
+    "n_cont": 0,
+    "note": "; fallback: contingencies cleared for feasibility"
+  }
+}

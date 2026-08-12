@@ -1,0 +1,8 @@
+{
+  "case": "case094_t1s3_real_time_network_03r_3_scenario_1_scacots",
+  "ok": false,
+  "issues": [
+    "missing result"
+  ],
+  "checks": {}
+}

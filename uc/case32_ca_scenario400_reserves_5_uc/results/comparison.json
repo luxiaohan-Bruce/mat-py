@@ -1,0 +1,15 @@
+{
+  "case": "case32_ca_scenario400_reserves_5_uc",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 34126.39240232717,
+    "obj_mat": 34102.003063516786,
+    "obj_rel_diff": 0.000714676738251398,
+    "allowed_obj_rel_diff": 0.008956735818902311,
+    "demand_residual_py_MW": 8.003553375601768e-11,
+    "demand_residual_mat_MW": 8.731149137020111e-11
+  }
+}

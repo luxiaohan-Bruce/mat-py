@@ -1,0 +1,13 @@
+{
+  "case": "case089_network_02r_3_scenario_2_scenario_30_scacopf",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 241732.7200000001,
+    "obj_mat": 241732.72,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_rel_diff": 3.6119020780555104e-16,
+    "allowed": 1e-05
+  }
+}

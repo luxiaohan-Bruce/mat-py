@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "case": "case199_t1s3_offline_network_08o_3_scenario_3_scacopf",
+  "problem": "linearized_scacopf",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_08O-3/scenario_3/case.raw"
+  },
+  "enable_ots": false,
+  "switchable_branches": [],
+  "max_open": 0,
+  "mip_gap": 0.05,
+  "time_limit": 1.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "skip",
+  "load_shed_penalty": 10000.0,
+  "construction": [
+    "Linearized DC security-constrained OPF (NOT exact AC).",
+    "Contingencies subsampled from case.con (branch+gen).",
+    "OPF only.",
+    "nB=3013, nG=285, nL=4126, Nc=3, tier=skip"
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "case": "case01_rts_gmlc_2020_01_27_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-01-27.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case02_rts_gmlc_2020_02_09_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-02-09.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case03_rts_gmlc_2020_03_05_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-03-05.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case04_rts_gmlc_2020_04_03_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-04-03.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case05_rts_gmlc_2020_05_05_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-05-05.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case06_rts_gmlc_2020_06_09_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-06-09.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case07_rts_gmlc_2020_07_06_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-07-06.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case08_rts_gmlc_2020_08_12_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-08-12.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case09_rts_gmlc_2020_09_20_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-09-20.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case10_rts_gmlc_2020_10_27_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-10-27.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case11_rts_gmlc_2020_11_25_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-11-25.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case12_rts_gmlc_2020_12_23_rts_scuc",
+    "uc_source": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-12-23.json",
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "solve_tier": "full"
+  }
+]

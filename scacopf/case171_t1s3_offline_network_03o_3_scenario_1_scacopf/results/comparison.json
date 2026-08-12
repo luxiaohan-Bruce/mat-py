@@ -1,0 +1,8 @@
+{
+  "case": "case171_t1s3_offline_network_03o_3_scenario_1_scacopf",
+  "ok": false,
+  "issues": [
+    "missing result"
+  ],
+  "checks": {}
+}

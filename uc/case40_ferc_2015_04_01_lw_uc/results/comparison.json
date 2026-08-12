@@ -1,0 +1,15 @@
+{
+  "case": "case40_ferc_2015_04_01_lw_uc",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 57134413.13076714,
+    "obj_mat": 57427932.04803191,
+    "obj_rel_diff": 0.005111082826720617,
+    "allowed_obj_rel_diff": 0.007835423687198952,
+    "demand_residual_py_MW": 8.731149137020111e-11,
+    "demand_residual_mat_MW": 1.7462298274040222e-10
+  }
+}

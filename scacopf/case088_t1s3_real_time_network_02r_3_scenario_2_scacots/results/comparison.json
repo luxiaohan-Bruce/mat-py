@@ -1,0 +1,13 @@
+{
+  "case": "case088_t1s3_real_time_network_02r_3_scenario_2_scacots",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 241732.71994748403,
+    "obj_mat": 241732.71994281292,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_rel_diff": 1.9323435328323094e-11,
+    "allowed": 1e-05
+  }
+}

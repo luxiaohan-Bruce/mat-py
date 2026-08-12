@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case": "case174_t1s3_offline_network_03o_3_scenario_2_scacots",
+  "problem": "linearized_scacots",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_03O-3/scenario_2/case.raw"
+  },
+  "enable_ots": true,
+  "switchable_branches": [
+    515,
+    218,
+    230,
+    328,
+    330,
+    335,
+    338,
+    340
+  ],
+  "max_open": 2,
+  "mip_gap": 0.02,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "skip",
+  "load_shed_penalty": 10000.0,
+  "construction": [
+    "Linearized DC security-constrained OPF (NOT exact AC).",
+    "Contingencies subsampled from case.con (branch+gen).",
+    "OTS candidates = top rateA lines; max_open=2.",
+    "nB=793, nG=78, nL=912, Nc=5, tier=relaxed"
+  ]
+}

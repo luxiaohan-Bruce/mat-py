@@ -1,0 +1,13 @@
+{
+  "case": "case085_t1s3_real_time_network_02r_3_scenario_1_scacopf",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 178253.4800000008,
+    "obj_mat": 178253.47999999972,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_rel_diff": 6.0410698680280586e-15,
+    "allowed": 1e-05
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case": "case36_ferc_2015_02_01_lw_uc",
+  "problem": "uc",
+  "source": {
+    "dataset": "PGLib-UC",
+    "relative_path": "数据集/pglib-uc-master/ferc/2015-02-01_lw.json",
+    "sha256": "e8f095c38ec3c1e439be0b02bb002735fcfca96048dd2a2b8d1cb1d2bf7bf2a9"
+  },
+  "solve_tier": "xlarge",
+  "mip_gap": 0.02,
+  "time_limit": 600.0,
+  "seed": 1,
+  "threads": 0,
+  "construction": [
+    "All thermal, renewable, demand, reserve, initial-state, ramp, minimum up/down, startup-lag and PWL-cost data are preserved.",
+    "The mathematical model follows the official PGLib-UC reference equations and uses gurobipy/Gurobi in Python.",
+    "Solver tolerances follow PGLib-UC practice (MIPGap≈1%) with tiered time limits for large instances."
+  ]
+}

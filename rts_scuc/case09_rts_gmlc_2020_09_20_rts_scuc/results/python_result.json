@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "case": "case09_rts_gmlc_2020_09_20_rts_scuc",
+  "solver": "python-gurobipy",
+  "problem": "rts_scuc",
+  "source": {
+    "network": "RTS-GMLC",
+    "uc": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-09-20.json"
+  },
+  "scuc": {
+    "status": "OPTIMAL",
+    "obj": 1377102.0443760364,
+    "obj_bound": 1377102.0443760364,
+    "mip_gap": 0.0,
+    "runtime": 0.6927750110626221,
+    "T": 24,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "n_storage": 21,
+    "n_contingencies": 6,
+    "load_shed_MW_total": 0.0,
+    "max_balance_residual_MW": 2.955857780762017e-11,
+    "startups": 0,
+    "n_binary": 5256,
+    "n_variables": 46392,
+    "n_constraints": 93789
+  }
+}

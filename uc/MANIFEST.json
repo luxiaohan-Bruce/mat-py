@@ -1,0 +1,450 @@
+[
+  {
+    "case": "case01_rts_gmlc_2020_01_27_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-01-27.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case02_rts_gmlc_2020_02_09_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-02-09.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case03_rts_gmlc_2020_03_05_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-03-05.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case04_rts_gmlc_2020_04_03_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-04-03.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case05_rts_gmlc_2020_05_05_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-05-05.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case06_rts_gmlc_2020_06_09_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-06-09.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case07_rts_gmlc_2020_07_06_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-07-06.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case08_rts_gmlc_2020_08_12_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-08-12.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case09_rts_gmlc_2020_09_20_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-09-20.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case10_rts_gmlc_2020_10_27_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-10-27.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case11_rts_gmlc_2020_11_25_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-11-25.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case12_rts_gmlc_2020_12_23_uc",
+    "source": "数据集/pglib-uc-master/rts_gmlc/2020-12-23.json",
+    "T": 48,
+    "n_thermal": 73,
+    "n_renewable": 81,
+    "solve_tier": "full"
+  },
+  {
+    "case": "case13_ca_2014_09_01_reserves_0_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-09-01_reserves_0.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case14_ca_2014_09_01_reserves_1_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-09-01_reserves_1.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case15_ca_2014_09_01_reserves_3_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-09-01_reserves_3.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case16_ca_2014_09_01_reserves_5_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-09-01_reserves_5.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case17_ca_2014_12_01_reserves_0_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-12-01_reserves_0.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case18_ca_2014_12_01_reserves_1_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-12-01_reserves_1.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case19_ca_2014_12_01_reserves_3_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-12-01_reserves_3.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case20_ca_2014_12_01_reserves_5_uc",
+    "source": "数据集/pglib-uc-master/ca/2014-12-01_reserves_5.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case21_ca_2015_03_01_reserves_0_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-03-01_reserves_0.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case22_ca_2015_03_01_reserves_1_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-03-01_reserves_1.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case23_ca_2015_03_01_reserves_3_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-03-01_reserves_3.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case24_ca_2015_03_01_reserves_5_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-03-01_reserves_5.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case25_ca_2015_06_01_reserves_0_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-06-01_reserves_0.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case26_ca_2015_06_01_reserves_1_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-06-01_reserves_1.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case27_ca_2015_06_01_reserves_3_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-06-01_reserves_3.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case28_ca_2015_06_01_reserves_5_uc",
+    "source": "数据集/pglib-uc-master/ca/2015-06-01_reserves_5.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 0,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case29_ca_scenario400_reserves_0_uc",
+    "source": "数据集/pglib-uc-master/ca/Scenario400_reserves_0.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 1,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case30_ca_scenario400_reserves_1_uc",
+    "source": "数据集/pglib-uc-master/ca/Scenario400_reserves_1.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 1,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case31_ca_scenario400_reserves_3_uc",
+    "source": "数据集/pglib-uc-master/ca/Scenario400_reserves_3.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 1,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case32_ca_scenario400_reserves_5_uc",
+    "source": "数据集/pglib-uc-master/ca/Scenario400_reserves_5.json",
+    "T": 48,
+    "n_thermal": 610,
+    "n_renewable": 1,
+    "solve_tier": "large"
+  },
+  {
+    "case": "case33_ferc_2015_01_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-01-01_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case34_ferc_2015_01_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-01-01_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case35_ferc_2015_02_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-02-01_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case36_ferc_2015_02_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-02-01_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case37_ferc_2015_03_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-03-01_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case38_ferc_2015_03_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-03-01_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case39_ferc_2015_04_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-04-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case40_ferc_2015_04_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-04-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case41_ferc_2015_05_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-05-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case42_ferc_2015_05_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-05-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case43_ferc_2015_06_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-06-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case44_ferc_2015_06_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-06-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case45_ferc_2015_07_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-07-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case46_ferc_2015_07_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-07-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case47_ferc_2015_08_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-08-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case48_ferc_2015_08_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-08-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case49_ferc_2015_09_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-09-01_hw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case50_ferc_2015_09_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-09-01_lw.json",
+    "T": 48,
+    "n_thermal": 978,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case51_ferc_2015_10_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-10-01_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case52_ferc_2015_10_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-10-01_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case53_ferc_2015_11_02_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-11-02_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case54_ferc_2015_11_02_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-11-02_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case55_ferc_2015_12_01_hw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-12-01_hw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  },
+  {
+    "case": "case56_ferc_2015_12_01_lw_uc",
+    "source": "数据集/pglib-uc-master/ferc/2015-12-01_lw.json",
+    "T": 48,
+    "n_thermal": 934,
+    "n_renewable": 1,
+    "solve_tier": "xlarge"
+  }
+]

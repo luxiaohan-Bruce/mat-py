@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case": "case10_rts_gmlc_2020_10_27_uc",
+  "problem": "uc",
+  "source": {
+    "dataset": "PGLib-UC",
+    "relative_path": "数据集/pglib-uc-master/rts_gmlc/2020-10-27.json",
+    "sha256": "77a45c4ff95c4266a7feab1d1180bb096e727900a9181330daf5af85b0c5837f"
+  },
+  "solve_tier": "full",
+  "mip_gap": 0.01,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 1,
+  "construction": [
+    "All thermal, renewable, demand, reserve, initial-state, ramp, minimum up/down, startup-lag and PWL-cost data are preserved.",
+    "The mathematical model follows the official PGLib-UC reference equations and uses gurobipy/Gurobi in Python.",
+    "Solver tolerances follow PGLib-UC practice (MIPGap≈1%) with tiered time limits for large instances."
+  ]
+}

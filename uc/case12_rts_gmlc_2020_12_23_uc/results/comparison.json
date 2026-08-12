@@ -1,0 +1,15 @@
+{
+  "case": "case12_rts_gmlc_2020_12_23_uc",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 2724433.754894623,
+    "obj_mat": 2723541.081183939,
+    "obj_rel_diff": 0.0003276547682910423,
+    "allowed_obj_rel_diff": 0.009632442783115319,
+    "demand_residual_py_MW": 2.2000011085765436e-05,
+    "demand_residual_mat_MW": 2.3646862246096134e-11
+  }
+}

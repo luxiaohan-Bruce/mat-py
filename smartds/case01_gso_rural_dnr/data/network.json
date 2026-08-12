@@ -1,0 +1,1464 @@
+{
+  "name": "smartds_gso_rural_agg",
+  "baseMVA": 1.0,
+  "root_bus": 1,
+  "buses": [
+    {
+      "bus_i": 1,
+      "name": "p1rlv3",
+      "Pd": 0.0013800099999999999,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 2,
+      "name": "rdt15lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 3,
+      "name": "rdt8lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 4,
+      "name": "rdt6lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 5,
+      "name": "rdt11lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 6,
+      "name": "p1rlv423",
+      "Pd": 0.0472905,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 7,
+      "name": "p1rlv441",
+      "Pd": 0.0479505,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 8,
+      "name": "p1rlv1208",
+      "Pd": 0.0474005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 9,
+      "name": "p1rlv21",
+      "Pd": 0.00520005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 10,
+      "name": "rdm34",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 11,
+      "name": "rdt10lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 12,
+      "name": "rdm5",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 13,
+      "name": "p1rlv30",
+      "Pd": 0.00597006,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 14,
+      "name": "p1rlv34",
+      "Pd": 0.0038200400000000002,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 15,
+      "name": "rdm19",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 16,
+      "name": "p1rlv1207",
+      "Pd": 0.0467305,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 17,
+      "name": "rdt5lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 18,
+      "name": "rdm30",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 19,
+      "name": "rdt18lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 20,
+      "name": "p1rlv818",
+      "Pd": 0.0559406,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 21,
+      "name": "p1rlv419",
+      "Pd": 0.0536605,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 22,
+      "name": "p1rlv2",
+      "Pd": 0.00466005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 23,
+      "name": "p1rlv20",
+      "Pd": 0.0027800300000000006,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 24,
+      "name": "p1rlv12",
+      "Pd": 0.00447004,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 25,
+      "name": "p1rlv33",
+      "Pd": 0.007630080000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 26,
+      "name": "p1rlv25",
+      "Pd": 0.00595006,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 27,
+      "name": "p1rlv5",
+      "Pd": 0.00234002,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 28,
+      "name": "rdm15",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 29,
+      "name": "rdt13lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 30,
+      "name": "rdm36",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 31,
+      "name": "p1rlv830",
+      "Pd": 0.0513605,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 32,
+      "name": "p1rlv1204",
+      "Pd": 0.0485405,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 33,
+      "name": "rdm28",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 34,
+      "name": "p1rlv854",
+      "Pd": 0.0475105,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 35,
+      "name": "p1rlv8",
+      "Pd": 0.00321003,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 36,
+      "name": "p1rlv1",
+      "Pd": 0.0034300299999999997,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 37,
+      "name": "rdt1lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 38,
+      "name": "rdm35",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 39,
+      "name": "p1rlv14",
+      "Pd": 0.00597006,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 40,
+      "name": "p1rlv7",
+      "Pd": 0.00274003,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 41,
+      "name": "rdm14",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 42,
+      "name": "rdm4",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 43,
+      "name": "rdt16lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 44,
+      "name": "p1rlv27",
+      "Pd": 0.00164002,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 45,
+      "name": "rdt17lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 46,
+      "name": "p1rlv35",
+      "Pd": 0.00451005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 47,
+      "name": "p1rlv1185",
+      "Pd": 0.048980499999999996,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 48,
+      "name": "rdm2",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 49,
+      "name": "p1rlv32",
+      "Pd": 0.00344003,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 50,
+      "name": "p1rlv464",
+      "Pd": 0.060420600000000005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 51,
+      "name": "rdt14lv",
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 52,
+      "name": "p1rlv1252",
+      "Pd": 0.05535059999999999,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 53,
+      "name": "p1rlv1199",
+      "Pd": 0.058640599999999994,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 54,
+      "name": "p1rlv317",
+      "Pd": 0.04978050000000002,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 55,
+      "name": "p1rlv853",
+      "Pd": 0.06057060000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 56,
+      "name": "p1rlv420",
+      "Pd": 0.061930599999999995,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 57,
+      "name": "p1rlv904",
+      "Pd": 0.0471105,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 58,
+      "name": "p1rlv1218",
+      "Pd": 0.04693050000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 59,
+      "name": "p1rlv884",
+      "Pd": 0.05673060000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 60,
+      "name": "p1rlv824",
+      "Pd": 0.04702049999999999,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 61,
+      "name": "p1rlv823",
+      "Pd": 0.05257050000000002,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 62,
+      "name": "p1rlv827",
+      "Pd": 0.04714050000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 63,
+      "name": "p1rlv1186",
+      "Pd": 0.0456205,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 64,
+      "name": "p1rlv1187",
+      "Pd": 0.060420600000000005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 65,
+      "name": "p1rlv890",
+      "Pd": 0.05738060000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 66,
+      "name": "p1rlv318",
+      "Pd": 0.0500005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 67,
+      "name": "p1rlv1203",
+      "Pd": 0.0468005,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 68,
+      "name": "p1rlv873",
+      "Pd": 0.04974050000000001,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 69,
+      "name": "p1rlv896",
+      "Pd": 0.049950499999999995,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 70,
+      "name": "p1rlv1276",
+      "Pd": 0.0627106,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 71,
+      "name": "p1rlv394",
+      "Pd": 0.0438904,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 72,
+      "name": "p1rlv1254",
+      "Pd": 0.0470705,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 73,
+      "name": "p1rlv852",
+      "Pd": 0.0447704,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 74,
+      "name": "p1rlv422",
+      "Pd": 0.0504705,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 75,
+      "name": "p1rlv867",
+      "Pd": 0.045290500000000004,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 76,
+      "name": "p1rlv892",
+      "Pd": 0.0469505,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 77,
+      "name": "p1rlv859",
+      "Pd": 0.0526905,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 78,
+      "name": "p1rlv1198",
+      "Pd": 0.046580500000000004,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 79,
+      "name": "p1rlv1240",
+      "Pd": 0.0586606,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    },
+    {
+      "bus_i": 80,
+      "name": "p1rlv899",
+      "Pd": 0.04813049999999999,
+      "Qd": 0.0,
+      "Vm_min": 0.95,
+      "Vm_max": 1.05
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "fbus": 48,
+      "tbus": 1,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 2,
+      "fbus": 42,
+      "tbus": 27,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 3,
+      "fbus": 3,
+      "tbus": 24,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 4,
+      "fbus": 41,
+      "tbus": 39,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 5,
+      "fbus": 11,
+      "tbus": 41,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 6,
+      "fbus": 11,
+      "tbus": 28,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 7,
+      "fbus": 43,
+      "tbus": 18,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": true
+    },
+    {
+      "id": 8,
+      "fbus": 10,
+      "tbus": 46,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 9,
+      "fbus": 19,
+      "tbus": 10,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 10,
+      "fbus": 38,
+      "tbus": 30,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 11,
+      "fbus": 19,
+      "tbus": 38,
+      "r": 0.05,
+      "x": 0.05,
+      "rate": 5.0,
+      "switchable": false
+    },
+    {
+      "id": 12,
+      "fbus": 1,
+      "tbus": 2,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 13,
+      "fbus": 1,
+      "tbus": 3,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 14,
+      "fbus": 1,
+      "tbus": 4,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 15,
+      "fbus": 1,
+      "tbus": 5,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 16,
+      "fbus": 1,
+      "tbus": 6,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 17,
+      "fbus": 1,
+      "tbus": 7,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 18,
+      "fbus": 1,
+      "tbus": 8,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 19,
+      "fbus": 1,
+      "tbus": 9,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 20,
+      "fbus": 1,
+      "tbus": 10,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 21,
+      "fbus": 1,
+      "tbus": 11,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 22,
+      "fbus": 1,
+      "tbus": 12,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 23,
+      "fbus": 1,
+      "tbus": 13,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 24,
+      "fbus": 1,
+      "tbus": 14,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 25,
+      "fbus": 1,
+      "tbus": 15,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 26,
+      "fbus": 1,
+      "tbus": 16,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 27,
+      "fbus": 1,
+      "tbus": 17,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 28,
+      "fbus": 1,
+      "tbus": 18,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 29,
+      "fbus": 1,
+      "tbus": 19,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 30,
+      "fbus": 1,
+      "tbus": 20,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 31,
+      "fbus": 1,
+      "tbus": 21,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 32,
+      "fbus": 1,
+      "tbus": 22,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 33,
+      "fbus": 1,
+      "tbus": 23,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 34,
+      "fbus": 1,
+      "tbus": 24,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 35,
+      "fbus": 1,
+      "tbus": 25,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 36,
+      "fbus": 1,
+      "tbus": 26,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 37,
+      "fbus": 1,
+      "tbus": 27,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 38,
+      "fbus": 1,
+      "tbus": 28,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 39,
+      "fbus": 1,
+      "tbus": 29,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 40,
+      "fbus": 1,
+      "tbus": 30,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 41,
+      "fbus": 1,
+      "tbus": 31,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 42,
+      "fbus": 1,
+      "tbus": 32,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 43,
+      "fbus": 1,
+      "tbus": 33,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 44,
+      "fbus": 1,
+      "tbus": 34,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 45,
+      "fbus": 1,
+      "tbus": 35,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 46,
+      "fbus": 1,
+      "tbus": 36,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 47,
+      "fbus": 1,
+      "tbus": 37,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 48,
+      "fbus": 1,
+      "tbus": 38,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 49,
+      "fbus": 1,
+      "tbus": 39,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 50,
+      "fbus": 1,
+      "tbus": 40,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 51,
+      "fbus": 1,
+      "tbus": 41,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 52,
+      "fbus": 1,
+      "tbus": 42,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 53,
+      "fbus": 1,
+      "tbus": 43,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 54,
+      "fbus": 1,
+      "tbus": 44,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 55,
+      "fbus": 1,
+      "tbus": 45,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 56,
+      "fbus": 1,
+      "tbus": 46,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 57,
+      "fbus": 1,
+      "tbus": 47,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 58,
+      "fbus": 1,
+      "tbus": 48,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 59,
+      "fbus": 1,
+      "tbus": 49,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 60,
+      "fbus": 1,
+      "tbus": 50,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 61,
+      "fbus": 1,
+      "tbus": 51,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 62,
+      "fbus": 1,
+      "tbus": 52,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 63,
+      "fbus": 1,
+      "tbus": 53,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 64,
+      "fbus": 1,
+      "tbus": 54,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 65,
+      "fbus": 1,
+      "tbus": 55,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 66,
+      "fbus": 1,
+      "tbus": 56,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 67,
+      "fbus": 1,
+      "tbus": 57,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 68,
+      "fbus": 1,
+      "tbus": 58,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 69,
+      "fbus": 1,
+      "tbus": 59,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 70,
+      "fbus": 1,
+      "tbus": 60,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 71,
+      "fbus": 1,
+      "tbus": 61,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 72,
+      "fbus": 1,
+      "tbus": 62,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 73,
+      "fbus": 1,
+      "tbus": 63,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 74,
+      "fbus": 1,
+      "tbus": 64,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 75,
+      "fbus": 1,
+      "tbus": 65,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 76,
+      "fbus": 1,
+      "tbus": 66,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 77,
+      "fbus": 1,
+      "tbus": 67,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 78,
+      "fbus": 1,
+      "tbus": 68,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 79,
+      "fbus": 1,
+      "tbus": 69,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 80,
+      "fbus": 1,
+      "tbus": 70,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 81,
+      "fbus": 1,
+      "tbus": 71,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 82,
+      "fbus": 1,
+      "tbus": 72,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 83,
+      "fbus": 1,
+      "tbus": 73,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 84,
+      "fbus": 1,
+      "tbus": 74,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 85,
+      "fbus": 1,
+      "tbus": 75,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 86,
+      "fbus": 1,
+      "tbus": 76,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": true
+    },
+    {
+      "id": 87,
+      "fbus": 1,
+      "tbus": 77,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 88,
+      "fbus": 1,
+      "tbus": 78,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 89,
+      "fbus": 1,
+      "tbus": 79,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    },
+    {
+      "id": 90,
+      "fbus": 1,
+      "tbus": 80,
+      "r": 0.08,
+      "x": 0.08,
+      "rate": 8.0,
+      "switchable": false
+    }
+  ],
+  "source": "\u6570\u636e\u96c6/SMART-DS/GSO-rural-base_peak-rhs1_1247--rdt137",
+  "aggregation": "first/top-load 80 buses from OpenDSS feeder",
+  "load_mult": [
+    1.0
+  ]
+}

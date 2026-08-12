@@ -1,0 +1,14 @@
+{
+  "case": "case07_rts_gmlc_2020_07_06_rts_scuc",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1843067.690434496,
+    "obj_mat": 1843067.690434503,
+    "obj_rel_diff": 3.789833301222591e-15,
+    "allowed_obj_rel_diff": 1e-06,
+    "max_balance_residual_MW": 1.546140993013978e-11
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case": "case06_lv_rural2_dnr_ess",
+  "solver": "python-gurobipy",
+  "problem": "lindistflow_dnr_ess",
+  "dnr": {
+    "status": "OPTIMAL",
+    "obj": 0.8254299267175371,
+    "obj_bound": 0.8254299265565805,
+    "mip_gap": 1.9499726892208488e-10,
+    "runtime": 0.012971878051757812,
+    "T": 4,
+    "n_bus": 289,
+    "n_branch": 287,
+    "n_storage": 1,
+    "opened_branches": [],
+    "load_shed": -3.484650412057506e-15,
+    "n_binary": 287
+  }
+}

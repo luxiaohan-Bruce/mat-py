@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+
+def main() -> int:
+    man = json.loads((ROOT / "MANIFEST.json").read_text())
+    ok = chk = 0
+    for item in man:
+        if item.get("solve_tier") == "skip":
+            continue
+        chk += 1
+        cdir = ROOT / item["case"]
+        py = cdir / "results" / "python_result.json"
+        mat = cdir / "results" / "matlab_result.json"
+        report = {"case": item["case"], "ok": False, "issues": []}
+        if not py.exists() or not mat.exists():
+            report["issues"].append("missing")
+        else:
+            po = json.loads(py.read_text())["dnr"].get("obj")
+            mo = json.loads(mat.read_text())["dnr"].get("obj")
+            if po is None or mo is None:
+                report["issues"].append("no obj")
+            else:
+                rel = abs(po - mo) / max(1.0, abs(po), abs(mo))
+                if rel > 0.05:
+                    report["issues"].append(f"rel {rel}")
+            report["ok"] = not report["issues"]
+        (cdir / "results" / "comparison.json").write_text(json.dumps(report, indent=2) + "\n")
+        ok += int(report["ok"])
+        print(f"{item['case']}: {'PASS' if report['ok'] else 'FAIL'}")
+    print(f"summary {ok}/{chk}")
+    return 0 if ok == chk else 1
+
+if __name__ == "__main__":
+    raise SystemExit(main())

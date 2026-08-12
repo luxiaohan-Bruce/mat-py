@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case": "case06_lv_rural2_dnr_ess",
+  "problem": "lindistflow_dnr_ess",
+  "source": {
+    "dataset": "SimBench",
+    "folder": "1-LV-rural2--0-sw"
+  },
+  "T": 4,
+  "mip_gap": 0.01,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "full",
+  "max_switch_actions": 5,
+  "construction": [
+    "LinDistFlow radial DNR / multiperiod DOPF (linear approx).",
+    "Switchable = Switch.csv edges (+ subset of lines if needed).",
+    "ESS only in dnr_ess variants."
+  ]
+}

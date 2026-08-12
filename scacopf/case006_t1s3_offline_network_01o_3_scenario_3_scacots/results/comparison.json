@@ -1,0 +1,13 @@
+{
+  "case": "case006_t1s3_offline_network_01o_3_scenario_3_scacots",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 149569.4195525023,
+    "obj_mat": 149569.41955513973,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_rel_diff": 1.763340546258765e-11,
+    "allowed": 1e-05
+  }
+}
