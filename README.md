@@ -29,7 +29,8 @@ github_cases/
 |----------|------|----------|------:|----------|
 | [`OTS/`](OTS/) | [`DC-OTS/`](OTS/DC-OTS/) | OTS（直流） | 66 | [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) |
 | | [`SC-OTS/`](OTS/SC-OTS/) | OTS + N-1 预防性 | 66 | PGLib-OPF |
-| [`OPF/`](OPF/) | [`SC-AC-OPF-OTS/`](OPF/SC-AC-OPF-OTS/) | 线性化 SC-OPF / SC-OTS | 316 | [GO Competition C1](https://gocompetition.energy.gov/) |
+| | [`SC-AC-OTS/`](OTS/SC-AC-OTS/) | 线性化 SC-OTS（GO C1） | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
+| [`OPF/`](OPF/) | [`SC-AC-OPF/`](OPF/SC-AC-OPF/) | 线性化 SC-OPF（GO C1） | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
 | [`UC/`](UC/) | [`SYSTEM-UC/`](UC/SYSTEM-UC/) | 系统级 UC（无网架） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
 | | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 66 | PGLib-OPF 合成时序 |
 | | [`RTS-SCUC/`](UC/RTS-SCUC/) | RTS 网络 SCUC+储能+RE | 12 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) |
@@ -55,8 +56,9 @@ github_cases/
 **合计约 1150+ 案例**（含子包内 `skip` 数据档）。
 
 > **说明**
-> - 子包目录名：**大写 + 连字符**（`SC-AC-OPF-OTS` 表示 SC-AC-OPF/OTS，文件系统不能含 `/`）。
-> - `OPF/SC-AC-OPF-OTS`、`DISTRIBUTION/DNR`、`DISTRIBUTION/SMART-DS` 均为**线性化近似**，**不是**精确非凸 AC / 三相潮流。
+> - 子包目录名：**大写 + 连字符**。
+> - GO C1 原混合包已按基础问题拆开：`OPF/SC-AC-OPF`（`*_scacopf`）与 `OTS/SC-AC-OTS`（`*_scacots`），不再混放。
+> - `OPF/SC-AC-OPF`、`OTS/SC-AC-OTS`、`DISTRIBUTION/DNR`、`DISTRIBUTION/SMART-DS` 均为**线性化近似**，**不是**精确非凸 AC / 三相潮流。
 > - `UC/SYSTEM-UC` 原公开目录名为 `UC/`，迁入 `UC/` 分类后改名为 `SYSTEM-UC`，避免与分类目录重名。
 
 ---
@@ -83,7 +85,8 @@ pip install -r requirements.txt
 # —— OTS / OPF ——
 python3 OTS/DC-OTS/run_all_python.py
 python3 OTS/SC-OTS/run_all_python.py
-python3 OPF/SC-AC-OPF-OTS/run_all_python.py --tier full,relaxed
+python3 OTS/SC-AC-OTS/run_all_python.py --tier full,relaxed
+python3 OPF/SC-AC-OPF/run_all_python.py --tier full,relaxed
 
 # —— UC ——
 python3 UC/SYSTEM-UC/run_all_python.py
@@ -203,7 +206,7 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 
 - **DC-OTS**：费用最小 + 可切换线路 + `max_open`
 - **SC-OTS**：基态与 N-1 共享拓扑；事故后有限再调度
-- **SC-AC-OPF-OTS**：GO C1 线性化安全约束，勿与精确 AC 等同
+- **SC-AC-OPF / SC-AC-OTS**：GO C1 线性化安全约束，按基础问题分目录；勿与精确 AC 等同
 
 ### UC
 
@@ -244,7 +247,7 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 | `OTS/SC-OTS` | 中小规模 full/relaxed 可 OPTIMAL |
 | `UC/SYSTEM-UC` | 56/56 PASS |
 | `UC/RTS-SCUC` | 12/12 PASS |
-| `OPF/SC-AC-OPF-OTS` | 可解档约 52 例；其余 skip |
+| `OPF/SC-AC-OPF` + `OTS/SC-AC-OTS` | 各 158 例；可解档约 26+26（原 52 对半），其余 skip |
 | `DISTRIBUTION/DNR` | 6 求解 + 1 meta |
 | `DISTRIBUTION/SMART-DS` | 3/3 PASS |
 | `DISPATCH/ECONOMIC-DISPATCH` | 71/71 双端 PASS |
@@ -276,7 +279,7 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg/python/solve_i
 | [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) | OTS / SCUC / ED / PMU / SE / TEP / Interdiction 等 |
 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) | SYSTEM-UC、市场、检修教学 |
 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) | RTS-SCUC、检修 |
-| [GO Competition C1](https://gocompetition.energy.gov/) | 线性化 SC-AC-OPF/OTS |
+| [GO Competition C1](https://gocompetition.energy.gov/) | 线性化 SC-AC-OPF 与 SC-AC-OTS（已分目录） |
 | [SimBench](https://simbench.de/) / [SMART-DS](https://data.openei.org/submissions/2981) | 配网 |
 | PowerModels TNEP / Restoration / Wildfire | 规划、恢复、OPS |
 | GenX / GasLib / ANDES / CommaLAB / ACTIVSg200 | CEM、电–气、孤岛、水火、黑启动 |

@@ -1,3 +1,7 @@
+# SC-AC-OPF (linearized)
+
+Split from former SC-AC-OPF-OTS. OPF-only cases.
+
 # Linearized SC-AC-OPF / SC-AC-OTS verify
 
 - Total cases built: **316** (158 GO C1 scenarios × 2 modes; duplicate paths collapsed in source walk)
