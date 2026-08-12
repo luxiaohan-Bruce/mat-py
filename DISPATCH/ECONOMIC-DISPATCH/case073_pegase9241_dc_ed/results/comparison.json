@@ -1,0 +1,9 @@
+{
+  "case": "case073_pegase9241_dc_ed",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

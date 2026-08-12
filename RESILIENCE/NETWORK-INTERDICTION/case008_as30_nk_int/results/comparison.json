@@ -1,0 +1,23 @@
+{
+  "case": "case008_as30_nk_int",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 3.5,
+    "obj_mat": 3.5,
+    "method_py": "enumeration",
+    "method_mat": "enumeration",
+    "atk_py": [
+      33
+    ],
+    "atk_mat": 33,
+    "bal_py": 4.707345624410664e-14,
+    "bal_mat": 4.707345624410664e-14,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

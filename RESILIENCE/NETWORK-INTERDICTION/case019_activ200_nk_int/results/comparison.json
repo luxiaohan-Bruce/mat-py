@@ -1,0 +1,27 @@
+{
+  "case": "case019_activ200_nk_int",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 103.85,
+    "obj_mat": 103.85,
+    "method_py": "heuristic",
+    "method_mat": "heuristic",
+    "atk_py": [
+      27,
+      44
+    ],
+    "atk_mat": [
+      27,
+      44
+    ],
+    "bal_py": 3.4086511391251406e-11,
+    "bal_mat": 3.4086511391251406e-11,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

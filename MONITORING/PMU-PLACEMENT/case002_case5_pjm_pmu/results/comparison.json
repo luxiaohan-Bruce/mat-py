@@ -1,0 +1,12 @@
+{
+  "case": "case002_case5_pjm_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 2.0,
+    "obj_mat": 2,
+    "n_py": 2,
+    "n_mat": 2,
+    "rel": 0.0
+  }
+}

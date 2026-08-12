@@ -1,0 +1,17 @@
+{
+  "case": "case016_goc179_tep_syn",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 751888.4540836307,
+    "obj_mat": 751888.4540836307,
+    "n_built_py": 0,
+    "n_built_mat": 0,
+    "bal_py": 1.0913936421275139e-11,
+    "bal_mat": 1.0913936421275139e-11,
+    "obj_rel_diff": 0.0
+  }
+}

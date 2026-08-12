@@ -1,0 +1,12 @@
+{
+  "case": "case035_case2853_sdet_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 787.0,
+    "obj_mat": 787,
+    "n_py": 787,
+    "n_mat": 787,
+    "rel": 0.0
+  }
+}

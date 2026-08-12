@@ -1,0 +1,9 @@
+{
+  "case": "case046_goc4601_tep_syn",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

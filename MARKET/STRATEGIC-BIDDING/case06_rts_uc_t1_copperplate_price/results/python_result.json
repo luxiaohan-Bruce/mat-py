@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "case": "case06_rts_uc_t1_copperplate_price",
+  "solver": "python-gurobi",
+  "problem": "bid",
+  "base_problem": "strategic_bidding",
+  "bid": {
+    "status": "OPTIMAL",
+    "obj": 10336.685072499531,
+    "obj_bound": 10336.685072499531,
+    "mip_gap": 0.0,
+    "profit": 10336.685072499531,
+    "revenue": 13578.790335657524,
+    "true_cost": 3242.105263157994,
+    "firm_MW": 400.0,
+    "method": "enumeration",
+    "mode": "price",
+    "bid_ladder": [
+      8.105263157894985,
+      9.726315789473981,
+      12.157894736842477,
+      16.21052631578997,
+      20.26315789473746,
+      24.315789473684955
+    ],
+    "firm_gens": [
+      0
+    ],
+    "best_level_index": 0,
+    "best_level": 8.105263157894985,
+    "offers": [
+      8.105263157894985,
+      32.46229933517106,
+      31.7274201394519,
+      31.7274201394519,
+      33.75271606940163,
+      36.12404734879194,
+      30.53024160856171,
+      33.94697583914381,
+      23.43785714285715,
+      24.61742857142856,
+      27.274838709677418,
+      23.875483870967738
+    ],
+    "pmax_eff": [
+      400.0,
+      355.0,
+      355.0,
+      355.0,
+      355.0,
+      355.0,
+      355.0,
+      355.0,
+      350.0,
+      350.0,
+      155.0,
+      155.0
+    ],
+    "Pg_MW": [
+      400.0,
+      355.0,
+      355.0,
+      355.0,
+      355.0,
+      0.0,
+      355.0,
+      77.30999999999995,
+      350.0,
+      350.0,
+      155.0,
+      155.0
+    ],
+    "d_MW": [
+      3262.31
+    ],
+    "LMP": [
+      33.94697583914381
+    ],
+    "theta_deg": [
+      0.0
+    ],
+    "flow_MW": [],
+    "welfare_obj": -564976.7694960443,
+    "clearing_status": "OPTIMAL",
+    "ladder_trace": [
+      {
+        "level_index": 0,
+        "level": 8.105263157894985,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -564976.7694960443,
+        "mean_LMP": 33.94697583914381
+      },
+      {
+        "level_index": 1,
+        "level": 9.726315789473981,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -564328.3484434127,
+        "mean_LMP": 33.94697583914381
+      },
+      {
+        "level_index": 2,
+        "level": 12.157894736842477,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -563355.7168644653,
+        "mean_LMP": 33.94697583914381
+      },
+      {
+        "level_index": 3,
+        "level": 16.21052631578997,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -561734.6642328863,
+        "mean_LMP": 33.94697583914381
+      },
+      {
+        "level_index": 4,
+        "level": 20.26315789473746,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -560113.6116013073,
+        "mean_LMP": 33.94697583914381
+      },
+      {
+        "level_index": 5,
+        "level": 24.315789473684955,
+        "status": "OPTIMAL",
+        "profit": 10336.685072499531,
+        "revenue": 13578.790335657524,
+        "true_cost": 3242.105263157994,
+        "firm_MW": 400.0,
+        "welfare_obj": -558492.5589697283,
+        "mean_LMP": 33.94697583914381
+      }
+    ],
+    "n_ladder": 6,
+    "runtime": 0.0006117820739746094,
+    "topology": "copperplate",
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 0.0,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "max_demand_bound_MW": 0.0,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

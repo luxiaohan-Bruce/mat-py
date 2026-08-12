@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case": "case017_snem197_tep_syn",
+  "base_problem": "transmission_expansion",
+  "problem": "tep",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "candidate_type": "synthetic_parallel"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case197_snem.m",
+    "sha256": "599c83008f4736553b973060d030f1f1b3f40bcc093497a1639a2c84e6a5bfee"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "synthetic_parallel_candidates_existing_corridors_only",
+      "candidate_priority_dc_loading_estimate_seed1",
+      "dc_tep_milp_v1"
+    ],
+    "construction_cost_formula": "construction_cost = 1e+06 * abs(x_existing)  # synthetic parallel",
+    "provenance": "synthetic",
+    "n_candidates": 12,
+    "candidate_cap": 12
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 180.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 1
+}

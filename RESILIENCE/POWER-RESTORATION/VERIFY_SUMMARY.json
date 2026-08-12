@@ -1,0 +1,217 @@
+{
+  "base_problem": "power_restoration",
+  "n_cases": 13,
+  "n_pass": 13,
+  "n_fail": 0,
+  "n_skip_tier": 4,
+  "n_data_only": 4,
+  "cases": [
+    {
+      "case": "case001_case3_restoration_total_dmg_restore",
+      "solve_tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 6815.0,
+        "obj_mat": 6815,
+        "rel": 0.0,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 315.0,
+        "served_final_mat": 315,
+        "max_bal_py": 0.0,
+        "max_bal_mat": 7.105427357601002e-15,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case002_case5_restoration_restore",
+      "solve_tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 17280.0,
+        "obj_mat": 17280,
+        "rel": 0.0,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1000.0,
+        "served_final_mat": 1000,
+        "max_bal_py": 2.2737367544323206e-12,
+        "max_bal_mat": 9.663381206337363e-13,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case003_case5_restoration_shunt_restore",
+      "solve_tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 12040.0,
+        "obj_mat": 12040,
+        "rel": 0.0,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1000.0,
+        "served_final_mat": 1000,
+        "max_bal_py": 2.8421709430404007e-13,
+        "max_bal_mat": 2.8421709430404007e-13,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case004_case5_restoration_strg_restore",
+      "solve_tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 20940.0,
+        "obj_mat": 20940,
+        "rel": 0.0,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1000.0,
+        "served_final_mat": 1000,
+        "max_bal_py": 2.8990143619012088e-12,
+        "max_bal_mat": 2.8421709430404007e-13,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case005_case5_restoration_total_dmg_restore",
+      "solve_tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 21020.0,
+        "obj_mat": 21020,
+        "rel": 0.0,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1000.0,
+        "served_final_mat": 1000,
+        "max_bal_py": 2.5579538487363607e-13,
+        "max_bal_mat": 8.526512829121202e-14,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case006_activsg200_scenario1_restore",
+      "solve_tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 46869.9,
+        "obj_mat": 46869.90000000001,
+        "rel": 1.5523731892287852e-16,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1475.69,
+        "served_final_mat": 1475.6899999999998,
+        "max_bal_py": 1.7536194718559273e-11,
+        "max_bal_mat": 5.115907697472721e-12,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case007_activsg200_scenario2_restore",
+      "solve_tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 46832.950000000004,
+        "obj_mat": 46832.95,
+        "rel": 1.5535979719798614e-16,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1475.69,
+        "served_final_mat": 1475.6899999999998,
+        "max_bal_py": 2.461945314280456e-09,
+        "max_bal_mat": 1.4011902749189176e-11,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case008_activsg200_scenario3_restore",
+      "solve_tier": "skip",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "data_only": true
+      }
+    },
+    {
+      "case": "case009_activsg200_scenario4_restore",
+      "solve_tier": "skip",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "data_only": true
+      }
+    },
+    {
+      "case": "case010_activsg200_scenario5_restore",
+      "solve_tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 46869.9,
+        "obj_mat": 46869.90000000001,
+        "rel": 1.5523731892287852e-16,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1475.69,
+        "served_final_mat": 1475.6899999999998,
+        "max_bal_py": 3.126388037344441e-11,
+        "max_bal_mat": 3.126388037344441e-11,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case011_activsg200_scenario6_restore",
+      "solve_tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "obj_py": 46832.950000000004,
+        "obj_mat": 46832.95,
+        "rel": 1.5535979719798614e-16,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "served_final_py": 1475.69,
+        "served_final_mat": 1475.6899999999998,
+        "max_bal_py": 8.199663170671556e-12,
+        "max_bal_mat": 5.809397407574579e-11,
+        "max_open_flow_py": 0.0,
+        "max_mono_py": 0.0
+      }
+    },
+    {
+      "case": "case012_activsg200_scenario7_restore",
+      "solve_tier": "skip",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "data_only": true
+      }
+    },
+    {
+      "case": "case013_activsg200_scenario8_restore",
+      "solve_tier": "skip",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "data_only": true
+      }
+    }
+  ]
+}

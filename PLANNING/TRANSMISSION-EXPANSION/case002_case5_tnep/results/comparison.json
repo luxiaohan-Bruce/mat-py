@@ -1,0 +1,17 @@
+{
+  "case": "case002_case5_tnep",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 17972.78981960128,
+    "obj_mat": 17972.78981960128,
+    "n_built_py": 2,
+    "n_built_mat": 2,
+    "bal_py": 5.684341886080802e-14,
+    "bal_mat": 5.684341886080802e-14,
+    "obj_rel_diff": 0.0
+  }
+}

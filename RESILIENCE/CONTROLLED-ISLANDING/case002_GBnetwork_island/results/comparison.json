@@ -1,0 +1,10 @@
+{
+  "case": "case002_GBnetwork_island",
+  "ok": true,
+  "tier": "skip",
+  "issues": [],
+  "checks": {
+    "status_py": "SKIPPED",
+    "status_mat": "SKIPPED"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "case": "case010_case73_ieee_rts_pmu",
+  "base_problem": "pmu_placement",
+  "problem": "pmu",
+  "variant": {
+    "power_flow": "topological",
+    "security": "none",
+    "horizon": "single_period"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case73_ieee_rts.m",
+    "sha256": "fe8f15a2391e2c92138b712d146b04c038f0727e8e9220e1c6065507ea12a22c"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "bus_observability_pmu_unit_cost"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

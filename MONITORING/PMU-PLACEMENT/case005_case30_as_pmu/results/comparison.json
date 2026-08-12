@@ -1,0 +1,12 @@
+{
+  "case": "case005_case30_as_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 10.0,
+    "obj_mat": 10,
+    "n_py": 10,
+    "n_mat": 10,
+    "rel": 0.0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case": "case007_as30_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 767.6020998391105,
+    "obj_mat": 767.6020998391103,
+    "bal_py": 5.882974107862537e-10,
+    "bal_mat": 5.882974107862537e-10,
+    "obj_rel_diff": 1.4810647045578016e-16
+  }
+}

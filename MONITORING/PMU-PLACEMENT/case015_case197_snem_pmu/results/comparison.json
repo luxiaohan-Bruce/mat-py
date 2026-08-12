@@ -1,0 +1,12 @@
+{
+  "case": "case015_case197_snem_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 69.0,
+    "obj_mat": 69,
+    "n_py": 69,
+    "n_mat": 69,
+    "rel": 0.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "case": "case013_activsg200_scenario8_restore",
+  "solve_tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "data_only": true
+  }
+}

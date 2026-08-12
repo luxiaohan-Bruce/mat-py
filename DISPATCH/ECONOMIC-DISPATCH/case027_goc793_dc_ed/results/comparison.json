@@ -1,0 +1,15 @@
+{
+  "case": "case027_goc793_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 258800.38174172683,
+    "obj_mat": 258800.38174172683,
+    "bal_py": 2.431638250754986e-05,
+    "bal_mat": 2.431638250754986e-05,
+    "obj_rel_diff": 0.0
+  }
+}

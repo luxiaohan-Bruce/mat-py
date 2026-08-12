@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "case": "case065_kundur_motor_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "ANDES",
+    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/kundur/kundur_motor.xlsx",
+    "sha256": "8dbf144fe411570577bebc1d69fa8c84696a2c7f98c7fbe5fd0c360557c77eb6"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_andes",
+      "coherency=bus_area",
+      "n_islands=2",
+      "dynamic=['GENROU']"
+    ],
+    "synthetic_coherency": false
+  },
+  "n_islands": 2,
+  "coherency_groups": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

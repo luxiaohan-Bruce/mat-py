@@ -1,0 +1,19 @@
+{
+  "case": "case03_gaslib24_24_ieee_rts_ieg",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 58811.615477712694,
+    "obj_mat": 58811.61547772018,
+    "bal_py": 2.8421709430404007e-13,
+    "bal_mat": 1.5933210306684487e-10,
+    "gas_py": 0.0,
+    "gas_mat": 8.284928298962768e-12,
+    "coup_py": 0.0,
+    "coup_mat": 0,
+    "obj_rel_diff": 1.2730411032206823e-13
+  }
+}

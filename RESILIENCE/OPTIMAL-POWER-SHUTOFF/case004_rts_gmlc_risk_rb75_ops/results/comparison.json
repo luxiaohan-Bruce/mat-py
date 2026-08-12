@@ -1,0 +1,11 @@
+{
+  "case": "case004_rts_gmlc_risk_rb75_ops",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 0.0,
+    "shed_py": 0.0,
+    "risk_py": 111.75,
+    "status_py": "OPTIMAL"
+  }
+}

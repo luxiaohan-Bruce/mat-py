@@ -1,0 +1,17 @@
+{
+  "case": "case074_SMIB_island",
+  "ok": true,
+  "tier": "full",
+  "issues": [],
+  "checks": {
+    "obj_py": 0.001,
+    "obj_mat": 0.001,
+    "rel": 0.0,
+    "shed_py": 0.0,
+    "shed_mat": 0,
+    "open_py": 1,
+    "open_mat": 1,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL"
+  }
+}

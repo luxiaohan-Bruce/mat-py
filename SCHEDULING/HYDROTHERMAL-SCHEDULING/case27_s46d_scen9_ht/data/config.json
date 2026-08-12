@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case27_s46d_scen9_ht",
+  "base_problem": "hydrothermal_scheduling",
+  "problem": "ht",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "two_stage_stochastic",
+    "horizon": "multi_period",
+    "recourse": "dispatch",
+    "commitment": "binary"
+  },
+  "source": {
+    "dataset": "CommaLAB System_46buses",
+    "system": "D",
+    "n_scenarios": 9,
+    "relative_path": "\u6570\u636e\u96c6/CommaLAB Hydrothermal UC/System_46buses/D",
+    "sha256_parametros": "11811606bcee609ae1c1da2bc01a5d350bb4d6b4a5460db1ff8a672b9aa3310f"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "hydro_init": "m",
+    "transformations": [
+      "system_46buses_to_network_json",
+      "linear_hydro_from_unit_max_ratio",
+      "volume_hm3_flow_m3s",
+      "networked_dc",
+      "first_stage_commitment"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.001,
+    "TimeLimit": 1200.0
+  },
+  "solve_tier": "relaxed",
+  "mip_gap": 0.001,
+  "time_limit": 1200.0,
+  "seed": 1,
+  "threads": 1
+}

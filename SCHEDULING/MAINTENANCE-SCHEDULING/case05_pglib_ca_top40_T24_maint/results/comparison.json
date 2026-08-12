@@ -1,0 +1,33 @@
+{
+  "case": "case05_pglib_ca_top40_T24_maint",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 13193.277945604212,
+    "obj_mat": 13193.277945604214,
+    "obj_rel_diff": 1.3787243860438142e-16,
+    "starts_py": [
+      0,
+      0,
+      6,
+      6
+    ],
+    "starts_mat": [
+      0,
+      0,
+      6,
+      6
+    ],
+    "bal_py": 1.8189894035458565e-12,
+    "bal_mat": 3.637978807091713e-12,
+    "crew_py": 0.0,
+    "crew_mat": 0,
+    "start_once_py": 0.0,
+    "start_once_mat": 0,
+    "duration_py": 0.0,
+    "duration_mat": 0
+  }
+}

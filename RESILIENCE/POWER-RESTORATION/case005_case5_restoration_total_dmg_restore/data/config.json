@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "case": "case005_case5_restoration_total_dmg_restore",
+  "base_problem": "power_restoration",
+  "problem": "restore",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "mixed",
+    "relative_path": "\u6570\u636e\u96c6/PowerModelsRestoration/upstream/PowerModelsRestoration.jl-0.9.0/test/data/case5_restoration_total_dmg.m",
+    "sha256": "dc2ca5664a173e33c37773e4ee0e3745407c468bf68f1b1da683cf328c17ae0b"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_powermodels_restoration",
+      "dc_restore_v1",
+      "ignore_storage_q_shunt",
+      "horizon_T=8",
+      "repairs_per_period=3"
+    ]
+  },
+  "horizon_T": 8,
+  "repair_lag": 1,
+  "damaged_branches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "damaged_gens": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "damaged_buses": [
+    1,
+    2,
+    3,
+    4,
+    10
+  ],
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120,
+  "blackstart_gens": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "repairs_per_period": 3
+}

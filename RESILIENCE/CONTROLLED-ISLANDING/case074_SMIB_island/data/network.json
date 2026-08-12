@@ -1,0 +1,152 @@
+{
+  "name": "SMIB",
+  "source": "SMIB",
+  "baseMVA": 100.0,
+  "buses": [
+    {
+      "bus_i": 1,
+      "type": 2,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.05,
+      "Va": 0.0,
+      "baseKV": 110.0,
+      "zone": 1,
+      "Vmax": 1.5,
+      "Vmin": 0.5
+    },
+    {
+      "bus_i": 2,
+      "type": 3,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 110.0,
+      "zone": 1,
+      "Vmax": 1.5,
+      "Vmin": 0.5
+    },
+    {
+      "bus_i": 3,
+      "type": 1,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 110.0,
+      "zone": 1,
+      "Vmax": 1.5,
+      "Vmin": 0.5
+    }
+  ],
+  "gens": [
+    {
+      "bus": 1,
+      "Pg": 90.0,
+      "Qg": 0.0,
+      "Qmax": 99900.0,
+      "Qmin": -99900.0,
+      "Vg": 1.05,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 99900.0,
+      "Pmin": -100.0,
+      "c2": 0.0,
+      "c1": 1.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 2,
+      "Pg": 0.0,
+      "Qg": 0.0,
+      "Qmax": 99900.0,
+      "Qmin": -99900.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 99900.0,
+      "Pmin": -100.0,
+      "c2": 0.0,
+      "c1": 1.0,
+      "c0": 0.0
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "fbus": 1,
+      "tbus": 3,
+      "r": 0.0,
+      "x": 0.15,
+      "b": 0.0,
+      "rateA": 0.0,
+      "rateB": 0.0,
+      "rateC": 0.0,
+      "ratio": 0.0,
+      "angle": 0.0,
+      "status": 1,
+      "angmin": -360.0,
+      "angmax": 360.0
+    },
+    {
+      "id": 2,
+      "fbus": 2,
+      "tbus": 3,
+      "r": 0.0,
+      "x": 0.4,
+      "b": 0.0,
+      "rateA": 0.0,
+      "rateB": 0.0,
+      "rateC": 0.0,
+      "ratio": 0.0,
+      "angle": 0.0,
+      "status": 1,
+      "angmin": -360.0,
+      "angmax": 360.0
+    },
+    {
+      "id": 3,
+      "fbus": 2,
+      "tbus": 3,
+      "r": 0.0,
+      "x": 0.4,
+      "b": 0.0,
+      "rateA": 0.0,
+      "rateB": 0.0,
+      "rateC": 0.0,
+      "ratio": 0.0,
+      "angle": 0.0,
+      "status": 1,
+      "angmin": -360.0,
+      "angmax": 360.0
+    }
+  ],
+  "meta": {
+    "dynamic_models": [
+      "GENCLS"
+    ],
+    "dataset": "ANDES"
+  },
+  "coherency": {
+    "groups": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "source": "synthetic_electrical_distance",
+    "synthetic": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "case": "case017_case57_ieee_dmg_mld",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 823.9999999999997,
+    "obj_mat": 823.9999999999997,
+    "rel": 0.0,
+    "served_py": 823.9999999999999,
+    "served_mat": 824
+  }
+}

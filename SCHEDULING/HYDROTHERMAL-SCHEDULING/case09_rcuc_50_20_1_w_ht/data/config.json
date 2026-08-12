@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "case": "case09_rcuc_50_20_1_w_ht",
+  "base_problem": "hydrothermal_scheduling",
+  "problem": "ht",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "commitment": "binary"
+  },
+  "source": {
+    "dataset": "CommaLAB RCUC HT-Ramp",
+    "relative_path": "\u6570\u636e\u96c6/CommaLAB Hydrothermal UC/RCUC/HT-Ramp/50_20_1_w.mod",
+    "sha256": "4ba411f7c8f69915d5e941feba045a8a1c8abd98c64e18f71cf6c45f2b74e2dc"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "rcuc_mod_to_network_json",
+      "linear_hydro_P_eq_k_release",
+      "thermal_commitment_min_up_down"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.001,
+    "TimeLimit": 180.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 0.001,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 1
+}

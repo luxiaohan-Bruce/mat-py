@@ -1,0 +1,12 @@
+{
+  "case": "case030_case2737sop_k_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 866.0,
+    "obj_mat": 866,
+    "n_py": 866,
+    "n_mat": 866,
+    "rel": 0.0
+  }
+}

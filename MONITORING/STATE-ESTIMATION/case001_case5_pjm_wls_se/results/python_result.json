@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "case": "case001_case5_pjm_wls_se",
+  "solver": "python-gurobi",
+  "problem": "se",
+  "base_problem": "state_estimation",
+  "se": {
+    "status": "OPTIMAL",
+    "obj": 79.29704232267977,
+    "obj_bound": 79.29704232267977,
+    "mip_gap": 0.0,
+    "runtime": 0.000186920166015625,
+    "method": "wls",
+    "theta_rad": [
+      0.020828840486407648,
+      -0.042006299636358185,
+      -0.03394286708680635,
+      0.0,
+      0.03290461875091678
+    ],
+    "theta_deg": [
+      1.193404652022375,
+      -2.4067836821252486,
+      -1.9447830286475154,
+      0.0,
+      1.8852957809145618
+    ],
+    "max_theta_error_rad": 0.00026868794169861154,
+    "rmse_theta_rad": 0.00017239016572767255,
+    "n_meas": 12,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

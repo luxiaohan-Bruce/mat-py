@@ -1,0 +1,12 @@
+{
+  "case": "case034_case2848_rte_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 940.0,
+    "obj_mat": 940,
+    "n_py": 940,
+    "n_mat": 940,
+    "rel": 0.0
+  }
+}

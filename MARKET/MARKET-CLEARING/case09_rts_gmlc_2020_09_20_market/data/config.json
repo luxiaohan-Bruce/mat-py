@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case09_rts_gmlc_2020_09_20_market",
+  "base_problem": "market_clearing",
+  "problem": "market_clearing",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "market": "energy_only_welfare_max_lp",
+    "pricing": "lp_dual_of_balance"
+  },
+  "source": {
+    "dataset": "PGLib-UC",
+    "group": "rts_gmlc",
+    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-09-20.json",
+    "sha256": "4c3317cf5c9a250c3f3bda8add5b069066ade8ed11ce83aed0017bad938572f9"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "pwl_production_to_truthful_step_offers",
+      "renewable_zero_price_period_qty",
+      "synthetic_linear_demand_utility_voll"
+    ],
+    "voll_usd_per_mwh": 10000.0,
+    "voll_source": "synthetic"
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices."
+}

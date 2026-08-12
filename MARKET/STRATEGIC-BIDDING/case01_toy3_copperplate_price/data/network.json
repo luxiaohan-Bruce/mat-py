@@ -1,0 +1,59 @@
+{
+  "name": "case01_toy3_copperplate_price",
+  "source": "synthetic_toy3",
+  "topology": "copperplate",
+  "baseMVA": 100.0,
+  "buses": [
+    {
+      "bus_i": 1,
+      "type": 3,
+      "Pd": 0.0,
+      "Qd": 0.0
+    },
+    {
+      "bus_i": 2,
+      "type": 1,
+      "Pd": 80.0,
+      "Qd": 0.0
+    },
+    {
+      "bus_i": 3,
+      "type": 1,
+      "Pd": 70.0,
+      "Qd": 0.0
+    }
+  ],
+  "gens": [
+    {
+      "bus": 1,
+      "Pmax": 100.0,
+      "Pmin": 0.0,
+      "status": 1,
+      "c2": 0.0,
+      "c1": 20.0,
+      "c0": 0.0,
+      "name": "G_strategic"
+    },
+    {
+      "bus": 2,
+      "Pmax": 80.0,
+      "Pmin": 0.0,
+      "status": 1,
+      "c2": 0.0,
+      "c1": 30.0,
+      "c0": 0.0,
+      "name": "G_comp_mid"
+    },
+    {
+      "bus": 3,
+      "Pmax": 60.0,
+      "Pmin": 0.0,
+      "status": 1,
+      "c2": 0.0,
+      "c1": 50.0,
+      "c0": 0.0,
+      "name": "G_comp_exp"
+    }
+  ],
+  "branches": []
+}

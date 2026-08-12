@@ -1,0 +1,17 @@
+{
+  "case": "case10_rcuc_50_20_2_w_ht",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 7707496.221534907,
+    "obj_mat": 7709126.872510174,
+    "bal_py": 1.8189894035458565e-12,
+    "bal_mat": 1.8189894035458565e-12,
+    "water_py": 2.8421709430404007e-13,
+    "water_mat": 3.410605131648481e-13,
+    "obj_rel_diff": 0.0002115221350270041
+  }
+}

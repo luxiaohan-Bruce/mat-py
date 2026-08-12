@@ -1,0 +1,15 @@
+{
+  "case": "case003_pjm5_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 17479.896925381025,
+    "obj_mat": 17479.89692538102,
+    "bal_py": 2.842170943040401e-14,
+    "bal_mat": 2.842170943040401e-14,
+    "obj_rel_diff": 2.0812358463105827e-16
+  }
+}

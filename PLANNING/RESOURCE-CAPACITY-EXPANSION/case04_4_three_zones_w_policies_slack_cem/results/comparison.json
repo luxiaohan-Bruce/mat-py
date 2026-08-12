@@ -1,0 +1,21 @@
+{
+  "case": "case04_4_three_zones_w_policies_slack_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 7792260273.654717,
+    "obj_mat": 7792260273.654719,
+    "inv_py": 7728506526.350075,
+    "inv_mat": 7728506526.350076,
+    "op_py": 63753747.30464268,
+    "op_mat": 63753747.30464363,
+    "bal_py": 1.8189894035458565e-12,
+    "bal_mat": 1.8189894035458565e-12,
+    "cap_py": 0.0,
+    "cap_mat": 0,
+    "obj_rel_diff": 2.4477475929046666e-16
+  }
+}

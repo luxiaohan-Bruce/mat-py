@@ -1,0 +1,16 @@
+{
+  "case": "case018_case5_risk_mops_rb50_ops",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 300.0,
+    "shed_py": 300.0,
+    "risk_py": 20.0,
+    "status_py": "OPTIMAL",
+    "obj_mat": 300,
+    "shed_mat": 300,
+    "risk_mat": 20,
+    "status_mat": "OPTIMAL",
+    "obj_rel": 0.0
+  }
+}

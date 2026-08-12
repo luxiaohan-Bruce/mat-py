@@ -1,0 +1,15 @@
+{
+  "case": "case005_ieee24_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 61001.240312380905,
+    "obj_mat": 61001.24031238093,
+    "bal_py": 6.312689038168173e-09,
+    "bal_mat": 6.312689038168173e-09,
+    "obj_rel_diff": 3.5782670533864624e-16
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "case": "case022_pserc240_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 3270857.336896988,
+    "obj_mat": 3270857.336896988,
+    "bal_py": 2.0463630789890885e-11,
+    "bal_mat": 2.091837814077735e-11,
+    "obj_rel_diff": 0.0
+  }
+}

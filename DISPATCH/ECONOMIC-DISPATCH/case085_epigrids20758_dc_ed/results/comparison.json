@@ -1,0 +1,9 @@
+{
+  "case": "case085_epigrids20758_dc_ed",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

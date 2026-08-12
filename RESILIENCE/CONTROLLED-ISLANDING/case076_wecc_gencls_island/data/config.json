@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "case": "case076_wecc_gencls_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "ANDES",
+    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/wecc/wecc_gencls.xlsx",
+    "sha256": "fcf16bcdc30b55d832e31fb801c75a7614cc1876e645cc311209ca451fc786eb"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_andes",
+      "coherency=bus_area",
+      "n_islands=3",
+      "dynamic=['GENCLS']"
+    ],
+    "synthetic_coherency": false
+  },
+  "n_islands": 3,
+  "coherency_groups": [
+    [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      12,
+      14,
+      15,
+      16,
+      26,
+      27,
+      28
+    ],
+    [
+      4,
+      5,
+      10,
+      11,
+      13,
+      17,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    [
+      18,
+      19,
+      20
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 300
+  },
+  "solve_tier": "skip",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 300
+}

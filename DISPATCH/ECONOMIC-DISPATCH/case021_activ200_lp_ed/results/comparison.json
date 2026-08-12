@@ -1,0 +1,15 @@
+{
+  "case": "case021_activ200_lp_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 27393.310499999945,
+    "obj_mat": 27393.31049999994,
+    "bal_py": 1.4502177236863645e-11,
+    "bal_mat": 1.4495071809506044e-11,
+    "obj_rel_diff": 1.3280537257779488e-16
+  }
+}

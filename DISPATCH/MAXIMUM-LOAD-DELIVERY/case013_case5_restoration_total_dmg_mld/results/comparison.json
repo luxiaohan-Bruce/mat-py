@@ -1,0 +1,12 @@
+{
+  "case": "case013_case5_restoration_total_dmg_mld",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 930.0,
+    "obj_mat": 930,
+    "rel": 0.0,
+    "served_py": 930.0,
+    "served_mat": 930
+  }
+}

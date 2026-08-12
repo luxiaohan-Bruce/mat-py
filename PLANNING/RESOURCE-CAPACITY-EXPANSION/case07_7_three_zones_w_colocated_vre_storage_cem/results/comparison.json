@@ -1,0 +1,21 @@
+{
+  "case": "case07_7_three_zones_w_colocated_vre_storage_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 359004491652.1617,
+    "obj_mat": 359004491652.16174,
+    "inv_py": 357745020251.984,
+    "inv_mat": 357745020251.984,
+    "op_py": 1259471400.1776733,
+    "op_mat": 1259471400.1777344,
+    "bal_py": 2.9103830456733704e-10,
+    "bal_mat": 2.8812792152166367e-09,
+    "cap_py": 0.0,
+    "cap_mat": 1.4210854715202004e-14,
+    "obj_rel_diff": 1.7001223569407805e-16
+  }
+}

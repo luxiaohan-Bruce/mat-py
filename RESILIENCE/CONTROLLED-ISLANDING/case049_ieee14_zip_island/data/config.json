@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case": "case049_ieee14_zip_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "ANDES",
+    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/ieee14/ieee14_zip.json",
+    "sha256": "576643f1c899af08ddbe3126a1d66fc79a6ec60e2a32f8f95646085a7d9373c5"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_andes",
+      "coherency=bus_area",
+      "n_islands=2",
+      "dynamic=['GENROU']"
+    ],
+    "synthetic_coherency": false
+  },
+  "n_islands": 2,
+  "coherency_groups": [
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

@@ -1,0 +1,9 @@
+{
+  "case": "case053_rte6470_tep_syn",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

@@ -1,0 +1,1356 @@
+{
+  "summary": {
+    "n_cases": 82,
+    "n_pass": 82,
+    "n_fail": 0,
+    "n_skip_tier_pass": 7,
+    "n_full_pass": 75
+  },
+  "rows": [
+    {
+      "case": "case001_pjm5bus_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.004,
+        "obj_mat": 0.004,
+        "rel": 0.0,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 4,
+        "open_mat": 4,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case002_GBnetwork_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case003_EI_33_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case004_ieee14_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case005_ieee14_ac8b_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case006_ieee14_ace_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case007_ieee14_alter_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case008_ieee14_conn_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case009_ieee14_dgprct1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case010_ieee14_dgprctext_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case011_ieee14_esac1a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case012_ieee14_esd1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case013_ieee14_esd1u_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case014_ieee14_esdc1a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case015_ieee14_esst1a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case016_ieee14_esst3a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case017_ieee14_esst4b_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case018_ieee14_exac1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case019_ieee14_exac4_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case020_ieee14_fault_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case021_ieee14_fload_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case022_ieee14_freqdiv_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case023_ieee14_full_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case024_ieee14_gast_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case025_ieee14_gentrip_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case026_ieee14_hygov_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case027_ieee14_hygov4_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case028_ieee14_hygovdb_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case029_ieee14_ieeet1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case030_ieee14_ieeet3_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case031_ieee14_ieeevc2_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case032_ieee14_ieesgo_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case033_ieee14_island_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case034_ieee14_linetrip_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case035_ieee14_plbvfu1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case036_ieee14_pll1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case037_ieee14_pvd1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case038_ieee14_pvd1u_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case039_ieee14_reecb1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case040_ieee14_regcp1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case041_ieee14_regcp1_nopll_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case042_ieee14_shaft5_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case043_ieee14_shuntsw_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case044_ieee14_solar_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case045_ieee14_solar_abn_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case046_ieee14_timeseries_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case047_ieee14_wt3_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case048_ieee14_wt3n_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case049_ieee14_zip_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999923,
+        "rel": 1.0408340855860843e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case050_ieee39_full_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.002999999999999968,
+        "rel": 3.469446951953614e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case051_kundur_aw_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case052_kundur_coi_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case053_kundur_coi_empty_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case054_kundur_coi_partial_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case055_kundur_esdc2a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case056_kundur_esst3a_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case057_kundur_exdc2_zero_tb_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case058_kundur_exst1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case059_kundur_freq_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case060_kundur_full_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case061_kundur_gentrip_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case062_kundur_ieeeg1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case063_kundur_ieeest_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case064_kundur_islands_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0030000000000000027,
+        "obj_mat": 0.0029999999999999957,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case065_kundur_motor_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case066_kundur_pmu_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case067_kundur_reg_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case068_kundur_sexs_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case069_kundur_st2cut_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case070_kundur_vsc_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case071_kundur_wtds_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case072_kundur_wtdta1_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0020000000000000018,
+        "obj_mat": 0.001999999999999995,
+        "rel": 6.938893903907228e-18,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 2,
+        "open_mat": 2,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case073_npcc_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case074_SMIB_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.001,
+        "obj_mat": 0.001,
+        "rel": 0.0,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 1,
+        "open_mat": 1,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case075_wecc_full_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case076_wecc_gencls_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case077_case5_pjm_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.003,
+        "obj_mat": 0.003,
+        "rel": 0.0,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 3,
+        "open_mat": 3,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case078_case14_ieee_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 72.00399999999999,
+        "obj_mat": 72.00399999999998,
+        "rel": 1.9736201759905014e-16,
+        "shed_py": 72.0,
+        "shed_mat": 72,
+        "open_py": 4,
+        "open_mat": 4,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case079_case30_ieee_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 54.004,
+        "obj_mat": 54.004,
+        "rel": 0.0,
+        "shed_py": 54.0,
+        "shed_mat": 54,
+        "open_py": 4,
+        "open_mat": 4,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case080_case39_epri_island",
+      "ok": true,
+      "tier": "full",
+      "issues": [],
+      "checks": {
+        "obj_py": 0.0040000000000000036,
+        "obj_mat": 0.003999999999999969,
+        "rel": 3.469446951953614e-17,
+        "shed_py": 0.0,
+        "shed_mat": 0,
+        "open_py": 4,
+        "open_mat": 4,
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL"
+      }
+    },
+    {
+      "case": "case081_case57_ieee_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    },
+    {
+      "case": "case082_case118_ieee_island",
+      "ok": true,
+      "tier": "skip",
+      "issues": [],
+      "checks": {
+        "status_py": "SKIPPED",
+        "status_mat": "SKIPPED"
+      }
+    }
+  ]
+}

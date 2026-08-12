@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case": "case001_lmbd3_dc_ed",
+  "solver": "python-gurobi",
+  "problem": "ed",
+  "base_problem": "economic_dispatch",
+  "ed": {
+    "status": "OPTIMAL",
+    "obj": 5693.803333333596,
+    "obj_bound": 5693.80333333333,
+    "mip_gap": 0.0,
+    "runtime": 0.0007390975952148438,
+    "Pg_MW": [
+      144.3333333333734,
+      170.66666666662664,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      5.500394833243441,
+      -15.985522484155606
+    ],
+    "flow_MW": [
+      45.00000000001588,
+      -49.99999999998412,
+      -10.666666666642502
+    ],
+    "has_quad": true,
+    "ref_bus": 1,
+    "baseMVA": 100.0,
+    "n_var": 9,
+    "n_constr": 13,
+    "max_power_balance_MW": 1.4210854715202004e-14,
+    "max_flow_equation_MW": 7.105427357601002e-15,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "cost_recomputed": 5693.803333333597,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

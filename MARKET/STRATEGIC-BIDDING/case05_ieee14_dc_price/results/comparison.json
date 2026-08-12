@@ -1,0 +1,21 @@
+{
+  "case": "case05_ieee14_dc_price",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 3168.3804,
+    "obj_mat": 3168.3804,
+    "profit_py": 3168.3804,
+    "profit_mat": 3168.3804,
+    "best_level_py": 23.762853,
+    "best_level_mat": 23.762853,
+    "best_level_index_py": 5,
+    "best_level_index_mat": 5,
+    "obj_rel_diff": 0.0,
+    "bal_py": 7.105427357601002e-15,
+    "bal_mat": 7.105427357601002e-15
+  }
+}

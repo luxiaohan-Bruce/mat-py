@@ -1,0 +1,19 @@
+{
+  "case": "case07_rts_gmlc_2020_07_06_market",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 2431483279.728674,
+    "obj_mat": 2431483279.728674,
+    "bal_py": 6.366462912410498e-12,
+    "bal_mat": 7.275957614183426e-12,
+    "offer_py": 0.0,
+    "offer_mat": 0,
+    "welfare_re_py": 2431483279.728674,
+    "welfare_re_mat": 2431483279.728674,
+    "obj_rel_diff": 0.0
+  }
+}

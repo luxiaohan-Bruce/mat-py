@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "case": "case032_case5_strg_rb25_ops",
+  "solver": "python-gurobi",
+  "problem": "ops",
+  "base_problem": "optimal_power_shutoff",
+  "ops": {
+    "status": "OPTIMAL",
+    "obj": 480.0,
+    "obj_bound": 480.0,
+    "mip_gap": 0.0,
+    "runtime": 0.0017170906066894531,
+    "ops_mode": "risk_budget",
+    "risk_weight": null,
+    "risk_budget": 16.75,
+    "total_branch_risk": 12.0,
+    "risk_exposure": 14.0,
+    "Pg_MW": [
+      0.0,
+      0.0,
+      520.0,
+      0.0,
+      0.0
+    ],
+    "theta_deg": [
+      -180.0,
+      -180.0,
+      6.80673860615422,
+      0.0,
+      -180.0
+    ],
+    "flow_MW": [
+      0.0,
+      0.0,
+      0.0,
+      -0.0,
+      400.0,
+      0.0
+    ],
+    "load_frac": [
+      0.0,
+      0.0,
+      0.4,
+      1.0,
+      0.0
+    ],
+    "z_branch": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "z_bus": [
+      -0.0,
+      -0.0,
+      1.0,
+      1.0,
+      -0.0
+    ],
+    "z_gen": [
+      -0.0,
+      -0.0,
+      1.0,
+      -0.0,
+      -0.0
+    ],
+    "deenergized_branches": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "n_deenergized": 5,
+    "served_MW": 520.0,
+    "total_demand_MW": 1000.0,
+    "load_shed_MW": 480.0,
+    "ref_bus": 4,
+    "baseMVA": 100.0,
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 2.3874235921539366e-12,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "max_deenergized_flow_MW": 0.0,
+    "max_load_without_bus": 0.0,
+    "max_risk_budget_violation": 0.0,
+    "max_integrality": 0.0,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

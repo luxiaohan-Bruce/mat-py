@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "case": "case001_lmbd3_nk_int",
+  "solver": "python-gurobi",
+  "problem": "interdiction",
+  "base_problem": "network_interdiction",
+  "interdiction": {
+    "status": "OPTIMAL",
+    "obj": 45.0,
+    "obj_bound": 45.0,
+    "mip_gap": 0.0,
+    "runtime": 0.003798961639404297,
+    "method": "auto",
+    "k": 1,
+    "attack_target": "lines",
+    "attacked_lines_idx": [
+      0
+    ],
+    "attacked_branch_ids": [
+      1
+    ],
+    "attacked_gens": [],
+    "n_attacks_evaluated": 3,
+    "shed_MW": 45.0,
+    "total_demand_MW": 315.0,
+    "baseline_shed_MW": 0.0,
+    "dual_obj": null,
+    "Pg_MW": [
+      270.0,
+      0.0,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      -82.50592249883854,
+      -103.9918398162444
+    ],
+    "flow_MW": [
+      0.0,
+      -50.0,
+      160.0
+    ],
+    "shed_bus_MW": [
+      0.0,
+      0.0,
+      45.0
+    ],
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 3.552713678800501e-14,
+    "max_thermal_violation_MW": 0.0,
+    "max_attacked_flow_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "notes": "enumerated 3 attacks, k=1, target=lines; milp_match=True",
+    "validation_passed": true,
+    "milp_obj": 45.0,
+    "milp_attacked_lines_idx": [
+      0
+    ],
+    "milp_dual_obj": 45.0,
+    "milp_status": "OPTIMAL",
+    "oracle_milp_match": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

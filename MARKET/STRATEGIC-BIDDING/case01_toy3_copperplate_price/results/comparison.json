@@ -1,0 +1,21 @@
+{
+  "case": "case01_toy3_copperplate_price",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1400.0,
+    "obj_mat": 1400,
+    "profit_py": 1400.0,
+    "profit_mat": 1400,
+    "best_level_py": 40.0,
+    "best_level_mat": 40,
+    "best_level_index_py": 4,
+    "best_level_index_mat": 4,
+    "obj_rel_diff": 0.0,
+    "bal_py": 0.0,
+    "bal_mat": 0
+  }
+}

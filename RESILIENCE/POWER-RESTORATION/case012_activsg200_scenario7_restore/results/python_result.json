@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "case": "case012_activsg200_scenario7_restore",
+  "solver": "python-gurobi",
+  "problem": "restore",
+  "base_problem": "power_restoration",
+  "restore": {
+    "status": "SKIPPED",
+    "obj": null,
+    "validation_passed": true,
+    "note": "solve_tier=skip"
+  },
+  "validation": {
+    "passed": true
+  }
+}

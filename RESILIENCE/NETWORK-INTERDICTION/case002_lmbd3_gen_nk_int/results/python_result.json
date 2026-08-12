@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "case": "case002_lmbd3_gen_nk_int",
+  "solver": "python-gurobi",
+  "problem": "interdiction",
+  "base_problem": "network_interdiction",
+  "interdiction": {
+    "status": "OPTIMAL",
+    "obj": 85.46052631578948,
+    "obj_bound": 85.46052631578948,
+    "mip_gap": 0.0,
+    "runtime": 0.0009210109710693359,
+    "method": "enumeration",
+    "k": 1,
+    "attack_target": "gens",
+    "attacked_lines_idx": [],
+    "attacked_branch_ids": [],
+    "attacked_gens": [
+      0
+    ],
+    "n_attacks_evaluated": 3,
+    "shed_MW": 85.46052631578948,
+    "total_demand_MW": 315.0,
+    "baseline_shed_MW": 0.0,
+    "dual_obj": null,
+    "Pg_MW": [
+      0.0,
+      229.53947368421052,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      35.85886516499685,
+      14.372947847590977
+    ],
+    "flow_MW": [
+      -40.46052631578947,
+      -50.0,
+      -69.53947368421052
+    ],
+    "shed_bus_MW": [
+      0.0,
+      0.0,
+      85.46052631578948
+    ],
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 1.4210854715202004e-14,
+    "max_thermal_violation_MW": 0.0,
+    "max_attacked_flow_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "notes": "enumerated 3 attacks, k=1, target=gens",
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

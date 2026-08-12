@@ -1,0 +1,8 @@
+{
+  "case": "case049_case5658_epigrids_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "skip"
+  }
+}

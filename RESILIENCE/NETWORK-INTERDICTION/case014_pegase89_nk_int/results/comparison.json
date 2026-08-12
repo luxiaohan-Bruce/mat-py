@@ -1,0 +1,23 @@
+{
+  "case": "case014_pegase89_nk_int",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 361.91,
+    "obj_mat": 361.91,
+    "method_py": "enumeration",
+    "method_mat": "enumeration",
+    "atk_py": [
+      0
+    ],
+    "atk_mat": 0,
+    "bal_py": 7.958078640513122e-12,
+    "bal_mat": 7.958078640513122e-12,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

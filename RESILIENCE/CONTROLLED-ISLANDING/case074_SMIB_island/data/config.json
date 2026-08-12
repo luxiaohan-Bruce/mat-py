@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case": "case074_SMIB_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "ANDES",
+    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/smib/SMIB.xlsx",
+    "sha256": "bd797bee64d670ee41206c81412ed4f928ea10b9cacdbcfd3d42007a3d7d93b9"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_andes",
+      "coherency=synthetic_electrical_distance",
+      "n_islands=2",
+      "dynamic=['GENCLS']",
+      "synthetic_coherency"
+    ],
+    "synthetic_coherency": true
+  },
+  "n_islands": 2,
+  "coherency_groups": [
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

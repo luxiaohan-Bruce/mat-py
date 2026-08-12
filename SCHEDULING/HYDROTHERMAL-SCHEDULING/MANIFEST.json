@@ -1,0 +1,322 @@
+[
+  {
+    "case": "case01_rcuc_100_50_1_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 100,
+    "n_hydro": 50,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case01_rcuc_100_50_1_w_ht"
+  },
+  {
+    "case": "case02_rcuc_100_50_2_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 100,
+    "n_hydro": 50,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case02_rcuc_100_50_2_w_ht"
+  },
+  {
+    "case": "case03_rcuc_150_75_1_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 150,
+    "n_hydro": 75,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case03_rcuc_150_75_1_w_ht"
+  },
+  {
+    "case": "case04_rcuc_150_75_2_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 150,
+    "n_hydro": 75,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case04_rcuc_150_75_2_w_ht"
+  },
+  {
+    "case": "case05_rcuc_200_100_1_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 200,
+    "n_hydro": 100,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case05_rcuc_200_100_1_w_ht"
+  },
+  {
+    "case": "case06_rcuc_200_100_2_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 200,
+    "n_hydro": 100,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case06_rcuc_200_100_2_w_ht"
+  },
+  {
+    "case": "case07_rcuc_20_10_1_w_ht",
+    "solve_tier": "full",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 20,
+    "n_hydro": 10,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case07_rcuc_20_10_1_w_ht"
+  },
+  {
+    "case": "case08_rcuc_20_10_2_w_ht",
+    "solve_tier": "full",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 20,
+    "n_hydro": 10,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case08_rcuc_20_10_2_w_ht"
+  },
+  {
+    "case": "case09_rcuc_50_20_1_w_ht",
+    "solve_tier": "full",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 50,
+    "n_hydro": 20,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case09_rcuc_50_20_1_w_ht"
+  },
+  {
+    "case": "case10_rcuc_50_20_2_w_ht",
+    "solve_tier": "full",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 50,
+    "n_hydro": 20,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case10_rcuc_50_20_2_w_ht"
+  },
+  {
+    "case": "case11_rcuc_75_35_1_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 75,
+    "n_hydro": 35,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case11_rcuc_75_35_1_w_ht"
+  },
+  {
+    "case": "case12_rcuc_75_35_2_w_ht",
+    "solve_tier": "relaxed",
+    "source": "RCUC/HT-Ramp",
+    "n_thermal": 75,
+    "n_hydro": 35,
+    "n_scenarios": 1,
+    "networked": false,
+    "path": "case12_rcuc_75_35_2_w_ht"
+  },
+  {
+    "case": "case13_s46a_scen1_ht",
+    "solve_tier": "full",
+    "source": "System_46buses/A",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 1,
+    "networked": true,
+    "path": "case13_s46a_scen1_ht"
+  },
+  {
+    "case": "case14_s46a_scen4_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/A",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 4,
+    "networked": true,
+    "path": "case14_s46a_scen4_ht"
+  },
+  {
+    "case": "case15_s46a_scen9_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/A",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 9,
+    "networked": true,
+    "path": "case15_s46a_scen9_ht"
+  },
+  {
+    "case": "case16_s46a_scen16_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/A",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 16,
+    "networked": true,
+    "path": "case16_s46a_scen16_ht"
+  },
+  {
+    "case": "case17_s46b_scen1_ht",
+    "solve_tier": "full",
+    "source": "System_46buses/B",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 1,
+    "networked": true,
+    "path": "case17_s46b_scen1_ht"
+  },
+  {
+    "case": "case18_s46b_scen4_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/B",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 4,
+    "networked": true,
+    "path": "case18_s46b_scen4_ht"
+  },
+  {
+    "case": "case19_s46b_scen9_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/B",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 9,
+    "networked": true,
+    "path": "case19_s46b_scen9_ht"
+  },
+  {
+    "case": "case20_s46b_scen16_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/B",
+    "n_thermal": 14,
+    "n_hydro": 7,
+    "n_scenarios": 16,
+    "networked": true,
+    "path": "case20_s46b_scen16_ht"
+  },
+  {
+    "case": "case21_s46c_scen1_ht",
+    "solve_tier": "full",
+    "source": "System_46buses/C",
+    "n_thermal": 10,
+    "n_hydro": 10,
+    "n_scenarios": 1,
+    "networked": true,
+    "path": "case21_s46c_scen1_ht"
+  },
+  {
+    "case": "case22_s46c_scen4_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/C",
+    "n_thermal": 10,
+    "n_hydro": 10,
+    "n_scenarios": 4,
+    "networked": true,
+    "path": "case22_s46c_scen4_ht"
+  },
+  {
+    "case": "case23_s46c_scen9_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/C",
+    "n_thermal": 10,
+    "n_hydro": 10,
+    "n_scenarios": 9,
+    "networked": true,
+    "path": "case23_s46c_scen9_ht"
+  },
+  {
+    "case": "case24_s46c_scen16_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/C",
+    "n_thermal": 10,
+    "n_hydro": 10,
+    "n_scenarios": 16,
+    "networked": true,
+    "path": "case24_s46c_scen16_ht"
+  },
+  {
+    "case": "case25_s46d_scen1_ht",
+    "solve_tier": "full",
+    "source": "System_46buses/D",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 1,
+    "networked": true,
+    "path": "case25_s46d_scen1_ht"
+  },
+  {
+    "case": "case26_s46d_scen4_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/D",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 4,
+    "networked": true,
+    "path": "case26_s46d_scen4_ht"
+  },
+  {
+    "case": "case27_s46d_scen9_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/D",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 9,
+    "networked": true,
+    "path": "case27_s46d_scen9_ht"
+  },
+  {
+    "case": "case28_s46d_scen16_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/D",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 16,
+    "networked": true,
+    "path": "case28_s46d_scen16_ht"
+  },
+  {
+    "case": "case29_s46e_scen1_ht",
+    "solve_tier": "full",
+    "source": "System_46buses/E",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 1,
+    "networked": true,
+    "path": "case29_s46e_scen1_ht"
+  },
+  {
+    "case": "case30_s46e_scen4_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/E",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 4,
+    "networked": true,
+    "path": "case30_s46e_scen4_ht"
+  },
+  {
+    "case": "case31_s46e_scen9_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/E",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 9,
+    "networked": true,
+    "path": "case31_s46e_scen9_ht"
+  },
+  {
+    "case": "case32_s46e_scen16_ht",
+    "solve_tier": "relaxed",
+    "source": "System_46buses/E",
+    "n_thermal": 7,
+    "n_hydro": 14,
+    "n_scenarios": 16,
+    "networked": true,
+    "path": "case32_s46e_scen16_ht"
+  }
+]

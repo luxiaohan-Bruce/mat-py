@@ -1,0 +1,10 @@
+{
+  "case": "case003_EI_33_island",
+  "ok": true,
+  "tier": "skip",
+  "issues": [],
+  "checks": {
+    "status_py": "SKIPPED",
+    "status_mat": "SKIPPED"
+  }
+}

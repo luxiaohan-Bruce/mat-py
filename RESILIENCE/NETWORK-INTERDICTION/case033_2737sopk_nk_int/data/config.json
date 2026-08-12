@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case033_2737sopk_nk_int",
+  "base_problem": "network_interdiction",
+  "problem": "interdiction",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-k",
+    "uncertainty": "worst_case_attack",
+    "horizon": "single_period",
+    "recourse": "operator_load_shed_lp",
+    "attack_scope": "lines"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case2737sop_k.m",
+    "sha256": "f2d0f0437abe57862850f05db5c9fac1ea184da6024315ff72ff1f3d2d5ed4fb"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "pglib_to_interdiction",
+      "k=2",
+      "method=enumeration"
+    ],
+    "notes": "huge: data-only skip"
+  },
+  "k": 2,
+  "method": "enumeration",
+  "attack_target": "lines",
+  "attack_size_mode": "exact",
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 1.0
+  },
+  "solve_tier": "skip",
+  "mip_gap": 1e-06,
+  "time_limit": 1.0,
+  "seed": 1,
+  "threads": 1
+}

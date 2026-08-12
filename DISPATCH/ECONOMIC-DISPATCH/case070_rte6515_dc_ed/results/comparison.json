@@ -1,0 +1,9 @@
+{
+  "case": "case070_rte6515_dc_ed",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

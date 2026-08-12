@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "case": "case04_complete_mixed_profile_meta",
+  "problem": "profile_meta",
+  "solve_tier": "skip",
+  "source": {
+    "dataset": "SimBench",
+    "folder": "1-complete_data-mixed-all-2-sw"
+  }
+}

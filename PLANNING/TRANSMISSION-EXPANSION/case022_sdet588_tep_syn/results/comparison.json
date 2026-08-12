@@ -1,0 +1,17 @@
+{
+  "case": "case022_sdet588_tep_syn",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 310092.8429594558,
+    "obj_mat": 310092.8429594558,
+    "n_built_py": 0,
+    "n_built_mat": 0,
+    "bal_py": 1.177156150333758e-10,
+    "bal_mat": 1.177156150333758e-10,
+    "obj_rel_diff": 0.0
+  }
+}

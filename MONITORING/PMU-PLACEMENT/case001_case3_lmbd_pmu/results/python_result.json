@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "case": "case001_case3_lmbd_pmu",
+  "solver": "python-gurobi",
+  "problem": "pmu",
+  "base_problem": "pmu_placement",
+  "pmu": {
+    "status": "OPTIMAL",
+    "obj": 1.0,
+    "obj_bound": 1.0,
+    "mip_gap": 0.0,
+    "runtime": 0.0017547607421875,
+    "y": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 1.0
+    },
+    "placed_buses": [
+      3
+    ],
+    "n_pmu": 1,
+    "all_observable": true,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "case": "case046_case4661_sdet_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "skip"
+  }
+}

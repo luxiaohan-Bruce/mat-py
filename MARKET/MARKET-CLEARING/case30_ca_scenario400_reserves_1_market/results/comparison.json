@@ -1,0 +1,19 @@
+{
+  "case": "case30_ca_scenario400_reserves_1_market",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 16704184059.695547,
+    "obj_mat": 16704184059.695549,
+    "bal_py": 6.548361852765083e-11,
+    "bal_mat": 5.820766091346741e-11,
+    "offer_py": 0.0,
+    "offer_mat": 0,
+    "welfare_re_py": 16704184059.695545,
+    "welfare_re_mat": 16704184059.695547,
+    "obj_rel_diff": 1.141838850671323e-16
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "case": "case004_case14_ieee_l1_se",
+  "base_problem": "state_estimation",
+  "problem": "se",
+  "se_method": "l1",
+  "variant": {
+    "power_flow": "dc",
+    "estimator": "l1",
+    "horizon": "single_period"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case14_ieee.m",
+    "sha256": "bd5c568621de65e4b0922317010868bc7fa94173807faa10ea8fdbbe77c28106"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "synthetic_true_dc_state",
+      "gaussian_measurement_noise",
+      "bad_data_ids=[19]"
+    ]
+  },
+  "true_theta_rad": [
+    0.0,
+    -0.09268258115948246,
+    -0.23072203693034057,
+    -0.1888666545405333,
+    -0.16251187010628765,
+    -0.2631264512376727,
+    -0.24680730772724643,
+    -0.24680730772724638,
+    -0.27797331204620324,
+    -0.28282538233808113,
+    -0.2765679242429448,
+    -0.2825979399758033,
+    -0.2856195251295406,
+    -0.3039887269651437
+  ],
+  "measurements": [
+    {
+      "type": "theta",
+      "bus": 1,
+      "z": 0.0,
+      "sigma": 0.0001,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 1,
+      "z": 158.7843940014434,
+      "sigma": 1.666377913798926,
+      "true": 156.6377913798926,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 2,
+      "z": 74.06325126422323,
+      "sigma": 0.8286220862010744,
+      "true": 72.86220862010744,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 3,
+      "z": 69.78034947749316,
+      "sigma": 0.79727461620881,
+      "true": 69.727461620881,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 4,
+      "z": 54.05733882612909,
+      "sigma": 0.645508583150243,
+      "true": 54.5508583150243,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 5,
+      "z": 39.6116431320383,
+      "sigma": 0.5015947144398735,
+      "true": 40.15947144398734,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 6,
+      "z": -24.456871120703163,
+      "sigma": 0.5,
+      "true": -24.472538379119023,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 7,
+      "z": -63.327471588427386,
+      "sigma": 0.7258557215446606,
+      "true": -62.58557215446606,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 8,
+      "z": 27.611741007797747,
+      "sigma": 0.5,
+      "true": 28.330155730349013,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 9,
+      "z": 16.63339234826422,
+      "sigma": 0.5,
+      "true": 16.533736360022342,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 10,
+      "z": 42.90657785967031,
+      "sigma": 0.5283610790962885,
+      "true": 42.83610790962884,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 11,
+      "z": 7.031139130195308,
+      "sigma": 0.5,
+      "true": 6.7579049800261926,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 12,
+      "z": 7.1547141247589785,
+      "sigma": 0.5,
+      "true": 7.611699596626635,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 13,
+      "z": 17.269005974789327,
+      "sigma": 0.5,
+      "true": 17.26650333297604,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 14,
+      "z": -0.03237088018637546,
+      "sigma": 0.5,
+      "true": -3.151356868081625e-14,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 15,
+      "z": 27.57724122971851,
+      "sigma": 0.5,
+      "true": 28.33015573034888,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 16,
+      "z": 6.011093609304359,
+      "sigma": 0.5,
+      "true": 5.742095019973842,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 17,
+      "z": 9.782152620896806,
+      "sigma": 0.5,
+      "true": 9.621797070397381,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 18,
+      "z": -2.0633489584058644,
+      "sigma": 0.5,
+      "true": -3.2579049800262077,
+      "bad": false
+    },
+    {
+      "type": "pflow",
+      "branch_id": 19,
+      "z": -3.386815814718395,
+      "sigma": 0.5,
+      "true": 1.511699596626623,
+      "bad": true
+    },
+    {
+      "type": "pflow",
+      "branch_id": 20,
+      "z": 5.205851775520174,
+      "sigma": 0.5,
+      "true": 5.278202929602634,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 1,
+      "z": 232.45245343419433,
+      "sigma": 2.395000000000001,
+      "true": 229.50000000000006,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 2,
+      "z": 7.899395624096752,
+      "sigma": 0.5,
+      "true": 7.80000000000004,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 3,
+      "z": -93.25278967074837,
+      "sigma": 1.0420000000000003,
+      "true": -94.20000000000002,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 4,
+      "z": -48.01128458588238,
+      "sigma": 0.5779999999999998,
+      "true": -47.79999999999998,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 5,
+      "z": -7.4909140933195895,
+      "sigma": 0.5,
+      "true": -7.599999999999881,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 6,
+      "z": -10.687855660756469,
+      "sigma": 0.5,
+      "true": -11.199999999999978,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 7,
+      "z": 0.34812351122631735,
+      "sigma": 0.5,
+      "true": -1.6342482922482304e-13,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 8,
+      "z": 0.06423612431645971,
+      "sigma": 0.5,
+      "true": 3.151356868081625e-14,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 9,
+      "z": -30.04115401229802,
+      "sigma": 0.5,
+      "true": -29.499999999999996,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 10,
+      "z": -8.777389113819526,
+      "sigma": 0.5,
+      "true": -9.00000000000005,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 11,
+      "z": -3.4615682591403587,
+      "sigma": 0.5,
+      "true": -3.499999999999985,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 12,
+      "z": -5.739766201570386,
+      "sigma": 0.5,
+      "true": -6.100000000000012,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 13,
+      "z": -13.391883531099992,
+      "sigma": 0.5,
+      "true": -13.500000000000028,
+      "bad": false
+    },
+    {
+      "type": "pinj",
+      "bus": 14,
+      "z": -14.355907294432255,
+      "sigma": 0.5,
+      "true": -14.900000000000016,
+      "bad": false
+    }
+  ],
+  "bad_measurement_indices": [
+    19
+  ],
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "TimeLimit": 120,
+    "MIPGap": 1e-06
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "time_limit": 120,
+  "mip_gap": 1e-06
+}

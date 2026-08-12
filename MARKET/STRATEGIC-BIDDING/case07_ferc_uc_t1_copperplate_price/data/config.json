@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "case": "case07_ferc_uc_t1_copperplate_price",
+  "base_problem": "strategic_bidding",
+  "problem": "bid",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "bidding": "price"
+  },
+  "topology": "copperplate",
+  "method": "enumeration",
+  "strategic": {
+    "firm_gens": [
+      8
+    ],
+    "mode": "price",
+    "bid_ladder": [
+      4.597873518947357,
+      5.28755454678946,
+      6.437022926526299,
+      8.276172334105242,
+      11.494683797368392,
+      16.092557316315748
+    ]
+  },
+  "demand_utility": {
+    "source": "synthetic",
+    "utility_per_mwh": 1344.04507903481,
+    "notes": "Synthetic demand willingness-to-pay (VOLL-like); not from market bids."
+  },
+  "source": {
+    "dataset": "PGLib-UC",
+    "relative_path": "uc_cases/case33_ferc_2015_01_01_hw_uc",
+    "sha256": ""
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "single_period_t0",
+      "top10_by_Pmax",
+      "copperplate",
+      "piecewise_to_linear_mc",
+      "demand_scaled_to_0.8_selected_cap",
+      "synthetic_demand_utility"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120.0
+}

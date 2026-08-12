@@ -1,0 +1,27 @@
+{
+  "case": "case016_ieeedtc162_nk_int",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1078.060000000923,
+    "obj_mat": 1078.060000000923,
+    "method_py": "heuristic",
+    "method_mat": "heuristic",
+    "atk_py": [
+      4,
+      82
+    ],
+    "atk_mat": [
+      4,
+      82
+    ],
+    "bal_py": 6.838263288955204e-10,
+    "bal_mat": 6.838263288955204e-10,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

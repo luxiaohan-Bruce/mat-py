@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "case": "case12_rcuc_75_35_2_w_ht",
+  "solver": "python-gurobi",
+  "problem": "ht",
+  "base_problem": "hydrothermal_scheduling",
+  "ht": {
+    "status": "OPTIMAL",
+    "obj": 14623858.796463484,
+    "runtime": 9.271310806274414,
+    "mip_gap": 0.0005293419941709431,
+    "n_scenarios": 1,
+    "time_periods": 24,
+    "networked": false,
+    "use_commitment": true,
+    "max_power_balance_MW": 3.637978807091713e-12,
+    "max_water_balance_hm3": 1.1368683772161603e-13,
+    "validation_passed": true,
+    "thermal_on_hours": 1390,
+    "total_deficit_MW": 0.0
+  },
+  "validation": {
+    "passed": true
+  }
+}

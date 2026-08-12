@@ -1,0 +1,21 @@
+{
+  "case": "case05_5_three_zones_w_piecewise_fuel_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 7918406831.01922,
+    "obj_mat": 7918406831.01922,
+    "inv_py": 7893559218.874907,
+    "inv_mat": 7893559218.874908,
+    "op_py": 24847612.144313812,
+    "op_mat": 24847612.144311905,
+    "bal_py": 1.000444171950221e-11,
+    "bal_mat": 1.3642420526593924e-11,
+    "cap_py": 9.094947017729282e-13,
+    "cap_mat": 0,
+    "obj_rel_diff": 0.0
+  }
+}

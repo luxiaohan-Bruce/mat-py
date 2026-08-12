@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "case": "case03_pglib_rts_20200127_T24_maint",
+  "problem": "maintenance_scheduling",
+  "base_problem": "maintenance_scheduling",
+  "source": {
+    "dataset": "PGLib-UC",
+    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-01-27.json",
+    "sha256": "c6d81435e84898b71d0253aed0fb87449b957129f441d45b776d041e3eba9058",
+    "role": "teaching_short_horizon"
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 180.0,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 180.0
+  },
+  "construction": [
+    "PGLib-UC rts_gmlc 2020-01-27 truncated to T=24.",
+    "Thermal PWL costs collapsed to linear c1/c0; renewables zero-cost up to max.",
+    "Synthetic maintenance: top-4 thermal, D=6, crew_limit=2, seed=1.",
+    "Teaching case only \u2014 not an annual maintenance plan."
+  ]
+}

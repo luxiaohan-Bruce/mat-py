@@ -1,0 +1,27 @@
+{
+  "case": "case018_snem197_nk_int",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 36.270248089737,
+    "obj_mat": 36.270248089737,
+    "method_py": "heuristic",
+    "method_mat": "heuristic",
+    "atk_py": [
+      4,
+      274
+    ],
+    "atk_mat": [
+      4,
+      274
+    ],
+    "bal_py": 1.0658141036401503e-13,
+    "bal_mat": 1.1368683772161603e-13,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

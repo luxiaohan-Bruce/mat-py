@@ -1,0 +1,19 @@
+{
+  "case": "case010_activsg200_scenario5_restore",
+  "solve_tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 46869.9,
+    "obj_mat": 46869.90000000001,
+    "rel": 1.5523731892287852e-16,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "served_final_py": 1475.69,
+    "served_final_mat": 1475.6899999999998,
+    "max_bal_py": 3.126388037344441e-11,
+    "max_bal_mat": 3.126388037344441e-11,
+    "max_open_flow_py": 0.0,
+    "max_mono_py": 0.0
+  }
+}

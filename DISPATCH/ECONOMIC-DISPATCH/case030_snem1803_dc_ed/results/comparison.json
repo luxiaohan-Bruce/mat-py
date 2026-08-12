@@ -1,0 +1,15 @@
+{
+  "case": "case030_snem1803_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 88005.29448649973,
+    "obj_mat": 88005.29448649971,
+    "bal_py": 5.552465154323727e-10,
+    "bal_mat": 5.554738891078159e-10,
+    "obj_rel_diff": 1.6535272466589107e-16
+  }
+}

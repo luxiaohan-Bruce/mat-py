@@ -1,0 +1,8 @@
+{
+  "case": "case050_case6468_rte_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "skip"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "case": "case017_goc179_nk_int",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 2727.58,
+    "obj_mat": 2727.58,
+    "method_py": "heuristic",
+    "method_mat": "heuristic",
+    "atk_py": [
+      37,
+      42
+    ],
+    "atk_mat": [
+      37,
+      42
+    ],
+    "bal_py": 2.6315092327422462e-09,
+    "bal_mat": 2.6313955459045246e-09,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

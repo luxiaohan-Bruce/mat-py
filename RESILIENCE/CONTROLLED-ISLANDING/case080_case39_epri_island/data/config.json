@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case": "case080_case39_epri_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case39_epri.m",
+    "sha256": "83a1a6ec49c9a0533b51e928f6bd95b93aea745a620e5123bedcd88f716c286b"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_pglib",
+      "synthetic_coherency",
+      "seed=1",
+      "n_islands=3"
+    ],
+    "synthetic_coherency": true
+  },
+  "n_islands": 3,
+  "coherency_groups": [
+    [
+      0,
+      1,
+      2,
+      7,
+      9
+    ],
+    [
+      3,
+      4,
+      5,
+      6
+    ],
+    [
+      8
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

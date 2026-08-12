@@ -1,0 +1,110 @@
+[
+  {
+    "case": "case001_case5_pjm_wls_se",
+    "source": "pglib_opf_case5_pjm",
+    "method": "wls",
+    "n_bus": 5,
+    "n_meas": 12,
+    "solve_tier": "full",
+    "path": "case001_case5_pjm_wls_se"
+  },
+  {
+    "case": "case002_case5_pjm_l1_se",
+    "source": "pglib_opf_case5_pjm",
+    "method": "l1",
+    "n_bus": 5,
+    "n_meas": 12,
+    "solve_tier": "full",
+    "path": "case002_case5_pjm_l1_se"
+  },
+  {
+    "case": "case003_case14_ieee_wls_se",
+    "source": "pglib_opf_case14_ieee",
+    "method": "wls",
+    "n_bus": 14,
+    "n_meas": 35,
+    "solve_tier": "full",
+    "path": "case003_case14_ieee_wls_se"
+  },
+  {
+    "case": "case004_case14_ieee_l1_se",
+    "source": "pglib_opf_case14_ieee",
+    "method": "l1",
+    "n_bus": 14,
+    "n_meas": 35,
+    "solve_tier": "full",
+    "path": "case004_case14_ieee_l1_se"
+  },
+  {
+    "case": "case005_case30_ieee_wls_se",
+    "source": "pglib_opf_case30_ieee",
+    "method": "wls",
+    "n_bus": 30,
+    "n_meas": 72,
+    "solve_tier": "full",
+    "path": "case005_case30_ieee_wls_se"
+  },
+  {
+    "case": "case006_case30_ieee_l1_se",
+    "source": "pglib_opf_case30_ieee",
+    "method": "l1",
+    "n_bus": 30,
+    "n_meas": 72,
+    "solve_tier": "full",
+    "path": "case006_case30_ieee_l1_se"
+  },
+  {
+    "case": "case007_case57_ieee_wls_se",
+    "source": "pglib_opf_case57_ieee",
+    "method": "wls",
+    "n_bus": 57,
+    "n_meas": 138,
+    "solve_tier": "full",
+    "path": "case007_case57_ieee_wls_se"
+  },
+  {
+    "case": "case008_case57_ieee_l1_se",
+    "source": "pglib_opf_case57_ieee",
+    "method": "l1",
+    "n_bus": 57,
+    "n_meas": 138,
+    "solve_tier": "full",
+    "path": "case008_case57_ieee_l1_se"
+  },
+  {
+    "case": "case009_case118_ieee_wls_se",
+    "source": "pglib_opf_case118_ieee",
+    "method": "wls",
+    "n_bus": 118,
+    "n_meas": 305,
+    "solve_tier": "full",
+    "path": "case009_case118_ieee_wls_se"
+  },
+  {
+    "case": "case010_case118_ieee_l1_se",
+    "source": "pglib_opf_case118_ieee",
+    "method": "l1",
+    "n_bus": 118,
+    "n_meas": 305,
+    "solve_tier": "full",
+    "path": "case010_case118_ieee_l1_se"
+  },
+  {
+    "case": "case011_case300_ieee_wls_se",
+    "source": "pglib_opf_case300_ieee",
+    "method": "wls",
+    "n_bus": 300,
+    "n_meas": 712,
+    "solve_tier": "full",
+    "path": "case011_case300_ieee_wls_se"
+  },
+  {
+    "case": "case012_case300_ieee_l1_se",
+    "source": "pglib_opf_case300_ieee",
+    "method": "l1",
+    "n_bus": 300,
+    "n_meas": 712,
+    "solve_tier": "full",
+    "path": "case012_case300_ieee_l1_se"
+  }
+]

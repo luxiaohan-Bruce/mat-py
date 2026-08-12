@@ -1,0 +1,7 @@
+# case07_7_three_zones_w_colocated_vre_storage_cem
+
+Resource capacity expansion (CEM/GEP) from GenX `case07_7_three_zones_w_colocated_vre_storage_cem`.
+
+- zones=3, gens=13, storage=6, T=24
+- solve_tier=full
+- synthetic: ['vre_stor_decomposed_to_vre_component:MA_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:MA_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:MA_utilitypv_class1_moderate', 'vre_stor_decomposed_to_vre_component:CT_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:CT_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:CT_utilitypv_class1_moderate', 'vre_stor_decomposed_to_vre_component:ME_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:ME_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:ME_utilitypv_class1_moderate', 'vre_stor_standalone_as_storage:MA_storage_metalair_advanced', 'vre_stor_standalone_as_storage:CT_storage_metalair_advanced', 'vre_stor_standalone_as_storage:ME_storage_metalair_advanced', 'time_series_kept_all_T=24_weight_each=365.0000', 'policy_skipped_v1:capacity_reserve_margin']

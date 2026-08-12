@@ -1,0 +1,112 @@
+[
+  {
+    "case": "case01_1_three_zones_cem",
+    "system": "1_three_zones",
+    "n_zones": 3,
+    "n_generators": 7,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case01_1_three_zones_cem"
+  },
+  {
+    "case": "case02_2_three_zones_w_electrolyzer_cem",
+    "system": "2_three_zones_w_electrolyzer",
+    "n_zones": 3,
+    "n_generators": 10,
+    "n_storage": 6,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case02_2_three_zones_w_electrolyzer_cem"
+  },
+  {
+    "case": "case03_3_three_zones_w_co2_capture_cem",
+    "system": "3_three_zones_w_co2_capture",
+    "n_zones": 3,
+    "n_generators": 7,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case03_3_three_zones_w_co2_capture_cem"
+  },
+  {
+    "case": "case04_4_three_zones_w_policies_slack_cem",
+    "system": "4_three_zones_w_policies_slack",
+    "n_zones": 3,
+    "n_generators": 7,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case04_4_three_zones_w_policies_slack_cem"
+  },
+  {
+    "case": "case05_5_three_zones_w_piecewise_fuel_cem",
+    "system": "5_three_zones_w_piecewise_fuel",
+    "n_zones": 3,
+    "n_generators": 7,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case05_5_three_zones_w_piecewise_fuel_cem"
+  },
+  {
+    "case": "case06_6_three_zones_w_multistage_cem",
+    "system": "6_three_zones_w_multistage",
+    "n_zones": 3,
+    "n_generators": 7,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case06_6_three_zones_w_multistage_cem"
+  },
+  {
+    "case": "case07_7_three_zones_w_colocated_vre_storage_cem",
+    "system": "7_three_zones_w_colocated_VRE_storage",
+    "n_zones": 3,
+    "n_generators": 13,
+    "n_storage": 6,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case07_7_three_zones_w_colocated_vre_storage_cem"
+  },
+  {
+    "case": "case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem",
+    "system": "8_three_zones_w_colocated_VRE_storage_electrolyzers",
+    "n_zones": 3,
+    "n_generators": 16,
+    "n_storage": 6,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem"
+  },
+  {
+    "case": "case09_9_three_zones_w_retrofit_cem",
+    "system": "9_three_zones_w_retrofit",
+    "n_zones": 3,
+    "n_generators": 19,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case09_9_three_zones_w_retrofit_cem"
+  },
+  {
+    "case": "case10_11_three_zones_w_allam_cycle_lox_cem",
+    "system": "11_three_zones_w_allam_cycle_lox",
+    "n_zones": 3,
+    "n_generators": 10,
+    "n_storage": 3,
+    "n_time": 24,
+    "n_lines": 2,
+    "solve_tier": "full",
+    "path": "case10_11_three_zones_w_allam_cycle_lox_cem"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "case": "case02_2_three_zones_w_electrolyzer_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 4010277656.0173225,
+    "obj_mat": 4010277656.0173216,
+    "inv_py": 1648646145.8444717,
+    "inv_mat": 1648646145.8444715,
+    "op_py": 2361631510.1728506,
+    "op_mat": 2361631510.17285,
+    "bal_py": 5.115907697472721e-13,
+    "bal_mat": 9.094947017729282e-13,
+    "cap_py": 0.0,
+    "cap_mat": 4.547473508864641e-13,
+    "obj_rel_diff": 2.3780755304443453e-16
+  }
+}

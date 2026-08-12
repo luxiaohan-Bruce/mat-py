@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "case": "case031_case2742_goc_pmu",
+  "base_problem": "pmu_placement",
+  "problem": "pmu",
+  "variant": {
+    "power_flow": "topological",
+    "security": "none",
+    "horizon": "single_period"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case2742_goc.m",
+    "sha256": "3eb4f62f03e6a0e22cd5fc11af789585730c81efabac756b802a262f80a0d83c"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "bus_observability_pmu_unit_cost"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 300
+  },
+  "solve_tier": "relaxed",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 300
+}

@@ -1,0 +1,12 @@
+{
+  "case": "case037_case2869_pegase_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 802.0,
+    "obj_mat": 802,
+    "n_py": 802,
+    "n_mat": 802,
+    "rel": 0.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "case": "case09_gaslib39_scen06_39_epri_ieg",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 136817.12436608717,
+    "obj_mat": 136817.12436608717,
+    "bal_py": 3.069544618483633e-12,
+    "bal_mat": 2.8421709430404007e-12,
+    "gas_py": 2.2870594307278225e-14,
+    "gas_mat": 2.2870594307278225e-14,
+    "coup_py": 0.0,
+    "coup_mat": 0,
+    "obj_rel_diff": 0.0
+  }
+}

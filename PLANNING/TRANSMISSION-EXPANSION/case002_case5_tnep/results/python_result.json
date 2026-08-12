@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case": "case002_case5_tnep",
+  "solver": "python-gurobi",
+  "problem": "tep",
+  "base_problem": "transmission_expansion",
+  "tep": {
+    "status": "OPTIMAL",
+    "obj": 17972.78981960128,
+    "obj_bound": 17972.78981960128,
+    "mip_gap": 0.0,
+    "runtime": 0.0009241104125976562,
+    "Pg_MW": [
+      40.0,
+      170.0,
+      48.03949098006393,
+      200.0,
+      541.9605090199361
+    ],
+    "theta_deg": [
+      2.9767751479187887,
+      -2.51428882578238,
+      -2.76835008614117,
+      0.0,
+      4.084043163692508
+    ],
+    "flow_MW": [
+      -301.96050901993607,
+      41.05745828729107,
+      -210.90305073264506,
+      -240.0
+    ],
+    "z_build": [
+      1,
+      1,
+      0
+    ],
+    "fc_MW": [
+      341.05745828729107,
+      170.903050732645,
+      0.0
+    ],
+    "n_built": 2,
+    "has_quad": false,
+    "ref_bus": 4,
+    "baseMVA": 100.0,
+    "n_var": 20,
+    "n_constr": 24,
+    "n_binary": 3,
+    "max_power_balance_MW": 5.684341886080802e-14,
+    "max_flow_equation_MW": 2.8421709430404007e-13,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "max_construction_logic": 0.0,
+    "cost_recomputed": 17972.78981960128,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

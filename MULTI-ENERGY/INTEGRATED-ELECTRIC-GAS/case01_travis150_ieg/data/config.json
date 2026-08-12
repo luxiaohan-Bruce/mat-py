@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "case": "case01_travis150_ieg",
+  "base_problem": "integrated_electric_gas",
+  "problem": "ieg",
+  "variant": {
+    "power_flow": "dc",
+    "gas_model": "pwl",
+    "weymouth": "pwl_sos2",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "coupling": "native"
+  },
+  "source": {
+    "dataset": "TAMU Travis 150 Electric-Gas",
+    "relative_path": "\u6570\u636e\u96c6/TAMU Travis 150 Electric-Gas/data",
+    "aux_sha256": "657b7da8b6c5aea083e69ed87882b4a66058101ecf3ab4828920f1f58aa7936e",
+    "xlsx_sha256": "a1ca9d37801d8796e42f1367011ad4e85e6b2c2b23eec0fa140fe6789c6ffae0"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "coupling_type": "native",
+    "transformations": [
+      "parse_powerworld_aux",
+      "parse_travis_gas_xlsx",
+      "native_electric_demand_coupling",
+      "deactivate_original_gens",
+      "add_gas_fired_units_at_substations",
+      "add_expensive_slack_peaker"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.0001,
+    "TimeLimit": 600.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 0.0001,
+  "time_limit": 600.0,
+  "seed": 1,
+  "threads": 1,
+  "weymouth_pwl_segments": 8,
+  "gas_model": "pwl"
+}

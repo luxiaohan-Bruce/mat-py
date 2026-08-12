@@ -1,0 +1,15 @@
+{
+  "case": "case032_rte1951_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 2031627.9150497431,
+    "obj_mat": 2031627.9150497434,
+    "bal_py": 4.025878297397867e-09,
+    "bal_mat": 4.026333044748753e-09,
+    "obj_rel_diff": 1.1460299493284374e-16
+  }
+}

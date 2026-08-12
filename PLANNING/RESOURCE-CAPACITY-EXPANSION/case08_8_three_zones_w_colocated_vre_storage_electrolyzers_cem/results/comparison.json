@@ -1,0 +1,21 @@
+{
+  "case": "case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 22045052573280.78,
+    "obj_mat": 22045052573280.78,
+    "inv_py": 9539000493951.229,
+    "inv_mat": 9539000493951.229,
+    "op_py": 12506052079329.553,
+    "op_mat": 12506052079329.553,
+    "bal_py": 2.9802322387695312e-08,
+    "bal_mat": 2.9802322387695312e-08,
+    "cap_py": 0.0,
+    "cap_mat": 9.094947017729282e-13,
+    "obj_rel_diff": 0.0
+  }
+}

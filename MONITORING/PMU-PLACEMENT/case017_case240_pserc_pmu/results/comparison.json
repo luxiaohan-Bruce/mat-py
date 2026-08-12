@@ -1,0 +1,12 @@
+{
+  "case": "case017_case240_pserc_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 74.0,
+    "obj_mat": 74,
+    "n_py": 74,
+    "n_mat": 74,
+    "rel": 0.0
+  }
+}

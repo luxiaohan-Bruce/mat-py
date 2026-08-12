@@ -1,0 +1,10 @@
+{
+  "case": "case076_wecc_gencls_island",
+  "ok": true,
+  "tier": "skip",
+  "issues": [],
+  "checks": {
+    "status_py": "SKIPPED",
+    "status_mat": "SKIPPED"
+  }
+}

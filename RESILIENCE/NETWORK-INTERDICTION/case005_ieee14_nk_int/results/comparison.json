@@ -1,0 +1,23 @@
+{
+  "case": "case005_ieee14_nk_int",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 71.99999999999986,
+    "obj_mat": 71.99999999999986,
+    "method_py": "auto",
+    "method_mat": "auto",
+    "atk_py": [
+      0
+    ],
+    "atk_mat": 0,
+    "bal_py": 1.0835776720341528e-13,
+    "bal_mat": 1.0835776720341528e-13,
+    "oracle_milp_match_py": true,
+    "oracle_milp_match_mat": true,
+    "obj_rel_diff": 0.0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "case": "case002_lmbd3_gen_nk_int",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 85.46052631578948,
+    "obj_mat": 85.46052631578948,
+    "method_py": "enumeration",
+    "method_mat": "enumeration",
+    "atk_py": [],
+    "atk_mat": [],
+    "bal_py": 0.0,
+    "bal_mat": 0,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

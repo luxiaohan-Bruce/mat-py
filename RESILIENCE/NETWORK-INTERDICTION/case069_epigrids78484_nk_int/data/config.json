@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case069_epigrids78484_nk_int",
+  "base_problem": "network_interdiction",
+  "problem": "interdiction",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-k",
+    "uncertainty": "worst_case_attack",
+    "horizon": "single_period",
+    "recourse": "operator_load_shed_lp",
+    "attack_scope": "lines"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case78484_epigrids.m",
+    "sha256": "b9d8f673e4e409747f67ccb9989a38609d8327f800e8d18caf3eb4575eb3a7f2"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "pglib_to_interdiction",
+      "k=2",
+      "method=enumeration"
+    ],
+    "notes": "huge: data-only skip"
+  },
+  "k": 2,
+  "method": "enumeration",
+  "attack_target": "lines",
+  "attack_size_mode": "exact",
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 1.0
+  },
+  "solve_tier": "skip",
+  "mip_gap": 1e-06,
+  "time_limit": 1.0,
+  "seed": 1,
+  "threads": 1
+}

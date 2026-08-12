@@ -1,0 +1,15 @@
+{
+  "case": "case010_epri39_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 136816.15607400896,
+    "obj_mat": 136816.15607400896,
+    "bal_py": 1.1368683772161603e-13,
+    "bal_mat": 1.1368683772161603e-13,
+    "obj_rel_diff": 0.0
+  }
+}

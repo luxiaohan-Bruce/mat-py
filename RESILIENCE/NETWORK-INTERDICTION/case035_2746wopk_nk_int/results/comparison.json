@@ -1,0 +1,9 @@
+{
+  "case": "case035_2746wopk_nk_int",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "case": "case056_kundur_esst3a_island",
+  "base_problem": "controlled_islanding",
+  "problem": "controlled_islanding",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none"
+  },
+  "source": {
+    "dataset": "ANDES",
+    "relative_path": "\u6570\u636e\u96c6/ANDES Test Cases/andes-2.0.0/andes/cases/kundur/kundur_esst3a.xlsx",
+    "sha256": "ede906e6aaf435c4e17c348604cc461a5c32c8471654994eec884efc4f6e9093"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_andes",
+      "coherency=bus_area",
+      "n_islands=2",
+      "dynamic=['GENROU']"
+    ],
+    "synthetic_coherency": false
+  },
+  "n_islands": 2,
+  "coherency_groups": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "switch_penalty": 0.001,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120
+}

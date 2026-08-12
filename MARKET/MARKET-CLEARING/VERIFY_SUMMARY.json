@@ -1,0 +1,1074 @@
+{
+  "n_ok": 56,
+  "n_check": 56,
+  "n_full": 32,
+  "n_full_ok": 32,
+  "n_relaxed": 24,
+  "n_relaxed_ok": 24,
+  "cases": [
+    {
+      "case": "case01_rts_gmlc_2020_01_27_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1830806444.1993709,
+        "obj_mat": 1830806444.1993709,
+        "bal_py": 3.637978807091713e-12,
+        "bal_mat": 4.547473508864641e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1830806444.1993709,
+        "welfare_re_mat": 1830806444.1993709,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case02_rts_gmlc_2020_02_09_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1723951404.8774302,
+        "obj_mat": 1723951404.8774302,
+        "bal_py": 4.092726157978177e-12,
+        "bal_mat": 4.547473508864641e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1723951404.8774304,
+        "welfare_re_mat": 1723951404.8774304,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case03_rts_gmlc_2020_03_05_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1768330294.560599,
+        "obj_mat": 1768330294.560599,
+        "bal_py": 4.092726157978177e-12,
+        "bal_mat": 4.547473508864641e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1768330294.560599,
+        "welfare_re_mat": 1768330294.560599,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case04_rts_gmlc_2020_04_03_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1699337478.7358737,
+        "obj_mat": 1699337478.7358737,
+        "bal_py": 4.092726157978177e-12,
+        "bal_mat": 4.547473508864641e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1699337478.7358737,
+        "welfare_re_mat": 1699337478.7358737,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case05_rts_gmlc_2020_05_05_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2016516997.0917344,
+        "obj_mat": 2016516997.0917344,
+        "bal_py": 4.547473508864641e-12,
+        "bal_mat": 5.4569682106375694e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 2016516997.0917342,
+        "welfare_re_mat": 2016516997.0917342,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case06_rts_gmlc_2020_06_09_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2391510900.330013,
+        "obj_mat": 2391510900.330013,
+        "bal_py": 9.094947017729282e-12,
+        "bal_mat": 1.000444171950221e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 2391510900.3300133,
+        "welfare_re_mat": 2391510900.3300133,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case07_rts_gmlc_2020_07_06_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2431483279.728674,
+        "obj_mat": 2431483279.728674,
+        "bal_py": 6.366462912410498e-12,
+        "bal_mat": 7.275957614183426e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 2431483279.728674,
+        "welfare_re_mat": 2431483279.728674,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case08_rts_gmlc_2020_08_12_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2845659655.9859414,
+        "obj_mat": 2845659655.9859414,
+        "bal_py": 6.366462912410498e-12,
+        "bal_mat": 8.185452315956354e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 2845659655.985942,
+        "welfare_re_mat": 2845659655.985942,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case09_rts_gmlc_2020_09_20_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1996348586.499048,
+        "obj_mat": 1996348586.499048,
+        "bal_py": 6.366462912410498e-12,
+        "bal_mat": 7.275957614183426e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1996348586.499048,
+        "welfare_re_mat": 1996348586.499048,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case10_rts_gmlc_2020_10_27_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1890636650.2400098,
+        "obj_mat": 1890636650.2400095,
+        "bal_py": 5.4569682106375694e-12,
+        "bal_mat": 6.366462912410498e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1890636650.2400095,
+        "welfare_re_mat": 1890636650.2400095,
+        "obj_rel_diff": 1.2610491765897805e-16
+      }
+    },
+    {
+      "case": "case11_rts_gmlc_2020_11_25_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 1714850358.58035,
+        "obj_mat": 1714850358.58035,
+        "bal_py": 3.637978807091713e-12,
+        "bal_mat": 3.637978807091713e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 1714850358.58035,
+        "welfare_re_mat": 1714850358.58035,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case12_rts_gmlc_2020_12_23_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2017270345.3570645,
+        "obj_mat": 2017270345.3570645,
+        "bal_py": 6.366462912410498e-12,
+        "bal_mat": 7.275957614183426e-12,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 2017270345.3570645,
+        "welfare_re_mat": 2017270345.3570645,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case13_ca_2014_09_01_reserves_0_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 13909181538.245796,
+        "obj_mat": 13909181538.245796,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 13909181538.245796,
+        "welfare_re_mat": 13909181538.245796,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case14_ca_2014_09_01_reserves_1_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 13909181538.245796,
+        "obj_mat": 13909181538.245796,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 13909181538.245796,
+        "welfare_re_mat": 13909181538.245796,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case15_ca_2014_09_01_reserves_3_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 13909181538.245796,
+        "obj_mat": 13909181538.245796,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 13909181538.245796,
+        "welfare_re_mat": 13909181538.245796,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case16_ca_2014_09_01_reserves_5_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 13909181538.245796,
+        "obj_mat": 13909181538.245796,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 13909181538.245796,
+        "welfare_re_mat": 13909181538.245796,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case17_ca_2014_12_01_reserves_0_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12144866867.100113,
+        "obj_mat": 12144866867.100113,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12144866867.100113,
+        "welfare_re_mat": 12144866867.100113,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case18_ca_2014_12_01_reserves_1_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12144866867.100113,
+        "obj_mat": 12144866867.100113,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12144866867.100113,
+        "welfare_re_mat": 12144866867.100113,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case19_ca_2014_12_01_reserves_3_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12144866867.100113,
+        "obj_mat": 12144866867.100113,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12144866867.100113,
+        "welfare_re_mat": 12144866867.100113,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case20_ca_2014_12_01_reserves_5_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12144866867.100113,
+        "obj_mat": 12144866867.100113,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12144866867.100113,
+        "welfare_re_mat": 12144866867.100113,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case21_ca_2015_03_01_reserves_0_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 10395731235.627443,
+        "obj_mat": 10395731235.627443,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 10395731235.627443,
+        "welfare_re_mat": 10395731235.627443,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case22_ca_2015_03_01_reserves_1_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 10395731235.627443,
+        "obj_mat": 10395731235.627443,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 10395731235.627443,
+        "welfare_re_mat": 10395731235.627443,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case23_ca_2015_03_01_reserves_3_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 10395731235.627443,
+        "obj_mat": 10395731235.627443,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 10395731235.627443,
+        "welfare_re_mat": 10395731235.627443,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case24_ca_2015_03_01_reserves_5_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 10395731235.627443,
+        "obj_mat": 10395731235.627443,
+        "bal_py": 6.184563972055912e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 10395731235.627443,
+        "welfare_re_mat": 10395731235.627443,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case25_ca_2015_06_01_reserves_0_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12740016326.25391,
+        "obj_mat": 12740016326.25391,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.4569682106375694e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12740016326.25391,
+        "welfare_re_mat": 12740016326.25391,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case26_ca_2015_06_01_reserves_1_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12740016326.25391,
+        "obj_mat": 12740016326.25391,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.4569682106375694e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12740016326.25391,
+        "welfare_re_mat": 12740016326.25391,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case27_ca_2015_06_01_reserves_3_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12740016326.25391,
+        "obj_mat": 12740016326.25391,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.4569682106375694e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12740016326.25391,
+        "welfare_re_mat": 12740016326.25391,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case28_ca_2015_06_01_reserves_5_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 12740016326.25391,
+        "obj_mat": 12740016326.25391,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.4569682106375694e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 12740016326.25391,
+        "welfare_re_mat": 12740016326.25391,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case29_ca_scenario400_reserves_0_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 16704184059.695547,
+        "obj_mat": 16704184059.695549,
+        "bal_py": 6.548361852765083e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 16704184059.695545,
+        "welfare_re_mat": 16704184059.695547,
+        "obj_rel_diff": 1.141838850671323e-16
+      }
+    },
+    {
+      "case": "case30_ca_scenario400_reserves_1_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 16704184059.695547,
+        "obj_mat": 16704184059.695549,
+        "bal_py": 6.548361852765083e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 16704184059.695545,
+        "welfare_re_mat": 16704184059.695547,
+        "obj_rel_diff": 1.141838850671323e-16
+      }
+    },
+    {
+      "case": "case31_ca_scenario400_reserves_3_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 16704184059.695547,
+        "obj_mat": 16704184059.695549,
+        "bal_py": 6.548361852765083e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 16704184059.695545,
+        "welfare_re_mat": 16704184059.695547,
+        "obj_rel_diff": 1.141838850671323e-16
+      }
+    },
+    {
+      "case": "case32_ca_scenario400_reserves_5_market",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 16704184059.695547,
+        "obj_mat": 16704184059.695549,
+        "bal_py": 6.548361852765083e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 16704184059.695545,
+        "welfare_re_mat": 16704184059.695547,
+        "obj_rel_diff": 1.141838850671323e-16
+      }
+    },
+    {
+      "case": "case33_ferc_2015_01_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 44343057630.86577,
+        "obj_mat": 44343057630.86577,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 44343057630.86577,
+        "welfare_re_mat": 44343057630.86577,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case34_ferc_2015_01_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 44294463410.55528,
+        "obj_mat": 44294463410.5553,
+        "bal_py": 1.0186340659856796e-10,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 44294463410.5553,
+        "welfare_re_mat": 44294463410.5553,
+        "obj_rel_diff": 3.444852446020117e-16
+      }
+    },
+    {
+      "case": "case35_ferc_2015_02_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 47507273456.6542,
+        "obj_mat": 47507273456.65419,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 47507273456.6542,
+        "welfare_re_mat": 47507273456.6542,
+        "obj_rel_diff": 1.6059424117890257e-16
+      }
+    },
+    {
+      "case": "case36_ferc_2015_02_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 47455480148.22899,
+        "obj_mat": 47455480148.229,
+        "bal_py": 1.0186340659856796e-10,
+        "bal_mat": 1.0186340659856796e-10,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 47455480148.229,
+        "welfare_re_mat": 47455480148.229,
+        "obj_rel_diff": 1.607695150785388e-16
+      }
+    },
+    {
+      "case": "case37_ferc_2015_03_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 48721854545.7733,
+        "obj_mat": 48721854545.7733,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 48721854545.7733,
+        "welfare_re_mat": 48721854545.7733,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case38_ferc_2015_03_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 48687081193.54389,
+        "obj_mat": 48687081193.5439,
+        "bal_py": 1.0186340659856796e-10,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 48687081193.5439,
+        "welfare_re_mat": 48687081193.5439,
+        "obj_rel_diff": 1.5670264768843215e-16
+      }
+    },
+    {
+      "case": "case39_ferc_2015_04_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 39968687136.39091,
+        "obj_mat": 39968687136.3909,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 39968687136.39091,
+        "welfare_re_mat": 39968687136.39091,
+        "obj_rel_diff": 1.9088429162597005e-16
+      }
+    },
+    {
+      "case": "case40_ferc_2015_04_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 39931859079.98459,
+        "obj_mat": 39931859079.98458,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 39931859079.98458,
+        "welfare_re_mat": 39931859079.98458,
+        "obj_rel_diff": 1.910603389631351e-16
+      }
+    },
+    {
+      "case": "case41_ferc_2015_05_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 35252835110.05621,
+        "obj_mat": 35252835110.056206,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 35252835110.056206,
+        "welfare_re_mat": 35252835110.056206,
+        "obj_rel_diff": 2.1641931797631905e-16
+      }
+    },
+    {
+      "case": "case42_ferc_2015_05_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 35243471001.47649,
+        "obj_mat": 35243471001.47649,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 35243471001.47649,
+        "welfare_re_mat": 35243471001.47649,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case43_ferc_2015_06_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 40406359030.3361,
+        "obj_mat": 40406359030.3361,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 40406359030.3361,
+        "welfare_re_mat": 40406359030.3361,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case44_ferc_2015_06_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 40396787397.66384,
+        "obj_mat": 40396787397.66384,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 40396787397.66384,
+        "welfare_re_mat": 40396787397.66384,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case45_ferc_2015_07_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 43306977583.65633,
+        "obj_mat": 43306977583.65633,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 43306977583.65633,
+        "welfare_re_mat": 43306977583.65633,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case46_ferc_2015_07_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 43292953500.310905,
+        "obj_mat": 43292953500.310905,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 43292953500.310905,
+        "welfare_re_mat": 43292953500.310905,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case47_ferc_2015_08_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 46455476318.810455,
+        "obj_mat": 46455476318.810455,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 46455476318.810455,
+        "welfare_re_mat": 46455476318.810455,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case48_ferc_2015_08_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 46425904315.437126,
+        "obj_mat": 46425904315.437126,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 46425904315.437126,
+        "welfare_re_mat": 46425904315.437126,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case49_ferc_2015_09_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 53449456645.58151,
+        "obj_mat": 53449456645.58151,
+        "bal_py": 1.0186340659856796e-10,
+        "bal_mat": 1.1641532182693481e-10,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 53449456645.58151,
+        "welfare_re_mat": 53449456645.58151,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case50_ferc_2015_09_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 53430826615.76107,
+        "obj_mat": 53430826615.76108,
+        "bal_py": 5.820766091346741e-11,
+        "bal_mat": 7.275957614183426e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 53430826615.76108,
+        "welfare_re_mat": 53430826615.76108,
+        "obj_rel_diff": 1.4279012724462462e-16
+      }
+    },
+    {
+      "case": "case51_ferc_2015_10_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 37292183820.23725,
+        "obj_mat": 37292183820.23725,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 8.731149137020111e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 37292183820.23725,
+        "welfare_re_mat": 37292183820.23725,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case52_ferc_2015_10_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 37243282552.83759,
+        "obj_mat": 37243282552.83759,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 1.0186340659856796e-10,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 37243282552.83759,
+        "welfare_re_mat": 37243282552.83759,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case53_ferc_2015_11_02_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 38008020605.46033,
+        "obj_mat": 38008020605.46032,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 1.1641532182693481e-10,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 38008020605.46032,
+        "welfare_re_mat": 38008020605.46032,
+        "obj_rel_diff": 2.0073117225562496e-16
+      }
+    },
+    {
+      "case": "case54_ferc_2015_11_02_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 37988150207.65861,
+        "obj_mat": 37988150207.65861,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 9.458744898438454e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 37988150207.65861,
+        "welfare_re_mat": 37988150207.65861,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case55_ferc_2015_12_01_hw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 41621282620.11962,
+        "obj_mat": 41621282620.11962,
+        "bal_py": 8.731149137020111e-11,
+        "bal_mat": 1.1641532182693481e-10,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 41621282620.11962,
+        "welfare_re_mat": 41621282620.11962,
+        "obj_rel_diff": 0.0
+      }
+    },
+    {
+      "case": "case56_ferc_2015_12_01_lw_market",
+      "tier": "relaxed",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 41582379566.26401,
+        "obj_mat": 41582379566.26401,
+        "bal_py": 7.275957614183426e-11,
+        "bal_mat": 5.820766091346741e-11,
+        "offer_py": 0.0,
+        "offer_mat": 0,
+        "welfare_re_py": 41582379566.26401,
+        "welfare_re_mat": 41582379566.26401,
+        "obj_rel_diff": 0.0
+      }
+    }
+  ]
+}

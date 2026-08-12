@@ -1,0 +1,8 @@
+{
+  "case": "case062_case19402_goc_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "skip"
+  }
+}

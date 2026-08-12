@@ -1,0 +1,19 @@
+{
+  "case": "case53_ferc_2015_11_02_hw_market",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 38008020605.46033,
+    "obj_mat": 38008020605.46032,
+    "bal_py": 7.275957614183426e-11,
+    "bal_mat": 1.1641532182693481e-10,
+    "offer_py": 0.0,
+    "offer_mat": 0,
+    "welfare_re_py": 38008020605.46032,
+    "welfare_re_mat": 38008020605.46032,
+    "obj_rel_diff": 2.0073117225562496e-16
+  }
+}

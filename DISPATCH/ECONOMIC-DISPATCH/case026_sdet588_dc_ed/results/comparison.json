@@ -1,0 +1,15 @@
+{
+  "case": "case026_sdet588_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 310092.84295945073,
+    "obj_mat": 310092.8429594508,
+    "bal_py": 8.185452315956354e-11,
+    "bal_mat": 8.185452315956354e-11,
+    "obj_rel_diff": 1.8771043006974178e-16
+  }
+}

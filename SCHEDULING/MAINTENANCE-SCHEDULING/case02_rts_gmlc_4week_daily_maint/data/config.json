@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case": "case02_rts_gmlc_4week_daily_maint",
+  "problem": "maintenance_scheduling",
+  "base_problem": "maintenance_scheduling",
+  "source": {
+    "dataset": "RTS-GMLC",
+    "relative_path": "\u6570\u636e\u96c6/RTS-GMLC-master/RTS_Data",
+    "aggregation": "daily_mean of DAY_AHEAD regional load, days 0..27"
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 300.0,
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 300.0
+  },
+  "construction": [
+    "RTS-GMLC gens; demand = daily mean of regional load over first 28 days.",
+    "Synthetic maintenance: top-6 thermal, D=7 days, crew_limit=2, seed=1.",
+    "period_hours=24 so objective is energy-consistent ($)."
+  ]
+}

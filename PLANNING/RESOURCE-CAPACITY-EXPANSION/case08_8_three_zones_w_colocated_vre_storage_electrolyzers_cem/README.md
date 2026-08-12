@@ -1,0 +1,7 @@
+# case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem
+
+Resource capacity expansion (CEM/GEP) from GenX `case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem`.
+
+- zones=3, gens=16, storage=6, T=24
+- solve_tier=full
+- synthetic: ['electrolyzer_optional_load_no_h2_demand_policy:MA_electrolyzer', 'electrolyzer_optional_load_no_h2_demand_policy:CT_electrolyzer', 'electrolyzer_optional_load_no_h2_demand_policy:ME_electrolyzer', 'vre_stor_decomposed_to_vre_component:MA_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:MA_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:MA_utilitypv_class1_moderate', 'vre_stor_decomposed_to_vre_component:CT_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:CT_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:CT_utilitypv_class1_moderate', 'vre_stor_decomposed_to_vre_component:ME_landbasedwind_class1_moderate', 'vre_stor_standalone_storage_skipped_in_generators:ME_storage_metalair_advanced', 'vre_stor_decomposed_to_vre_component:ME_utilitypv_class1_moderate', 'vre_stor_standalone_as_storage:MA_storage_metalair_advanced', 'vre_stor_standalone_as_storage:CT_storage_metalair_advanced', 'vre_stor_standalone_as_storage:ME_storage_metalair_advanced', 'synthetic_tdr:even_sample_from_1680_to_24_weights_sum_8760.0']

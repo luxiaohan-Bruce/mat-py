@@ -1,0 +1,15 @@
+{
+  "case": "case042_2746wopk_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1178363.7127205632,
+    "obj_mat": 1178363.7127205632,
+    "bal_py": 1.0899839253397658e-08,
+    "bal_mat": 1.0899839253397658e-08,
+    "obj_rel_diff": 0.0
+  }
+}

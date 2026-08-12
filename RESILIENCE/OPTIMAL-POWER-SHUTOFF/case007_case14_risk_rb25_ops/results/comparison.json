@@ -1,0 +1,16 @@
+{
+  "case": "case007_case14_risk_rb25_ops",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 34.70000000000002,
+    "shed_py": 34.69999999999999,
+    "risk_py": 13.0,
+    "status_py": "OPTIMAL",
+    "obj_mat": 34.69999999999996,
+    "shed_mat": 34.69999999999996,
+    "risk_mat": 13,
+    "status_mat": "OPTIMAL",
+    "obj_rel": 1.6381388720693944e-15
+  }
+}

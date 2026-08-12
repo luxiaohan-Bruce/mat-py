@@ -1,0 +1,21 @@
+{
+  "case": "case04_pjm5_dc_withhold",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 7200.0,
+    "obj_mat": 7200,
+    "profit_py": 7200.0,
+    "profit_mat": 7200,
+    "best_level_py": 0.6,
+    "best_level_mat": 0.6,
+    "best_level_index_py": 2,
+    "best_level_index_mat": 2,
+    "obj_rel_diff": 0.0,
+    "bal_py": 2.842170943040401e-14,
+    "bal_mat": 2.842170943040401e-14
+  }
+}

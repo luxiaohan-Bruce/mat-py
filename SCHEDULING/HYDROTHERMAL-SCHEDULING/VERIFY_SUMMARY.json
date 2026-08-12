@@ -1,0 +1,159 @@
+{
+  "n_ok": 9,
+  "n_tot": 9,
+  "rows": [
+    {
+      "case": "case07_rcuc_20_10_1_w_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2829775.9363737307,
+        "obj_mat": 2829536.0164085873,
+        "bal_py": 1.1368683772161603e-12,
+        "bal_mat": 1.5916157281026244e-12,
+        "water_py": 1.1368683772161603e-13,
+        "water_mat": 1.1368683772161603e-13,
+        "obj_rel_diff": 8.478408557349082e-05
+      }
+    },
+    {
+      "case": "case08_rcuc_20_10_2_w_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 2942218.996338688,
+        "obj_mat": 2941921.1162414844,
+        "bal_py": 1.1368683772161603e-12,
+        "bal_mat": 4.547473508864641e-13,
+        "water_py": 5.4569682106375694e-12,
+        "water_mat": 2.9558577807620168e-12,
+        "obj_rel_diff": 0.00010124334645861026
+      }
+    },
+    {
+      "case": "case09_rcuc_50_20_1_w_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 10122885.02652079,
+        "obj_mat": 10126229.668931853,
+        "bal_py": 2.7284841053187847e-11,
+        "bal_mat": 1.8189894035458565e-12,
+        "water_py": 3.1036506698001176e-11,
+        "water_mat": 5.684341886080801e-13,
+        "obj_rel_diff": 0.0003302949390259383
+      }
+    },
+    {
+      "case": "case10_rcuc_50_20_2_w_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 7707496.221534907,
+        "obj_mat": 7709126.872510174,
+        "bal_py": 1.8189894035458565e-12,
+        "bal_mat": 1.8189894035458565e-12,
+        "water_py": 2.8421709430404007e-13,
+        "water_mat": 3.410605131648481e-13,
+        "obj_rel_diff": 0.0002115221350270041
+      }
+    },
+    {
+      "case": "case13_s46a_scen1_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": -16071816.923833558,
+        "obj_mat": -16073927.04839345,
+        "bal_py": 8.864773803907156e-09,
+        "bal_mat": 9.214204510499258e-09,
+        "water_py": 1.248281478183344e-10,
+        "water_mat": 5.26142684975639e-10,
+        "obj_rel_diff": 0.00013127623097575544
+      }
+    },
+    {
+      "case": "case17_s46b_scen1_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": -421963038.15966225,
+        "obj_mat": -421963038.15966314,
+        "bal_py": 1.202205557326863e-10,
+        "bal_mat": 1.2244072422618046e-10,
+        "water_py": 1.1368683772161603e-11,
+        "water_mat": 1.1823431123048067e-11,
+        "obj_rel_diff": 2.1188340939297144e-15
+      }
+    },
+    {
+      "case": "case21_s46c_scen1_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": -410709226.63494486,
+        "obj_mat": -410720143.55961186,
+        "bal_py": 9.99378357846581e-10,
+        "bal_mat": 8.41787795025084e-09,
+        "water_py": 3.4378899727016687e-10,
+        "water_mat": 5.3887561080046e-11,
+        "obj_rel_diff": 2.6579959220861274e-05
+      }
+    },
+    {
+      "case": "case25_s46d_scen1_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": -547491436.5826464,
+        "obj_mat": -547491436.582646,
+        "bal_py": 3.841236662083247e-09,
+        "bal_mat": 3.943348758639331e-09,
+        "water_py": 6.043876510375412e-11,
+        "water_mat": 1.7280399333685637e-11,
+        "obj_rel_diff": 6.532118034294737e-16
+      }
+    },
+    {
+      "case": "case29_s46e_scen1_ht",
+      "tier": "full",
+      "ok": true,
+      "issues": [],
+      "checks": {
+        "status_py": "OPTIMAL",
+        "status_mat": "OPTIMAL",
+        "obj_py": 19882944.557075005,
+        "obj_mat": 19882746.91491427,
+        "bal_py": 1.0438094832920797e-11,
+        "bal_mat": 1.4312551144257668e-11,
+        "water_py": 7.275957614183426e-12,
+        "water_mat": 7.275957614183426e-12,
+        "obj_rel_diff": 9.940286267392764e-06
+      }
+    }
+  ]
+}

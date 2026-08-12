@@ -1,0 +1,17 @@
+{
+  "case": "case070_kundur_vsc_island",
+  "ok": true,
+  "tier": "full",
+  "issues": [],
+  "checks": {
+    "obj_py": 0.0020000000000000018,
+    "obj_mat": 0.001999999999999995,
+    "rel": 6.938893903907228e-18,
+    "shed_py": 0.0,
+    "shed_mat": 0,
+    "open_py": 2,
+    "open_mat": 2,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL"
+  }
+}

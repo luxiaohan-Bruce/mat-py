@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case006_ieee14_gen_nk_int",
+  "base_problem": "network_interdiction",
+  "problem": "interdiction",
+  "variant": {
+    "power_flow": "dc",
+    "security": "n-k",
+    "uncertainty": "worst_case_attack",
+    "horizon": "single_period",
+    "recourse": "operator_load_shed_lp",
+    "attack_scope": "gens"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case14_ieee.m",
+    "sha256": "bd5c568621de65e4b0922317010868bc7fa94173807faa10ea8fdbbe77c28106"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "pglib_to_interdiction",
+      "k=1",
+      "method=enumeration"
+    ],
+    "notes": "small gen-attack k=1 enumeration"
+  },
+  "k": 1,
+  "method": "enumeration",
+  "attack_target": "gens",
+  "attack_size_mode": "exact",
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1
+}

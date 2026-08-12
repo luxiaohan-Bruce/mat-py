@@ -1,0 +1,9 @@
+{
+  "case": "case059_goc9591_tep_syn",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

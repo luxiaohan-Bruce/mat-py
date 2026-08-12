@@ -1,0 +1,17 @@
+{
+  "case": "case078_case14_ieee_island",
+  "ok": true,
+  "tier": "full",
+  "issues": [],
+  "checks": {
+    "obj_py": 72.00399999999999,
+    "obj_mat": 72.00399999999998,
+    "rel": 1.9736201759905014e-16,
+    "shed_py": 72.0,
+    "shed_mat": 72,
+    "open_py": 4,
+    "open_mat": 4,
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL"
+  }
+}

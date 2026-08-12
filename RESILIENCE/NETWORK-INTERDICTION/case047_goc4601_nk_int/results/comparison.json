@@ -1,0 +1,9 @@
+{
+  "case": "case047_goc4601_nk_int",
+  "tier": "skip",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "mode": "data_only_skip"
+  }
+}

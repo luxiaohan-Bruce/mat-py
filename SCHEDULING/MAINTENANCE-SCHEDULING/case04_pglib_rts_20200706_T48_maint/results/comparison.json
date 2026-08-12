@@ -1,0 +1,33 @@
+{
+  "case": "case04_pglib_rts_20200706_T48_maint",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1812283.3044326971,
+    "obj_mat": 1812283.3044326974,
+    "obj_rel_diff": 1.2847364597156792e-16,
+    "starts_py": [
+      24,
+      25,
+      0,
+      0
+    ],
+    "starts_mat": [
+      24,
+      25,
+      17,
+      16
+    ],
+    "bal_py": 4.547473508864641e-12,
+    "bal_mat": 3.637978807091713e-12,
+    "crew_py": 0.0,
+    "crew_mat": 0,
+    "start_once_py": 0.0,
+    "start_once_mat": 0,
+    "duration_py": 0.0,
+    "duration_mat": 0
+  }
+}

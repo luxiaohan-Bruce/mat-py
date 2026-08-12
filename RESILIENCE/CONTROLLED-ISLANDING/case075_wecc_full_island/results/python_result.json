@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "case": "case075_wecc_full_island",
+  "solver": "python-gurobi",
+  "problem": "controlled_islanding",
+  "base_problem": "controlled_islanding",
+  "island": {
+    "status": "SKIPPED",
+    "obj": null,
+    "validation_passed": true,
+    "note": "solve_tier=skip data-only",
+    "n_bus": 179,
+    "n_branch": 263,
+    "n_gen": 29,
+    "n_islands": 3,
+    "coherency_groups": [
+      [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        12,
+        14,
+        15,
+        16,
+        26,
+        27,
+        28
+      ],
+      [
+        4,
+        5,
+        10,
+        11,
+        13,
+        17,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      [
+        18,
+        19,
+        20
+      ]
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "tier": "skip"
+  }
+}

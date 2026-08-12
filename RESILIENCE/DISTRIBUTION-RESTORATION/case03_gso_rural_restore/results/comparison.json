@@ -1,0 +1,16 @@
+{
+  "case": "case03_gso_rural_restore",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 4.03110069,
+    "obj_mat": 4.03110069,
+    "rel": 0.0,
+    "served_py": 2.10816149,
+    "served_mat": 2.10816149,
+    "isolation_py": true,
+    "radial_py": true,
+    "isolation_mat": true,
+    "radial_mat": true
+  }
+}

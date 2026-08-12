@@ -1,0 +1,23 @@
+{
+  "case": "case001_lmbd3_nk_int",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 45.0,
+    "obj_mat": 45,
+    "method_py": "auto",
+    "method_mat": "auto",
+    "atk_py": [
+      0
+    ],
+    "atk_mat": 0,
+    "bal_py": 0.0,
+    "bal_mat": 0,
+    "oracle_milp_match_py": true,
+    "oracle_milp_match_mat": true,
+    "obj_rel_diff": 0.0
+  }
+}

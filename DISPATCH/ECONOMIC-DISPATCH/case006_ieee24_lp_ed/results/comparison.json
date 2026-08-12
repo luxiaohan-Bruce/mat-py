@@ -1,0 +1,15 @@
+{
+  "case": "case006_ieee24_lp_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 58448.638799999986,
+    "obj_mat": 58448.63879999994,
+    "bal_py": 1.0231815394945443e-12,
+    "bal_mat": 1.0231815394945443e-12,
+    "obj_rel_diff": 7.469078250818147e-16
+  }
+}

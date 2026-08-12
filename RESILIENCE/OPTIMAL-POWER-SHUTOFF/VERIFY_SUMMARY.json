@@ -1,0 +1,23 @@
+{
+  "package": "optimal_power_shutoff_cases",
+  "plam": "B19",
+  "n_networks_eligible": 7,
+  "n_networks_total": 7,
+  "budget_fractions": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "n_cases": 35,
+  "n_pass": 35,
+  "n_python_results": 35,
+  "n_matlab_results": 30,
+  "n_dual_compared": 30,
+  "pass_rate": 1.0,
+  "synthetic_pglib_risk": false,
+  "networks": [
+    "case3",
+    "case5_risk_mops",
+    "case5_risk_sys1",
+    "case5_risk_sys2",
+    "case5_strg",
+    "case14_risk",
+    "rts_gmlc_risk"
+  ]
+}

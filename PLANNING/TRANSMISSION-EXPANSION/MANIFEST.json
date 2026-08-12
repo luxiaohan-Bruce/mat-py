@@ -1,0 +1,1294 @@
+[
+  {
+    "case": "case001_case3_tnep",
+    "source": "case3_tnep",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 1,
+    "n_candidate": 3,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "native_ne_branch"
+    },
+    "path": "case001_case3_tnep",
+    "candidate_origin": "native"
+  },
+  {
+    "case": "case002_case5_tnep",
+    "source": "case5_tnep",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 4,
+    "n_candidate": 3,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "native_ne_branch"
+    },
+    "path": "case002_case5_tnep",
+    "candidate_origin": "native"
+  },
+  {
+    "case": "case003_lmbd3_tep_syn",
+    "source": "pglib_opf_case3_lmbd",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 3,
+    "n_candidate": 3,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case003_lmbd3_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case004_pjm5_tep_syn",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 6,
+    "n_candidate": 5,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case004_pjm5_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case005_ieee14_tep_syn",
+    "source": "pglib_opf_case14_ieee",
+    "n_bus": 14,
+    "n_gen": 5,
+    "n_branch": 20,
+    "n_candidate": 5,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case005_ieee14_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case006_ieee24_tep_syn",
+    "source": "pglib_opf_case24_ieee_rts",
+    "n_bus": 24,
+    "n_gen": 33,
+    "n_branch": 38,
+    "n_candidate": 8,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case006_ieee24_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case007_as30_tep_syn",
+    "source": "pglib_opf_case30_as",
+    "n_bus": 30,
+    "n_gen": 6,
+    "n_branch": 41,
+    "n_candidate": 8,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case007_as30_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case008_ieee30_tep_syn",
+    "source": "pglib_opf_case30_ieee",
+    "n_bus": 30,
+    "n_gen": 6,
+    "n_branch": 41,
+    "n_candidate": 8,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case008_ieee30_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case009_epri39_tep_syn",
+    "source": "pglib_opf_case39_epri",
+    "n_bus": 39,
+    "n_gen": 10,
+    "n_branch": 46,
+    "n_candidate": 8,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case009_epri39_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case010_ieee57_tep_syn",
+    "source": "pglib_opf_case57_ieee",
+    "n_bus": 57,
+    "n_gen": 7,
+    "n_branch": 80,
+    "n_candidate": 8,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case010_ieee57_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case011_c60_tep_syn",
+    "source": "pglib_opf_case60_c",
+    "n_bus": 60,
+    "n_gen": 23,
+    "n_branch": 88,
+    "n_candidate": 10,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case011_c60_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case012_ieee73_tep_syn",
+    "source": "pglib_opf_case73_ieee_rts",
+    "n_bus": 73,
+    "n_gen": 99,
+    "n_branch": 120,
+    "n_candidate": 10,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case012_ieee73_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case013_pegase89_tep_syn",
+    "source": "pglib_opf_case89_pegase",
+    "n_bus": 89,
+    "n_gen": 12,
+    "n_branch": 210,
+    "n_candidate": 10,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case013_pegase89_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case014_ieee118_tep_syn",
+    "source": "pglib_opf_case118_ieee",
+    "n_bus": 118,
+    "n_gen": 54,
+    "n_branch": 186,
+    "n_candidate": 10,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case014_ieee118_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case015_ieeedtc162_tep_syn",
+    "source": "pglib_opf_case162_ieee_dtc",
+    "n_bus": 162,
+    "n_gen": 12,
+    "n_branch": 284,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case015_ieeedtc162_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case016_goc179_tep_syn",
+    "source": "pglib_opf_case179_goc",
+    "n_bus": 179,
+    "n_gen": 29,
+    "n_branch": 263,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case016_goc179_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case017_snem197_tep_syn",
+    "source": "pglib_opf_case197_snem",
+    "n_bus": 197,
+    "n_gen": 35,
+    "n_branch": 286,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case017_snem197_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case018_activ200_tep_syn",
+    "source": "pglib_opf_case200_activ",
+    "n_bus": 200,
+    "n_gen": 49,
+    "n_branch": 245,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case018_activ200_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case019_pserc240_tep_syn",
+    "source": "pglib_opf_case240_pserc",
+    "n_bus": 240,
+    "n_gen": 143,
+    "n_branch": 448,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case019_pserc240_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case020_ieee300_tep_syn",
+    "source": "pglib_opf_case300_ieee",
+    "n_bus": 300,
+    "n_gen": 69,
+    "n_branch": 411,
+    "n_candidate": 12,
+    "solve_tier": "full",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case020_ieee300_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case021_goc500_tep_syn",
+    "source": "pglib_opf_case500_goc",
+    "n_bus": 500,
+    "n_gen": 224,
+    "n_branch": 733,
+    "n_candidate": 8,
+    "solve_tier": "relaxed",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case021_goc500_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case022_sdet588_tep_syn",
+    "source": "pglib_opf_case588_sdet",
+    "n_bus": 588,
+    "n_gen": 167,
+    "n_branch": 686,
+    "n_candidate": 8,
+    "solve_tier": "relaxed",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case022_sdet588_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case023_goc793_tep_syn",
+    "source": "pglib_opf_case793_goc",
+    "n_bus": 793,
+    "n_gen": 214,
+    "n_branch": 913,
+    "n_candidate": 8,
+    "solve_tier": "relaxed",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case023_goc793_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case024_pegase1354_tep_syn",
+    "source": "pglib_opf_case1354_pegase",
+    "n_bus": 1354,
+    "n_gen": 260,
+    "n_branch": 1991,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case024_pegase1354_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case025_snem1803_tep_syn",
+    "source": "pglib_opf_case1803_snem",
+    "n_bus": 1803,
+    "n_gen": 230,
+    "n_branch": 2795,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case025_snem1803_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case026_rte1888_tep_syn",
+    "source": "pglib_opf_case1888_rte",
+    "n_bus": 1888,
+    "n_gen": 297,
+    "n_branch": 2531,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case026_rte1888_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case027_rte1951_tep_syn",
+    "source": "pglib_opf_case1951_rte",
+    "n_bus": 1951,
+    "n_gen": 391,
+    "n_branch": 2596,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case027_rte1951_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case028_goc2000_tep_syn",
+    "source": "pglib_opf_case2000_goc",
+    "n_bus": 2000,
+    "n_gen": 384,
+    "n_branch": 3639,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case028_goc2000_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case029_goc2312_tep_syn",
+    "source": "pglib_opf_case2312_goc",
+    "n_bus": 2312,
+    "n_gen": 444,
+    "n_branch": 3013,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case029_goc2312_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case030_2383wpk_tep_syn",
+    "source": "pglib_opf_case2383wp_k",
+    "n_bus": 2383,
+    "n_gen": 327,
+    "n_branch": 2896,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case030_2383wpk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case031_2736spk_tep_syn",
+    "source": "pglib_opf_case2736sp_k",
+    "n_bus": 2736,
+    "n_gen": 420,
+    "n_branch": 3504,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case031_2736spk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case032_2737sopk_tep_syn",
+    "source": "pglib_opf_case2737sop_k",
+    "n_bus": 2737,
+    "n_gen": 399,
+    "n_branch": 3506,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case032_2737sopk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case033_goc2742_tep_syn",
+    "source": "pglib_opf_case2742_goc",
+    "n_bus": 2742,
+    "n_gen": 182,
+    "n_branch": 4673,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case033_goc2742_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case034_2746wopk_tep_syn",
+    "source": "pglib_opf_case2746wop_k",
+    "n_bus": 2746,
+    "n_gen": 514,
+    "n_branch": 3514,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case034_2746wopk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case035_2746wpk_tep_syn",
+    "source": "pglib_opf_case2746wp_k",
+    "n_bus": 2746,
+    "n_gen": 520,
+    "n_branch": 3514,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case035_2746wpk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case036_rte2848_tep_syn",
+    "source": "pglib_opf_case2848_rte",
+    "n_bus": 2848,
+    "n_gen": 547,
+    "n_branch": 3776,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case036_rte2848_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case037_sdet2853_tep_syn",
+    "source": "pglib_opf_case2853_sdet",
+    "n_bus": 2853,
+    "n_gen": 946,
+    "n_branch": 3921,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case037_sdet2853_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case038_rte2868_tep_syn",
+    "source": "pglib_opf_case2868_rte",
+    "n_bus": 2868,
+    "n_gen": 599,
+    "n_branch": 3808,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case038_rte2868_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case039_pegase2869_tep_syn",
+    "source": "pglib_opf_case2869_pegase",
+    "n_bus": 2869,
+    "n_gen": 510,
+    "n_branch": 4582,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case039_pegase2869_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case040_3012wpk_tep_syn",
+    "source": "pglib_opf_case3012wp_k",
+    "n_bus": 3012,
+    "n_gen": 502,
+    "n_branch": 3572,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case040_3012wpk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case041_goc3022_tep_syn",
+    "source": "pglib_opf_case3022_goc",
+    "n_bus": 3022,
+    "n_gen": 637,
+    "n_branch": 4135,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case041_goc3022_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case042_3120spk_tep_syn",
+    "source": "pglib_opf_case3120sp_k",
+    "n_bus": 3120,
+    "n_gen": 505,
+    "n_branch": 3693,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case042_3120spk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case043_3375wpk_tep_syn",
+    "source": "pglib_opf_case3375wp_k",
+    "n_bus": 3374,
+    "n_gen": 596,
+    "n_branch": 4161,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case043_3375wpk_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case044_goc3970_tep_syn",
+    "source": "pglib_opf_case3970_goc",
+    "n_bus": 3970,
+    "n_gen": 383,
+    "n_branch": 6641,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case044_goc3970_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case045_goc4020_tep_syn",
+    "source": "pglib_opf_case4020_goc",
+    "n_bus": 4020,
+    "n_gen": 352,
+    "n_branch": 6988,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case045_goc4020_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case046_goc4601_tep_syn",
+    "source": "pglib_opf_case4601_goc",
+    "n_bus": 4601,
+    "n_gen": 408,
+    "n_branch": 7199,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case046_goc4601_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case047_goc4619_tep_syn",
+    "source": "pglib_opf_case4619_goc",
+    "n_bus": 4619,
+    "n_gen": 347,
+    "n_branch": 8150,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case047_goc4619_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case048_sdet4661_tep_syn",
+    "source": "pglib_opf_case4661_sdet",
+    "n_bus": 4661,
+    "n_gen": 1176,
+    "n_branch": 5997,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case048_sdet4661_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case049_goc4837_tep_syn",
+    "source": "pglib_opf_case4837_goc",
+    "n_bus": 4837,
+    "n_gen": 332,
+    "n_branch": 7765,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case049_goc4837_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case050_goc4917_tep_syn",
+    "source": "pglib_opf_case4917_goc",
+    "n_bus": 4917,
+    "n_gen": 1349,
+    "n_branch": 6726,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case050_goc4917_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case051_epigrids5658_tep_syn",
+    "source": "pglib_opf_case5658_epigrids",
+    "n_bus": 5658,
+    "n_gen": 474,
+    "n_branch": 9078,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case051_epigrids5658_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case052_rte6468_tep_syn",
+    "source": "pglib_opf_case6468_rte",
+    "n_bus": 6468,
+    "n_gen": 1295,
+    "n_branch": 9000,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case052_rte6468_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case053_rte6470_tep_syn",
+    "source": "pglib_opf_case6470_rte",
+    "n_bus": 6470,
+    "n_gen": 1330,
+    "n_branch": 9005,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case053_rte6470_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case054_rte6495_tep_syn",
+    "source": "pglib_opf_case6495_rte",
+    "n_bus": 6495,
+    "n_gen": 1372,
+    "n_branch": 9019,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case054_rte6495_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case055_rte6515_tep_syn",
+    "source": "pglib_opf_case6515_rte",
+    "n_bus": 6515,
+    "n_gen": 1388,
+    "n_branch": 9037,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case055_rte6515_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case056_epigrids7336_tep_syn",
+    "source": "pglib_opf_case7336_epigrids",
+    "n_bus": 7336,
+    "n_gen": 686,
+    "n_branch": 11521,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case056_epigrids7336_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case057_pegase8387_tep_syn",
+    "source": "pglib_opf_case8387_pegase",
+    "n_bus": 8387,
+    "n_gen": 1865,
+    "n_branch": 14561,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case057_pegase8387_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case058_pegase9241_tep_syn",
+    "source": "pglib_opf_case9241_pegase",
+    "n_bus": 9241,
+    "n_gen": 1445,
+    "n_branch": 16049,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case058_pegase9241_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case059_goc9591_tep_syn",
+    "source": "pglib_opf_case9591_goc",
+    "n_bus": 9591,
+    "n_gen": 365,
+    "n_branch": 15915,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case059_goc9591_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case060_goc10000_tep_syn",
+    "source": "pglib_opf_case10000_goc",
+    "n_bus": 10000,
+    "n_gen": 2089,
+    "n_branch": 13193,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case060_goc10000_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case061_epigrids10192_tep_syn",
+    "source": "pglib_opf_case10192_epigrids",
+    "n_bus": 10192,
+    "n_gen": 722,
+    "n_branch": 17043,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case061_epigrids10192_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case062_goc10480_tep_syn",
+    "source": "pglib_opf_case10480_goc",
+    "n_bus": 10480,
+    "n_gen": 777,
+    "n_branch": 18559,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case062_goc10480_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case063_pegase13659_tep_syn",
+    "source": "pglib_opf_case13659_pegase",
+    "n_bus": 13659,
+    "n_gen": 4092,
+    "n_branch": 20467,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case063_pegase13659_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case064_goc19402_tep_syn",
+    "source": "pglib_opf_case19402_goc",
+    "n_bus": 19402,
+    "n_gen": 971,
+    "n_branch": 34704,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case064_goc19402_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case065_epigrids20758_tep_syn",
+    "source": "pglib_opf_case20758_epigrids",
+    "n_bus": 20758,
+    "n_gen": 2250,
+    "n_branch": 33368,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case065_epigrids20758_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case066_goc24464_tep_syn",
+    "source": "pglib_opf_case24464_goc",
+    "n_bus": 24464,
+    "n_gen": 1591,
+    "n_branch": 37816,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case066_goc24464_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case067_goc30000_tep_syn",
+    "source": "pglib_opf_case30000_goc",
+    "n_bus": 30000,
+    "n_gen": 3526,
+    "n_branch": 35393,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case067_goc30000_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  },
+  {
+    "case": "case068_epigrids78484_tep_syn",
+    "source": "pglib_opf_case78484_epigrids",
+    "n_bus": 78484,
+    "n_gen": 6873,
+    "n_branch": 126146,
+    "n_candidate": 3,
+    "solve_tier": "skip",
+    "variant": {
+      "power_flow": "dc",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "candidate_type": "synthetic_parallel"
+    },
+    "path": "case068_epigrids78484_tep_syn",
+    "candidate_origin": "synthetic_parallel"
+  }
+]

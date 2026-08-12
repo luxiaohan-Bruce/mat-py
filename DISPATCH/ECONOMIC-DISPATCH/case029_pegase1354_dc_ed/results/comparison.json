@@ -1,0 +1,15 @@
+{
+  "case": "case029_pegase1354_dc_ed",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 1218096.8557590537,
+    "obj_mat": 1218096.8557590537,
+    "bal_py": 1.1167458069394343e-09,
+    "bal_mat": 1.1166321201017126e-09,
+    "obj_rel_diff": 0.0
+  }
+}

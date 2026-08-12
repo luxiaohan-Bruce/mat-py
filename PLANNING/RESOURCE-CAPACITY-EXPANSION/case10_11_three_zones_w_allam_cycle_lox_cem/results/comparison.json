@@ -1,0 +1,21 @@
+{
+  "case": "case10_11_three_zones_w_allam_cycle_lox_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 6891805665.237079,
+    "obj_mat": 6891805665.23708,
+    "inv_py": 6476301338.701035,
+    "inv_mat": 6476301338.701035,
+    "op_py": 415504326.5360441,
+    "op_mat": 415504326.5360451,
+    "bal_py": 1.8189894035458565e-12,
+    "bal_mat": 7.275957614183426e-12,
+    "cap_py": 0.0,
+    "cap_mat": 0,
+    "obj_rel_diff": 1.3837800465220218e-16
+  }
+}

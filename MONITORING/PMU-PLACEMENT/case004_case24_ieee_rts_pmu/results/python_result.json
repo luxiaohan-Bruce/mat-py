@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "case": "case004_case24_ieee_rts_pmu",
+  "solver": "python-gurobi",
+  "problem": "pmu",
+  "base_problem": "pmu_placement",
+  "pmu": {
+    "status": "OPTIMAL",
+    "obj": 7.0,
+    "obj_bound": 7.0,
+    "mip_gap": 0.0,
+    "runtime": 0.0006048679351806641,
+    "y": {
+      "1": 0.0,
+      "2": 1.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 1.0,
+      "9": 0.0,
+      "10": 1.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 1.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 1.0,
+      "22": 0.0,
+      "23": 1.0,
+      "24": 1.0
+    },
+    "placed_buses": [
+      2,
+      8,
+      10,
+      16,
+      21,
+      23,
+      24
+    ],
+    "n_pmu": 7,
+    "all_observable": true,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

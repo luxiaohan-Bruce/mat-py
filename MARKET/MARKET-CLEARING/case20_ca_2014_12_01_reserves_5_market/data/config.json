@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case": "case20_ca_2014_12_01_reserves_5_market",
+  "base_problem": "market_clearing",
+  "problem": "market_clearing",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "market": "energy_only_welfare_max_lp",
+    "pricing": "lp_dual_of_balance"
+  },
+  "source": {
+    "dataset": "PGLib-UC",
+    "group": "ca",
+    "relative_path": "\u6570\u636e\u96c6/pglib-uc-master/ca/2014-12-01_reserves_5.json",
+    "sha256": "3035a58b824757902558f5d4b16cca9791a3c78ac9a14c8b9bcb95326f64b356"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "pwl_production_to_truthful_step_offers",
+      "renewable_zero_price_period_qty",
+      "synthetic_linear_demand_utility_voll"
+    ],
+    "voll_usd_per_mwh": 10000.0,
+    "voll_source": "synthetic"
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices."
+}

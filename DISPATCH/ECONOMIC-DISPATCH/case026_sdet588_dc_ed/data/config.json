@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "case": "case026_sdet588_dc_ed",
+  "base_problem": "economic_dispatch",
+  "problem": "ed",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "\u6570\u636e\u96c6/pglib-opf-master/pglib_opf_case588_sdet.m",
+    "sha256": "6bb56e78edbb351a6959e8b90acccb99ba671471f33406722a92c0d0d069d6ff"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "networked_dc_ed_from_pglib"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 300.0
+  },
+  "solve_tier": "relaxed",
+  "mip_gap": 1e-06,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1
+}

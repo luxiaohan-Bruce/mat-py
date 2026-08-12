@@ -1,0 +1,12 @@
+{
+  "case": "case007_case5_mld_strg_mld",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 590.0,
+    "obj_mat": 590,
+    "rel": 0.0,
+    "served_py": 590.0,
+    "served_mat": 590
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "case": "case021_case793_goc_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 255.0,
+    "obj_mat": 255,
+    "n_py": 255,
+    "n_mat": 255,
+    "rel": 0.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "case": "case28_ca_2015_06_01_reserves_5_market",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 12740016326.25391,
+    "obj_mat": 12740016326.25391,
+    "bal_py": 5.820766091346741e-11,
+    "bal_mat": 5.4569682106375694e-11,
+    "offer_py": 0.0,
+    "offer_mat": 0,
+    "welfare_re_py": 12740016326.25391,
+    "welfare_re_mat": 12740016326.25391,
+    "obj_rel_diff": 0.0
+  }
+}

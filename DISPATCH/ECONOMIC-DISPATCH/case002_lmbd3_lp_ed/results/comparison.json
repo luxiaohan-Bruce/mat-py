@@ -1,0 +1,15 @@
+{
+  "case": "case002_lmbd3_lp_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 926.4666666666666,
+    "obj_mat": 926.4666666666665,
+    "bal_py": 7.105427357601002e-15,
+    "bal_mat": 7.105427357601002e-15,
+    "obj_rel_diff": 1.2271012202808093e-16
+  }
+}

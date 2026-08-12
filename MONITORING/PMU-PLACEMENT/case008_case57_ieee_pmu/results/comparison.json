@@ -1,0 +1,12 @@
+{
+  "case": "case008_case57_ieee_pmu",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 17.0,
+    "obj_mat": 17,
+    "n_py": 17,
+    "n_mat": 17,
+    "rel": 0.0
+  }
+}

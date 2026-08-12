@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case": "case011_case3_rb00_ops",
+  "base_problem": "optimal_power_shutoff",
+  "problem": "ops",
+  "ops_mode": "risk_budget",
+  "budget_fraction": 0.0,
+  "risk_budget": 0.0,
+  "total_risk": 12.0,
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "risk_model": "native_power_base_risk"
+  },
+  "source": {
+    "dataset": "PowerModelsWildfire",
+    "relative_path": "\u6570\u636e\u96c6/PowerModelsWildfire/PowerModelsWildfire.jl-b6ea428f61220ade7677122e5247e2ffd1d950df/test/networks/case3.m",
+    "sha256": "8dd42d0a03c8ee575096949329368d4c8aeb0d8445e586c33d1a2c40748bff1b"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "parse_native_bus_gen_branch_risk",
+      "risk_budget=0.0*total_risk",
+      "no_synthetic_pglib_wildfire_risk"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120,
+  "network_group": "case3",
+  "require_matlab": true
+}

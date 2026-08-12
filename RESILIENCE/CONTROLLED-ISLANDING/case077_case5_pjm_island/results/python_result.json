@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "case": "case077_case5_pjm_island",
+  "solver": "python-gurobi",
+  "problem": "controlled_islanding",
+  "base_problem": "controlled_islanding",
+  "island": {
+    "status": "OPTIMAL",
+    "obj": 0.003,
+    "obj_bound": 0.003,
+    "mip_gap": 0.0,
+    "runtime": 0.0014889240264892578,
+    "n_islands": 2,
+    "island_of_bus": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 0
+    },
+    "closed": [
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "open_lines": [
+      2,
+      4,
+      6
+    ],
+    "n_open_lines": 3,
+    "shed_MW": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total_shed_MW": 0.0,
+    "served_MW": 1000.0,
+    "total_demand_MW": 1000.0,
+    "Pg_MW": [
+      0.0,
+      0.0,
+      500.0,
+      200.0,
+      300.0
+    ],
+    "flow_MW": [
+      300.0,
+      0.0,
+      -300.0,
+      0.0,
+      200.0,
+      0.0
+    ],
+    "theta_deg": [
+      -175.16996578704718,
+      -180.0,
+      3.40336930307709,
+      0.0,
+      -174.069886820396
+    ],
+    "root_buses": [
+      {
+        "bus": 3,
+        "island": 1
+      },
+      {
+        "bus": 5,
+        "island": 0
+      }
+    ],
+    "coherency_groups": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "switch_penalty": 0.001,
+    "ref_bus": 4,
+    "baseMVA": 100.0,
+    "unique_assignment": true,
+    "coherency_ok": true,
+    "group_separation_ok": true,
+    "island_connected": true,
+    "island_has_gen": true,
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 5.286437954055145e-12,
+    "max_thermal_violation_MW": 0.0,
+    "max_cross_island_flow_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

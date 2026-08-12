@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case": "case02_toy3_dc_price",
+  "base_problem": "strategic_bidding",
+  "problem": "bid",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "bidding": "price"
+  },
+  "topology": "dc",
+  "method": "enumeration",
+  "strategic": {
+    "firm_gens": [
+      0
+    ],
+    "mode": "price",
+    "bid_ladder": [
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      40.0,
+      55.0
+    ]
+  },
+  "demand_utility": {
+    "source": "synthetic",
+    "utility_per_mwh": 120.0,
+    "notes": "Synthetic demand willingness-to-pay (VOLL-like); not from market bids."
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "economic_dispatch_cases/case001_lmbd3_dc_ed",
+    "sha256": ""
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "from_lmbd3",
+      "linear_mc_for_lp",
+      "discrete_price_ladder"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "seed": 1,
+  "threads": 1,
+  "mip_gap": 1e-06,
+  "time_limit": 120.0
+}

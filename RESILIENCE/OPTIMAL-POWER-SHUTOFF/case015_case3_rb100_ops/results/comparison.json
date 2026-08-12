@@ -1,0 +1,16 @@
+{
+  "case": "case015_case3_rb100_ops",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 0.0,
+    "shed_py": 0.0,
+    "risk_py": 9.0,
+    "status_py": "OPTIMAL",
+    "obj_mat": 0,
+    "shed_mat": 0,
+    "risk_mat": 11,
+    "status_mat": "OPTIMAL",
+    "obj_rel": 0.0
+  }
+}

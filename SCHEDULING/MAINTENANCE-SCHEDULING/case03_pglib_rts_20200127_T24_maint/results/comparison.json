@@ -1,0 +1,33 @@
+{
+  "case": "case03_pglib_rts_20200127_T24_maint",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 666149.5097901673,
+    "obj_mat": 666149.5097901673,
+    "obj_rel_diff": 0.0,
+    "starts_py": [
+      3,
+      14,
+      13,
+      0
+    ],
+    "starts_mat": [
+      3,
+      14,
+      13,
+      0
+    ],
+    "bal_py": 1.8189894035458565e-12,
+    "bal_mat": 1.3642420526593924e-12,
+    "crew_py": 0.0,
+    "crew_mat": 0,
+    "start_once_py": 0.0,
+    "start_once_mat": 0,
+    "duration_py": 0.0,
+    "duration_mat": 0
+  }
+}

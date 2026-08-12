@@ -1,0 +1,17 @@
+{
+  "case": "case21_s46c_scen1_ht",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": -410709226.63494486,
+    "obj_mat": -410720143.55961186,
+    "bal_py": 9.99378357846581e-10,
+    "bal_mat": 8.41787795025084e-09,
+    "water_py": 3.4378899727016687e-10,
+    "water_mat": 5.3887561080046e-11,
+    "obj_rel_diff": 2.6579959220861274e-05
+  }
+}

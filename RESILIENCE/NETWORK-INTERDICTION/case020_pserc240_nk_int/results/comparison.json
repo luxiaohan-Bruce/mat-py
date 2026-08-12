@@ -1,0 +1,27 @@
+{
+  "case": "case020_pserc240_nk_int",
+  "tier": "relaxed",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 14977.7789668521,
+    "obj_mat": 14977.7789668521,
+    "method_py": "heuristic",
+    "method_mat": "heuristic",
+    "atk_py": [
+      435,
+      436
+    ],
+    "atk_mat": [
+      435,
+      436
+    ],
+    "bal_py": 5.974243322270922e-11,
+    "bal_mat": 5.974243322270922e-11,
+    "oracle_milp_match_py": null,
+    "oracle_milp_match_mat": null,
+    "obj_rel_diff": 0.0
+  }
+}

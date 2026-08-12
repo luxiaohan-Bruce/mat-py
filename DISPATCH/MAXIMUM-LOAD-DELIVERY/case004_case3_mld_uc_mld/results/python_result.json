@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "case": "case004_case3_mld_uc_mld",
+  "solver": "python-gurobi",
+  "problem": "mld",
+  "base_problem": "maximum_load_delivery",
+  "mld": {
+    "status": "OPTIMAL",
+    "obj": 125.66666666666666,
+    "obj_bound": 125.66666666666666,
+    "mip_gap": 0.0,
+    "runtime": 0.00019311904907226562,
+    "Pg_MW": [
+      75.66666666666666,
+      50.0
+    ],
+    "theta_deg": [
+      0.0,
+      -23.548565379876834,
+      -10.65701498943331
+    ],
+    "flow_MW": [
+      30.0,
+      30.0,
+      45.666666666666664
+    ],
+    "load_frac": [
+      0.0,
+      0.7566666666666666,
+      0.5
+    ],
+    "served_MW": 125.66666666666666,
+    "total_demand_MW": 200.0,
+    "unserved_MW": 74.33333333333334,
+    "damaged_branches": [],
+    "damaged_gens": [],
+    "ref_bus": 1,
+    "baseMVA": 100.0,
+    "max_power_balance_MW": 0.0,
+    "max_flow_equation_MW": 3.552713678800501e-15,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "max_damaged_flow_MW": 0.0,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

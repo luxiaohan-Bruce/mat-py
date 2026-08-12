@@ -1,0 +1,21 @@
+{
+  "case": "case03_3_three_zones_w_co2_capture_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 7804500273.654718,
+    "obj_mat": 7804500273.654721,
+    "inv_py": 7728506526.350074,
+    "inv_mat": 7728506526.350076,
+    "op_py": 75993747.30464458,
+    "op_mat": 75993747.30464554,
+    "bal_py": 3.637978807091713e-12,
+    "bal_mat": 1.8189894035458565e-12,
+    "cap_py": 0.0,
+    "cap_mat": 0,
+    "obj_rel_diff": 3.665863090397432e-16
+  }
+}

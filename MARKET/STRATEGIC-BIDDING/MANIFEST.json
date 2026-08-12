@@ -1,0 +1,98 @@
+[
+  {
+    "case": "case01_toy3_copperplate_price",
+    "source": "synthetic_toy3",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 0,
+    "topology": "copperplate",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case01_toy3_copperplate_price"
+  },
+  {
+    "case": "case02_toy3_dc_price",
+    "source": "pglib_opf_case3_lmbd",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 3,
+    "topology": "dc",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case02_toy3_dc_price"
+  },
+  {
+    "case": "case03_pjm5_dc_price",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 6,
+    "topology": "dc",
+    "mode": "price",
+    "n_ladder": 7,
+    "solve_tier": "full",
+    "path": "case03_pjm5_dc_price"
+  },
+  {
+    "case": "case04_pjm5_dc_withhold",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 6,
+    "topology": "dc",
+    "mode": "withhold",
+    "n_ladder": 5,
+    "solve_tier": "full",
+    "path": "case04_pjm5_dc_withhold"
+  },
+  {
+    "case": "case05_ieee14_dc_price",
+    "source": "pglib_opf_case14_ieee",
+    "n_bus": 14,
+    "n_gen": 5,
+    "n_branch": 20,
+    "topology": "dc",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case05_ieee14_dc_price"
+  },
+  {
+    "case": "case06_rts_uc_t1_copperplate_price",
+    "source": "pglib_uc_rts_t1",
+    "n_bus": 1,
+    "n_gen": 12,
+    "n_branch": 0,
+    "topology": "copperplate",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case06_rts_uc_t1_copperplate_price"
+  },
+  {
+    "case": "case07_ferc_uc_t1_copperplate_price",
+    "source": "pglib_uc_ferc_t1",
+    "n_bus": 1,
+    "n_gen": 10,
+    "n_branch": 0,
+    "topology": "copperplate",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case07_ferc_uc_t1_copperplate_price"
+  },
+  {
+    "case": "case08_pjm5_binary_ladder",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 6,
+    "topology": "dc",
+    "mode": "price",
+    "n_ladder": 6,
+    "solve_tier": "full",
+    "path": "case08_pjm5_binary_ladder"
+  }
+]

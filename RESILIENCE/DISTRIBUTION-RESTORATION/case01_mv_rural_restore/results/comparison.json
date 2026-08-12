@@ -1,0 +1,16 @@
+{
+  "case": "case01_mv_rural_restore",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "obj_py": 27.7464,
+    "obj_mat": 27.7464,
+    "rel": 0.0,
+    "served_py": 10.5184,
+    "served_mat": 10.518399999999998,
+    "isolation_py": true,
+    "radial_py": true,
+    "isolation_mat": true,
+    "radial_mat": true
+  }
+}

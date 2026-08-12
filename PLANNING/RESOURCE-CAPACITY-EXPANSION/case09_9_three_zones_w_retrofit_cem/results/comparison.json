@@ -1,0 +1,21 @@
+{
+  "case": "case09_9_three_zones_w_retrofit_cem",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 8149800778.7518425,
+    "obj_mat": 8149800778.7518425,
+    "inv_py": 8117003522.79712,
+    "inv_mat": 8117003522.797122,
+    "op_py": 32797255.954722404,
+    "op_mat": 32797255.954720497,
+    "bal_py": 9.094947017729282e-12,
+    "bal_mat": 3.2741809263825417e-11,
+    "cap_py": 0.0,
+    "cap_mat": 0,
+    "obj_rel_diff": 0.0
+  }
+}

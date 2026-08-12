@@ -1,0 +1,15 @@
+{
+  "case": "case018_goc179_dc_ed",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 751888.4540836316,
+    "obj_mat": 751888.4540836316,
+    "bal_py": 1.779199010343291e-11,
+    "bal_mat": 1.7962520360015333e-11,
+    "obj_rel_diff": 0.0
+  }
+}

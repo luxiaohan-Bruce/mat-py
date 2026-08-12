@@ -1,0 +1,19 @@
+{
+  "case": "case01_travis150_ieg",
+  "tier": "full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 94237.43725552896,
+    "obj_mat": 94238.62022093966,
+    "bal_py": 6.705269584017515e-08,
+    "bal_mat": 6.705454325128812e-08,
+    "gas_py": 7.4231211328879e-06,
+    "gas_mat": 7.4231211328879e-06,
+    "coup_py": 0.0,
+    "coup_mat": 0,
+    "obj_rel_diff": 1.2552872781087451e-05
+  }
+}
