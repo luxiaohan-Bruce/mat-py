@@ -4,16 +4,18 @@
 
 | 目录 | 问题 | 案例数 | 数据来源 |
 |------|------|------:|----------|
-| [`dcots/`](dcots/) | **DC-OTS** — 直流最优网络重构 | 66 | [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) |
-| [`scots/`](scots/) | **SC-OTS** — 预防性安全约束 OTS（基态 + N-1） | 66 | PGLib-OPF |
-| [`scuc/`](scuc/) | **SCUC** — 预防性多时段 UC + 直流潮流 + N-1 | 66 | PGLib-OPF（合成 UC 时序） |
-| [`uc/`](uc/) | **UC** — 系统级机组组合（无网架潮流） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
-| [`rts_scuc/`](rts_scuc/) | **RTS-SCUC** — 网络 SCUC + 储能 + 可再生 + N-1 | 12 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) + PGLib-UC `rts_gmlc` |
-| [`scacopf/`](scacopf/) | **SC-AC-OPF / SC-AC-OTS**（线性化） | 316 | [GO Competition Challenge 1](https://gocompetition.energy.gov/) |
-| [`dnr/`](dnr/) | **DNR / DOPF / DNR+ESS**（LinDistFlow） | 7 | [SimBench](https://simbench.de/) |
-| [`smartds/`](smartds/) | **聚合馈线 DNR / Volt-VAR / DER hosting** | 3 | [SMART-DS](https://data.openei.org/submissions/2981) |
+| [`DC-OTS/`](DC-OTS/) | **DC-OTS** — 直流最优网络重构 | 66 | [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) |
+| [`SC-OTS/`](SC-OTS/) | **SC-OTS** — 预防性安全约束 OTS（基态 + N-1） | 66 | PGLib-OPF |
+| [`SCUC/`](SCUC/) | **SCUC** — 预防性多时段 UC + 直流潮流 + N-1 | 66 | PGLib-OPF（合成 UC 时序） |
+| [`UC/`](UC/) | **UC** — 系统级机组组合（无网架潮流） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
+| [`RTS-SCUC/`](RTS-SCUC/) | **RTS-SCUC** — 网络 SCUC + 储能 + 可再生 + N-1 | 12 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) + PGLib-UC `rts_gmlc` |
+| [`SC-AC-OPF-OTS/`](SC-AC-OPF-OTS/) | **SC-AC-OPF/OTS**（线性化） | 316 | [GO Competition Challenge 1](https://gocompetition.energy.gov/) |
+| [`DNR/`](DNR/) | **DNR / DOPF / DNR+ESS**（LinDistFlow） | 7 | [SimBench](https://simbench.de/) |
+| [`SMART-DS/`](SMART-DS/) | **聚合馈线 DNR / Volt-VAR / DER hosting** | 3 | [SMART-DS](https://data.openei.org/submissions/2981) |
 
-> **说明**：`scacopf` / `dnr` / `smartds` 均为**线性化近似**（DC 或 LinDistFlow），**不是**精确非凸 AC / 三相潮流。
+> **说明**：
+> - 目录名采用 **大写 + 连字符**（文件系统不能含 `/`，故 **SC-AC-OPF/OTS** 对应目录为 `SC-AC-OPF-OTS/`）。
+> - `SC-AC-OPF-OTS` / `DNR` / `SMART-DS` 均为**线性化近似**（DC 或 LinDistFlow），**不是**精确非凸 AC / 三相潮流。
 
 单案例典型结构：
 
@@ -21,7 +23,7 @@
 caseXX_*/
   data/network.json   # 网络 / 机组 / 时序等
   data/config.json    # 事故集、可切换支路、求解参数、solve_tier、来源说明
-  solve_*.py          # Python 入口
+  solve_*.py          # Python 入口（或 python/solve_*.py）
   results/            # 运行后写入 python_result.json 等
 ```
 
@@ -47,30 +49,30 @@ pip install -r requirements.txt
 
 ```bash
 # 输电侧 PGLib 三类（各 66 例）
-python3 dcots/run_all_python.py
-python3 scots/run_all_python.py
-python3 scuc/run_all_python.py
+python3 DC-OTS/run_all_python.py
+python3 SC-OTS/run_all_python.py
+python3 SCUC/run_all_python.py
 
 # 系统 UC / RTS 网络 SCUC
-python3 uc/run_all_python.py
-python3 rts_scuc/run_all_python.py
+python3 UC/run_all_python.py
+python3 RTS-SCUC/run_all_python.py
 
 # GO C1 线性化 SC-AC-OPF/OTS（建议先只跑可解档）
-python3 scacopf/run_all_python.py --tier full,relaxed
+python3 SC-AC-OPF-OTS/run_all_python.py --tier full,relaxed
 
 # 配网 LinDistFlow
-python3 dnr/run_all_python.py
-python3 smartds/run_all_python.py
+python3 DNR/run_all_python.py
+python3 SMART-DS/run_all_python.py
 ```
 
 单案例示例：
 
 ```bash
-python3 dcots/case01_pjm5_dcots/solve_dcots.py
-python3 scots/case04_ieee24_scots/solve_scots.py
-python3 scuc/case01_ieee39_scuc/solve_scuc.py
-python3 uc/case01_rts_gmlc_2020_01_27_uc/solve_uc.py
-python3 rts_scuc/case01_rts_gmlc_2020_01_27_rts_scuc/solve_rts_scuc.py
+python3 DC-OTS/case01_pjm5_dcots/solve_dcots.py
+python3 SC-OTS/case04_ieee24_scots/solve_scots.py
+python3 SCUC/case01_ieee39_scuc/solve_scuc.py
+python3 UC/case01_rts_gmlc_2020_01_27_uc/python/solve_uc.py
+python3 RTS-SCUC/case01_rts_gmlc_2020_01_27_rts_scuc/python/solve_rts_scuc.py
 ```
 
 结果写入对应案例 `results/`。大网 `solve_tier=skip` 仅建议作数据/建模参考，完整 MIP 可能超时或内存不足；请优先从 `full` / `relaxed` 小中型案例开始。
@@ -92,12 +94,12 @@ python3 rts_scuc/case01_rts_gmlc_2020_01_27_rts_scuc/solve_rts_scuc.py
 
 | 文件夹 | 问题 | 典型规模 | 说明 |
 |--------|------|----------|------|
-| `dcots/case01_pjm5_dcots` | DC-OTS | 5 节点 | 全线可切换，教学向 |
-| `dcots/case03_ieee118_dcots` | DC-OTS | 118 节点 | 按 DCOPF 利用率选可切换线 |
-| `scots/case04_ieee24_scots` | SC-OTS | 24 节点 | 预防性 N-1 + 可切换 |
-| `scots/case06_activs200_scots` | SC-OTS | 200 节点 | 更大网 SC-OTS |
-| `scuc/case01_ieee39_scuc` | SCUC | 39 节点 / 24h | 多时段 UC + N-1 |
-| `scuc/case03_case60_scuc` | SCUC | 60 节点 | 更大规模机组组合 |
+| `DC-OTS/case01_pjm5_dcots` | DC-OTS | 5 节点 | 全线可切换，教学向 |
+| `DC-OTS/case03_ieee118_dcots` | DC-OTS | 118 节点 | 按 DCOPF 利用率选可切换线 |
+| `SC-OTS/case04_ieee24_scots` | SC-OTS | 24 节点 | 预防性 N-1 + 可切换 |
+| `SC-OTS/case06_activs200_scots` | SC-OTS | 200 节点 | 更大网 SC-OTS |
+| `SCUC/case01_ieee39_scuc` | SCUC | 39 节点 / 24h | 多时段 UC + N-1 |
+| `SCUC/case03_case60_scuc` | SCUC | 60 节点 | 更大规模机组组合 |
 
 ### UC（PGLib-UC，56）
 
@@ -107,14 +109,14 @@ python3 rts_scuc/case01_rts_gmlc_2020_01_27_rts_scuc/solve_rts_scuc.py
 
 RTS-GMLC 73 母线网架 + 储能；时序来自 PGLib-UC `rts_gmlc` 全部 12 个运行日。预防性 DC-SCUC：备用、可再生、储能、N-1。
 
-### SC-AC-OPF / SC-AC-OTS（GO Challenge 1，316）
+### SC-AC-OPF/OTS（GO Challenge 1，316）
 
-由 GO C1 场景解析得到；每个场景生成 `scacopf` 与 `scacots` 两套。模型为**线性化（直流）安全约束 OPF/OTS**，非官方精确 AC。当前分级约 **52** 个 `relaxed`（可解核对）+ **264** 个 `skip`（大网）。
+目录：`SC-AC-OPF-OTS/`。由 GO C1 场景解析得到；每个场景生成 `scacopf` 与 `scacots` 两套案例。模型为**线性化（直流）安全约束 OPF/OTS**，非官方精确 AC。当前分级约 **52** 个 `relaxed`（可解核对）+ **264** 个 `skip`（大网）。
 
 ### DNR（SimBench，7）+ SMART-DS（3）
 
-- `dnr/`：MV/LV 可切换馈线 LinDistFlow 重构 / DOPF / 带储能；1 个 complete mixed 作 meta
-- `smartds/`：GSO rural 聚合馈线 — DNR、Volt/VAR 电容器、DER hosting capacity
+- `DNR/`：MV/LV 可切换馈线 LinDistFlow 重构 / DOPF / 带储能；1 个 complete mixed 作 meta
+- `SMART-DS/`：GSO rural 聚合馈线 — DNR、Volt/VAR 电容器、DER hosting capacity
 
 ---
 
@@ -181,11 +183,11 @@ RTS-GMLC 73 母线网架 + 储能；时序来自 PGLib-UC `rts_gmlc` 全部 12 �
 
 | 包 | 状态 |
 |----|------|
-| `uc/` | 56/56 PASS（允许 MIP gap 容差） |
-| `rts_scuc/` | 12/12 PASS |
-| `scacopf/` | 可解档 52 例双端 PASS；其余 skip |
-| `dnr/` | 6 求解 PASS + 1 meta |
-| `smartds/` | 3/3 PASS |
+| `UC/` | 56/56 PASS（允许 MIP gap 容差） |
+| `RTS-SCUC/` | 12/12 PASS |
+| `SC-AC-OPF-OTS/` | 可解档 52 例双端 PASS；其余 skip |
+| `DNR/` | 6 求解 PASS + 1 meta |
+| `SMART-DS/` | 3/3 PASS |
 
 SC-OTS / SCUC 中小规模 `full`/`relaxed` 档可稳定求得 `OPTIMAL`（或时限内可行解）。SCUC 多时段目标为全时段费用之和。
 
@@ -197,14 +199,14 @@ SC-OTS / SCUC 中小规模 `full`/`relaxed` 档可稳定求得 `OPTIMAL`（或�
 README.md
 requirements.txt
 .gitignore
-dcots/          # 66  DC-OTS
-scots/          # 66  SC-OTS
-scuc/           # 66  SCUC
-uc/             # 56  PGLib-UC
-rts_scuc/       # 12  RTS-GMLC SCUC+ESS
-scacopf/        # 316 linearized SC-AC-OPF/OTS
-dnr/            # 7   SimBench DNR family
-smartds/        # 3   SMART-DS aggregated feeder
+DC-OTS/           # 66  DC-OTS
+SC-OTS/           # 66  SC-OTS
+SCUC/             # 66  SCUC
+UC/               # 56  PGLib-UC
+RTS-SCUC/         # 12  RTS-GMLC SCUC+ESS
+SC-AC-OPF-OTS/    # 316 linearized SC-AC-OPF/OTS
+DNR/              # 7   SimBench DNR family
+SMART-DS/         # 3   SMART-DS aggregated feeder
 ```
 
 每个问题目录含 `common/`、`run_all_python.py`、`MANIFEST.json` 及若干 `case*/`。
@@ -215,12 +217,12 @@ smartds/        # 3   SMART-DS aggregated feeder
 
 | 来源 | 用途 | 许可提示 |
 |------|------|----------|
-| [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) | dcots / scots / scuc 网络 | 遵循项目许可并引用 |
-| [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) | uc、rts_scuc 时序 | CC BY 等，见上游 |
-| [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) | rts_scuc 网架与机组 | 开放数据，需署名 |
-| [GO Competition Challenge 1](https://gocompetition.energy.gov/) | scacopf | 官方竞赛数据与说明 |
-| [SimBench](https://simbench.de/) | dnr | ODbL 等，见上游 |
-| [SMART-DS](https://data.openei.org/submissions/2981) | smartds | OpenEI 数据集条款 |
+| [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) | DC-OTS / SC-OTS / SCUC 网络 | 遵循项目许可并引用 |
+| [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) | UC、RTS-SCUC 时序 | CC BY 等，见上游 |
+| [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) | RTS-SCUC 网架与机组 | 开放数据，需署名 |
+| [GO Competition Challenge 1](https://gocompetition.energy.gov/) | SC-AC-OPF/OTS | 官方竞赛数据与说明 |
+| [SimBench](https://simbench.de/) | DNR | ODbL 等，见上游 |
+| [SMART-DS](https://data.openei.org/submissions/2981) | SMART-DS | OpenEI 数据集条款 |
 
 - 本仓库中的构造说明与求解脚本供**科研与教学**使用，使用风险自负。
 - 使用 Gurobi 报告结果时请遵守其许可协议。
