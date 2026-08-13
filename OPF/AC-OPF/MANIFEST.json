@@ -61,5 +61,26 @@
       "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
     },
     "path": "case003_ieee14_acopf"
+  },
+  {
+    "case": "case004_ieee30_acopf",
+    "source": "pglib_opf_case30_ieee",
+    "n_bus": 30,
+    "n_gen": 6,
+    "n_branch": 41,
+    "solve_tier": "large",
+    "base_problem": "opf",
+    "problem": "ac_opf",
+    "variant": {
+      "power_flow": "ac_exact",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "cost_model": "quadratic_if_present",
+      "formulation": "polar_ac_power_flow",
+      "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+    },
+    "path": "case004_ieee30_acopf"
   }
 ]

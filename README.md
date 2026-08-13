@@ -4,7 +4,7 @@
 
 一级目录是便于浏览的 **`navigation_domain`**，不是互斥的数学基础问题分类。规范分类以每个案例 `config.json` 的 `base_problem` 为准；AC/DC、N-1、多时段、随机性、追补决策等属于 `variant` 轴。
 
-机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1162 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
+机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1178 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
 
 ---
 
@@ -13,13 +13,13 @@
 ```text
 github_cases/
   OTS/                 # 输电拓扑切换
-  OPF/                 # 最优潮流（DC、精确 AC、线性化安全约束）
+  OPF/                 # 最优潮流（DC、精确 AC、精确 SC-AC、线性化安全约束）
   UC/                  # 机组组合族
-  DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting
-  DISPATCH/            # 经济调度
+  DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting / 微网 / 三相 DOPF
+  DISPATCH/            # 经济调度 / 需求响应
   MONITORING/          # PMU 布点 / 状态估计
-  PLANNING/            # 输电扩展 / 容量扩展
-  SCHEDULING/          # 水火调度 / 检修计划
+  PLANNING/            # 输电扩展 / 容量扩展 / 配网扩展
+  SCHEDULING/          # 水火调度 / 检修计划 / 储能调度
   MARKET/              # 市场出清 / 策略报价
   RESILIENCE/          # 切负荷 / 恢复 / 孤岛 / 主动停电 / 拦截
   MULTI-ENERGY/        # 电–气综合
@@ -38,7 +38,8 @@ github_cases/
 | | [`SC-OTS/`](OTS/SC-OTS/) | `ots`：完整或抽样 N-1、共享预防性拓扑、事故后有界再调度 | 66 | PGLib-OPF |
 | | [`LINEARIZED-SC-OTS/`](OTS/LINEARIZED-SC-OTS/) | `ots`：GO C1 线性化、抽样 N-1 | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
 | [`OPF/`](OPF/) | [`DC-OPF/`](OPF/DC-OPF/) | `opf`：网络约束 DC-OPF | 71 | PGLib-OPF |
-| | [`AC-OPF/`](OPF/AC-OPF/) | `opf`：精确非凸极坐标 AC-OPF pilot | 3 | PGLib-OPF |
+| | [`AC-OPF/`](OPF/AC-OPF/) | `opf`：精确非凸极坐标 AC-OPF | 4 | PGLib-OPF |
+| | [`SC-AC-OPF/`](OPF/SC-AC-OPF/) | `opf`：精确极坐标预防性 N-1 | 2 | PGLib-OPF |
 | | [`LINEARIZED-SC-OPF/`](OPF/LINEARIZED-SC-OPF/) | `opf`：GO C1 线性化、抽样 N-1 | 158 | GO Competition C1 |
 | [`UC/`](UC/) | [`SYSTEM-UC/`](UC/SYSTEM-UC/) | 系统级 UC（无网架） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
 | | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 66 | PGLib-OPF 合成时序 |
@@ -47,13 +48,18 @@ github_cases/
 | | [`DISTRIBUTION-OPF/`](DISTRIBUTION/DISTRIBUTION-OPF/) | `distribution_opf`（实验模型） | 2 | SimBench |
 | | [`VOLT-VAR/`](DISTRIBUTION/VOLT-VAR/) | `volt_var`（实验模型） | 1 | SMART-DS |
 | | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | `der_hosting`（实验模型） | 1 | SMART-DS |
+| | [`MICROGRID/`](DISTRIBUTION/MICROGRID/) | `microgrid`：并网/孤岛 EMS 与 VPP | 3 | PGLib-OPF + 光伏/储能 |
+| | [`UNBALANCED-DOPF/`](DISTRIBUTION/UNBALANCED-DOPF/) | `distribution_opf`：三相 LinDistFlow | 2 | IEEE 4-node / SMART-DS linecode |
 | [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | `economic_dispatch`：无网架铜板 ED | 3 | PGLib-OPF |
+| | [`DEMAND-RESPONSE/`](DISPATCH/DEMAND-RESPONSE/) | `demand_response`：可中断+可转移负荷 | 3 | PGLib-OPF |
 | [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 66 | PGLib-OPF |
 | | [`STATE-ESTIMATION/`](MONITORING/STATE-ESTIMATION/) | DC WLS / L1 状态估计 | 12 | PGLib + 合成测量 |
 | [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 68 | PowerModels TNEP + PGLib |
 | | [`RESOURCE-CAPACITY-EXPANSION/`](PLANNING/RESOURCE-CAPACITY-EXPANSION/) | 资源容量扩展 CEM | 10 | GenX 示例 |
+| | [`DISTRIBUTION-EXPANSION/`](PLANNING/DISTRIBUTION-EXPANSION/) | `distribution_expansion`：径向 LinDistFlow | 2 | SimBench 线型构造馈线 |
 | [`SCHEDULING/`](SCHEDULING/) | [`HYDROTHERMAL-SCHEDULING/`](SCHEDULING/HYDROTHERMAL-SCHEDULING/) | 水火联合调度 | 32 | CommaLAB HT-Ramp / 46-bus |
 | | [`MAINTENANCE-SCHEDULING/`](SCHEDULING/MAINTENANCE-SCHEDULING/) | 机组检修计划 | 5 | RTS-GMLC / PGLib-UC |
+| | [`STORAGE-SCHEDULING/`](SCHEDULING/STORAGE-SCHEDULING/) | `storage_scheduling`：循环 SOC | 3 | PGLib-OPF |
 | [`MARKET/`](MARKET/) | [`MARKET-CLEARING/`](MARKET/MARKET-CLEARING/) | 福利最大化能量出清 | 56 | PGLib-UC |
 | | [`STRATEGIC-BIDDING/`](MARKET/STRATEGIC-BIDDING/) | 策略性报价 | 8 | Toy / PGLib |
 | [`RESILIENCE/`](RESILIENCE/) | [`MAXIMUM-LOAD-DELIVERY/`](RESILIENCE/MAXIMUM-LOAD-DELIVERY/) | 最大供电 / 切负荷 | 18 | PowerModelsRestoration + PGLib |
@@ -64,13 +70,15 @@ github_cases/
 | | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 69 | PGLib-OPF |
 | [`MULTI-ENERGY/`](MULTI-ENERGY/) | [`INTEGRATED-ELECTRIC-GAS/`](MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/) | 电–气综合优化 | 15 | Travis 150 + GasLib |
 
-**合计 1162 个案例**（含子包内 `skip` 数据档）。
+**合计 1178 个案例**（含子包内 `skip` 数据档）。
 
 > **说明**
 > - 子包目录名：**大写 + 连字符**。
 > - GO C1 已按基础问题拆开并如实命名为 `OPF/LINEARIZED-SC-OPF` 与 `OTS/LINEARIZED-SC-OTS`；当前事故集是抽样子集，不代表完整 N-1。
 > - 原“网络化经济调度”71 例实际包含节点平衡、相角、支路潮流和热稳约束，现归入 `OPF/DC-OPF`；`DISPATCH/ECONOMIC-DISPATCH` 新增 3 个真正的铜板 ED 基准。
 > - 配网已拆分为 DNR 6 例、Distribution OPF 2 例、Volt-VAR 1 例、DER hosting 1 例。其中 9 个可执行案例是 **experimental 的 active-power transport 近似**，另有 1 个 DNR 数据汇总案为 `data_only`；均不能视为已通过 AC、三相或 LinDistFlow 物理验证。
+> - `DISTRIBUTION/UNBALANCED-DOPF` 是三相 LinDistFlow（线性化），不是精确三相 AC 潮流。
+> - `OPF/SC-AC-OPF` 是精确极坐标预防性 N-1，与 GO 线性化 `LINEARIZED-SC-OPF` 不是同一模型。
 > - 最大供电（MLD）已从 `DISPATCH/` 挪到 `RESILIENCE/`（损坏网络上的供电，不是经济调度）。
 > - 每个案例目录都有 `solve.py`；`config.json` 含统一 `base_problem` / `variant` / `source_network` / `features`。
 
@@ -101,6 +109,7 @@ python3 OTS/SC-OTS/run_all_python.py
 python3 OTS/LINEARIZED-SC-OTS/run_all_python.py --tier relaxed
 python3 OPF/DC-OPF/run_all_python.py --full-only
 python3 OPF/AC-OPF/run_all_python.py
+python3 OPF/SC-AC-OPF/run_all_python.py
 python3 OPF/LINEARIZED-SC-OPF/run_all_python.py --tier relaxed
 
 # —— UC ——
@@ -113,17 +122,22 @@ python3 DISTRIBUTION/DNR/run_all_python.py
 python3 DISTRIBUTION/DISTRIBUTION-OPF/run_all_python.py
 python3 DISTRIBUTION/VOLT-VAR/run_all_python.py
 python3 DISTRIBUTION/DER-HOSTING/run_all_python.py
+python3 DISTRIBUTION/MICROGRID/run_all_python.py
+python3 DISTRIBUTION/UNBALANCED-DOPF/run_all_python.py
 
 # —— 调度 / 监测 ——
 python3 DISPATCH/ECONOMIC-DISPATCH/run_all_python.py
+python3 DISPATCH/DEMAND-RESPONSE/run_all_python.py
 python3 MONITORING/PMU-PLACEMENT/run_all_python.py
 python3 MONITORING/STATE-ESTIMATION/run_all_python.py
 
 # —— 规划 / 时序 / 市场 ——
 python3 PLANNING/TRANSMISSION-EXPANSION/run_all_python.py --full-only
 python3 PLANNING/RESOURCE-CAPACITY-EXPANSION/run_all_python.py
+python3 PLANNING/DISTRIBUTION-EXPANSION/run_all_python.py
 python3 SCHEDULING/HYDROTHERMAL-SCHEDULING/run_all_python.py --full-only
 python3 SCHEDULING/MAINTENANCE-SCHEDULING/run_all_python.py
+python3 SCHEDULING/STORAGE-SCHEDULING/run_all_python.py
 python3 MARKET/MARKET-CLEARING/run_all_python.py --full-only
 python3 MARKET/STRATEGIC-BIDDING/run_all_python.py
 
@@ -189,9 +203,9 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 | `solve_tier` | 当前案例数 | 含义 |
 |--------------|--------------:|------|
-| `full` | 393 | 默认完整求解与验收 |
+| `full` | 407 | 默认完整求解与验收 |
 | `relaxed` | 182 | 可求解，通常需更宽的时限或 gap |
-| `large` | 20 | 大规模档 |
+| `large` | 22 | 大规模档 |
 | `xlarge` | 24 | 超大规模档 |
 | `skip` | 543 | 数据与建模参考，不承诺在常规时限内求优 |
 
@@ -204,25 +218,31 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 | `navigation_domain` | 当前 `base_problem` | 变体轴示例 |
 |---------------------|--------------------------|------------|
 | OTS | `ots` | `power_flow=dc/dc_linearized`；`security=none/n-1/sampled_n-1` |
-| OPF | `opf` | `power_flow=dc/ac_exact/dc_linearized`；`security=none/sampled_n-1` |
+| OPF | `opf` | `power_flow=dc/ac_exact/dc_linearized`；`security=none/n-1/sampled_n-1` |
 | UC | `uc` | copperplate / network；storage；security |
-| DISTRIBUTION | `dnr`、`distribution_opf`、`volt_var`、`der_hosting` | 当前 `power_flow=active_power_transport`；顶层可信度字段 `maturity=experimental/data_only` |
-| DISPATCH | `economic_dispatch` | `power_flow=copperplate`；`network_constraints=none` |
+| DISTRIBUTION | `dnr`、`distribution_opf`、`volt_var`、`der_hosting`、`microgrid` | 旧配网包为 `active_power_transport`；新包含铜板微网与三相 LinDistFlow |
+| DISPATCH | `economic_dispatch`、`demand_response` | `power_flow=copperplate`；可中断/可转移负荷 |
 | MONITORING | `pmu_placement`、`state_estimation` | WLS / L1 |
-| PLANNING | `transmission_expansion`、`resource_capacity_expansion` | candidate type；representative periods |
-| SCHEDULING | `hydrothermal_scheduling`、`maintenance_scheduling` | multi-period；scenario structure |
+| PLANNING | `transmission_expansion`、`resource_capacity_expansion`、`distribution_expansion` | candidate type；径向 LinDistFlow |
+| SCHEDULING | `hydrothermal_scheduling`、`maintenance_scheduling`、`storage_scheduling` | multi-period；循环 SOC |
 | MARKET | `market_clearing`、`strategic_bidding` | welfare LP；bid ladder |
 | RESILIENCE | `maximum_load_delivery`、`power_restoration`、`distribution_restoration`、`controlled_islanding`、`optimal_power_shutoff`、`network_interdiction` | damaged network；temporal restoration；N-k |
 | MULTI-ENERGY | `integrated_electric_gas` | gas relaxation；coupling |
 
 ### 当前缺口 / coverage roadmap
 
-优先补齐下列基础问题与可验收物理模型：
+已补齐并可验收的 pilot：
 
-1. 扩展精确非凸 **AC-OPF** 覆盖；当前已有 3/5/14-bus 三个全局求解 pilot，还缺中大规模与 AC 安全约束变体。
-2. 经 AC/三相潮流交叉验证的非平衡配网 OPF、DNR、Volt-VAR 与 DER hosting；当前配网包仅作实验性 active-power transport 基线。
-3. **Demand Response**、**Storage Scheduling** 与 **Distribution Expansion Planning**。
-4. **Microgrid** 与 **Virtual Power Plant (VPP)** 的运行/聚合基准。
+- 精确 AC-OPF：3/5/14/30-bus。
+- 精确预防性 SC-AC-OPF：3-bus 选定 N-1、5-bus 抽样 N-1。
+- Demand Response、Storage Scheduling、Distribution Expansion、Microgrid/VPP。
+- 三相 LinDistFlow DOPF（IEEE 4-node 风格 + SMART-DS 线型 6 节点）。
+
+仍缺、且不会用不完整模型冒充的部分：
+
+1. 中大规模与完整 N-1 的精确 AC-OPF / SC-AC-OPF。
+2. 用精确三相 AC 交叉验证的 DNR / Volt-VAR / DER hosting。
+3. 非平衡三相配网扩展与三相微网。
 
 `stochastic`、`robust`、`reserve` 是叠加在 ED / OPF / UC / scheduling / planning 等基础问题上的变体轴，不单独新建一级分类。
 

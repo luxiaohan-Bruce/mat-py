@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "case": "case004_ieee30_acopf",
+  "base_problem": "opf",
+  "problem": "ac_opf",
+  "variant": {
+    "power_flow": "ac_exact",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present",
+    "formulation": "polar_ac_power_flow",
+    "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case30_ieee.m",
+    "sha256": "cae3290639d989731d32428aacf30c0b918bc91db73bc54791f3aa62d3f76c70"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "exact_ac_opf_pilot_from_pglib"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.001,
+    "TimeLimit": 900.0,
+    "NonConvex": 2
+  },
+  "solve_tier": "large",
+  "mip_gap": 0.001,
+  "time_limit": 900.0,
+  "seed": 1,
+  "threads": 1,
+  "source_network": "pglib_opf_case30_ieee",
+  "features": {
+    "n_bus": 30,
+    "n_branch": 41,
+    "n_gen": 6,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "nlp",
+    "solver_family": "nonconvex_ac"
+  },
+  "classification_note": "Exact nonconvex polar AC-OPF with explicit P/Q balance and two-end MVA limits."
+}

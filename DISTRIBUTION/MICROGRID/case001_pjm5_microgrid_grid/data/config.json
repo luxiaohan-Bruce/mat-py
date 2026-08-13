@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case": "case001_pjm5_microgrid_grid",
+  "base_problem": "microgrid",
+  "problem": "microgrid",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "storage": "simple_energy_balance",
+    "island_mode": "grid_connected",
+    "formulation": "microgrid_energy_management",
+    "network_constraints": "none"
+  },
+  "classification_note": "Copperplate microgrid/VPP energy management with thermal units, PV, storage and optional grid exchange.",
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case5_pjm.m",
+    "sha256": "cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "reuse_pjm5_units",
+      "add_pv_storage_and_pcc_limits"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 8,
+  "source_network": "pglib_opf_case5_pjm",
+  "features": {
+    "n_bus": 5,
+    "n_branch": 0,
+    "n_gen": 6,
+    "n_storage": 1,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  }
+}

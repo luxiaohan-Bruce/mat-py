@@ -1,0 +1,56 @@
+[
+  {
+    "case": "case001_radial5_distexp",
+    "source": "simbench_linetype:radial5_expansion",
+    "n_bus": 5,
+    "n_gen": 0,
+    "n_branch": 2,
+    "n_storage": 0,
+    "n_candidate_branch": 5,
+    "T": 1,
+    "n_contingency": 0,
+    "n_bin": 5,
+    "solve_tier": "full",
+    "base_problem": "distribution_expansion",
+    "problem": "distribution_expansion",
+    "variant": {
+      "power_flow": "lindistflow",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "radiality": "spanning_tree",
+      "voltage_magnitude": "lindistflow_v_squared",
+      "reactive_power": "lindistflow",
+      "formulation": "lindistflow_candidate_feeders",
+      "network_constraints": "radial_lindistflow_and_candidate_investment"
+    }
+  },
+  {
+    "case": "case002_radial8_distexp",
+    "source": "simbench_linetype:radial8_expansion",
+    "n_bus": 8,
+    "n_gen": 0,
+    "n_branch": 3,
+    "n_storage": 0,
+    "n_candidate_branch": 8,
+    "T": 1,
+    "n_contingency": 0,
+    "n_bin": 8,
+    "solve_tier": "full",
+    "base_problem": "distribution_expansion",
+    "problem": "distribution_expansion",
+    "variant": {
+      "power_flow": "lindistflow",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "radiality": "spanning_tree",
+      "voltage_magnitude": "lindistflow_v_squared",
+      "reactive_power": "lindistflow",
+      "formulation": "lindistflow_candidate_feeders",
+      "network_constraints": "radial_lindistflow_and_candidate_investment"
+    }
+  }
+]

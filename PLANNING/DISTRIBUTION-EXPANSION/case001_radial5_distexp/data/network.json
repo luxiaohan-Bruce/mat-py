@@ -1,0 +1,124 @@
+{
+  "name": "case001_radial5_distexp",
+  "baseMVA": 1.0,
+  "baseKV": 20.0,
+  "root_bus": 1,
+  "substation_price_per_MWh": 40.0,
+  "buses": [
+    {
+      "bus_i": 1,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vmin": 0.95,
+      "Vmax": 1.05,
+      "is_root": true
+    },
+    {
+      "bus_i": 2,
+      "Pd": 1.2,
+      "Qd": 0.4,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 3,
+      "Pd": 0.9,
+      "Qd": 0.3,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 4,
+      "Pd": 1.1,
+      "Qd": 0.35,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 5,
+      "Pd": 0.8,
+      "Qd": 0.25,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "fbus": 1,
+      "tbus": 2,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 4.0
+    },
+    {
+      "id": 2,
+      "fbus": 2,
+      "tbus": 3,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 4.0
+    }
+  ],
+  "ne_branches": [
+    {
+      "id": 3,
+      "fbus": 1,
+      "tbus": 4,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 4.0,
+      "invest_cost": 120.0
+    },
+    {
+      "id": 4,
+      "fbus": 2,
+      "tbus": 4,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 3.0,
+      "invest_cost": 80.0
+    },
+    {
+      "id": 5,
+      "fbus": 3,
+      "tbus": 5,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 3.0,
+      "invest_cost": 90.0
+    },
+    {
+      "id": 6,
+      "fbus": 2,
+      "tbus": 5,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 3.0,
+      "invest_cost": 110.0
+    },
+    {
+      "id": 7,
+      "fbus": 1,
+      "tbus": 5,
+      "r_ohm": 0.64,
+      "x_ohm": 0.145,
+      "r_pu": 0.0016,
+      "x_pu": 0.0003625,
+      "smax_MVA": 4.0,
+      "invest_cost": 160.0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "case": "case001_lmbd3_dr",
+  "base_problem": "demand_response",
+  "problem": "demand_response",
+  "variant": {
+    "power_flow": "copperplate",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "demand_flexibility": "interruptible_and_shiftable",
+    "formulation": "interruptible_and_shiftable_demand",
+    "network_constraints": "none"
+  },
+  "classification_note": "Copperplate multi-period dispatch with interruptible shed and energy-neutral load shifting.",
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case3_lmbd.m",
+    "sha256": "168f73f389aa8abd7707fae04d26ee2046ef3622e8ea2f6661a89d815e9c637d"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "reuse_copperplate_ed_units",
+      "add_8h_demand_profile_and_dr_offers"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 8,
+  "source_network": "pglib_opf_case3_lmbd",
+  "features": {
+    "n_bus": 3,
+    "n_branch": 0,
+    "n_gen": 3,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  }
+}

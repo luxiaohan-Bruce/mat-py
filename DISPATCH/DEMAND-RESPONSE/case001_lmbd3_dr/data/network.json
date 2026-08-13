@@ -1,0 +1,119 @@
+{
+  "name": "case001_lmbd3_dr",
+  "source": "pglib_opf_case3_lmbd",
+  "baseMVA": 100.0,
+  "time_periods": 8,
+  "dt_hour": 1.0,
+  "demand_profile": [
+    0.72,
+    0.68,
+    0.7,
+    0.85,
+    1.0,
+    0.95,
+    0.88,
+    0.8
+  ],
+  "buses": [
+    {
+      "bus_i": 1,
+      "type": 3,
+      "Pd": 110.0,
+      "Qd": 40.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 240.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 2,
+      "type": 2,
+      "Pd": 110.0,
+      "Qd": 40.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 240.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 3,
+      "type": 2,
+      "Pd": 95.0,
+      "Qd": 50.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 240.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    }
+  ],
+  "gens": [
+    {
+      "bus": 1,
+      "Pg": 1000.0,
+      "Qg": 0.0,
+      "Qmax": 1000.0,
+      "Qmin": -1000.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 2000.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.11,
+      "c1": 5.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 2,
+      "Pg": 1000.0,
+      "Qg": 0.0,
+      "Qmax": 1000.0,
+      "Qmin": -1000.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 2000.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.085,
+      "c1": 1.2,
+      "c0": 0.0
+    },
+    {
+      "bus": 3,
+      "Pg": 0.0,
+      "Qg": 0.0,
+      "Qmax": 1000.0,
+      "Qmin": -1000.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 0.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 0.0,
+      "c0": 0.0
+    }
+  ],
+  "demand_response": {
+    "interruptible_frac": 0.15,
+    "shiftable_frac": 0.1,
+    "voll_per_MWh": 500.0
+  }
+}

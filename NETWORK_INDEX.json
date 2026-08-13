@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "n_networks": 304,
+  "n_networks": 308,
   "networks": {
     "andes:EI_33": [
       "RESILIENCE/CONTROLLED-ISLANDING/case003_EI_33_island"
@@ -295,6 +295,9 @@
       "SCHEDULING/HYDROTHERMAL-SCHEDULING/case30_s46e_scen4_ht",
       "SCHEDULING/HYDROTHERMAL-SCHEDULING/case31_s46e_scen9_ht",
       "SCHEDULING/HYDROTHERMAL-SCHEDULING/case32_s46e_scen16_ht"
+    ],
+    "constructed:smartds_336acsr_6bus": [
+      "DISTRIBUTION/UNBALANCED-DOPF/case002_smartds_6bus_unbalanced"
     ],
     "gaslib:GasLib-11-v1-20211130:pglib_opf_case14_ieee": [
       "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case02_gaslib11_14_ieee_ieg"
@@ -718,6 +721,9 @@
       "OTS/LINEARIZED-SC-OTS/case314_t1s3_real_time_network_84r_3_scenario_2_scacots",
       "OTS/LINEARIZED-SC-OTS/case316_t1s3_real_time_network_84r_3_scenario_3_scacots"
     ],
+    "ieee_pes_4_node_test_feeder:ieee4": [
+      "DISTRIBUTION/UNBALANCED-DOPF/case001_ieee4_unbalanced"
+    ],
     "pglib-opf:case001_lmbd3_dc_ed": [
       "MARKET/STRATEGIC-BIDDING/case02_toy3_dc_price"
     ],
@@ -788,6 +794,7 @@
       "UC/SCUC/case61_pegase13659_scuc"
     ],
     "pglib_opf_case14_ieee": [
+      "DISPATCH/DEMAND-RESPONSE/case003_ieee14_dr",
       "DISPATCH/ECONOMIC-DISPATCH/case003_ieee14_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case003_case14_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case003_case14_ieee_wls_se",
@@ -801,6 +808,7 @@
       "RESILIENCE/MAXIMUM-LOAD-DELIVERY/case015_case14_ieee_dmg_mld",
       "RESILIENCE/NETWORK-INTERDICTION/case005_ieee14_nk_int",
       "RESILIENCE/NETWORK-INTERDICTION/case006_ieee14_gen_nk_int",
+      "SCHEDULING/STORAGE-SCHEDULING/case003_ieee14_storage",
       "UC/SCUC/case06_ieee14_scuc"
     ],
     "pglib_opf_case162_ieee_dtc": [
@@ -1073,6 +1081,7 @@
       "MONITORING/PMU-PLACEMENT/case006_case30_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case005_case30_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case006_case30_ieee_l1_se",
+      "OPF/AC-OPF/case004_ieee30_acopf",
       "OPF/DC-OPF/case009_ieee30_dc_ed",
       "OTS/DC-OTS/case07_ieee30_dcots",
       "OTS/SC-OTS/case08_ieee30_scots",
@@ -1120,16 +1129,19 @@
       "UC/SCUC/case01_ieee39_scuc"
     ],
     "pglib_opf_case3_lmbd": [
+      "DISPATCH/DEMAND-RESPONSE/case001_lmbd3_dr",
       "DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case001_case3_lmbd_pmu",
       "OPF/AC-OPF/case001_lmbd3_acopf",
       "OPF/DC-OPF/case001_lmbd3_dc_ed",
       "OPF/DC-OPF/case002_lmbd3_lp_ed",
+      "OPF/SC-AC-OPF/case001_lmbd3_scacopf",
       "OTS/DC-OTS/case04_lmbd3_dcots",
       "OTS/SC-OTS/case01_lmbd3_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case003_lmbd3_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case001_lmbd3_nk_int",
       "RESILIENCE/NETWORK-INTERDICTION/case002_lmbd3_gen_nk_int",
+      "SCHEDULING/STORAGE-SCHEDULING/case001_lmbd3_storage",
       "UC/SCUC/case04_lmbd3_scuc"
     ],
     "pglib_opf_case4020_goc": [
@@ -1227,12 +1239,17 @@
       "UC/SCUC/case20_sdet588_scuc"
     ],
     "pglib_opf_case5_pjm": [
+      "DISPATCH/DEMAND-RESPONSE/case002_pjm5_dr",
       "DISPATCH/ECONOMIC-DISPATCH/case002_pjm5_copperplate_ed",
+      "DISTRIBUTION/MICROGRID/case001_pjm5_microgrid_grid",
+      "DISTRIBUTION/MICROGRID/case002_pjm5_microgrid_island",
+      "DISTRIBUTION/MICROGRID/case003_pjm5_vpp",
       "MONITORING/PMU-PLACEMENT/case002_case5_pjm_pmu",
       "MONITORING/STATE-ESTIMATION/case001_case5_pjm_wls_se",
       "MONITORING/STATE-ESTIMATION/case002_case5_pjm_l1_se",
       "OPF/AC-OPF/case002_pjm5_acopf",
       "OPF/DC-OPF/case003_pjm5_dc_ed",
+      "OPF/SC-AC-OPF/case002_pjm5_scacopf",
       "OTS/DC-OTS/case01_pjm5_dcots",
       "OTS/SC-OTS/case02_pjm5_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case004_pjm5_tep_syn",
@@ -1240,6 +1257,7 @@
       "RESILIENCE/MAXIMUM-LOAD-DELIVERY/case014_case5_pjm_dmg_mld",
       "RESILIENCE/NETWORK-INTERDICTION/case003_pjm5_nk_int",
       "RESILIENCE/NETWORK-INTERDICTION/case004_pjm5_gen_nk_int",
+      "SCHEDULING/STORAGE-SCHEDULING/case002_pjm5_storage",
       "UC/SCUC/case05_pjm5_scuc"
     ],
     "pglib_opf_case60_c": [
@@ -1718,6 +1736,12 @@
     ],
     "simbench:GSO-rural-base_peak-rhs1_1247--rdt137": [
       "RESILIENCE/DISTRIBUTION-RESTORATION/case03_gso_rural_restore"
+    ],
+    "simbench_linetype:radial5_expansion": [
+      "PLANNING/DISTRIBUTION-EXPANSION/case001_radial5_distexp"
+    ],
+    "simbench_linetype:radial8_expansion": [
+      "PLANNING/DISTRIBUTION-EXPANSION/case002_radial8_distexp"
     ],
     "smartds:GSO-rural-base_peak-rhs1_1247--rdt137": [
       "DISTRIBUTION/DER-HOSTING/case03_gso_rural_hosting",
