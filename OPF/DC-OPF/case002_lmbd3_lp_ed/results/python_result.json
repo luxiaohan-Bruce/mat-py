@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case": "case002_lmbd3_lp_ed",
+  "solver": "python-gurobi",
+  "problem": "dc_opf",
+  "base_problem": "opf",
+  "ed": {
+    "status": "OPTIMAL",
+    "obj": 926.4666666666666,
+    "obj_bound": 926.4666666666666,
+    "mip_gap": 0.0,
+    "runtime": 0.0005609989166259766,
+    "Pg_MW": [
+      144.33333333333331,
+      170.66666666666669,
+      0.0
+    ],
+    "theta_deg": [
+      0.0,
+      5.500394833255908,
+      -15.985522484149966
+    ],
+    "flow_MW": [
+      45.0,
+      -50.0,
+      -10.666666666666677
+    ],
+    "has_quad": false,
+    "ref_bus": 1,
+    "baseMVA": 100.0,
+    "n_var": 9,
+    "n_constr": 13,
+    "max_power_balance_MW": 7.105427357601002e-15,
+    "max_flow_equation_MW": 0.0,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "cost_recomputed": 926.4666666666665,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

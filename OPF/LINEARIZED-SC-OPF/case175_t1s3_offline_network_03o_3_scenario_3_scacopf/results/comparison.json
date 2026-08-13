@@ -1,0 +1,13 @@
+{
+  "case": "case175_t1s3_offline_network_03o_3_scenario_3_scacopf",
+  "validation": "python_result",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status": "OPTIMAL",
+    "obj": 222052.69999999992,
+    "mip_gap": 0.0,
+    "load_shed_MW": 0.0,
+    "flow_slack_pu": 0.0
+  }
+}

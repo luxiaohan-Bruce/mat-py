@@ -4,54 +4,103 @@
     "folder": "1-MV-rural--0-sw",
     "mode": "dnr",
     "T": 1,
-    "solve_tier": "full"
-  },
-  {
-    "case": "case02_mv_rural_dopf",
-    "folder": "1-MV-rural--0-sw",
-    "mode": "dopf",
-    "T": 4,
-    "solve_tier": "full"
+    "solve_tier": "full",
+    "maturity": "experimental",
+    "validation_scope": "structural_only",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "active_power_transport_dnr",
+    "variant": {
+      "power_flow": "active_power_transport",
+      "reactive_power": "not_modeled",
+      "voltage_magnitude": "not_modeled",
+      "radiality": "not_enforced"
+    }
   },
   {
     "case": "case03_mv_rural_dnr_ess",
     "folder": "1-MV-rural--0-sw",
     "mode": "dnr_ess",
     "T": 4,
-    "solve_tier": "full"
+    "solve_tier": "full",
+    "maturity": "experimental",
+    "validation_scope": "structural_only",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "active_power_transport_dnr_ess",
+    "variant": {
+      "power_flow": "active_power_transport",
+      "reactive_power": "not_modeled",
+      "voltage_magnitude": "not_modeled",
+      "radiality": "not_enforced"
+    }
   },
   {
     "case": "case04_lv_rural2_dnr",
     "folder": "1-LV-rural2--0-sw",
     "mode": "dnr",
     "T": 1,
-    "solve_tier": "full"
-  },
-  {
-    "case": "case05_lv_rural2_dopf",
-    "folder": "1-LV-rural2--0-sw",
-    "mode": "dopf",
-    "T": 4,
-    "solve_tier": "full"
+    "solve_tier": "full",
+    "maturity": "experimental",
+    "validation_scope": "structural_only",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "active_power_transport_dnr",
+    "variant": {
+      "power_flow": "active_power_transport",
+      "reactive_power": "not_modeled",
+      "voltage_magnitude": "not_modeled",
+      "radiality": "not_enforced"
+    }
   },
   {
     "case": "case06_lv_rural2_dnr_ess",
     "folder": "1-LV-rural2--0-sw",
     "mode": "dnr_ess",
     "T": 4,
-    "solve_tier": "full"
+    "solve_tier": "full",
+    "maturity": "experimental",
+    "validation_scope": "structural_only",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "active_power_transport_dnr_ess",
+    "variant": {
+      "power_flow": "active_power_transport",
+      "reactive_power": "not_modeled",
+      "voltage_magnitude": "not_modeled",
+      "radiality": "not_enforced"
+    }
   },
   {
     "case": "case07_complete_mixed_profile_meta",
     "folder": "1-complete_data-mixed-all-2-sw",
     "mode": "meta",
-    "solve_tier": "skip"
+    "solve_tier": "skip",
+    "maturity": "data_only",
+    "validation_scope": "not_solved",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "meta",
+    "variant": {
+      "power_flow": "none"
+    }
   },
   {
     "case": "case01_gso_rural_dnr",
     "folder": "GSO-rural-base_peak-rhs1_1247--rdt137",
-    "mode": "smartds_dnr",
+    "mode": "dnr",
     "T": 1,
-    "solve_tier": "full"
+    "solve_tier": "full",
+    "maturity": "experimental",
+    "validation_scope": "structural_only",
+    "physics_validated": false,
+    "base_problem": "dnr",
+    "problem": "smartds_active_power_transport_dnr",
+    "variant": {
+      "power_flow": "active_power_transport",
+      "reactive_power": "not_modeled",
+      "voltage_magnitude": "not_modeled",
+      "radiality": "not_enforced"
+    }
   }
 ]

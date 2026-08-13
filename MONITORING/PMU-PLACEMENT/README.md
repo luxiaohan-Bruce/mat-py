@@ -3,7 +3,7 @@
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11）。
 
 最优 PMU 布点：0-1 MILP；PMU 观测本母线及邻接母线；单位成本最小化 PMU 数。
-数据：PGLib-OPF 拓扑。双端验收：**66/66 PASS**（含 skip 大数据档）。
+数据：PGLib-OPF 拓扑。37 个 full/relaxed 案例通过双端验收；29 个 `skip` 大网仅提供数据，不计作求解 PASS。
 
 - **案例数**: 66（full=18, relaxed=19, skip=29）
 - **数据来源**: PGLib-OPF (https://github.com/power-grid-lib/pglib-opf)

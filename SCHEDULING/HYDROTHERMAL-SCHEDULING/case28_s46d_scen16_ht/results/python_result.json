@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "case": "case28_s46d_scen16_ht",
+  "solver": "python-gurobi",
+  "problem": "ht",
+  "base_problem": "hydrothermal_scheduling",
+  "ht": {
+    "status": "OPTIMAL",
+    "obj": -548167557.4685544,
+    "runtime": 217.6395969390869,
+    "mip_gap": 8.124742720426415e-05,
+    "n_scenarios": 16,
+    "time_periods": 48,
+    "networked": true,
+    "use_commitment": true,
+    "max_power_balance_MW": 6.652101092186058e-09,
+    "max_water_balance_hm3": 1.1722178783202253e-10,
+    "validation_passed": true,
+    "thermal_on_hours": 82,
+    "total_deficit_MW": 9.76734803731583
+  },
+  "validation": {
+    "passed": true
+  }
+}

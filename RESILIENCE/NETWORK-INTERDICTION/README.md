@@ -5,7 +5,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 - **案例数**: 69（full=15, relaxed=6, skip=48）
 - **数据来源**: PGLib-OPF N-k interdiction
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: - case001_lmbd3_nk_int: PASS
+- **验收**: 21 个 full/relaxed 案例通过验收；48 个 `skip` 大网仅提供数据
 
 ## 环境
 

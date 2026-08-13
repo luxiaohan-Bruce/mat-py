@@ -2,7 +2,7 @@
   "schema_version": 1,
   "case": "case04_lv_rural2_dnr",
   "solver": "python-gurobipy",
-  "problem": "lindistflow_dnr",
+  "problem": "active_power_transport_dnr",
   "dnr": {
     "status": "OPTIMAL",
     "obj": 0.4352192590793769,

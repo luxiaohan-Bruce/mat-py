@@ -2,7 +2,7 @@
   "schema_version": 1,
   "case": "case01_gso_rural_dnr",
   "solver": "python-gurobipy",
-  "problem": "smartds_lindistflow_dnr",
+  "problem": "smartds_active_power_transport_dnr",
   "smartds": {
     "status": "OPTIMAL",
     "obj": 0.16915612555637585,
@@ -14,6 +14,6 @@
     "opened": [],
     "load_shed": -8.43631821499849e-14,
     "der_total": 0.0,
-    "note": "linear aggregated feeder model"
+    "note": "experimental active-power transport proxy; structural-only, not physics validated"
   }
 }

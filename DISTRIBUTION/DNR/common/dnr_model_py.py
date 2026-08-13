@@ -1,4 +1,4 @@
-"""LinDistFlow-style multiperiod DNR (minimal feasible linear model)."""
+"""Experimental multiperiod active-power transport model for DNR examples."""
 
 from __future__ import annotations
 

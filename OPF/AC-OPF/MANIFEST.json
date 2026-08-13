@@ -1,0 +1,65 @@
+[
+  {
+    "case": "case001_lmbd3_acopf",
+    "source": "pglib_opf_case3_lmbd",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 3,
+    "solve_tier": "full",
+    "base_problem": "opf",
+    "problem": "ac_opf",
+    "variant": {
+      "power_flow": "ac_exact",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "cost_model": "quadratic_if_present",
+      "formulation": "polar_ac_power_flow",
+      "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+    },
+    "path": "case001_lmbd3_acopf"
+  },
+  {
+    "case": "case002_pjm5_acopf",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 6,
+    "solve_tier": "full",
+    "base_problem": "opf",
+    "problem": "ac_opf",
+    "variant": {
+      "power_flow": "ac_exact",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "cost_model": "quadratic_if_present",
+      "formulation": "polar_ac_power_flow",
+      "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+    },
+    "path": "case002_pjm5_acopf"
+  },
+  {
+    "case": "case003_ieee14_acopf",
+    "source": "pglib_opf_case14_ieee",
+    "n_bus": 14,
+    "n_gen": 5,
+    "n_branch": 20,
+    "solve_tier": "full",
+    "base_problem": "opf",
+    "problem": "ac_opf",
+    "variant": {
+      "power_flow": "ac_exact",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "single_period",
+      "recourse": "none",
+      "cost_model": "quadratic_if_present",
+      "formulation": "polar_ac_power_flow",
+      "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+    },
+    "path": "case003_ieee14_acopf"
+  }
+]

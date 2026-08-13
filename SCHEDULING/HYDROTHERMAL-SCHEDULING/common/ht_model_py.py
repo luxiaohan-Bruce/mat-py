@@ -28,6 +28,7 @@ def _status_name(status: int) -> str:
         GRB.OPTIMAL: "OPTIMAL",
         GRB.SUBOPTIMAL: "SUBOPTIMAL",
         GRB.TIME_LIMIT: "TIME_LIMIT",
+        GRB.INTERRUPTED: "INTERRUPTED",
         GRB.INFEASIBLE: "INFEASIBLE",
         GRB.INF_OR_UNBD: "INF_OR_UNBD",
         GRB.UNBOUNDED: "UNBOUNDED",
@@ -501,7 +502,9 @@ def solve_ht(data: dict[str, Any], config: dict[str, Any], *, quiet: bool = True
     result["total_deficit_MW"] = total_def
     result["thermal_on_hours"] = on_hours
     result["validation_passed"] = (
-        max_bal <= 1e-3 and max_water <= 1e-4 and status in ("OPTIMAL", "SUBOPTIMAL", "TIME_LIMIT")
+        max_bal <= 1e-3
+        and max_water <= 1e-4
+        and status in ("OPTIMAL", "SUBOPTIMAL", "TIME_LIMIT", "INTERRUPTED")
     )
     return result
 

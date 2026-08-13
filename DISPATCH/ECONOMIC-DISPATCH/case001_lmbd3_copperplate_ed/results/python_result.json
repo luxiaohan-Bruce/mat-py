@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "case": "case001_lmbd3_copperplate_ed",
+  "solver": "python-gurobi",
+  "base_problem": "economic_dispatch",
+  "problem": "economic_dispatch",
+  "economic_dispatch": {
+    "status": "OPTIMAL",
+    "obj": 5638.96794871795,
+    "obj_bound": 5638.9679487143085,
+    "mip_gap": 0.0,
+    "runtime": 0.0029311180114746094,
+    "demand_MW": 315.0,
+    "Pg_MW": [
+      127.56410256417,
+      187.43589743583001,
+      0.0
+    ],
+    "system_lambda_per_MWh": 33.0641025640902,
+    "has_quadratic_cost": true,
+    "max_balance_violation_MW": 0.0,
+    "max_generator_bound_violation_MW": 0.0,
+    "cost_recomputed": 5638.967948717949,
+    "n_var": 3,
+    "n_constr": 1,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

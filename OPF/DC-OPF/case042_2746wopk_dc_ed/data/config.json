@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "case": "case042_2746wopk_dc_ed",
+  "base_problem": "opf",
+  "problem": "dc_opf",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present",
+    "formulation": "dc_power_flow",
+    "network_constraints": "nodal_balance_branch_flow_and_thermal_limits"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case2746wop_k.m",
+    "sha256": "81890d6b2aeaae0310909529edd9584405210534ab6387e1a4e4bb9c31e5f160"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "dc_opf_from_pglib"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 300.0
+  },
+  "solve_tier": "relaxed",
+  "mip_gap": 1e-06,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "source_network": "pglib_opf_case2746wop_k",
+  "features": {
+    "n_bus": 2746,
+    "n_branch": 3514,
+    "n_gen": 514,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  },
+  "classification_note": "DC-OPF: network-constrained dispatch with nodal DC power flow and branch thermal limits."
+}

@@ -1758,7 +1758,10 @@
     "security": "n-1",
     "uncertainty": "deterministic",
     "horizon": "single_period",
-    "recourse": "preventive"
+    "topology_control": "preventive_shared",
+    "generation_recourse": "corrective_bounded",
+    "recourse": "corrective_limited",
+    "contingency_scope": "all_credible_non_islanding"
   },
   "source_network": "pglib_opf_case200_activ",
   "features": {

@@ -1,14 +1,21 @@
 {
   "case": "case07_complete_mixed_profile_meta",
   "problem": "meta",
+  "mode": "meta",
   "solve_tier": "skip",
+  "maturity": "data_only",
+  "validation_scope": "not_solved",
+  "physics_validated": false,
   "source": {
     "dataset": "SimBench",
     "folder": "1-complete_data-mixed-all-2-sw"
   },
   "base_problem": "dnr",
   "variant": {
-    "power_flow": "lindistflow",
+    "power_flow": "none",
+    "reactive_power": "not_applicable",
+    "voltage_magnitude": "not_applicable",
+    "radiality": "not_applicable",
     "security": "none",
     "uncertainty": "deterministic",
     "horizon": "single_period",

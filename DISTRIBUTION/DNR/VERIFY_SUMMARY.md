@@ -1,4 +1,7 @@
-# DNR verify
+# DNR validation status
 
-- 6 solved cases (MV/LV × dnr/dopf/dnr_ess) + 1 meta skip
-- Dual MATLAB/Python LinDistFlow-style linear model
+- **Experimental / structural-only; not physics validated.**
+- 5 examples have stored solver results; 1 data/profile case is skipped.
+- Stored optimal statuses establish only that the active-power transport proxy was solved.
+- No voltage-drop equations, voltage magnitudes, reactive-power balance, or radiality/connectivity constraints are checked.
+- These examples must not be counted as validated LinDistFlow, radial DNR, or AC distribution coverage.

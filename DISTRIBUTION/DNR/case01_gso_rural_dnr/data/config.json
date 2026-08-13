@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "case": "case01_gso_rural_dnr",
-  "problem": "smartds_lindistflow_dnr",
+  "problem": "smartds_active_power_transport_dnr",
   "mode": "dnr",
   "source": {
     "dataset": "SMART-DS",
@@ -13,15 +13,26 @@
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",
+  "maturity": "experimental",
+  "validation_scope": "structural_only",
+  "physics_validated": false,
   "max_switch_actions": 4,
   "construction": [
     "Aggregated OpenDSS feeder (~80 nodes) for dual solvability.",
-    "LinDistFlow-style linear model; not exact three-phase AC.",
+    "Active-power transport proxy; not LinDistFlow or exact three-phase AC.",
     "variant=dnr"
+  ],
+  "known_limitations": [
+    "No voltage-magnitude variables or voltage-drop equations.",
+    "No reactive-power balance or reactive-device coupling.",
+    "No radiality or energized-connectivity constraints; a feasible topology is not a certified radial feeder."
   ],
   "base_problem": "dnr",
   "variant": {
-    "power_flow": "lindistflow",
+    "power_flow": "active_power_transport",
+    "reactive_power": "not_modeled",
+    "voltage_magnitude": "not_modeled",
+    "radiality": "not_enforced",
     "security": "none",
     "uncertainty": "deterministic",
     "horizon": "single_period",
@@ -37,7 +48,7 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 0,
+    "n_switchable": 16,
     "max_open": null,
     "k": null,
     "n_bin": 90,

@@ -20,6 +20,20 @@ def _len(x: Any) -> int:
     return 0
 
 
+def _count_switchable(branches: Any) -> int:
+    if isinstance(branches, dict):
+        values = branches.values()
+    elif isinstance(branches, (list, tuple)):
+        values = branches
+    else:
+        return 0
+    return sum(
+        1
+        for branch in values
+        if isinstance(branch, dict) and bool(branch.get("switchable"))
+    )
+
+
 def source_network(config: dict[str, Any], network: dict[str, Any] | None = None) -> str:
     """Stable id for the underlying grid, shared across problem types."""
     src = config.get("source")
@@ -102,11 +116,8 @@ def extract_features(
     net = network or {}
 
     n_bus = _len(net.get("buses") or net.get("bus") or net.get("zones"))
-    n_branch = _len(
-        net.get("branches")
-        or net.get("branch")
-        or net.get("network_lines")
-    )
+    branches = net.get("branches") or net.get("branch") or net.get("network_lines")
+    n_branch = _len(branches)
     gens = (
         net.get("gens")
         or net.get("generators")
@@ -141,8 +152,12 @@ def extract_features(
     except (TypeError, ValueError):
         n_scen = 1
 
-    switchable = cfg.get("switchable_idx") or cfg.get("switchable_branches") or []
-    n_switch = _len(switchable)
+    if "switchable_idx" in cfg:
+        n_switch = _len(cfg.get("switchable_idx"))
+    elif "switchable_branches" in cfg:
+        n_switch = _len(cfg.get("switchable_branches"))
+    else:
+        n_switch = _count_switchable(branches)
     max_open = cfg.get("max_open")
     k_attack = cfg.get("k")
 
@@ -189,9 +204,9 @@ def _estimate_n_bin(
     net: dict[str, Any],
 ) -> int:
     p = pack
-    if "DC-OTS" in p or "SC-OTS" in p or "SC-AC-OTS" in p:
+    if "DC-OTS" in p or "SC-OTS" in p or "LINEARIZED-SC-OTS" in p:
         return n_switch
-    if "SC-AC-OPF" in p:
+    if "LINEARIZED-SC-OPF" in p:
         return 0
     if "SYSTEM-UC" in p or p.endswith("SCUC") or "RTS-SCUC" in p:
         return n_gen * max(T, 1)
@@ -209,7 +224,12 @@ def _estimate_n_bin(
         return max(n_branch, n_bus) * max(T, 1)
     if "MAXIMUM-LOAD-DELIVERY" in p:
         return n_bus
-    if "DNR" in p or "VOLT-VAR" in p or "DER-HOSTING" in p:
+    if (
+        "DNR" in p
+        or "DISTRIBUTION-OPF" in p
+        or "VOLT-VAR" in p
+        or "DER-HOSTING" in p
+    ):
         return n_branch
     if "MAINTENANCE-SCHEDULING" in p:
         return _len(net.get("maintenance_tasks") or net.get("generators")) * max(T, 1)

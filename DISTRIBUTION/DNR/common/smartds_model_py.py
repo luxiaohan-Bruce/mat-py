@@ -111,7 +111,7 @@ def solve(net: dict, cfg: dict, quiet: bool = True) -> dict[str, Any]:
         "opened": [int(branches[ell]["id"]) for ell in range(nL) if z[ell].X < 0.5],
         "load_shed": float(sum(shed[b].X for b in range(nB))),
         "der_total": float(sum(Pder[i].X for i in range(len(ders)))) if mode == "hosting" else 0.0,
-        "note": "linear aggregated feeder model",
+        "note": "experimental active-power transport proxy; structural-only, not physics validated",
     }
 
 

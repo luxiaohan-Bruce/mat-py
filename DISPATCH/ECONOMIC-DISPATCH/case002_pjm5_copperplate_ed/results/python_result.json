@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case": "case002_pjm5_copperplate_ed",
+  "solver": "python-gurobi",
+  "base_problem": "economic_dispatch",
+  "problem": "economic_dispatch",
+  "economic_dispatch": {
+    "status": "OPTIMAL",
+    "obj": 14810.0,
+    "obj_bound": 14810.0,
+    "mip_gap": 0.0,
+    "runtime": 0.0007009506225585938,
+    "demand_MW": 1000.0,
+    "Pg_MW": [
+      40.0,
+      170.0,
+      190.0,
+      0.0,
+      600.0
+    ],
+    "system_lambda_per_MWh": 30.0,
+    "has_quadratic_cost": false,
+    "max_balance_violation_MW": 0.0,
+    "max_generator_bound_violation_MW": 0.0,
+    "cost_recomputed": 14810.0,
+    "n_var": 5,
+    "n_constr": 1,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

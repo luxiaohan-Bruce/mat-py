@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "case": "case025_t1s3_offline_network_06o_3_scenario_1_scacopf",
+  "problem": "linearized_scacopf",
+  "mode": "scacopf",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_06O-3/scenario_1/case.raw"
+  },
+  "enable_ots": false,
+  "switchable_branches": [],
+  "max_open": 0,
+  "mip_gap": 0.05,
+  "time_limit": 1.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "skip",
+  "load_shed_penalty": 10000.0,
+  "construction": [
+    "Linearized DC security-constrained OPF (NOT exact AC).",
+    "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
+    "OPF only.",
+    "nB=2000, nG=384 (372 online), nL=3639, Nc=3, tier=skip"
+  ],
+  "base_problem": "opf",
+  "variant": {
+    "power_flow": "dc_linearized",
+    "security": "sampled_n-1",
+    "contingency_scope": "sampled_subset",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "corrective_limited",
+    "generation_recourse": "corrective_within_generator_bounds"
+  },
+  "source_network": "go_c1:Network_06O-3",
+  "features": {
+    "n_bus": 2000,
+    "n_branch": 3639,
+    "n_gen": 384,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 3,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": 0,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "security_mip"
+  }
+}

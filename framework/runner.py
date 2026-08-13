@@ -17,6 +17,17 @@ def find_solver(case_dir: str | Path) -> Path | None:
         if (py / "solve.py").is_file() and not cands:
             cands.append(py / "solve.py")
     cands.extend(sorted(p for p in case.glob("solve_*.py") if p.name != "solve.py"))
+    # A case may implement its model directly in the canonical root entrypoint
+    # instead of delegating to python/solve_*.py.
+    root_solver = case / "solve.py"
+    if not cands and root_solver.is_file():
+        try:
+            source = root_solver.read_text(encoding="utf-8")
+        except OSError:
+            source = ""
+        shim_marker = 'cands = sorted(p for p in PY.glob("solve_*.py")'
+        if shim_marker not in source:
+            cands.append(root_solver)
     return cands[0] if cands else None
 
 

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "case": "case073_pegase9241_dc_ed",
+  "base_problem": "opf",
+  "problem": "dc_opf",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present",
+    "formulation": "dc_power_flow",
+    "network_constraints": "nodal_balance_branch_flow_and_thermal_limits"
+  },
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case9241_pegase.m",
+    "sha256": "d55833986cc4e3e417cad93458f39810e1ed6a54aaa2a979200b0232f271474d"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "dc_opf_from_pglib"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 1.0
+  },
+  "solve_tier": "skip",
+  "mip_gap": 1e-06,
+  "time_limit": 1.0,
+  "seed": 1,
+  "threads": 1,
+  "source_network": "pglib_opf_case9241_pegase",
+  "features": {
+    "n_bus": 9241,
+    "n_branch": 16049,
+    "n_gen": 1445,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "qp",
+    "solver_family": "convex_dispatch"
+  },
+  "classification_note": "DC-OPF: network-constrained dispatch with nodal DC power flow and branch thermal limits."
+}

@@ -351,372 +351,372 @@
       "PLANNING/RESOURCE-CAPACITY-EXPANSION/case09_9_three_zones_w_retrofit_cem"
     ],
     "go_c1:Network_01O-3": [
-      "OPF/SC-AC-OPF/case001_t1s3_offline_network_01o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case003_t1s3_offline_network_01o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case005_t1s3_offline_network_01o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case159_t1s3_offline_network_01o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case161_t1s3_offline_network_01o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case163_t1s3_offline_network_01o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case002_t1s3_offline_network_01o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case004_t1s3_offline_network_01o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case006_t1s3_offline_network_01o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case160_t1s3_offline_network_01o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case162_t1s3_offline_network_01o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case164_t1s3_offline_network_01o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case001_t1s3_offline_network_01o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case003_t1s3_offline_network_01o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case005_t1s3_offline_network_01o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case159_t1s3_offline_network_01o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case161_t1s3_offline_network_01o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case163_t1s3_offline_network_01o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case002_t1s3_offline_network_01o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case004_t1s3_offline_network_01o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case006_t1s3_offline_network_01o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case160_t1s3_offline_network_01o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case162_t1s3_offline_network_01o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case164_t1s3_offline_network_01o_3_scenario_3_scacots"
     ],
     "go_c1:Network_01R-3": [
-      "OPF/SC-AC-OPF/case079_t1s3_real_time_network_01r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case081_t1s3_real_time_network_01r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case083_t1s3_real_time_network_01r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case237_t1s3_real_time_network_01r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case239_t1s3_real_time_network_01r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case241_t1s3_real_time_network_01r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case080_t1s3_real_time_network_01r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case082_t1s3_real_time_network_01r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case084_t1s3_real_time_network_01r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case238_t1s3_real_time_network_01r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case240_t1s3_real_time_network_01r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case242_t1s3_real_time_network_01r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case079_t1s3_real_time_network_01r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case081_t1s3_real_time_network_01r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case083_t1s3_real_time_network_01r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case237_t1s3_real_time_network_01r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case239_t1s3_real_time_network_01r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case241_t1s3_real_time_network_01r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case080_t1s3_real_time_network_01r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case082_t1s3_real_time_network_01r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case084_t1s3_real_time_network_01r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case238_t1s3_real_time_network_01r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case240_t1s3_real_time_network_01r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case242_t1s3_real_time_network_01r_3_scenario_3_scacots"
     ],
     "go_c1:Network_02O-3": [
-      "OPF/SC-AC-OPF/case007_t1s3_offline_network_02o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case009_t1s3_offline_network_02o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case011_t1s3_offline_network_02o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case165_t1s3_offline_network_02o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case167_t1s3_offline_network_02o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case169_t1s3_offline_network_02o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case008_t1s3_offline_network_02o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case010_t1s3_offline_network_02o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case012_t1s3_offline_network_02o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case166_t1s3_offline_network_02o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case168_t1s3_offline_network_02o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case170_t1s3_offline_network_02o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case007_t1s3_offline_network_02o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case009_t1s3_offline_network_02o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case011_t1s3_offline_network_02o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case165_t1s3_offline_network_02o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case167_t1s3_offline_network_02o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case169_t1s3_offline_network_02o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case008_t1s3_offline_network_02o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case010_t1s3_offline_network_02o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case012_t1s3_offline_network_02o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case166_t1s3_offline_network_02o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case168_t1s3_offline_network_02o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case170_t1s3_offline_network_02o_3_scenario_3_scacots"
     ],
     "go_c1:Network_02R-3": [
-      "OPF/SC-AC-OPF/case085_t1s3_real_time_network_02r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case087_t1s3_real_time_network_02r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case089_network_02r_3_scenario_2_scenario_30_scacopf",
-      "OPF/SC-AC-OPF/case091_t1s3_real_time_network_02r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case243_t1s3_real_time_network_02r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case245_t1s3_real_time_network_02r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case247_network_02r_3_scenario_2_scenario_30_scacopf",
-      "OPF/SC-AC-OPF/case249_t1s3_real_time_network_02r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case086_t1s3_real_time_network_02r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case088_t1s3_real_time_network_02r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case090_network_02r_3_scenario_2_scenario_30_scacots",
-      "OTS/SC-AC-OTS/case092_t1s3_real_time_network_02r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case244_t1s3_real_time_network_02r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case246_t1s3_real_time_network_02r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case248_network_02r_3_scenario_2_scenario_30_scacots",
-      "OTS/SC-AC-OTS/case250_t1s3_real_time_network_02r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case085_t1s3_real_time_network_02r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case087_t1s3_real_time_network_02r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case089_network_02r_3_scenario_2_scenario_30_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case091_t1s3_real_time_network_02r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case243_t1s3_real_time_network_02r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case245_t1s3_real_time_network_02r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case247_network_02r_3_scenario_2_scenario_30_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case249_t1s3_real_time_network_02r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case086_t1s3_real_time_network_02r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case088_t1s3_real_time_network_02r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case090_network_02r_3_scenario_2_scenario_30_scacots",
+      "OTS/LINEARIZED-SC-OTS/case092_t1s3_real_time_network_02r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case244_t1s3_real_time_network_02r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case246_t1s3_real_time_network_02r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case248_network_02r_3_scenario_2_scenario_30_scacots",
+      "OTS/LINEARIZED-SC-OTS/case250_t1s3_real_time_network_02r_3_scenario_3_scacots"
     ],
     "go_c1:Network_03O-3": [
-      "OPF/SC-AC-OPF/case013_t1s3_offline_network_03o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case015_t1s3_offline_network_03o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case017_t1s3_offline_network_03o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case171_t1s3_offline_network_03o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case173_t1s3_offline_network_03o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case175_t1s3_offline_network_03o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case014_t1s3_offline_network_03o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case016_t1s3_offline_network_03o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case018_t1s3_offline_network_03o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case172_t1s3_offline_network_03o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case174_t1s3_offline_network_03o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case176_t1s3_offline_network_03o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case013_t1s3_offline_network_03o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case015_t1s3_offline_network_03o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case017_t1s3_offline_network_03o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case171_t1s3_offline_network_03o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case173_t1s3_offline_network_03o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case175_t1s3_offline_network_03o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case014_t1s3_offline_network_03o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case016_t1s3_offline_network_03o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case018_t1s3_offline_network_03o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case172_t1s3_offline_network_03o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case174_t1s3_offline_network_03o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case176_t1s3_offline_network_03o_3_scenario_3_scacots"
     ],
     "go_c1:Network_03R-3": [
-      "OPF/SC-AC-OPF/case093_t1s3_real_time_network_03r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case095_t1s3_real_time_network_03r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case097_t1s3_real_time_network_03r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case251_t1s3_real_time_network_03r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case253_t1s3_real_time_network_03r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case255_t1s3_real_time_network_03r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case094_t1s3_real_time_network_03r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case096_t1s3_real_time_network_03r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case098_t1s3_real_time_network_03r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case252_t1s3_real_time_network_03r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case254_t1s3_real_time_network_03r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case256_t1s3_real_time_network_03r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case093_t1s3_real_time_network_03r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case095_t1s3_real_time_network_03r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case097_t1s3_real_time_network_03r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case251_t1s3_real_time_network_03r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case253_t1s3_real_time_network_03r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case255_t1s3_real_time_network_03r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case094_t1s3_real_time_network_03r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case096_t1s3_real_time_network_03r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case098_t1s3_real_time_network_03r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case252_t1s3_real_time_network_03r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case254_t1s3_real_time_network_03r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case256_t1s3_real_time_network_03r_3_scenario_3_scacots"
     ],
     "go_c1:Network_05O-3": [
-      "OPF/SC-AC-OPF/case019_t1s3_offline_network_05o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case021_t1s3_offline_network_05o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case023_t1s3_offline_network_05o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case177_t1s3_offline_network_05o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case179_t1s3_offline_network_05o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case181_t1s3_offline_network_05o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case020_t1s3_offline_network_05o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case022_t1s3_offline_network_05o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case024_t1s3_offline_network_05o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case178_t1s3_offline_network_05o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case180_t1s3_offline_network_05o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case182_t1s3_offline_network_05o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case019_t1s3_offline_network_05o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case021_t1s3_offline_network_05o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case023_t1s3_offline_network_05o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case177_t1s3_offline_network_05o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case179_t1s3_offline_network_05o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case181_t1s3_offline_network_05o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case020_t1s3_offline_network_05o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case022_t1s3_offline_network_05o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case024_t1s3_offline_network_05o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case178_t1s3_offline_network_05o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case180_t1s3_offline_network_05o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case182_t1s3_offline_network_05o_3_scenario_3_scacots"
     ],
     "go_c1:Network_05R-3": [
-      "OPF/SC-AC-OPF/case099_t1s3_real_time_network_05r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case101_t1s3_real_time_network_05r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case103_t1s3_real_time_network_05r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case257_t1s3_real_time_network_05r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case259_t1s3_real_time_network_05r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case261_t1s3_real_time_network_05r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case100_t1s3_real_time_network_05r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case102_t1s3_real_time_network_05r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case104_t1s3_real_time_network_05r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case258_t1s3_real_time_network_05r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case260_t1s3_real_time_network_05r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case262_t1s3_real_time_network_05r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case099_t1s3_real_time_network_05r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case101_t1s3_real_time_network_05r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case103_t1s3_real_time_network_05r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case257_t1s3_real_time_network_05r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case259_t1s3_real_time_network_05r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case261_t1s3_real_time_network_05r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case100_t1s3_real_time_network_05r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case102_t1s3_real_time_network_05r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case104_t1s3_real_time_network_05r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case258_t1s3_real_time_network_05r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case260_t1s3_real_time_network_05r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case262_t1s3_real_time_network_05r_3_scenario_3_scacots"
     ],
     "go_c1:Network_06O-3": [
-      "OPF/SC-AC-OPF/case025_t1s3_offline_network_06o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case027_t1s3_offline_network_06o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case029_t1s3_offline_network_06o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case183_t1s3_offline_network_06o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case185_t1s3_offline_network_06o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case187_t1s3_offline_network_06o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case026_t1s3_offline_network_06o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case028_t1s3_offline_network_06o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case030_t1s3_offline_network_06o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case184_t1s3_offline_network_06o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case186_t1s3_offline_network_06o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case188_t1s3_offline_network_06o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case025_t1s3_offline_network_06o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case027_t1s3_offline_network_06o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case029_t1s3_offline_network_06o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case183_t1s3_offline_network_06o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case185_t1s3_offline_network_06o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case187_t1s3_offline_network_06o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case026_t1s3_offline_network_06o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case028_t1s3_offline_network_06o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case030_t1s3_offline_network_06o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case184_t1s3_offline_network_06o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case186_t1s3_offline_network_06o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case188_t1s3_offline_network_06o_3_scenario_3_scacots"
     ],
     "go_c1:Network_06R-3": [
-      "OPF/SC-AC-OPF/case105_t1s3_real_time_network_06r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case107_t1s3_real_time_network_06r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case109_t1s3_real_time_network_06r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case263_t1s3_real_time_network_06r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case265_t1s3_real_time_network_06r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case267_t1s3_real_time_network_06r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case106_t1s3_real_time_network_06r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case108_t1s3_real_time_network_06r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case110_t1s3_real_time_network_06r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case264_t1s3_real_time_network_06r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case266_t1s3_real_time_network_06r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case268_t1s3_real_time_network_06r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case105_t1s3_real_time_network_06r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case107_t1s3_real_time_network_06r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case109_t1s3_real_time_network_06r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case263_t1s3_real_time_network_06r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case265_t1s3_real_time_network_06r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case267_t1s3_real_time_network_06r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case106_t1s3_real_time_network_06r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case108_t1s3_real_time_network_06r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case110_t1s3_real_time_network_06r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case264_t1s3_real_time_network_06r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case266_t1s3_real_time_network_06r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case268_t1s3_real_time_network_06r_3_scenario_3_scacots"
     ],
     "go_c1:Network_07O-3": [
-      "OPF/SC-AC-OPF/case031_t1s3_offline_network_07o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case033_t1s3_offline_network_07o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case035_t1s3_offline_network_07o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case189_t1s3_offline_network_07o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case191_t1s3_offline_network_07o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case193_t1s3_offline_network_07o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case032_t1s3_offline_network_07o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case034_t1s3_offline_network_07o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case036_t1s3_offline_network_07o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case190_t1s3_offline_network_07o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case192_t1s3_offline_network_07o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case194_t1s3_offline_network_07o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case031_t1s3_offline_network_07o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case033_t1s3_offline_network_07o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case035_t1s3_offline_network_07o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case189_t1s3_offline_network_07o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case191_t1s3_offline_network_07o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case193_t1s3_offline_network_07o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case032_t1s3_offline_network_07o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case034_t1s3_offline_network_07o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case036_t1s3_offline_network_07o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case190_t1s3_offline_network_07o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case192_t1s3_offline_network_07o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case194_t1s3_offline_network_07o_3_scenario_3_scacots"
     ],
     "go_c1:Network_07R-3": [
-      "OPF/SC-AC-OPF/case111_t1s3_real_time_network_07r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case113_t1s3_real_time_network_07r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case115_t1s3_real_time_network_07r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case269_t1s3_real_time_network_07r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case271_t1s3_real_time_network_07r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case273_t1s3_real_time_network_07r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case112_t1s3_real_time_network_07r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case114_t1s3_real_time_network_07r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case116_t1s3_real_time_network_07r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case270_t1s3_real_time_network_07r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case272_t1s3_real_time_network_07r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case274_t1s3_real_time_network_07r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case111_t1s3_real_time_network_07r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case113_t1s3_real_time_network_07r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case115_t1s3_real_time_network_07r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case269_t1s3_real_time_network_07r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case271_t1s3_real_time_network_07r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case273_t1s3_real_time_network_07r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case112_t1s3_real_time_network_07r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case114_t1s3_real_time_network_07r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case116_t1s3_real_time_network_07r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case270_t1s3_real_time_network_07r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case272_t1s3_real_time_network_07r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case274_t1s3_real_time_network_07r_3_scenario_3_scacots"
     ],
     "go_c1:Network_08O-3": [
-      "OPF/SC-AC-OPF/case037_t1s3_offline_network_08o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case039_t1s3_offline_network_08o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case041_t1s3_offline_network_08o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case195_t1s3_offline_network_08o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case197_t1s3_offline_network_08o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case199_t1s3_offline_network_08o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case038_t1s3_offline_network_08o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case040_t1s3_offline_network_08o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case042_t1s3_offline_network_08o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case196_t1s3_offline_network_08o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case198_t1s3_offline_network_08o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case200_t1s3_offline_network_08o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case037_t1s3_offline_network_08o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case039_t1s3_offline_network_08o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case041_t1s3_offline_network_08o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case195_t1s3_offline_network_08o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case197_t1s3_offline_network_08o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case199_t1s3_offline_network_08o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case038_t1s3_offline_network_08o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case040_t1s3_offline_network_08o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case042_t1s3_offline_network_08o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case196_t1s3_offline_network_08o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case198_t1s3_offline_network_08o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case200_t1s3_offline_network_08o_3_scenario_3_scacots"
     ],
     "go_c1:Network_08R-3": [
-      "OPF/SC-AC-OPF/case117_t1s3_real_time_network_08r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case119_t1s3_real_time_network_08r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case121_t1s3_real_time_network_08r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case275_t1s3_real_time_network_08r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case277_t1s3_real_time_network_08r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case279_t1s3_real_time_network_08r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case118_t1s3_real_time_network_08r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case120_t1s3_real_time_network_08r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case122_t1s3_real_time_network_08r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case276_t1s3_real_time_network_08r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case278_t1s3_real_time_network_08r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case280_t1s3_real_time_network_08r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case117_t1s3_real_time_network_08r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case119_t1s3_real_time_network_08r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case121_t1s3_real_time_network_08r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case275_t1s3_real_time_network_08r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case277_t1s3_real_time_network_08r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case279_t1s3_real_time_network_08r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case118_t1s3_real_time_network_08r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case120_t1s3_real_time_network_08r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case122_t1s3_real_time_network_08r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case276_t1s3_real_time_network_08r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case278_t1s3_real_time_network_08r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case280_t1s3_real_time_network_08r_3_scenario_3_scacots"
     ],
     "go_c1:Network_09O-3": [
-      "OPF/SC-AC-OPF/case043_t1s3_offline_network_09o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case045_t1s3_offline_network_09o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case047_t1s3_offline_network_09o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case201_t1s3_offline_network_09o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case203_t1s3_offline_network_09o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case205_t1s3_offline_network_09o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case044_t1s3_offline_network_09o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case046_t1s3_offline_network_09o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case048_t1s3_offline_network_09o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case202_t1s3_offline_network_09o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case204_t1s3_offline_network_09o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case206_t1s3_offline_network_09o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case043_t1s3_offline_network_09o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case045_t1s3_offline_network_09o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case047_t1s3_offline_network_09o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case201_t1s3_offline_network_09o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case203_t1s3_offline_network_09o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case205_t1s3_offline_network_09o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case044_t1s3_offline_network_09o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case046_t1s3_offline_network_09o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case048_t1s3_offline_network_09o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case202_t1s3_offline_network_09o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case204_t1s3_offline_network_09o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case206_t1s3_offline_network_09o_3_scenario_3_scacots"
     ],
     "go_c1:Network_09R-3": [
-      "OPF/SC-AC-OPF/case123_t1s3_real_time_network_09r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case125_t1s3_real_time_network_09r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case127_t1s3_real_time_network_09r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case281_t1s3_real_time_network_09r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case283_t1s3_real_time_network_09r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case285_t1s3_real_time_network_09r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case124_t1s3_real_time_network_09r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case126_t1s3_real_time_network_09r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case128_t1s3_real_time_network_09r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case282_t1s3_real_time_network_09r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case284_t1s3_real_time_network_09r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case286_t1s3_real_time_network_09r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case123_t1s3_real_time_network_09r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case125_t1s3_real_time_network_09r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case127_t1s3_real_time_network_09r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case281_t1s3_real_time_network_09r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case283_t1s3_real_time_network_09r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case285_t1s3_real_time_network_09r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case124_t1s3_real_time_network_09r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case126_t1s3_real_time_network_09r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case128_t1s3_real_time_network_09r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case282_t1s3_real_time_network_09r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case284_t1s3_real_time_network_09r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case286_t1s3_real_time_network_09r_3_scenario_3_scacots"
     ],
     "go_c1:Network_12O-3": [
-      "OPF/SC-AC-OPF/case049_t1s3_offline_network_12o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case051_t1s3_offline_network_12o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case053_t1s3_offline_network_12o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case207_t1s3_offline_network_12o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case209_t1s3_offline_network_12o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case211_t1s3_offline_network_12o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case050_t1s3_offline_network_12o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case052_t1s3_offline_network_12o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case054_t1s3_offline_network_12o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case208_t1s3_offline_network_12o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case210_t1s3_offline_network_12o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case212_t1s3_offline_network_12o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case049_t1s3_offline_network_12o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case051_t1s3_offline_network_12o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case053_t1s3_offline_network_12o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case207_t1s3_offline_network_12o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case209_t1s3_offline_network_12o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case211_t1s3_offline_network_12o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case050_t1s3_offline_network_12o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case052_t1s3_offline_network_12o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case054_t1s3_offline_network_12o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case208_t1s3_offline_network_12o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case210_t1s3_offline_network_12o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case212_t1s3_offline_network_12o_3_scenario_3_scacots"
     ],
     "go_c1:Network_12R-3": [
-      "OPF/SC-AC-OPF/case129_t1s3_real_time_network_12r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case131_t1s3_real_time_network_12r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case133_t1s3_real_time_network_12r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case287_t1s3_real_time_network_12r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case289_t1s3_real_time_network_12r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case291_t1s3_real_time_network_12r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case130_t1s3_real_time_network_12r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case132_t1s3_real_time_network_12r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case134_t1s3_real_time_network_12r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case288_t1s3_real_time_network_12r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case290_t1s3_real_time_network_12r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case292_t1s3_real_time_network_12r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case129_t1s3_real_time_network_12r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case131_t1s3_real_time_network_12r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case133_t1s3_real_time_network_12r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case287_t1s3_real_time_network_12r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case289_t1s3_real_time_network_12r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case291_t1s3_real_time_network_12r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case130_t1s3_real_time_network_12r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case132_t1s3_real_time_network_12r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case134_t1s3_real_time_network_12r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case288_t1s3_real_time_network_12r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case290_t1s3_real_time_network_12r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case292_t1s3_real_time_network_12r_3_scenario_3_scacots"
     ],
     "go_c1:Network_13O-3": [
-      "OPF/SC-AC-OPF/case055_t1s3_offline_network_13o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case057_t1s3_offline_network_13o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case059_t1s3_offline_network_13o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case213_t1s3_offline_network_13o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case215_t1s3_offline_network_13o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case217_t1s3_offline_network_13o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case056_t1s3_offline_network_13o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case058_t1s3_offline_network_13o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case060_t1s3_offline_network_13o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case214_t1s3_offline_network_13o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case216_t1s3_offline_network_13o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case218_t1s3_offline_network_13o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case055_t1s3_offline_network_13o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case057_t1s3_offline_network_13o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case059_t1s3_offline_network_13o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case213_t1s3_offline_network_13o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case215_t1s3_offline_network_13o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case217_t1s3_offline_network_13o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case056_t1s3_offline_network_13o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case058_t1s3_offline_network_13o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case060_t1s3_offline_network_13o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case214_t1s3_offline_network_13o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case216_t1s3_offline_network_13o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case218_t1s3_offline_network_13o_3_scenario_3_scacots"
     ],
     "go_c1:Network_13R-3": [
-      "OPF/SC-AC-OPF/case135_t1s3_real_time_network_13r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case137_t1s3_real_time_network_13r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case139_t1s3_real_time_network_13r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case293_t1s3_real_time_network_13r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case295_t1s3_real_time_network_13r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case297_t1s3_real_time_network_13r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case136_t1s3_real_time_network_13r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case138_t1s3_real_time_network_13r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case140_t1s3_real_time_network_13r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case294_t1s3_real_time_network_13r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case296_t1s3_real_time_network_13r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case298_t1s3_real_time_network_13r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case135_t1s3_real_time_network_13r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case137_t1s3_real_time_network_13r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case139_t1s3_real_time_network_13r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case293_t1s3_real_time_network_13r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case295_t1s3_real_time_network_13r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case297_t1s3_real_time_network_13r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case136_t1s3_real_time_network_13r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case138_t1s3_real_time_network_13r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case140_t1s3_real_time_network_13r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case294_t1s3_real_time_network_13r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case296_t1s3_real_time_network_13r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case298_t1s3_real_time_network_13r_3_scenario_3_scacots"
     ],
     "go_c1:Network_70O-3": [
-      "OPF/SC-AC-OPF/case061_t1s3_offline_network_70o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case063_t1s3_offline_network_70o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case065_t1s3_offline_network_70o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case219_t1s3_offline_network_70o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case221_t1s3_offline_network_70o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case223_t1s3_offline_network_70o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case062_t1s3_offline_network_70o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case064_t1s3_offline_network_70o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case066_t1s3_offline_network_70o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case220_t1s3_offline_network_70o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case222_t1s3_offline_network_70o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case224_t1s3_offline_network_70o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case061_t1s3_offline_network_70o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case063_t1s3_offline_network_70o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case065_t1s3_offline_network_70o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case219_t1s3_offline_network_70o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case221_t1s3_offline_network_70o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case223_t1s3_offline_network_70o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case062_t1s3_offline_network_70o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case064_t1s3_offline_network_70o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case066_t1s3_offline_network_70o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case220_t1s3_offline_network_70o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case222_t1s3_offline_network_70o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case224_t1s3_offline_network_70o_3_scenario_3_scacots"
     ],
     "go_c1:Network_70R-3": [
-      "OPF/SC-AC-OPF/case141_t1s3_real_time_network_70r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case143_t1s3_real_time_network_70r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case145_t1s3_real_time_network_70r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case299_t1s3_real_time_network_70r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case301_t1s3_real_time_network_70r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case303_t1s3_real_time_network_70r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case142_t1s3_real_time_network_70r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case144_t1s3_real_time_network_70r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case146_t1s3_real_time_network_70r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case300_t1s3_real_time_network_70r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case302_t1s3_real_time_network_70r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case304_t1s3_real_time_network_70r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case141_t1s3_real_time_network_70r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case143_t1s3_real_time_network_70r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case145_t1s3_real_time_network_70r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case299_t1s3_real_time_network_70r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case301_t1s3_real_time_network_70r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case303_t1s3_real_time_network_70r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case142_t1s3_real_time_network_70r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case144_t1s3_real_time_network_70r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case146_t1s3_real_time_network_70r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case300_t1s3_real_time_network_70r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case302_t1s3_real_time_network_70r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case304_t1s3_real_time_network_70r_3_scenario_3_scacots"
     ],
     "go_c1:Network_81O-3": [
-      "OPF/SC-AC-OPF/case067_t1s3_offline_network_81o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case069_t1s3_offline_network_81o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case071_t1s3_offline_network_81o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case225_t1s3_offline_network_81o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case227_t1s3_offline_network_81o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case229_t1s3_offline_network_81o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case068_t1s3_offline_network_81o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case070_t1s3_offline_network_81o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case072_t1s3_offline_network_81o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case226_t1s3_offline_network_81o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case228_t1s3_offline_network_81o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case230_t1s3_offline_network_81o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case067_t1s3_offline_network_81o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case069_t1s3_offline_network_81o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case071_t1s3_offline_network_81o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case225_t1s3_offline_network_81o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case227_t1s3_offline_network_81o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case229_t1s3_offline_network_81o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case068_t1s3_offline_network_81o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case070_t1s3_offline_network_81o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case072_t1s3_offline_network_81o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case226_t1s3_offline_network_81o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case228_t1s3_offline_network_81o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case230_t1s3_offline_network_81o_3_scenario_3_scacots"
     ],
     "go_c1:Network_81R-3": [
-      "OPF/SC-AC-OPF/case147_t1s3_real_time_network_81r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case149_t1s3_real_time_network_81r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case151_t1s3_real_time_network_81r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case305_t1s3_real_time_network_81r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case307_t1s3_real_time_network_81r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case309_t1s3_real_time_network_81r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case148_t1s3_real_time_network_81r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case150_t1s3_real_time_network_81r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case152_t1s3_real_time_network_81r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case306_t1s3_real_time_network_81r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case308_t1s3_real_time_network_81r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case310_t1s3_real_time_network_81r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case147_t1s3_real_time_network_81r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case149_t1s3_real_time_network_81r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case151_t1s3_real_time_network_81r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case305_t1s3_real_time_network_81r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case307_t1s3_real_time_network_81r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case309_t1s3_real_time_network_81r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case148_t1s3_real_time_network_81r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case150_t1s3_real_time_network_81r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case152_t1s3_real_time_network_81r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case306_t1s3_real_time_network_81r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case308_t1s3_real_time_network_81r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case310_t1s3_real_time_network_81r_3_scenario_3_scacots"
     ],
     "go_c1:Network_84O-3": [
-      "OPF/SC-AC-OPF/case073_t1s3_offline_network_84o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case075_t1s3_offline_network_84o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case077_t1s3_offline_network_84o_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case231_t1s3_offline_network_84o_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case233_t1s3_offline_network_84o_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case235_t1s3_offline_network_84o_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case074_t1s3_offline_network_84o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case076_t1s3_offline_network_84o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case078_t1s3_offline_network_84o_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case232_t1s3_offline_network_84o_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case234_t1s3_offline_network_84o_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case236_t1s3_offline_network_84o_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case073_t1s3_offline_network_84o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case075_t1s3_offline_network_84o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case077_t1s3_offline_network_84o_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case231_t1s3_offline_network_84o_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case233_t1s3_offline_network_84o_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case235_t1s3_offline_network_84o_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case074_t1s3_offline_network_84o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case076_t1s3_offline_network_84o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case078_t1s3_offline_network_84o_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case232_t1s3_offline_network_84o_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case234_t1s3_offline_network_84o_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case236_t1s3_offline_network_84o_3_scenario_3_scacots"
     ],
     "go_c1:Network_84R-3": [
-      "OPF/SC-AC-OPF/case153_t1s3_real_time_network_84r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case155_t1s3_real_time_network_84r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case157_t1s3_real_time_network_84r_3_scenario_3_scacopf",
-      "OPF/SC-AC-OPF/case311_t1s3_real_time_network_84r_3_scenario_1_scacopf",
-      "OPF/SC-AC-OPF/case313_t1s3_real_time_network_84r_3_scenario_2_scacopf",
-      "OPF/SC-AC-OPF/case315_t1s3_real_time_network_84r_3_scenario_3_scacopf",
-      "OTS/SC-AC-OTS/case154_t1s3_real_time_network_84r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case156_t1s3_real_time_network_84r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case158_t1s3_real_time_network_84r_3_scenario_3_scacots",
-      "OTS/SC-AC-OTS/case312_t1s3_real_time_network_84r_3_scenario_1_scacots",
-      "OTS/SC-AC-OTS/case314_t1s3_real_time_network_84r_3_scenario_2_scacots",
-      "OTS/SC-AC-OTS/case316_t1s3_real_time_network_84r_3_scenario_3_scacots"
+      "OPF/LINEARIZED-SC-OPF/case153_t1s3_real_time_network_84r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case155_t1s3_real_time_network_84r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case157_t1s3_real_time_network_84r_3_scenario_3_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case311_t1s3_real_time_network_84r_3_scenario_1_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case313_t1s3_real_time_network_84r_3_scenario_2_scacopf",
+      "OPF/LINEARIZED-SC-OPF/case315_t1s3_real_time_network_84r_3_scenario_3_scacopf",
+      "OTS/LINEARIZED-SC-OTS/case154_t1s3_real_time_network_84r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case156_t1s3_real_time_network_84r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case158_t1s3_real_time_network_84r_3_scenario_3_scacots",
+      "OTS/LINEARIZED-SC-OTS/case312_t1s3_real_time_network_84r_3_scenario_1_scacots",
+      "OTS/LINEARIZED-SC-OTS/case314_t1s3_real_time_network_84r_3_scenario_2_scacots",
+      "OTS/LINEARIZED-SC-OTS/case316_t1s3_real_time_network_84r_3_scenario_3_scacots"
     ],
     "pglib-opf:case001_lmbd3_dc_ed": [
       "MARKET/STRATEGIC-BIDDING/case02_toy3_dc_price"
@@ -730,8 +730,8 @@
       "MARKET/STRATEGIC-BIDDING/case05_ieee14_dc_price"
     ],
     "pglib_opf_case10000_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case076_goc10000_dc_ed",
       "MONITORING/PMU-PLACEMENT/case058_case10000_goc_pmu",
+      "OPF/DC-OPF/case076_goc10000_dc_ed",
       "OTS/DC-OTS/case58_goc10000_dcots",
       "OTS/SC-OTS/case58_goc10000_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case060_goc10000_tep_syn",
@@ -739,8 +739,8 @@
       "UC/SCUC/case58_goc10000_scuc"
     ],
     "pglib_opf_case10192_epigrids": [
-      "DISPATCH/ECONOMIC-DISPATCH/case078_epigrids10192_dc_ed",
       "MONITORING/PMU-PLACEMENT/case059_case10192_epigrids_pmu",
+      "OPF/DC-OPF/case078_epigrids10192_dc_ed",
       "OTS/DC-OTS/case59_epigrids10192_dcots",
       "OTS/SC-OTS/case59_epigrids10192_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case061_epigrids10192_tep_syn",
@@ -748,8 +748,8 @@
       "UC/SCUC/case59_epigrids10192_scuc"
     ],
     "pglib_opf_case10480_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case080_goc10480_dc_ed",
       "MONITORING/PMU-PLACEMENT/case060_case10480_goc_pmu",
+      "OPF/DC-OPF/case080_goc10480_dc_ed",
       "OTS/DC-OTS/case60_goc10480_dcots",
       "OTS/SC-OTS/case60_goc10480_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case062_goc10480_tep_syn",
@@ -757,10 +757,10 @@
       "UC/SCUC/case60_goc10480_scuc"
     ],
     "pglib_opf_case118_ieee": [
-      "DISPATCH/ECONOMIC-DISPATCH/case016_ieee118_dc_ed",
       "MONITORING/PMU-PLACEMENT/case012_case118_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case009_case118_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case010_case118_ieee_l1_se",
+      "OPF/DC-OPF/case016_ieee118_dc_ed",
       "OTS/DC-OTS/case03_ieee118_dcots",
       "OTS/SC-OTS/case13_ieee118_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case014_ieee118_tep_syn",
@@ -770,8 +770,8 @@
       "UC/SCUC/case12_ieee118_scuc"
     ],
     "pglib_opf_case1354_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case029_pegase1354_dc_ed",
       "MONITORING/PMU-PLACEMENT/case022_case1354_pegase_pmu",
+      "OPF/DC-OPF/case029_pegase1354_dc_ed",
       "OTS/DC-OTS/case22_pegase1354_dcots",
       "OTS/SC-OTS/case22_pegase1354_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case024_pegase1354_tep_syn",
@@ -779,8 +779,8 @@
       "UC/SCUC/case22_pegase1354_scuc"
     ],
     "pglib_opf_case13659_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case082_pegase13659_dc_ed",
       "MONITORING/PMU-PLACEMENT/case061_case13659_pegase_pmu",
+      "OPF/DC-OPF/case082_pegase13659_dc_ed",
       "OTS/DC-OTS/case61_pegase13659_dcots",
       "OTS/SC-OTS/case61_pegase13659_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case063_pegase13659_tep_syn",
@@ -788,10 +788,12 @@
       "UC/SCUC/case61_pegase13659_scuc"
     ],
     "pglib_opf_case14_ieee": [
-      "DISPATCH/ECONOMIC-DISPATCH/case004_ieee14_dc_ed",
+      "DISPATCH/ECONOMIC-DISPATCH/case003_ieee14_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case003_case14_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case003_case14_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case004_case14_ieee_l1_se",
+      "OPF/AC-OPF/case003_ieee14_acopf",
+      "OPF/DC-OPF/case004_ieee14_dc_ed",
       "OTS/DC-OTS/case02_ieee14_dcots",
       "OTS/SC-OTS/case03_ieee14_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case005_ieee14_tep_syn",
@@ -802,8 +804,8 @@
       "UC/SCUC/case06_ieee14_scuc"
     ],
     "pglib_opf_case162_ieee_dtc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case017_ieeedtc162_dc_ed",
       "MONITORING/PMU-PLACEMENT/case013_case162_ieee_dtc_pmu",
+      "OPF/DC-OPF/case017_ieeedtc162_dc_ed",
       "OTS/DC-OTS/case13_ieeedtc162_dcots",
       "OTS/SC-OTS/case14_ieeedtc162_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case015_ieeedtc162_tep_syn",
@@ -811,8 +813,8 @@
       "UC/SCUC/case13_ieeedtc162_scuc"
     ],
     "pglib_opf_case179_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case018_goc179_dc_ed",
       "MONITORING/PMU-PLACEMENT/case014_case179_goc_pmu",
+      "OPF/DC-OPF/case018_goc179_dc_ed",
       "OTS/DC-OTS/case14_goc179_dcots",
       "OTS/SC-OTS/case15_goc179_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case016_goc179_tep_syn",
@@ -820,8 +822,8 @@
       "UC/SCUC/case14_goc179_scuc"
     ],
     "pglib_opf_case1803_snem": [
-      "DISPATCH/ECONOMIC-DISPATCH/case030_snem1803_dc_ed",
       "MONITORING/PMU-PLACEMENT/case023_case1803_snem_pmu",
+      "OPF/DC-OPF/case030_snem1803_dc_ed",
       "OTS/DC-OTS/case23_snem1803_dcots",
       "OTS/SC-OTS/case23_snem1803_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case025_snem1803_tep_syn",
@@ -829,8 +831,8 @@
       "UC/SCUC/case23_snem1803_scuc"
     ],
     "pglib_opf_case1888_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case031_rte1888_dc_ed",
       "MONITORING/PMU-PLACEMENT/case024_case1888_rte_pmu",
+      "OPF/DC-OPF/case031_rte1888_dc_ed",
       "OTS/DC-OTS/case24_rte1888_dcots",
       "OTS/SC-OTS/case24_rte1888_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case026_rte1888_tep_syn",
@@ -838,8 +840,8 @@
       "UC/SCUC/case24_rte1888_scuc"
     ],
     "pglib_opf_case19402_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case083_goc19402_dc_ed",
       "MONITORING/PMU-PLACEMENT/case062_case19402_goc_pmu",
+      "OPF/DC-OPF/case083_goc19402_dc_ed",
       "OTS/DC-OTS/case62_goc19402_dcots",
       "OTS/SC-OTS/case62_goc19402_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case064_goc19402_tep_syn",
@@ -847,8 +849,8 @@
       "UC/SCUC/case62_goc19402_scuc"
     ],
     "pglib_opf_case1951_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case032_rte1951_dc_ed",
       "MONITORING/PMU-PLACEMENT/case025_case1951_rte_pmu",
+      "OPF/DC-OPF/case032_rte1951_dc_ed",
       "OTS/DC-OTS/case25_rte1951_dcots",
       "OTS/SC-OTS/case25_rte1951_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case027_rte1951_tep_syn",
@@ -856,8 +858,8 @@
       "UC/SCUC/case25_rte1951_scuc"
     ],
     "pglib_opf_case197_snem": [
-      "DISPATCH/ECONOMIC-DISPATCH/case019_snem197_dc_ed",
       "MONITORING/PMU-PLACEMENT/case015_case197_snem_pmu",
+      "OPF/DC-OPF/case019_snem197_dc_ed",
       "OTS/DC-OTS/case15_snem197_dcots",
       "OTS/SC-OTS/case16_snem197_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case017_snem197_tep_syn",
@@ -865,8 +867,8 @@
       "UC/SCUC/case15_snem197_scuc"
     ],
     "pglib_opf_case2000_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case033_goc2000_dc_ed",
       "MONITORING/PMU-PLACEMENT/case026_case2000_goc_pmu",
+      "OPF/DC-OPF/case033_goc2000_dc_ed",
       "OTS/DC-OTS/case26_goc2000_dcots",
       "OTS/SC-OTS/case26_goc2000_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case028_goc2000_tep_syn",
@@ -874,9 +876,9 @@
       "UC/SCUC/case26_goc2000_scuc"
     ],
     "pglib_opf_case200_activ": [
-      "DISPATCH/ECONOMIC-DISPATCH/case020_activ200_dc_ed",
-      "DISPATCH/ECONOMIC-DISPATCH/case021_activ200_lp_ed",
       "MONITORING/PMU-PLACEMENT/case016_case200_activ_pmu",
+      "OPF/DC-OPF/case020_activ200_dc_ed",
+      "OPF/DC-OPF/case021_activ200_lp_ed",
       "OTS/DC-OTS/case16_activ200_dcots",
       "OTS/SC-OTS/case06_activs200_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case018_activ200_tep_syn",
@@ -884,8 +886,8 @@
       "UC/SCUC/case16_activ200_scuc"
     ],
     "pglib_opf_case20758_epigrids": [
-      "DISPATCH/ECONOMIC-DISPATCH/case085_epigrids20758_dc_ed",
       "MONITORING/PMU-PLACEMENT/case063_case20758_epigrids_pmu",
+      "OPF/DC-OPF/case085_epigrids20758_dc_ed",
       "OTS/DC-OTS/case63_epigrids20758_dcots",
       "OTS/SC-OTS/case63_epigrids20758_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case065_epigrids20758_tep_syn",
@@ -893,8 +895,8 @@
       "UC/SCUC/case63_epigrids20758_scuc"
     ],
     "pglib_opf_case2312_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case035_goc2312_dc_ed",
       "MONITORING/PMU-PLACEMENT/case027_case2312_goc_pmu",
+      "OPF/DC-OPF/case035_goc2312_dc_ed",
       "OTS/DC-OTS/case27_goc2312_dcots",
       "OTS/SC-OTS/case27_goc2312_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case029_goc2312_tep_syn",
@@ -902,8 +904,8 @@
       "UC/SCUC/case27_goc2312_scuc"
     ],
     "pglib_opf_case2383wp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case037_2383wpk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case028_case2383wp_k_pmu",
+      "OPF/DC-OPF/case037_2383wpk_dc_ed",
       "OTS/DC-OTS/case28_2383wpk_dcots",
       "OTS/SC-OTS/case28_2383wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case030_2383wpk_tep_syn",
@@ -911,8 +913,8 @@
       "UC/SCUC/case28_2383wpk_scuc"
     ],
     "pglib_opf_case240_pserc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case022_pserc240_dc_ed",
       "MONITORING/PMU-PLACEMENT/case017_case240_pserc_pmu",
+      "OPF/DC-OPF/case022_pserc240_dc_ed",
       "OTS/DC-OTS/case17_pserc240_dcots",
       "OTS/SC-OTS/case17_pserc240_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case019_pserc240_tep_syn",
@@ -920,8 +922,8 @@
       "UC/SCUC/case17_pserc240_scuc"
     ],
     "pglib_opf_case24464_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case087_goc24464_dc_ed",
       "MONITORING/PMU-PLACEMENT/case064_case24464_goc_pmu",
+      "OPF/DC-OPF/case087_goc24464_dc_ed",
       "OTS/DC-OTS/case64_goc24464_dcots",
       "OTS/SC-OTS/case64_goc24464_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case066_goc24464_tep_syn",
@@ -929,9 +931,9 @@
       "UC/SCUC/case64_goc24464_scuc"
     ],
     "pglib_opf_case24_ieee_rts": [
-      "DISPATCH/ECONOMIC-DISPATCH/case005_ieee24_dc_ed",
-      "DISPATCH/ECONOMIC-DISPATCH/case006_ieee24_lp_ed",
       "MONITORING/PMU-PLACEMENT/case004_case24_ieee_rts_pmu",
+      "OPF/DC-OPF/case005_ieee24_dc_ed",
+      "OPF/DC-OPF/case006_ieee24_lp_ed",
       "OTS/DC-OTS/case05_ieee24_dcots",
       "OTS/SC-OTS/case04_ieee24_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case006_ieee24_tep_syn",
@@ -939,8 +941,8 @@
       "UC/SCUC/case07_ieee24_scuc"
     ],
     "pglib_opf_case2736sp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case038_2736spk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case029_case2736sp_k_pmu",
+      "OPF/DC-OPF/case038_2736spk_dc_ed",
       "OTS/DC-OTS/case29_2736spk_dcots",
       "OTS/SC-OTS/case29_2736spk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case031_2736spk_tep_syn",
@@ -948,8 +950,8 @@
       "UC/SCUC/case29_2736spk_scuc"
     ],
     "pglib_opf_case2737sop_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case039_2737sopk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case030_case2737sop_k_pmu",
+      "OPF/DC-OPF/case039_2737sopk_dc_ed",
       "OTS/DC-OTS/case30_2737sopk_dcots",
       "OTS/SC-OTS/case30_2737sopk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case032_2737sopk_tep_syn",
@@ -957,8 +959,8 @@
       "UC/SCUC/case30_2737sopk_scuc"
     ],
     "pglib_opf_case2742_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case040_goc2742_dc_ed",
       "MONITORING/PMU-PLACEMENT/case031_case2742_goc_pmu",
+      "OPF/DC-OPF/case040_goc2742_dc_ed",
       "OTS/DC-OTS/case31_goc2742_dcots",
       "OTS/SC-OTS/case31_goc2742_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case033_goc2742_tep_syn",
@@ -966,8 +968,8 @@
       "UC/SCUC/case31_goc2742_scuc"
     ],
     "pglib_opf_case2746wop_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case042_2746wopk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case032_case2746wop_k_pmu",
+      "OPF/DC-OPF/case042_2746wopk_dc_ed",
       "OTS/DC-OTS/case32_2746wopk_dcots",
       "OTS/SC-OTS/case32_2746wopk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case034_2746wopk_tep_syn",
@@ -975,8 +977,8 @@
       "UC/SCUC/case32_2746wopk_scuc"
     ],
     "pglib_opf_case2746wp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case043_2746wpk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case033_case2746wp_k_pmu",
+      "OPF/DC-OPF/case043_2746wpk_dc_ed",
       "OTS/DC-OTS/case33_2746wpk_dcots",
       "OTS/SC-OTS/case33_2746wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case035_2746wpk_tep_syn",
@@ -984,8 +986,8 @@
       "UC/SCUC/case33_2746wpk_scuc"
     ],
     "pglib_opf_case2848_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case044_rte2848_dc_ed",
       "MONITORING/PMU-PLACEMENT/case034_case2848_rte_pmu",
+      "OPF/DC-OPF/case044_rte2848_dc_ed",
       "OTS/DC-OTS/case34_rte2848_dcots",
       "OTS/SC-OTS/case34_rte2848_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case036_rte2848_tep_syn",
@@ -993,8 +995,8 @@
       "UC/SCUC/case34_rte2848_scuc"
     ],
     "pglib_opf_case2853_sdet": [
-      "DISPATCH/ECONOMIC-DISPATCH/case045_sdet2853_dc_ed",
       "MONITORING/PMU-PLACEMENT/case035_case2853_sdet_pmu",
+      "OPF/DC-OPF/case045_sdet2853_dc_ed",
       "OTS/DC-OTS/case35_sdet2853_dcots",
       "OTS/SC-OTS/case35_sdet2853_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case037_sdet2853_tep_syn",
@@ -1002,8 +1004,8 @@
       "UC/SCUC/case35_sdet2853_scuc"
     ],
     "pglib_opf_case2868_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case046_rte2868_dc_ed",
       "MONITORING/PMU-PLACEMENT/case036_case2868_rte_pmu",
+      "OPF/DC-OPF/case046_rte2868_dc_ed",
       "OTS/DC-OTS/case36_rte2868_dcots",
       "OTS/SC-OTS/case36_rte2868_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case038_rte2868_tep_syn",
@@ -1011,8 +1013,8 @@
       "UC/SCUC/case36_rte2868_scuc"
     ],
     "pglib_opf_case2869_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case047_pegase2869_dc_ed",
       "MONITORING/PMU-PLACEMENT/case037_case2869_pegase_pmu",
+      "OPF/DC-OPF/case047_pegase2869_dc_ed",
       "OTS/DC-OTS/case37_pegase2869_dcots",
       "OTS/SC-OTS/case37_pegase2869_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case039_pegase2869_tep_syn",
@@ -1020,8 +1022,8 @@
       "UC/SCUC/case37_pegase2869_scuc"
     ],
     "pglib_opf_case30000_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case089_goc30000_dc_ed",
       "MONITORING/PMU-PLACEMENT/case065_case30000_goc_pmu",
+      "OPF/DC-OPF/case089_goc30000_dc_ed",
       "OTS/DC-OTS/case65_goc30000_dcots",
       "OTS/SC-OTS/case65_goc30000_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case067_goc30000_tep_syn",
@@ -1029,10 +1031,10 @@
       "UC/SCUC/case65_goc30000_scuc"
     ],
     "pglib_opf_case300_ieee": [
-      "DISPATCH/ECONOMIC-DISPATCH/case023_ieee300_dc_ed",
       "MONITORING/PMU-PLACEMENT/case018_case300_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case011_case300_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case012_case300_ieee_l1_se",
+      "OPF/DC-OPF/case023_ieee300_dc_ed",
       "OTS/DC-OTS/case18_ieee300_dcots",
       "OTS/SC-OTS/case18_ieee300_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case020_ieee300_tep_syn",
@@ -1040,8 +1042,8 @@
       "UC/SCUC/case18_ieee300_scuc"
     ],
     "pglib_opf_case3012wp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case048_3012wpk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case038_case3012wp_k_pmu",
+      "OPF/DC-OPF/case048_3012wpk_dc_ed",
       "OTS/DC-OTS/case38_3012wpk_dcots",
       "OTS/SC-OTS/case38_3012wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case040_3012wpk_tep_syn",
@@ -1049,8 +1051,8 @@
       "UC/SCUC/case38_3012wpk_scuc"
     ],
     "pglib_opf_case3022_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case049_goc3022_dc_ed",
       "MONITORING/PMU-PLACEMENT/case039_case3022_goc_pmu",
+      "OPF/DC-OPF/case049_goc3022_dc_ed",
       "OTS/DC-OTS/case39_goc3022_dcots",
       "OTS/SC-OTS/case39_goc3022_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case041_goc3022_tep_syn",
@@ -1058,9 +1060,9 @@
       "UC/SCUC/case39_goc3022_scuc"
     ],
     "pglib_opf_case30_as": [
-      "DISPATCH/ECONOMIC-DISPATCH/case007_as30_dc_ed",
-      "DISPATCH/ECONOMIC-DISPATCH/case008_as30_lp_ed",
       "MONITORING/PMU-PLACEMENT/case005_case30_as_pmu",
+      "OPF/DC-OPF/case007_as30_dc_ed",
+      "OPF/DC-OPF/case008_as30_lp_ed",
       "OTS/DC-OTS/case06_as30_dcots",
       "OTS/SC-OTS/case07_as30_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case007_as30_tep_syn",
@@ -1068,10 +1070,10 @@
       "UC/SCUC/case08_as30_scuc"
     ],
     "pglib_opf_case30_ieee": [
-      "DISPATCH/ECONOMIC-DISPATCH/case009_ieee30_dc_ed",
       "MONITORING/PMU-PLACEMENT/case006_case30_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case005_case30_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case006_case30_ieee_l1_se",
+      "OPF/DC-OPF/case009_ieee30_dc_ed",
       "OTS/DC-OTS/case07_ieee30_dcots",
       "OTS/SC-OTS/case08_ieee30_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case008_ieee30_tep_syn",
@@ -1081,8 +1083,8 @@
       "UC/SCUC/case09_ieee30_scuc"
     ],
     "pglib_opf_case3120sp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case051_3120spk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case040_case3120sp_k_pmu",
+      "OPF/DC-OPF/case051_3120spk_dc_ed",
       "OTS/DC-OTS/case40_3120spk_dcots",
       "OTS/SC-OTS/case40_3120spk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case042_3120spk_tep_syn",
@@ -1090,8 +1092,8 @@
       "UC/SCUC/case40_3120spk_scuc"
     ],
     "pglib_opf_case3375wp_k": [
-      "DISPATCH/ECONOMIC-DISPATCH/case052_3375wpk_dc_ed",
       "MONITORING/PMU-PLACEMENT/case041_case3375wp_k_pmu",
+      "OPF/DC-OPF/case052_3375wpk_dc_ed",
       "OTS/DC-OTS/case41_3375wpk_dcots",
       "OTS/SC-OTS/case41_3375wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case043_3375wpk_tep_syn",
@@ -1099,8 +1101,8 @@
       "UC/SCUC/case41_3375wpk_scuc"
     ],
     "pglib_opf_case3970_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case053_goc3970_dc_ed",
       "MONITORING/PMU-PLACEMENT/case042_case3970_goc_pmu",
+      "OPF/DC-OPF/case053_goc3970_dc_ed",
       "OTS/DC-OTS/case42_goc3970_dcots",
       "OTS/SC-OTS/case42_goc3970_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case044_goc3970_tep_syn",
@@ -1108,8 +1110,8 @@
       "UC/SCUC/case42_goc3970_scuc"
     ],
     "pglib_opf_case39_epri": [
-      "DISPATCH/ECONOMIC-DISPATCH/case010_epri39_dc_ed",
       "MONITORING/PMU-PLACEMENT/case007_case39_epri_pmu",
+      "OPF/DC-OPF/case010_epri39_dc_ed",
       "OTS/DC-OTS/case08_epri39_dcots",
       "OTS/SC-OTS/case09_epri39_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case009_epri39_tep_syn",
@@ -1118,9 +1120,11 @@
       "UC/SCUC/case01_ieee39_scuc"
     ],
     "pglib_opf_case3_lmbd": [
-      "DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_dc_ed",
-      "DISPATCH/ECONOMIC-DISPATCH/case002_lmbd3_lp_ed",
+      "DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case001_case3_lmbd_pmu",
+      "OPF/AC-OPF/case001_lmbd3_acopf",
+      "OPF/DC-OPF/case001_lmbd3_dc_ed",
+      "OPF/DC-OPF/case002_lmbd3_lp_ed",
       "OTS/DC-OTS/case04_lmbd3_dcots",
       "OTS/SC-OTS/case01_lmbd3_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case003_lmbd3_tep_syn",
@@ -1129,8 +1133,8 @@
       "UC/SCUC/case04_lmbd3_scuc"
     ],
     "pglib_opf_case4020_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case055_goc4020_dc_ed",
       "MONITORING/PMU-PLACEMENT/case043_case4020_goc_pmu",
+      "OPF/DC-OPF/case055_goc4020_dc_ed",
       "OTS/DC-OTS/case43_goc4020_dcots",
       "OTS/SC-OTS/case43_goc4020_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case045_goc4020_tep_syn",
@@ -1138,8 +1142,8 @@
       "UC/SCUC/case43_goc4020_scuc"
     ],
     "pglib_opf_case4601_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case057_goc4601_dc_ed",
       "MONITORING/PMU-PLACEMENT/case044_case4601_goc_pmu",
+      "OPF/DC-OPF/case057_goc4601_dc_ed",
       "OTS/DC-OTS/case44_goc4601_dcots",
       "OTS/SC-OTS/case44_goc4601_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case046_goc4601_tep_syn",
@@ -1147,8 +1151,8 @@
       "UC/SCUC/case44_goc4601_scuc"
     ],
     "pglib_opf_case4619_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case059_goc4619_dc_ed",
       "MONITORING/PMU-PLACEMENT/case045_case4619_goc_pmu",
+      "OPF/DC-OPF/case059_goc4619_dc_ed",
       "OTS/DC-OTS/case45_goc4619_dcots",
       "OTS/SC-OTS/case45_goc4619_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case047_goc4619_tep_syn",
@@ -1156,8 +1160,8 @@
       "UC/SCUC/case45_goc4619_scuc"
     ],
     "pglib_opf_case4661_sdet": [
-      "DISPATCH/ECONOMIC-DISPATCH/case061_sdet4661_dc_ed",
       "MONITORING/PMU-PLACEMENT/case046_case4661_sdet_pmu",
+      "OPF/DC-OPF/case061_sdet4661_dc_ed",
       "OTS/DC-OTS/case46_sdet4661_dcots",
       "OTS/SC-OTS/case46_sdet4661_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case048_sdet4661_tep_syn",
@@ -1165,8 +1169,8 @@
       "UC/SCUC/case46_sdet4661_scuc"
     ],
     "pglib_opf_case4837_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case062_goc4837_dc_ed",
       "MONITORING/PMU-PLACEMENT/case047_case4837_goc_pmu",
+      "OPF/DC-OPF/case062_goc4837_dc_ed",
       "OTS/DC-OTS/case47_goc4837_dcots",
       "OTS/SC-OTS/case47_goc4837_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case049_goc4837_tep_syn",
@@ -1174,8 +1178,8 @@
       "UC/SCUC/case47_goc4837_scuc"
     ],
     "pglib_opf_case4917_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case064_goc4917_dc_ed",
       "MONITORING/PMU-PLACEMENT/case048_case4917_goc_pmu",
+      "OPF/DC-OPF/case064_goc4917_dc_ed",
       "OTS/DC-OTS/case48_goc4917_dcots",
       "OTS/SC-OTS/case48_goc4917_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case050_goc4917_tep_syn",
@@ -1183,8 +1187,8 @@
       "UC/SCUC/case48_goc4917_scuc"
     ],
     "pglib_opf_case500_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case024_goc500_dc_ed",
       "MONITORING/PMU-PLACEMENT/case019_case500_goc_pmu",
+      "OPF/DC-OPF/case024_goc500_dc_ed",
       "OTS/DC-OTS/case19_goc500_dcots",
       "OTS/SC-OTS/case19_goc500_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case021_goc500_tep_syn",
@@ -1192,8 +1196,8 @@
       "UC/SCUC/case19_goc500_scuc"
     ],
     "pglib_opf_case5658_epigrids": [
-      "DISPATCH/ECONOMIC-DISPATCH/case066_epigrids5658_dc_ed",
       "MONITORING/PMU-PLACEMENT/case049_case5658_epigrids_pmu",
+      "OPF/DC-OPF/case066_epigrids5658_dc_ed",
       "OTS/DC-OTS/case49_epigrids5658_dcots",
       "OTS/SC-OTS/case49_epigrids5658_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case051_epigrids5658_tep_syn",
@@ -1201,10 +1205,10 @@
       "UC/SCUC/case49_epigrids5658_scuc"
     ],
     "pglib_opf_case57_ieee": [
-      "DISPATCH/ECONOMIC-DISPATCH/case011_ieee57_dc_ed",
       "MONITORING/PMU-PLACEMENT/case008_case57_ieee_pmu",
       "MONITORING/STATE-ESTIMATION/case007_case57_ieee_wls_se",
       "MONITORING/STATE-ESTIMATION/case008_case57_ieee_l1_se",
+      "OPF/DC-OPF/case011_ieee57_dc_ed",
       "OTS/DC-OTS/case09_ieee57_dcots",
       "OTS/SC-OTS/case10_ieee57_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case010_ieee57_tep_syn",
@@ -1214,8 +1218,8 @@
       "UC/SCUC/case02_ieee57_scuc"
     ],
     "pglib_opf_case588_sdet": [
-      "DISPATCH/ECONOMIC-DISPATCH/case026_sdet588_dc_ed",
       "MONITORING/PMU-PLACEMENT/case020_case588_sdet_pmu",
+      "OPF/DC-OPF/case026_sdet588_dc_ed",
       "OTS/DC-OTS/case20_sdet588_dcots",
       "OTS/SC-OTS/case20_sdet588_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case022_sdet588_tep_syn",
@@ -1223,10 +1227,12 @@
       "UC/SCUC/case20_sdet588_scuc"
     ],
     "pglib_opf_case5_pjm": [
-      "DISPATCH/ECONOMIC-DISPATCH/case003_pjm5_dc_ed",
+      "DISPATCH/ECONOMIC-DISPATCH/case002_pjm5_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case002_case5_pjm_pmu",
       "MONITORING/STATE-ESTIMATION/case001_case5_pjm_wls_se",
       "MONITORING/STATE-ESTIMATION/case002_case5_pjm_l1_se",
+      "OPF/AC-OPF/case002_pjm5_acopf",
+      "OPF/DC-OPF/case003_pjm5_dc_ed",
       "OTS/DC-OTS/case01_pjm5_dcots",
       "OTS/SC-OTS/case02_pjm5_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case004_pjm5_tep_syn",
@@ -1237,8 +1243,8 @@
       "UC/SCUC/case05_pjm5_scuc"
     ],
     "pglib_opf_case60_c": [
-      "DISPATCH/ECONOMIC-DISPATCH/case012_c60_dc_ed",
       "MONITORING/PMU-PLACEMENT/case009_case60_c_pmu",
+      "OPF/DC-OPF/case012_c60_dc_ed",
       "OTS/DC-OTS/case10_c60_dcots",
       "OTS/SC-OTS/case11_c60_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case011_c60_tep_syn",
@@ -1246,8 +1252,8 @@
       "UC/SCUC/case03_case60_scuc"
     ],
     "pglib_opf_case6468_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case067_rte6468_dc_ed",
       "MONITORING/PMU-PLACEMENT/case050_case6468_rte_pmu",
+      "OPF/DC-OPF/case067_rte6468_dc_ed",
       "OTS/DC-OTS/case50_rte6468_dcots",
       "OTS/SC-OTS/case50_rte6468_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case052_rte6468_tep_syn",
@@ -1255,8 +1261,8 @@
       "UC/SCUC/case50_rte6468_scuc"
     ],
     "pglib_opf_case6470_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case068_rte6470_dc_ed",
       "MONITORING/PMU-PLACEMENT/case051_case6470_rte_pmu",
+      "OPF/DC-OPF/case068_rte6470_dc_ed",
       "OTS/DC-OTS/case51_rte6470_dcots",
       "OTS/SC-OTS/case51_rte6470_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case053_rte6470_tep_syn",
@@ -1264,8 +1270,8 @@
       "UC/SCUC/case51_rte6470_scuc"
     ],
     "pglib_opf_case6495_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case069_rte6495_dc_ed",
       "MONITORING/PMU-PLACEMENT/case052_case6495_rte_pmu",
+      "OPF/DC-OPF/case069_rte6495_dc_ed",
       "OTS/DC-OTS/case52_rte6495_dcots",
       "OTS/SC-OTS/case52_rte6495_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case054_rte6495_tep_syn",
@@ -1273,8 +1279,8 @@
       "UC/SCUC/case52_rte6495_scuc"
     ],
     "pglib_opf_case6515_rte": [
-      "DISPATCH/ECONOMIC-DISPATCH/case070_rte6515_dc_ed",
       "MONITORING/PMU-PLACEMENT/case053_case6515_rte_pmu",
+      "OPF/DC-OPF/case070_rte6515_dc_ed",
       "OTS/DC-OTS/case53_rte6515_dcots",
       "OTS/SC-OTS/case53_rte6515_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case055_rte6515_tep_syn",
@@ -1282,8 +1288,8 @@
       "UC/SCUC/case53_rte6515_scuc"
     ],
     "pglib_opf_case7336_epigrids": [
-      "DISPATCH/ECONOMIC-DISPATCH/case071_epigrids7336_dc_ed",
       "MONITORING/PMU-PLACEMENT/case054_case7336_epigrids_pmu",
+      "OPF/DC-OPF/case071_epigrids7336_dc_ed",
       "OTS/DC-OTS/case54_epigrids7336_dcots",
       "OTS/SC-OTS/case54_epigrids7336_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case056_epigrids7336_tep_syn",
@@ -1291,9 +1297,9 @@
       "UC/SCUC/case54_epigrids7336_scuc"
     ],
     "pglib_opf_case73_ieee_rts": [
-      "DISPATCH/ECONOMIC-DISPATCH/case013_ieee73_dc_ed",
-      "DISPATCH/ECONOMIC-DISPATCH/case014_ieee73_lp_ed",
       "MONITORING/PMU-PLACEMENT/case010_case73_ieee_rts_pmu",
+      "OPF/DC-OPF/case013_ieee73_dc_ed",
+      "OPF/DC-OPF/case014_ieee73_lp_ed",
       "OTS/DC-OTS/case11_ieee73_dcots",
       "OTS/SC-OTS/case05_ieee73_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case012_ieee73_tep_syn",
@@ -1301,8 +1307,8 @@
       "UC/SCUC/case10_ieee73_scuc"
     ],
     "pglib_opf_case78484_epigrids": [
-      "DISPATCH/ECONOMIC-DISPATCH/case091_epigrids78484_dc_ed",
       "MONITORING/PMU-PLACEMENT/case066_case78484_epigrids_pmu",
+      "OPF/DC-OPF/case091_epigrids78484_dc_ed",
       "OTS/DC-OTS/case66_epigrids78484_dcots",
       "OTS/SC-OTS/case66_epigrids78484_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case068_epigrids78484_tep_syn",
@@ -1310,8 +1316,8 @@
       "UC/SCUC/case66_epigrids78484_scuc"
     ],
     "pglib_opf_case793_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case027_goc793_dc_ed",
       "MONITORING/PMU-PLACEMENT/case021_case793_goc_pmu",
+      "OPF/DC-OPF/case027_goc793_dc_ed",
       "OTS/DC-OTS/case21_goc793_dcots",
       "OTS/SC-OTS/case21_goc793_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case023_goc793_tep_syn",
@@ -1319,8 +1325,8 @@
       "UC/SCUC/case21_goc793_scuc"
     ],
     "pglib_opf_case8387_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case072_pegase8387_dc_ed",
       "MONITORING/PMU-PLACEMENT/case055_case8387_pegase_pmu",
+      "OPF/DC-OPF/case072_pegase8387_dc_ed",
       "OTS/DC-OTS/case55_pegase8387_dcots",
       "OTS/SC-OTS/case55_pegase8387_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case057_pegase8387_tep_syn",
@@ -1328,8 +1334,8 @@
       "UC/SCUC/case55_pegase8387_scuc"
     ],
     "pglib_opf_case89_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case015_pegase89_dc_ed",
       "MONITORING/PMU-PLACEMENT/case011_case89_pegase_pmu",
+      "OPF/DC-OPF/case015_pegase89_dc_ed",
       "OTS/DC-OTS/case12_pegase89_dcots",
       "OTS/SC-OTS/case12_pegase89_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case013_pegase89_tep_syn",
@@ -1337,8 +1343,8 @@
       "UC/SCUC/case11_pegase89_scuc"
     ],
     "pglib_opf_case9241_pegase": [
-      "DISPATCH/ECONOMIC-DISPATCH/case073_pegase9241_dc_ed",
       "MONITORING/PMU-PLACEMENT/case056_case9241_pegase_pmu",
+      "OPF/DC-OPF/case073_pegase9241_dc_ed",
       "OTS/DC-OTS/case56_pegase9241_dcots",
       "OTS/SC-OTS/case56_pegase9241_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case058_pegase9241_tep_syn",
@@ -1346,8 +1352,8 @@
       "UC/SCUC/case56_pegase9241_scuc"
     ],
     "pglib_opf_case9591_goc": [
-      "DISPATCH/ECONOMIC-DISPATCH/case074_goc9591_dc_ed",
       "MONITORING/PMU-PLACEMENT/case057_case9591_goc_pmu",
+      "OPF/DC-OPF/case074_goc9591_dc_ed",
       "OTS/DC-OTS/case57_goc9591_dcots",
       "OTS/SC-OTS/case57_goc9591_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case059_goc9591_tep_syn",
@@ -1695,14 +1701,14 @@
       "UC/RTS-SCUC/case12_rts_gmlc_2020_12_23_rts_scuc"
     ],
     "simbench:1-LV-rural2--0-sw": [
+      "DISTRIBUTION/DISTRIBUTION-OPF/case05_lv_rural2_dopf",
       "DISTRIBUTION/DNR/case04_lv_rural2_dnr",
-      "DISTRIBUTION/DNR/case05_lv_rural2_dopf",
       "DISTRIBUTION/DNR/case06_lv_rural2_dnr_ess",
       "RESILIENCE/DISTRIBUTION-RESTORATION/case02_lv_rural2_restore"
     ],
     "simbench:1-MV-rural--0-sw": [
+      "DISTRIBUTION/DISTRIBUTION-OPF/case02_mv_rural_dopf",
       "DISTRIBUTION/DNR/case01_mv_rural_dnr",
-      "DISTRIBUTION/DNR/case02_mv_rural_dopf",
       "DISTRIBUTION/DNR/case03_mv_rural_dnr_ess",
       "RESILIENCE/DISTRIBUTION-RESTORATION/case01_mv_rural_restore"
     ],

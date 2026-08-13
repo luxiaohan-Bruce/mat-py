@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "case": "case086_t1s3_real_time_network_02r_3_scenario_1_scacots",
+  "problem": "linearized_scacots",
+  "mode": "scacots",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_02R-3/scenario_1/case.raw"
+  },
+  "enable_ots": true,
+  "switchable_branches": [
+    27,
+    34,
+    59,
+    82,
+    125,
+    148,
+    155,
+    170
+  ],
+  "max_open": 2,
+  "mip_gap": 0.02,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "relaxed",
+  "load_shed_penalty": 10000.0,
+  "construction": [
+    "Linearized DC security-constrained OTS (NOT exact AC).",
+    "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
+    "OTS candidates = top rateA lines; max_open=2.",
+    "nB=500, nG=224 (208 online), nL=733, Nc=5, tier=relaxed"
+  ],
+  "base_problem": "ots",
+  "variant": {
+    "power_flow": "dc_linearized",
+    "security": "sampled_n-1",
+    "contingency_scope": "sampled_subset",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "corrective_limited",
+    "generation_recourse": "corrective_within_generator_bounds",
+    "topology_control": "preventive_shared"
+  },
+  "source_network": "go_c1:Network_02R-3",
+  "features": {
+    "n_bus": 500,
+    "n_branch": 733,
+    "n_gen": 224,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 5,
+    "n_scenario": 1,
+    "n_switchable": 8,
+    "max_open": 2,
+    "k": null,
+    "n_bin": 8,
+    "math_class": "milp",
+    "solver_family": "security_mip"
+  }
+}

@@ -31,7 +31,8 @@
   "base_problem": "uc",
   "variant": {
     "power_flow": "dc",
-    "security": "n-1",
+    "security": "sampled_n-1",
+    "contingency_scope": "selected_subset",
     "uncertainty": "deterministic",
     "horizon": "multi_period",
     "recourse": "preventive",

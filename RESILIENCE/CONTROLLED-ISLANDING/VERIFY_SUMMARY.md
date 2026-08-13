@@ -1,16 +1,16 @@
 # VERIFY_SUMMARY — controlled_islanding_cases (B18)
 
 - cases: **82**
-- PASS: **82**
+- solved PASS: **75**
 - FAIL: **0**
-- skip-tier PASS: 7
+- skip/data-only: **7**（不计作求解 PASS）
 - full/dual PASS: 75
 
 | case | tier | result | obj_py | obj_mat | issues |
 |---|---|---|---:|---:|---|
 | case001_pjm5bus_island | full | PASS | 0.004 | 0.004 |  |
-| case002_GBnetwork_island | skip | PASS |  |  |  |
-| case003_EI_33_island | skip | PASS |  |  |  |
+| case002_GBnetwork_island | skip | SKIP |  |  |  |
+| case003_EI_33_island | skip | SKIP |  |  |  |
 | case004_ieee14_island | full | PASS | 0.0030000000000000027 | 0.0029999999999999923 |  |
 | case005_ieee14_ac8b_island | full | PASS | 0.0030000000000000027 | 0.0029999999999999923 |  |
 | case006_ieee14_ace_island | full | PASS | 0.0030000000000000027 | 0.0029999999999999923 |  |
@@ -80,14 +80,13 @@
 | case070_kundur_vsc_island | full | PASS | 0.0020000000000000018 | 0.001999999999999995 |  |
 | case071_kundur_wtds_island | full | PASS | 0.0020000000000000018 | 0.001999999999999995 |  |
 | case072_kundur_wtdta1_island | full | PASS | 0.0020000000000000018 | 0.001999999999999995 |  |
-| case073_npcc_island | skip | PASS |  |  |  |
+| case073_npcc_island | skip | SKIP |  |  |  |
 | case074_SMIB_island | full | PASS | 0.001 | 0.001 |  |
-| case075_wecc_full_island | skip | PASS |  |  |  |
-| case076_wecc_gencls_island | skip | PASS |  |  |  |
+| case075_wecc_full_island | skip | SKIP |  |  |  |
+| case076_wecc_gencls_island | skip | SKIP |  |  |  |
 | case077_case5_pjm_island | full | PASS | 0.003 | 0.003 |  |
 | case078_case14_ieee_island | full | PASS | 72.00399999999999 | 72.00399999999998 |  |
 | case079_case30_ieee_island | full | PASS | 54.004 | 54.004 |  |
 | case080_case39_epri_island | full | PASS | 0.0040000000000000036 | 0.003999999999999969 |  |
-| case081_case57_ieee_island | skip | PASS |  |  |  |
-| case082_case118_ieee_island | skip | PASS |  |  |  |
-
+| case081_case57_ieee_island | skip | SKIP |  |  |  |
+| case082_case118_ieee_island | skip | SKIP |  |  |  |

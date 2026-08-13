@@ -1,8 +1,0 @@
-{
-  "case": "case176_t1s3_offline_network_03o_3_scenario_3_scacots",
-  "ok": false,
-  "issues": [
-    "missing result"
-  ],
-  "checks": {}
-}

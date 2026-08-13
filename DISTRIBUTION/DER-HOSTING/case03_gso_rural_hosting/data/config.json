@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "case": "case03_gso_rural_hosting",
-  "problem": "smartds_hosting",
+  "problem": "smartds_experimental_der_hosting_proxy",
   "mode": "hosting",
   "source": {
     "dataset": "SMART-DS",
@@ -13,15 +13,27 @@
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",
+  "maturity": "experimental",
+  "validation_scope": "structural_only",
+  "physics_validated": false,
   "max_switch_actions": 4,
   "construction": [
     "Aggregated OpenDSS feeder (~80 nodes) for dual solvability.",
-    "LinDistFlow-style linear model; not exact three-phase AC.",
+    "Active-power transport proxy; not LinDistFlow or exact three-phase AC.",
     "variant=hosting"
+  ],
+  "known_limitations": [
+    "No voltage-magnitude variables, voltage-drop equations, or reactive-power balance.",
+    "DER injection is only a secondary objective term; the model does not maximize or certify hosting capacity.",
+    "No radiality or energized-connectivity constraints."
   ],
   "base_problem": "der_hosting",
   "variant": {
-    "power_flow": "lindistflow",
+    "power_flow": "active_power_transport",
+    "reactive_power": "not_modeled",
+    "voltage_magnitude": "not_modeled",
+    "radiality": "not_enforced",
+    "formulation": "experimental_der_injection_proxy",
     "security": "none",
     "uncertainty": "deterministic",
     "horizon": "single_period",
@@ -37,11 +49,11 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 0,
+    "n_switchable": 16,
     "max_open": null,
     "k": null,
     "n_bin": 90,
-    "math_class": "lp",
-    "solver_family": "convex_dispatch"
+    "math_class": "milp",
+    "solver_family": "topology_mip"
   }
 }

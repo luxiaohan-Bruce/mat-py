@@ -1,6 +1,11 @@
 # VERIFY_SUMMARY hydrothermal_scheduling
 
-**Dual compare**: 9/9 PASS
+**Dual full-tier compare**: 9/9 PASS
+
+Stored Python coverage after the classification audit: 29 `full`/`relaxed` cases have
+validated feasible results. Three interrupted `relaxed` solves retain explicitly labelled
+feasible incumbents (optimality is not claimed). The three 16-scenario cases without a stored
+validated result are now `solve_tier=skip`, rather than being counted as solved.
 
 | case | tier | ok | obj_py | obj_mat | bal_py | water_py |
 |------|------|----|--------|---------|--------|----------|
@@ -21,7 +26,8 @@
 |--------|------:|
 | constructed HT cases | 32 |
 | full tier | 9 |
-| relaxed tier | 23 |
+| relaxed tier | 20 |
+| skip tier | 3 |
 | eligible sources | 32 |
 | ineligible (T-Ramp pure thermal) | 42 |
 

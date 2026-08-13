@@ -47,6 +47,11 @@ def case_record(case_dir: Path, root: Path | None = None) -> dict[str, Any]:
     net = _load(case_dir / "data" / "network.json")
     spec = spec_for(pack, cfg)
     feats = extract_features(cfg, net, pack=pack)
+    configured_features = cfg.get("features")
+    if not isinstance(configured_features, dict):
+        configured_features = {}
+    math_class = configured_features.get("math_class") or spec["math_class"]
+    solver_family = configured_features.get("solver_family") or spec["solver_family"]
     solver = find_solver(case_dir)
     rel = case_dir.resolve().relative_to(root.resolve())
     entry = None
@@ -63,8 +68,8 @@ def case_record(case_dir: Path, root: Path | None = None) -> dict[str, Any]:
         "case": case_dir.name,
         "base_problem": spec["base_problem"],
         "variant": spec["variant"],
-        "math_class": spec["math_class"],
-        "solver_family": spec["solver_family"],
+        "math_class": math_class,
+        "solver_family": solver_family,
         "solve_tier": cfg.get("solve_tier") or "full",
         "source_network": sn,
         "features": feats,
@@ -72,6 +77,11 @@ def case_record(case_dir: Path, root: Path | None = None) -> dict[str, Any]:
         "seed": cfg.get("seed", 1),
         "time_limit": cfg.get("time_limit"),
         "mip_gap": cfg.get("mip_gap"),
+        "maturity": cfg.get("maturity"),
+        "validation_scope": cfg.get("validation_scope"),
+        "physics_validated": cfg.get("physics_validated"),
+        "known_limitations": cfg.get("known_limitations"),
+        "classification_note": cfg.get("classification_note"),
     }
 
 
@@ -134,20 +144,18 @@ def backfill_config(case_dir: Path, root: Path | None = None) -> dict[str, Any]:
     spec = spec_for(pack, cfg)
     feats = extract_features(cfg, net, pack=pack)
     variant = dict(spec["variant"])
-    existing = cfg.get("variant")
-    if isinstance(existing, dict):
-        merged = dict(variant)
-        merged.update(existing)
-        for k, v in variant.items():
-            merged.setdefault(k, v)
-        variant = merged
+    configured_features = cfg.get("features")
+    if not isinstance(configured_features, dict):
+        configured_features = {}
+    math_class = configured_features.get("math_class") or spec["math_class"]
+    solver_family = configured_features.get("solver_family") or spec["solver_family"]
     cfg["base_problem"] = spec["base_problem"]
     cfg["variant"] = variant
     cfg["source_network"] = source_network(cfg, net)
     cfg["features"] = {
         **feats,
-        "math_class": spec["math_class"],
-        "solver_family": spec["solver_family"],
+        "math_class": math_class,
+        "solver_family": solver_family,
     }
     if not cfg.get("solve_tier"):
         bucket = str(cfg.get("size_bucket") or "").upper()
@@ -180,14 +188,17 @@ def main(argv: list[str] | None = None) -> int:
     if "--evaluate-all" in args:
         fail = 0
         n = 0
+        skipped = 0
         for case in iter_cases():
             ev = evaluate(case)
             n += 1
-            if not ev["passed"] and ev["reason"] != "missing_result":
+            if ev["status"] == "SKIP":
+                skipped += 1
+            if not ev["passed"]:
                 fail += 1
                 print(f"FAIL {ev['path']} {ev['reason']}")
-        print(f"evaluated={n} fail_nonzero={fail}")
-        return 0
+        print(f"evaluated={n} skipped={skipped} failed={fail}")
+        return 1 if fail else 0
     print("usage: python3 -m framework.catalog [--rebuild|--by-network NAME|--evaluate-all]")
     return 2
 
