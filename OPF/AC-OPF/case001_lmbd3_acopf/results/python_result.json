@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "case": "case001_lmbd3_acopf",
+  "solver": "python-gurobi-13-global-nonlinear",
+  "base_problem": "opf",
+  "problem": "ac_opf",
+  "variant": {
+    "power_flow": "ac_exact",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present",
+    "formulation": "polar_ac_power_flow",
+    "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+  },
+  "acopf": {
+    "status": "OPTIMAL",
+    "objective": 5812.642974239455,
+    "objective_bound": 5812.642738534403,
+    "optimality_gap": 4.05504092856236e-08,
+    "runtime_seconds": 0.1103200912475586,
+    "Vm_pu": [
+      1.1,
+      0.9261705445106596,
+      0.9
+    ],
+    "Va_deg": [
+      0.0,
+      7.2588286038716445,
+      -17.267097492236125
+    ],
+    "Pg_MW": [
+      148.0669118192677,
+      170.00628805501063,
+      0.0
+    ],
+    "Qg_MVAr": [
+      54.69726450509151,
+      -8.791136135984388,
+      -4.842636623954352
+    ],
+    "P_from_MW": [
+      51.30712078526288,
+      -45.85443014801106,
+      -13.240208965995198
+    ],
+    "Q_from_MVAr": [
+      10.076334501386327,
+      -19.934172563193815,
+      4.620930003705183
+    ],
+    "P_to_MW": [
+      -49.14556985198894,
+      46.52524956641812,
+      13.48103848859251
+    ],
+    "Q_to_MVAr": [
+      -34.90846406076054,
+      -18.313960597815395,
+      -30.477175538168993
+    ],
+    "reference_bus": 1,
+    "baseMVA": 100.0,
+    "n_variables": 24,
+    "n_constraints": 7,
+    "max_p_balance_MW": 3.7478287140402244e-10,
+    "max_q_balance_MVAr": 1.2356338174868142e-10,
+    "max_branch_flow_equation_MVA": 3.7478287140402244e-10,
+    "max_thermal_violation_MVA": 0.0,
+    "max_voltage_bound_violation_pu": 0.0,
+    "max_angle_bound_violation_deg": 0.0,
+    "max_p_generator_bound_MW": 0.0,
+    "max_q_generator_bound_MVAr": 0.0,
+    "cost_recomputed": 5812.642974239455,
+    "cost_recompute_error": 0.0,
+    "validation_passed": true,
+    "validation_tolerances": {
+      "power_balance_MW_MVAr": 0.0002,
+      "branch_flow_and_thermal_MVA": 0.0002,
+      "variable_bounds": 2e-06
+    }
+  },
+  "validation": {
+    "passed": true,
+    "method": "independent_polar_ac_recomputation"
+  }
+}

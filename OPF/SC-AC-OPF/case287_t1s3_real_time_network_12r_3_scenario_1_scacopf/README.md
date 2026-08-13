@@ -1,5 +1,0 @@
-# case287_t1s3_real_time_network_12r_3_scenario_1_scacopf
-
-- Source: `数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_12R-3/scenario_1/case.raw`
-- Linearized DC SC-AC-OPF (approximation; not exact AC)
-- Buses=9591, gens=365, branches=15915, contingencies=3, tier=skip

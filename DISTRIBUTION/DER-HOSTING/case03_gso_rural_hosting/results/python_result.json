@@ -2,7 +2,7 @@
   "schema_version": 1,
   "case": "case03_gso_rural_hosting",
   "solver": "python-gurobipy",
-  "problem": "smartds_hosting",
+  "problem": "smartds_experimental_der_hosting_proxy",
   "smartds": {
     "status": "OPTIMAL",
     "obj": 0.1689773239563583,
@@ -14,6 +14,6 @@
     "opened": [],
     "load_shed": -8.436493642983396e-14,
     "der_total": 0.00447004,
-    "note": "linear aggregated feeder model"
+    "note": "experimental active-power transport proxy; objective does not certify hosting capacity"
   }
 }

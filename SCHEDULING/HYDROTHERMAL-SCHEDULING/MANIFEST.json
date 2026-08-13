@@ -151,13 +151,14 @@
   },
   {
     "case": "case16_s46a_scen16_ht",
-    "solve_tier": "relaxed",
+    "solve_tier": "skip",
     "source": "System_46buses/A",
     "n_thermal": 14,
     "n_hydro": 7,
     "n_scenarios": 16,
     "networked": true,
-    "path": "case16_s46a_scen16_ht"
+    "path": "case16_s46a_scen16_ht",
+    "skip_reason": "stochastic_16_scenario_milp_requires_extended_runtime; no validated stored result"
   },
   {
     "case": "case17_s46b_scen1_ht",
@@ -231,13 +232,14 @@
   },
   {
     "case": "case24_s46c_scen16_ht",
-    "solve_tier": "relaxed",
+    "solve_tier": "skip",
     "source": "System_46buses/C",
     "n_thermal": 10,
     "n_hydro": 10,
     "n_scenarios": 16,
     "networked": true,
-    "path": "case24_s46c_scen16_ht"
+    "path": "case24_s46c_scen16_ht",
+    "skip_reason": "stochastic_16_scenario_milp_requires_extended_runtime; no validated stored result"
   },
   {
     "case": "case25_s46d_scen1_ht",
@@ -311,12 +313,13 @@
   },
   {
     "case": "case32_s46e_scen16_ht",
-    "solve_tier": "relaxed",
+    "solve_tier": "skip",
     "source": "System_46buses/E",
     "n_thermal": 7,
     "n_hydro": 14,
     "n_scenarios": 16,
     "networked": true,
-    "path": "case32_s46e_scen16_ht"
+    "path": "case32_s46e_scen16_ht",
+    "skip_reason": "stochastic_16_scenario_milp_requires_extended_runtime; no validated stored result"
   }
 ]

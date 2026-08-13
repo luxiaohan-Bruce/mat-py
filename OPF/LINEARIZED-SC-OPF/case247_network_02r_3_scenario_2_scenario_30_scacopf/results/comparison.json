@@ -1,0 +1,13 @@
+{
+  "case": "case247_network_02r_3_scenario_2_scenario_30_scacopf",
+  "validation": "python_result",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status": "OPTIMAL",
+    "obj": 241732.7200000001,
+    "mip_gap": 0.0,
+    "load_shed_MW": 0.0,
+    "flow_slack_pu": 0.0
+  }
+}

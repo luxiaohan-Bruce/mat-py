@@ -1,6 +1,6 @@
 # VERIFY_SUMMARY — transmission_expansion_cases
 
-**68/68 PASS**（2026-08-12）
+**23 个 full/relaxed 案例通过双端验收；45 个大网为仅数据 `skip`**（2026-08-12）
 
 | 分层 | 数量 | 说明 |
 |------|------|------|

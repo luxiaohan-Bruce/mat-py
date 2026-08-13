@@ -36,7 +36,7 @@
     "MIPGap": 0.001,
     "TimeLimit": 1200.0
   },
-  "solve_tier": "relaxed",
+  "solve_tier": "skip",
   "mip_gap": 0.001,
   "time_limit": 1200.0,
   "seed": 1,
@@ -57,5 +57,6 @@
     "n_bin": 480,
     "math_class": "milp",
     "solver_family": "temporal_mip"
-  }
+  },
+  "skip_reason": "stochastic_16_scenario_milp_requires_extended_runtime; no validated stored result"
 }

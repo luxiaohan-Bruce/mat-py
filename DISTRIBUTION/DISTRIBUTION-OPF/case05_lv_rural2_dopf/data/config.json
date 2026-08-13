@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case": "case05_lv_rural2_dopf",
+  "problem": "active_power_transport_dopf",
+  "mode": "dopf",
+  "source": {
+    "dataset": "SimBench",
+    "folder": "1-LV-rural2--0-sw"
+  },
+  "T": 4,
+  "mip_gap": 0.01,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 0,
+  "solve_tier": "full",
+  "maturity": "experimental",
+  "validation_scope": "structural_only",
+  "physics_validated": false,
+  "max_switch_actions": 5,
+  "construction": [
+    "Multiperiod active-power transport proxy for exploratory distribution dispatch.",
+    "Switchable = Switch.csv edges (+ subset of lines if needed).",
+    "ESS only in dnr_ess variants."
+  ],
+  "known_limitations": [
+    "No voltage-magnitude variables or voltage-drop equations.",
+    "No reactive-power balance or reactive-device coupling.",
+    "No radiality or energized-connectivity constraints; this is not a physics-validated distribution OPF."
+  ],
+  "base_problem": "distribution_opf",
+  "variant": {
+    "power_flow": "active_power_transport",
+    "reactive_power": "not_modeled",
+    "voltage_magnitude": "not_modeled",
+    "radiality": "not_enforced",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "multiperiod_active_power_transport_proxy",
+    "network_constraints": "active_power_nodal_balance_and_branch_limits"
+  },
+  "source_network": "simbench:1-LV-rural2--0-sw",
+  "features": {
+    "n_bus": 289,
+    "n_branch": 287,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 4,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 192,
+    "max_open": null,
+    "k": null,
+    "n_bin": 287,
+    "math_class": "milp",
+    "solver_family": "topology_mip"
+  },
+  "classification_note": "Distribution OPF case separated from the DNR package; the legacy shared-model filename is retained for compatibility."
+}

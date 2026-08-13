@@ -10,7 +10,7 @@
     {
       "case": "case01_pjm5_dcots",
       "source": null,
-      "n_bus": null,
+      "n_bus": 5,
       "n_switchable": 6,
       "max_open": 2,
       "size_bucket": "S",
@@ -20,7 +20,7 @@
     {
       "case": "case02_ieee14_dcots",
       "source": null,
-      "n_bus": null,
+      "n_bus": 14,
       "n_switchable": 8,
       "max_open": 2,
       "size_bucket": "S",
@@ -30,7 +30,7 @@
     {
       "case": "case03_ieee118_dcots",
       "source": null,
-      "n_bus": null,
+      "n_bus": 118,
       "n_switchable": 20,
       "max_open": 3,
       "size_bucket": "S",
@@ -72,7 +72,7 @@
       "source": "pglib_opf_case30_ieee",
       "n_bus": 30,
       "n_switchable": 11,
-      "max_open": 3,
+      "max_open": 2,
       "size_bucket": "S",
       "solve_tier": "full",
       "legacy": false
@@ -122,7 +122,7 @@
       "source": "pglib_opf_case89_pegase",
       "n_bus": 89,
       "n_switchable": 20,
-      "max_open": 3,
+      "max_open": 2,
       "size_bucket": "S",
       "solve_tier": "full",
       "legacy": false
@@ -132,7 +132,7 @@
       "source": "pglib_opf_case162_ieee_dtc",
       "n_bus": 162,
       "n_switchable": 25,
-      "max_open": 3,
+      "max_open": 2,
       "size_bucket": "M",
       "solve_tier": "full",
       "legacy": false
@@ -172,7 +172,7 @@
       "source": "pglib_opf_case240_pserc",
       "n_bus": 240,
       "n_switchable": 25,
-      "max_open": 3,
+      "max_open": 2,
       "size_bucket": "M",
       "solve_tier": "full",
       "legacy": false

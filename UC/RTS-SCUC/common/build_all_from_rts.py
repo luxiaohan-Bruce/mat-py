@@ -279,10 +279,20 @@ def main() -> None:
             "seed": 1,
             "threads": 0,
             "solve_tier": "full",
+            "base_problem": "uc",
+            "variant": {
+                "power_flow": "dc",
+                "security": "sampled_n-1",
+                "contingency_scope": "selected_subset",
+                "uncertainty": "deterministic",
+                "horizon": "multi_period",
+                "recourse": "preventive",
+                "storage": "yes",
+            },
             "construction": [
                 "Topology/storage from RTS-GMLC SourceData; thermal/renewable/demand/reserve from PGLib-UC rts_gmlc day file.",
                 "Horizon = first 24 periods of the 48h UC instance.",
-                "Preventive DC-SCUC with system reserve, ESS, optional load shed, and non-bridge N-1 contingencies.",
+                "Preventive DC-SCUC with system reserve, ESS, optional load shed, and a selected subset of six non-bridge line contingencies.",
                 "Thermal production cost: linear envelope of PWL endpoints + startup of longest-lag category.",
             ],
         }
@@ -321,7 +331,7 @@ end
 - UC day: `{src.name}` (PGLib-UC)
 - Network: RTS-GMLC (73 bus)
 - T={T}, Nc={len(skel['contingencies'])}, thermal={len(thermal)}, renewable={len(renewable)}, storage={len(skel['storage'])}
-- Preventive DC-SCUC + ESS + reserve + N-1
+- Preventive DC-SCUC + ESS + reserve + selected N-1 subset
 """,
         )
         manifest.append(
@@ -387,7 +397,10 @@ if __name__ == "__main__":
 
 Combines **RTS-GMLC** transmission topology (and ESS proxies) with all **12** PGLib-UC `rts_gmlc` day instances.
 
-Model: preventive DC-SCUC, system spinning reserve, renewable bounds, storage SOC, optional load-shed, N-1 line contingencies.
+**base_problem**: UC
+**variant**: power_flow=dc, security=sampled_n-1, contingency_scope=selected_subset, horizon=multi_period, recourse=preventive
+
+Model: preventive DC-SCUC, system spinning reserve, renewable bounds, storage SOC, optional load-shed, and a selected subset of six non-bridge line contingencies. The package does not claim exhaustive N-1 coverage.
 
 ```bash
 python3 common/build_all_from_rts.py

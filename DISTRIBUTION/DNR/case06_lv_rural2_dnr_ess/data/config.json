@@ -1,7 +1,8 @@
 {
   "schema_version": 1,
   "case": "case06_lv_rural2_dnr_ess",
-  "problem": "lindistflow_dnr_ess",
+  "problem": "active_power_transport_dnr_ess",
+  "mode": "dnr_ess",
   "source": {
     "dataset": "SimBench",
     "folder": "1-LV-rural2--0-sw"
@@ -12,15 +13,26 @@
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",
+  "maturity": "experimental",
+  "validation_scope": "structural_only",
+  "physics_validated": false,
   "max_switch_actions": 5,
   "construction": [
-    "LinDistFlow radial DNR / multiperiod DOPF (linear approx).",
+    "Active-power transport proxy for exploratory DNR+ESS experiments.",
     "Switchable = Switch.csv edges (+ subset of lines if needed).",
     "ESS only in dnr_ess variants."
   ],
+  "known_limitations": [
+    "No voltage-magnitude variables or voltage-drop equations.",
+    "No reactive-power balance or reactive-device coupling.",
+    "No radiality or energized-connectivity constraints; a feasible topology is not a certified radial feeder."
+  ],
   "base_problem": "dnr",
   "variant": {
-    "power_flow": "lindistflow",
+    "power_flow": "active_power_transport",
+    "reactive_power": "not_modeled",
+    "voltage_magnitude": "not_modeled",
+    "radiality": "not_enforced",
     "security": "none",
     "uncertainty": "deterministic",
     "horizon": "multi_period",
@@ -37,7 +49,7 @@
     "T": 4,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 0,
+    "n_switchable": 192,
     "max_open": null,
     "k": null,
     "n_bin": 287,

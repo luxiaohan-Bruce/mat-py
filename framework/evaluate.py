@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import sys
 from pathlib import Path
 from typing import Any
@@ -23,6 +24,8 @@ DEFAULT_POWER_TOL = 1e-4
 DEFAULT_INT_TOL = 1e-6
 
 _BLOCK_KEYS = (
+    "acopf",
+    "economic_dispatch",
     "ots",
     "ed",
     "mld",
@@ -81,7 +84,6 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
     cfg_path = case / "data" / "config.json"
     config = _load_json(cfg_path) or {}
     rpath = Path(result_path) if result_path else case / "results" / "python_result.json"
-    result = _load_json(rpath)
     out: dict[str, Any] = {
         "case": case.name,
         "path": str(case),
@@ -95,20 +97,33 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
         "reason": None,
         "solve_tier": config.get("solve_tier"),
         "base_problem": config.get("base_problem"),
+        "maturity": config.get("maturity"),
+        "validation_scope": config.get("validation_scope"),
+        "physics_validated": config.get("physics_validated"),
+        "claim": "solver_and_residual_validation",
     }
+    problem = str(config.get("problem") or "")
+    is_meta = problem == "meta" or problem.endswith("_meta")
+    if config.get("solve_tier") == "skip" or is_meta:
+        out["status"] = "SKIP"
+        out["passed"] = True
+        out["claim"] = "data_only" if config.get("maturity") == "data_only" else "configured_skip"
+        out["reason"] = "configured_skip_or_meta"
+        return out
+    result = _load_json(rpath)
     if result is None:
-        if config.get("solve_tier") == "skip" or config.get("problem") == "meta":
-            out["status"] = "SKIP"
-            out["passed"] = True
-            out["reason"] = "skip_or_meta_no_result"
-            return out
         out["reason"] = "missing_result"
         return out
 
     name, block = primary_block(result)
     out["block"] = name
     status = block.get("status") or result.get("status")
-    obj = block.get("obj") if "obj" in block else result.get("obj")
+    if "obj" in block:
+        obj = block.get("obj")
+    elif "objective" in block:
+        obj = block.get("objective")
+    else:
+        obj = result.get("obj", result.get("objective"))
     out["status"] = status
     out["obj"] = obj
 
@@ -128,11 +143,44 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
         if key in INT_KEYS and abs(val) > DEFAULT_INT_TOL:
             violations.append(f"{key}={val}")
 
+    if problem in {"linearized_scacopf", "linearized_scacots"}:
+        features = config.get("features")
+        expected_n_cont = features.get("n_contingency") if isinstance(features, dict) else None
+        actual_n_cont = block.get("n_cont")
+        if (
+            not isinstance(expected_n_cont, int)
+            or isinstance(expected_n_cont, bool)
+            or not isinstance(actual_n_cont, int)
+            or isinstance(actual_n_cont, bool)
+            or actual_n_cont != expected_n_cont
+        ):
+            violations.append(
+                f"n_cont={actual_n_cont!r} expected_n_contingency={expected_n_cont!r}"
+            )
+        for key, tolerance in (("load_shed_MW", 1e-4), ("flow_slack_pu", 1e-6)):
+            value = block.get(key)
+            if (
+                not isinstance(value, (int, float))
+                or isinstance(value, bool)
+                or not math.isfinite(float(value))
+            ):
+                violations.append(f"{key}={value!r}")
+            elif abs(float(value)) > tolerance:
+                violations.append(f"{key}={value}")
+
     explicit = block.get("validation_passed")
     if explicit is None and isinstance(result.get("validation"), dict):
         explicit = result["validation"].get("passed")
 
-    ok_status = status in {None, "OPTIMAL", "SUBOPTIMAL", "TIME_LIMIT", "SKIP", "SKIPPED"}
+    ok_status = status in {
+        None,
+        "OPTIMAL",
+        "SUBOPTIMAL",
+        "TIME_LIMIT",
+        "INTERRUPTED",
+        "SKIP",
+        "SKIPPED",
+    }
     if status in {"INFEASIBLE", "INF_OR_UNBD", "NUMERIC", "ERROR"}:
         ok_status = False
         violations.append(f"status={status}")
@@ -148,7 +196,18 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
     if not out["passed"]:
         out["reason"] = ";".join(violations) or "failed"
     else:
-        out["reason"] = "ok"
+        if config.get("validation_scope") == "structural_only":
+            out["claim"] = "structural_only"
+            out["reason"] = "structural_only_not_physics_validated"
+        elif status in {"SUBOPTIMAL", "TIME_LIMIT", "INTERRUPTED"}:
+            if explicit is True:
+                out["claim"] = "validated_feasible_incumbent"
+                out["reason"] = "validated_feasible_incumbent_not_optimal"
+            else:
+                out["claim"] = "solver_feasible_incumbent"
+                out["reason"] = "solver_feasible_incumbent_not_independently_validated"
+        else:
+            out["reason"] = "ok"
     return out
 
 
@@ -160,7 +219,16 @@ def main(argv: list[str] | None = None) -> int:
     fail = 0
     for arg in args:
         ev = evaluate(arg)
-        flag = "PASS" if ev["passed"] else "FAIL"
+        if ev["status"] == "SKIP":
+            flag = "SKIP"
+        elif ev["passed"] and ev.get("claim") == "structural_only":
+            flag = "STRUCTURAL_ONLY"
+        elif ev["passed"] and ev.get("claim") == "validated_feasible_incumbent":
+            flag = "VALIDATED_INCUMBENT"
+        elif ev["passed"] and ev.get("claim") == "solver_feasible_incumbent":
+            flag = "FEASIBLE_INCUMBENT"
+        else:
+            flag = "PASS" if ev["passed"] else "FAIL"
         print(
             f"[{ev['case']}] {flag} status={ev['status']} obj={ev['obj']} "
             f"reason={ev['reason']}"

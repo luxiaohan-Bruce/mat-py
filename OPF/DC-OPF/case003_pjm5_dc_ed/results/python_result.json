@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "case": "case003_pjm5_dc_ed",
+  "solver": "python-gurobi",
+  "problem": "dc_opf",
+  "base_problem": "opf",
+  "ed": {
+    "status": "OPTIMAL",
+    "obj": 17479.896925381025,
+    "obj_bound": 17479.896925381025,
+    "mip_gap": 0.0,
+    "runtime": 0.0003192424774169922,
+    "Pg_MW": [
+      40.0,
+      170.0,
+      323.49484626905115,
+      0.0,
+      466.5051537309488
+    ],
+    "theta_deg": [
+      3.253464645500811,
+      -0.7670037501801223,
+      -0.4558538987019485,
+      0.0,
+      4.084043163692509
+    ],
+    "flow_MW": [
+      249.71676504272762,
+      186.78838868822123,
+      -226.50515373094882,
+      -50.283234957272384,
+      -26.788388688221232,
+      -240.0
+    ],
+    "has_quad": false,
+    "ref_bus": 4,
+    "baseMVA": 100.0,
+    "n_var": 16,
+    "n_constr": 24,
+    "max_power_balance_MW": 2.842170943040401e-14,
+    "max_flow_equation_MW": 5.613287612504791e-13,
+    "max_thermal_violation_MW": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "cost_recomputed": 17479.89692538102,
+    "validation_passed": true
+  },
+  "validation": {
+    "passed": true
+  }
+}

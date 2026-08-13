@@ -1,0 +1,13 @@
+{
+  "case": "case253_t1s3_real_time_network_03r_3_scenario_2_scacopf",
+  "validation": "python_result",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status": "OPTIMAL",
+    "obj": 124633.67999999995,
+    "mip_gap": 0.0,
+    "load_shed_MW": 0.0,
+    "flow_slack_pu": 0.0
+  }
+}

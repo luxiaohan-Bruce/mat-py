@@ -21,53 +21,53 @@
 - case019_activ200_nk_int: PASS
 - case020_pserc240_nk_int: PASS
 - case021_ieee300_nk_int: PASS
-- case022_goc500_nk_int: PASS
-- case023_sdet588_nk_int: PASS
-- case024_goc793_nk_int: PASS
-- case025_pegase1354_nk_int: PASS
-- case026_snem1803_nk_int: PASS
-- case027_rte1888_nk_int: PASS
-- case028_rte1951_nk_int: PASS
-- case029_goc2000_nk_int: PASS
-- case030_goc2312_nk_int: PASS
-- case031_2383wpk_nk_int: PASS
-- case032_2736spk_nk_int: PASS
-- case033_2737sopk_nk_int: PASS
-- case034_goc2742_nk_int: PASS
-- case035_2746wopk_nk_int: PASS
-- case036_2746wpk_nk_int: PASS
-- case037_rte2848_nk_int: PASS
-- case038_sdet2853_nk_int: PASS
-- case039_rte2868_nk_int: PASS
-- case040_pegase2869_nk_int: PASS
-- case041_3012wpk_nk_int: PASS
-- case042_goc3022_nk_int: PASS
-- case043_3120spk_nk_int: PASS
-- case044_3375wpk_nk_int: PASS
-- case045_goc3970_nk_int: PASS
-- case046_goc4020_nk_int: PASS
-- case047_goc4601_nk_int: PASS
-- case048_goc4619_nk_int: PASS
-- case049_sdet4661_nk_int: PASS
-- case050_goc4837_nk_int: PASS
-- case051_goc4917_nk_int: PASS
-- case052_epigrids5658_nk_int: PASS
-- case053_rte6468_nk_int: PASS
-- case054_rte6470_nk_int: PASS
-- case055_rte6495_nk_int: PASS
-- case056_rte6515_nk_int: PASS
-- case057_epigrids7336_nk_int: PASS
-- case058_pegase8387_nk_int: PASS
-- case059_pegase9241_nk_int: PASS
-- case060_goc9591_nk_int: PASS
-- case061_goc10000_nk_int: PASS
-- case062_epigrids10192_nk_int: PASS
-- case063_goc10480_nk_int: PASS
-- case064_pegase13659_nk_int: PASS
-- case065_goc19402_nk_int: PASS
-- case066_epigrids20758_nk_int: PASS
-- case067_goc24464_nk_int: PASS
-- case068_goc30000_nk_int: PASS
-- case069_epigrids78484_nk_int: PASS
+- case022_goc500_nk_int: SKIP (data-only; not solved)
+- case023_sdet588_nk_int: SKIP (data-only; not solved)
+- case024_goc793_nk_int: SKIP (data-only; not solved)
+- case025_pegase1354_nk_int: SKIP (data-only; not solved)
+- case026_snem1803_nk_int: SKIP (data-only; not solved)
+- case027_rte1888_nk_int: SKIP (data-only; not solved)
+- case028_rte1951_nk_int: SKIP (data-only; not solved)
+- case029_goc2000_nk_int: SKIP (data-only; not solved)
+- case030_goc2312_nk_int: SKIP (data-only; not solved)
+- case031_2383wpk_nk_int: SKIP (data-only; not solved)
+- case032_2736spk_nk_int: SKIP (data-only; not solved)
+- case033_2737sopk_nk_int: SKIP (data-only; not solved)
+- case034_goc2742_nk_int: SKIP (data-only; not solved)
+- case035_2746wopk_nk_int: SKIP (data-only; not solved)
+- case036_2746wpk_nk_int: SKIP (data-only; not solved)
+- case037_rte2848_nk_int: SKIP (data-only; not solved)
+- case038_sdet2853_nk_int: SKIP (data-only; not solved)
+- case039_rte2868_nk_int: SKIP (data-only; not solved)
+- case040_pegase2869_nk_int: SKIP (data-only; not solved)
+- case041_3012wpk_nk_int: SKIP (data-only; not solved)
+- case042_goc3022_nk_int: SKIP (data-only; not solved)
+- case043_3120spk_nk_int: SKIP (data-only; not solved)
+- case044_3375wpk_nk_int: SKIP (data-only; not solved)
+- case045_goc3970_nk_int: SKIP (data-only; not solved)
+- case046_goc4020_nk_int: SKIP (data-only; not solved)
+- case047_goc4601_nk_int: SKIP (data-only; not solved)
+- case048_goc4619_nk_int: SKIP (data-only; not solved)
+- case049_sdet4661_nk_int: SKIP (data-only; not solved)
+- case050_goc4837_nk_int: SKIP (data-only; not solved)
+- case051_goc4917_nk_int: SKIP (data-only; not solved)
+- case052_epigrids5658_nk_int: SKIP (data-only; not solved)
+- case053_rte6468_nk_int: SKIP (data-only; not solved)
+- case054_rte6470_nk_int: SKIP (data-only; not solved)
+- case055_rte6495_nk_int: SKIP (data-only; not solved)
+- case056_rte6515_nk_int: SKIP (data-only; not solved)
+- case057_epigrids7336_nk_int: SKIP (data-only; not solved)
+- case058_pegase8387_nk_int: SKIP (data-only; not solved)
+- case059_pegase9241_nk_int: SKIP (data-only; not solved)
+- case060_goc9591_nk_int: SKIP (data-only; not solved)
+- case061_goc10000_nk_int: SKIP (data-only; not solved)
+- case062_epigrids10192_nk_int: SKIP (data-only; not solved)
+- case063_goc10480_nk_int: SKIP (data-only; not solved)
+- case064_pegase13659_nk_int: SKIP (data-only; not solved)
+- case065_goc19402_nk_int: SKIP (data-only; not solved)
+- case066_epigrids20758_nk_int: SKIP (data-only; not solved)
+- case067_goc24464_nk_int: SKIP (data-only; not solved)
+- case068_goc30000_nk_int: SKIP (data-only; not solved)
+- case069_epigrids78484_nk_int: SKIP (data-only; not solved)
 
-**69/69 PASS**
+**21 个 full/relaxed 案例 PASS；48 个大网仅数据 SKIP**

@@ -134,7 +134,7 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 0,
+    "n_switchable": 204,
     "max_open": null,
     "k": null,
     "n_bin": 303,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build LinDistFlow-DNR cases from SimBench MV/LV switchable feeders."""
+"""Build experimental active-power transport cases from SimBench feeders."""
 
 from __future__ import annotations
 
@@ -9,7 +9,8 @@ import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-WS = ROOT.parent
+DOPF_ROOT = ROOT.parent / "DISTRIBUTION-OPF"
+WS = ROOT.parents[2]
 SB = WS / "数据集" / "SimBench"
 
 # small/medium feeders fully modeled; complete_data used only for profiles
@@ -160,7 +161,8 @@ def write_text(path: Path, text: str) -> None:
 
 
 def main() -> None:
-    manifest = []
+    dnr_manifest = []
+    dopf_manifest = []
     n = 0
     for folder, slug in SOURCES:
         net = build_network(folder)
@@ -172,7 +174,8 @@ def main() -> None:
         ]:
             n += 1
             case = f"case{n:02d}_{slug}_{mode}"
-            case_dir = ROOT / case
+            package_root = DOPF_ROOT if mode == "dopf" else ROOT
+            case_dir = package_root / case
             (case_dir / "data").mkdir(parents=True, exist_ok=True)
             (case_dir / "results").mkdir(exist_ok=True)
             storage = []
@@ -198,7 +201,8 @@ def main() -> None:
             config = {
                 "schema_version": 1,
                 "case": case,
-                "problem": f"lindistflow_{mode}",
+                "problem": f"active_power_transport_{mode}",
+                "mode": mode,
                 "source": {"dataset": "SimBench", "folder": folder},
                 "T": T,
                 "mip_gap": 0.01,
@@ -206,13 +210,58 @@ def main() -> None:
                 "seed": 1,
                 "threads": 0,
                 "solve_tier": "full",
+                "maturity": "experimental",
+                "validation_scope": "structural_only",
+                "physics_validated": False,
                 "max_switch_actions": 5,
                 "construction": [
-                    "LinDistFlow radial DNR / multiperiod DOPF (linear approx).",
+                    "Active-power transport proxy for exploratory distribution studies.",
                     "Switchable = Switch.csv edges (+ subset of lines if needed).",
                     "ESS only in dnr_ess variants.",
                 ],
+                "known_limitations": [
+                    "No voltage-magnitude variables or voltage-drop equations.",
+                    "No reactive-power balance or reactive-device coupling.",
+                    "No radiality or energized-connectivity constraints.",
+                ],
+                "base_problem": "distribution_opf" if mode == "dopf" else "dnr",
+                "variant": {
+                    "power_flow": "active_power_transport",
+                    "reactive_power": "not_modeled",
+                    "voltage_magnitude": "not_modeled",
+                    "radiality": "not_enforced",
+                    "security": "none",
+                    "uncertainty": "deterministic",
+                    "horizon": "single_period" if T == 1 else "multi_period",
+                    "recourse": "none",
+                },
+                "source_network": f"simbench:{folder}",
+                "features": {
+                    "n_bus": len(payload["buses"]),
+                    "n_branch": len(payload["branches"]),
+                    "n_gen": 0,
+                    "n_storage": len(storage),
+                    "n_candidate_branch": 0,
+                    "T": T,
+                    "n_contingency": 0,
+                    "n_scenario": 1,
+                    "n_switchable": sum(bool(br.get("switchable")) for br in payload["branches"]),
+                    "max_open": None,
+                    "k": None,
+                    "n_bin": len(payload["branches"]),
+                    "math_class": "milp",
+                    "solver_family": "topology_mip",
+                },
             }
+            if mode == "dopf":
+                config["variant"].update(
+                    {
+                        "formulation": "multiperiod_active_power_transport_proxy",
+                        "network_constraints": "active_power_nodal_balance_and_branch_limits",
+                    }
+                )
+            if mode == "dnr_ess":
+                config["variant"]["storage"] = "yes"
             (case_dir / "data" / "config.json").write_text(
                 json.dumps(config, indent=2) + "\n", encoding="utf-8"
             )
@@ -230,15 +279,25 @@ if __name__=='__main__':
 """,
             )
             write_text(
-                case_dir / "matlab" / "run_case.m",
-                """function run_case()
-here=fileparts(mfilename('fullpath')); case_dir=fileparts(here);
-addpath(fullfile(fileparts(case_dir),'common')); run_case_mat(case_dir);
-end
-""",
+                case_dir / "README.md",
+                f"# {case}\n\nSimBench `{folder}` active-power transport `{mode}`, T={T}. "
+                "**Experimental / structural-only; not physics validated.**\n\n"
+                "No voltage/drop equations, reactive-power balance, or radiality/connectivity constraints are enforced.\n",
             )
-            write_text(case_dir / "README.md", f"# {case}\n\nSimBench `{folder}` LinDistFlow `{mode}` T={T}\n")
-            manifest.append({"case": case, "folder": folder, "mode": mode, "T": T, "solve_tier": "full"})
+            item = {
+                "case": case,
+                "folder": folder,
+                "mode": mode,
+                "T": T,
+                "solve_tier": "full",
+                "maturity": "experimental",
+                "validation_scope": "structural_only",
+                "physics_validated": False,
+                "base_problem": config["base_problem"],
+                "problem": config["problem"],
+                "variant": config["variant"],
+            }
+            (dopf_manifest if mode == "dopf" else dnr_manifest).append(item)
 
     # complete_data profiles note case (data-only)
     n += 1
@@ -258,68 +317,107 @@ end
             {
                 "case": case,
                 "problem": "meta",
+                "mode": "meta",
                 "solve_tier": "skip",
+                "maturity": "data_only",
+                "validation_scope": "not_solved",
+                "physics_validated": False,
                 "source": {"dataset": "SimBench", "folder": "1-complete_data-mixed-all-2-sw"},
+                "base_problem": "dnr",
+                "variant": {"power_flow": "none"},
+                "source_network": "simbench:1-complete_data-mixed-all-2-sw",
+                "features": {
+                    "n_bus": 0,
+                    "n_branch": 0,
+                    "n_gen": 0,
+                    "n_storage": 0,
+                    "n_candidate_branch": 0,
+                    "T": 1,
+                    "n_contingency": 0,
+                    "n_scenario": 1,
+                    "n_switchable": 0,
+                    "max_open": None,
+                    "k": None,
+                    "n_bin": 0,
+                    "math_class": "none",
+                    "solver_family": "none",
+                },
             },
             indent=2,
         )
         + "\n"
     )
-    write_text(case_dir / "README.md", "# complete mixed meta\n\nProfile source only (skip solve).\n")
-    manifest.append({"case": case, "folder": "1-complete_data-mixed-all-2-sw", "mode": "meta", "solve_tier": "skip"})
-
-    (ROOT / "MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    cases = "\n".join(f"    '{m['case']}'" for m in manifest if m["solve_tier"] != "skip")
     write_text(
-        ROOT / "run_all_matlab.m",
-        f"""function run_all_matlab()
-here=fileparts(mfilename('fullpath')); addpath(fullfile(here,'common'));
-cases={{
-{cases}
-}};
-for i=1:numel(cases), try, run_case_mat(fullfile(here,cases{{i}})); catch ME, fprintf('[%s] ERROR %s\\n',cases{{i}},ME.message); end; end
-end
-""",
+        case_dir / "README.md",
+        "# complete mixed meta\n\nProfile source only (`solve_tier=skip`). **Data-only; no model or physics-validation claim.**\n",
     )
+    dnr_manifest.append(
+        {
+            "case": case,
+            "folder": "1-complete_data-mixed-all-2-sw",
+            "mode": "meta",
+            "solve_tier": "skip",
+            "maturity": "data_only",
+            "validation_scope": "not_solved",
+            "physics_validated": False,
+            "base_problem": "dnr",
+            "problem": "meta",
+            "variant": {"power_flow": "none"},
+        }
+    )
+
+    manifest_path = ROOT / "MANIFEST.json"
+    existing = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
+    replacements = {item["case"]: item for item in dnr_manifest}
+    merged = [replacements.pop(item["case"], item) for item in existing]
+    merged.extend(replacements.values())
+    manifest_path.write_text(json.dumps(merged, indent=2) + "\n")
+    DOPF_ROOT.mkdir(parents=True, exist_ok=True)
+    (DOPF_ROOT / "MANIFEST.json").write_text(json.dumps(dopf_manifest, indent=2) + "\n")
     write_text(
         ROOT / "run_all_python.py",
         """#!/usr/bin/env python3
-import json,sys,traceback
+import json, sys, traceback
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT/'common'))
-from dnr_model_py import run_case
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "common"))
+from dnr_model_py import run_case as run_dnr
+from smartds_model_py import run_case as run_smartds
 def main():
-    man=json.loads((ROOT/'MANIFEST.json').read_text()); fail=0
+    man = json.loads((ROOT / "MANIFEST.json").read_text()); fail = 0
     for item in man:
-        if item.get('solve_tier')=='skip':
+        if item.get("solve_tier") == "skip":
             print(f"[{item['case']}] SKIP"); continue
         try:
-            r=run_case(ROOT/item['case'],quiet=True)['dnr']
+            case_dir = ROOT / item["case"]
+            cfg = json.loads((case_dir / "data" / "config.json").read_text())
+            if "smartds" in str(cfg.get("problem") or ""):
+                r = run_smartds(case_dir, quiet=True)["smartds"]
+            else:
+                r = run_dnr(case_dir, quiet=True)["dnr"]
             print(f"[{item['case']}] status={r.get('status')} obj={r.get('obj')} t={r.get('runtime',0):.2f}s", flush=True)
-            if r.get('obj') is None: fail+=1
+            if r.get("obj") is None: fail += 1
         except Exception as e:
-            fail+=1; print(f"[{item['case']}] ERROR {e}"); traceback.print_exc()
-    print(f'done; failures={fail}'); return 1 if fail else 0
-if __name__=='__main__':
+            fail += 1; print(f"[{item['case']}] ERROR {e}"); traceback.print_exc()
+    print(f"done; failures={fail}"); return 1 if fail else 0
+if __name__ == "__main__":
     raise SystemExit(main())
 """,
     )
     write_text(
         ROOT / "README.md",
-        """# SimBench LinDistFlow DNR / DOPF / DNR+ESS
+        """# Experimental active-power transport DNR / DNR+ESS
 
-Linear distribution network reconfiguration (not exact AC). Built from SimBench MV/LV switchable feeders; complete mixed dataset kept as meta/profile source.
+Structural-only examples built from SimBench MV/LV switchable feeders. They omit voltage/drop equations, reactive-power balance, and radiality/connectivity constraints, and are not physics-validated DNR coverage. The complete mixed dataset is kept as a data/profile source.
 
 ```bash
 python3 common/build_all_from_simbench.py
 python3 run_all_python.py
-matlab -batch "run_all_matlab"
 python3 common/compare_results.py
 ```
 """,
     )
-    print(f"generated {len(manifest)} dnr cases")
+    print(f"generated {len(dnr_manifest)} dnr cases and {len(dopf_manifest)} distribution-opf cases")
 
 
 if __name__ == "__main__":

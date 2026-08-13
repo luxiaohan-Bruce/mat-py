@@ -1,0 +1,35 @@
+[
+  {
+    "case": "case001_lmbd3_acopf",
+    "status": "OPTIMAL",
+    "objective": 5812.642974239455,
+    "objective_bound": 5812.642738534403,
+    "optimality_gap": 4.05504092856236e-08,
+    "runtime_seconds": 0.1103200912475586,
+    "validation_passed": true,
+    "max_p_balance_MW": 3.7478287140402244e-10,
+    "max_q_balance_MVAr": 1.2356338174868142e-10
+  },
+  {
+    "case": "case002_pjm5_acopf",
+    "status": "OPTIMAL",
+    "objective": 17551.890920867594,
+    "objective_bound": 17551.888564486566,
+    "optimality_gap": 1.3425226027468643e-07,
+    "runtime_seconds": 99.9125349521637,
+    "validation_passed": true,
+    "max_p_balance_MW": 1.8758328224066645e-12,
+    "max_q_balance_MVAr": 3.893774191965349e-12
+  },
+  {
+    "case": "case003_ieee14_acopf",
+    "status": "OPTIMAL",
+    "objective": 2178.080428181705,
+    "objective_bound": 2175.903967395231,
+    "optimality_gap": 0.0009992563903119026,
+    "runtime_seconds": 57.390506982803345,
+    "validation_passed": true,
+    "max_p_balance_MW": 3.0882176815794082e-09,
+    "max_q_balance_MVAr": 2.8224702575130323e-09
+  }
+]

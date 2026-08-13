@@ -1,9 +1,9 @@
 # VERIFY_SUMMARY — power_restoration_cases
 
 - cases: **13**
-- PASS: **13**
+- solved PASS: **9**
 - FAIL: **0**
-- skip/data-only tier counted pass: **4**
+- skip/data-only: **4**（不计作求解 PASS）
 
 | case | tier | result | obj_py | obj_mat |
 |------|------|--------|--------|---------|
@@ -14,10 +14,9 @@
 | case005_case5_restoration_total_dmg_restore | full | PASS | 21020.0 | 21020 |
 | case006_activsg200_scenario1_restore | relaxed | PASS | 46869.9 | 46869.90000000001 |
 | case007_activsg200_scenario2_restore | relaxed | PASS | 46832.950000000004 | 46832.95 |
-| case008_activsg200_scenario3_restore | skip | PASS | None | None |
-| case009_activsg200_scenario4_restore | skip | PASS | None | None |
+| case008_activsg200_scenario3_restore | skip | SKIP | None | None |
+| case009_activsg200_scenario4_restore | skip | SKIP | None | None |
 | case010_activsg200_scenario5_restore | relaxed | PASS | 46869.9 | 46869.90000000001 |
 | case011_activsg200_scenario6_restore | relaxed | PASS | 46832.950000000004 | 46832.95 |
-| case012_activsg200_scenario7_restore | skip | PASS | None | None |
-| case013_activsg200_scenario8_restore | skip | PASS | None | None |
-
+| case012_activsg200_scenario7_restore | skip | SKIP | None | None |
+| case013_activsg200_scenario8_restore | skip | SKIP | None | None |

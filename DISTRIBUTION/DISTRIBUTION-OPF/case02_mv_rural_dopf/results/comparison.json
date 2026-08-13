@@ -1,0 +1,11 @@
+{
+  "case": "case02_mv_rural_dopf",
+  "solver_run_ok": true,
+  "solver_status": "OPTIMAL",
+  "validation_status": "structural_only",
+  "physics_validated": false,
+  "notes": [
+    "Stored solver completion is not a physics-validation PASS.",
+    "The active-power transport proxy omits voltage, reactive-power, radiality, and energized-connectivity constraints."
+  ]
+}

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "case": "case03_mv_rural_dnr_ess",
   "solver": "python-gurobipy",
-  "problem": "lindistflow_dnr_ess",
+  "problem": "active_power_transport_dnr_ess",
   "dnr": {
     "status": "OPTIMAL",
     "obj": 160223.12288485293,

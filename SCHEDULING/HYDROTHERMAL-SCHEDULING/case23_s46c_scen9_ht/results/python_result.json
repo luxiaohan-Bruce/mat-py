@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case": "case23_s46c_scen9_ht",
+  "solver": "python-gurobi",
+  "problem": "ht",
+  "base_problem": "hydrothermal_scheduling",
+  "ht": {
+    "status": "INTERRUPTED",
+    "obj": -409323511.41081095,
+    "runtime": 305.87819600105286,
+    "mip_gap": 0.00714166526168076,
+    "n_scenarios": 9,
+    "time_periods": 48,
+    "networked": true,
+    "use_commitment": true,
+    "max_power_balance_MW": 9.987672910938272E-10,
+    "max_water_balance_hm3": 4.2518877307884395E-9,
+    "validation_passed": true,
+    "thermal_on_hours": 205,
+    "total_deficit_MW": 7.855298610733822E-9,
+    "note": "Feasible incumbent retained after an operator interrupt; residual validation passed, optimality not claimed."
+  },
+  "validation": {
+    "passed": true
+  }
+}

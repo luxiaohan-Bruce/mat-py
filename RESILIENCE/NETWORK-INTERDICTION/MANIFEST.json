@@ -35,7 +35,7 @@
       "uncertainty": "worst_case_attack",
       "horizon": "single_period",
       "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
+      "attack_scope": "gens"
     },
     "path": "case002_lmbd3_gen_nk_int",
     "attack_target": "gens"
@@ -76,7 +76,7 @@
       "uncertainty": "worst_case_attack",
       "horizon": "single_period",
       "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
+      "attack_scope": "gens"
     },
     "path": "case004_pjm5_gen_nk_int",
     "attack_target": "gens"
@@ -117,7 +117,7 @@
       "uncertainty": "worst_case_attack",
       "horizon": "single_period",
       "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
+      "attack_scope": "gens"
     },
     "path": "case006_ieee14_gen_nk_int",
     "attack_target": "gens"

@@ -1,5 +1,11 @@
 {
   "case": "case01_gso_rural_dnr",
-  "ok": true,
-  "issues": []
+  "solver_run_ok": true,
+  "solver_status": "OPTIMAL",
+  "validation_status": "structural_only",
+  "physics_validated": false,
+  "notes": [
+    "Stored solver completion is not a physics-validation PASS.",
+    "Voltage, reactive-power, radiality, and energized-connectivity constraints are not modeled."
+  ]
 }

@@ -1,10 +1,10 @@
 # 电力系统难优化算例（Python + Gurobi）
 
-基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、统一 `solve.py` 入口、`evaluate()` 验收、规模分级（`full` / `relaxed` / `skip`）。
+基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、统一 `solve.py` 入口、`evaluate()` 验收、五档规模分级（`full` / `relaxed` / `large` / `xlarge` / `skip`）。
 
-目录按 **基础问题分类** 组织（PLAM：一级 = 优化在决定什么；AC/DC、N-1、多时段等进入各包 `config.variant`，不是一级目录）。
+一级目录是便于浏览的 **`navigation_domain`**，不是互斥的数学基础问题分类。规范分类以每个案例 `config.json` 的 `base_problem` 为准；AC/DC、N-1、多时段、随机性、追补决策等属于 `variant` 轴。
 
-机器可读索引：[`CATALOG.json`](CATALOG.json)（1156 例特征）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)。
+机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1162 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
 
 ---
 
@@ -13,7 +13,7 @@
 ```text
 github_cases/
   OTS/                 # 输电拓扑切换
-  OPF/                 # 最优潮流（线性化安全约束）
+  OPF/                 # 最优潮流（DC、精确 AC、线性化安全约束）
   UC/                  # 机组组合族
   DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting
   DISPATCH/            # 经济调度
@@ -32,19 +32,22 @@ github_cases/
   requirements.txt
 ```
 
-| 分类目录 | 子包 | 基础问题 | 案例数 | 数据来源 |
-|----------|------|----------|------:|----------|
+| `navigation_domain` | 子包 | `base_problem` / 含义 | 案例数 | 数据来源 |
+|---------------------|------|------------------------|------:|----------|
 | [`OTS/`](OTS/) | [`DC-OTS/`](OTS/DC-OTS/) | OTS（直流） | 66 | [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) |
-| | [`SC-OTS/`](OTS/SC-OTS/) | OTS + N-1 预防性 | 66 | PGLib-OPF |
-| | [`SC-AC-OTS/`](OTS/SC-AC-OTS/) | 线性化 SC-OTS（GO C1） | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
-| [`OPF/`](OPF/) | [`SC-AC-OPF/`](OPF/SC-AC-OPF/) | 线性化 SC-OPF（GO C1） | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
+| | [`SC-OTS/`](OTS/SC-OTS/) | `ots`：完整或抽样 N-1、共享预防性拓扑、事故后有界再调度 | 66 | PGLib-OPF |
+| | [`LINEARIZED-SC-OTS/`](OTS/LINEARIZED-SC-OTS/) | `ots`：GO C1 线性化、抽样 N-1 | 158 | [GO Competition C1](https://gocompetition.energy.gov/) |
+| [`OPF/`](OPF/) | [`DC-OPF/`](OPF/DC-OPF/) | `opf`：网络约束 DC-OPF | 71 | PGLib-OPF |
+| | [`AC-OPF/`](OPF/AC-OPF/) | `opf`：精确非凸极坐标 AC-OPF pilot | 3 | PGLib-OPF |
+| | [`LINEARIZED-SC-OPF/`](OPF/LINEARIZED-SC-OPF/) | `opf`：GO C1 线性化、抽样 N-1 | 158 | GO Competition C1 |
 | [`UC/`](UC/) | [`SYSTEM-UC/`](UC/SYSTEM-UC/) | 系统级 UC（无网架） | 56 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) |
 | | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 66 | PGLib-OPF 合成时序 |
 | | [`RTS-SCUC/`](UC/RTS-SCUC/) | RTS 网络 SCUC+储能+RE | 12 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) |
-| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | 配网重构 LinDistFlow | 8 | [SimBench](https://simbench.de/) + [SMART-DS](https://data.openei.org/submissions/2981) |
-| | [`VOLT-VAR/`](DISTRIBUTION/VOLT-VAR/) | Volt/VAR | 1 | SMART-DS |
-| | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | DER hosting capacity | 1 | SMART-DS |
-| [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | 网络化 DC 经济调度 | 71 | PGLib-OPF |
+| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | `dnr`：配网重构（实验模型） | 6 | [SimBench](https://simbench.de/) + [SMART-DS](https://data.openei.org/submissions/2981) |
+| | [`DISTRIBUTION-OPF/`](DISTRIBUTION/DISTRIBUTION-OPF/) | `distribution_opf`（实验模型） | 2 | SimBench |
+| | [`VOLT-VAR/`](DISTRIBUTION/VOLT-VAR/) | `volt_var`（实验模型） | 1 | SMART-DS |
+| | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | `der_hosting`（实验模型） | 1 | SMART-DS |
+| [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | `economic_dispatch`：无网架铜板 ED | 3 | PGLib-OPF |
 | [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 66 | PGLib-OPF |
 | | [`STATE-ESTIMATION/`](MONITORING/STATE-ESTIMATION/) | DC WLS / L1 状态估计 | 12 | PGLib + 合成测量 |
 | [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 68 | PowerModels TNEP + PGLib |
@@ -61,14 +64,14 @@ github_cases/
 | | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 69 | PGLib-OPF |
 | [`MULTI-ENERGY/`](MULTI-ENERGY/) | [`INTEGRATED-ELECTRIC-GAS/`](MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/) | 电–气综合优化 | 15 | Travis 150 + GasLib |
 
-**合计约 1150+ 案例**（含子包内 `skip` 数据档）。
+**合计 1162 个案例**（含子包内 `skip` 数据档）。
 
 > **说明**
 > - 子包目录名：**大写 + 连字符**。
-> - GO C1 已按基础问题拆开：`OPF/SC-AC-OPF` 与 `OTS/SC-AC-OTS`。
-> - SMART-DS 三个基础问题已拆开：DNR 并入 `DISTRIBUTION/DNR`，Volt-VAR / DER hosting 独立成包。
+> - GO C1 已按基础问题拆开并如实命名为 `OPF/LINEARIZED-SC-OPF` 与 `OTS/LINEARIZED-SC-OTS`；当前事故集是抽样子集，不代表完整 N-1。
+> - 原“网络化经济调度”71 例实际包含节点平衡、相角、支路潮流和热稳约束，现归入 `OPF/DC-OPF`；`DISPATCH/ECONOMIC-DISPATCH` 新增 3 个真正的铜板 ED 基准。
+> - 配网已拆分为 DNR 6 例、Distribution OPF 2 例、Volt-VAR 1 例、DER hosting 1 例。其中 9 个可执行案例是 **experimental 的 active-power transport 近似**，另有 1 个 DNR 数据汇总案为 `data_only`；均不能视为已通过 AC、三相或 LinDistFlow 物理验证。
 > - 最大供电（MLD）已从 `DISPATCH/` 挪到 `RESILIENCE/`（损坏网络上的供电，不是经济调度）。
-> - `OPF/SC-AC-OPF`、`OTS/SC-AC-OTS`、配网 LinDistFlow 均为**线性化近似**，**不是**精确非凸 AC / 三相潮流。
 > - 每个案例目录都有 `solve.py`；`config.json` 含统一 `base_problem` / `variant` / `source_network` / `features`。
 
 ---
@@ -95,8 +98,10 @@ pip install -r requirements.txt
 # —— OTS / OPF ——
 python3 OTS/DC-OTS/run_all_python.py
 python3 OTS/SC-OTS/run_all_python.py
-python3 OTS/SC-AC-OTS/run_all_python.py --tier full,relaxed
-python3 OPF/SC-AC-OPF/run_all_python.py --tier full,relaxed
+python3 OTS/LINEARIZED-SC-OTS/run_all_python.py --tier relaxed
+python3 OPF/DC-OPF/run_all_python.py --full-only
+python3 OPF/AC-OPF/run_all_python.py
+python3 OPF/LINEARIZED-SC-OPF/run_all_python.py --tier relaxed
 
 # —— UC ——
 python3 UC/SYSTEM-UC/run_all_python.py
@@ -105,11 +110,12 @@ python3 UC/RTS-SCUC/run_all_python.py
 
 # —— 配网 ——
 python3 DISTRIBUTION/DNR/run_all_python.py
+python3 DISTRIBUTION/DISTRIBUTION-OPF/run_all_python.py
 python3 DISTRIBUTION/VOLT-VAR/run_all_python.py
 python3 DISTRIBUTION/DER-HOSTING/run_all_python.py
 
 # —— 调度 / 监测 ——
-python3 DISPATCH/ECONOMIC-DISPATCH/run_all_python.py --full-only
+python3 DISPATCH/ECONOMIC-DISPATCH/run_all_python.py
 python3 MONITORING/PMU-PLACEMENT/run_all_python.py
 python3 MONITORING/STATE-ESTIMATION/run_all_python.py
 
@@ -139,7 +145,8 @@ python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/run_all_python.py --full-only
 python3 solve.py OTS/DC-OTS/case01_pjm5_dcots
 python3 OTS/DC-OTS/case01_pjm5_dcots/solve.py
 
-python3 solve.py DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_dc_ed
+python3 solve.py OPF/DC-OPF/case001_lmbd3_dc_ed
+python3 solve.py DISPATCH/ECONOMIC-DISPATCH/case001_lmbd3_copperplate_ed
 python3 solve.py UC/SCUC/case01_ieee39_scuc
 python3 solve.py RESILIENCE/MAXIMUM-LOAD-DELIVERY/case001_case3_mld_mld
 python3 solve.py DISTRIBUTION/VOLT-VAR/case02_gso_rural_voltvar
@@ -154,14 +161,14 @@ python3 evaluate.py --network pglib_opf_case14_ieee
 python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 ```
 
-结果写入对应案例 `results/`。大网 `solve_tier=skip` 仅建议作数据/建模参考；请优先从 `full` / `relaxed` 开始。
+结果写入对应案例 `results/`。建议优先从 `full` / `relaxed` 开始；`large` / `xlarge` 需要更长时限，`skip` 主要用于数据与建模检查。
 
 ---
 
 ## 单案例结构
 
 ```text
-<CATEGORY>/<PACK>/
+<NAVIGATION_DOMAIN>/<PACK>/
   common/              # 模型与共享工具
   run_all_python.py
   MANIFEST.json        # 若有
@@ -174,34 +181,50 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 ```
 
 `config.features` 含 `n_bus` / `n_branch` / `n_gen` / `T` / `n_contingency` / `n_bin`。  
-`config.source_network` 把同一张物理网（如 `pglib_opf_case14_ieee`）上的 ED / OTS / UC / PMU / TEP / 拦截等串起来。
+`config.source_network` 把同一张物理网（如 `pglib_opf_case14_ieee`）上的 OPF / ED / OTS / UC / PMU / TEP / 拦截等串起来。目录名提供浏览入口，不代替 `base_problem` 与 `variant` 的机器可读分类。
 
 ---
 
 ## 规模分级
 
-| `solve_tier` | 含义 |
-|--------------|------|
-| `full` / `relaxed` | 中小规模，适合完整 MIP 与核对 |
-| `skip` | 大规模（数据齐全；全量 MIP 可能极慢） |
+| `solve_tier` | 当前案例数 | 含义 |
+|--------------|--------------:|------|
+| `full` | 393 | 默认完整求解与验收 |
+| `relaxed` | 182 | 可求解，通常需更宽的时限或 gap |
+| `large` | 20 | 大规模档 |
+| `xlarge` | 24 | 超大规模档 |
+| `skip` | 543 | 数据与建模参考，不承诺在常规时限内求优 |
+
+机器规则见 [`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)；修改目录、`config.json` 或分类后，运行 `python3 framework/validate_taxonomy.py` 检查路径、基础问题、变体轴、规模档与特征字段的一致性。
 
 ---
 
-## 分类与基础问题对照
+## 导航域、基础问题与变体轴
 
-| 分类 | 对应基础问题（PLAM） | 变体轴示例 |
-|------|----------------------|------------|
-| OTS | Optimal Transmission Switching | security=none / n-1 |
-| OPF | Optimal Power Flow（线性化 SC） | security=n-1；**非精确 AC** |
-| UC | Unit Commitment | copperplate / network；storage；n-1 |
-| DISTRIBUTION | DNR；Volt/VAR；DER Hosting | power_flow=lindistflow |
-| DISPATCH | Economic Dispatch | power_flow=dc |
-| MONITORING | PMU Placement；State Estimation | WLS / L1 |
-| PLANNING | Transmission Expansion；Capacity Expansion | synthetic candidates / GenX |
-| SCHEDULING | Hydrothermal；Maintenance | multi_period；stochastic scenarios |
-| MARKET | Market Clearing；Strategic Bidding | welfare LP；bid ladder |
-| RESILIENCE | MLD；Restoration；Islanding；OPS；Interdiction | 损坏网络；时序恢复；N-k |
-| MULTI-ENERGY | Integrated Electricity–Gas | Weymouth PWL；coupling |
+| `navigation_domain` | 当前 `base_problem` | 变体轴示例 |
+|---------------------|--------------------------|------------|
+| OTS | `ots` | `power_flow=dc/dc_linearized`；`security=none/n-1/sampled_n-1` |
+| OPF | `opf` | `power_flow=dc/ac_exact/dc_linearized`；`security=none/sampled_n-1` |
+| UC | `uc` | copperplate / network；storage；security |
+| DISTRIBUTION | `dnr`、`distribution_opf`、`volt_var`、`der_hosting` | 当前 `power_flow=active_power_transport`；顶层可信度字段 `maturity=experimental/data_only` |
+| DISPATCH | `economic_dispatch` | `power_flow=copperplate`；`network_constraints=none` |
+| MONITORING | `pmu_placement`、`state_estimation` | WLS / L1 |
+| PLANNING | `transmission_expansion`、`resource_capacity_expansion` | candidate type；representative periods |
+| SCHEDULING | `hydrothermal_scheduling`、`maintenance_scheduling` | multi-period；scenario structure |
+| MARKET | `market_clearing`、`strategic_bidding` | welfare LP；bid ladder |
+| RESILIENCE | `maximum_load_delivery`、`power_restoration`、`distribution_restoration`、`controlled_islanding`、`optimal_power_shutoff`、`network_interdiction` | damaged network；temporal restoration；N-k |
+| MULTI-ENERGY | `integrated_electric_gas` | gas relaxation；coupling |
+
+### 当前缺口 / coverage roadmap
+
+优先补齐下列基础问题与可验收物理模型：
+
+1. 扩展精确非凸 **AC-OPF** 覆盖；当前已有 3/5/14-bus 三个全局求解 pilot，还缺中大规模与 AC 安全约束变体。
+2. 经 AC/三相潮流交叉验证的非平衡配网 OPF、DNR、Volt-VAR 与 DER hosting；当前配网包仅作实验性 active-power transport 基线。
+3. **Demand Response**、**Storage Scheduling** 与 **Distribution Expansion Planning**。
+4. **Microgrid** 与 **Virtual Power Plant (VPP)** 的运行/聚合基准。
+
+`stochastic`、`robust`、`reserve` 是叠加在 ED / OPF / UC / scheduling / planning 等基础问题上的变体轴，不单独新建一级分类。
 
 ---
 
@@ -217,8 +240,10 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 ### OTS / OPF
 
 - **DC-OTS**：费用最小 + 可切换线路 + `max_open`
-- **SC-OTS**：基态与 N-1 共享拓扑；事故后有限再调度
-- **SC-AC-OPF / SC-AC-OTS**：GO C1 线性化安全约束，按基础问题分目录；勿与精确 AC 等同
+- **SC-OTS**：`topology_control=preventive_shared`，基态与配置事故共享拓扑；`generation_recourse=corrective_bounded`，事故后允许有界再调度。仅 case02、case04–06 覆盖全部可信非孤岛单线路事故，其余按配置标为 `sampled_n-1` 或 `none`
+- **DC-OPF**：节点平衡 + 相角/支路潮流 + 热稳约束，无线路开断
+- **AC-OPF**：精确极坐标 P/Q 平衡、电压/相角、tap/移相与支路两端 MVA 限制；Gurobi `NonConvex=2` 全局求解 pilot
+- **LINEARIZED-SC-OPF / LINEARIZED-SC-OTS**：GO C1 的 DC 线性化安全约束，仅用配置中的抽样事故子集；事故态发电可在机组 `0/Pmax` 上下界内校正重调度（`corrective_within_generator_bounds`），且 OTS 的开断拓扑由基态与事故态共享（`preventive_shared`）；勿与精确 AC 或完整 N-1 等同
 
 ### UC
 
@@ -227,7 +252,7 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 ### DISPATCH / MONITORING
 
-- **ED**：\(\min\sum c_2P^2+c_1P+c_0\)，DC 潮流，无启停
+- **ED**：\(\min\sum c_2P^2+c_1P+c_0\)，单系统铜板平衡，无网架约束、无启停
 - **PMU**：0-1 可观测覆盖
 - **SE**：合成测量下 WLS / L1
 
@@ -255,22 +280,24 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 | 子包路径 | 验收摘要 |
 |----------|----------|
-| `OTS/DC-OTS` | PGLib 66 例可运行 |
-| `OTS/SC-OTS` | 中小规模 full/relaxed 可 OPTIMAL |
+| `OTS/DC-OTS` | 26 个 full/relaxed 案例已有 OPTIMAL 结果，40 个 `skip` |
+| `OTS/SC-OTS` | 19 个 full/relaxed 案例已有 OPTIMAL 结果，47 个 `skip` |
 | `UC/SYSTEM-UC` | 56/56 PASS |
 | `UC/RTS-SCUC` | 12/12 PASS |
-| `OPF/SC-AC-OPF` + `OTS/SC-AC-OTS` | 各 158 例；可解档约 26+26（原 52 对半），其余 skip |
-| `DISTRIBUTION/DNR` | 7 求解（含 SMART-DS DNR）+ 1 meta |
-| `DISTRIBUTION/VOLT-VAR` / `DER-HOSTING` | 各 1 例 PASS |
-| `DISPATCH/ECONOMIC-DISPATCH` | 71/71 双端 PASS |
+| `UC/SCUC` | 18 个 full/relaxed 案例有可行结果（17 OPTIMAL、1 TIME_LIMIT），48 个 `skip` |
+| `OPF/DC-OPF` | 42 例已有 OPTIMAL 结果，29 例 `skip` |
+| `OPF/AC-OPF` | 3/3 OPTIMAL + 独立 AC 残差重算 PASS |
+| `DISPATCH/ECONOMIC-DISPATCH` | 3/3 OPTIMAL，平衡/边界/费用重算验收通过 |
+| `OPF/LINEARIZED-SC-OPF` + `OTS/LINEARIZED-SC-OTS` | 各 158 例；各 38 例 `relaxed` 已有 OPTIMAL 结果，各 120 例 `skip`；仅抽样 N-1 |
+| `DISTRIBUTION/*` | DNR 6、Distribution OPF 2、Volt-VAR 1、DER hosting 1；9 个可执行案为 experimental，1 个汇总案为 data-only，均不声明 physics-validated / PASS |
 | `RESILIENCE/MAXIMUM-LOAD-DELIVERY` | 18/18 PASS |
-| `MONITORING/PMU-PLACEMENT` | 66/66 PASS |
+| `MONITORING/PMU-PLACEMENT` | 37 个 full/relaxed PASS，29 个 `skip` |
 | `MONITORING/STATE-ESTIMATION` | 12/12 PASS |
-| `PLANNING/*` | TEP 68、CEM 10 PASS |
-| `SCHEDULING/*` | HT 32、Maint 5 PASS |
+| `PLANNING/*` | TEP 23 个 full/relaxed PASS + 45 `skip`；CEM 10/10 PASS |
+| `SCHEDULING/*` | HT 29 个 validated feasible + 3 `skip`；Maint 5/5 PASS |
 | `MARKET/*` | Market 56、Bid 8 PASS |
-| `RESILIENCE/*` | 恢复/孤岛/OPS/拦截均 PASS |
-| `MULTI-ENERGY/*` | IEG 15 PASS |
+| `RESILIENCE/*` | Power restoration 9+4 skip；Distribution restoration 3+1 skip；Islanding 75+7 skip；OPS 35/35；Interdiction 21+48 skip |
+| `MULTI-ENERGY/*` | IEG 14 个 full/relaxed PASS，1 个 `skip` |
 
 完整数值见各案例 `results/` 与各包 `VERIFY_SUMMARY.md`（若有）。
 
@@ -288,10 +315,10 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 | 来源 | 用途 |
 |------|------|
-| [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) | OTS / SCUC / ED / PMU / SE / TEP / Interdiction 等 |
+| [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) | OTS / OPF / SCUC / ED / PMU / SE / TEP / Interdiction 等 |
 | [PGLib-UC](https://github.com/power-grid-lib/pglib-uc) | SYSTEM-UC、市场、检修教学 |
 | [RTS-GMLC](https://github.com/GridMod/RTS-GMLC) | RTS-SCUC、检修 |
-| [GO Competition C1](https://gocompetition.energy.gov/) | 线性化 SC-AC-OPF 与 SC-AC-OTS（已分目录） |
+| [GO Competition C1](https://gocompetition.energy.gov/) | LINEARIZED-SC-OPF 与 LINEARIZED-SC-OTS（抽样事故子集） |
 | [SimBench](https://simbench.de/) / [SMART-DS](https://data.openei.org/submissions/2981) | 配网 |
 | PowerModels TNEP / Restoration / Wildfire | 规划、恢复、OPS |
 | GenX / GasLib / ANDES / CommaLAB / ACTIVSg200 | CEM、电–气、孤岛、水火、黑启动 |
@@ -303,4 +330,4 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 ## 免责声明
 
-线性化模型与官方 AC / 三相仿真**不可直接等同**。大规模 MIP 最优性取决于时限与 gap；`skip` 档不保证可求最优。
+线性化输电模型与官方 AC 模型**不可直接等同**；当前实验性配网模型也不等同于经验证的非平衡三相潮流。大规模 MIP 最优性取决于时限与 gap；`skip` 档不保证可求最优。

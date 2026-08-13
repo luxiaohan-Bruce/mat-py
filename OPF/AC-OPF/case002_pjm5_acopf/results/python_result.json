@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "case": "case002_pjm5_acopf",
+  "solver": "python-gurobi-13-global-nonlinear",
+  "base_problem": "opf",
+  "problem": "ac_opf",
+  "variant": {
+    "power_flow": "ac_exact",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "cost_model": "quadratic_if_present",
+    "formulation": "polar_ac_power_flow",
+    "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
+  },
+  "acopf": {
+    "status": "OPTIMAL",
+    "objective": 17551.890920867594,
+    "objective_bound": 17551.888564486566,
+    "optimality_gap": 1.3425226027468643e-07,
+    "runtime_seconds": 99.9125349521637,
+    "Vm_pu": [
+      1.0776176494914462,
+      1.0840647393970753,
+      1.099999999962643,
+      1.0641372548776373,
+      1.0690706611639642
+    ],
+    "Va_deg": [
+      2.8037822763570324,
+      -0.7346442639931484,
+      -0.5597254881797683,
+      0.0,
+      3.590347752354906
+    ],
+    "Pg_MW": [
+      39.99999999800299,
+      169.99999999697098,
+      324.4984980140256,
+      2.0358247810548322e-08,
+      470.69359797058866
+    ],
+    "Qg_MVAr": [
+      29.99999998358348,
+      127.5,
+      389.999999944237,
+      -10.802295544436165,
+      -165.03940635403856
+    ],
+    "P_from_MW": [
+      252.3776707324315,
+      187.86868703141954,
+      -230.24635776887706,
+      -49.20635886020567,
+      -24.950844574911546,
+      -238.50151583184578
+    ],
+    "Q_from_MVAr": [
+      -42.44997684569668,
+      33.13191027267157,
+      166.81806655660858,
+      -156.06849437993102,
+      135.10036010550962,
+      13.310386693042878
+    ],
+    "P_to_MW": [
+      -250.79364113979432,
+      -186.9153241274493,
+      230.69525239482806,
+      49.449342588937164,
+      25.416839979653332,
+      239.99834557576057
+    ],
+    "Q_to_MVAr": [
+      57.45849437993102,
+      -24.352891390656172,
+      -165.9305409409114,
+      156.2896398387274,
+      -131.22979084682288,
+      0.8911345868728784
+    ],
+    "reference_bus": 4,
+    "baseMVA": 100.0,
+    "n_variables": 44,
+    "n_constraints": 13,
+    "max_p_balance_MW": 1.8758328224066645e-12,
+    "max_q_balance_MVAr": 3.893774191965349e-12,
+    "max_branch_flow_equation_MVA": 3.439026841078885e-12,
+    "max_thermal_violation_MVA": 0.0,
+    "max_voltage_bound_violation_pu": 0.0,
+    "max_angle_bound_violation_deg": 0.0,
+    "max_p_generator_bound_MW": 0.0,
+    "max_q_generator_bound_MVAr": 0.0,
+    "cost_recomputed": 17551.890920867594,
+    "cost_recompute_error": 0.0,
+    "validation_passed": true,
+    "validation_tolerances": {
+      "power_balance_MW_MVAr": 0.0002,
+      "branch_flow_and_thermal_MVA": 0.0002,
+      "variable_bounds": 2e-06
+    }
+  },
+  "validation": {
+    "passed": true,
+    "method": "independent_polar_ac_recomputation"
+  }
+}

@@ -72,8 +72,8 @@ if __name__ == "__main__":
     _write(
         dst_pack / "README.md",
         f"# {title}\n\n"
-        f"Linearized LinDistFlow model from SMART-DS GSO rural feeder "
-        f"(not exact three-phase AC).\n\n"
+        f"Experimental active-power transport placeholder from an aggregated "
+        f"SMART-DS feeder; not physics-validated LinDistFlow or three-phase AC.\n\n"
         f"```bash\npython3 run_all_python.py\n"
         f"python3 {dst_pack.relative_to(ROOT)}/{case_name}/solve.py\n```\n",
     )
@@ -209,7 +209,7 @@ def normalize_entries() -> None:
             src.unlink()
             moved += 1
         sca = py / "solve_scacopf.py"
-        if sca.is_file() and case.parent.name == "SC-AC-OTS":
+        if sca.is_file() and case.parent.name in {"SC-AC-OTS", "LINEARIZED-SC-OTS"}:
             dest = py / "solve_scacots.py"
             if not dest.exists():
                 sca.rename(dest)

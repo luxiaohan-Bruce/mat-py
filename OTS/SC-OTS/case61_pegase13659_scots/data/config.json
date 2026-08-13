@@ -40,10 +40,13 @@
   "base_problem": "ots",
   "variant": {
     "power_flow": "dc",
-    "security": "n-1",
+    "security": "sampled_n-1",
     "uncertainty": "deterministic",
     "horizon": "single_period",
-    "recourse": "preventive"
+    "topology_control": "preventive_shared",
+    "generation_recourse": "corrective_bounded",
+    "recourse": "corrective_limited",
+    "contingency_scope": "selected_subset"
   },
   "source_network": "pglib_opf_case13659_pegase",
   "features": {

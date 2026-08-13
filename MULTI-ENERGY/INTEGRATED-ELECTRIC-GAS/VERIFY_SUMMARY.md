@@ -14,7 +14,6 @@
 - `case12_gaslib39_scen09_39_epri_ieg` (full): **PASS**
 - `case13_gaslib39_scen10_39_epri_ieg` (full): **PASS**
 - `case14_gaslib40_57_ieee_ieg` (relaxed): **PASS**
-- `case15_gaslib135_118_ieee_ieg` (skip): **PASS**
+- `case15_gaslib135_118_ieee_ieg` (skip): **SKIP**（仅数据，未求解）
 
-**summary: 15/15 PASS**
-
+**summary: 14 个已求解案例 PASS；1 个仅数据 SKIP**

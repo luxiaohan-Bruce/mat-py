@@ -5,7 +5,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 - **案例数**: 68（full=20, relaxed=3, skip=45）
 - **数据来源**: PowerModelsTNEP native + PGLib synthetic candidates
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: **68/68 PASS**（2026-08-12）
+- **验收**: 23 个 full/relaxed 案例通过双端验收；45 个 `skip` 大网仅提供数据（2026-08-12）
 
 ## 环境
 
