@@ -208,6 +208,22 @@
     "volt_var": {
       "id": "B05",
       "label": "Volt/VAR optimization"
+    },
+    "demand_response": {
+      "id": "B24",
+      "label": "Demand response"
+    },
+    "storage_scheduling": {
+      "id": "B25",
+      "label": "Storage scheduling"
+    },
+    "distribution_expansion": {
+      "id": "B26",
+      "label": "Distribution expansion"
+    },
+    "microgrid": {
+      "id": "B27",
+      "label": "Microgrid and VPP"
     }
   },
   "variant_dimensions": {
@@ -246,11 +262,18 @@
     ],
     "formulation": [
       "dc_power_flow",
-      "polar_ac_power_flow",
       "experimental_der_injection_proxy",
       "experimental_volt_var_placeholder",
+      "interruptible_and_shiftable_demand",
+      "lindistflow_candidate_feeders",
+      "microgrid_energy_management",
       "multiperiod_active_power_transport_proxy",
-      "single_system_balance"
+      "polar_ac_power_flow",
+      "polar_ac_preventive_n1",
+      "single_system_balance",
+      "storage_soc_energy_balance",
+      "three_phase_lindistflow",
+      "vpp_aggregation"
     ],
     "gas_model": [
       "pwl",
@@ -270,9 +293,11 @@
     ],
     "network_constraints": [
       "active_power_nodal_balance_and_branch_limits",
+      "nodal_balance_branch_flow_and_thermal_limits",
       "nodal_pq_balance_voltage_angle_and_two_end_mva_limits",
       "none",
-      "nodal_balance_branch_flow_and_thermal_limits"
+      "per_phase_pq_balance_and_3x3_voltage_drop",
+      "radial_lindistflow_and_candidate_investment"
     ],
     "power_flow": [
       "ac_exact",
@@ -290,11 +315,14 @@
     ],
     "radiality": [
       "not_applicable",
-      "not_enforced"
+      "not_enforced",
+      "spanning_tree"
     ],
     "reactive_power": [
+      "lindistflow",
       "not_applicable",
       "not_modeled",
+      "three_phase",
       "uncoupled_proxy"
     ],
     "recourse": [
@@ -326,12 +354,25 @@
       "worst_case_attack"
     ],
     "voltage_magnitude": [
+      "lindistflow_v_squared",
       "not_applicable",
-      "not_modeled"
+      "not_modeled",
+      "three_phase_lindistflow"
     ],
     "weymouth": [
       "pwl_sos2",
       "relaxed_capacity_only"
+    ],
+    "demand_flexibility": [
+      "interruptible_and_shiftable"
+    ],
+    "island_mode": [
+      "grid_connected",
+      "islanded"
+    ],
+    "phases": [
+      "one",
+      "three"
     ]
   },
   "packs": {
@@ -903,6 +944,124 @@
         "uncertainty": "deterministic",
         "horizon": "multi_period",
         "recourse": "none"
+      }
+    },
+    "DISPATCH/DEMAND-RESPONSE": {
+      "navigation_domain": "DISPATCH",
+      "base_problem": "demand_response",
+      "default_math_class": "qp",
+      "allowed_math_classes": [
+        "lp",
+        "qp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "copperplate",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none"
+      }
+    },
+    "SCHEDULING/STORAGE-SCHEDULING": {
+      "navigation_domain": "SCHEDULING",
+      "base_problem": "storage_scheduling",
+      "default_math_class": "qp",
+      "allowed_math_classes": [
+        "lp",
+        "qp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "copperplate",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none"
+      }
+    },
+    "PLANNING/DISTRIBUTION-EXPANSION": {
+      "navigation_domain": "PLANNING",
+      "base_problem": "distribution_expansion",
+      "default_math_class": "milp",
+      "allowed_math_classes": [
+        "milp"
+      ],
+      "default_solver_family": "topology_mip",
+      "allowed_solver_families": [
+        "topology_mip"
+      ],
+      "default_variant": {
+        "power_flow": "lindistflow",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "single_period",
+        "recourse": "none"
+      }
+    },
+    "DISTRIBUTION/MICROGRID": {
+      "navigation_domain": "DISTRIBUTION",
+      "base_problem": "microgrid",
+      "default_math_class": "qp",
+      "allowed_math_classes": [
+        "lp",
+        "qp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "copperplate",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none"
+      }
+    },
+    "DISTRIBUTION/UNBALANCED-DOPF": {
+      "navigation_domain": "DISTRIBUTION",
+      "base_problem": "distribution_opf",
+      "default_math_class": "lp",
+      "allowed_math_classes": [
+        "lp",
+        "qp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "lindistflow",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "single_period",
+        "recourse": "none"
+      }
+    },
+    "OPF/SC-AC-OPF": {
+      "navigation_domain": "OPF",
+      "base_problem": "opf",
+      "default_math_class": "nlp",
+      "allowed_math_classes": [
+        "nlp"
+      ],
+      "default_solver_family": "nonconvex_ac",
+      "allowed_solver_families": [
+        "nonconvex_ac"
+      ],
+      "default_variant": {
+        "power_flow": "ac_exact",
+        "security": "sampled_n-1",
+        "uncertainty": "deterministic",
+        "horizon": "single_period",
+        "recourse": "preventive"
       }
     }
   }

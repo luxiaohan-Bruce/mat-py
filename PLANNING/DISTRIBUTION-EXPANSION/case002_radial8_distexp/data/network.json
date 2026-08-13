@@ -1,0 +1,188 @@
+{
+  "name": "case002_radial8_distexp",
+  "baseMVA": 1.0,
+  "baseKV": 20.0,
+  "root_bus": 1,
+  "substation_price_per_MWh": 40.0,
+  "buses": [
+    {
+      "bus_i": 1,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Vmin": 0.95,
+      "Vmax": 1.05,
+      "is_root": true
+    },
+    {
+      "bus_i": 2,
+      "Pd": 0.7,
+      "Qd": 0.2,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 3,
+      "Pd": 0.6,
+      "Qd": 0.18,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 4,
+      "Pd": 0.5,
+      "Qd": 0.15,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 5,
+      "Pd": 0.8,
+      "Qd": 0.25,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 6,
+      "Pd": 0.4,
+      "Qd": 0.12,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 7,
+      "Pd": 0.55,
+      "Qd": 0.16,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    },
+    {
+      "bus_i": 8,
+      "Pd": 0.45,
+      "Qd": 0.14,
+      "Vmin": 0.95,
+      "Vmax": 1.05
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "fbus": 1,
+      "tbus": 2,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 5.0
+    },
+    {
+      "id": 2,
+      "fbus": 2,
+      "tbus": 3,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 4.0
+    },
+    {
+      "id": 3,
+      "fbus": 3,
+      "tbus": 4,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 3.0
+    }
+  ],
+  "ne_branches": [
+    {
+      "id": 4,
+      "fbus": 2,
+      "tbus": 5,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 3.0,
+      "invest_cost": 95.0
+    },
+    {
+      "id": 5,
+      "fbus": 3,
+      "tbus": 5,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 3.0,
+      "invest_cost": 70.0
+    },
+    {
+      "id": 6,
+      "fbus": 3,
+      "tbus": 6,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 2.5,
+      "invest_cost": 85.0
+    },
+    {
+      "id": 7,
+      "fbus": 4,
+      "tbus": 6,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 2.5,
+      "invest_cost": 75.0
+    },
+    {
+      "id": 8,
+      "fbus": 4,
+      "tbus": 7,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 2.5,
+      "invest_cost": 88.0
+    },
+    {
+      "id": 9,
+      "fbus": 5,
+      "tbus": 8,
+      "r_ohm": 1.2012,
+      "x_ohm": 0.394,
+      "r_pu": 0.003003,
+      "x_pu": 0.000985,
+      "smax_MVA": 2.5,
+      "invest_cost": 92.0
+    },
+    {
+      "id": 10,
+      "fbus": 7,
+      "tbus": 8,
+      "r_ohm": 1.8769,
+      "x_ohm": 0.409,
+      "r_pu": 0.00469225,
+      "x_pu": 0.0010225,
+      "smax_MVA": 2.5,
+      "invest_cost": 65.0
+    },
+    {
+      "id": 11,
+      "fbus": 1,
+      "tbus": 8,
+      "r_ohm": 0.64,
+      "x_ohm": 0.145,
+      "r_pu": 0.0016,
+      "x_pu": 0.0003625,
+      "smax_MVA": 4.0,
+      "invest_cost": 180.0
+    }
+  ]
+}

@@ -49,6 +49,11 @@ _BLOCK_KEYS = (
     "ieg",
     "rts_scuc",
     "dcopf",
+    "demand_response",
+    "storage_scheduling",
+    "dist_exp",
+    "microgrid",
+    "unbalanced_dopf",
 )
 
 

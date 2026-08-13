@@ -1,0 +1,211 @@
+{
+  "name": "case002_pjm5_microgrid_island",
+  "source": "pglib_opf_case5_pjm",
+  "baseMVA": 100.0,
+  "time_periods": 8,
+  "dt_hour": 1.0,
+  "demand_profile": [
+    0.72,
+    0.68,
+    0.7,
+    0.85,
+    1.0,
+    0.95,
+    0.88,
+    0.8
+  ],
+  "buses": [
+    {
+      "bus_i": 1,
+      "type": 2,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 230.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 2,
+      "type": 1,
+      "Pd": 300.0,
+      "Qd": 98.61,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 230.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 3,
+      "type": 2,
+      "Pd": 300.0,
+      "Qd": 98.61,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 230.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 4,
+      "type": 3,
+      "Pd": 400.0,
+      "Qd": 131.47,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 230.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    },
+    {
+      "bus_i": 5,
+      "type": 2,
+      "Pd": 0.0,
+      "Qd": 0.0,
+      "Gs": 0.0,
+      "Bs": 0.0,
+      "area": 1,
+      "Vm": 1.0,
+      "Va": 0.0,
+      "baseKV": 230.0,
+      "zone": 1,
+      "Vmax": 1.1,
+      "Vmin": 0.9
+    }
+  ],
+  "gens": [
+    {
+      "bus": 1,
+      "Pg": 20.0,
+      "Qg": 0.0,
+      "Qmax": 30.0,
+      "Qmin": -30.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 40.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 14.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 1,
+      "Pg": 85.0,
+      "Qg": 0.0,
+      "Qmax": 127.5,
+      "Qmin": -127.5,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 170.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 15.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 3,
+      "Pg": 260.0,
+      "Qg": 0.0,
+      "Qmax": 390.0,
+      "Qmin": -390.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 520.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 30.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 4,
+      "Pg": 100.0,
+      "Qg": 0.0,
+      "Qmax": 150.0,
+      "Qmin": -150.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 200.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 40.0,
+      "c0": 0.0
+    },
+    {
+      "bus": 5,
+      "Pg": 300.0,
+      "Qg": 0.0,
+      "Qmax": 450.0,
+      "Qmin": -450.0,
+      "Vg": 1.0,
+      "mBase": 100.0,
+      "status": 1,
+      "Pmax": 600.0,
+      "Pmin": 0.0,
+      "cost_model": 2,
+      "c2": 0.0,
+      "c1": 10.0,
+      "c0": 0.0
+    }
+  ],
+  "storage": [
+    {
+      "name": "ess1",
+      "bus": 2,
+      "Pmax_MW": 40.0,
+      "Emax_MWh": 80.0,
+      "E0_MWh": 40.0,
+      "eta_c": 0.95,
+      "eta_d": 0.95
+    }
+  ],
+  "renewable": [
+    {
+      "name": "pv1",
+      "bus": 4,
+      "Pmax_MW": 80.0,
+      "profile": [
+        0.0,
+        0.05,
+        0.2,
+        0.55,
+        0.85,
+        0.7,
+        0.25,
+        0.0
+      ]
+    }
+  ],
+  "grid": {
+    "import_max_MW": 0.0,
+    "export_max_MW": 0.0,
+    "import_price_per_MWh": 45.0,
+    "export_price_per_MWh": 20.0,
+    "islanded": true
+  }
+}

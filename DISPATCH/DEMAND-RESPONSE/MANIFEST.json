@@ -1,0 +1,77 @@
+[
+  {
+    "case": "case001_lmbd3_dr",
+    "source": "pglib_opf_case3_lmbd",
+    "n_bus": 3,
+    "n_gen": 3,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "demand_response",
+    "problem": "demand_response",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "demand_flexibility": "interruptible_and_shiftable",
+      "formulation": "interruptible_and_shiftable_demand",
+      "network_constraints": "none"
+    }
+  },
+  {
+    "case": "case002_pjm5_dr",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 5,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "demand_response",
+    "problem": "demand_response",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "demand_flexibility": "interruptible_and_shiftable",
+      "formulation": "interruptible_and_shiftable_demand",
+      "network_constraints": "none"
+    }
+  },
+  {
+    "case": "case003_ieee14_dr",
+    "source": "pglib_opf_case14_ieee",
+    "n_bus": 14,
+    "n_gen": 5,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "demand_response",
+    "problem": "demand_response",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "demand_flexibility": "interruptible_and_shiftable",
+      "formulation": "interruptible_and_shiftable_demand",
+      "network_constraints": "none"
+    }
+  }
+]

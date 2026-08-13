@@ -1,0 +1,80 @@
+[
+  {
+    "case": "case001_pjm5_microgrid_grid",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 6,
+    "n_branch": 0,
+    "n_storage": 1,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "microgrid",
+    "problem": "microgrid",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "storage": "simple_energy_balance",
+      "island_mode": "grid_connected",
+      "formulation": "microgrid_energy_management",
+      "network_constraints": "none"
+    }
+  },
+  {
+    "case": "case002_pjm5_microgrid_island",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 6,
+    "n_branch": 0,
+    "n_storage": 1,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "microgrid",
+    "problem": "microgrid",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "storage": "simple_energy_balance",
+      "island_mode": "islanded",
+      "formulation": "microgrid_energy_management",
+      "network_constraints": "none"
+    }
+  },
+  {
+    "case": "case003_pjm5_vpp",
+    "source": "pglib_opf_case5_pjm",
+    "n_bus": 5,
+    "n_gen": 6,
+    "n_branch": 0,
+    "n_storage": 1,
+    "n_candidate_branch": 0,
+    "T": 8,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "microgrid",
+    "problem": "vpp",
+    "variant": {
+      "power_flow": "copperplate",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "storage": "simple_energy_balance",
+      "island_mode": "grid_connected",
+      "formulation": "vpp_aggregation",
+      "network_constraints": "none"
+    }
+  }
+]

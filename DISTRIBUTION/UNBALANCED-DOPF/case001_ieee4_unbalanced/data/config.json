@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case": "case001_ieee4_unbalanced",
+  "base_problem": "distribution_opf",
+  "problem": "unbalanced_lindistflow_dopf",
+  "variant": {
+    "power_flow": "lindistflow",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "single_period",
+    "recourse": "none",
+    "phases": "three",
+    "voltage_magnitude": "three_phase_lindistflow",
+    "reactive_power": "three_phase",
+    "formulation": "three_phase_lindistflow",
+    "network_constraints": "per_phase_pq_balance_and_3x3_voltage_drop"
+  },
+  "classification_note": "Unbalanced three-phase LinDistFlow OPF on an IEEE 4-node-style feeder. Linearized, not exact AC.",
+  "source": {
+    "dataset": "IEEE PES 4 Node Test Feeder",
+    "system": "ieee4",
+    "note": "336 ACSR 2000 ft Z-matrix and spot load from the IEEE PES test feeder documentation"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "ieee4_spot_load",
+      "lindistflow_3x3"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "source_network": "ieee_pes_4_node_test_feeder:ieee4",
+  "features": {
+    "n_bus": 4,
+    "n_branch": 3,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 1,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch"
+  }
+}

@@ -44,10 +44,11 @@ def main() -> int:
     (ROOT / "PYTHON_SOLVE_SUMMARY.json").write_text(
         json.dumps(summary, indent=2, allow_nan=False) + "\n", encoding="utf-8"
     )
-    passed_count = sum(
+    passed_count = sum(bool(item.get("validation_passed")) for item in summary)
+    optimal_count = sum(
         item.get("status") == "OPTIMAL" and item.get("validation_passed") for item in summary
     )
-    print(f"summary: OPTIMAL+valid={passed_count}/{len(summary)}")
+    print(f"summary: valid={passed_count}/{len(summary)} OPTIMAL+valid={optimal_count}/{len(summary)}")
     return 0 if passed_count == len(summary) else 1
 
 

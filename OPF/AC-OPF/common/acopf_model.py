@@ -416,7 +416,7 @@ def solve_acopf(network: dict[str, Any], config: dict[str, Any], *, quiet: bool 
         qt_values,
         obj,
     )
-    validation["validation_passed"] = bool(validation.get("validation_passed") and status == "OPTIMAL")
+    validation["globally_optimal"] = status == "OPTIMAL"
     return {
         "status": status,
         "objective": obj,

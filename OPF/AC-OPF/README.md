@@ -1,8 +1,8 @@
 # AC-OPF — Exact nonconvex polar pilots
 
-This package adds three small, reproducible PGLib AC optimal-power-flow pilots.
-They are intentionally separate from `../DC-OPF`: every case enforces the full
-nonlinear polar P/Q network equations and is classified as
+This package adds four reproducible PGLib AC optimal-power-flow pilots
+(3/5/14/30-bus). They are intentionally separate from `../DC-OPF`: every case
+enforces the full nonlinear polar P/Q network equations and is classified as
 `opf/ac_opf`, `power_flow=ac_exact`, `formulation=polar_ac_power_flow`.
 
 ## Model
@@ -18,7 +18,8 @@ The shared Gurobi 13 model in `common/acopf_model.py` includes:
 
 Gurobi uses `NonConvex=2` and nonlinear function constraints, so `OPTIMAL`
 means a globally certified solution within the configured gap (1e-7 for the
-3- and 5-bus pilots; 1e-3 for IEEE 14), not merely a local stationary point.
+3- and 5-bus pilots; 1e-3 for IEEE 14 and IEEE 30), not merely a local
+stationary point.
 The result writer independently recomputes every
 branch flow, both nodal balances, limits, and objective from serialized values.
 
@@ -35,5 +36,5 @@ thread and deterministic seed 1. See `VERIFY_SUMMARY.md` for measured results.
 ## Source
 
 Network data are unchanged JSON conversions of PGLib-OPF
-`case3_lmbd`, `case5_pjm`, and `case14_ieee`; source paths and SHA-256 values
-are recorded in each `data/config.json`.
+`case3_lmbd`, `case5_pjm`, `case14_ieee`, and `case30_ieee`; source paths and
+SHA-256 values are recorded in each `data/config.json`.

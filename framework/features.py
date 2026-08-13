@@ -92,6 +92,10 @@ def source_network(config: dict[str, Any], network: dict[str, Any] | None = None
             if m2:
                 return m2.group(1)
             return f"restoration:{Path(rel).stem or 'unknown'}"
+        if "IEEE PES 4 Node" in dataset:
+            return f"ieee_pes_4_node_test_feeder:{src.get('system') or 'ieee4'}"
+        if dataset == "SimBench LineType":
+            return f"simbench_linetype:{src.get('system') or 'unknown'}"
         if "ACTIVSg200" in dataset:
             return "pglib_opf_case200_activ"
         if dataset:
@@ -212,6 +216,10 @@ def _estimate_n_bin(
         return n_gen * max(T, 1)
     if "PMU-PLACEMENT" in p:
         return n_bus
+    if "DISTRIBUTION-EXPANSION" in p:
+        return n_ne
+    if "DEMAND-RESPONSE" in p or "STORAGE-SCHEDULING" in p or "MICROGRID" in p or "UNBALANCED-DOPF" in p or "SC-AC-OPF" in p or "AC-OPF" in p:
+        return 0
     if "TRANSMISSION-EXPANSION" in p:
         return n_ne or n_branch
     if "NETWORK-INTERDICTION" in p:
