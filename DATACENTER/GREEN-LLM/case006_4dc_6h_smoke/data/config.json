@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "case": "case006_4dc_6h_smoke",
+  "base_problem": "green_llm",
+  "problem": "green_llm",
+  "variant": {
+    "power_flow": "none",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "weighted_llm_allocation"
+  },
+  "classification_note": "4 DC × 6h smoke slice of the official parameter generator.",
+  "source": {
+    "dataset": "JJmingcc/Green_LLM",
+    "relative_path": "green_llm_cases/source_data/consolidated_carbon_intensity_march24_filled.csv",
+    "sha256": "d2dc0c437ecde7425142daea5ec629b1917046e1e3fd63072ac2f174b38f7c72",
+    "paper": "arXiv:2507.09942",
+    "system": "smoke4"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 42,
+    "transformations": [
+      "official_GreenLLMParameters_seed42",
+      "mode_weighted",
+      "no_placement"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 180.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 180.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 6,
+  "source_network": "green_llm:smoke4",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 6,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch",
+    "n_dc": 4,
+    "n_user": 4,
+    "n_query": 5
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "case": "case002_eeai10_24h_cost_full",
+  "base_problem": "datacenter_glb",
+  "problem": "glb",
+  "variant": {
+    "power_flow": "none",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "equity_aware_geographical_load_balancing"
+  },
+  "classification_note": "24h cost-only GLB (AVG, water/carbon weights zero).",
+  "source": {
+    "dataset": "Ren-Research/Environmentally-Equitable-AI",
+    "relative_path": "datacenter_glb_cases/source_data/AI_workload.csv",
+    "sha256": "9db79f5c7d22afe39841eb61f66913746baa19a8a8845e957e8c677c1e220095",
+    "paper": "arXiv:2307.05494",
+    "t0": 0,
+    "t1": 24,
+    "system": "eeai10"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "eeai_official_457h_window",
+      "workload_equal_split_gateways",
+      "routing_full",
+      "equity_AVG"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 1e-06,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 1e-06,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 24,
+  "source_network": "eeai:eeai10",
+  "features": {
+    "n_bus": 0,
+    "n_branch": 0,
+    "n_gen": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch",
+    "n_dc": 10,
+    "n_gateway": 10
+  }
+}

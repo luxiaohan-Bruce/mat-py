@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+from pathlib import Path
+import sys
+CASE_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(CASE_DIR.parent / 'common'))
+from glb_model_py import run_case  # noqa: E402
+if __name__ == '__main__':
+    r = run_case(CASE_DIR, quiet=True)
+    e = r['glb']
+    print(
+        f"[{r['case']}] status={e['status']} obj={e['obj']} "
+        f"valid={e.get('validation_passed')} "
+        f"demand={e.get('max_demand_violation'):.3e}"
+    )

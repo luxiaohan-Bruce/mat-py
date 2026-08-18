@@ -1,0 +1,14 @@
+{
+  "case": "case006_ieee24_scuc_interruptible",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 574475.8025287334,
+    "obj_mat": 574475.8025287344,
+    "bal_py": 3.439026841078885e-12,
+    "bal_mat": 3.780087354243733e-12,
+    "obj_rel_diff": 1.823815540759886e-15
+  }
+}

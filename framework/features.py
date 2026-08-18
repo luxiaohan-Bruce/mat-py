@@ -98,6 +98,12 @@ def source_network(config: dict[str, Any], network: dict[str, Any] | None = None
             return f"simbench_linetype:{src.get('system') or 'unknown'}"
         if "ACTIVSg200" in dataset:
             return "pglib_opf_case200_activ"
+        if "Environmentally-Equitable-AI" in dataset or dataset in {"EE-AI", "EEAI"}:
+            return f"eeai:{src.get('system') or 'eeai10'}"
+        if "Green_LLM" in dataset:
+            return f"green_llm:{src.get('system') or 'official9'}"
+        if "Grid-Capacity-Expansion" in dataset:
+            return "texas123bt_gcep"
         if dataset:
             return f"{dataset.lower().replace(' ', '_')}:{Path(rel).stem or src.get('system') or 'unknown'}"
     net_src = net.get("source") or net.get("source_file")
@@ -120,7 +126,7 @@ def extract_features(
     net = network or {}
 
     n_bus = _len(net.get("buses") or net.get("bus") or net.get("zones"))
-    branches = net.get("branches") or net.get("branch") or net.get("network_lines")
+    branches = net.get("branches") or net.get("branch") or net.get("network_lines") or net.get("lines")
     n_branch = _len(branches)
     gens = (
         net.get("gens")
@@ -133,11 +139,13 @@ def extract_features(
     n_gen = _len(gens)
     n_gen += _len(net.get("renewable") or net.get("renewable_generators"))
     n_storage = _len(net.get("storage"))
+    if n_storage == 0 and "GCEP-DC" in pack:
+        n_storage = n_bus
     n_ne = _len(net.get("ne_branches"))
 
     T = cfg.get("T") or cfg.get("horizon_T") or cfg.get("time_periods")
     if T is None:
-        T = net.get("time_periods") or net.get("n_time") or 1
+        T = net.get("time_periods") or net.get("n_time") or net.get("horizon") or 1
     try:
         T = int(T)
     except (TypeError, ValueError):
@@ -218,7 +226,24 @@ def _estimate_n_bin(
         return n_bus
     if "DISTRIBUTION-EXPANSION" in p:
         return n_ne
-    if "DEMAND-RESPONSE" in p or "STORAGE-SCHEDULING" in p or "MICROGRID" in p or "UNBALANCED-DOPF" in p or "SC-AC-OPF" in p or "AC-OPF" in p:
+    if (
+        "DEMAND-RESPONSE" in p
+        or "STORAGE-SCHEDULING" in p
+        or "MICROGRID" in p
+        or "UNBALANCED-DOPF" in p
+        or "SC-AC-OPF" in p
+        or "AC-OPF" in p
+        or "GEOGRAPHIC-LOAD-BALANCING" in p
+        or "GCEP-DC" in p
+    ):
+        return 0
+    if "GREEN-LLM" in p:
+        if net.get("place_models"):
+            return int(net.get("n_dc") or 0) * int(net.get("n_query") or 0)
+        return 0
+    if "FLEXIBLE-DC-LOAD" in p:
+        if net.get("use_uc"):
+            return n_gen * max(T, 1)
         return 0
     if "TRANSMISSION-EXPANSION" in p:
         return n_ne or n_branch

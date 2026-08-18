@@ -1,0 +1,14 @@
+{
+  "case": "case001_ieee14_opf_inflexible",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 43073.13188406297,
+    "obj_mat": 43073.13188406297,
+    "bal_py": 9.059419880941277e-14,
+    "bal_mat": 1.0658141036401503e-13,
+    "obj_rel_diff": 0.0
+  }
+}

@@ -54,6 +54,10 @@ _BLOCK_KEYS = (
     "dist_exp",
     "microgrid",
     "unbalanced_dopf",
+    "glb",
+    "green_llm",
+    "dcflex",
+    "gcep",
 )
 
 

@@ -4,7 +4,7 @@
 
 一级目录是便于浏览的 **`navigation_domain`**，不是互斥的数学基础问题分类。规范分类以每个案例 `config.json` 的 `base_problem` 为准；AC/DC、N-1、多时段、随机性、追补决策等属于 `variant` 轴。
 
-机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1178 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
+机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1199 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
 
 ---
 
@@ -16,6 +16,7 @@ github_cases/
   OPF/                 # 最优潮流（DC、精确 AC、精确 SC-AC、线性化安全约束）
   UC/                  # 机组组合族
   DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting / 微网 / 三相 DOPF
+  DATACENTER/          # 多园区分流 / Green-LLM / 柔性数据中心负荷
   DISPATCH/            # 经济调度 / 需求响应
   MONITORING/          # PMU 布点 / 状态估计
   PLANNING/            # 输电扩展 / 容量扩展 / 配网扩展
@@ -50,12 +51,16 @@ github_cases/
 | | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | `der_hosting`（实验模型） | 1 | SMART-DS |
 | | [`MICROGRID/`](DISTRIBUTION/MICROGRID/) | `microgrid`：并网/孤岛 EMS 与 VPP | 3 | PGLib-OPF + 光伏/储能 |
 | | [`UNBALANCED-DOPF/`](DISTRIBUTION/UNBALANCED-DOPF/) | `distribution_opf`：三相 LinDistFlow | 2 | IEEE 4-node / SMART-DS linecode |
+| [`DATACENTER/`](DATACENTER/) | [`GEOGRAPHIC-LOAD-BALANCING/`](DATACENTER/GEOGRAPHIC-LOAD-BALANCING/) | `datacenter_glb`：多园区推理分流 + 水/碳公平 | 6 | [Environmentally-Equitable-AI](https://github.com/Ren-Research/Environmentally-Equitable-AI) |
+| | [`GREEN-LLM/`](DATACENTER/GREEN-LLM/) | `green_llm`：LLM 推理分配 + 电/碳/水/时延 | 6 | [Green_LLM](https://github.com/JJmingcc/Green_LLM) |
+| | [`FLEXIBLE-DC-LOAD/`](DATACENTER/FLEXIBLE-DC-LOAD/) | `datacenter_flex`：DC-OPF / SCUC 上的时空柔性负荷 | 6 | PGLib-OPF + Wan–Li |
 | [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | `economic_dispatch`：无网架铜板 ED | 3 | PGLib-OPF |
 | | [`DEMAND-RESPONSE/`](DISPATCH/DEMAND-RESPONSE/) | `demand_response`：可中断+可转移负荷 | 3 | PGLib-OPF |
 | [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 66 | PGLib-OPF |
 | | [`STATE-ESTIMATION/`](MONITORING/STATE-ESTIMATION/) | DC WLS / L1 状态估计 | 12 | PGLib + 合成测量 |
 | [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 68 | PowerModels TNEP + PGLib |
 | | [`RESOURCE-CAPACITY-EXPANSION/`](PLANNING/RESOURCE-CAPACITY-EXPANSION/) | 资源容量扩展 CEM | 10 | GenX 示例 |
+| | [`GCEP-DC/`](PLANNING/GCEP-DC/) | `resource_capacity_expansion`：Texas 123-BT + DC/EOR | 3 | [PSE-Lab GCEP](https://github.com/PSE-Lab/Grid-Capacity-Expansion-under-Data-Center-and-Electrified-Manufacturing-Loads) |
 | | [`DISTRIBUTION-EXPANSION/`](PLANNING/DISTRIBUTION-EXPANSION/) | `distribution_expansion`：径向 LinDistFlow | 2 | SimBench 线型构造馈线 |
 | [`SCHEDULING/`](SCHEDULING/) | [`HYDROTHERMAL-SCHEDULING/`](SCHEDULING/HYDROTHERMAL-SCHEDULING/) | 水火联合调度 | 32 | CommaLAB HT-Ramp / 46-bus |
 | | [`MAINTENANCE-SCHEDULING/`](SCHEDULING/MAINTENANCE-SCHEDULING/) | 机组检修计划 | 5 | RTS-GMLC / PGLib-UC |
@@ -70,7 +75,7 @@ github_cases/
 | | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 69 | PGLib-OPF |
 | [`MULTI-ENERGY/`](MULTI-ENERGY/) | [`INTEGRATED-ELECTRIC-GAS/`](MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/) | 电–气综合优化 | 15 | Travis 150 + GasLib |
 
-**合计 1178 个案例**（含子包内 `skip` 数据档）。
+**合计 1199 个案例**（含子包内 `skip` 数据档）。
 
 > **说明**
 > - 子包目录名：**大写 + 连字符**。
@@ -125,6 +130,11 @@ python3 DISTRIBUTION/DER-HOSTING/run_all_python.py
 python3 DISTRIBUTION/MICROGRID/run_all_python.py
 python3 DISTRIBUTION/UNBALANCED-DOPF/run_all_python.py
 
+# —— 数据中心 ——
+python3 DATACENTER/GEOGRAPHIC-LOAD-BALANCING/run_all_python.py
+python3 DATACENTER/GREEN-LLM/run_all_python.py
+python3 DATACENTER/FLEXIBLE-DC-LOAD/run_all_python.py
+
 # —— 调度 / 监测 ——
 python3 DISPATCH/ECONOMIC-DISPATCH/run_all_python.py
 python3 DISPATCH/DEMAND-RESPONSE/run_all_python.py
@@ -134,6 +144,7 @@ python3 MONITORING/STATE-ESTIMATION/run_all_python.py
 # —— 规划 / 时序 / 市场 ——
 python3 PLANNING/TRANSMISSION-EXPANSION/run_all_python.py --full-only
 python3 PLANNING/RESOURCE-CAPACITY-EXPANSION/run_all_python.py
+python3 PLANNING/GCEP-DC/run_all_python.py --full-only
 python3 PLANNING/DISTRIBUTION-EXPANSION/run_all_python.py
 python3 SCHEDULING/HYDROTHERMAL-SCHEDULING/run_all_python.py --full-only
 python3 SCHEDULING/MAINTENANCE-SCHEDULING/run_all_python.py
@@ -203,9 +214,9 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 | `solve_tier` | 当前案例数 | 含义 |
 |--------------|--------------:|------|
-| `full` | 407 | 默认完整求解与验收 |
+| `full` | 427 | 默认完整求解与验收 |
 | `relaxed` | 182 | 可求解，通常需更宽的时限或 gap |
-| `large` | 22 | 大规模档 |
+| `large` | 23 | 大规模档 |
 | `xlarge` | 24 | 超大规模档 |
 | `skip` | 543 | 数据与建模参考，不承诺在常规时限内求优 |
 
@@ -221,9 +232,10 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 | OPF | `opf` | `power_flow=dc/ac_exact/dc_linearized`；`security=none/n-1/sampled_n-1` |
 | UC | `uc` | copperplate / network；storage；security |
 | DISTRIBUTION | `dnr`、`distribution_opf`、`volt_var`、`der_hosting`、`microgrid` | 旧配网包为 `active_power_transport`；新包含铜板微网与三相 LinDistFlow |
+| DATACENTER | `datacenter_glb`、`green_llm`、`datacenter_flex` | 多园区分流；LLM 分配；网架上的 DC 柔性 |
 | DISPATCH | `economic_dispatch`、`demand_response` | `power_flow=copperplate`；可中断/可转移负荷 |
 | MONITORING | `pmu_placement`、`state_estimation` | WLS / L1 |
-| PLANNING | `transmission_expansion`、`resource_capacity_expansion`、`distribution_expansion` | candidate type；径向 LinDistFlow |
+| PLANNING | `transmission_expansion`、`resource_capacity_expansion`、`distribution_expansion` | candidate type；径向 LinDistFlow；Texas 123-BT GCEP |
 | SCHEDULING | `hydrothermal_scheduling`、`maintenance_scheduling`、`storage_scheduling` | multi-period；循环 SOC |
 | MARKET | `market_clearing`、`strategic_bidding` | welfare LP；bid ladder |
 | RESILIENCE | `maximum_load_delivery`、`power_restoration`、`distribution_restoration`、`controlled_islanding`、`optimal_power_shutoff`、`network_interdiction` | damaged network；temporal restoration；N-k |
@@ -237,6 +249,7 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 - 精确预防性 SC-AC-OPF：3-bus 选定 N-1、5-bus 抽样 N-1。
 - Demand Response、Storage Scheduling、Distribution Expansion、Microgrid/VPP。
 - 三相 LinDistFlow DOPF（IEEE 4-node 风格 + SMART-DS 线型 6 节点）。
+- 数据中心：EE-AI 多园区分流、Green-LLM 推理分配、IEEE 网架柔性 DC 负荷、Texas 123-BT GCEP。
 
 仍缺、且不会用不完整模型冒充的部分：
 
@@ -280,6 +293,7 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 - **TEP**：建设二进制 + DC 运行；合成并联候选沿既有走廊
 - **CEM**：容量投资 + 代表时段运行（GenX 解析）
+- **GCEP-DC**：Texas 123-BT 多年度 DC-OPF 扩容 + 县内 DC/EOR 负荷分配
 - **HT**：库容平衡 + 水火出力；随机场景二阶段
 - **Maint**：唯一开工、连续工期、crew、检修不可用
 - **Market**：福利最大 LP；truthful 分段报价
@@ -307,13 +321,16 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 | `UC/SCUC` | 18 个 full/relaxed 案例有可行结果（17 OPTIMAL、1 TIME_LIMIT），48 个 `skip` |
 | `OPF/DC-OPF` | 42 例已有 OPTIMAL 结果，29 例 `skip` |
 | `OPF/AC-OPF` | 3/3 OPTIMAL + 独立 AC 残差重算 PASS |
+| `DATACENTER/GEOGRAPHIC-LOAD-BALANCING` | 6/6 OPTIMAL，Python/MATLAB 目标与分流约束对照 PASS |
+| `DATACENTER/GREEN-LLM` | 6/6 OPTIMAL，含 1 个落地 MILP |
+| `DATACENTER/FLEXIBLE-DC-LOAD` | 6/6 OPTIMAL；IEEE 24 时空柔性相对时移约降本 6.3% |
 | `DISPATCH/ECONOMIC-DISPATCH` | 3/3 OPTIMAL，平衡/边界/费用重算验收通过 |
 | `OPF/LINEARIZED-SC-OPF` + `OTS/LINEARIZED-SC-OTS` | 各 158 例；各 38 例 `relaxed` 已有 OPTIMAL 结果，各 120 例 `skip`；仅抽样 N-1 |
 | `DISTRIBUTION/*` | DNR 6、Distribution OPF 2、Volt-VAR 1、DER hosting 1；9 个可执行案为 experimental，1 个汇总案为 data-only，均不声明 physics-validated / PASS |
 | `RESILIENCE/MAXIMUM-LOAD-DELIVERY` | 18/18 PASS |
 | `MONITORING/PMU-PLACEMENT` | 37 个 full/relaxed PASS，29 个 `skip` |
 | `MONITORING/STATE-ESTIMATION` | 12/12 PASS |
-| `PLANNING/*` | TEP 23 个 full/relaxed PASS + 45 `skip`；CEM 10/10 PASS |
+| `PLANNING/*` | TEP 23 个 full/relaxed PASS + 45 `skip`；CEM 10/10 PASS；GCEP-DC 3/3 OPTIMAL |
 | `SCHEDULING/*` | HT 29 个 validated feasible + 3 `skip`；Maint 5/5 PASS |
 | `MARKET/*` | Market 56、Bid 8 PASS |
 | `RESILIENCE/*` | Power restoration 9+4 skip；Distribution restoration 3+1 skip；Islanding 75+7 skip；OPS 35/35；Interdiction 21+48 skip |
@@ -342,6 +359,7 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 | [SimBench](https://simbench.de/) / [SMART-DS](https://data.openei.org/submissions/2981) | 配网 |
 | PowerModels TNEP / Restoration / Wildfire | 规划、恢复、OPS |
 | GenX / GasLib / ANDES / CommaLAB / ACTIVSg200 | CEM、电–气、孤岛、水火、黑启动 |
+| Environmentally-Equitable-AI / Green_LLM / PSE-Lab GCEP | 数据中心分流、LLM 分配、Texas 123-BT 扩容 |
 
 - 构造说明与求解脚本供**科研与教学**；使用风险自负。
 - 遵守 Gurobi 与各上游数据许可；`config.json` 的 `source` 中可有更细来源与 SHA。

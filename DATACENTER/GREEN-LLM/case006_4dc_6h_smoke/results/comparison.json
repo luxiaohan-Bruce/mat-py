@@ -1,0 +1,18 @@
+{
+  "case": "case006_4dc_6h_smoke",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 29.700021678387095,
+    "obj_mat": 29.700021678387102,
+    "energy_py": 12.606945843482103,
+    "energy_mat": 12.606945843482102,
+    "carbon_py": 0.9099717910325608,
+    "carbon_mat": 0.9099717910325605,
+    "delay_py": 16.183104043872394,
+    "delay_mat": 16.18310404387239,
+    "obj_rel_diff": 2.392398037463948e-16
+  }
+}

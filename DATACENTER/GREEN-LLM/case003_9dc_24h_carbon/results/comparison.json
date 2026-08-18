@@ -1,0 +1,18 @@
+{
+  "case": "case003_9dc_24h_carbon",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 2.0936784247410203,
+    "obj_mat": 2.09367842474102,
+    "energy_py": 210.96607858163898,
+    "energy_mat": 210.966078581639,
+    "carbon_py": 2.0936784247410207,
+    "carbon_mat": 2.09367842474102,
+    "delay_py": 207.40793370055346,
+    "delay_mat": 207.65493392897403,
+    "obj_rel_diff": 2.121095601894998e-16
+  }
+}

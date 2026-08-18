@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case": "case004_ieee24_scuc_temporal",
+  "base_problem": "datacenter_flex",
+  "problem": "dcflex",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "dc_flexible_scuc"
+  },
+  "classification_note": "IEEE 24 SCUC (no N-1) with temporal DC flexibility.",
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case24_ieee_rts.m",
+    "sha256": "5d4fc2d4a1a282f700c51747e592f5a5ac15fa6d5eadb7df7ae937bbe3063374",
+    "paper": "arXiv:2605.18517"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "reuse_scuc_network",
+      "flex_temporal",
+      "uc",
+      "night_heavy_dc_profile"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.0001,
+    "TimeLimit": 300.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 0.0001,
+  "time_limit": 300.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 24,
+  "source_network": "pglib_opf_case24_ieee_rts",
+  "features": {
+    "n_bus": 24,
+    "n_branch": 38,
+    "n_gen": 33,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 792,
+    "math_class": "milp",
+    "solver_family": "temporal_mip",
+    "n_dc": 4
+  }
+}

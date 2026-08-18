@@ -1,0 +1,18 @@
+{
+  "case": "case004_9dc_24h_lex_cde",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 210.93026530984272,
+    "obj_mat": 210.9302669692624,
+    "energy_py": 210.9302653098427,
+    "energy_mat": 210.9302669692624,
+    "carbon_py": 2.0957721031657615,
+    "carbon_mat": 2.0957721031657615,
+    "delay_py": 184.6128516678175,
+    "delay_mat": 184.61285166781877,
+    "obj_rel_diff": 7.867148183187391e-09
+  }
+}

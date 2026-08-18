@@ -88,6 +88,9 @@
     "DISTRIBUTION": {
       "label": "Distribution systems"
     },
+    "DATACENTER": {
+      "label": "Data-center workload and siting"
+    },
     "MARKET": {
       "label": "Electricity markets"
     },
@@ -224,6 +227,18 @@
     "microgrid": {
       "id": "B27",
       "label": "Microgrid and VPP"
+    },
+    "datacenter_glb": {
+      "id": "B28",
+      "label": "Datacenter geographical load balancing"
+    },
+    "green_llm": {
+      "id": "B29",
+      "label": "Green LLM inference allocation"
+    },
+    "datacenter_flex": {
+      "id": "B30",
+      "label": "Flexible datacenter load"
     }
   },
   "variant_dimensions": {
@@ -273,7 +288,13 @@
       "single_system_balance",
       "storage_soc_energy_balance",
       "three_phase_lindistflow",
-      "vpp_aggregation"
+      "vpp_aggregation",
+      "equity_aware_geographical_load_balancing",
+      "weighted_llm_allocation",
+      "lexicographic_llm_allocation",
+      "dc_flexible_opf",
+      "dc_flexible_scuc",
+      "grid_capacity_expansion_dc_eor"
     ],
     "gas_model": [
       "pwl",
@@ -286,7 +307,8 @@
     "horizon": [
       "single_period",
       "multi_period",
-      "single_stage_multi_period"
+      "single_stage_multi_period",
+      "multi_year"
     ],
     "market": [
       "energy_only_welfare_max_lp"
@@ -1062,6 +1084,91 @@
         "uncertainty": "deterministic",
         "horizon": "single_period",
         "recourse": "preventive"
+      }
+    },
+    "DATACENTER/GEOGRAPHIC-LOAD-BALANCING": {
+      "navigation_domain": "DATACENTER",
+      "base_problem": "datacenter_glb",
+      "default_math_class": "lp",
+      "allowed_math_classes": [
+        "lp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "none",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none",
+        "formulation": "equity_aware_geographical_load_balancing"
+      }
+    },
+    "DATACENTER/GREEN-LLM": {
+      "navigation_domain": "DATACENTER",
+      "base_problem": "green_llm",
+      "default_math_class": "lp",
+      "allowed_math_classes": [
+        "lp",
+        "milp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch",
+        "temporal_mip"
+      ],
+      "default_variant": {
+        "power_flow": "none",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none",
+        "formulation": "weighted_llm_allocation"
+      }
+    },
+    "DATACENTER/FLEXIBLE-DC-LOAD": {
+      "navigation_domain": "DATACENTER",
+      "base_problem": "datacenter_flex",
+      "default_math_class": "lp",
+      "allowed_math_classes": [
+        "lp",
+        "milp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch",
+        "temporal_mip"
+      ],
+      "default_variant": {
+        "power_flow": "dc",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_period",
+        "recourse": "none",
+        "formulation": "dc_flexible_opf"
+      }
+    },
+    "PLANNING/GCEP-DC": {
+      "navigation_domain": "PLANNING",
+      "base_problem": "resource_capacity_expansion",
+      "default_math_class": "lp",
+      "allowed_math_classes": [
+        "lp"
+      ],
+      "default_solver_family": "convex_dispatch",
+      "allowed_solver_families": [
+        "convex_dispatch"
+      ],
+      "default_variant": {
+        "power_flow": "dc",
+        "security": "none",
+        "uncertainty": "deterministic",
+        "horizon": "multi_year",
+        "recourse": "none",
+        "formulation": "grid_capacity_expansion_dc_eor",
+        "storage": "simple_energy_balance"
       }
     }
   }

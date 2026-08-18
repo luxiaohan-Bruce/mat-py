@@ -1,0 +1,14 @@
+{
+  "case": "case003_ieee14_opf_spatial",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 43073.13188406296,
+    "obj_mat": 43073.13188406297,
+    "bal_py": 1.0658141036401503e-13,
+    "bal_mat": 1.3145040611561853e-13,
+    "obj_rel_diff": 1.6892102561215257e-16
+  }
+}

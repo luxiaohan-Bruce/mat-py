@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "n_networks": 308,
+  "n_networks": 312,
   "networks": {
     "andes:EI_33": [
       "RESILIENCE/CONTROLLED-ISLANDING/case003_EI_33_island"
@@ -298,6 +298,14 @@
     ],
     "constructed:smartds_336acsr_6bus": [
       "DISTRIBUTION/UNBALANCED-DOPF/case002_smartds_6bus_unbalanced"
+    ],
+    "eeai:eeai10": [
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case001_eeai10_24h_equity_full",
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case002_eeai10_24h_cost_full",
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case003_eeai10_457h_equity_full",
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case004_eeai10_457h_equity_partial",
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case005_eeai10_457h_cost_full",
+      "DATACENTER/GEOGRAPHIC-LOAD-BALANCING/case006_eeai10_457h_local"
     ],
     "gaslib:GasLib-11-v1-20211130:pglib_opf_case14_ieee": [
       "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case02_gaslib11_14_ieee_ieg"
@@ -721,6 +729,16 @@
       "OTS/LINEARIZED-SC-OTS/case314_t1s3_real_time_network_84r_3_scenario_2_scacots",
       "OTS/LINEARIZED-SC-OTS/case316_t1s3_real_time_network_84r_3_scenario_3_scacots"
     ],
+    "green_llm:official9": [
+      "DATACENTER/GREEN-LLM/case001_9dc_24h_weighted",
+      "DATACENTER/GREEN-LLM/case002_9dc_24h_energy",
+      "DATACENTER/GREEN-LLM/case003_9dc_24h_carbon",
+      "DATACENTER/GREEN-LLM/case004_9dc_24h_lex_cde",
+      "DATACENTER/GREEN-LLM/case005_9dc_24h_place_milp"
+    ],
+    "green_llm:smoke4": [
+      "DATACENTER/GREEN-LLM/case006_4dc_6h_smoke"
+    ],
     "ieee_pes_4_node_test_feeder:ieee4": [
       "DISTRIBUTION/UNBALANCED-DOPF/case001_ieee4_unbalanced"
     ],
@@ -794,6 +812,9 @@
       "UC/SCUC/case61_pegase13659_scuc"
     ],
     "pglib_opf_case14_ieee": [
+      "DATACENTER/FLEXIBLE-DC-LOAD/case001_ieee14_opf_inflexible",
+      "DATACENTER/FLEXIBLE-DC-LOAD/case002_ieee14_opf_temporal",
+      "DATACENTER/FLEXIBLE-DC-LOAD/case003_ieee14_opf_spatial",
       "DISPATCH/DEMAND-RESPONSE/case003_ieee14_dr",
       "DISPATCH/ECONOMIC-DISPATCH/case003_ieee14_copperplate_ed",
       "MONITORING/PMU-PLACEMENT/case003_case14_ieee_pmu",
@@ -939,6 +960,9 @@
       "UC/SCUC/case64_goc24464_scuc"
     ],
     "pglib_opf_case24_ieee_rts": [
+      "DATACENTER/FLEXIBLE-DC-LOAD/case004_ieee24_scuc_temporal",
+      "DATACENTER/FLEXIBLE-DC-LOAD/case005_ieee24_scuc_spatial_temporal",
+      "DATACENTER/FLEXIBLE-DC-LOAD/case006_ieee24_scuc_interruptible",
       "MONITORING/PMU-PLACEMENT/case004_case24_ieee_rts_pmu",
       "OPF/DC-OPF/case005_ieee24_dc_ed",
       "OPF/DC-OPF/case006_ieee24_lp_ed",
@@ -1753,6 +1777,11 @@
     ],
     "tamu_travis_150_electric-gas:data": [
       "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case01_travis150_ieg"
+    ],
+    "texas123bt_gcep": [
+      "PLANNING/GCEP-DC/case001_tx123_y2_d1",
+      "PLANNING/GCEP-DC/case002_tx123_y3_d2",
+      "PLANNING/GCEP-DC/case003_tx123_y7_d5"
     ],
     "wildfire:case14_risk": [
       "RESILIENCE/OPTIMAL-POWER-SHUTOFF/case006_case14_risk_rb00_ops",

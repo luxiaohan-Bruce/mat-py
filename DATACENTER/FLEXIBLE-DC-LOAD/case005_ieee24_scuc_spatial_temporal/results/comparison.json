@@ -1,0 +1,14 @@
+{
+  "case": "case005_ieee24_scuc_spatial_temporal",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 526899.3428013521,
+    "obj_mat": 526899.3428013514,
+    "bal_py": 3.524291969370097e-12,
+    "bal_mat": 3.524291969370097e-12,
+    "obj_rel_diff": 1.3256648361866516e-15
+  }
+}

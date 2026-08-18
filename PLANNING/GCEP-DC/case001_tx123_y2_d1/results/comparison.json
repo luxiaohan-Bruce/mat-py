@@ -1,0 +1,16 @@
+{
+  "case": "case001_tx123_y2_d1",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 277365.7370223154,
+    "obj_mat": 277365.7370010973,
+    "stor_py": 3.321933125630436e-07,
+    "stor_mat": 3.466088355897458e-07,
+    "dc_py": 19181771.999999993,
+    "dc_mat": 19181772.00000006,
+    "obj_rel_diff": 7.649859573359524e-11
+  }
+}

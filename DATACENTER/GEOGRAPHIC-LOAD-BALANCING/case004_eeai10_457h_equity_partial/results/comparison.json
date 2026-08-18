@@ -1,0 +1,20 @@
+{
+  "case": "case004_eeai10_457h_equity_partial",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 629943.2094001076,
+    "obj_mat": 629943.2094001075,
+    "energy_py": 341856.44614960405,
+    "energy_mat": 341856.44614960405,
+    "water_peak_py": 1860.7709202157923,
+    "water_peak_mat": 1860.7709202157919,
+    "carbon_peak_py": 117.62700535837087,
+    "carbon_peak_mat": 117.62700535837092,
+    "demand_py": 0.0,
+    "demand_mat": 0,
+    "obj_rel_diff": 1.8480288395805816e-16
+  }
+}

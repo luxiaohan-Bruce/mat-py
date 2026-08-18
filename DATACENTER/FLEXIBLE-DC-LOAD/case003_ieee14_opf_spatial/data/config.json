@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case": "case003_ieee14_opf_spatial",
+  "base_problem": "datacenter_flex",
+  "problem": "dcflex",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "dc_flexible_opf"
+  },
+  "classification_note": "IEEE 14 DC-OPF, hourly geographic load shifting.",
+  "source": {
+    "dataset": "PGLib-OPF",
+    "relative_path": "数据集/pglib-opf-master/pglib_opf_case14_ieee.m",
+    "sha256": "bd5c568621de65e4b0922317010868bc7fa94173807faa10ea8fdbbe77c28106",
+    "paper": "arXiv:2605.18517"
+  },
+  "construction": {
+    "builder_version": 1,
+    "seed": 1,
+    "transformations": [
+      "reuse_scuc_network",
+      "flex_spatial",
+      "opf",
+      "night_heavy_dc_profile"
+    ]
+  },
+  "gurobi_parameters": {
+    "Seed": 1,
+    "Threads": 1,
+    "MIPGap": 0.0001,
+    "TimeLimit": 120.0
+  },
+  "solve_tier": "full",
+  "mip_gap": 0.0001,
+  "time_limit": 120.0,
+  "seed": 1,
+  "threads": 1,
+  "T": 24,
+  "source_network": "pglib_opf_case14_ieee",
+  "features": {
+    "n_bus": 14,
+    "n_branch": 20,
+    "n_gen": 5,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_scenario": 1,
+    "n_switchable": 0,
+    "max_open": null,
+    "k": null,
+    "n_bin": 0,
+    "math_class": "lp",
+    "solver_family": "convex_dispatch",
+    "n_dc": 3
+  }
+}

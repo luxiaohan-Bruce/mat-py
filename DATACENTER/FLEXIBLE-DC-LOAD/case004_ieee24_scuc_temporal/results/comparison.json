@@ -1,0 +1,14 @@
+{
+  "case": "case004_ieee24_scuc_temporal",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 562159.710874873,
+    "obj_mat": 562159.7108748726,
+    "bal_py": 6.87805368215777e-12,
+    "bal_mat": 3.240074875066057e-12,
+    "obj_rel_diff": 6.212575514123611e-16
+  }
+}

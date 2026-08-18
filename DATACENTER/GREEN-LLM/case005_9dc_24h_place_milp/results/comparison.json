@@ -1,0 +1,18 @@
+{
+  "case": "case005_9dc_24h_place_milp",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 428.08056240527503,
+    "obj_mat": 428.0805624052754,
+    "energy_py": 204.4740885345863,
+    "energy_mat": 204.47408853458634,
+    "carbon_py": 9.297333372293485,
+    "carbon_mat": 9.297333372293489,
+    "delay_py": 189.30914049839603,
+    "delay_mat": 189.30914049839782,
+    "obj_rel_diff": 7.967203912471899e-16
+  }
+}

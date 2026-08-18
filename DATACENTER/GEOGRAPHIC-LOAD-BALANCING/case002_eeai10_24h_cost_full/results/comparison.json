@@ -1,0 +1,20 @@
+{
+  "case": "case002_eeai10_24h_cost_full",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 23696.5872354021,
+    "obj_mat": 23696.587235402105,
+    "energy_py": 23696.587235402087,
+    "energy_mat": 23696.58723540209,
+    "water_peak_py": 157.03804285717692,
+    "water_peak_mat": 157.03804285717692,
+    "carbon_peak_py": 11.531733654230425,
+    "carbon_peak_mat": 11.531733654230425,
+    "demand_py": 0.0,
+    "demand_mat": 0,
+    "obj_rel_diff": 1.5352332261823188e-16
+  }
+}

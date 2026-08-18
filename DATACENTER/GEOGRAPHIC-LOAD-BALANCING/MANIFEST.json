@@ -1,0 +1,140 @@
+[
+  {
+    "case": "case001_eeai10_24h_equity_full",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  },
+  {
+    "case": "case002_eeai10_24h_cost_full",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 24,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  },
+  {
+    "case": "case003_eeai10_457h_equity_full",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 457,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  },
+  {
+    "case": "case004_eeai10_457h_equity_partial",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 457,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  },
+  {
+    "case": "case005_eeai10_457h_cost_full",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 457,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  },
+  {
+    "case": "case006_eeai10_457h_local",
+    "source": "eeai:eeai10",
+    "n_bus": 0,
+    "n_gen": 0,
+    "n_branch": 0,
+    "n_storage": 0,
+    "n_candidate_branch": 0,
+    "T": 457,
+    "n_contingency": 0,
+    "n_bin": 0,
+    "solve_tier": "full",
+    "base_problem": "datacenter_glb",
+    "problem": "glb",
+    "variant": {
+      "power_flow": "none",
+      "security": "none",
+      "uncertainty": "deterministic",
+      "horizon": "multi_period",
+      "recourse": "none",
+      "formulation": "equity_aware_geographical_load_balancing"
+    }
+  }
+]

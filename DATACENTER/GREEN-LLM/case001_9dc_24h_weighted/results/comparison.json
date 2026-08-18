@@ -1,0 +1,18 @@
+{
+  "case": "case001_9dc_24h_weighted",
+  "ok": true,
+  "issues": [],
+  "checks": {
+    "status_py": "OPTIMAL",
+    "status_mat": "OPTIMAL",
+    "obj_py": 388.55235397947615,
+    "obj_mat": 388.55235397947587,
+    "energy_py": 199.85597302852324,
+    "energy_mat": 199.85597302852324,
+    "carbon_py": 6.045205230909457,
+    "carbon_mat": 6.04520523090946,
+    "delay_py": 182.6511757200488,
+    "delay_mat": 182.65117572005022,
+    "obj_rel_diff": 7.314769590073126e-16
+  }
+}
