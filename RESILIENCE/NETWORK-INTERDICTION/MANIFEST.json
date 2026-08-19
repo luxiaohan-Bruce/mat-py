@@ -1143,26 +1143,6 @@
     "path": "case057_epigrids7336_nk_int"
   },
   {
-    "case": "case058_pegase8387_nk_int",
-    "source": "pglib_opf_case8387_pegase",
-    "n_bus": 8387,
-    "n_gen": 1865,
-    "n_branch": 14561,
-    "n_line_online": 14561,
-    "k": 2,
-    "method": "enumeration",
-    "solve_tier": "skip",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
-    },
-    "path": "case058_pegase8387_nk_int"
-  },
-  {
     "case": "case059_pegase9241_nk_int",
     "source": "pglib_opf_case9241_pegase",
     "n_bus": 9241,

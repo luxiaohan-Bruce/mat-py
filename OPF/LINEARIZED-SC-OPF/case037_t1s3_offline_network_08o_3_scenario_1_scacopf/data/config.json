@@ -11,7 +11,7 @@
   "switchable_branches": [],
   "max_open": 0,
   "mip_gap": 0.05,
-  "time_limit": 1.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 0,
   "solve_tier": "skip",

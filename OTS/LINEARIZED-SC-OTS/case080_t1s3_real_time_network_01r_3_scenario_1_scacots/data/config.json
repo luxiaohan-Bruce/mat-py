@@ -20,7 +20,7 @@
   ],
   "max_open": 2,
   "mip_gap": 0.02,
-  "time_limit": 180.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 0,
   "solve_tier": "relaxed",

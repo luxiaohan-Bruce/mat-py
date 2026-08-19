@@ -2,7 +2,7 @@
 
 > **Maturity:** experimental · **validation:** structural only · **physics validated:** no
 
-This package keeps the DNR category and contains **6 examples**: SimBench MV/LV DNR and DNR+ESS cases, one SMART-DS GSO rural DNR case (`case01_gso_rural_dnr`), and one complete mixed SimBench meta/profile source (`solve_tier=skip`). The executable model is an active-power transport proxy, not LinDistFlow or exact three-phase AC.
+This package keeps the DNR category and contains **5 examples**: SimBench MV/LV DNR and DNR+ESS cases, plus one SMART-DS GSO rural DNR case (`case01_gso_rural_dnr`). The executable model is an active-power transport proxy, not LinDistFlow or exact three-phase AC.
 
 The model has active-power nodal balance, branch-capacity limits, switching variables, load shedding, and optional ESS. It does **not** have voltage-magnitude variables, voltage-drop equations, reactive-power balance, or radiality/energized-connectivity constraints. Therefore solver completion only validates model execution; these examples are excluded from physics-validated DNR coverage.
 

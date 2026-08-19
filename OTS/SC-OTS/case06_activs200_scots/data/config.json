@@ -647,7 +647,7 @@
   "load_scale": 1.0,
   "ratings_scaled": false,
   "mip_gap": 1e-07,
-  "time_limit": 1800,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",

@@ -1,7 +1,0 @@
-{
-  "name": "case04_complete_mixed_profile_meta",
-  "role": "profile_meta",
-  "source": "1-complete_data-mixed-all-2-sw",
-  "note": "SimBench complete mixed provides multiperiod profiles for future multi-period restore; not solved in v1.",
-  "exists": true
-}

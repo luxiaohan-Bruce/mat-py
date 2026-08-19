@@ -38,11 +38,11 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 0.0001,
-    "TimeLimit": 120.0
+    "TimeLimit": 600.0
   },
   "solve_tier": "full",
   "mip_gap": 0.0001,
-  "time_limit": 120.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "weymouth_pwl_segments": 8,

@@ -156,13 +156,13 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 60
+    "TimeLimit": 600.0
   },
   "solve_tier": "skip",
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 60,
+  "time_limit": 600,
   "blackstart_gens": [
     13,
     17,

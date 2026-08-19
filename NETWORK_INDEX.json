@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "n_networks": 312,
+  "n_networks": 310,
   "networks": {
     "andes:EI_33": [
       "RESILIENCE/CONTROLLED-ISLANDING/case003_EI_33_island"
@@ -309,9 +309,6 @@
     ],
     "gaslib:GasLib-11-v1-20211130:pglib_opf_case14_ieee": [
       "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case02_gaslib11_14_ieee_ieg"
-    ],
-    "gaslib:GasLib-135-v1-20211130:pglib_opf_case118_ieee": [
-      "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case15_gaslib135_118_ieee_ieg"
     ],
     "gaslib:GasLib-24-v1-20211130:pglib_opf_case24_ieee_rts": [
       "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/case03_gaslib24_24_ieee_rts_ieg"
@@ -765,9 +762,6 @@
     "pglib_opf_case10192_epigrids": [
       "MONITORING/PMU-PLACEMENT/case059_case10192_epigrids_pmu",
       "OPF/DC-OPF/case078_epigrids10192_dc_ed",
-      "OTS/DC-OTS/case59_epigrids10192_dcots",
-      "OTS/SC-OTS/case59_epigrids10192_scots",
-      "PLANNING/TRANSMISSION-EXPANSION/case061_epigrids10192_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case062_epigrids10192_nk_int",
       "UC/SCUC/case59_epigrids10192_scuc"
     ],
@@ -797,7 +791,6 @@
       "MONITORING/PMU-PLACEMENT/case022_case1354_pegase_pmu",
       "OPF/DC-OPF/case029_pegase1354_dc_ed",
       "OTS/DC-OTS/case22_pegase1354_dcots",
-      "OTS/SC-OTS/case22_pegase1354_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case024_pegase1354_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case025_pegase1354_nk_int",
       "UC/SCUC/case22_pegase1354_scuc"
@@ -854,7 +847,6 @@
       "MONITORING/PMU-PLACEMENT/case023_case1803_snem_pmu",
       "OPF/DC-OPF/case030_snem1803_dc_ed",
       "OTS/DC-OTS/case23_snem1803_dcots",
-      "OTS/SC-OTS/case23_snem1803_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case025_snem1803_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case026_snem1803_nk_int",
       "UC/SCUC/case23_snem1803_scuc"
@@ -883,8 +875,7 @@
       "OTS/DC-OTS/case25_rte1951_dcots",
       "OTS/SC-OTS/case25_rte1951_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case027_rte1951_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case028_rte1951_nk_int",
-      "UC/SCUC/case25_rte1951_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case028_rte1951_nk_int"
     ],
     "pglib_opf_case197_snem": [
       "MONITORING/PMU-PLACEMENT/case015_case197_snem_pmu",
@@ -927,10 +918,8 @@
       "MONITORING/PMU-PLACEMENT/case027_case2312_goc_pmu",
       "OPF/DC-OPF/case035_goc2312_dc_ed",
       "OTS/DC-OTS/case27_goc2312_dcots",
-      "OTS/SC-OTS/case27_goc2312_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case029_goc2312_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case030_goc2312_nk_int",
-      "UC/SCUC/case27_goc2312_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case030_goc2312_nk_int"
     ],
     "pglib_opf_case2383wp_k": [
       "MONITORING/PMU-PLACEMENT/case028_case2383wp_k_pmu",
@@ -938,8 +927,7 @@
       "OTS/DC-OTS/case28_2383wpk_dcots",
       "OTS/SC-OTS/case28_2383wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case030_2383wpk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case031_2383wpk_nk_int",
-      "UC/SCUC/case28_2383wpk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case031_2383wpk_nk_int"
     ],
     "pglib_opf_case240_pserc": [
       "MONITORING/PMU-PLACEMENT/case017_case240_pserc_pmu",
@@ -976,19 +964,15 @@
       "MONITORING/PMU-PLACEMENT/case029_case2736sp_k_pmu",
       "OPF/DC-OPF/case038_2736spk_dc_ed",
       "OTS/DC-OTS/case29_2736spk_dcots",
-      "OTS/SC-OTS/case29_2736spk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case031_2736spk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case032_2736spk_nk_int",
-      "UC/SCUC/case29_2736spk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case032_2736spk_nk_int"
     ],
     "pglib_opf_case2737sop_k": [
       "MONITORING/PMU-PLACEMENT/case030_case2737sop_k_pmu",
       "OPF/DC-OPF/case039_2737sopk_dc_ed",
       "OTS/DC-OTS/case30_2737sopk_dcots",
-      "OTS/SC-OTS/case30_2737sopk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case032_2737sopk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case033_2737sopk_nk_int",
-      "UC/SCUC/case30_2737sopk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case033_2737sopk_nk_int"
     ],
     "pglib_opf_case2742_goc": [
       "MONITORING/PMU-PLACEMENT/case031_case2742_goc_pmu",
@@ -996,26 +980,21 @@
       "OTS/DC-OTS/case31_goc2742_dcots",
       "OTS/SC-OTS/case31_goc2742_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case033_goc2742_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case034_goc2742_nk_int",
-      "UC/SCUC/case31_goc2742_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case034_goc2742_nk_int"
     ],
     "pglib_opf_case2746wop_k": [
       "MONITORING/PMU-PLACEMENT/case032_case2746wop_k_pmu",
       "OPF/DC-OPF/case042_2746wopk_dc_ed",
       "OTS/DC-OTS/case32_2746wopk_dcots",
-      "OTS/SC-OTS/case32_2746wopk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case034_2746wopk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case035_2746wopk_nk_int",
-      "UC/SCUC/case32_2746wopk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case035_2746wopk_nk_int"
     ],
     "pglib_opf_case2746wp_k": [
       "MONITORING/PMU-PLACEMENT/case033_case2746wp_k_pmu",
       "OPF/DC-OPF/case043_2746wpk_dc_ed",
       "OTS/DC-OTS/case33_2746wpk_dcots",
-      "OTS/SC-OTS/case33_2746wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case035_2746wpk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case036_2746wpk_nk_int",
-      "UC/SCUC/case33_2746wpk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case036_2746wpk_nk_int"
     ],
     "pglib_opf_case2848_rte": [
       "MONITORING/PMU-PLACEMENT/case034_case2848_rte_pmu",
@@ -1030,10 +1009,8 @@
       "MONITORING/PMU-PLACEMENT/case035_case2853_sdet_pmu",
       "OPF/DC-OPF/case045_sdet2853_dc_ed",
       "OTS/DC-OTS/case35_sdet2853_dcots",
-      "OTS/SC-OTS/case35_sdet2853_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case037_sdet2853_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case038_sdet2853_nk_int",
-      "UC/SCUC/case35_sdet2853_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case038_sdet2853_nk_int"
     ],
     "pglib_opf_case2868_rte": [
       "MONITORING/PMU-PLACEMENT/case036_case2868_rte_pmu",
@@ -1077,16 +1054,13 @@
       "MONITORING/PMU-PLACEMENT/case038_case3012wp_k_pmu",
       "OPF/DC-OPF/case048_3012wpk_dc_ed",
       "OTS/DC-OTS/case38_3012wpk_dcots",
-      "OTS/SC-OTS/case38_3012wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case040_3012wpk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case041_3012wpk_nk_int",
-      "UC/SCUC/case38_3012wpk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case041_3012wpk_nk_int"
     ],
     "pglib_opf_case3022_goc": [
       "MONITORING/PMU-PLACEMENT/case039_case3022_goc_pmu",
       "OPF/DC-OPF/case049_goc3022_dc_ed",
       "OTS/DC-OTS/case39_goc3022_dcots",
-      "OTS/SC-OTS/case39_goc3022_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case041_goc3022_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case042_goc3022_nk_int",
       "UC/SCUC/case39_goc3022_scuc"
@@ -1119,19 +1093,15 @@
       "MONITORING/PMU-PLACEMENT/case040_case3120sp_k_pmu",
       "OPF/DC-OPF/case051_3120spk_dc_ed",
       "OTS/DC-OTS/case40_3120spk_dcots",
-      "OTS/SC-OTS/case40_3120spk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case042_3120spk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case043_3120spk_nk_int",
-      "UC/SCUC/case40_3120spk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case043_3120spk_nk_int"
     ],
     "pglib_opf_case3375wp_k": [
       "MONITORING/PMU-PLACEMENT/case041_case3375wp_k_pmu",
       "OPF/DC-OPF/case052_3375wpk_dc_ed",
       "OTS/DC-OTS/case41_3375wpk_dcots",
-      "OTS/SC-OTS/case41_3375wpk_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case043_3375wpk_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case044_3375wpk_nk_int",
-      "UC/SCUC/case41_3375wpk_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case044_3375wpk_nk_int"
     ],
     "pglib_opf_case3970_goc": [
       "MONITORING/PMU-PLACEMENT/case042_case3970_goc_pmu",
@@ -1174,8 +1144,7 @@
       "OTS/DC-OTS/case43_goc4020_dcots",
       "OTS/SC-OTS/case43_goc4020_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case045_goc4020_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case046_goc4020_nk_int",
-      "UC/SCUC/case43_goc4020_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case046_goc4020_nk_int"
     ],
     "pglib_opf_case4601_goc": [
       "MONITORING/PMU-PLACEMENT/case044_case4601_goc_pmu",
@@ -1192,17 +1161,14 @@
       "OTS/DC-OTS/case45_goc4619_dcots",
       "OTS/SC-OTS/case45_goc4619_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case047_goc4619_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case048_goc4619_nk_int",
-      "UC/SCUC/case45_goc4619_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case048_goc4619_nk_int"
     ],
     "pglib_opf_case4661_sdet": [
       "MONITORING/PMU-PLACEMENT/case046_case4661_sdet_pmu",
       "OPF/DC-OPF/case061_sdet4661_dc_ed",
       "OTS/DC-OTS/case46_sdet4661_dcots",
-      "OTS/SC-OTS/case46_sdet4661_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case048_sdet4661_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case049_sdet4661_nk_int",
-      "UC/SCUC/case46_sdet4661_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case049_sdet4661_nk_int"
     ],
     "pglib_opf_case4837_goc": [
       "MONITORING/PMU-PLACEMENT/case047_case4837_goc_pmu",
@@ -1210,14 +1176,12 @@
       "OTS/DC-OTS/case47_goc4837_dcots",
       "OTS/SC-OTS/case47_goc4837_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case049_goc4837_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case050_goc4837_nk_int",
-      "UC/SCUC/case47_goc4837_scuc"
+      "RESILIENCE/NETWORK-INTERDICTION/case050_goc4837_nk_int"
     ],
     "pglib_opf_case4917_goc": [
       "MONITORING/PMU-PLACEMENT/case048_case4917_goc_pmu",
       "OPF/DC-OPF/case064_goc4917_dc_ed",
       "OTS/DC-OTS/case48_goc4917_dcots",
-      "OTS/SC-OTS/case48_goc4917_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case050_goc4917_tep_syn",
       "RESILIENCE/NETWORK-INTERDICTION/case051_goc4917_nk_int",
       "UC/SCUC/case48_goc4917_scuc"
@@ -1372,7 +1336,6 @@
       "OTS/DC-OTS/case55_pegase8387_dcots",
       "OTS/SC-OTS/case55_pegase8387_scots",
       "PLANNING/TRANSMISSION-EXPANSION/case057_pegase8387_tep_syn",
-      "RESILIENCE/NETWORK-INTERDICTION/case058_pegase8387_nk_int",
       "UC/SCUC/case55_pegase8387_scuc"
     ],
     "pglib_opf_case89_pegase": [
@@ -1753,10 +1716,6 @@
       "DISTRIBUTION/DNR/case01_mv_rural_dnr",
       "DISTRIBUTION/DNR/case03_mv_rural_dnr_ess",
       "RESILIENCE/DISTRIBUTION-RESTORATION/case01_mv_rural_restore"
-    ],
-    "simbench:1-complete_data-mixed-all-2-sw": [
-      "DISTRIBUTION/DNR/case07_complete_mixed_profile_meta",
-      "RESILIENCE/DISTRIBUTION-RESTORATION/case04_complete_mixed_profile_meta"
     ],
     "simbench:GSO-rural-base_peak-rhs1_1247--rdt137": [
       "RESILIENCE/DISTRIBUTION-RESTORATION/case03_gso_rural_restore"

@@ -18,7 +18,7 @@
   ],
   "max_open": 2,
   "mip_gap": 1e-06,
-  "time_limit": 60,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "gurobi_indicators (no big-M angle coupling when open)",
@@ -31,7 +31,7 @@
   ],
   "gurobi_parameters": {
     "MIPGap": 1e-06,
-    "TimeLimit": 60,
+    "TimeLimit": 600.0,
     "Seed": 1,
     "Threads": 1
   },

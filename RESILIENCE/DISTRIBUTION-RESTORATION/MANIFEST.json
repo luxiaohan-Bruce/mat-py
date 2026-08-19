@@ -37,13 +37,5 @@
     ],
     "solve_tier": "full",
     "path": "case03_gso_rural_restore"
-  },
-  {
-    "case": "case04_complete_mixed_profile_meta",
-    "source": "SimBench",
-    "folder": "1-complete_data-mixed-all-2-sw",
-    "solve_tier": "skip",
-    "mode": "profile_meta",
-    "path": "case04_complete_mixed_profile_meta"
   }
 ]

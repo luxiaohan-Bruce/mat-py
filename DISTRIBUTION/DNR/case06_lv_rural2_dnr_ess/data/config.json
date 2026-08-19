@@ -9,7 +9,7 @@
   },
   "T": 4,
   "mip_gap": 0.01,
-  "time_limit": 120.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",

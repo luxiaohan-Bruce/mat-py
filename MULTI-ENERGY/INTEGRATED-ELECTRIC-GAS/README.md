@@ -2,10 +2,10 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B20）。
 
-- **案例数**: 15（full=13, relaxed=1, skip=1）
+- **案例数**: 14（full=13, relaxed=1）
 - **数据来源**: GasLib + PGLib / Travis coupling
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: 14 个 full/relaxed 案例通过验收；1 个 `skip` 大网仅提供数据
+- **验收**: 14 个 full/relaxed 案例通过验收
 
 ## 环境
 

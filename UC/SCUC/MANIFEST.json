@@ -1,6 +1,6 @@
 {
   "problem": "scuc",
-  "n_total": 66,
+  "n_total": 50,
   "n_built_new": 63,
   "frozen": [
     "case01_ieee39_scuc",
@@ -261,17 +261,6 @@
       "legacy": false
     },
     {
-      "case": "case25_rte1951_scuc",
-      "source": "pglib_opf_case1951_rte",
-      "n_bus": 1951,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 390,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case26_goc2000_scuc",
       "source": "pglib_opf_case2000_goc",
       "n_bus": 2000,
@@ -283,100 +272,12 @@
       "legacy": false
     },
     {
-      "case": "case27_goc2312_scuc",
-      "source": "pglib_opf_case2312_goc",
-      "n_bus": 2312,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 444,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case28_2383wpk_scuc",
-      "source": "pglib_opf_case2383wp_k",
-      "n_bus": 2383,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 323,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case29_2736spk_scuc",
-      "source": "pglib_opf_case2736sp_k",
-      "n_bus": 2736,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 289,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case30_2737sopk_scuc",
-      "source": "pglib_opf_case2737sop_k",
-      "n_bus": 2737,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 267,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case31_goc2742_scuc",
-      "source": "pglib_opf_case2742_goc",
-      "n_bus": 2742,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 182,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case32_2746wopk_scuc",
-      "source": "pglib_opf_case2746wop_k",
-      "n_bus": 2746,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 444,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case33_2746wpk_scuc",
-      "source": "pglib_opf_case2746wp_k",
-      "n_bus": 2746,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 458,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case34_rte2848_scuc",
       "source": "pglib_opf_case2848_rte",
       "n_bus": 2848,
       "T": 6,
       "n_cont": 2,
       "n_active_gen": 544,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case35_sdet2853_scuc",
-      "source": "pglib_opf_case2853_sdet",
-      "n_bus": 2853,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 946,
       "size_bucket": "XL",
       "solve_tier": "skip",
       "legacy": false
@@ -404,45 +305,12 @@
       "legacy": false
     },
     {
-      "case": "case38_3012wpk_scuc",
-      "source": "pglib_opf_case3012wp_k",
-      "n_bus": 3012,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 496,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case39_goc3022_scuc",
       "source": "pglib_opf_case3022_goc",
       "n_bus": 3022,
       "T": 6,
       "n_cont": 2,
       "n_active_gen": 637,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case40_3120spk_scuc",
-      "source": "pglib_opf_case3120sp_k",
-      "n_bus": 3120,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 483,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case41_3375wpk_scuc",
-      "source": "pglib_opf_case3375wp_k",
-      "n_bus": 3374,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 590,
       "size_bucket": "XL",
       "solve_tier": "skip",
       "legacy": false
@@ -459,56 +327,12 @@
       "legacy": false
     },
     {
-      "case": "case43_goc4020_scuc",
-      "source": "pglib_opf_case4020_goc",
-      "n_bus": 4020,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 352,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case44_goc4601_scuc",
       "source": "pglib_opf_case4601_goc",
       "n_bus": 4601,
       "T": 6,
       "n_cont": 2,
       "n_active_gen": 408,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case45_goc4619_scuc",
-      "source": "pglib_opf_case4619_goc",
-      "n_bus": 4619,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 347,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case46_sdet4661_scuc",
-      "source": "pglib_opf_case4661_sdet",
-      "n_bus": 4661,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 1176,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case47_goc4837_scuc",
-      "source": "pglib_opf_case4837_goc",
-      "n_bus": 4837,
-      "T": 6,
-      "n_cont": 2,
-      "n_active_gen": 332,
       "size_bucket": "XL",
       "solve_tier": "skip",
       "legacy": false

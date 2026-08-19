@@ -18,7 +18,7 @@
   ],
   "max_open": 3,
   "mip_gap": 1e-06,
-  "time_limit": 120.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "indicator constraints (see model)",

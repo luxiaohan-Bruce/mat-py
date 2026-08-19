@@ -29,11 +29,11 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 0.001,
-    "TimeLimit": 120
+    "TimeLimit": 600.0
   },
   "solve_tier": "relaxed",
   "mip_gap": 0.001,
-  "time_limit": 120,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "source_network": "commalab:75_35_1_w.mod",

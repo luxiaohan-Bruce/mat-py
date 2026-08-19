@@ -2,7 +2,7 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B17）。
 
-- **案例数**: 4（full=3, skip=1）
+- **案例数**: 3（full=3）
 - **数据来源**: SimBench + SMART-DS radial feeders
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
 - **验收**: - passed: 3/3

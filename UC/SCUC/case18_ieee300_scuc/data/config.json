@@ -22,7 +22,7 @@
   ],
   "emergency_rate_factor": 1.0,
   "mip_gap": 0.001,
-  "time_limit": 900.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "size_bucket": "L",

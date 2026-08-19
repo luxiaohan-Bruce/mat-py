@@ -14,12 +14,12 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 300.0,
+  "time_limit": 600,
   "gurobi_parameters": {
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 300.0
+    "TimeLimit": 600.0
   },
   "construction": [
     "RTS-GMLC thermal+hydro generators with heat-rate linear costs.",

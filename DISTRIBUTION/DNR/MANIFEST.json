@@ -72,20 +72,6 @@
     }
   },
   {
-    "case": "case07_complete_mixed_profile_meta",
-    "folder": "1-complete_data-mixed-all-2-sw",
-    "mode": "meta",
-    "solve_tier": "skip",
-    "maturity": "data_only",
-    "validation_scope": "not_solved",
-    "physics_validated": false,
-    "base_problem": "dnr",
-    "problem": "meta",
-    "variant": {
-      "power_flow": "none"
-    }
-  },
-  {
     "case": "case01_gso_rural_dnr",
     "folder": "GSO-rural-base_peak-rhs1_1247--rdt137",
     "mode": "dnr",

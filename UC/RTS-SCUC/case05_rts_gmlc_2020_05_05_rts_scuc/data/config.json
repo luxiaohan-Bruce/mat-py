@@ -18,7 +18,7 @@
   "emergency_rate_factor": 1.0,
   "load_shed_penalty": 5000.0,
   "mip_gap": 0.01,
-  "time_limit": 300.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",

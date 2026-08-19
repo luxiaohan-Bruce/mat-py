@@ -1,9 +1,0 @@
-{
-  "case": "case15_gaslib135_118_ieee_ieg",
-  "tier": "skip",
-  "ok": true,
-  "issues": [],
-  "checks": {
-    "mode": "data_only_skip"
-  }
-}

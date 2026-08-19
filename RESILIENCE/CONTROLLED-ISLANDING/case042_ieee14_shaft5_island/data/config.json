@@ -43,13 +43,13 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 120
+    "TimeLimit": 600.0
   },
   "solve_tier": "full",
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 120,
+  "time_limit": 600,
   "source_network": "andes:ieee14_shaft5",
   "features": {
     "n_bus": 14,

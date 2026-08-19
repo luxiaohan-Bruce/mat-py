@@ -33,11 +33,11 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 120.0
+    "TimeLimit": 600.0
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 120.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices.",

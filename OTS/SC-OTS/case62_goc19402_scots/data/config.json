@@ -20,7 +20,7 @@
   "load_shedding": false,
   "canonicalize_contingencies": false,
   "mip_gap": 0.001,
-  "time_limit": 60.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "load_scale": 1.0,

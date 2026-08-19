@@ -44,7 +44,7 @@
   ],
   "emergency_rate_factor": 1.0,
   "mip_gap": 0.0001,
-  "time_limit": 400,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "notes": [

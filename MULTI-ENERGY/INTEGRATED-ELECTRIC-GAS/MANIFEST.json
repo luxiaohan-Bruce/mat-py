@@ -137,15 +137,5 @@
     "source": "GasLib-40",
     "scenario": "GasLib-40-v1-20211130.scn",
     "path": "case14_gaslib40_57_ieee_ieg"
-  },
-  {
-    "case": "case15_gaslib135_118_ieee_ieg",
-    "solve_tier": "skip",
-    "n_bus": 118,
-    "n_gas_node": 135,
-    "coupling": "synthetic_coupling",
-    "source": "GasLib-135",
-    "scenario": "GasLib-135-v1-20211130.scn",
-    "path": "case15_gaslib135_118_ieee_ieg"
   }
 ]

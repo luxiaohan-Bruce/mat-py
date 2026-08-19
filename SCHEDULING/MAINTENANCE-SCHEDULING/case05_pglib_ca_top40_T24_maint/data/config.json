@@ -14,12 +14,12 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 180.0,
+  "time_limit": 600,
   "gurobi_parameters": {
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 180.0
+    "TimeLimit": 600.0
   },
   "construction": [
     "CA 2014-09-01 reserves_0: take 40 largest thermal units for teaching.",

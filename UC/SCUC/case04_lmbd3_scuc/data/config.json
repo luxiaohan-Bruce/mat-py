@@ -20,7 +20,7 @@
   "load_scale": 0.7,
   "contingencies": [],
   "mip_gap": 0.0001,
-  "time_limit": 120,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "size_bucket": "S",

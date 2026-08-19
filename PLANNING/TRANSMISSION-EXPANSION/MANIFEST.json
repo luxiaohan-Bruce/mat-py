@@ -1140,25 +1140,6 @@
     "candidate_origin": "synthetic_parallel"
   },
   {
-    "case": "case061_epigrids10192_tep_syn",
-    "source": "pglib_opf_case10192_epigrids",
-    "n_bus": 10192,
-    "n_gen": 722,
-    "n_branch": 17043,
-    "n_candidate": 3,
-    "solve_tier": "skip",
-    "variant": {
-      "power_flow": "dc",
-      "security": "none",
-      "uncertainty": "deterministic",
-      "horizon": "single_period",
-      "recourse": "none",
-      "candidate_type": "synthetic_parallel"
-    },
-    "path": "case061_epigrids10192_tep_syn",
-    "candidate_origin": "synthetic_parallel"
-  },
-  {
     "case": "case062_goc10480_tep_syn",
     "source": "pglib_opf_case10480_goc",
     "n_bus": 10480,

@@ -106,7 +106,7 @@
   "synthetic_fault": true,
   "fault_seed": 1,
   "mip_gap": 0.01,
-  "time_limit": 180.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 0,
   "solve_tier": "full",

@@ -2607,13 +2607,13 @@
   "gurobi_parameters": {
     "Seed": 1,
     "Threads": 1,
-    "TimeLimit": 120,
+    "TimeLimit": 600.0,
     "MIPGap": 1e-06
   },
   "solve_tier": "full",
   "seed": 1,
   "threads": 1,
-  "time_limit": 120,
+  "time_limit": 600,
   "mip_gap": 1e-06,
   "source_network": "pglib_opf_case118_ieee",
   "features": {

@@ -34,11 +34,11 @@
     "Seed": 1,
     "Threads": 1,
     "MIPGap": 1e-06,
-    "TimeLimit": 1.0
+    "TimeLimit": 600.0
   },
   "solve_tier": "skip",
   "mip_gap": 1e-06,
-  "time_limit": 1.0,
+  "time_limit": 600,
   "seed": 1,
   "threads": 1,
   "source_network": "pglib_opf_case10480_goc",

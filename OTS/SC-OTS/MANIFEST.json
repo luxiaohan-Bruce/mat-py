@@ -1,6 +1,6 @@
 {
   "problem": "scots",
-  "n_total": 66,
+  "n_total": 51,
   "n_built_new": 63,
   "frozen": [
     "case04_ieee24_scots",
@@ -228,28 +228,6 @@
       "legacy": false
     },
     {
-      "case": "case22_pegase1354_scots",
-      "source": "pglib_opf_case1354_pegase",
-      "n_bus": 1354,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case23_snem1803_scots",
-      "source": "pglib_opf_case1803_snem",
-      "n_bus": 1803,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case24_rte1888_scots",
       "source": "pglib_opf_case1888_rte",
       "n_bus": 1888,
@@ -283,42 +261,9 @@
       "legacy": false
     },
     {
-      "case": "case27_goc2312_scots",
-      "source": "pglib_opf_case2312_goc",
-      "n_bus": 2312,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case28_2383wpk_scots",
       "source": "pglib_opf_case2383wp_k",
       "n_bus": 2383,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case29_2736spk_scots",
-      "source": "pglib_opf_case2736sp_k",
-      "n_bus": 2736,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case30_2737sopk_scots",
-      "source": "pglib_opf_case2737sop_k",
-      "n_bus": 2737,
       "n_switchable": 5,
       "n_cont": 3,
       "max_open": 1,
@@ -338,42 +283,9 @@
       "legacy": false
     },
     {
-      "case": "case32_2746wopk_scots",
-      "source": "pglib_opf_case2746wop_k",
-      "n_bus": 2746,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case33_2746wpk_scots",
-      "source": "pglib_opf_case2746wp_k",
-      "n_bus": 2746,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case34_rte2848_scots",
       "source": "pglib_opf_case2848_rte",
       "n_bus": 2848,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case35_sdet2853_scots",
-      "source": "pglib_opf_case2853_sdet",
-      "n_bus": 2853,
       "n_switchable": 5,
       "n_cont": 3,
       "max_open": 1,
@@ -396,50 +308,6 @@
       "case": "case37_pegase2869_scots",
       "source": "pglib_opf_case2869_pegase",
       "n_bus": 2869,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case38_3012wpk_scots",
-      "source": "pglib_opf_case3012wp_k",
-      "n_bus": 3012,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case39_goc3022_scots",
-      "source": "pglib_opf_case3022_goc",
-      "n_bus": 3022,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case40_3120spk_scots",
-      "source": "pglib_opf_case3120sp_k",
-      "n_bus": 3120,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case41_3375wpk_scots",
-      "source": "pglib_opf_case3375wp_k",
-      "n_bus": 3374,
       "n_switchable": 5,
       "n_cont": 3,
       "max_open": 1,
@@ -492,31 +360,9 @@
       "legacy": false
     },
     {
-      "case": "case46_sdet4661_scots",
-      "source": "pglib_opf_case4661_sdet",
-      "n_bus": 4661,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
       "case": "case47_goc4837_scots",
       "source": "pglib_opf_case4837_goc",
       "n_bus": 4837,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case48_goc4917_scots",
-      "source": "pglib_opf_case4917_goc",
-      "n_bus": 4917,
       "n_switchable": 5,
       "n_cont": 3,
       "max_open": 1,
@@ -627,17 +473,6 @@
       "case": "case58_goc10000_scots",
       "source": "pglib_opf_case10000_goc",
       "n_bus": 10000,
-      "n_switchable": 5,
-      "n_cont": 3,
-      "max_open": 1,
-      "size_bucket": "XL",
-      "solve_tier": "skip",
-      "legacy": false
-    },
-    {
-      "case": "case59_epigrids10192_scots",
-      "source": "pglib_opf_case10192_epigrids",
-      "n_bus": 10192,
       "n_switchable": 5,
       "n_cont": 3,
       "max_open": 1,
