@@ -17,7 +17,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认只跑 full
+python3 run_all_python.py
 
 # 单案例
 python3 case001_lmbd3_dc_ed/python/solve_ed.py

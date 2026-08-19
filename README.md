@@ -111,11 +111,11 @@ pip install -r requirements.txt
 # —— OTS / OPF ——
 python3 OTS/DC-OTS/run_all_python.py
 python3 OTS/SC-OTS/run_all_python.py
-python3 OTS/LINEARIZED-SC-OTS/run_all_python.py --tier relaxed
-python3 OPF/DC-OPF/run_all_python.py --full-only
+python3 OTS/LINEARIZED-SC-OTS/run_all_python.py
+python3 OPF/DC-OPF/run_all_python.py
 python3 OPF/AC-OPF/run_all_python.py
 python3 OPF/SC-AC-OPF/run_all_python.py
-python3 OPF/LINEARIZED-SC-OPF/run_all_python.py --tier relaxed
+python3 OPF/LINEARIZED-SC-OPF/run_all_python.py
 
 # —— UC ——
 python3 UC/SYSTEM-UC/run_all_python.py
@@ -142,24 +142,24 @@ python3 MONITORING/PMU-PLACEMENT/run_all_python.py
 python3 MONITORING/STATE-ESTIMATION/run_all_python.py
 
 # —— 规划 / 时序 / 市场 ——
-python3 PLANNING/TRANSMISSION-EXPANSION/run_all_python.py --full-only
+python3 PLANNING/TRANSMISSION-EXPANSION/run_all_python.py
 python3 PLANNING/RESOURCE-CAPACITY-EXPANSION/run_all_python.py
-python3 PLANNING/GCEP-DC/run_all_python.py --full-only
+python3 PLANNING/GCEP-DC/run_all_python.py
 python3 PLANNING/DISTRIBUTION-EXPANSION/run_all_python.py
-python3 SCHEDULING/HYDROTHERMAL-SCHEDULING/run_all_python.py --full-only
+python3 SCHEDULING/HYDROTHERMAL-SCHEDULING/run_all_python.py
 python3 SCHEDULING/MAINTENANCE-SCHEDULING/run_all_python.py
 python3 SCHEDULING/STORAGE-SCHEDULING/run_all_python.py
-python3 MARKET/MARKET-CLEARING/run_all_python.py --full-only
+python3 MARKET/MARKET-CLEARING/run_all_python.py
 python3 MARKET/STRATEGIC-BIDDING/run_all_python.py
 
 # —— 韧性 / 综合能源 ——
 python3 RESILIENCE/MAXIMUM-LOAD-DELIVERY/run_all_python.py
-python3 RESILIENCE/POWER-RESTORATION/run_all_python.py --full-only
+python3 RESILIENCE/POWER-RESTORATION/run_all_python.py
 python3 RESILIENCE/DISTRIBUTION-RESTORATION/run_all_python.py
-python3 RESILIENCE/CONTROLLED-ISLANDING/run_all_python.py --full-only
+python3 RESILIENCE/CONTROLLED-ISLANDING/run_all_python.py
 python3 RESILIENCE/OPTIMAL-POWER-SHUTOFF/run_all_python.py
-python3 RESILIENCE/NETWORK-INTERDICTION/run_all_python.py --full-only
-python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/run_all_python.py --full-only
+python3 RESILIENCE/NETWORK-INTERDICTION/run_all_python.py
+python3 MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/run_all_python.py
 ```
 
 ### 单案例（统一入口）

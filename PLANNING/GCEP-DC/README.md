@@ -9,7 +9,7 @@ PSE-Lab 电网容量扩展（GCEP）的 Gurobi LP。官方脚本是 Pyomo `Case2
 多年度投资 + 代表日直流潮流；县内 DC / EOR 负荷可在该县母线间分配；含建设时滞与 2029 年前核电禁建。储能按小时更新 SoC（官方脚本在日/年边界少记 1 小时充放，这里按物理写全）。目标按官方缩放 \(1/10^5\)。
 
 ```bash
-python3 run_all_python.py --full-only
+python3 run_all_python.py
 python3 case001_tx123_y2_d1/solve.py
 ```
 
