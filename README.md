@@ -77,16 +77,6 @@ github_cases/
 
 **合计 1162 个案例**。
 
-> **说明**
-> - 子包目录名：**大写 + 连字符**。
-> - GO C1 已按基础问题拆开并如实命名为 `OPF/LINEARIZED-SC-OPF` 与 `OTS/LINEARIZED-SC-OTS`；当前事故集是抽样子集，不代表完整 N-1。
-> - 原“网络化经济调度”71 例实际包含节点平衡、相角、支路潮流和热稳约束，现归入 `OPF/DC-OPF`；`DISPATCH/ECONOMIC-DISPATCH` 新增 3 个真正的铜板 ED 基准。
-> - 配网已拆分为 DNR 5 例、Distribution OPF 2 例、Volt-VAR 1 例、DER hosting 1 例。这 9 个可执行案例是 **experimental 的 active-power transport 近似**，不能视为已通过 AC、三相或 LinDistFlow 物理验证。
-> - `DISTRIBUTION/UNBALANCED-DOPF` 是三相 LinDistFlow（线性化），不是精确三相 AC 潮流。
-> - `OPF/SC-AC-OPF` 是精确极坐标预防性 N-1，与 GO 线性化 `LINEARIZED-SC-OPF` 不是同一模型。
-> - 最大供电（MLD）已从 `DISPATCH/` 挪到 `RESILIENCE/`（损坏网络上的供电，不是经济调度）。
-> - 每个案例目录都有 `solve.py`；`config.json` 含统一 `base_problem` / `variant` / `source_network` / `features`。
-
 ---
 
 ## 环境要求
