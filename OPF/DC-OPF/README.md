@@ -5,9 +5,9 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 单时段 DC-OPF（无 UC 二进制）。
 目标：最小化二次/线性发电费用；约束：节点功率平衡、DC 支路潮流方程、线路热限和机组出力上下界。因显式包含网络约束，本包归类为 `opf/dc_opf`，而非铜板 Economic Dispatch。
 数据：PGLib-OPF 全网 + 小网线性成本教学变体（`*_lp_ed`）。
-结果覆盖：42 个可执行案例（full 23 / relaxed 19）保留已验证求解结果；29 个 `skip` 大网仅提供数据，不计作求解 PASS。
+结果覆盖：42 个可执行案例（full 23 / relaxed 19）保留已验证求解结果；29 个 `xlarge` 大网仅提供数据，不计作求解 PASS。
 
-- **案例数**: 71（full=23, relaxed=19, skip=29）
+- **案例数**: 71（full=23, relaxed=19, xlarge=29）
 - **数据来源**: PGLib-OPF (https://github.com/power-grid-lib/pglib-opf)
 - **不含** MATLAB 脚本；已求解案例的历史双端对照见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
 
@@ -20,7 +20,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认跳过 solve_tier=skip
+python3 run_all_python.py --full-only   # 默认只跑 full
 
 # 单案例
 python3 case001_lmbd3_dc_ed/python/solve_ed.py

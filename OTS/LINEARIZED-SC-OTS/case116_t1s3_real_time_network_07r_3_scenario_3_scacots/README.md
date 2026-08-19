@@ -2,4 +2,4 @@
 
 - Source: `数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Real-Time/Network_07R-3/scenario_3/case.raw`
 - Linearized DC security-constrained OTS (approximation; not exact AC; sampled contingency subset)
-- Buses=2312, gens=251, branches=3013, contingencies=3, tier=skip
+- Buses=2312, gens=251, branches=3013, contingencies=3, tier=xlarge

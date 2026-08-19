@@ -5,7 +5,7 @@
 Stored Python coverage after the classification audit: 29 `full`/`relaxed` cases have
 validated feasible results. Three interrupted `relaxed` solves retain explicitly labelled
 feasible incumbents (optimality is not claimed). The three 16-scenario cases without a stored
-validated result are now `solve_tier=skip`, rather than being counted as solved.
+validated result are now `solve_tier=xlarge`, rather than being counted as solved.
 
 | case | tier | ok | obj_py | obj_mat | bal_py | water_py |
 |------|------|----|--------|---------|--------|----------|

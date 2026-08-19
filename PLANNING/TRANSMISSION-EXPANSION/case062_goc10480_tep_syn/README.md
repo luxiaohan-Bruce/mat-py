@@ -1,5 +1,5 @@
 # case062_goc10480_tep_syn
 
 DC Transmission Expansion (TEP/TNEP).
-source=PGLib-OPF solve_tier=skip
+source=PGLib-OPF solve_tier=xlarge
 n_candidates=3

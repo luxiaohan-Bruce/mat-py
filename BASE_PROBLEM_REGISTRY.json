@@ -59,8 +59,7 @@
     "full",
     "relaxed",
     "large",
-    "xlarge",
-    "skip"
+    "xlarge"
   ],
   "math_classes": [
     "none",

@@ -26,7 +26,7 @@
   "load_scale": 1.0,
   "rate_scale_on_switchable": 1.0,
   "size_bucket": "XL",
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "n_bus": 9591,
   "notes": [
     "Source: pglib_opf_case9591_goc (9591 buses).",

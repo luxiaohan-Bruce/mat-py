@@ -46,6 +46,15 @@ def _solve_scacopf_core(network: dict, config: dict, quiet: bool = True) -> dict
 
     bus_ids = [int(b["bus_i"]) for b in buses]
     bus_pos = {b: i for i, b in enumerate(bus_ids)}
+    gens_at: dict[int, list[int]] = {bid: [] for bid in bus_ids}
+    from_bus: dict[int, list[int]] = {bid: [] for bid in bus_ids}
+    to_bus: dict[int, list[int]] = {bid: [] for bid in bus_ids}
+    for g, gen in enumerate(gens):
+        gens_at.setdefault(int(gen["bus"]), []).append(g)
+    for ell, br in enumerate(branches):
+        from_bus.setdefault(int(br["fbus"]), []).append(ell)
+        to_bus.setdefault(int(br["tbus"]), []).append(ell)
+    load_mw_of = {int(b["bus_i"]): float(b["Pd"]) for b in buses}
     ref = next((int(b["bus_i"]) for b in buses if int(b["type"]) == 3), bus_ids[0])
     ref_pos = bus_pos[ref]
     nB, nG, nL = len(bus_ids), len(gens), len(branches)
@@ -166,18 +175,16 @@ def _solve_scacopf_core(network: dict, config: dict, quiet: bool = True) -> dict
 
         # nodal balance p.u.
         for bi, bid in enumerate(bus_ids):
-            load_mw = float(next(b["Pd"] for b in buses if int(b["bus_i"]) == bid))
+            load_mw = load_mw_of[bid]
             load = load_mw / base
             inj = -load + shed[bi, c] / base
-            for g, gen in enumerate(gens):
-                if int(gen["bus"]) == bid:
-                    inj += (Pg0[g] + delta[g, c]) / base
+            for g in gens_at.get(bid, []):
+                inj += (Pg0[g] + delta[g, c]) / base
             flow = gp.LinExpr()
-            for ell, br in enumerate(branches):
-                if int(br["fbus"]) == bid:
-                    flow += f[ell, c]
-                if int(br["tbus"]) == bid:
-                    flow -= f[ell, c]
+            for ell in from_bus.get(bid, []):
+                flow += f[ell, c]
+            for ell in to_bus.get(bid, []):
+                flow -= f[ell, c]
             m.addConstr(flow == inj)
             # GO C1 uses negative Pd for fixed injections.  Those buses cannot
             # shed load; using Pd directly as a nonnegative variable's upper

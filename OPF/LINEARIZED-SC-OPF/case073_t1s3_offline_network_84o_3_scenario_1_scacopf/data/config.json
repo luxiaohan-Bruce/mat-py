@@ -14,13 +14,13 @@
   "time_limit": 600,
   "seed": 1,
   "threads": 0,
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "load_shed_penalty": 10000.0,
   "construction": [
     "Linearized DC security-constrained OPF (NOT exact AC).",
     "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
     "OPF only.",
-    "nB=4601, nG=410 (399 online), nL=7315, Nc=3, tier=skip"
+    "nB=4601, nG=410 (399 online), nL=7315, Nc=3, tier=xlarge"
   ],
   "base_problem": "opf",
   "variant": {

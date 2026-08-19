@@ -2,4 +2,4 @@
 
 - Source: `数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_06O-3/scenario_1/case.raw`
 - Linearized DC security-constrained OPF (approximation; not exact AC; sampled contingency subset)
-- Buses=2000, gens=372, branches=3639, contingencies=3, tier=skip
+- Buses=2000, gens=372, branches=3639, contingencies=3, tier=xlarge

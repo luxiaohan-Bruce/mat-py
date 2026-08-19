@@ -2,10 +2,10 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B18）。
 
-- **案例数**: 82（full=75, skip=7）
+- **案例数**: 82（full=75, xlarge=7）
 - **数据来源**: ANDES + PGLib synthetic coherency
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: 75 个 full 案例通过验收；7 个 `skip` 案例仅作数据参考
+- **验收**: 75 个 full 案例通过验收；7 个 `xlarge` 案例仅作数据参考
 
 ## 环境
 
@@ -16,7 +16,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认跳过 solve_tier=skip
+python3 run_all_python.py --full-only   # 默认只跑 full
 
 # 单案例（示例见 MANIFEST 首案）
 python3 <case>/python/solve_*.py

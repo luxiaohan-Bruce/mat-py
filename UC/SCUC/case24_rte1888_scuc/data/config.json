@@ -22,7 +22,7 @@
   "seed": 1,
   "threads": 1,
   "size_bucket": "XL",
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "n_bus": 1888,
   "notes": [
     "Source: pglib_opf_case1888_rte (1888 buses).",

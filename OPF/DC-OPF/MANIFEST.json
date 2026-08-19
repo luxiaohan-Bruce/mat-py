@@ -929,7 +929,7 @@
     "n_bus": 3012,
     "n_gen": 502,
     "n_branch": 3572,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -951,7 +951,7 @@
     "n_bus": 3022,
     "n_gen": 637,
     "n_branch": 4135,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -973,7 +973,7 @@
     "n_bus": 3120,
     "n_gen": 505,
     "n_branch": 3693,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -995,7 +995,7 @@
     "n_bus": 3374,
     "n_gen": 596,
     "n_branch": 4161,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1017,7 +1017,7 @@
     "n_bus": 3970,
     "n_gen": 383,
     "n_branch": 6641,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1039,7 +1039,7 @@
     "n_bus": 4020,
     "n_gen": 352,
     "n_branch": 6988,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1061,7 +1061,7 @@
     "n_bus": 4601,
     "n_gen": 408,
     "n_branch": 7199,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1083,7 +1083,7 @@
     "n_bus": 4619,
     "n_gen": 347,
     "n_branch": 8150,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1105,7 +1105,7 @@
     "n_bus": 4661,
     "n_gen": 1176,
     "n_branch": 5997,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1127,7 +1127,7 @@
     "n_bus": 4837,
     "n_gen": 332,
     "n_branch": 7765,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1149,7 +1149,7 @@
     "n_bus": 4917,
     "n_gen": 1349,
     "n_branch": 6726,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1171,7 +1171,7 @@
     "n_bus": 5658,
     "n_gen": 474,
     "n_branch": 9078,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1193,7 +1193,7 @@
     "n_bus": 6468,
     "n_gen": 1295,
     "n_branch": 9000,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1215,7 +1215,7 @@
     "n_bus": 6470,
     "n_gen": 1330,
     "n_branch": 9005,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1237,7 +1237,7 @@
     "n_bus": 6495,
     "n_gen": 1372,
     "n_branch": 9019,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1259,7 +1259,7 @@
     "n_bus": 6515,
     "n_gen": 1388,
     "n_branch": 9037,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1281,7 +1281,7 @@
     "n_bus": 7336,
     "n_gen": 686,
     "n_branch": 11521,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1303,7 +1303,7 @@
     "n_bus": 8387,
     "n_gen": 1865,
     "n_branch": 14561,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1325,7 +1325,7 @@
     "n_bus": 9241,
     "n_gen": 1445,
     "n_branch": 16049,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1347,7 +1347,7 @@
     "n_bus": 9591,
     "n_gen": 365,
     "n_branch": 15915,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1369,7 +1369,7 @@
     "n_bus": 10000,
     "n_gen": 2089,
     "n_branch": 13193,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1391,7 +1391,7 @@
     "n_bus": 10192,
     "n_gen": 722,
     "n_branch": 17043,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1413,7 +1413,7 @@
     "n_bus": 10480,
     "n_gen": 777,
     "n_branch": 18559,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1435,7 +1435,7 @@
     "n_bus": 13659,
     "n_gen": 4092,
     "n_branch": 20467,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1457,7 +1457,7 @@
     "n_bus": 19402,
     "n_gen": 971,
     "n_branch": 34704,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1479,7 +1479,7 @@
     "n_bus": 20758,
     "n_gen": 2250,
     "n_branch": 33368,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1501,7 +1501,7 @@
     "n_bus": 24464,
     "n_gen": 1591,
     "n_branch": 37816,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1523,7 +1523,7 @@
     "n_bus": 30000,
     "n_gen": 3526,
     "n_branch": 35393,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",
@@ -1545,7 +1545,7 @@
     "n_bus": 78484,
     "n_gen": 6873,
     "n_branch": 126146,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "none",

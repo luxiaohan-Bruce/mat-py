@@ -22,7 +22,7 @@
   "seed": 1,
   "threads": 1,
   "size_bucket": "XL",
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "n_bus": 10000,
   "notes": [
     "Source: pglib_opf_case10000_goc (10000 buses).",

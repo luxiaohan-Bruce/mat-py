@@ -26,7 +26,7 @@
   "load_scale": 1.0,
   "rate_scale_on_switchable": 1.0,
   "size_bucket": "XL",
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "n_bus": 7336,
   "notes": [
     "Source: pglib_opf_case7336_epigrids (7336 buses).",

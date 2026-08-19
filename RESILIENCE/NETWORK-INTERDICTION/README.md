@@ -2,10 +2,10 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B21）。
 
-- **案例数**: 68（full=15, relaxed=6, skip=47）
+- **案例数**: 68（full=15, relaxed=6, xlarge=47）
 - **数据来源**: PGLib-OPF N-k interdiction
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: 21 个 full/relaxed 案例通过验收；47 个 `skip` 大网仅提供数据
+- **验收**: 21 个 full/relaxed 案例通过验收；47 个 `xlarge` 大网仅提供数据
 
 ## 环境
 
@@ -16,7 +16,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认跳过 solve_tier=skip
+python3 run_all_python.py --full-only   # 默认只跑 full
 
 # 单案例（示例见 MANIFEST 首案）
 python3 <case>/python/solve_*.py

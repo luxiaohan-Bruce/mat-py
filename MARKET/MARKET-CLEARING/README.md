@@ -16,7 +16,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认跳过 solve_tier=skip
+python3 run_all_python.py --full-only   # 默认只跑 full
 
 # 单案例（示例见 MANIFEST 首案）
 python3 <case>/python/solve_*.py

@@ -23,13 +23,13 @@
   "time_limit": 600,
   "seed": 1,
   "threads": 0,
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "load_shed_penalty": 10000.0,
   "construction": [
     "Linearized DC security-constrained OTS (NOT exact AC).",
     "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
     "OTS candidates = top rateA lines; max_open=2.",
-    "nB=3288, nG=379 (277 online), nL=4871, Nc=3, tier=skip"
+    "nB=3288, nG=379 (277 online), nL=4871, Nc=3, tier=xlarge"
   ],
   "base_problem": "ots",
   "variant": {

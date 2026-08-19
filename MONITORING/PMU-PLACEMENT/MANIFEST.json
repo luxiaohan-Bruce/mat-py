@@ -262,203 +262,203 @@
     "case": "case038_case3012wp_k_pmu",
     "source": "pglib_opf_case3012wp_k",
     "n_bus": 3012,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case038_case3012wp_k_pmu"
   },
   {
     "case": "case039_case3022_goc_pmu",
     "source": "pglib_opf_case3022_goc",
     "n_bus": 3022,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case039_case3022_goc_pmu"
   },
   {
     "case": "case040_case3120sp_k_pmu",
     "source": "pglib_opf_case3120sp_k",
     "n_bus": 3120,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case040_case3120sp_k_pmu"
   },
   {
     "case": "case041_case3375wp_k_pmu",
     "source": "pglib_opf_case3375wp_k",
     "n_bus": 3374,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case041_case3375wp_k_pmu"
   },
   {
     "case": "case042_case3970_goc_pmu",
     "source": "pglib_opf_case3970_goc",
     "n_bus": 3970,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case042_case3970_goc_pmu"
   },
   {
     "case": "case043_case4020_goc_pmu",
     "source": "pglib_opf_case4020_goc",
     "n_bus": 4020,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case043_case4020_goc_pmu"
   },
   {
     "case": "case044_case4601_goc_pmu",
     "source": "pglib_opf_case4601_goc",
     "n_bus": 4601,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case044_case4601_goc_pmu"
   },
   {
     "case": "case045_case4619_goc_pmu",
     "source": "pglib_opf_case4619_goc",
     "n_bus": 4619,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case045_case4619_goc_pmu"
   },
   {
     "case": "case046_case4661_sdet_pmu",
     "source": "pglib_opf_case4661_sdet",
     "n_bus": 4661,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case046_case4661_sdet_pmu"
   },
   {
     "case": "case047_case4837_goc_pmu",
     "source": "pglib_opf_case4837_goc",
     "n_bus": 4837,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case047_case4837_goc_pmu"
   },
   {
     "case": "case048_case4917_goc_pmu",
     "source": "pglib_opf_case4917_goc",
     "n_bus": 4917,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case048_case4917_goc_pmu"
   },
   {
     "case": "case049_case5658_epigrids_pmu",
     "source": "pglib_opf_case5658_epigrids",
     "n_bus": 5658,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case049_case5658_epigrids_pmu"
   },
   {
     "case": "case050_case6468_rte_pmu",
     "source": "pglib_opf_case6468_rte",
     "n_bus": 6468,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case050_case6468_rte_pmu"
   },
   {
     "case": "case051_case6470_rte_pmu",
     "source": "pglib_opf_case6470_rte",
     "n_bus": 6470,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case051_case6470_rte_pmu"
   },
   {
     "case": "case052_case6495_rte_pmu",
     "source": "pglib_opf_case6495_rte",
     "n_bus": 6495,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case052_case6495_rte_pmu"
   },
   {
     "case": "case053_case6515_rte_pmu",
     "source": "pglib_opf_case6515_rte",
     "n_bus": 6515,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case053_case6515_rte_pmu"
   },
   {
     "case": "case054_case7336_epigrids_pmu",
     "source": "pglib_opf_case7336_epigrids",
     "n_bus": 7336,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case054_case7336_epigrids_pmu"
   },
   {
     "case": "case055_case8387_pegase_pmu",
     "source": "pglib_opf_case8387_pegase",
     "n_bus": 8387,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case055_case8387_pegase_pmu"
   },
   {
     "case": "case056_case9241_pegase_pmu",
     "source": "pglib_opf_case9241_pegase",
     "n_bus": 9241,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case056_case9241_pegase_pmu"
   },
   {
     "case": "case057_case9591_goc_pmu",
     "source": "pglib_opf_case9591_goc",
     "n_bus": 9591,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case057_case9591_goc_pmu"
   },
   {
     "case": "case058_case10000_goc_pmu",
     "source": "pglib_opf_case10000_goc",
     "n_bus": 10000,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case058_case10000_goc_pmu"
   },
   {
     "case": "case059_case10192_epigrids_pmu",
     "source": "pglib_opf_case10192_epigrids",
     "n_bus": 10192,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case059_case10192_epigrids_pmu"
   },
   {
     "case": "case060_case10480_goc_pmu",
     "source": "pglib_opf_case10480_goc",
     "n_bus": 10480,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case060_case10480_goc_pmu"
   },
   {
     "case": "case061_case13659_pegase_pmu",
     "source": "pglib_opf_case13659_pegase",
     "n_bus": 13659,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case061_case13659_pegase_pmu"
   },
   {
     "case": "case062_case19402_goc_pmu",
     "source": "pglib_opf_case19402_goc",
     "n_bus": 19402,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case062_case19402_goc_pmu"
   },
   {
     "case": "case063_case20758_epigrids_pmu",
     "source": "pglib_opf_case20758_epigrids",
     "n_bus": 20758,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case063_case20758_epigrids_pmu"
   },
   {
     "case": "case064_case24464_goc_pmu",
     "source": "pglib_opf_case24464_goc",
     "n_bus": 24464,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case064_case24464_goc_pmu"
   },
   {
     "case": "case065_case30000_goc_pmu",
     "source": "pglib_opf_case30000_goc",
     "n_bus": 30000,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case065_case30000_goc_pmu"
   },
   {
     "case": "case066_case78484_epigrids_pmu",
     "source": "pglib_opf_case78484_epigrids",
     "n_bus": 78484,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case066_case78484_epigrids_pmu"
   }
 ]

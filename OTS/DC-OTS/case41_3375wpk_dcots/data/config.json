@@ -23,7 +23,7 @@
   "load_scale": 1.0,
   "rate_scale_on_switchable": 1.0,
   "size_bucket": "XL",
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "n_bus": 3374,
   "selection": "top_util_dcopf_or_invrate",
   "notes": [

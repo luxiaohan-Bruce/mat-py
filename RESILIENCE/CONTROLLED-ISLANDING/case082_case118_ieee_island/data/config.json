@@ -61,7 +61,7 @@
     "MIPGap": 1e-06,
     "TimeLimit": 600.0
   },
-  "solve_tier": "skip",
+  "solve_tier": "xlarge",
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,

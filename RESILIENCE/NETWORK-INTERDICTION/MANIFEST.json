@@ -431,7 +431,7 @@
     "n_line_online": 728,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -451,7 +451,7 @@
     "n_line_online": 686,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -471,7 +471,7 @@
     "n_line_online": 913,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -491,7 +491,7 @@
     "n_line_online": 1991,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -511,7 +511,7 @@
     "n_line_online": 2795,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -531,7 +531,7 @@
     "n_line_online": 2531,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -551,7 +551,7 @@
     "n_line_online": 2596,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -571,7 +571,7 @@
     "n_line_online": 3633,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -591,7 +591,7 @@
     "n_line_online": 3013,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -611,7 +611,7 @@
     "n_line_online": 2896,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -631,7 +631,7 @@
     "n_line_online": 3269,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -651,7 +651,7 @@
     "n_line_online": 3269,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -671,7 +671,7 @@
     "n_line_online": 4673,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -691,7 +691,7 @@
     "n_line_online": 3307,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -711,7 +711,7 @@
     "n_line_online": 3279,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -731,7 +731,7 @@
     "n_line_online": 3776,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -751,7 +751,7 @@
     "n_line_online": 3921,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -771,7 +771,7 @@
     "n_line_online": 3808,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -791,7 +791,7 @@
     "n_line_online": 4582,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -811,7 +811,7 @@
     "n_line_online": 3572,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -831,7 +831,7 @@
     "n_line_online": 4135,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -851,7 +851,7 @@
     "n_line_online": 3693,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -871,7 +871,7 @@
     "n_line_online": 4161,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -891,7 +891,7 @@
     "n_line_online": 6641,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -911,7 +911,7 @@
     "n_line_online": 6988,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -931,7 +931,7 @@
     "n_line_online": 7199,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -951,7 +951,7 @@
     "n_line_online": 8150,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -971,7 +971,7 @@
     "n_line_online": 5997,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -991,7 +991,7 @@
     "n_line_online": 7765,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1011,7 +1011,7 @@
     "n_line_online": 6726,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1031,7 +1031,7 @@
     "n_line_online": 9072,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1051,7 +1051,7 @@
     "n_line_online": 9000,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1071,7 +1071,7 @@
     "n_line_online": 9005,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1091,7 +1091,7 @@
     "n_line_online": 9019,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1111,7 +1111,7 @@
     "n_line_online": 9037,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1131,7 +1131,7 @@
     "n_line_online": 11519,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1151,7 +1151,7 @@
     "n_line_online": 16049,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1171,7 +1171,7 @@
     "n_line_online": 15915,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1191,7 +1191,7 @@
     "n_line_online": 13193,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1211,7 +1211,7 @@
     "n_line_online": 17011,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1231,7 +1231,7 @@
     "n_line_online": 18559,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1251,7 +1251,7 @@
     "n_line_online": 20467,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1271,7 +1271,7 @@
     "n_line_online": 34704,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1291,7 +1291,7 @@
     "n_line_online": 33343,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1311,7 +1311,7 @@
     "n_line_online": 37816,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1331,7 +1331,7 @@
     "n_line_online": 35393,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",
@@ -1351,7 +1351,7 @@
     "n_line_online": 126015,
     "k": 2,
     "method": "enumeration",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "variant": {
       "power_flow": "dc",
       "security": "n-k",

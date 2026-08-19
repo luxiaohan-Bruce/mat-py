@@ -2,10 +2,10 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B13）。
 
-- **案例数**: 32（full=9, relaxed=20, skip=3）
+- **案例数**: 32（full=9, relaxed=20, xlarge=3）
 - **数据来源**: RCUC/HT-Ramp + System_46buses
 - **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
-- **验收**: 29 个 full/relaxed 案例具有残差合格的可行结果（其中 3 个明确标为 interrupted incumbent）；3 个 16-scenario 案例为 `skip`
+- **验收**: 29 个 full/relaxed 案例具有残差合格的可行结果（其中 3 个明确标为 interrupted incumbent）；3 个 16-scenario 案例为 `xlarge`
 
 ## 环境
 
@@ -16,7 +16,7 @@ Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM
 
 ```bash
 # 批量
-python3 run_all_python.py --full-only   # 默认跳过 solve_tier=skip
+python3 run_all_python.py --full-only   # 默认只跑 full
 
 # 单案例（示例见 MANIFEST 首案）
 python3 <case>/python/solve_*.py

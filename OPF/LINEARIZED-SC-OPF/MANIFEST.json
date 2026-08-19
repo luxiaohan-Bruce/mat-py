@@ -107,7 +107,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case021_t1s3_offline_network_05o_3_scenario_2_scacopf",
@@ -118,7 +118,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case023_t1s3_offline_network_05o_3_scenario_3_scacopf",
@@ -129,7 +129,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case025_t1s3_offline_network_06o_3_scenario_1_scacopf",
@@ -140,7 +140,7 @@
     "n_gen_online": 372,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case027_t1s3_offline_network_06o_3_scenario_2_scacopf",
@@ -151,7 +151,7 @@
     "n_gen_online": 378,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case029_t1s3_offline_network_06o_3_scenario_3_scacopf",
@@ -162,7 +162,7 @@
     "n_gen_online": 375,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case031_t1s3_offline_network_07o_3_scenario_1_scacopf",
@@ -173,7 +173,7 @@
     "n_gen_online": 190,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case033_t1s3_offline_network_07o_3_scenario_2_scacopf",
@@ -184,7 +184,7 @@
     "n_gen_online": 210,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case035_t1s3_offline_network_07o_3_scenario_3_scacopf",
@@ -195,7 +195,7 @@
     "n_gen_online": 251,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case037_t1s3_offline_network_08o_3_scenario_1_scacopf",
@@ -206,7 +206,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case039_t1s3_offline_network_08o_3_scenario_2_scacopf",
@@ -217,7 +217,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case041_t1s3_offline_network_08o_3_scenario_3_scacopf",
@@ -228,7 +228,7 @@
     "n_gen_online": 285,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case043_t1s3_offline_network_09o_3_scenario_1_scacopf",
@@ -239,7 +239,7 @@
     "n_gen_online": 471,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case045_t1s3_offline_network_09o_3_scenario_2_scacopf",
@@ -250,7 +250,7 @@
     "n_gen_online": 475,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case047_t1s3_offline_network_09o_3_scenario_3_scacopf",
@@ -261,7 +261,7 @@
     "n_gen_online": 507,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case049_t1s3_offline_network_12o_3_scenario_1_scacopf",
@@ -272,7 +272,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case051_t1s3_offline_network_12o_3_scenario_2_scacopf",
@@ -283,7 +283,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case053_t1s3_offline_network_12o_3_scenario_3_scacopf",
@@ -294,7 +294,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case055_t1s3_offline_network_13o_3_scenario_1_scacopf",
@@ -305,7 +305,7 @@
     "n_gen_online": 1917,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case057_t1s3_offline_network_13o_3_scenario_2_scacopf",
@@ -316,7 +316,7 @@
     "n_gen_online": 1918,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case059_t1s3_offline_network_13o_3_scenario_3_scacopf",
@@ -327,7 +327,7 @@
     "n_gen_online": 2020,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case061_t1s3_offline_network_70o_3_scenario_1_scacopf",
@@ -338,7 +338,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case063_t1s3_offline_network_70o_3_scenario_2_scacopf",
@@ -349,7 +349,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case065_t1s3_offline_network_70o_3_scenario_3_scacopf",
@@ -360,7 +360,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case067_t1s3_offline_network_81o_3_scenario_1_scacopf",
@@ -371,7 +371,7 @@
     "n_gen_online": 278,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case069_t1s3_offline_network_81o_3_scenario_2_scacopf",
@@ -382,7 +382,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case071_t1s3_offline_network_81o_3_scenario_3_scacopf",
@@ -393,7 +393,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case073_t1s3_offline_network_84o_3_scenario_1_scacopf",
@@ -404,7 +404,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case075_t1s3_offline_network_84o_3_scenario_2_scacopf",
@@ -415,7 +415,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case077_t1s3_offline_network_84o_3_scenario_3_scacopf",
@@ -426,7 +426,7 @@
     "n_gen_online": 408,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case079_t1s3_real_time_network_01r_3_scenario_1_scacopf",
@@ -547,7 +547,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case101_t1s3_real_time_network_05r_3_scenario_2_scacopf",
@@ -558,7 +558,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case103_t1s3_real_time_network_05r_3_scenario_3_scacopf",
@@ -569,7 +569,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case105_t1s3_real_time_network_06r_3_scenario_1_scacopf",
@@ -580,7 +580,7 @@
     "n_gen_online": 358,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case107_t1s3_real_time_network_06r_3_scenario_2_scacopf",
@@ -591,7 +591,7 @@
     "n_gen_online": 372,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case109_t1s3_real_time_network_06r_3_scenario_3_scacopf",
@@ -602,7 +602,7 @@
     "n_gen_online": 382,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case111_t1s3_real_time_network_07r_3_scenario_1_scacopf",
@@ -613,7 +613,7 @@
     "n_gen_online": 190,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case113_t1s3_real_time_network_07r_3_scenario_2_scacopf",
@@ -624,7 +624,7 @@
     "n_gen_online": 210,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case115_t1s3_real_time_network_07r_3_scenario_3_scacopf",
@@ -635,7 +635,7 @@
     "n_gen_online": 251,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case117_t1s3_real_time_network_08r_3_scenario_1_scacopf",
@@ -646,7 +646,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case119_t1s3_real_time_network_08r_3_scenario_2_scacopf",
@@ -657,7 +657,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case121_t1s3_real_time_network_08r_3_scenario_3_scacopf",
@@ -668,7 +668,7 @@
     "n_gen_online": 285,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case123_t1s3_real_time_network_09r_3_scenario_1_scacopf",
@@ -679,7 +679,7 @@
     "n_gen_online": 471,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case125_t1s3_real_time_network_09r_3_scenario_2_scacopf",
@@ -690,7 +690,7 @@
     "n_gen_online": 475,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case127_t1s3_real_time_network_09r_3_scenario_3_scacopf",
@@ -701,7 +701,7 @@
     "n_gen_online": 507,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case129_t1s3_real_time_network_12r_3_scenario_1_scacopf",
@@ -712,7 +712,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case131_t1s3_real_time_network_12r_3_scenario_2_scacopf",
@@ -723,7 +723,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case133_t1s3_real_time_network_12r_3_scenario_3_scacopf",
@@ -734,7 +734,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case135_t1s3_real_time_network_13r_3_scenario_1_scacopf",
@@ -745,7 +745,7 @@
     "n_gen_online": 1917,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case137_t1s3_real_time_network_13r_3_scenario_2_scacopf",
@@ -756,7 +756,7 @@
     "n_gen_online": 1918,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case139_t1s3_real_time_network_13r_3_scenario_3_scacopf",
@@ -767,7 +767,7 @@
     "n_gen_online": 2020,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case141_t1s3_real_time_network_70r_3_scenario_1_scacopf",
@@ -778,7 +778,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case143_t1s3_real_time_network_70r_3_scenario_2_scacopf",
@@ -789,7 +789,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case145_t1s3_real_time_network_70r_3_scenario_3_scacopf",
@@ -800,7 +800,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case147_t1s3_real_time_network_81r_3_scenario_1_scacopf",
@@ -811,7 +811,7 @@
     "n_gen_online": 278,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case149_t1s3_real_time_network_81r_3_scenario_2_scacopf",
@@ -822,7 +822,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case151_t1s3_real_time_network_81r_3_scenario_3_scacopf",
@@ -833,7 +833,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case153_t1s3_real_time_network_84r_3_scenario_1_scacopf",
@@ -844,7 +844,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case155_t1s3_real_time_network_84r_3_scenario_2_scacopf",
@@ -855,7 +855,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case157_t1s3_real_time_network_84r_3_scenario_3_scacopf",
@@ -866,7 +866,7 @@
     "n_gen_online": 408,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case159_t1s3_offline_network_01o_3_scenario_1_scacopf",
@@ -976,7 +976,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case179_t1s3_offline_network_05o_3_scenario_2_scacopf",
@@ -987,7 +987,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case181_t1s3_offline_network_05o_3_scenario_3_scacopf",
@@ -998,7 +998,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case183_t1s3_offline_network_06o_3_scenario_1_scacopf",
@@ -1009,7 +1009,7 @@
     "n_gen_online": 372,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case185_t1s3_offline_network_06o_3_scenario_2_scacopf",
@@ -1020,7 +1020,7 @@
     "n_gen_online": 378,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case187_t1s3_offline_network_06o_3_scenario_3_scacopf",
@@ -1031,7 +1031,7 @@
     "n_gen_online": 375,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case189_t1s3_offline_network_07o_3_scenario_1_scacopf",
@@ -1042,7 +1042,7 @@
     "n_gen_online": 190,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case191_t1s3_offline_network_07o_3_scenario_2_scacopf",
@@ -1053,7 +1053,7 @@
     "n_gen_online": 210,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case193_t1s3_offline_network_07o_3_scenario_3_scacopf",
@@ -1064,7 +1064,7 @@
     "n_gen_online": 251,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case195_t1s3_offline_network_08o_3_scenario_1_scacopf",
@@ -1075,7 +1075,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case197_t1s3_offline_network_08o_3_scenario_2_scacopf",
@@ -1086,7 +1086,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case199_t1s3_offline_network_08o_3_scenario_3_scacopf",
@@ -1097,7 +1097,7 @@
     "n_gen_online": 285,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case201_t1s3_offline_network_09o_3_scenario_1_scacopf",
@@ -1108,7 +1108,7 @@
     "n_gen_online": 471,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case203_t1s3_offline_network_09o_3_scenario_2_scacopf",
@@ -1119,7 +1119,7 @@
     "n_gen_online": 475,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case205_t1s3_offline_network_09o_3_scenario_3_scacopf",
@@ -1130,7 +1130,7 @@
     "n_gen_online": 507,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case207_t1s3_offline_network_12o_3_scenario_1_scacopf",
@@ -1141,7 +1141,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case209_t1s3_offline_network_12o_3_scenario_2_scacopf",
@@ -1152,7 +1152,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case211_t1s3_offline_network_12o_3_scenario_3_scacopf",
@@ -1163,7 +1163,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case213_t1s3_offline_network_13o_3_scenario_1_scacopf",
@@ -1174,7 +1174,7 @@
     "n_gen_online": 1917,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case215_t1s3_offline_network_13o_3_scenario_2_scacopf",
@@ -1185,7 +1185,7 @@
     "n_gen_online": 1918,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case217_t1s3_offline_network_13o_3_scenario_3_scacopf",
@@ -1196,7 +1196,7 @@
     "n_gen_online": 2020,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case219_t1s3_offline_network_70o_3_scenario_1_scacopf",
@@ -1207,7 +1207,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case221_t1s3_offline_network_70o_3_scenario_2_scacopf",
@@ -1218,7 +1218,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case223_t1s3_offline_network_70o_3_scenario_3_scacopf",
@@ -1229,7 +1229,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case225_t1s3_offline_network_81o_3_scenario_1_scacopf",
@@ -1240,7 +1240,7 @@
     "n_gen_online": 278,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case227_t1s3_offline_network_81o_3_scenario_2_scacopf",
@@ -1251,7 +1251,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case229_t1s3_offline_network_81o_3_scenario_3_scacopf",
@@ -1262,7 +1262,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case231_t1s3_offline_network_84o_3_scenario_1_scacopf",
@@ -1273,7 +1273,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case233_t1s3_offline_network_84o_3_scenario_2_scacopf",
@@ -1284,7 +1284,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case235_t1s3_offline_network_84o_3_scenario_3_scacopf",
@@ -1295,7 +1295,7 @@
     "n_gen_online": 408,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case237_t1s3_real_time_network_01r_3_scenario_1_scacopf",
@@ -1416,7 +1416,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case259_t1s3_real_time_network_05r_3_scenario_2_scacopf",
@@ -1427,7 +1427,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case261_t1s3_real_time_network_05r_3_scenario_3_scacopf",
@@ -1438,7 +1438,7 @@
     "n_gen_online": 432,
     "n_branch": 3206,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case263_t1s3_real_time_network_06r_3_scenario_1_scacopf",
@@ -1449,7 +1449,7 @@
     "n_gen_online": 358,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case265_t1s3_real_time_network_06r_3_scenario_2_scacopf",
@@ -1460,7 +1460,7 @@
     "n_gen_online": 372,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case267_t1s3_real_time_network_06r_3_scenario_3_scacopf",
@@ -1471,7 +1471,7 @@
     "n_gen_online": 382,
     "n_branch": 3639,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case269_t1s3_real_time_network_07r_3_scenario_1_scacopf",
@@ -1482,7 +1482,7 @@
     "n_gen_online": 190,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case271_t1s3_real_time_network_07r_3_scenario_2_scacopf",
@@ -1493,7 +1493,7 @@
     "n_gen_online": 210,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case273_t1s3_real_time_network_07r_3_scenario_3_scacopf",
@@ -1504,7 +1504,7 @@
     "n_gen_online": 251,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case275_t1s3_real_time_network_08r_3_scenario_1_scacopf",
@@ -1515,7 +1515,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case277_t1s3_real_time_network_08r_3_scenario_2_scacopf",
@@ -1526,7 +1526,7 @@
     "n_gen_online": 253,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case279_t1s3_real_time_network_08r_3_scenario_3_scacopf",
@@ -1537,7 +1537,7 @@
     "n_gen_online": 285,
     "n_branch": 4126,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case281_t1s3_real_time_network_09r_3_scenario_1_scacopf",
@@ -1548,7 +1548,7 @@
     "n_gen_online": 471,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case283_t1s3_real_time_network_09r_3_scenario_2_scacopf",
@@ -1559,7 +1559,7 @@
     "n_gen_online": 475,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case285_t1s3_real_time_network_09r_3_scenario_3_scacopf",
@@ -1570,7 +1570,7 @@
     "n_gen_online": 507,
     "n_branch": 6727,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case287_t1s3_real_time_network_12r_3_scenario_1_scacopf",
@@ -1581,7 +1581,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case289_t1s3_real_time_network_12r_3_scenario_2_scacopf",
@@ -1592,7 +1592,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case291_t1s3_real_time_network_12r_3_scenario_3_scacopf",
@@ -1603,7 +1603,7 @@
     "n_gen_online": 365,
     "n_branch": 15915,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case293_t1s3_real_time_network_13r_3_scenario_1_scacopf",
@@ -1614,7 +1614,7 @@
     "n_gen_online": 1917,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case295_t1s3_real_time_network_13r_3_scenario_2_scacopf",
@@ -1625,7 +1625,7 @@
     "n_gen_online": 1918,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case297_t1s3_real_time_network_13r_3_scenario_3_scacopf",
@@ -1636,7 +1636,7 @@
     "n_gen_online": 2020,
     "n_branch": 13193,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case299_t1s3_real_time_network_70r_3_scenario_1_scacopf",
@@ -1647,7 +1647,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case301_t1s3_real_time_network_70r_3_scenario_2_scacopf",
@@ -1658,7 +1658,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case303_t1s3_real_time_network_70r_3_scenario_3_scacopf",
@@ -1669,7 +1669,7 @@
     "n_gen_online": 201,
     "n_branch": 3013,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case305_t1s3_real_time_network_81r_3_scenario_1_scacopf",
@@ -1680,7 +1680,7 @@
     "n_gen_online": 278,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case307_t1s3_real_time_network_81r_3_scenario_2_scacopf",
@@ -1691,7 +1691,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case309_t1s3_real_time_network_81r_3_scenario_3_scacopf",
@@ -1702,7 +1702,7 @@
     "n_gen_online": 277,
     "n_branch": 4871,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case311_t1s3_real_time_network_84r_3_scenario_1_scacopf",
@@ -1713,7 +1713,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case313_t1s3_real_time_network_84r_3_scenario_2_scacopf",
@@ -1724,7 +1724,7 @@
     "n_gen_online": 399,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   },
   {
     "case": "case315_t1s3_real_time_network_84r_3_scenario_3_scacopf",
@@ -1735,6 +1735,6 @@
     "n_gen_online": 408,
     "n_branch": 7315,
     "n_cont": 3,
-    "solve_tier": "skip"
+    "solve_tier": "xlarge"
   }
 ]

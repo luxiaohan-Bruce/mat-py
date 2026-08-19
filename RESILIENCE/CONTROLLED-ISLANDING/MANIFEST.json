@@ -20,7 +20,7 @@
     "n_gen": 394,
     "n_branch": 3207,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": true,
     "coherency_source": "synthetic_electrical_distance",
     "path": "case002_GBnetwork_island"
@@ -33,7 +33,7 @@
     "n_gen": 84,
     "n_branch": 1742,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": false,
     "coherency_source": "bus_area_merged_to_3",
     "path": "case003_EI_33_island"
@@ -943,7 +943,7 @@
     "n_gen": 48,
     "n_branch": 233,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": false,
     "coherency_source": "bus_area_merged_to_3",
     "path": "case073_npcc_island"
@@ -969,7 +969,7 @@
     "n_gen": 29,
     "n_branch": 263,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": false,
     "coherency_source": "bus_area",
     "path": "case075_wecc_full_island"
@@ -982,7 +982,7 @@
     "n_gen": 29,
     "n_branch": 263,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": false,
     "coherency_source": "bus_area",
     "path": "case076_wecc_gencls_island"
@@ -1047,7 +1047,7 @@
     "n_gen": 7,
     "n_branch": 80,
     "n_islands": 2,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": true,
     "coherency_source": "synthetic_electrical_distance",
     "path": "case081_case57_ieee_island"
@@ -1060,7 +1060,7 @@
     "n_gen": 54,
     "n_branch": 186,
     "n_islands": 3,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "synthetic_coherency": true,
     "coherency_source": "synthetic_electrical_distance",
     "path": "case082_case118_ieee_island"

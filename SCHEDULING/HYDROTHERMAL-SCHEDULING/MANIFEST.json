@@ -151,7 +151,7 @@
   },
   {
     "case": "case16_s46a_scen16_ht",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "source": "System_46buses/A",
     "n_thermal": 14,
     "n_hydro": 7,
@@ -232,7 +232,7 @@
   },
   {
     "case": "case24_s46c_scen16_ht",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "source": "System_46buses/C",
     "n_thermal": 10,
     "n_hydro": 10,
@@ -313,7 +313,7 @@
   },
   {
     "case": "case32_s46e_scen16_ht",
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "source": "System_46buses/E",
     "n_thermal": 7,
     "n_hydro": 14,

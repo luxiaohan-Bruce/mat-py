@@ -213,7 +213,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -224,7 +224,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -235,7 +235,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -246,7 +246,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -257,7 +257,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -268,7 +268,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -279,7 +279,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -290,7 +290,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -301,7 +301,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -312,7 +312,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -323,7 +323,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -334,7 +334,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -345,7 +345,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -356,7 +356,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -367,7 +367,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -378,7 +378,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -389,7 +389,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -400,7 +400,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -411,7 +411,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -422,7 +422,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -433,7 +433,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -444,7 +444,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -455,7 +455,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -466,7 +466,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -477,7 +477,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -488,7 +488,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -499,7 +499,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -510,7 +510,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -521,7 +521,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -532,7 +532,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -543,7 +543,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     },
     {
@@ -554,7 +554,7 @@
       "n_cont": 3,
       "max_open": 1,
       "size_bucket": "XL",
-      "solve_tier": "skip",
+      "solve_tier": "xlarge",
       "legacy": false
     }
   ]

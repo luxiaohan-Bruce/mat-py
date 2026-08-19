@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "case": "case202_t1s3_offline_network_09o_3_scenario_1_scacots",
+  "solver": "python-gurobipy",
+  "problem": "linearized_scacots",
+  "source": {
+    "dataset": "GO Competition Challenge 1",
+    "raw": "\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_09O-3/scenario_1/case.raw"
+  },
+  "scacopf": {
+    "status": "OPTIMAL",
+    "obj": 845737.5791825358,
+    "obj_bound": 845737.5790972114,
+    "mip_gap": 1.0088755701787442e-10,
+    "runtime": 32.057027101516724,
+    "n_bus": 4918,
+    "n_gen": 471,
+    "n_branch": 6727,
+    "n_cont": 3,
+    "load_shed_MW": -8.180091178643182e-08,
+    "flow_slack_pu": 0.06,
+    "opened_branches": [
+      112,
+      350
+    ],
+    "enable_ots": true,
+    "n_binary": 8,
+    "n_variables": 95523,
+    "n_constraints": 124811,
+    "note": "linearized DC SC-OPF (not exact AC); documented approximation"
+  }
+}

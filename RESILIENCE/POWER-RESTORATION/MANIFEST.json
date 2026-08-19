@@ -187,7 +187,7 @@
     "n_gen": 49,
     "n_branch": 245,
     "horizon_T": 6,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case008_activsg200_scenario3_restore",
     "damaged_branches": [
       35,
@@ -245,7 +245,7 @@
     "n_gen": 49,
     "n_branch": 245,
     "horizon_T": 6,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case009_activsg200_scenario4_restore",
     "damaged_branches": [
       1,
@@ -434,7 +434,7 @@
     "n_gen": 49,
     "n_branch": 245,
     "horizon_T": 6,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case012_activsg200_scenario7_restore",
     "damaged_branches": [
       35,
@@ -492,7 +492,7 @@
     "n_gen": 49,
     "n_branch": 245,
     "horizon_T": 6,
-    "solve_tier": "skip",
+    "solve_tier": "xlarge",
     "path": "case013_activsg200_scenario8_restore",
     "damaged_branches": [
       1,

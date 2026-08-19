@@ -160,7 +160,7 @@ def backfill_config(case_dir: Path, root: Path | None = None) -> dict[str, Any]:
     if not cfg.get("solve_tier"):
         bucket = str(cfg.get("size_bucket") or "").upper()
         if bucket in {"XL", "XXL"}:
-            cfg["solve_tier"] = "skip"
+            cfg["solve_tier"] = "xlarge"
         elif bucket in {"L", "M"}:
             cfg["solve_tier"] = "relaxed"
         else:
