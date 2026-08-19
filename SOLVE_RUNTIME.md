@@ -84,7 +84,7 @@
 |---|---:|
 | `case001_lmbd3_dr` | 0.003 |
 | `case002_pjm5_dr` | 0.001 |
-| `case003_ieee14_dr` | 0.000 |
+| `case003_ieee14_dr` | 9.1×10^{-5} |
 
 ## DISPATCH/ECONOMIC-DISPATCH
 
@@ -92,7 +92,7 @@
 |---|---:|
 | `case001_lmbd3_copperplate_ed` | 0.003 |
 | `case002_pjm5_copperplate_ed` | 0.001 |
-| `case003_ieee14_copperplate_ed` | 0.000 |
+| `case003_ieee14_copperplate_ed` | 2.4×10^{-4} |
 
 ## DISTRIBUTION/DER-HOSTING
 
@@ -121,16 +121,16 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_pjm5_microgrid_grid` | 0.000 |
-| `case002_pjm5_microgrid_island` | 0.000 |
-| `case003_pjm5_vpp` | 0.000 |
+| `case001_pjm5_microgrid_grid` | 2.1×10^{-4} |
+| `case002_pjm5_microgrid_island` | 9.7×10^{-5} |
+| `case003_pjm5_vpp` | 8.9×10^{-5} |
 
 ## DISTRIBUTION/UNBALANCED-DOPF
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_ieee4_unbalanced` | 0.000 |
-| `case002_smartds_6bus_unbalanced` | 0.000 |
+| `case001_ieee4_unbalanced` | 2.0×10^{-4} |
+| `case002_smartds_6bus_unbalanced` | 1.3×10^{-4} |
 
 ## DISTRIBUTION/VOLT-VAR
 
@@ -217,16 +217,16 @@
 | 案例 | 时间 (s) |
 |---|---:|
 | `case001_case3_lmbd_pmu` | 0.002 |
-| `case002_case5_pjm_pmu` | 0.000 |
+| `case002_case5_pjm_pmu` | 1.8×10^{-4} |
 | `case003_case14_ieee_pmu` | 0.002 |
 | `case004_case24_ieee_rts_pmu` | 0.001 |
-| `case005_case30_as_pmu` | 0.000 |
-| `case006_case30_ieee_pmu` | 0.000 |
-| `case007_case39_epri_pmu` | 0.000 |
+| `case005_case30_as_pmu` | 1.3×10^{-4} |
+| `case006_case30_ieee_pmu` | 1.8×10^{-4} |
+| `case007_case39_epri_pmu` | 1.5×10^{-4} |
 | `case008_case57_ieee_pmu` | 0.001 |
-| `case009_case60_c_pmu` | 0.000 |
+| `case009_case60_c_pmu` | 1.5×10^{-4} |
 | `case010_case73_ieee_rts_pmu` | 0.001 |
-| `case011_case89_pegase_pmu` | 0.000 |
+| `case011_case89_pegase_pmu` | 4.1×10^{-4} |
 | `case012_case118_ieee_pmu` | 0.002 |
 | `case013_case162_ieee_dtc_pmu` | 0.002 |
 | `case014_case179_goc_pmu` | 0.002 |
@@ -287,11 +287,11 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_case5_pjm_wls_se` | 0.000 |
-| `case002_case5_pjm_l1_se` | 0.000 |
-| `case003_case14_ieee_wls_se` | 0.000 |
+| `case001_case5_pjm_wls_se` | 1.9×10^{-4} |
+| `case002_case5_pjm_l1_se` | 2.4×10^{-4} |
+| `case003_case14_ieee_wls_se` | 2.2×10^{-4} |
 | `case004_case14_ieee_l1_se` | 0.001 |
-| `case005_case30_ieee_wls_se` | 0.000 |
+| `case005_case30_ieee_wls_se` | 2.9×10^{-4} |
 | `case006_case30_ieee_l1_se` | 0.001 |
 | `case007_case57_ieee_wls_se` | 0.001 |
 | `case008_case57_ieee_l1_se` | 0.002 |
@@ -332,18 +332,18 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_dc_ed` | 0.000 |
+| `case001_lmbd3_dc_ed` | 2.9×10^{-4} |
 | `case002_lmbd3_lp_ed` | 0.001 |
-| `case003_pjm5_dc_ed` | 0.000 |
-| `case004_ieee14_dc_ed` | 0.000 |
+| `case003_pjm5_dc_ed` | 3.2×10^{-4} |
+| `case004_ieee14_dc_ed` | 1.6×10^{-4} |
 | `case005_ieee24_dc_ed` | 0.001 |
-| `case006_ieee24_lp_ed` | 0.000 |
-| `case007_as30_dc_ed` | 0.000 |
-| `case008_as30_lp_ed` | 0.000 |
-| `case009_ieee30_dc_ed` | 0.000 |
-| `case010_epri39_dc_ed` | 0.000 |
-| `case011_ieee57_dc_ed` | 0.000 |
-| `case012_c60_dc_ed` | 0.000 |
+| `case006_ieee24_lp_ed` | 3.5×10^{-4} |
+| `case007_as30_dc_ed` | 3.1×10^{-4} |
+| `case008_as30_lp_ed` | 2.5×10^{-4} |
+| `case009_ieee30_dc_ed` | 2.2×10^{-4} |
+| `case010_epri39_dc_ed` | 2.6×10^{-4} |
+| `case011_ieee57_dc_ed` | 4.8×10^{-4} |
+| `case012_c60_dc_ed` | 4.6×10^{-4} |
 | `case013_ieee73_dc_ed` | 0.001 |
 | `case014_ieee73_lp_ed` | 0.001 |
 | `case015_pegase89_dc_ed` | 0.002 |
@@ -811,7 +811,7 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_lmbd3_scots` | 0.000 |
+| `case01_lmbd3_scots` | 3.8×10^{-4} |
 | `case02_pjm5_scots` | 0.004 |
 | `case03_ieee14_scots` | 0.020 |
 | `case04_ieee24_scots` | 0.287 |
@@ -1065,21 +1065,21 @@
 | 案例 | 时间 (s) |
 |---|---:|
 | `case001_case3_mld_mld` | 0.001 |
-| `case002_case3_mld_lc_mld` | 0.000 |
-| `case003_case3_mld_s_mld` | 0.000 |
-| `case004_case3_mld_uc_mld` | 0.000 |
-| `case005_case3_restoration_total_dmg_mld` | 0.000 |
-| `case006_case5_mld_ft_mld` | 0.000 |
-| `case007_case5_mld_strg_mld` | 0.000 |
-| `case008_case5_mld_strg_only_mld` | 0.000 |
-| `case009_case5_mld_strg_uc_mld` | 0.000 |
-| `case010_case5_restoration_mld` | 0.000 |
-| `case011_case5_restoration_shunt_mld` | 0.000 |
-| `case012_case5_restoration_strg_mld` | 0.000 |
-| `case013_case5_restoration_total_dmg_mld` | 0.000 |
-| `case014_case5_pjm_dmg_mld` | 0.000 |
-| `case015_case14_ieee_dmg_mld` | 0.000 |
-| `case016_case30_ieee_dmg_mld` | 0.000 |
+| `case002_case3_mld_lc_mld` | 9.0×10^{-5} |
+| `case003_case3_mld_s_mld` | 4.2×10^{-5} |
+| `case004_case3_mld_uc_mld` | 1.9×10^{-4} |
+| `case005_case3_restoration_total_dmg_mld` | 3.9×10^{-5} |
+| `case006_case5_mld_ft_mld` | 6.2×10^{-5} |
+| `case007_case5_mld_strg_mld` | 2.1×10^{-4} |
+| `case008_case5_mld_strg_only_mld` | 1.1×10^{-4} |
+| `case009_case5_mld_strg_uc_mld` | 1.3×10^{-4} |
+| `case010_case5_restoration_mld` | 1.2×10^{-4} |
+| `case011_case5_restoration_shunt_mld` | 7.0×10^{-5} |
+| `case012_case5_restoration_strg_mld` | 5.6×10^{-5} |
+| `case013_case5_restoration_total_dmg_mld` | 5.7×10^{-5} |
+| `case014_case5_pjm_dmg_mld` | 9.2×10^{-5} |
+| `case015_case14_ieee_dmg_mld` | 2.7×10^{-4} |
+| `case016_case30_ieee_dmg_mld` | 4.2×10^{-4} |
 | `case017_case57_ieee_dmg_mld` | 0.001 |
 | `case018_case118_ieee_dmg_mld` | 0.002 |
 
@@ -1165,32 +1165,32 @@
 | `case003_rts_gmlc_risk_rb50_ops` | 5.335 |
 | `case004_rts_gmlc_risk_rb75_ops` | 0.034 |
 | `case005_rts_gmlc_risk_rb100_ops` | 0.026 |
-| `case006_case14_risk_rb00_ops` | 0.000 |
+| `case006_case14_risk_rb00_ops` | 4.2×10^{-4} |
 | `case007_case14_risk_rb25_ops` | 0.043 |
 | `case008_case14_risk_rb50_ops` | 0.006 |
 | `case009_case14_risk_rb75_ops` | 0.006 |
 | `case010_case14_risk_rb100_ops` | 0.006 |
-| `case011_case3_rb00_ops` | 0.000 |
+| `case011_case3_rb00_ops` | 1.9×10^{-4} |
 | `case012_case3_rb25_ops` | 0.001 |
 | `case013_case3_rb50_ops` | 0.001 |
 | `case014_case3_rb75_ops` | 0.002 |
 | `case015_case3_rb100_ops` | 0.001 |
-| `case016_case5_risk_mops_rb00_ops` | 0.000 |
+| `case016_case5_risk_mops_rb00_ops` | 1.3×10^{-4} |
 | `case017_case5_risk_mops_rb25_ops` | 0.001 |
 | `case018_case5_risk_mops_rb50_ops` | 0.002 |
 | `case019_case5_risk_mops_rb75_ops` | 0.001 |
-| `case020_case5_risk_mops_rb100_ops` | 0.000 |
-| `case021_case5_risk_sys1_rb00_ops` | 0.000 |
+| `case020_case5_risk_mops_rb100_ops` | 4.9×10^{-4} |
+| `case021_case5_risk_sys1_rb00_ops` | 3.4×10^{-4} |
 | `case022_case5_risk_sys1_rb25_ops` | 0.001 |
 | `case023_case5_risk_sys1_rb50_ops` | 0.001 |
 | `case024_case5_risk_sys1_rb75_ops` | 0.001 |
 | `case025_case5_risk_sys1_rb100_ops` | 0.001 |
-| `case026_case5_risk_sys2_rb00_ops` | 0.000 |
+| `case026_case5_risk_sys2_rb00_ops` | 9.5×10^{-5} |
 | `case027_case5_risk_sys2_rb25_ops` | 0.002 |
 | `case028_case5_risk_sys2_rb50_ops` | 0.003 |
 | `case029_case5_risk_sys2_rb75_ops` | 0.004 |
 | `case030_case5_risk_sys2_rb100_ops` | 0.001 |
-| `case031_case5_strg_rb00_ops` | 0.000 |
+| `case031_case5_strg_rb00_ops` | 1.2×10^{-4} |
 | `case032_case5_strg_rb25_ops` | 0.002 |
 | `case033_case5_strg_rb50_ops` | 0.003 |
 | `case034_case5_strg_rb75_ops` | 0.001 |
@@ -1265,9 +1265,9 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_storage` | 0.000 |
-| `case002_pjm5_storage` | 0.000 |
-| `case003_ieee14_storage` | 0.000 |
+| `case001_lmbd3_storage` | 2.6×10^{-4} |
+| `case002_pjm5_storage` | 1.8×10^{-4} |
+| `case003_ieee14_storage` | 8.1×10^{-5} |
 
 ## UC/RTS-SCUC
 
