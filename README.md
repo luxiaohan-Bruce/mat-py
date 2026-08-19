@@ -1,6 +1,6 @@
 # 电力系统难优化算例（Python + Gurobi）
 
-基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、统一 `solve.py` 入口、`evaluate()` 验收、规模分级（`full` / `relaxed` / `large` / `xlarge`）。
+基于 **Python + Gurobi（gurobipy）** 的电网优化算例集：统一 JSON 数据、统一 `solve.py` 入口、`evaluate()` 验收。按实测求解时间分两档：小于 600s，或超过 600s 记为**难求解**。
 
 一级目录是便于浏览的 **`navigation_domain`**，不是互斥的数学基础问题分类。规范分类以每个案例 `config.json` 的 `base_problem` 为准；AC/DC、N-1、多时段、随机性、追补决策等属于 `variant` 轴。
 
@@ -210,24 +210,15 @@ python3 -m framework.catalog --by-network pglib_opf_case118_ieee
 
 ---
 
-## 规模分级
-
-| `solve_tier` | 当前案例数 | 含义 |
-|--------------|--------------:|------|
-| `full` | 427 | 默认可完整求解 |
-| `relaxed` | 182 | 较宽时限或 gap |
-| `large` | 23 | 大规模 |
-| `xlarge` | 530 | 超大规模 |
-
-机器规则见 [`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)；修改目录、`config.json` 或分类后，运行 `python3 framework/validate_taxonomy.py` 检查路径、基础问题、变体轴、规模档与特征字段的一致性。
-
-所有剩余案例 `config.json` 的 `time_limit`（及 `gurobi_parameters.TimeLimit`，若有）已统一为 **600 s**。
-
----
-
 ## 求解时间
 
-各案例时间见 [`SOLVE_RUNTIME.md`](SOLVE_RUNTIME.md)。超过 600s 记为**难求解**。`TimeLimit` 统一 600s。
+`TimeLimit` 统一 **600s**。小于 600s 写实测时间，超过 600s 记为**难求解**。各案例见 [`SOLVE_RUNTIME.md`](SOLVE_RUNTIME.md)。
+
+| 分类 | 案例数 |
+|------|------:|
+| < 600s | 1033 |
+| 难求解 | 129 |
+| 合计 | 1162 |
 
 ---
 

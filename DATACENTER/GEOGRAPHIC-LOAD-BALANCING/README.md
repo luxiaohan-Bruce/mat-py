@@ -2,10 +2,8 @@
 
 多园区推理负荷的地理分流 LP（Python + Gurobi）。官方 notebook 用 CVXPY；这里按 `offline_solver` 写成 gurobipy。
 
-- **案例数**: 6（full=6）
+- **案例数**: 6
 - **base_problem**: `datacenter_glb`
-- **数据来源**: [Ren-Research/Environmentally-Equitable-AI](https://github.com/Ren-Research/Environmentally-Equitable-AI)（arXiv:2307.05494）
-- **不含** MATLAB；双端对照摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
 
 决策 \(x_{i,j,t}\)：时刻 \(t\) 把网关 \(j\) 的负荷放到园区 \(i\)。容量 `max_cap=1`，目标为电价成本加可选的水/碳峰值公平项。
 

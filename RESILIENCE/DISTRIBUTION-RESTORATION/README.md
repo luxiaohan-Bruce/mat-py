@@ -2,9 +2,7 @@
 
 Python-only 包（gurobipy），自 `*_cases` 双端验收通过后同步（PLAM §11，B17）。
 
-- **案例数**: 3（full=3）
-- **数据来源**: SimBench + SMART-DS radial feeders
-- **不含** MATLAB 脚本；参考 dual-pass 摘要见 `VERIFY_SUMMARY.md` 与各案 `results/comparison.json`
+- **案例数**: 3
 - **验收**: - passed: 3/3
 
 ## 环境
@@ -24,8 +22,3 @@ python3 <case>/python/solve_*.py
 
 共享模型：`common/dist_restore_model_py.py`（及 vendored (none)）。
 完整列表见 `MANIFEST.json`。
-
-## 许可与来源
-
-JSON 案例数据由上游网络/算例构造得到；请遵循上游许可并引用。
-本包供科研与教学使用。

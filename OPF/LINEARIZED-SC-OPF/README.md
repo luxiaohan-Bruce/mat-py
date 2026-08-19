@@ -11,6 +11,6 @@ recourse=corrective_limited, generation_recourse=corrective_within_generator_bou
 这不是带爬坡或参与因子带宽的再调度模型。
 
 ```bash
-python3 run_all_python.py --tier full,relaxed
+python3 run_all_python.py
 python3 case001_t1s3_offline_network_01o_3_scenario_1_scacopf/python/solve_scacopf.py
 ```

@@ -13,6 +13,6 @@ topology_control=preventive_shared, enable_ots=true
 `generation_recourse=corrective_within_generator_bounds`，不包含额外爬坡或参与因子带宽。
 
 ```bash
-python3 run_all_python.py --tier full,relaxed
+python3 run_all_python.py
 python3 case002_t1s3_offline_network_01o_3_scenario_1_scacots/python/solve_scacopf.py
 ```
