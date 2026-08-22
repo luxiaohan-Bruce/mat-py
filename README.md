@@ -31,6 +31,7 @@ github_cases/
   evaluate.py          # python3 evaluate.py <case_dir>
   README.md
   requirements.txt
+  skills/              # 预防性 DC-SCUC 热稳约束处理（论文 skill）
 ```
 
 | `navigation_domain` | 子包 | `base_problem` / 含义 | 案例数 |
@@ -76,6 +77,20 @@ github_cases/
 | [`MULTI-ENERGY/`](MULTI-ENERGY/) | [`INTEGRATED-ELECTRIC-GAS/`](MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/) | 电–气综合优化 | 14 |
 
 **合计 1162 个案例**。
+
+---
+
+## 约束处理 Skills
+
+[`skills/`](skills/) 收录预防性 DC-SCUC 热稳约束处理算法（论文解读 + 可调用工具模板），给 agent 或人工实现用，**不改变**各案例默认 `solve.py`。
+
+| 目录 | 路线 |
+|------|------|
+| [`skills/constraint-screening/`](skills/constraint-screening/) | 第一次 `optimize` 前判定哪侧热稳可删 |
+| [`skills/iterative-enforcement/`](skills/iterative-enforcement/) | 松弛先解，SFT 扫违反再加割 |
+| [`skills/decomposition/`](skills/decomposition/) | 主问题 UC + 事故可行割；无开关不要 CNR |
+
+详见 [`skills/README.md`](skills/README.md)。
 
 ---
 
