@@ -1,329 +1,136 @@
 # 求解时间
 
-共 1162 例。小于 600s 写实测时间，超过 600s 记为**难求解**。
+共 790 例。小于 600s 写实测时间，超过 600s 记为**难求解**。
 
 | 分类 | 案例数 | < 600s | 难求解 |
 |---|---:|---:|---:|
-| `DATACENTER/FLEXIBLE-DC-LOAD` | 6 | 6 | 0 |
-| `DATACENTER/GEOGRAPHIC-LOAD-BALANCING` | 6 | 6 | 0 |
-| `DATACENTER/GREEN-LLM` | 6 | 6 | 0 |
-| `DISPATCH/DEMAND-RESPONSE` | 3 | 3 | 0 |
-| `DISPATCH/ECONOMIC-DISPATCH` | 3 | 3 | 0 |
-| `DISTRIBUTION/DER-HOSTING` | 1 | 1 | 0 |
-| `DISTRIBUTION/DISTRIBUTION-OPF` | 2 | 2 | 0 |
-| `DISTRIBUTION/DNR` | 5 | 5 | 0 |
-| `DISTRIBUTION/MICROGRID` | 3 | 3 | 0 |
-| `DISTRIBUTION/UNBALANCED-DOPF` | 2 | 2 | 0 |
-| `DISTRIBUTION/VOLT-VAR` | 1 | 1 | 0 |
+| `DATACENTER/FLEXIBLE-DC-LOAD` | 3 | 3 | 0 |
+| `DISTRIBUTION/DNR` | 2 | 2 | 0 |
 | `MARKET/MARKET-CLEARING` | 56 | 56 | 0 |
-| `MARKET/STRATEGIC-BIDDING` | 8 | 8 | 0 |
-| `MONITORING/PMU-PLACEMENT` | 66 | 61 | 5 |
-| `MONITORING/STATE-ESTIMATION` | 12 | 12 | 0 |
-| `MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS` | 14 | 14 | 0 |
-| `OPF/AC-OPF` | 4 | 3 | 1 |
-| `OPF/DC-OPF` | 71 | 66 | 5 |
+| `MONITORING/PMU-PLACEMENT` | 18 | 10 | 8 |
+| `OPF/AC-OPF` | 3 | 2 | 1 |
+| `OPF/DC-OPF` | 54 | 44 | 10 |
 | `OPF/LINEARIZED-SC-OPF` | 158 | 158 | 0 |
-| `OPF/SC-AC-OPF` | 2 | 1 | 1 |
-| `OTS/DC-OTS` | 65 | 59 | 6 |
+| `OPF/SC-AC-OPF` | 1 | 0 | 1 |
+| `OTS/DC-OTS` | 44 | 37 | 7 |
 | `OTS/LINEARIZED-SC-OTS` | 158 | 148 | 10 |
-| `OTS/SC-OTS` | 51 | 34 | 17 |
-| `PLANNING/DISTRIBUTION-EXPANSION` | 2 | 2 | 0 |
-| `PLANNING/GCEP-DC` | 3 | 3 | 0 |
+| `OTS/SC-OTS` | 35 | 18 | 17 |
+| `PLANNING/GCEP-DC` | 2 | 2 | 0 |
 | `PLANNING/RESOURCE-CAPACITY-EXPANSION` | 10 | 10 | 0 |
-| `PLANNING/TRANSMISSION-EXPANSION` | 67 | 62 | 5 |
-| `RESILIENCE/CONTROLLED-ISLANDING` | 82 | 79 | 3 |
-| `RESILIENCE/DISTRIBUTION-RESTORATION` | 3 | 3 | 0 |
-| `RESILIENCE/MAXIMUM-LOAD-DELIVERY` | 18 | 18 | 0 |
-| `RESILIENCE/NETWORK-INTERDICTION` | 68 | 21 | 47 |
-| `RESILIENCE/OPTIMAL-POWER-SHUTOFF` | 35 | 35 | 0 |
-| `RESILIENCE/POWER-RESTORATION` | 13 | 11 | 2 |
-| `SCHEDULING/HYDROTHERMAL-SCHEDULING` | 32 | 28 | 4 |
-| `SCHEDULING/MAINTENANCE-SCHEDULING` | 5 | 5 | 0 |
-| `SCHEDULING/STORAGE-SCHEDULING` | 3 | 3 | 0 |
+| `PLANNING/TRANSMISSION-EXPANSION` | 26 | 21 | 5 |
+| `RESILIENCE/CONTROLLED-ISLANDING` | 6 | 3 | 3 |
+| `RESILIENCE/NETWORK-INTERDICTION` | 63 | 16 | 47 |
+| `RESILIENCE/OPTIMAL-POWER-SHUTOFF` | 2 | 2 | 0 |
+| `RESILIENCE/POWER-RESTORATION` | 4 | 2 | 2 |
+| `SCHEDULING/HYDROTHERMAL-SCHEDULING` | 32 | 27 | 5 |
 | `UC/RTS-SCUC` | 12 | 12 | 0 |
-| `UC/SCUC` | 50 | 27 | 23 |
+| `UC/SCUC` | 45 | 22 | 23 |
 | `UC/SYSTEM-UC` | 56 | 56 | 0 |
-| **合计** | **1162** | **1033** | **129** |
+| **合计** | **790** | **651** | **139** |
 
 ## DATACENTER/FLEXIBLE-DC-LOAD
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_ieee14_opf_inflexible` | 0.001 |
-| `case002_ieee14_opf_temporal` | 0.002 |
-| `case003_ieee14_opf_spatial` | 0.001 |
-| `case004_ieee24_scuc_temporal` | 1.854 |
+| `case004_ieee24_scuc_temporal` | 6.293 |
 | `case005_ieee24_scuc_spatial_temporal` | 8.746 |
 | `case006_ieee24_scuc_interruptible` | 1.587 |
-
-## DATACENTER/GEOGRAPHIC-LOAD-BALANCING
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_eeai10_24h_equity_full` | 0.007 |
-| `case002_eeai10_24h_cost_full` | 0.002 |
-| `case003_eeai10_457h_equity_full` | 0.079 |
-| `case004_eeai10_457h_equity_partial` | 0.388 |
-| `case005_eeai10_457h_cost_full` | 0.044 |
-| `case006_eeai10_457h_local` | 0.003 |
-
-## DATACENTER/GREEN-LLM
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_9dc_24h_weighted` | 0.022 |
-| `case002_9dc_24h_energy` | 0.025 |
-| `case003_9dc_24h_carbon` | 0.025 |
-| `case004_9dc_24h_lex_cde` | 0.091 |
-| `case005_9dc_24h_place_milp` | 0.649 |
-| `case006_4dc_6h_smoke` | 0.001 |
-
-## DISPATCH/DEMAND-RESPONSE
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_lmbd3_dr` | 0.003 |
-| `case002_pjm5_dr` | 0.001 |
-| `case003_ieee14_dr` | 9.1×10^{-5} |
-
-## DISPATCH/ECONOMIC-DISPATCH
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_lmbd3_copperplate_ed` | 0.003 |
-| `case002_pjm5_copperplate_ed` | 0.001 |
-| `case003_ieee14_copperplate_ed` | 2.4×10^{-4} |
-
-## DISTRIBUTION/DER-HOSTING
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case03_gso_rural_hosting` | 0.001 |
-
-## DISTRIBUTION/DISTRIBUTION-OPF
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case02_mv_rural_dopf` | 0.028 |
-| `case05_lv_rural2_dopf` | 0.014 |
 
 ## DISTRIBUTION/DNR
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_gso_rural_dnr` | 0.001 |
-| `case01_mv_rural_dnr` | 0.005 |
-| `case03_mv_rural_dnr_ess` | 0.019 |
-| `case04_lv_rural2_dnr` | 0.004 |
-| `case06_lv_rural2_dnr_ess` | 0.013 |
-
-## DISTRIBUTION/MICROGRID
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_pjm5_microgrid_grid` | 2.1×10^{-4} |
-| `case002_pjm5_microgrid_island` | 9.7×10^{-5} |
-| `case003_pjm5_vpp` | 8.9×10^{-5} |
-
-## DISTRIBUTION/UNBALANCED-DOPF
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_ieee4_unbalanced` | 2.0×10^{-4} |
-| `case002_smartds_6bus_unbalanced` | 1.3×10^{-4} |
-
-## DISTRIBUTION/VOLT-VAR
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case02_gso_rural_voltvar` | 0.001 |
+| `case03_mv_rural_dnr_ess` | 10.71 |
+| `case06_lv_rural2_dnr_ess` | 7.822 |
 
 ## MARKET/MARKET-CLEARING
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_rts_gmlc_2020_01_27_market` | 0.014 |
-| `case02_rts_gmlc_2020_02_09_market` | 0.015 |
-| `case03_rts_gmlc_2020_03_05_market` | 0.015 |
-| `case04_rts_gmlc_2020_04_03_market` | 0.015 |
-| `case05_rts_gmlc_2020_05_05_market` | 0.015 |
-| `case06_rts_gmlc_2020_06_09_market` | 0.017 |
-| `case07_rts_gmlc_2020_07_06_market` | 0.017 |
-| `case08_rts_gmlc_2020_08_12_market` | 0.019 |
-| `case09_rts_gmlc_2020_09_20_market` | 0.016 |
-| `case10_rts_gmlc_2020_10_27_market` | 0.017 |
-| `case11_rts_gmlc_2020_11_25_market` | 0.015 |
-| `case12_rts_gmlc_2020_12_23_market` | 0.015 |
-| `case13_ca_2014_09_01_reserves_0_market` | 0.153 |
-| `case14_ca_2014_09_01_reserves_1_market` | 0.155 |
-| `case15_ca_2014_09_01_reserves_3_market` | 0.153 |
-| `case16_ca_2014_09_01_reserves_5_market` | 0.157 |
-| `case17_ca_2014_12_01_reserves_0_market` | 0.103 |
-| `case18_ca_2014_12_01_reserves_1_market` | 0.107 |
-| `case19_ca_2014_12_01_reserves_3_market` | 0.104 |
-| `case20_ca_2014_12_01_reserves_5_market` | 0.106 |
-| `case21_ca_2015_03_01_reserves_0_market` | 0.087 |
-| `case22_ca_2015_03_01_reserves_1_market` | 0.090 |
-| `case23_ca_2015_03_01_reserves_3_market` | 0.088 |
-| `case24_ca_2015_03_01_reserves_5_market` | 0.092 |
-| `case25_ca_2015_06_01_reserves_0_market` | 0.106 |
-| `case26_ca_2015_06_01_reserves_1_market` | 0.108 |
-| `case27_ca_2015_06_01_reserves_3_market` | 0.107 |
-| `case28_ca_2015_06_01_reserves_5_market` | 0.107 |
-| `case29_ca_scenario400_reserves_0_market` | 0.130 |
-| `case30_ca_scenario400_reserves_1_market` | 0.134 |
-| `case31_ca_scenario400_reserves_3_market` | 0.130 |
-| `case32_ca_scenario400_reserves_5_market` | 0.131 |
-| `case33_ferc_2015_01_01_hw_market` | 0.299 |
-| `case34_ferc_2015_01_01_lw_market` | 0.288 |
-| `case35_ferc_2015_02_01_hw_market` | 0.291 |
-| `case36_ferc_2015_02_01_lw_market` | 0.293 |
-| `case37_ferc_2015_03_01_hw_market` | 0.263 |
-| `case38_ferc_2015_03_01_lw_market` | 0.314 |
-| `case39_ferc_2015_04_01_hw_market` | 0.251 |
-| `case40_ferc_2015_04_01_lw_market` | 0.176 |
-| `case41_ferc_2015_05_01_hw_market` | 0.194 |
-| `case42_ferc_2015_05_01_lw_market` | 0.185 |
-| `case43_ferc_2015_06_01_hw_market` | 0.184 |
-| `case44_ferc_2015_06_01_lw_market` | 0.182 |
-| `case45_ferc_2015_07_01_hw_market` | 0.221 |
-| `case46_ferc_2015_07_01_lw_market` | 0.233 |
-| `case47_ferc_2015_08_01_hw_market` | 0.219 |
-| `case48_ferc_2015_08_01_lw_market` | 0.224 |
-| `case49_ferc_2015_09_01_hw_market` | 0.264 |
-| `case50_ferc_2015_09_01_lw_market` | 0.290 |
-| `case51_ferc_2015_10_01_hw_market` | 0.523 |
-| `case52_ferc_2015_10_01_lw_market` | 0.244 |
-| `case53_ferc_2015_11_02_hw_market` | 0.335 |
-| `case54_ferc_2015_11_02_lw_market` | 0.239 |
-| `case55_ferc_2015_12_01_hw_market` | 0.338 |
-| `case56_ferc_2015_12_01_lw_market` | 0.351 |
-
-## MARKET/STRATEGIC-BIDDING
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case01_toy3_copperplate_price` | 0.003 |
-| `case02_toy3_dc_price` | 0.002 |
-| `case03_pjm5_dc_price` | 0.003 |
-| `case04_pjm5_dc_withhold` | 0.001 |
-| `case05_ieee14_dc_price` | 0.003 |
-| `case06_rts_uc_t1_copperplate_price` | 0.001 |
-| `case07_ferc_uc_t1_copperplate_price` | 0.001 |
-| `case08_pjm5_binary_ladder` | 0.001 |
+| `case01_rts_gmlc_2020_01_27_market` | 6.192 |
+| `case02_rts_gmlc_2020_02_09_market` | 6.516 |
+| `case03_rts_gmlc_2020_03_05_market` | 6.978 |
+| `case04_rts_gmlc_2020_04_03_market` | 6.557 |
+| `case05_rts_gmlc_2020_05_05_market` | 6.297 |
+| `case06_rts_gmlc_2020_06_09_market` | 6.534 |
+| `case07_rts_gmlc_2020_07_06_market` | 6.477 |
+| `case08_rts_gmlc_2020_08_12_market` | 6.447 |
+| `case09_rts_gmlc_2020_09_20_market` | 6.408 |
+| `case10_rts_gmlc_2020_10_27_market` | 6.525 |
+| `case11_rts_gmlc_2020_11_25_market` | 6.117 |
+| `case12_rts_gmlc_2020_12_23_market` | 6.571 |
+| `case13_ca_2014_09_01_reserves_0_market` | 16.39 |
+| `case14_ca_2014_09_01_reserves_1_market` | 16.04 |
+| `case15_ca_2014_09_01_reserves_3_market` | 16.74 |
+| `case16_ca_2014_09_01_reserves_5_market` | 16.48 |
+| `case17_ca_2014_12_01_reserves_0_market` | 24.51 |
+| `case18_ca_2014_12_01_reserves_1_market` | 16.15 |
+| `case19_ca_2014_12_01_reserves_3_market` | 24.86 |
+| `case20_ca_2014_12_01_reserves_5_market` | 16.46 |
+| `case21_ca_2015_03_01_reserves_0_market` | 15.83 |
+| `case22_ca_2015_03_01_reserves_1_market` | 16.45 |
+| `case23_ca_2015_03_01_reserves_3_market` | 16.64 |
+| `case24_ca_2015_03_01_reserves_5_market` | 16.20 |
+| `case25_ca_2015_06_01_reserves_0_market` | 16.19 |
+| `case26_ca_2015_06_01_reserves_1_market` | 15.62 |
+| `case27_ca_2015_06_01_reserves_3_market` | 5.129 |
+| `case28_ca_2015_06_01_reserves_5_market` | 5.151 |
+| `case29_ca_scenario400_reserves_0_market` | 6.226 |
+| `case30_ca_scenario400_reserves_1_market` | 6.096 |
+| `case31_ca_scenario400_reserves_3_market` | 6.198 |
+| `case32_ca_scenario400_reserves_5_market` | 6.099 |
+| `case33_ferc_2015_01_01_hw_market` | 9.152 |
+| `case34_ferc_2015_01_01_lw_market` | 5.954 |
+| `case35_ferc_2015_02_01_hw_market` | 5.601 |
+| `case36_ferc_2015_02_01_lw_market` | 6.034 |
+| `case37_ferc_2015_03_01_hw_market` | 5.453 |
+| `case38_ferc_2015_03_01_lw_market` | 5.442 |
+| `case39_ferc_2015_04_01_hw_market` | 13.81 |
+| `case40_ferc_2015_04_01_lw_market` | 12.99 |
+| `case41_ferc_2015_05_01_hw_market` | 12.86 |
+| `case42_ferc_2015_05_01_lw_market` | 21.66 |
+| `case43_ferc_2015_06_01_hw_market` | 12.95 |
+| `case44_ferc_2015_06_01_lw_market` | 12.87 |
+| `case45_ferc_2015_07_01_hw_market` | 6.860 |
+| `case46_ferc_2015_07_01_lw_market` | 13.11 |
+| `case47_ferc_2015_08_01_hw_market` | 13.49 |
+| `case48_ferc_2015_08_01_lw_market` | 13.30 |
+| `case49_ferc_2015_09_01_hw_market` | 5.136 |
+| `case50_ferc_2015_09_01_lw_market` | 5.918 |
+| `case51_ferc_2015_10_01_hw_market` | 5.720 |
+| `case52_ferc_2015_10_01_lw_market` | 5.322 |
+| `case53_ferc_2015_11_02_hw_market` | 5.695 |
+| `case54_ferc_2015_11_02_lw_market` | 5.920 |
+| `case55_ferc_2015_12_01_hw_market` | 6.185 |
+| `case56_ferc_2015_12_01_lw_market` | 5.606 |
 
 ## MONITORING/PMU-PLACEMENT
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_case3_lmbd_pmu` | 0.002 |
-| `case002_case5_pjm_pmu` | 1.8×10^{-4} |
-| `case003_case14_ieee_pmu` | 0.002 |
-| `case004_case24_ieee_rts_pmu` | 0.001 |
-| `case005_case30_as_pmu` | 1.3×10^{-4} |
-| `case006_case30_ieee_pmu` | 1.8×10^{-4} |
-| `case007_case39_epri_pmu` | 1.5×10^{-4} |
-| `case008_case57_ieee_pmu` | 0.001 |
-| `case009_case60_c_pmu` | 1.5×10^{-4} |
-| `case010_case73_ieee_rts_pmu` | 0.001 |
-| `case011_case89_pegase_pmu` | 4.1×10^{-4} |
-| `case012_case118_ieee_pmu` | 0.002 |
-| `case013_case162_ieee_dtc_pmu` | 0.002 |
-| `case014_case179_goc_pmu` | 0.002 |
-| `case015_case197_snem_pmu` | 0.001 |
-| `case016_case200_activ_pmu` | 0.001 |
-| `case017_case240_pserc_pmu` | 0.001 |
-| `case018_case300_ieee_pmu` | 0.001 |
-| `case019_case500_goc_pmu` | 0.007 |
-| `case020_case588_sdet_pmu` | 0.002 |
-| `case021_case793_goc_pmu` | 0.001 |
-| `case022_case1354_pegase_pmu` | 0.002 |
-| `case023_case1803_snem_pmu` | 0.008 |
-| `case024_case1888_rte_pmu` | 0.003 |
-| `case025_case1951_rte_pmu` | 0.003 |
-| `case026_case2000_goc_pmu` | 0.005 |
-| `case027_case2312_goc_pmu` | 0.005 |
-| `case028_case2383wp_k_pmu` | 0.006 |
-| `case029_case2736sp_k_pmu` | 0.006 |
-| `case030_case2737sop_k_pmu` | 0.006 |
-| `case031_case2742_goc_pmu` | 4.052 |
-| `case032_case2746wop_k_pmu` | 0.007 |
-| `case033_case2746wp_k_pmu` | 0.007 |
-| `case034_case2848_rte_pmu` | 0.004 |
-| `case035_case2853_sdet_pmu` | 0.006 |
-| `case036_case2868_rte_pmu` | 0.005 |
-| `case037_case2869_pegase_pmu` | 0.016 |
-| `case038_case3012wp_k_pmu` | 0.025 |
-| `case039_case3022_goc_pmu` | 0.167 |
-| `case040_case3120sp_k_pmu` | 0.083 |
-| `case041_case3375wp_k_pmu` | 0.078 |
+| `case026_case2000_goc_pmu` | 6.265 |
+| `case031_case2742_goc_pmu` | 难求解 |
+| `case037_case2869_pegase_pmu` | 8.357 |
 | `case042_case3970_goc_pmu` | 难求解 |
 | `case043_case4020_goc_pmu` | 221.5 |
-| `case044_case4601_goc_pmu` | 2.523 |
+| `case044_case4601_goc_pmu` | 96.88 |
 | `case045_case4619_goc_pmu` | 213.9 |
-| `case046_case4661_sdet_pmu` | 0.193 |
-| `case047_case4837_goc_pmu` | 4.045 |
-| `case048_case4917_goc_pmu` | 0.255 |
-| `case049_case5658_epigrids_pmu` | 3.683 |
-| `case050_case6468_rte_pmu` | 0.193 |
-| `case051_case6470_rte_pmu` | 0.103 |
-| `case052_case6495_rte_pmu` | 0.108 |
-| `case053_case6515_rte_pmu` | 0.105 |
+| `case047_case4837_goc_pmu` | 难求解 |
+| `case049_case5658_epigrids_pmu` | 难求解 |
 | `case054_case7336_epigrids_pmu` | 10.42 |
-| `case055_case8387_pegase_pmu` | 0.879 |
 | `case056_case9241_pegase_pmu` | 1.123 |
 | `case057_case9591_goc_pmu` | 308.3 |
-| `case058_case10000_goc_pmu` | 0.121 |
 | `case059_case10192_epigrids_pmu` | 111.7 |
 | `case060_case10480_goc_pmu` | 难求解 |
-| `case061_case13659_pegase_pmu` | 0.648 |
 | `case062_case19402_goc_pmu` | 难求解 |
 | `case063_case20758_epigrids_pmu` | 18.07 |
 | `case064_case24464_goc_pmu` | 难求解 |
-| `case065_case30000_goc_pmu` | 0.396 |
 | `case066_case78484_epigrids_pmu` | 难求解 |
-
-## MONITORING/STATE-ESTIMATION
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_case5_pjm_wls_se` | 1.9×10^{-4} |
-| `case002_case5_pjm_l1_se` | 2.4×10^{-4} |
-| `case003_case14_ieee_wls_se` | 2.2×10^{-4} |
-| `case004_case14_ieee_l1_se` | 0.001 |
-| `case005_case30_ieee_wls_se` | 2.9×10^{-4} |
-| `case006_case30_ieee_l1_se` | 0.001 |
-| `case007_case57_ieee_wls_se` | 0.001 |
-| `case008_case57_ieee_l1_se` | 0.002 |
-| `case009_case118_ieee_wls_se` | 0.001 |
-| `case010_case118_ieee_l1_se` | 0.005 |
-| `case011_case300_ieee_wls_se` | 0.003 |
-| `case012_case300_ieee_l1_se` | 0.015 |
-
-## MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case01_travis150_ieg` | 0.052 |
-| `case02_gaslib11_14_ieee_ieg` | 0.002 |
-| `case03_gaslib24_24_ieee_rts_ieg` | 0.014 |
-| `case04_gaslib39_scen01_39_epri_ieg` | 0.007 |
-| `case05_gaslib39_scen02_39_epri_ieg` | 0.008 |
-| `case06_gaslib39_scen03_39_epri_ieg` | 0.002 |
-| `case07_gaslib39_scen04_39_epri_ieg` | 0.005 |
-| `case08_gaslib39_scen05_39_epri_ieg` | 0.013 |
-| `case09_gaslib39_scen06_39_epri_ieg` | 0.013 |
-| `case10_gaslib39_scen07_39_epri_ieg` | 0.004 |
-| `case11_gaslib39_scen08_39_epri_ieg` | 0.015 |
-| `case12_gaslib39_scen09_39_epri_ieg` | 0.005 |
-| `case13_gaslib39_scen10_39_epri_ieg` | 0.005 |
-| `case14_gaslib40_57_ieee_ieg` | 0.002 |
 
 ## OPF/AC-OPF
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_acopf` | 0.110 |
 | `case002_pjm5_acopf` | 99.91 |
 | `case003_ieee14_acopf` | 57.39 |
 | `case004_ieee30_acopf` | 难求解 |
@@ -332,71 +139,54 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_dc_ed` | 2.9×10^{-4} |
-| `case002_lmbd3_lp_ed` | 0.001 |
-| `case003_pjm5_dc_ed` | 3.2×10^{-4} |
-| `case004_ieee14_dc_ed` | 1.6×10^{-4} |
-| `case005_ieee24_dc_ed` | 0.001 |
-| `case006_ieee24_lp_ed` | 3.5×10^{-4} |
-| `case007_as30_dc_ed` | 3.1×10^{-4} |
-| `case008_as30_lp_ed` | 2.5×10^{-4} |
-| `case009_ieee30_dc_ed` | 2.2×10^{-4} |
-| `case010_epri39_dc_ed` | 2.6×10^{-4} |
-| `case011_ieee57_dc_ed` | 4.8×10^{-4} |
-| `case012_c60_dc_ed` | 4.6×10^{-4} |
-| `case013_ieee73_dc_ed` | 0.001 |
-| `case014_ieee73_lp_ed` | 0.001 |
-| `case015_pegase89_dc_ed` | 0.002 |
-| `case016_ieee118_dc_ed` | 0.001 |
-| `case017_ieeedtc162_dc_ed` | 0.003 |
-| `case018_goc179_dc_ed` | 0.001 |
-| `case019_snem197_dc_ed` | 0.001 |
-| `case020_activ200_dc_ed` | 0.001 |
-| `case021_activ200_lp_ed` | 0.001 |
-| `case022_pserc240_dc_ed` | 0.004 |
-| `case023_ieee300_dc_ed` | 0.003 |
-| `case024_goc500_dc_ed` | 0.004 |
-| `case026_sdet588_dc_ed` | 0.004 |
-| `case027_goc793_dc_ed` | 0.003 |
-| `case029_pegase1354_dc_ed` | 0.018 |
-| `case030_snem1803_dc_ed` | 0.024 |
-| `case031_rte1888_dc_ed` | 0.021 |
-| `case032_rte1951_dc_ed` | 0.020 |
-| `case033_goc2000_dc_ed` | 0.029 |
-| `case035_goc2312_dc_ed` | 0.018 |
-| `case037_2383wpk_dc_ed` | 0.042 |
-| `case038_2736spk_dc_ed` | 0.047 |
-| `case039_2737sopk_dc_ed` | 0.042 |
-| `case040_goc2742_dc_ed` | 0.053 |
-| `case042_2746wopk_dc_ed` | 0.042 |
-| `case043_2746wpk_dc_ed` | 0.045 |
-| `case044_rte2848_dc_ed` | 0.033 |
-| `case045_sdet2853_dc_ed` | 0.058 |
-| `case046_rte2868_dc_ed` | 0.035 |
-| `case047_pegase2869_dc_ed` | 0.084 |
-| `case048_3012wpk_dc_ed` | 0.165 |
-| `case049_goc3022_dc_ed` | 0.113 |
-| `case051_3120spk_dc_ed` | 0.206 |
-| `case052_3375wpk_dc_ed` | 0.281 |
-| `case053_goc3970_dc_ed` | 0.366 |
-| `case055_goc4020_dc_ed` | 0.526 |
-| `case057_goc4601_dc_ed` | 0.221 |
-| `case059_goc4619_dc_ed` | 0.460 |
+| `case005_ieee24_dc_ed` | 7.288 |
+| `case006_ieee24_lp_ed` | 9.507 |
+| `case007_as30_dc_ed` | 12.17 |
+| `case008_as30_lp_ed` | 20.44 |
+| `case009_ieee30_dc_ed` | 14.98 |
+| `case010_epri39_dc_ed` | 6.954 |
+| `case011_ieee57_dc_ed` | 9.321 |
+| `case012_c60_dc_ed` | 12.21 |
+| `case013_ieee73_dc_ed` | 8.635 |
+| `case014_ieee73_lp_ed` | 11.61 |
+| `case015_pegase89_dc_ed` | 21.65 |
+| `case016_ieee118_dc_ed` | 12.32 |
+| `case017_ieeedtc162_dc_ed` | 9.401 |
+| `case019_snem197_dc_ed` | 7.426 |
+| `case022_pserc240_dc_ed` | 17.40 |
+| `case023_ieee300_dc_ed` | 13.48 |
+| `case024_goc500_dc_ed` | 11.31 |
+| `case027_goc793_dc_ed` | 5.418 |
+| `case029_pegase1354_dc_ed` | 11.54 |
+| `case030_snem1803_dc_ed` | 13.03 |
+| `case031_rte1888_dc_ed` | 5.926 |
+| `case032_rte1951_dc_ed` | 7.769 |
+| `case033_goc2000_dc_ed` | 6.836 |
+| `case035_goc2312_dc_ed` | 11.13 |
+| `case037_2383wpk_dc_ed` | 5.235 |
+| `case044_rte2848_dc_ed` | 10.57 |
+| `case046_rte2868_dc_ed` | 12.07 |
+| `case047_pegase2869_dc_ed` | 6.125 |
+| `case049_goc3022_dc_ed` | 10.67 |
+| `case053_goc3970_dc_ed` | 6.919 |
+| `case055_goc4020_dc_ed` | 6.697 |
+| `case057_goc4601_dc_ed` | 5.046 |
+| `case059_goc4619_dc_ed` | 6.673 |
 | `case061_sdet4661_dc_ed` | 1.086 |
-| `case062_goc4837_dc_ed` | 0.372 |
-| `case064_goc4917_dc_ed` | 0.274 |
+| `case062_goc4837_dc_ed` | 8.226 |
+| `case064_goc4917_dc_ed` | 9.754 |
 | `case066_epigrids5658_dc_ed` | 2.443 |
-| `case067_rte6468_dc_ed` | 0.607 |
-| `case068_rte6470_dc_ed` | 0.866 |
-| `case069_rte6495_dc_ed` | 1.100 |
-| `case070_rte6515_dc_ed` | 0.694 |
-| `case071_epigrids7336_dc_ed` | 3.479 |
+| `case067_rte6468_dc_ed` | 8.555 |
+| `case068_rte6470_dc_ed` | 12.44 |
+| `case069_rte6495_dc_ed` | 12.13 |
+| `case070_rte6515_dc_ed` | 11.71 |
+| `case071_epigrids7336_dc_ed` | 难求解 |
 | `case072_pegase8387_dc_ed` | 5.817 |
 | `case073_pegase9241_dc_ed` | 12.86 |
-| `case074_goc9591_dc_ed` | 1.352 |
-| `case076_goc10000_dc_ed` | 0.723 |
-| `case078_epigrids10192_dc_ed` | 3.425 |
-| `case080_goc10480_dc_ed` | 1.249 |
+| `case074_goc9591_dc_ed` | 难求解 |
+| `case076_goc10000_dc_ed` | 难求解 |
+| `case078_epigrids10192_dc_ed` | 难求解 |
+| `case080_goc10480_dc_ed` | 难求解 |
 | `case082_pegase13659_dc_ed` | 6.403 |
 | `case083_goc19402_dc_ed` | 难求解 |
 | `case085_epigrids20758_dc_ed` | 难求解 |
@@ -408,22 +198,22 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_t1s3_offline_network_01o_3_scenario_1_scacopf` | 0.074 |
-| `case003_t1s3_offline_network_01o_3_scenario_2_scacopf` | 0.072 |
-| `case005_t1s3_offline_network_01o_3_scenario_3_scacopf` | 0.071 |
-| `case007_t1s3_offline_network_02o_3_scenario_1_scacopf` | 0.099 |
-| `case009_t1s3_offline_network_02o_3_scenario_2_scacopf` | 0.099 |
-| `case011_t1s3_offline_network_02o_3_scenario_3_scacopf` | 0.103 |
-| `case013_t1s3_offline_network_03o_3_scenario_1_scacopf` | 0.121 |
-| `case015_t1s3_offline_network_03o_3_scenario_2_scacopf` | 0.115 |
-| `case017_t1s3_offline_network_03o_3_scenario_3_scacopf` | 0.113 |
+| `case001_t1s3_offline_network_01o_3_scenario_1_scacopf` | 5.604 |
+| `case003_t1s3_offline_network_01o_3_scenario_2_scacopf` | 6.964 |
+| `case005_t1s3_offline_network_01o_3_scenario_3_scacopf` | 6.451 |
+| `case007_t1s3_offline_network_02o_3_scenario_1_scacopf` | 6.971 |
+| `case009_t1s3_offline_network_02o_3_scenario_2_scacopf` | 6.675 |
+| `case011_t1s3_offline_network_02o_3_scenario_3_scacopf` | 6.872 |
+| `case013_t1s3_offline_network_03o_3_scenario_1_scacopf` | 11.36 |
+| `case015_t1s3_offline_network_03o_3_scenario_2_scacopf` | 6.871 |
+| `case017_t1s3_offline_network_03o_3_scenario_3_scacopf` | 7.269 |
 | `case019_t1s3_offline_network_05o_3_scenario_1_scacopf` | 11.62 |
 | `case021_t1s3_offline_network_05o_3_scenario_2_scacopf` | 8.896 |
 | `case023_t1s3_offline_network_05o_3_scenario_3_scacopf` | 7.830 |
 | `case025_t1s3_offline_network_06o_3_scenario_1_scacopf` | 6.212 |
 | `case027_t1s3_offline_network_06o_3_scenario_2_scacopf` | 5.321 |
 | `case029_t1s3_offline_network_06o_3_scenario_3_scacopf` | 5.636 |
-| `case031_t1s3_offline_network_07o_3_scenario_1_scacopf` | 4.600 |
+| `case031_t1s3_offline_network_07o_3_scenario_1_scacopf` | 28.65 |
 | `case033_t1s3_offline_network_07o_3_scenario_2_scacopf` | 6.770 |
 | `case035_t1s3_offline_network_07o_3_scenario_3_scacopf` | 9.419 |
 | `case037_t1s3_offline_network_08o_3_scenario_1_scacopf` | 15.04 |
@@ -447,23 +237,23 @@
 | `case073_t1s3_offline_network_84o_3_scenario_1_scacopf` | 62.77 |
 | `case075_t1s3_offline_network_84o_3_scenario_2_scacopf` | 62.92 |
 | `case077_t1s3_offline_network_84o_3_scenario_3_scacopf` | 67.88 |
-| `case079_t1s3_real_time_network_01r_3_scenario_1_scacopf` | 0.064 |
-| `case081_t1s3_real_time_network_01r_3_scenario_2_scacopf` | 0.075 |
-| `case083_t1s3_real_time_network_01r_3_scenario_3_scacopf` | 0.072 |
-| `case085_t1s3_real_time_network_02r_3_scenario_1_scacopf` | 0.109 |
-| `case087_t1s3_real_time_network_02r_3_scenario_2_scacopf` | 0.105 |
-| `case089_network_02r_3_scenario_2_scenario_30_scacopf` | 0.110 |
-| `case091_t1s3_real_time_network_02r_3_scenario_3_scacopf` | 0.103 |
-| `case093_t1s3_real_time_network_03r_3_scenario_1_scacopf` | 0.115 |
-| `case095_t1s3_real_time_network_03r_3_scenario_2_scacopf` | 0.114 |
-| `case097_t1s3_real_time_network_03r_3_scenario_3_scacopf` | 0.116 |
+| `case079_t1s3_real_time_network_01r_3_scenario_1_scacopf` | 6.447 |
+| `case081_t1s3_real_time_network_01r_3_scenario_2_scacopf` | 7.073 |
+| `case083_t1s3_real_time_network_01r_3_scenario_3_scacopf` | 6.271 |
+| `case085_t1s3_real_time_network_02r_3_scenario_1_scacopf` | 6.872 |
+| `case087_t1s3_real_time_network_02r_3_scenario_2_scacopf` | 6.904 |
+| `case089_network_02r_3_scenario_2_scenario_30_scacopf` | 6.793 |
+| `case091_t1s3_real_time_network_02r_3_scenario_3_scacopf` | 7.180 |
+| `case093_t1s3_real_time_network_03r_3_scenario_1_scacopf` | 7.026 |
+| `case095_t1s3_real_time_network_03r_3_scenario_2_scacopf` | 7.598 |
+| `case097_t1s3_real_time_network_03r_3_scenario_3_scacopf` | 12.17 |
 | `case099_t1s3_real_time_network_05r_3_scenario_1_scacopf` | 10.70 |
 | `case101_t1s3_real_time_network_05r_3_scenario_2_scacopf` | 7.605 |
 | `case103_t1s3_real_time_network_05r_3_scenario_3_scacopf` | 11.00 |
 | `case105_t1s3_real_time_network_06r_3_scenario_1_scacopf` | 5.246 |
 | `case107_t1s3_real_time_network_06r_3_scenario_2_scacopf` | 6.943 |
 | `case109_t1s3_real_time_network_06r_3_scenario_3_scacopf` | 5.964 |
-| `case111_t1s3_real_time_network_07r_3_scenario_1_scacopf` | 4.547 |
+| `case111_t1s3_real_time_network_07r_3_scenario_1_scacopf` | 30.21 |
 | `case113_t1s3_real_time_network_07r_3_scenario_2_scacopf` | 6.086 |
 | `case115_t1s3_real_time_network_07r_3_scenario_3_scacopf` | 8.999 |
 | `case117_t1s3_real_time_network_08r_3_scenario_1_scacopf` | 16.72 |
@@ -487,15 +277,15 @@
 | `case153_t1s3_real_time_network_84r_3_scenario_1_scacopf` | 63.31 |
 | `case155_t1s3_real_time_network_84r_3_scenario_2_scacopf` | 59.94 |
 | `case157_t1s3_real_time_network_84r_3_scenario_3_scacopf` | 66.64 |
-| `case159_t1s3_offline_network_01o_3_scenario_1_scacopf` | 0.071 |
-| `case161_t1s3_offline_network_01o_3_scenario_2_scacopf` | 0.085 |
-| `case163_t1s3_offline_network_01o_3_scenario_3_scacopf` | 0.073 |
-| `case165_t1s3_offline_network_02o_3_scenario_1_scacopf` | 0.101 |
-| `case167_t1s3_offline_network_02o_3_scenario_2_scacopf` | 0.102 |
-| `case169_t1s3_offline_network_02o_3_scenario_3_scacopf` | 0.101 |
-| `case171_t1s3_offline_network_03o_3_scenario_1_scacopf` | 0.112 |
-| `case173_t1s3_offline_network_03o_3_scenario_2_scacopf` | 0.114 |
-| `case175_t1s3_offline_network_03o_3_scenario_3_scacopf` | 0.115 |
+| `case159_t1s3_offline_network_01o_3_scenario_1_scacopf` | 6.270 |
+| `case161_t1s3_offline_network_01o_3_scenario_2_scacopf` | 6.922 |
+| `case163_t1s3_offline_network_01o_3_scenario_3_scacopf` | 6.468 |
+| `case165_t1s3_offline_network_02o_3_scenario_1_scacopf` | 6.678 |
+| `case167_t1s3_offline_network_02o_3_scenario_2_scacopf` | 6.820 |
+| `case169_t1s3_offline_network_02o_3_scenario_3_scacopf` | 12.33 |
+| `case171_t1s3_offline_network_03o_3_scenario_1_scacopf` | 7.006 |
+| `case173_t1s3_offline_network_03o_3_scenario_2_scacopf` | 6.845 |
+| `case175_t1s3_offline_network_03o_3_scenario_3_scacopf` | 7.614 |
 | `case177_t1s3_offline_network_05o_3_scenario_1_scacopf` | 10.24 |
 | `case179_t1s3_offline_network_05o_3_scenario_2_scacopf` | 8.004 |
 | `case181_t1s3_offline_network_05o_3_scenario_3_scacopf` | 11.74 |
@@ -526,16 +316,16 @@
 | `case231_t1s3_offline_network_84o_3_scenario_1_scacopf` | 57.35 |
 | `case233_t1s3_offline_network_84o_3_scenario_2_scacopf` | 60.62 |
 | `case235_t1s3_offline_network_84o_3_scenario_3_scacopf` | 69.69 |
-| `case237_t1s3_real_time_network_01r_3_scenario_1_scacopf` | 0.067 |
-| `case239_t1s3_real_time_network_01r_3_scenario_2_scacopf` | 0.076 |
-| `case241_t1s3_real_time_network_01r_3_scenario_3_scacopf` | 0.067 |
-| `case243_t1s3_real_time_network_02r_3_scenario_1_scacopf` | 0.105 |
-| `case245_t1s3_real_time_network_02r_3_scenario_2_scacopf` | 0.100 |
-| `case247_network_02r_3_scenario_2_scenario_30_scacopf` | 0.103 |
-| `case249_t1s3_real_time_network_02r_3_scenario_3_scacopf` | 0.100 |
-| `case251_t1s3_real_time_network_03r_3_scenario_1_scacopf` | 0.116 |
-| `case253_t1s3_real_time_network_03r_3_scenario_2_scacopf` | 0.112 |
-| `case255_t1s3_real_time_network_03r_3_scenario_3_scacopf` | 0.161 |
+| `case237_t1s3_real_time_network_01r_3_scenario_1_scacopf` | 6.102 |
+| `case239_t1s3_real_time_network_01r_3_scenario_2_scacopf` | 11.73 |
+| `case241_t1s3_real_time_network_01r_3_scenario_3_scacopf` | 6.313 |
+| `case243_t1s3_real_time_network_02r_3_scenario_1_scacopf` | 5.690 |
+| `case245_t1s3_real_time_network_02r_3_scenario_2_scacopf` | 7.118 |
+| `case247_network_02r_3_scenario_2_scenario_30_scacopf` | 7.082 |
+| `case249_t1s3_real_time_network_02r_3_scenario_3_scacopf` | 7.396 |
+| `case251_t1s3_real_time_network_03r_3_scenario_1_scacopf` | 7.085 |
+| `case253_t1s3_real_time_network_03r_3_scenario_2_scacopf` | 7.032 |
+| `case255_t1s3_real_time_network_03r_3_scenario_3_scacopf` | 10.99 |
 | `case257_t1s3_real_time_network_05r_3_scenario_1_scacopf` | 8.767 |
 | `case259_t1s3_real_time_network_05r_3_scenario_2_scacopf` | 8.396 |
 | `case261_t1s3_real_time_network_05r_3_scenario_3_scacopf` | 8.798 |
@@ -559,7 +349,7 @@
 | `case297_t1s3_real_time_network_13r_3_scenario_3_scacopf` | 147.1 |
 | `case299_t1s3_real_time_network_70r_3_scenario_1_scacopf` | 7.345 |
 | `case301_t1s3_real_time_network_70r_3_scenario_2_scacopf` | 5.656 |
-| `case303_t1s3_real_time_network_70r_3_scenario_3_scacopf` | 4.940 |
+| `case303_t1s3_real_time_network_70r_3_scenario_3_scacopf` | 34.09 |
 | `case305_t1s3_real_time_network_81r_3_scenario_1_scacopf` | 20.00 |
 | `case307_t1s3_real_time_network_81r_3_scenario_2_scacopf` | 22.95 |
 | `case309_t1s3_real_time_network_81r_3_scenario_3_scacopf` | 30.10 |
@@ -571,48 +361,26 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_scacopf` | 0.525 |
 | `case002_pjm5_scacopf` | 难求解 |
 
 ## OTS/DC-OTS
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_pjm5_dcots` | 0.007 |
-| `case02_ieee14_dcots` | 0.010 |
-| `case03_ieee118_dcots` | 0.050 |
-| `case04_lmbd3_dcots` | 0.003 |
-| `case05_ieee24_dcots` | 0.003 |
-| `case06_as30_dcots` | 0.012 |
-| `case07_ieee30_dcots` | 0.022 |
-| `case08_epri39_dcots` | 0.011 |
-| `case09_ieee57_dcots` | 0.079 |
-| `case10_c60_dcots` | 0.022 |
-| `case11_ieee73_dcots` | 0.008 |
-| `case12_pegase89_dcots` | 0.043 |
-| `case13_ieeedtc162_dcots` | 0.114 |
-| `case14_goc179_dcots` | 0.059 |
-| `case15_snem197_dcots` | 0.005 |
-| `case16_activ200_dcots` | 0.007 |
-| `case17_pserc240_dcots` | 0.072 |
-| `case18_ieee300_dcots` | 0.074 |
-| `case19_goc500_dcots` | 0.161 |
-| `case20_sdet588_dcots` | 0.053 |
-| `case21_goc793_dcots` | 0.104 |
-| `case22_pegase1354_dcots` | 0.098 |
-| `case23_snem1803_dcots` | 0.064 |
-| `case24_rte1888_dcots` | 0.054 |
-| `case25_rte1951_dcots` | 0.053 |
-| `case26_goc2000_dcots` | 1.010 |
-| `case27_goc2312_dcots` | 1.093 |
-| `case28_2383wpk_dcots` | 1.042 |
-| `case29_2736spk_dcots` | 0.735 |
-| `case30_2737sopk_dcots` | 0.744 |
+| `case03_ieee118_dcots` | 6.717 |
+| `case09_ieee57_dcots` | 16.70 |
+| `case13_ieeedtc162_dcots` | 9.348 |
+| `case14_goc179_dcots` | 难求解 |
+| `case17_pserc240_dcots` | 108.2 |
+| `case19_goc500_dcots` | 54.89 |
+| `case20_sdet588_dcots` | 57.04 |
+| `case21_goc793_dcots` | 26.79 |
+| `case23_snem1803_dcots` | 44.82 |
+| `case26_goc2000_dcots` | 7.282 |
+| `case27_goc2312_dcots` | 7.614 |
+| `case28_2383wpk_dcots` | 22.54 |
 | `case31_goc2742_dcots` | 8.480 |
-| `case32_2746wopk_dcots` | 0.911 |
-| `case33_2746wpk_dcots` | 0.916 |
-| `case34_rte2848_dcots` | 0.878 |
-| `case35_sdet2853_dcots` | 1.200 |
+| `case35_sdet2853_dcots` | 98.85 |
 | `case36_rte2868_dcots` | 1.391 |
 | `case37_pegase2869_dcots` | 1.706 |
 | `case38_3012wpk_dcots` | 1.588 |
@@ -625,8 +393,8 @@
 | `case45_goc4619_dcots` | 15.79 |
 | `case46_sdet4661_dcots` | 3.449 |
 | `case47_goc4837_dcots` | 7.917 |
-| `case48_goc4917_dcots` | 4.448 |
-| `case49_epigrids5658_dcots` | 4.570 |
+| `case48_goc4917_dcots` | 5.804 |
+| `case49_epigrids5658_dcots` | 8.023 |
 | `case50_rte6468_dcots` | 3.662 |
 | `case51_rte6470_dcots` | 2.423 |
 | `case52_rte6495_dcots` | 3.916 |
@@ -648,15 +416,15 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case002_t1s3_offline_network_01o_3_scenario_1_scacots` | 0.172 |
-| `case004_t1s3_offline_network_01o_3_scenario_2_scacots` | 0.162 |
-| `case006_t1s3_offline_network_01o_3_scenario_3_scacots` | 0.156 |
-| `case008_t1s3_offline_network_02o_3_scenario_1_scacots` | 0.346 |
-| `case010_t1s3_offline_network_02o_3_scenario_2_scacots` | 0.391 |
-| `case012_t1s3_offline_network_02o_3_scenario_3_scacots` | 0.414 |
-| `case014_t1s3_offline_network_03o_3_scenario_1_scacots` | 0.488 |
-| `case016_t1s3_offline_network_03o_3_scenario_2_scacots` | 0.654 |
-| `case018_t1s3_offline_network_03o_3_scenario_3_scacots` | 0.643 |
+| `case002_t1s3_offline_network_01o_3_scenario_1_scacots` | 50.06 |
+| `case004_t1s3_offline_network_01o_3_scenario_2_scacots` | 5.029 |
+| `case006_t1s3_offline_network_01o_3_scenario_3_scacots` | 6.718 |
+| `case008_t1s3_offline_network_02o_3_scenario_1_scacots` | 10.53 |
+| `case010_t1s3_offline_network_02o_3_scenario_2_scacots` | 6.700 |
+| `case012_t1s3_offline_network_02o_3_scenario_3_scacots` | 8.463 |
+| `case014_t1s3_offline_network_03o_3_scenario_1_scacots` | 40.39 |
+| `case016_t1s3_offline_network_03o_3_scenario_2_scacots` | 32.94 |
+| `case018_t1s3_offline_network_03o_3_scenario_3_scacots` | 31.96 |
 | `case020_t1s3_offline_network_05o_3_scenario_1_scacots` | 16.96 |
 | `case022_t1s3_offline_network_05o_3_scenario_2_scacots` | 13.55 |
 | `case024_t1s3_offline_network_05o_3_scenario_3_scacots` | 18.18 |
@@ -687,16 +455,16 @@
 | `case074_t1s3_offline_network_84o_3_scenario_1_scacots` | 87.27 |
 | `case076_t1s3_offline_network_84o_3_scenario_2_scacots` | 95.86 |
 | `case078_t1s3_offline_network_84o_3_scenario_3_scacots` | 66.43 |
-| `case080_t1s3_real_time_network_01r_3_scenario_1_scacots` | 0.150 |
-| `case082_t1s3_real_time_network_01r_3_scenario_2_scacots` | 0.151 |
-| `case084_t1s3_real_time_network_01r_3_scenario_3_scacots` | 0.160 |
-| `case086_t1s3_real_time_network_02r_3_scenario_1_scacots` | 0.371 |
-| `case088_t1s3_real_time_network_02r_3_scenario_2_scacots` | 0.393 |
-| `case090_network_02r_3_scenario_2_scenario_30_scacots` | 0.388 |
-| `case092_t1s3_real_time_network_02r_3_scenario_3_scacots` | 0.435 |
-| `case094_t1s3_real_time_network_03r_3_scenario_1_scacots` | 0.487 |
-| `case096_t1s3_real_time_network_03r_3_scenario_2_scacots` | 0.664 |
-| `case098_t1s3_real_time_network_03r_3_scenario_3_scacots` | 0.629 |
+| `case080_t1s3_real_time_network_01r_3_scenario_1_scacots` | 39.32 |
+| `case082_t1s3_real_time_network_01r_3_scenario_2_scacots` | 39.30 |
+| `case084_t1s3_real_time_network_01r_3_scenario_3_scacots` | 6.932 |
+| `case086_t1s3_real_time_network_02r_3_scenario_1_scacots` | 10.68 |
+| `case088_t1s3_real_time_network_02r_3_scenario_2_scacots` | 6.182 |
+| `case090_network_02r_3_scenario_2_scenario_30_scacots` | 6.695 |
+| `case092_t1s3_real_time_network_02r_3_scenario_3_scacots` | 9.151 |
+| `case094_t1s3_real_time_network_03r_3_scenario_1_scacots` | 37.84 |
+| `case096_t1s3_real_time_network_03r_3_scenario_2_scacots` | 29.66 |
+| `case098_t1s3_real_time_network_03r_3_scenario_3_scacots` | 37.43 |
 | `case100_t1s3_real_time_network_05r_3_scenario_1_scacots` | 16.93 |
 | `case102_t1s3_real_time_network_05r_3_scenario_2_scacots` | 14.99 |
 | `case104_t1s3_real_time_network_05r_3_scenario_3_scacots` | 21.06 |
@@ -727,15 +495,15 @@
 | `case154_t1s3_real_time_network_84r_3_scenario_1_scacots` | 85.33 |
 | `case156_t1s3_real_time_network_84r_3_scenario_2_scacots` | 95.29 |
 | `case158_t1s3_real_time_network_84r_3_scenario_3_scacots` | 69.42 |
-| `case160_t1s3_offline_network_01o_3_scenario_1_scacots` | 0.171 |
-| `case162_t1s3_offline_network_01o_3_scenario_2_scacots` | 0.176 |
-| `case164_t1s3_offline_network_01o_3_scenario_3_scacots` | 0.161 |
-| `case166_t1s3_offline_network_02o_3_scenario_1_scacots` | 0.357 |
-| `case168_t1s3_offline_network_02o_3_scenario_2_scacots` | 0.417 |
-| `case170_t1s3_offline_network_02o_3_scenario_3_scacots` | 0.414 |
-| `case172_t1s3_offline_network_03o_3_scenario_1_scacots` | 0.528 |
-| `case174_t1s3_offline_network_03o_3_scenario_2_scacots` | 0.654 |
-| `case176_t1s3_offline_network_03o_3_scenario_3_scacots` | 0.620 |
+| `case160_t1s3_offline_network_01o_3_scenario_1_scacots` | 60.06 |
+| `case162_t1s3_offline_network_01o_3_scenario_2_scacots` | 5.778 |
+| `case164_t1s3_offline_network_01o_3_scenario_3_scacots` | 6.104 |
+| `case166_t1s3_offline_network_02o_3_scenario_1_scacots` | 10.18 |
+| `case168_t1s3_offline_network_02o_3_scenario_2_scacots` | 5.413 |
+| `case170_t1s3_offline_network_02o_3_scenario_3_scacots` | 8.677 |
+| `case172_t1s3_offline_network_03o_3_scenario_1_scacots` | 44.22 |
+| `case174_t1s3_offline_network_03o_3_scenario_2_scacots` | 31.93 |
+| `case176_t1s3_offline_network_03o_3_scenario_3_scacots` | 32.82 |
 | `case178_t1s3_offline_network_05o_3_scenario_1_scacots` | 17.54 |
 | `case180_t1s3_offline_network_05o_3_scenario_2_scacots` | 17.46 |
 | `case182_t1s3_offline_network_05o_3_scenario_3_scacots` | 19.05 |
@@ -766,16 +534,16 @@
 | `case232_t1s3_offline_network_84o_3_scenario_1_scacots` | 108.1 |
 | `case234_t1s3_offline_network_84o_3_scenario_2_scacots` | 93.11 |
 | `case236_t1s3_offline_network_84o_3_scenario_3_scacots` | 62.53 |
-| `case238_t1s3_real_time_network_01r_3_scenario_1_scacots` | 0.153 |
-| `case240_t1s3_real_time_network_01r_3_scenario_2_scacots` | 0.159 |
-| `case242_t1s3_real_time_network_01r_3_scenario_3_scacots` | 0.150 |
-| `case244_t1s3_real_time_network_02r_3_scenario_1_scacots` | 0.366 |
-| `case246_t1s3_real_time_network_02r_3_scenario_2_scacots` | 0.397 |
-| `case248_network_02r_3_scenario_2_scenario_30_scacots` | 0.399 |
-| `case250_t1s3_real_time_network_02r_3_scenario_3_scacots` | 0.416 |
-| `case252_t1s3_real_time_network_03r_3_scenario_1_scacots` | 0.492 |
-| `case254_t1s3_real_time_network_03r_3_scenario_2_scacots` | 0.663 |
-| `case256_t1s3_real_time_network_03r_3_scenario_3_scacots` | 0.627 |
+| `case238_t1s3_real_time_network_01r_3_scenario_1_scacots` | 37.19 |
+| `case240_t1s3_real_time_network_01r_3_scenario_2_scacots` | 8.241 |
+| `case242_t1s3_real_time_network_01r_3_scenario_3_scacots` | 6.718 |
+| `case244_t1s3_real_time_network_02r_3_scenario_1_scacots` | 12.20 |
+| `case246_t1s3_real_time_network_02r_3_scenario_2_scacots` | 7.991 |
+| `case248_network_02r_3_scenario_2_scenario_30_scacots` | 7.154 |
+| `case250_t1s3_real_time_network_02r_3_scenario_3_scacots` | 9.181 |
+| `case252_t1s3_real_time_network_03r_3_scenario_1_scacots` | 50.12 |
+| `case254_t1s3_real_time_network_03r_3_scenario_2_scacots` | 33.20 |
+| `case256_t1s3_real_time_network_03r_3_scenario_3_scacots` | 30.96 |
 | `case258_t1s3_real_time_network_05r_3_scenario_1_scacots` | 19.14 |
 | `case260_t1s3_real_time_network_05r_3_scenario_2_scacots` | 14.71 |
 | `case262_t1s3_real_time_network_05r_3_scenario_3_scacots` | 17.78 |
@@ -811,25 +579,9 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_lmbd3_scots` | 3.8×10^{-4} |
-| `case02_pjm5_scots` | 0.004 |
-| `case03_ieee14_scots` | 0.020 |
-| `case04_ieee24_scots` | 0.287 |
 | `case05_ieee73_scots` | 13.59 |
 | `case06_activs200_scots` | 7.894 |
-| `case07_as30_scots` | 0.034 |
-| `case08_ieee30_scots` | 0.095 |
-| `case09_epri39_scots` | 0.059 |
-| `case10_ieee57_scots` | 0.096 |
-| `case11_c60_scots` | 0.111 |
-| `case12_pegase89_scots` | 0.058 |
-| `case13_ieee118_scots` | 0.195 |
-| `case14_ieeedtc162_scots` | 0.403 |
-| `case15_goc179_scots` | 0.077 |
-| `case16_snem197_scots` | 0.061 |
-| `case17_pserc240_scots` | 0.646 |
-| `case18_ieee300_scots` | 0.463 |
-| `case19_goc500_scots` | 0.725 |
+| `case11_c60_scots` | 12.52 |
 | `case20_sdet588_scots` | 1.038 |
 | `case21_goc793_scots` | 1.796 |
 | `case24_rte1888_scots` | 3.603 |
@@ -863,18 +615,10 @@
 | `case65_goc30000_scots` | 难求解 |
 | `case66_epigrids78484_scots` | 难求解 |
 
-## PLANNING/DISTRIBUTION-EXPANSION
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_radial5_distexp` | 0.003 |
-| `case002_radial8_distexp` | 0.001 |
-
 ## PLANNING/GCEP-DC
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_tx123_y2_d1` | 0.770 |
 | `case002_tx123_y3_d2` | 10.45 |
 | `case003_tx123_y7_d5` | 435.1 |
 
@@ -882,77 +626,36 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_1_three_zones_cem` | 0.004 |
-| `case02_2_three_zones_w_electrolyzer_cem` | 0.010 |
-| `case03_3_three_zones_w_co2_capture_cem` | 0.004 |
-| `case04_4_three_zones_w_policies_slack_cem` | 0.003 |
-| `case05_5_three_zones_w_piecewise_fuel_cem` | 0.005 |
-| `case06_6_three_zones_w_multistage_cem` | 0.003 |
-| `case07_7_three_zones_w_colocated_vre_storage_cem` | 0.005 |
-| `case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem` | 0.008 |
-| `case09_9_three_zones_w_retrofit_cem` | 0.006 |
-| `case10_11_three_zones_w_allam_cycle_lox_cem` | 0.005 |
+| `case01_1_three_zones_cem` | 17.17 |
+| `case02_2_three_zones_w_electrolyzer_cem` | 79.71 |
+| `case03_3_three_zones_w_co2_capture_cem` | 37.72 |
+| `case04_4_three_zones_w_policies_slack_cem` | 31.28 |
+| `case05_5_three_zones_w_piecewise_fuel_cem` | 17.92 |
+| `case06_6_three_zones_w_multistage_cem` | 23.41 |
+| `case07_7_three_zones_w_colocated_vre_storage_cem` | 5.240 |
+| `case08_8_three_zones_w_colocated_vre_storage_electrolyzers_cem` | 7.021 |
+| `case09_9_three_zones_w_retrofit_cem` | 42.10 |
+| `case10_11_three_zones_w_allam_cycle_lox_cem` | 342.7 |
 
 ## PLANNING/TRANSMISSION-EXPANSION
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_case3_tnep` | 0.010 |
-| `case002_case5_tnep` | 0.001 |
-| `case003_lmbd3_tep_syn` | 0.001 |
-| `case004_pjm5_tep_syn` | 0.001 |
-| `case005_ieee14_tep_syn` | 0.001 |
-| `case006_ieee24_tep_syn` | 0.002 |
-| `case007_as30_tep_syn` | 0.004 |
-| `case008_ieee30_tep_syn` | 0.001 |
-| `case009_epri39_tep_syn` | 0.005 |
-| `case010_ieee57_tep_syn` | 0.003 |
-| `case011_c60_tep_syn` | 0.002 |
-| `case012_ieee73_tep_syn` | 0.009 |
-| `case013_pegase89_tep_syn` | 0.012 |
-| `case014_ieee118_tep_syn` | 0.011 |
-| `case015_ieeedtc162_tep_syn` | 0.011 |
-| `case016_goc179_tep_syn` | 0.004 |
-| `case017_snem197_tep_syn` | 0.008 |
-| `case018_activ200_tep_syn` | 0.008 |
-| `case019_pserc240_tep_syn` | 0.018 |
-| `case020_ieee300_tep_syn` | 0.011 |
-| `case021_goc500_tep_syn` | 0.134 |
-| `case022_sdet588_tep_syn` | 0.017 |
-| `case023_goc793_tep_syn` | 0.035 |
-| `case024_pegase1354_tep_syn` | 0.232 |
-| `case025_snem1803_tep_syn` | 0.317 |
-| `case026_rte1888_tep_syn` | 0.275 |
-| `case027_rte1951_tep_syn` | 0.240 |
-| `case028_goc2000_tep_syn` | 0.672 |
-| `case029_goc2312_tep_syn` | 0.915 |
-| `case030_2383wpk_tep_syn` | 0.325 |
-| `case031_2736spk_tep_syn` | 0.327 |
-| `case032_2737sopk_tep_syn` | 0.509 |
-| `case033_goc2742_tep_syn` | 1.692 |
-| `case034_2746wopk_tep_syn` | 0.289 |
-| `case035_2746wpk_tep_syn` | 0.322 |
-| `case036_rte2848_tep_syn` | 0.439 |
-| `case037_sdet2853_tep_syn` | 0.456 |
-| `case038_rte2868_tep_syn` | 0.456 |
-| `case039_pegase2869_tep_syn` | 0.509 |
-| `case040_3012wpk_tep_syn` | 0.363 |
+| `case033_goc2742_tep_syn` | 6.883 |
 | `case041_goc3022_tep_syn` | 1.314 |
-| `case042_3120spk_tep_syn` | 0.381 |
-| `case043_3375wpk_tep_syn` | 0.471 |
-| `case044_goc3970_tep_syn` | 3.960 |
-| `case045_goc4020_tep_syn` | 2.548 |
-| `case046_goc4601_tep_syn` | 2.204 |
-| `case047_goc4619_tep_syn` | 2.552 |
+| `case044_goc3970_tep_syn` | 9.482 |
+| `case045_goc4020_tep_syn` | 13.88 |
+| `case046_goc4601_tep_syn` | 6.382 |
+| `case047_goc4619_tep_syn` | 27.30 |
 | `case048_sdet4661_tep_syn` | 1.076 |
-| `case049_goc4837_tep_syn` | 2.630 |
-| `case050_goc4917_tep_syn` | 2.315 |
+| `case049_goc4837_tep_syn` | 5.506 |
+| `case050_goc4917_tep_syn` | 5.330 |
 | `case051_epigrids5658_tep_syn` | 1.308 |
 | `case052_rte6468_tep_syn` | 1.094 |
 | `case053_rte6470_tep_syn` | 1.149 |
 | `case054_rte6495_tep_syn` | 1.113 |
 | `case055_rte6515_tep_syn` | 1.240 |
-| `case056_epigrids7336_tep_syn` | 2.613 |
+| `case056_epigrids7336_tep_syn` | 5.027 |
 | `case057_pegase8387_tep_syn` | 3.238 |
 | `case058_pegase9241_tep_syn` | 7.321 |
 | `case059_goc9591_tep_syn` | 93.80 |
@@ -969,139 +672,27 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_pjm5bus_island` | 0.001 |
 | `case002_GBnetwork_island` | 难求解 |
 | `case003_EI_33_island` | 难求解 |
-| `case004_ieee14_island` | 0.008 |
-| `case005_ieee14_ac8b_island` | 0.007 |
-| `case006_ieee14_ace_island` | 0.007 |
-| `case007_ieee14_alter_island` | 0.007 |
-| `case008_ieee14_conn_island` | 0.014 |
-| `case009_ieee14_dgprct1_island` | 0.008 |
-| `case010_ieee14_dgprctext_island` | 0.008 |
-| `case011_ieee14_esac1a_island` | 0.007 |
-| `case012_ieee14_esd1_island` | 0.008 |
-| `case013_ieee14_esd1u_island` | 0.008 |
-| `case014_ieee14_esdc1a_island` | 0.007 |
-| `case015_ieee14_esst1a_island` | 0.007 |
-| `case016_ieee14_esst3a_island` | 0.007 |
-| `case017_ieee14_esst4b_island` | 0.007 |
-| `case018_ieee14_exac1_island` | 0.007 |
-| `case019_ieee14_exac4_island` | 0.007 |
-| `case020_ieee14_fault_island` | 0.007 |
-| `case021_ieee14_fload_island` | 0.007 |
-| `case022_ieee14_freqdiv_island` | 0.007 |
-| `case023_ieee14_full_island` | 0.007 |
-| `case024_ieee14_gast_island` | 0.007 |
-| `case025_ieee14_gentrip_island` | 0.007 |
-| `case026_ieee14_hygov_island` | 0.007 |
-| `case027_ieee14_hygov4_island` | 0.007 |
-| `case028_ieee14_hygovdb_island` | 0.007 |
-| `case029_ieee14_ieeet1_island` | 0.007 |
-| `case030_ieee14_ieeet3_island` | 0.007 |
-| `case031_ieee14_ieeevc2_island` | 0.007 |
-| `case032_ieee14_ieesgo_island` | 0.007 |
-| `case033_ieee14_island_island` | 0.007 |
-| `case034_ieee14_linetrip_island` | 0.007 |
-| `case035_ieee14_plbvfu1_island` | 0.007 |
-| `case036_ieee14_pll1_island` | 0.007 |
-| `case037_ieee14_pvd1_island` | 0.008 |
-| `case038_ieee14_pvd1u_island` | 0.008 |
-| `case039_ieee14_reecb1_island` | 0.007 |
-| `case040_ieee14_regcp1_island` | 0.007 |
-| `case041_ieee14_regcp1_nopll_island` | 0.007 |
-| `case042_ieee14_shaft5_island` | 0.007 |
-| `case043_ieee14_shuntsw_island` | 0.007 |
-| `case044_ieee14_solar_island` | 0.007 |
-| `case045_ieee14_solar_abn_island` | 0.007 |
-| `case046_ieee14_timeseries_island` | 0.007 |
-| `case047_ieee14_wt3_island` | 0.007 |
-| `case048_ieee14_wt3n_island` | 0.007 |
-| `case049_ieee14_zip_island` | 0.007 |
-| `case050_ieee39_full_island` | 0.038 |
-| `case051_kundur_aw_island` | 0.010 |
-| `case052_kundur_coi_island` | 0.010 |
-| `case053_kundur_coi_empty_island` | 0.009 |
-| `case054_kundur_coi_partial_island` | 0.010 |
-| `case055_kundur_esdc2a_island` | 0.010 |
-| `case056_kundur_esst3a_island` | 0.010 |
-| `case057_kundur_exdc2_zero_tb_island` | 0.010 |
-| `case058_kundur_exst1_island` | 0.010 |
-| `case059_kundur_freq_island` | 0.010 |
-| `case060_kundur_full_island` | 0.010 |
-| `case061_kundur_gentrip_island` | 0.010 |
-| `case062_kundur_ieeeg1_island` | 0.010 |
-| `case063_kundur_ieeest_island` | 0.010 |
-| `case064_kundur_islands_island` | 0.012 |
-| `case065_kundur_motor_island` | 0.010 |
-| `case066_kundur_pmu_island` | 0.010 |
-| `case067_kundur_reg_island` | 0.010 |
-| `case068_kundur_sexs_island` | 0.010 |
-| `case069_kundur_st2cut_island` | 0.010 |
-| `case070_kundur_vsc_island` | 0.010 |
-| `case071_kundur_wtds_island` | 0.009 |
-| `case072_kundur_wtdta1_island` | 0.010 |
 | `case073_npcc_island` | 难求解 |
-| `case074_SMIB_island` | 0.001 |
 | `case075_wecc_full_island` | 22.41 |
 | `case076_wecc_gencls_island` | 24.33 |
-| `case077_case5_pjm_island` | 0.001 |
-| `case078_case14_ieee_island` | 0.010 |
-| `case079_case30_ieee_island` | 0.008 |
-| `case080_case39_epri_island` | 0.130 |
-| `case081_case57_ieee_island` | 0.995 |
 | `case082_case118_ieee_island` | 4.754 |
-
-## RESILIENCE/DISTRIBUTION-RESTORATION
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case01_mv_rural_restore` | 0.122 |
-| `case02_lv_rural2_restore` | 0.040 |
-| `case03_gso_rural_restore` | 0.001 |
-
-## RESILIENCE/MAXIMUM-LOAD-DELIVERY
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_case3_mld_mld` | 0.001 |
-| `case002_case3_mld_lc_mld` | 9.0×10^{-5} |
-| `case003_case3_mld_s_mld` | 4.2×10^{-5} |
-| `case004_case3_mld_uc_mld` | 1.9×10^{-4} |
-| `case005_case3_restoration_total_dmg_mld` | 3.9×10^{-5} |
-| `case006_case5_mld_ft_mld` | 6.2×10^{-5} |
-| `case007_case5_mld_strg_mld` | 2.1×10^{-4} |
-| `case008_case5_mld_strg_only_mld` | 1.1×10^{-4} |
-| `case009_case5_mld_strg_uc_mld` | 1.3×10^{-4} |
-| `case010_case5_restoration_mld` | 1.2×10^{-4} |
-| `case011_case5_restoration_shunt_mld` | 7.0×10^{-5} |
-| `case012_case5_restoration_strg_mld` | 5.6×10^{-5} |
-| `case013_case5_restoration_total_dmg_mld` | 5.7×10^{-5} |
-| `case014_case5_pjm_dmg_mld` | 9.2×10^{-5} |
-| `case015_case14_ieee_dmg_mld` | 2.7×10^{-4} |
-| `case016_case30_ieee_dmg_mld` | 4.2×10^{-4} |
-| `case017_case57_ieee_dmg_mld` | 0.001 |
-| `case018_case118_ieee_dmg_mld` | 0.002 |
 
 ## RESILIENCE/NETWORK-INTERDICTION
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_lmbd3_nk_int` | 0.004 |
-| `case002_lmbd3_gen_nk_int` | 0.001 |
-| `case003_pjm5_nk_int` | 0.017 |
-| `case004_pjm5_gen_nk_int` | 0.002 |
-| `case005_ieee14_nk_int` | 0.042 |
-| `case006_ieee14_gen_nk_int` | 0.004 |
-| `case007_ieee24_nk_int` | 0.092 |
-| `case008_as30_nk_int` | 0.146 |
-| `case009_ieee30_nk_int` | 0.133 |
-| `case010_epri39_nk_int` | 0.187 |
-| `case011_ieee57_nk_int` | 0.839 |
-| `case012_c60_nk_int` | 1.071 |
-| `case013_ieee73_nk_int` | 2.101 |
-| `case014_pegase89_nk_int` | 4.752 |
-| `case015_ieee118_nk_int` | 4.152 |
+| `case005_ieee14_nk_int` | 11.92 |
+| `case007_ieee24_nk_int` | 31.07 |
+| `case008_as30_nk_int` | 65.32 |
+| `case009_ieee30_nk_int` | 37.52 |
+| `case010_epri39_nk_int` | 117.0 |
+| `case011_ieee57_nk_int` | 25.48 |
+| `case012_c60_nk_int` | 34.86 |
+| `case013_ieee73_nk_int` | 99.48 |
+| `case014_pegase89_nk_int` | 468.5 |
+| `case015_ieee118_nk_int` | 450.6 |
 | `case016_ieeedtc162_nk_int` | 21.39 |
 | `case017_goc179_nk_int` | 11.70 |
 | `case018_snem197_nk_int` | 13.74 |
@@ -1160,57 +751,15 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_rts_gmlc_risk_rb00_ops` | 0.006 |
 | `case002_rts_gmlc_risk_rb25_ops` | 1.310 |
 | `case003_rts_gmlc_risk_rb50_ops` | 5.335 |
-| `case004_rts_gmlc_risk_rb75_ops` | 0.034 |
-| `case005_rts_gmlc_risk_rb100_ops` | 0.026 |
-| `case006_case14_risk_rb00_ops` | 4.2×10^{-4} |
-| `case007_case14_risk_rb25_ops` | 0.043 |
-| `case008_case14_risk_rb50_ops` | 0.006 |
-| `case009_case14_risk_rb75_ops` | 0.006 |
-| `case010_case14_risk_rb100_ops` | 0.006 |
-| `case011_case3_rb00_ops` | 1.9×10^{-4} |
-| `case012_case3_rb25_ops` | 0.001 |
-| `case013_case3_rb50_ops` | 0.001 |
-| `case014_case3_rb75_ops` | 0.002 |
-| `case015_case3_rb100_ops` | 0.001 |
-| `case016_case5_risk_mops_rb00_ops` | 1.3×10^{-4} |
-| `case017_case5_risk_mops_rb25_ops` | 0.001 |
-| `case018_case5_risk_mops_rb50_ops` | 0.002 |
-| `case019_case5_risk_mops_rb75_ops` | 0.001 |
-| `case020_case5_risk_mops_rb100_ops` | 4.9×10^{-4} |
-| `case021_case5_risk_sys1_rb00_ops` | 3.4×10^{-4} |
-| `case022_case5_risk_sys1_rb25_ops` | 0.001 |
-| `case023_case5_risk_sys1_rb50_ops` | 0.001 |
-| `case024_case5_risk_sys1_rb75_ops` | 0.001 |
-| `case025_case5_risk_sys1_rb100_ops` | 0.001 |
-| `case026_case5_risk_sys2_rb00_ops` | 9.5×10^{-5} |
-| `case027_case5_risk_sys2_rb25_ops` | 0.002 |
-| `case028_case5_risk_sys2_rb50_ops` | 0.003 |
-| `case029_case5_risk_sys2_rb75_ops` | 0.004 |
-| `case030_case5_risk_sys2_rb100_ops` | 0.001 |
-| `case031_case5_strg_rb00_ops` | 1.2×10^{-4} |
-| `case032_case5_strg_rb25_ops` | 0.002 |
-| `case033_case5_strg_rb50_ops` | 0.003 |
-| `case034_case5_strg_rb75_ops` | 0.001 |
-| `case035_case5_strg_rb100_ops` | 0.001 |
 
 ## RESILIENCE/POWER-RESTORATION
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case001_case3_restoration_total_dmg_restore` | 0.007 |
-| `case002_case5_restoration_restore` | 0.009 |
-| `case003_case5_restoration_shunt_restore` | 0.005 |
-| `case004_case5_restoration_strg_restore` | 0.013 |
-| `case005_case5_restoration_total_dmg_restore` | 0.071 |
-| `case006_activsg200_scenario1_restore` | 0.098 |
-| `case007_activsg200_scenario2_restore` | 0.668 |
 | `case008_activsg200_scenario3_restore` | 7.382 |
 | `case009_activsg200_scenario4_restore` | 难求解 |
-| `case010_activsg200_scenario5_restore` | 0.099 |
-| `case011_activsg200_scenario6_restore` | 0.577 |
 | `case012_activsg200_scenario7_restore` | 6.638 |
 | `case013_activsg200_scenario8_restore` | 难求解 |
 
@@ -1218,23 +767,23 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_rcuc_100_50_1_w_ht` | 0.942 |
-| `case02_rcuc_100_50_2_w_ht` | 1.496 |
+| `case01_rcuc_100_50_1_w_ht` | 78.33 |
+| `case02_rcuc_100_50_2_w_ht` | 67.97 |
 | `case03_rcuc_150_75_1_w_ht` | 6.525 |
-| `case04_rcuc_150_75_2_w_ht` | 4.445 |
-| `case05_rcuc_200_100_1_w_ht` | 2.897 |
+| `case04_rcuc_150_75_2_w_ht` | 160.9 |
+| `case05_rcuc_200_100_1_w_ht` | 难求解 |
 | `case06_rcuc_200_100_2_w_ht` | 6.597 |
-| `case07_rcuc_20_10_1_w_ht` | 3.077 |
-| `case08_rcuc_20_10_2_w_ht` | 0.423 |
-| `case09_rcuc_50_20_1_w_ht` | 1.644 |
+| `case07_rcuc_20_10_1_w_ht` | 241.0 |
+| `case08_rcuc_20_10_2_w_ht` | 5.855 |
+| `case09_rcuc_50_20_1_w_ht` | 27.37 |
 | `case10_rcuc_50_20_2_w_ht` | 8.632 |
-| `case11_rcuc_75_35_1_w_ht` | 2.052 |
+| `case11_rcuc_75_35_1_w_ht` | 48.75 |
 | `case12_rcuc_75_35_2_w_ht` | 9.271 |
 | `case13_s46a_scen1_ht` | 27.24 |
 | `case14_s46a_scen4_ht` | 120.0 |
 | `case15_s46a_scen9_ht` | 难求解 |
 | `case16_s46a_scen16_ht` | 难求解 |
-| `case17_s46b_scen1_ht` | 1.288 |
+| `case17_s46b_scen1_ht` | 13.39 |
 | `case18_s46b_scen4_ht` | 11.80 |
 | `case19_s46b_scen9_ht` | 56.15 |
 | `case20_s46b_scen16_ht` | 187.3 |
@@ -1242,70 +791,47 @@
 | `case22_s46c_scen4_ht` | 49.47 |
 | `case23_s46c_scen9_ht` | 305.9 |
 | `case24_s46c_scen16_ht` | 难求解 |
-| `case25_s46d_scen1_ht` | 1.043 |
+| `case25_s46d_scen1_ht` | 12.72 |
 | `case26_s46d_scen4_ht` | 8.666 |
 | `case27_s46d_scen9_ht` | 46.45 |
 | `case28_s46d_scen16_ht` | 217.6 |
-| `case29_s46e_scen1_ht` | 3.594 |
+| `case29_s46e_scen1_ht` | 14.53 |
 | `case30_s46e_scen4_ht` | 54.94 |
 | `case31_s46e_scen9_ht` | 306.3 |
 | `case32_s46e_scen16_ht` | 难求解 |
-
-## SCHEDULING/MAINTENANCE-SCHEDULING
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case01_rts_gmlc_week168_maint` | 0.190 |
-| `case02_rts_gmlc_4week_daily_maint` | 0.016 |
-| `case03_pglib_rts_20200127_T24_maint` | 0.003 |
-| `case04_pglib_rts_20200706_T48_maint` | 0.014 |
-| `case05_pglib_ca_top40_T24_maint` | 0.004 |
-
-## SCHEDULING/STORAGE-SCHEDULING
-
-| 案例 | 时间 (s) |
-|---|---:|
-| `case001_lmbd3_storage` | 2.6×10^{-4} |
-| `case002_pjm5_storage` | 1.8×10^{-4} |
-| `case003_ieee14_storage` | 8.1×10^{-5} |
 
 ## UC/RTS-SCUC
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_rts_gmlc_2020_01_27_rts_scuc` | 0.843 |
-| `case02_rts_gmlc_2020_02_09_rts_scuc` | 1.011 |
-| `case03_rts_gmlc_2020_03_05_rts_scuc` | 0.646 |
-| `case04_rts_gmlc_2020_04_03_rts_scuc` | 0.818 |
-| `case05_rts_gmlc_2020_05_05_rts_scuc` | 0.744 |
-| `case06_rts_gmlc_2020_06_09_rts_scuc` | 0.828 |
-| `case07_rts_gmlc_2020_07_06_rts_scuc` | 0.870 |
-| `case08_rts_gmlc_2020_08_12_rts_scuc` | 1.136 |
-| `case09_rts_gmlc_2020_09_20_rts_scuc` | 0.693 |
-| `case10_rts_gmlc_2020_10_27_rts_scuc` | 0.703 |
-| `case11_rts_gmlc_2020_11_25_rts_scuc` | 0.762 |
-| `case12_rts_gmlc_2020_12_23_rts_scuc` | 0.908 |
+| `case01_rts_gmlc_2020_01_27_rts_scuc` | 6.506 |
+| `case02_rts_gmlc_2020_02_09_rts_scuc` | 6.233 |
+| `case03_rts_gmlc_2020_03_05_rts_scuc` | 6.048 |
+| `case04_rts_gmlc_2020_04_03_rts_scuc` | 6.790 |
+| `case05_rts_gmlc_2020_05_05_rts_scuc` | 6.264 |
+| `case06_rts_gmlc_2020_06_09_rts_scuc` | 7.946 |
+| `case07_rts_gmlc_2020_07_06_rts_scuc` | 8.149 |
+| `case08_rts_gmlc_2020_08_12_rts_scuc` | 19.54 |
+| `case09_rts_gmlc_2020_09_20_rts_scuc` | 5.667 |
+| `case10_rts_gmlc_2020_10_27_rts_scuc` | 6.337 |
+| `case11_rts_gmlc_2020_11_25_rts_scuc` | 6.392 |
+| `case12_rts_gmlc_2020_12_23_rts_scuc` | 9.404 |
 
 ## UC/SCUC
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_ieee39_scuc` | 0.461 |
-| `case02_ieee57_scuc` | 1.386 |
-| `case03_case60_scuc` | 0.479 |
-| `case04_lmbd3_scuc` | 0.009 |
-| `case05_pjm5_scuc` | 0.030 |
-| `case06_ieee14_scuc` | 0.024 |
+| `case01_ieee39_scuc` | 5.882 |
+| `case02_ieee57_scuc` | 8.659 |
+| `case03_case60_scuc` | 7.292 |
 | `case07_ieee24_scuc` | 5.035 |
-| `case08_as30_scuc` | 0.282 |
-| `case09_ieee30_scuc` | 0.064 |
+| `case08_as30_scuc` | 8.932 |
 | `case10_ieee73_scuc` | 400.0 |
 | `case11_pegase89_scuc` | 9.116 |
-| `case12_ieee118_scuc` | 1.034 |
-| `case13_ieeedtc162_scuc` | 1.258 |
-| `case14_goc179_scuc` | 0.442 |
-| `case15_snem197_scuc` | 0.238 |
-| `case16_activ200_scuc` | 2.388 |
+| `case12_ieee118_scuc` | 43.76 |
+| `case13_ieeedtc162_scuc` | 135.5 |
+| `case15_snem197_scuc` | 12.79 |
+| `case16_activ200_scuc` | 110.0 |
 | `case17_pserc240_scuc` | 42.18 |
 | `case18_ieee300_scuc` | 5.535 |
 | `case19_goc500_scuc` | 43.04 |
@@ -1345,36 +871,36 @@
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case01_rts_gmlc_2020_01_27_uc` | 1.703 |
-| `case02_rts_gmlc_2020_02_09_uc` | 4.482 |
-| `case03_rts_gmlc_2020_03_05_uc` | 3.113 |
-| `case04_rts_gmlc_2020_04_03_uc` | 3.146 |
-| `case05_rts_gmlc_2020_05_05_uc` | 1.669 |
-| `case06_rts_gmlc_2020_06_09_uc` | 0.897 |
-| `case07_rts_gmlc_2020_07_06_uc` | 1.516 |
-| `case08_rts_gmlc_2020_08_12_uc` | 1.490 |
-| `case09_rts_gmlc_2020_09_20_uc` | 1.953 |
-| `case10_rts_gmlc_2020_10_27_uc` | 2.222 |
-| `case11_rts_gmlc_2020_11_25_uc` | 2.370 |
-| `case12_rts_gmlc_2020_12_23_uc` | 2.255 |
-| `case13_ca_2014_09_01_reserves_0_uc` | 2.509 |
-| `case14_ca_2014_09_01_reserves_1_uc` | 4.366 |
+| `case01_rts_gmlc_2020_01_27_uc` | 41.49 |
+| `case02_rts_gmlc_2020_02_09_uc` | 62.37 |
+| `case03_rts_gmlc_2020_03_05_uc` | 25.52 |
+| `case04_rts_gmlc_2020_04_03_uc` | 19.65 |
+| `case05_rts_gmlc_2020_05_05_uc` | 13.87 |
+| `case06_rts_gmlc_2020_06_09_uc` | 6.621 |
+| `case07_rts_gmlc_2020_07_06_uc` | 6.699 |
+| `case08_rts_gmlc_2020_08_12_uc` | 6.869 |
+| `case09_rts_gmlc_2020_09_20_uc` | 28.11 |
+| `case10_rts_gmlc_2020_10_27_uc` | 62.95 |
+| `case11_rts_gmlc_2020_11_25_uc` | 34.22 |
+| `case12_rts_gmlc_2020_12_23_uc` | 31.32 |
+| `case13_ca_2014_09_01_reserves_0_uc` | 34.74 |
+| `case14_ca_2014_09_01_reserves_1_uc` | 34.10 |
 | `case15_ca_2014_09_01_reserves_3_uc` | 12.55 |
 | `case16_ca_2014_09_01_reserves_5_uc` | 11.09 |
-| `case17_ca_2014_12_01_reserves_0_uc` | 3.323 |
+| `case17_ca_2014_12_01_reserves_0_uc` | 30.12 |
 | `case18_ca_2014_12_01_reserves_1_uc` | 5.817 |
-| `case19_ca_2014_12_01_reserves_3_uc` | 4.425 |
-| `case20_ca_2014_12_01_reserves_5_uc` | 3.558 |
-| `case21_ca_2015_03_01_reserves_0_uc` | 3.475 |
-| `case22_ca_2015_03_01_reserves_1_uc` | 3.961 |
-| `case23_ca_2015_03_01_reserves_3_uc` | 4.315 |
-| `case24_ca_2015_03_01_reserves_5_uc` | 4.258 |
-| `case25_ca_2015_06_01_reserves_0_uc` | 3.337 |
+| `case19_ca_2014_12_01_reserves_3_uc` | 105.8 |
+| `case20_ca_2014_12_01_reserves_5_uc` | 38.21 |
+| `case21_ca_2015_03_01_reserves_0_uc` | 55.61 |
+| `case22_ca_2015_03_01_reserves_1_uc` | 36.29 |
+| `case23_ca_2015_03_01_reserves_3_uc` | 43.28 |
+| `case24_ca_2015_03_01_reserves_5_uc` | 29.06 |
+| `case25_ca_2015_06_01_reserves_0_uc` | 30.00 |
 | `case26_ca_2015_06_01_reserves_1_uc` | 6.249 |
-| `case27_ca_2015_06_01_reserves_3_uc` | 3.280 |
-| `case28_ca_2015_06_01_reserves_5_uc` | 3.431 |
-| `case29_ca_scenario400_reserves_0_uc` | 3.894 |
-| `case30_ca_scenario400_reserves_1_uc` | 3.473 |
+| `case27_ca_2015_06_01_reserves_3_uc` | 35.00 |
+| `case28_ca_2015_06_01_reserves_5_uc` | 39.07 |
+| `case29_ca_scenario400_reserves_0_uc` | 32.44 |
+| `case30_ca_scenario400_reserves_1_uc` | 67.10 |
 | `case31_ca_scenario400_reserves_3_uc` | 11.74 |
 | `case32_ca_scenario400_reserves_5_uc` | 5.462 |
 | `case33_ferc_2015_01_01_hw_uc` | 50.28 |

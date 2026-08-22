@@ -2,7 +2,7 @@
 
 PSE-Lab 电网容量扩展（GCEP）的 Gurobi LP。官方脚本是 Pyomo `Case2_LP_multi-periods.py`；这里按同一套集合 / 约束 / 目标改写。
 
-- **案例数**: 3
+- **案例数**: 2
 - **base_problem**: `resource_capacity_expansion`
 - **网架**: 合成 Texas 123-BT
 

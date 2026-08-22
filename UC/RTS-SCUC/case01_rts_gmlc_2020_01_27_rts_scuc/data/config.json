@@ -13,7 +13,13 @@
     20,
     21,
     22,
-    23
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
   ],
   "emergency_rate_factor": 1.0,
   "load_shed_penalty": 5000.0,
@@ -26,7 +32,8 @@
     "Topology/storage from RTS-GMLC SourceData; thermal/renewable/demand/reserve from PGLib-UC rts_gmlc day file.",
     "Horizon = first 24 periods of the 48h UC instance.",
     "Preventive DC-SCUC with system reserve, ESS, optional load shed, and non-bridge N-1 contingencies.",
-    "Thermal production cost: linear envelope of PWL endpoints + startup of longest-lag category."
+    "Thermal production cost: linear envelope of PWL endpoints + startup of longest-lag category.",
+    "harden: T=24 n_cont=12"
   ],
   "base_problem": "uc",
   "variant": {
@@ -46,7 +53,7 @@
     "n_storage": 21,
     "n_candidate_branch": 0,
     "T": 24,
-    "n_contingency": 6,
+    "n_contingency": 12,
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": null,

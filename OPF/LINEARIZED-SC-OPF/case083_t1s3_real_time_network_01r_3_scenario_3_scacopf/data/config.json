@@ -11,16 +11,17 @@
   "switchable_branches": [],
   "max_open": 0,
   "mip_gap": 0.02,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
-  "threads": 0,
+  "threads": 1,
   "solve_tier": "relaxed",
   "load_shed_penalty": 10000.0,
   "construction": [
     "Linearized DC security-constrained OPF (NOT exact AC).",
     "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
     "OPF only.",
-    "nB=500, nG=90 (85 online), nL=599, Nc=5, tier=relaxed"
+    "nB=500, nG=90 (85 online), nL=599, Nc=5, tier=relaxed",
+    "harden: n_contingency=80 (synthesized N-1 subset)"
   ],
   "base_problem": "opf",
   "variant": {
@@ -40,7 +41,7 @@
     "n_storage": 0,
     "n_candidate_branch": 0,
     "T": 1,
-    "n_contingency": 5,
+    "n_contingency": 80,
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": 0,
@@ -48,5 +49,8 @@
     "n_bin": 0,
     "math_class": "lp",
     "solver_family": "security_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

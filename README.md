@@ -4,7 +4,7 @@
 
 一级目录是便于浏览的 **`navigation_domain`**，不是互斥的数学基础问题分类。规范分类以每个案例 `config.json` 的 `base_problem` 为准；AC/DC、N-1、多时段、随机性、追补决策等属于 `variant` 轴。
 
-机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（1162 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
+机器可读定义与索引：[`BASE_PROBLEM_REGISTRY.json`](BASE_PROBLEM_REGISTRY.json)（分类契约）、[`CATALOG.json`](CATALOG.json)（790 例）、[`NETWORK_INDEX.json`](NETWORK_INDEX.json)（同一张网跨问题）、[`framework/`](framework/)（生成、校验与验收工具）。
 
 ---
 
@@ -15,15 +15,13 @@ github_cases/
   OTS/                 # 输电拓扑切换
   OPF/                 # 最优潮流（DC、精确 AC、精确 SC-AC、线性化安全约束）
   UC/                  # 机组组合族
-  DISTRIBUTION/        # 配网重构 / Volt-VAR / DER hosting / 微网 / 三相 DOPF
-  DATACENTER/          # 多园区分流 / Green-LLM / 柔性数据中心负荷
-  DISPATCH/            # 经济调度 / 需求响应
-  MONITORING/          # PMU 布点 / 状态估计
-  PLANNING/            # 输电扩展 / 容量扩展 / 配网扩展
-  SCHEDULING/          # 水火调度 / 检修计划 / 储能调度
-  MARKET/              # 市场出清 / 策略报价
-  RESILIENCE/          # 切负荷 / 恢复 / 孤岛 / 主动停电 / 拦截
-  MULTI-ENERGY/        # 电–气综合
+  DISTRIBUTION/        # 配网重构
+  DATACENTER/          # 柔性数据中心负荷
+  MONITORING/          # PMU 布点
+  PLANNING/            # 输电扩展 / 容量扩展
+  SCHEDULING/          # 水火调度
+  MARKET/              # 市场出清
+  RESILIENCE/          # 恢复 / 孤岛 / 主动停电 / 拦截
   framework/           # 统一入口、特征、evaluate、目录生成
   CATALOG.json
   NETWORK_INDEX.json
@@ -31,66 +29,34 @@ github_cases/
   evaluate.py          # python3 evaluate.py <case_dir>
   README.md
   requirements.txt
-  skills/              # 预防性 DC-SCUC 热稳约束处理（论文 skill）
 ```
 
 | `navigation_domain` | 子包 | `base_problem` / 含义 | 案例数 |
 |---------------------|------|------------------------|------:|
-| [`OTS/`](OTS/) | [`DC-OTS/`](OTS/DC-OTS/) | OTS（直流） | 65 |
-|  | [`SC-OTS/`](OTS/SC-OTS/) | `ots`：完整或抽样 N-1、共享预防性拓扑、事故后有界再调度 | 51 |
+| [`OTS/`](OTS/) | [`DC-OTS/`](OTS/DC-OTS/) | OTS（直流） | 44 |
+|  | [`SC-OTS/`](OTS/SC-OTS/) | `ots`：完整或抽样 N-1、共享预防性拓扑、事故后有界再调度 | 35 |
 |  | [`LINEARIZED-SC-OTS/`](OTS/LINEARIZED-SC-OTS/) | `ots`：GO C1 线性化、抽样 N-1 | 158 |
-| [`OPF/`](OPF/) | [`DC-OPF/`](OPF/DC-OPF/) | `opf`：网络约束 DC-OPF | 71 |
-|  | [`AC-OPF/`](OPF/AC-OPF/) | `opf`：精确非凸极坐标 AC-OPF | 4 |
-|  | [`SC-AC-OPF/`](OPF/SC-AC-OPF/) | `opf`：精确极坐标预防性 N-1 | 2 |
+| [`OPF/`](OPF/) | [`DC-OPF/`](OPF/DC-OPF/) | `opf`：网络约束 DC-OPF | 54 |
+|  | [`AC-OPF/`](OPF/AC-OPF/) | `opf`：精确非凸极坐标 AC-OPF | 3 |
+|  | [`SC-AC-OPF/`](OPF/SC-AC-OPF/) | `opf`：精确极坐标预防性 N-1 | 1 |
 |  | [`LINEARIZED-SC-OPF/`](OPF/LINEARIZED-SC-OPF/) | `opf`：GO C1 线性化、抽样 N-1 | 158 |
 | [`UC/`](UC/) | [`SYSTEM-UC/`](UC/SYSTEM-UC/) | 系统级 UC（无网架） | 56 |
-|  | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 50 |
+|  | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 45 |
 |  | [`RTS-SCUC/`](UC/RTS-SCUC/) | RTS 网络 SCUC+储能+RE | 12 |
-| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | `dnr`：配网重构（实验模型） | 5 |
-|  | [`DISTRIBUTION-OPF/`](DISTRIBUTION/DISTRIBUTION-OPF/) | `distribution_opf`（实验模型） | 2 |
-|  | [`VOLT-VAR/`](DISTRIBUTION/VOLT-VAR/) | `volt_var`（实验模型） | 1 |
-|  | [`DER-HOSTING/`](DISTRIBUTION/DER-HOSTING/) | `der_hosting`（实验模型） | 1 |
-|  | [`MICROGRID/`](DISTRIBUTION/MICROGRID/) | `microgrid`：并网/孤岛 EMS 与 VPP | 3 |
-|  | [`UNBALANCED-DOPF/`](DISTRIBUTION/UNBALANCED-DOPF/) | `distribution_opf`：三相 LinDistFlow | 2 |
-| [`DATACENTER/`](DATACENTER/) | [`GEOGRAPHIC-LOAD-BALANCING/`](DATACENTER/GEOGRAPHIC-LOAD-BALANCING/) | `datacenter_glb`：多园区推理分流 + 水/碳公平 | 6 |
-|  | [`GREEN-LLM/`](DATACENTER/GREEN-LLM/) | `green_llm`：LLM 推理分配 + 电/碳/水/时延 | 6 |
-|  | [`FLEXIBLE-DC-LOAD/`](DATACENTER/FLEXIBLE-DC-LOAD/) | `datacenter_flex`：DC-OPF / SCUC 上的时空柔性负荷 | 6 |
-| [`DISPATCH/`](DISPATCH/) | [`ECONOMIC-DISPATCH/`](DISPATCH/ECONOMIC-DISPATCH/) | `economic_dispatch`：无网架铜板 ED | 3 |
-|  | [`DEMAND-RESPONSE/`](DISPATCH/DEMAND-RESPONSE/) | `demand_response`：可中断+可转移负荷 | 3 |
-| [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 66 |
-|  | [`STATE-ESTIMATION/`](MONITORING/STATE-ESTIMATION/) | DC WLS / L1 状态估计 | 12 |
-| [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 67 |
+| [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | `dnr`：配网重构（实验模型） | 2 |
+| [`DATACENTER/`](DATACENTER/) | [`FLEXIBLE-DC-LOAD/`](DATACENTER/FLEXIBLE-DC-LOAD/) | `datacenter_flex`：DC-OPF / SCUC 上的时空柔性负荷 | 3 |
+| [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 18 |
+| [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 26 |
 |  | [`RESOURCE-CAPACITY-EXPANSION/`](PLANNING/RESOURCE-CAPACITY-EXPANSION/) | 资源容量扩展 CEM | 10 |
-|  | [`GCEP-DC/`](PLANNING/GCEP-DC/) | `resource_capacity_expansion`：Texas 123-BT + DC/EOR | 3 |
-|  | [`DISTRIBUTION-EXPANSION/`](PLANNING/DISTRIBUTION-EXPANSION/) | `distribution_expansion`：径向 LinDistFlow | 2 |
+|  | [`GCEP-DC/`](PLANNING/GCEP-DC/) | `resource_capacity_expansion`：Texas 123-BT + DC/EOR | 2 |
 | [`SCHEDULING/`](SCHEDULING/) | [`HYDROTHERMAL-SCHEDULING/`](SCHEDULING/HYDROTHERMAL-SCHEDULING/) | 水火联合调度 | 32 |
-|  | [`MAINTENANCE-SCHEDULING/`](SCHEDULING/MAINTENANCE-SCHEDULING/) | 机组检修计划 | 5 |
-|  | [`STORAGE-SCHEDULING/`](SCHEDULING/STORAGE-SCHEDULING/) | `storage_scheduling`：循环 SOC | 3 |
 | [`MARKET/`](MARKET/) | [`MARKET-CLEARING/`](MARKET/MARKET-CLEARING/) | 福利最大化能量出清 | 56 |
-|  | [`STRATEGIC-BIDDING/`](MARKET/STRATEGIC-BIDDING/) | 策略性报价 | 8 |
-| [`RESILIENCE/`](RESILIENCE/) | [`MAXIMUM-LOAD-DELIVERY/`](RESILIENCE/MAXIMUM-LOAD-DELIVERY/) | 最大供电 / 切负荷 | 18 |
-|  | [`POWER-RESTORATION/`](RESILIENCE/POWER-RESTORATION/) | 输电恢复 | 13 |
-|  | [`DISTRIBUTION-RESTORATION/`](RESILIENCE/DISTRIBUTION-RESTORATION/) | 配网服务恢复 | 3 |
-|  | [`CONTROLLED-ISLANDING/`](RESILIENCE/CONTROLLED-ISLANDING/) | 主动解列 / 受控孤岛 | 82 |
-|  | [`OPTIMAL-POWER-SHUTOFF/`](RESILIENCE/OPTIMAL-POWER-SHUTOFF/) | 最优主动停电（野火） | 35 |
-|  | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 68 |
-| [`MULTI-ENERGY/`](MULTI-ENERGY/) | [`INTEGRATED-ELECTRIC-GAS/`](MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS/) | 电–气综合优化 | 14 |
+| [`RESILIENCE/`](RESILIENCE/) | [`POWER-RESTORATION/`](RESILIENCE/POWER-RESTORATION/) | 输电恢复 | 4 |
+|  | [`CONTROLLED-ISLANDING/`](RESILIENCE/CONTROLLED-ISLANDING/) | 主动解列 / 受控孤岛 | 6 |
+|  | [`OPTIMAL-POWER-SHUTOFF/`](RESILIENCE/OPTIMAL-POWER-SHUTOFF/) | 最优主动停电（野火） | 2 |
+|  | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 63 |
 
-**合计 1162 个案例**。
-
----
-
-## 约束处理 Skills
-
-[`skills/`](skills/) 收录预防性 DC-SCUC 热稳约束处理算法（论文解读 + 可调用工具模板），给 agent 或人工实现用，**不改变**各案例默认 `solve.py`。
-
-| 目录 | 路线 |
-|------|------|
-| [`skills/constraint-screening/`](skills/constraint-screening/) | 第一次 `optimize` 前判定哪侧热稳可删 |
-| [`skills/iterative-enforcement/`](skills/iterative-enforcement/) | 松弛先解，SFT 扫违反再加割 |
-| [`skills/decomposition/`](skills/decomposition/) | 主问题 UC + 事故可行割；无开关不要 CNR |
-
-详见 [`skills/README.md`](skills/README.md)。
+**合计 790 个案例**。
 
 ---
 
@@ -136,9 +102,9 @@ pip install -r requirements.txt
 
 | 分类 | 案例数 |
 |------|------:|
-| < 600s | 1033 |
-| 难求解 | 129 |
-| 合计 | 1162 |
+| < 600s | 651 |
+| 难求解 | 139 |
+| 合计 | 790 |
 
 ---
 

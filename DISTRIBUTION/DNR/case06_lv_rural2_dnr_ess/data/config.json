@@ -7,11 +7,11 @@
     "dataset": "SimBench",
     "folder": "1-LV-rural2--0-sw"
   },
-  "T": 4,
+  "T": 96,
   "mip_gap": 0.01,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
-  "threads": 0,
+  "threads": 1,
   "solve_tier": "full",
   "maturity": "experimental",
   "validation_scope": "structural_only",
@@ -20,7 +20,8 @@
   "construction": [
     "Active-power transport proxy for exploratory DNR+ESS experiments.",
     "Switchable = Switch.csv edges (+ subset of lines if needed).",
-    "ESS only in dnr_ess variants."
+    "ESS only in dnr_ess variants.",
+    "harden: DNR T=96"
   ],
   "known_limitations": [
     "No voltage-magnitude variables or voltage-drop equations.",
@@ -46,7 +47,7 @@
     "n_gen": 0,
     "n_storage": 1,
     "n_candidate_branch": 0,
-    "T": 4,
+    "T": 96,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 192,
@@ -55,5 +56,8 @@
     "n_bin": 287,
     "math_class": "milp",
     "solver_family": "topology_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

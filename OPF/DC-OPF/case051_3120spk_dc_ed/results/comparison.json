@@ -1,9 +1,0 @@
-{
-  "case": "case051_3120spk_dc_ed",
-  "tier": "skip",
-  "ok": true,
-  "issues": [],
-  "checks": {
-    "mode": "data_only_skip"
-  }
-}

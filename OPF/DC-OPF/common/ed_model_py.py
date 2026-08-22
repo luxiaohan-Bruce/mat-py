@@ -41,6 +41,8 @@ def _status_name(m: gp.Model) -> str:
 
 
 def solve_ed(network: dict, config: dict, *, quiet: bool = True) -> dict[str, Any]:
+    if int(config.get("T") or 1) > 1:
+        return solve_ed_horizon(network, config, quiet=quiet)
     base = float(network["baseMVA"])
     buses = network["buses"]
     gens = network["gens"]
@@ -237,6 +239,173 @@ def validate_ed_solution(
         "max_generator_bound_MW": max_gen,
         "cost_recomputed": cost,
         "validation_passed": passed,
+    }
+
+
+DAILY_24 = [
+    0.60, 0.56, 0.54, 0.53, 0.55, 0.62,
+    0.76, 0.88, 0.94, 0.96, 0.98, 1.00,
+    0.97, 0.95, 0.93, 0.92, 0.94, 0.98,
+    1.00, 0.98, 0.90, 0.82, 0.72, 0.65,
+]
+
+
+def _load_multipliers(config: dict, T: int) -> list[float]:
+    raw = config.get("load_mult")
+    if isinstance(raw, list) and raw:
+        mult = [float(x) for x in raw]
+    else:
+        mult = []
+        while len(mult) < T:
+            mult.extend(DAILY_24)
+    if len(mult) < T:
+        extra = DAILY_24
+        while len(mult) < T:
+            mult.extend(extra)
+    return [float(x) for x in mult[:T]]
+
+
+def solve_ed_horizon(network: dict, config: dict, *, quiet: bool = True) -> dict[str, Any]:
+    """Multi-period DC-OPF with load profile and optional ramp coupling."""
+    base = float(network["baseMVA"])
+    buses = network["buses"]
+    gens = network["gens"]
+    branches = network["branches"]
+    bus_ids, bus_pos, ref_bus = bus_maps(network)
+    nB, nG, nL = len(bus_ids), len(gens), len(branches)
+    T = max(2, int(config.get("T") or 2))
+    load_mult = _load_multipliers(config, T)
+    ramp_frac = float(config.get("ramp_frac", 0.25))
+    params = solver_params_from_config(config)
+
+    m = gp.Model("dc_opf_horizon")
+    if quiet:
+        m.Params.OutputFlag = 0
+    m.Params.Seed = params["Seed"]
+    m.Params.Threads = params["Threads"]
+    m.Params.MIPGap = params["MIPGap"]
+    m.Params.TimeLimit = params["TimeLimit"]
+
+    theta = m.addVars(nB, T, lb=-GRB.INFINITY, ub=GRB.INFINITY, name="theta")
+    Pg = m.addVars(nG, T, name="Pg_MW")
+    f = m.addVars(nL, T, lb=-GRB.INFINITY, ub=GRB.INFINITY, name="f_MW")
+
+    for t in range(T):
+        m.addConstr(theta[bus_pos[ref_bus], t] == 0.0, name=f"ref_{t}")
+
+    for g, gen in enumerate(gens):
+        lo, hi = gen_bounds_mw(gen)
+        for t in range(T):
+            Pg[g, t].LB = lo
+            Pg[g, t].UB = hi
+        if int(gen.get("status", 1)) == 1 and ramp_frac > 0:
+            cap = max(abs(float(gen.get("Pmax", 0.0))), abs(float(gen.get("Pmin", 0.0))), 1.0)
+            ramp = ramp_frac * cap
+            for t in range(1, T):
+                m.addConstr(Pg[g, t] - Pg[g, t - 1] <= ramp, name=f"ru_{g}_{t}")
+                m.addConstr(Pg[g, t - 1] - Pg[g, t] <= ramp, name=f"rd_{g}_{t}")
+
+    obj = gp.QuadExpr()
+    has_quad = False
+    for t in range(T):
+        for g, gen in enumerate(gens):
+            if int(gen.get("status", 1)) == 0:
+                continue
+            c2, c1, c0 = float(gen["c2"]), float(gen["c1"]), float(gen["c0"])
+            if abs(c2) > 1e-12:
+                has_quad = True
+                obj += c2 * Pg[g, t] * Pg[g, t]
+            obj += c1 * Pg[g, t]
+            obj += c0
+    m.setObjective(obj, GRB.MINIMIZE)
+
+    for t in range(T):
+        for ell, br in enumerate(branches):
+            if int(br.get("status", 1)) == 0:
+                m.addConstr(f[ell, t] == 0.0, name=f"f0_{ell}_{t}")
+                continue
+            i = bus_pos[int(br["fbus"])]
+            j = bus_pos[int(br["tbus"])]
+            _, phi = branch_susceptance(br)
+            if is_zero_x(br):
+                m.addConstr(theta[i, t] - theta[j, t] == phi, name=f"th_eq_{ell}_{t}")
+            else:
+                bsus, phi = branch_susceptance(br)
+                m.addConstr(
+                    f[ell, t] == base * bsus * (theta[i, t] - theta[j, t] - phi),
+                    name=f"phys_{ell}_{t}",
+                )
+            rate = thermal_rate_mw(br)
+            if rate > 0:
+                m.addConstr(f[ell, t] <= rate, name=f"fmax_{ell}_{t}")
+                m.addConstr(f[ell, t] >= -rate, name=f"fmin_{ell}_{t}")
+
+        for bi, bid in enumerate(bus_ids):
+            Pd = float(buses[bi]["Pd"]) * load_mult[t]
+            gen_sum = gp.quicksum(
+                Pg[g, t] for g, gen in enumerate(gens) if int(gen["bus"]) == bid
+            )
+            out_f = gp.quicksum(
+                f[ell, t] for ell, br in enumerate(branches) if int(br["fbus"]) == bid
+            )
+            in_f = gp.quicksum(
+                f[ell, t] for ell, br in enumerate(branches) if int(br["tbus"]) == bid
+            )
+            m.addConstr(gen_sum - Pd - out_f + in_f == 0.0, name=f"bal_{bid}_{t}")
+
+    t0 = time.time()
+    m.optimize()
+    runtime = time.time() - t0
+    status = _status_name(m)
+
+    Pg_MW = [0.0] * nG
+    theta_deg = [0.0] * nB
+    flow_MW = [0.0] * nL
+    obj_val = None
+    obj_bound = None
+    mip_gap = 0.0
+    peak_t = max(range(T), key=lambda tt: load_mult[tt])
+    if m.SolCount > 0:
+        obj_val = float(m.ObjVal)
+        try:
+            obj_bound = float(m.ObjBound)
+        except Exception:
+            obj_bound = obj_val
+        try:
+            mip_gap = float(m.MIPGap) if m.IsMIP else 0.0
+        except Exception:
+            mip_gap = 0.0
+        for g in range(nG):
+            Pg_MW[g] = float(Pg[g, peak_t].X)
+        for i in range(nB):
+            theta_deg[i] = math.degrees(float(theta[i, peak_t].X))
+        for ell in range(nL):
+            flow_MW[ell] = float(f[ell, peak_t].X)
+
+    # residuals at the peak-load hour, scaled Pd
+    net_peak = json.loads(json.dumps(network))
+    for bi, bus in enumerate(net_peak["buses"]):
+        bus["Pd"] = float(buses[bi]["Pd"]) * load_mult[peak_t]
+    residual = validate_ed_solution(net_peak, Pg_MW, theta_deg, flow_MW, None)
+    # objective is summed over T; do not compare to single-hour cost
+    residual["cost_recomputed"] = obj_val
+    return {
+        "status": status,
+        "obj": obj_val,
+        "obj_bound": obj_bound,
+        "mip_gap": mip_gap,
+        "runtime": runtime,
+        "Pg_MW": Pg_MW,
+        "theta_deg": theta_deg,
+        "flow_MW": flow_MW,
+        "has_quad": has_quad,
+        "ref_bus": ref_bus,
+        "baseMVA": base,
+        "n_var": m.NumVars,
+        "n_constr": m.NumConstrs,
+        "T": T,
+        "peak_t": peak_t,
+        **residual,
     }
 
 

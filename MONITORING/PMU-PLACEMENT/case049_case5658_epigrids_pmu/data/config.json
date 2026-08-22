@@ -19,7 +19,8 @@
     "builder_version": 1,
     "seed": 1,
     "transformations": [
-      "bus_observability_pmu_unit_cost"
+      "bus_observability_pmu_unit_cost",
+      "harden: pmu_channels=3 n1=False"
     ]
   },
   "gurobi_parameters": {
@@ -32,7 +33,7 @@
   "seed": 1,
   "threads": 1,
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "source_network": "pglib_opf_case5658_epigrids",
   "features": {
     "n_bus": 5658,
@@ -49,5 +50,7 @@
     "n_bin": 5658,
     "math_class": "milp",
     "solver_family": "covering_mip"
-  }
+  },
+  "pmu_channels": 3,
+  "n1_observability": false
 }

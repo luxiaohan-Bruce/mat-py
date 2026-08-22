@@ -53,14 +53,46 @@ def solve_pmu(network: dict, config: dict, *, quiet: bool = True) -> dict[str, A
     y = m.addVars(nB, vtype=GRB.BINARY, name="y")
     m.setObjective(gp.quicksum(cost[i] * y[i] for i in range(nB)), GRB.MINIMIZE)
 
-    # observability: for bus j, some PMU that covers j
-    for j, bid in enumerate(bus_ids):
-        covering = [
-            i
-            for i, bi in enumerate(bus_ids)
-            if bid in adj[bi]
-        ]
-        m.addConstr(gp.quicksum(y[i] for i in covering) >= 1, name=f"obs_{bid}")
+    # observability: for bus j, some PMU that covers j.
+    # n1_observability: every bus remains covered after loss of any one PMU,
+    # i.e. double coverage except buses whose covering set has size 1.
+    # pmu_channels: each PMU observes its own bus plus at most K neighbors
+    # (assignment binaries x[i,j]); classic channel-limited OPP.
+    n1 = bool(config.get("n1_observability"))
+    channels = config.get("pmu_channels")
+    K = int(channels) if channels not in (None, "", 0, "0") else 0
+    covering_of: list[list[int]] = []
+    idx = {b: i for i, b in enumerate(bus_ids)}
+    if K > 0:
+        neighbors: list[list[int]] = []
+        for bi in bus_ids:
+            nbs = [idx[n] for n in adj[bi] if n != bi]
+            neighbors.append(nbs)
+        x = {}
+        for i in range(nB):
+            for j in neighbors[i]:
+                x[i, j] = m.addVar(vtype=GRB.BINARY, name=f"x_{i}_{j}")
+            m.addConstr(
+                gp.quicksum(x[i, j] for j in neighbors[i]) <= K * y[i],
+                name=f"chan_{i}",
+            )
+            for j in neighbors[i]:
+                m.addConstr(x[i, j] <= y[i], name=f"link_{i}_{j}")
+        for j, bid in enumerate(bus_ids):
+            covering_of.append([j] + neighbors[j])
+            terms = [y[j]] + [x[i, j] for i in neighbors[j]]
+            rhs = 2 if n1 and len(terms) >= 2 else 1
+            m.addConstr(gp.quicksum(terms) >= rhs, name=f"obs_{bid}")
+    else:
+        for j, bid in enumerate(bus_ids):
+            covering = [
+                i
+                for i, bi in enumerate(bus_ids)
+                if bid in adj[bi]
+            ]
+            covering_of.append(covering)
+            rhs = 2 if n1 and len(covering) >= 2 else 1
+            m.addConstr(gp.quicksum(y[i] for i in covering) >= rhs, name=f"obs_{bid}")
 
     t0 = time.time()
     m.optimize()
@@ -80,11 +112,28 @@ def solve_pmu(network: dict, config: dict, *, quiet: bool = True) -> dict[str, A
             y_val[i] = float(y[i].X)
             if y_val[i] > 0.5:
                 placed.append(bus_ids[i])
-    # check observability
-    covered = set()
-    for bi in placed:
-        covered |= adj[bi]
-    all_obs = set(bus_ids) <= covered
+    # check observability (N-1 / channel-limited when requested)
+    if K > 0 and m.SolCount > 0:
+        cover_count = {b: 0 for b in bus_ids}
+        for i, bi in enumerate(bus_ids):
+            if y_val[i] <= 0.5:
+                continue
+            cover_count[bi] += 1
+            for j in neighbors[i]:
+                if float(x[i, j].X) > 0.5:
+                    cover_count[bus_ids[j]] += 1
+    else:
+        cover_count = {b: 0 for b in bus_ids}
+        for bi in placed:
+            for nb in adj[bi]:
+                cover_count[nb] += 1
+    all_obs = True
+    for j, bid in enumerate(bus_ids):
+        covering = covering_of[j] if j < len(covering_of) else []
+        need = 2 if n1 and len(covering) >= 2 else 1
+        if cover_count[bid] < need:
+            all_obs = False
+            break
     n_pmu = len(placed)
     return {
         "status": status,
@@ -96,6 +145,8 @@ def solve_pmu(network: dict, config: dict, *, quiet: bool = True) -> dict[str, A
         "placed_buses": sorted(placed),
         "n_pmu": n_pmu,
         "all_observable": all_obs,
+        "n1_observability": n1,
+        "pmu_channels": K or None,
         "validation_passed": bool(all_obs and status in ("OPTIMAL", "TIME_LIMIT") and obj is not None),
     }
 

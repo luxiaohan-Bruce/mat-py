@@ -22,11 +22,12 @@
     "transformations": [
       "pglib_to_interdiction",
       "k=1",
-      "method=enumeration"
+      "method=enumeration",
+      "harden: interdiction k=1->2"
     ],
     "notes": "medium: exact k=1 enumeration"
   },
-  "k": 1,
+  "k": 2,
   "method": "enumeration",
   "attack_target": "lines",
   "attack_size_mode": "exact",
@@ -38,7 +39,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "pglib_opf_case118_ieee",
@@ -53,7 +54,7 @@
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": null,
-    "k": 1,
+    "k": 2,
     "n_bin": 186,
     "math_class": "bilevel",
     "solver_family": "bilevel"

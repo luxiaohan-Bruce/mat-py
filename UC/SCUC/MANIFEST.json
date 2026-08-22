@@ -1,6 +1,6 @@
 {
   "problem": "scuc",
-  "n_total": 50,
+  "n_total": 45,
   "n_built_new": 63,
   "frozen": [
     "case01_ieee39_scuc",
@@ -30,39 +30,6 @@
       "size_bucket": "S"
     },
     {
-      "case": "case04_lmbd3_scuc",
-      "source": "pglib_opf_case3_lmbd",
-      "n_bus": 3,
-      "T": 12,
-      "n_cont": 0,
-      "n_active_gen": 2,
-      "size_bucket": "S",
-      "solve_tier": "full",
-      "legacy": false
-    },
-    {
-      "case": "case05_pjm5_scuc",
-      "source": "pglib_opf_case5_pjm",
-      "n_bus": 5,
-      "T": 24,
-      "n_cont": 6,
-      "n_active_gen": 5,
-      "size_bucket": "S",
-      "solve_tier": "full",
-      "legacy": false
-    },
-    {
-      "case": "case06_ieee14_scuc",
-      "source": "pglib_opf_case14_ieee",
-      "n_bus": 14,
-      "T": 24,
-      "n_cont": 8,
-      "n_active_gen": 2,
-      "size_bucket": "S",
-      "solve_tier": "full",
-      "legacy": false
-    },
-    {
       "case": "case07_ieee24_scuc",
       "source": "pglib_opf_case24_ieee_rts",
       "n_bus": 24,
@@ -80,17 +47,6 @@
       "T": 24,
       "n_cont": 8,
       "n_active_gen": 6,
-      "size_bucket": "S",
-      "solve_tier": "full",
-      "legacy": false
-    },
-    {
-      "case": "case09_ieee30_scuc",
-      "source": "pglib_opf_case30_ieee",
-      "n_bus": 30,
-      "T": 24,
-      "n_cont": 8,
-      "n_active_gen": 2,
       "size_bucket": "S",
       "solve_tier": "full",
       "legacy": false
@@ -135,17 +91,6 @@
       "T": 12,
       "n_cont": 6,
       "n_active_gen": 12,
-      "size_bucket": "M",
-      "solve_tier": "full",
-      "legacy": false
-    },
-    {
-      "case": "case14_goc179_scuc",
-      "source": "pglib_opf_case179_goc",
-      "n_bus": 179,
-      "T": 8,
-      "n_cont": 2,
-      "n_active_gen": 29,
       "size_bucket": "M",
       "solve_tier": "full",
       "legacy": false

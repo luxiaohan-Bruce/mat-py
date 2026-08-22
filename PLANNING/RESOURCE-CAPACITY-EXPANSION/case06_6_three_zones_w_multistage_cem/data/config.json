@@ -26,7 +26,8 @@
       "continuous_capacity_lp",
       "no_unit_commitment",
       "multistage_flattened_to_single_stage:inputs_p1",
-      "synthetic_tdr:even_sample_from_8760_to_24_weights_sum_8760.0"
+      "synthetic_tdr:even_sample_from_8760_to_24_weights_sum_8760.0",
+      "harden: CEM tiled T=24->2184"
     ]
   },
   "gurobi_parameters": {
@@ -37,7 +38,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "genx:6_three_zones_w_multistage",
@@ -47,7 +48,7 @@
     "n_gen": 7,
     "n_storage": 3,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 2184,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

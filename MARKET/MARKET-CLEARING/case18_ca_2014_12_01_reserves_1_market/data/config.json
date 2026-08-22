@@ -24,7 +24,8 @@
     "transformations": [
       "pwl_production_to_truthful_step_offers",
       "renewable_zero_price_period_qty",
-      "synthetic_linear_demand_utility_voll"
+      "synthetic_linear_demand_utility_voll",
+      "harden: market tiled T=48->2184"
     ],
     "voll_usd_per_mwh": 10000.0,
     "voll_source": "synthetic"
@@ -37,7 +38,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "pricing_note": "v1 is pure LP so dual prices exist. If UC binaries are added later, fix them and re-solve this LP for prices.",
@@ -48,7 +49,7 @@
     "n_gen": 0,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 48,
+    "T": 2184,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

@@ -15790,12 +15790,112 @@
       "branch": null,
       "gen_bus": 17,
       "gen_id": "1"
+    },
+    {
+      "name": "syn_L_86",
+      "branch": {
+        "fbus": 80,
+        "tbus": 65,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_240",
+      "branch": {
+        "fbus": 232,
+        "tbus": 371,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_246",
+      "branch": {
+        "fbus": 235,
+        "tbus": 407,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_340",
+      "branch": {
+        "fbus": 332,
+        "tbus": 471,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_376",
+      "branch": {
+        "fbus": 371,
+        "tbus": 195,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_393",
+      "branch": {
+        "fbus": 386,
+        "tbus": 14,
+        "ckt": "2"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_158",
+      "branch": {
+        "fbus": 146,
+        "tbus": 162,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_176",
+      "branch": {
+        "fbus": 162,
+        "tbus": 220,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_425",
+      "branch": {
+        "fbus": 428,
+        "tbus": 151,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_426",
+      "branch": {
+        "fbus": 428,
+        "tbus": 246,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
     }
   ],
   "source_files": {
-    "raw": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_2/case.raw",
-    "rop": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.rop",
-    "inl": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.inl",
-    "con": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_2/case.con"
+    "raw": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_2/case.raw",
+    "rop": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.rop",
+    "inl": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.inl",
+    "con": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_2/case.con"
   }
 }

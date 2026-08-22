@@ -22,12 +22,13 @@
     "transformations": [
       "synthetic_parallel_candidates_existing_corridors_only",
       "candidate_priority_dc_loading_estimate_seed1",
-      "dc_tep_milp_v1"
+      "dc_tep_milp_v1",
+      "harden: n_candidates=40 load*1.0"
     ],
     "construction_cost_formula": "construction_cost = 1e+06 * abs(x_existing)  # synthetic parallel",
     "provenance": "synthetic",
-    "n_candidates": 3,
-    "candidate_cap": 3
+    "n_candidates": 40,
+    "candidate_cap": 40
   },
   "gurobi_parameters": {
     "Seed": 1,
@@ -37,7 +38,7 @@
   },
   "solve_tier": "xlarge",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "pglib_opf_case4020_goc",
@@ -46,14 +47,14 @@
     "n_branch": 6988,
     "n_gen": 352,
     "n_storage": 0,
-    "n_candidate_branch": 3,
+    "n_candidate_branch": 40,
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": null,
     "k": null,
-    "n_bin": 3,
+    "n_bin": 40,
     "math_class": "milp",
     "solver_family": "topology_mip"
   }

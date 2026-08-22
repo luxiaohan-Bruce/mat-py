@@ -1,87 +1,5 @@
 [
   {
-    "case": "case001_lmbd3_nk_int",
-    "source": "pglib_opf_case3_lmbd",
-    "n_bus": 3,
-    "n_gen": 3,
-    "n_branch": 3,
-    "n_line_online": 3,
-    "k": 1,
-    "method": "auto",
-    "solve_tier": "full",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
-    },
-    "path": "case001_lmbd3_nk_int"
-  },
-  {
-    "case": "case002_lmbd3_gen_nk_int",
-    "source": "pglib_opf_case3_lmbd",
-    "n_bus": 3,
-    "n_gen": 3,
-    "n_branch": 3,
-    "n_line_online": 3,
-    "k": 1,
-    "method": "enumeration",
-    "solve_tier": "full",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "gens"
-    },
-    "path": "case002_lmbd3_gen_nk_int",
-    "attack_target": "gens"
-  },
-  {
-    "case": "case003_pjm5_nk_int",
-    "source": "pglib_opf_case5_pjm",
-    "n_bus": 5,
-    "n_gen": 5,
-    "n_branch": 6,
-    "n_line_online": 6,
-    "k": 1,
-    "method": "auto",
-    "solve_tier": "full",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "lines"
-    },
-    "path": "case003_pjm5_nk_int"
-  },
-  {
-    "case": "case004_pjm5_gen_nk_int",
-    "source": "pglib_opf_case5_pjm",
-    "n_bus": 5,
-    "n_gen": 5,
-    "n_branch": 6,
-    "n_line_online": 6,
-    "k": 1,
-    "method": "enumeration",
-    "solve_tier": "full",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "gens"
-    },
-    "path": "case004_pjm5_gen_nk_int",
-    "attack_target": "gens"
-  },
-  {
     "case": "case005_ieee14_nk_int",
     "source": "pglib_opf_case14_ieee",
     "n_bus": 14,
@@ -100,27 +18,6 @@
       "attack_scope": "lines"
     },
     "path": "case005_ieee14_nk_int"
-  },
-  {
-    "case": "case006_ieee14_gen_nk_int",
-    "source": "pglib_opf_case14_ieee",
-    "n_bus": 14,
-    "n_gen": 5,
-    "n_branch": 20,
-    "n_line_online": 20,
-    "k": 1,
-    "method": "enumeration",
-    "solve_tier": "full",
-    "variant": {
-      "power_flow": "dc",
-      "security": "n-k",
-      "uncertainty": "worst_case_attack",
-      "horizon": "single_period",
-      "recourse": "operator_load_shed_lp",
-      "attack_scope": "gens"
-    },
-    "path": "case006_ieee14_gen_nk_int",
-    "attack_target": "gens"
   },
   {
     "case": "case007_ieee24_nk_int",

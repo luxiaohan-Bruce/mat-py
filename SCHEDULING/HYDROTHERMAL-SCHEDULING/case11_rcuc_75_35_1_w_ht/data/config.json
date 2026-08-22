@@ -22,7 +22,8 @@
     "transformations": [
       "rcuc_mod_to_network_json",
       "linear_hydro_P_eq_k_release",
-      "thermal_commitment_min_up_down"
+      "thermal_commitment_min_up_down",
+      "harden: tiled T=24->48"
     ]
   },
   "gurobi_parameters": {
@@ -33,7 +34,7 @@
   },
   "solve_tier": "relaxed",
   "mip_gap": 0.001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "commalab:75_35_1_w.mod",
@@ -43,7 +44,7 @@
     "n_gen": 75,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 48,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,
@@ -52,5 +53,6 @@
     "n_bin": 1800,
     "math_class": "milp",
     "solver_family": "temporal_mip"
-  }
+  },
+  "T": 48
 }

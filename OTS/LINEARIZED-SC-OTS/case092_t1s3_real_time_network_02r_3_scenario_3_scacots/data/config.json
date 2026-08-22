@@ -16,20 +16,34 @@
     125,
     148,
     155,
-    170
+    170,
+    187,
+    200,
+    206,
+    238,
+    298,
+    352,
+    373,
+    379,
+    387,
+    397,
+    408,
+    417
   ],
-  "max_open": 2,
+  "max_open": 4,
   "mip_gap": 0.02,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
-  "threads": 0,
+  "threads": 1,
   "solve_tier": "relaxed",
   "load_shed_penalty": 10000.0,
   "construction": [
     "Linearized DC security-constrained OTS (NOT exact AC).",
     "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
     "OTS candidates = top rateA lines; max_open=2.",
-    "nB=500, nG=224 (210 online), nL=733, Nc=5, tier=relaxed"
+    "nB=500, nG=224 (210 online), nL=733, Nc=5, tier=relaxed",
+    "harden: n_switchable=20 max_open=4 n_cont=15",
+    "harden: variant.recourse=corrective_limited_with_nse (penalty load-shed allowed)"
   ],
   "base_problem": "ots",
   "variant": {
@@ -38,7 +52,7 @@
     "contingency_scope": "sampled_subset",
     "uncertainty": "deterministic",
     "horizon": "single_period",
-    "recourse": "corrective_limited",
+    "recourse": "corrective_limited_with_nse",
     "generation_recourse": "corrective_within_generator_bounds",
     "topology_control": "preventive_shared"
   },
@@ -50,13 +64,19 @@
     "n_storage": 0,
     "n_candidate_branch": 0,
     "T": 1,
-    "n_contingency": 5,
+    "n_contingency": 15,
     "n_scenario": 1,
-    "n_switchable": 8,
-    "max_open": 2,
+    "n_switchable": 20,
+    "max_open": 4,
     "k": null,
-    "n_bin": 8,
+    "n_bin": 20,
     "math_class": "milp",
     "solver_family": "security_mip"
-  }
+  },
+  "gurobi_parameters": {
+    "Threads": 1
+  },
+  "known_limitations": [
+    "Sampled N-1 is feasible only with penalty load-shed (NSE); not a zero-shed preventive SC-OPF."
+  ]
 }

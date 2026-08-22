@@ -1,28 +1,5 @@
 [
   {
-    "case": "case001_lmbd3_scacopf",
-    "path": "case001_lmbd3_scacopf",
-    "source": "pglib_opf_case3_lmbd",
-    "n_bus": 3,
-    "n_gen": 3,
-    "n_branch": 3,
-    "n_contingency": 1,
-    "solve_tier": "full",
-    "base_problem": "opf",
-    "problem": "sc_ac_opf",
-    "variant": {
-      "power_flow": "ac_exact",
-      "security": "n-1",
-      "uncertainty": "deterministic",
-      "horizon": "single_period",
-      "recourse": "preventive",
-      "generation_recourse": "corrective_within_generator_bounds",
-      "contingency_scope": "selected_subset",
-      "formulation": "polar_ac_preventive_n1",
-      "network_constraints": "nodal_pq_balance_voltage_angle_and_two_end_mva_limits"
-    }
-  },
-  {
     "case": "case002_pjm5_scacopf",
     "path": "case002_pjm5_scacopf",
     "source": "pglib_opf_case5_pjm",

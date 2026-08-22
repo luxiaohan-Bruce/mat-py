@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "case": "case071_epigrids7336_dc_ed",
+  "solver": "python-gurobi",
+  "problem": "dc_opf",
+  "base_problem": "opf",
+  "ed": {
+    "status": "TIME_LIMIT",
+    "obj": null,
+    "runtime": 600.0,
+    "note": "final Threads=1 solve killed at 750s wall; catalog records as 难求解"
+  }
+}

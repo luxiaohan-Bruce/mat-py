@@ -6,18 +6,18 @@
   "base_problem": "hydrothermal_scheduling",
   "ht": {
     "status": "OPTIMAL",
-    "obj": -547491436.5826464,
-    "runtime": 1.0433599948883057,
-    "mip_gap": 0.0009889968117027248,
+    "obj": -559130062.4446685,
+    "runtime": 12.716925382614136,
+    "mip_gap": 3.9436994540784084e-05,
     "n_scenarios": 1,
-    "time_periods": 48,
+    "time_periods": 96,
     "networked": true,
     "use_commitment": true,
-    "max_power_balance_MW": 3.841236662083247e-09,
-    "max_water_balance_hm3": 6.043876510375412e-11,
+    "max_power_balance_MW": 6.005159702837659e-10,
+    "max_water_balance_hm3": 1.546140993013978e-11,
     "validation_passed": true,
-    "thermal_on_hours": 48,
-    "total_deficit_MW": 9.541674760865789
+    "thermal_on_hours": 36,
+    "total_deficit_MW": 1.1944791822315892e-09
   },
   "validation": {
     "passed": true

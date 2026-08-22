@@ -1,3 +1,0 @@
-# VERIFY SE
-
-12/12 PASS

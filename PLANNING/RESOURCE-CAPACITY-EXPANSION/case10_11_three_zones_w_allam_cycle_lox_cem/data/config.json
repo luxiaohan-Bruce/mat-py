@@ -28,7 +28,8 @@
       "allam_simplified_to_thermal:MA_AllamCycleLox",
       "allam_simplified_to_thermal:CT_AllamCycleLox",
       "allam_simplified_to_thermal:ME_AllamCycleLox",
-      "synthetic_tdr:even_sample_from_8760_to_24_weights_sum_8760.0"
+      "synthetic_tdr:even_sample_from_8760_to_24_weights_sum_8760.0",
+      "harden: CEM tiled T=24->2184"
     ]
   },
   "gurobi_parameters": {
@@ -39,7 +40,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "genx:11_three_zones_w_allam_cycle_lox",
@@ -49,7 +50,7 @@
     "n_gen": 10,
     "n_storage": 3,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 2184,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

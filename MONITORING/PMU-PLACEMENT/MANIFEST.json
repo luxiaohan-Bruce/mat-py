@@ -1,213 +1,10 @@
 [
   {
-    "case": "case001_case3_lmbd_pmu",
-    "source": "pglib_opf_case3_lmbd",
-    "n_bus": 3,
-    "solve_tier": "full",
-    "path": "case001_case3_lmbd_pmu"
-  },
-  {
-    "case": "case002_case5_pjm_pmu",
-    "source": "pglib_opf_case5_pjm",
-    "n_bus": 5,
-    "solve_tier": "full",
-    "path": "case002_case5_pjm_pmu"
-  },
-  {
-    "case": "case003_case14_ieee_pmu",
-    "source": "pglib_opf_case14_ieee",
-    "n_bus": 14,
-    "solve_tier": "full",
-    "path": "case003_case14_ieee_pmu"
-  },
-  {
-    "case": "case004_case24_ieee_rts_pmu",
-    "source": "pglib_opf_case24_ieee_rts",
-    "n_bus": 24,
-    "solve_tier": "full",
-    "path": "case004_case24_ieee_rts_pmu"
-  },
-  {
-    "case": "case005_case30_as_pmu",
-    "source": "pglib_opf_case30_as",
-    "n_bus": 30,
-    "solve_tier": "full",
-    "path": "case005_case30_as_pmu"
-  },
-  {
-    "case": "case006_case30_ieee_pmu",
-    "source": "pglib_opf_case30_ieee",
-    "n_bus": 30,
-    "solve_tier": "full",
-    "path": "case006_case30_ieee_pmu"
-  },
-  {
-    "case": "case007_case39_epri_pmu",
-    "source": "pglib_opf_case39_epri",
-    "n_bus": 39,
-    "solve_tier": "full",
-    "path": "case007_case39_epri_pmu"
-  },
-  {
-    "case": "case008_case57_ieee_pmu",
-    "source": "pglib_opf_case57_ieee",
-    "n_bus": 57,
-    "solve_tier": "full",
-    "path": "case008_case57_ieee_pmu"
-  },
-  {
-    "case": "case009_case60_c_pmu",
-    "source": "pglib_opf_case60_c",
-    "n_bus": 60,
-    "solve_tier": "full",
-    "path": "case009_case60_c_pmu"
-  },
-  {
-    "case": "case010_case73_ieee_rts_pmu",
-    "source": "pglib_opf_case73_ieee_rts",
-    "n_bus": 73,
-    "solve_tier": "full",
-    "path": "case010_case73_ieee_rts_pmu"
-  },
-  {
-    "case": "case011_case89_pegase_pmu",
-    "source": "pglib_opf_case89_pegase",
-    "n_bus": 89,
-    "solve_tier": "full",
-    "path": "case011_case89_pegase_pmu"
-  },
-  {
-    "case": "case012_case118_ieee_pmu",
-    "source": "pglib_opf_case118_ieee",
-    "n_bus": 118,
-    "solve_tier": "full",
-    "path": "case012_case118_ieee_pmu"
-  },
-  {
-    "case": "case013_case162_ieee_dtc_pmu",
-    "source": "pglib_opf_case162_ieee_dtc",
-    "n_bus": 162,
-    "solve_tier": "full",
-    "path": "case013_case162_ieee_dtc_pmu"
-  },
-  {
-    "case": "case014_case179_goc_pmu",
-    "source": "pglib_opf_case179_goc",
-    "n_bus": 179,
-    "solve_tier": "full",
-    "path": "case014_case179_goc_pmu"
-  },
-  {
-    "case": "case015_case197_snem_pmu",
-    "source": "pglib_opf_case197_snem",
-    "n_bus": 197,
-    "solve_tier": "full",
-    "path": "case015_case197_snem_pmu"
-  },
-  {
-    "case": "case016_case200_activ_pmu",
-    "source": "pglib_opf_case200_activ",
-    "n_bus": 200,
-    "solve_tier": "full",
-    "path": "case016_case200_activ_pmu"
-  },
-  {
-    "case": "case017_case240_pserc_pmu",
-    "source": "pglib_opf_case240_pserc",
-    "n_bus": 240,
-    "solve_tier": "full",
-    "path": "case017_case240_pserc_pmu"
-  },
-  {
-    "case": "case018_case300_ieee_pmu",
-    "source": "pglib_opf_case300_ieee",
-    "n_bus": 300,
-    "solve_tier": "full",
-    "path": "case018_case300_ieee_pmu"
-  },
-  {
-    "case": "case019_case500_goc_pmu",
-    "source": "pglib_opf_case500_goc",
-    "n_bus": 500,
-    "solve_tier": "relaxed",
-    "path": "case019_case500_goc_pmu"
-  },
-  {
-    "case": "case020_case588_sdet_pmu",
-    "source": "pglib_opf_case588_sdet",
-    "n_bus": 588,
-    "solve_tier": "relaxed",
-    "path": "case020_case588_sdet_pmu"
-  },
-  {
-    "case": "case021_case793_goc_pmu",
-    "source": "pglib_opf_case793_goc",
-    "n_bus": 793,
-    "solve_tier": "relaxed",
-    "path": "case021_case793_goc_pmu"
-  },
-  {
-    "case": "case022_case1354_pegase_pmu",
-    "source": "pglib_opf_case1354_pegase",
-    "n_bus": 1354,
-    "solve_tier": "relaxed",
-    "path": "case022_case1354_pegase_pmu"
-  },
-  {
-    "case": "case023_case1803_snem_pmu",
-    "source": "pglib_opf_case1803_snem",
-    "n_bus": 1803,
-    "solve_tier": "relaxed",
-    "path": "case023_case1803_snem_pmu"
-  },
-  {
-    "case": "case024_case1888_rte_pmu",
-    "source": "pglib_opf_case1888_rte",
-    "n_bus": 1888,
-    "solve_tier": "relaxed",
-    "path": "case024_case1888_rte_pmu"
-  },
-  {
-    "case": "case025_case1951_rte_pmu",
-    "source": "pglib_opf_case1951_rte",
-    "n_bus": 1951,
-    "solve_tier": "relaxed",
-    "path": "case025_case1951_rte_pmu"
-  },
-  {
     "case": "case026_case2000_goc_pmu",
     "source": "pglib_opf_case2000_goc",
     "n_bus": 2000,
     "solve_tier": "relaxed",
     "path": "case026_case2000_goc_pmu"
-  },
-  {
-    "case": "case027_case2312_goc_pmu",
-    "source": "pglib_opf_case2312_goc",
-    "n_bus": 2312,
-    "solve_tier": "relaxed",
-    "path": "case027_case2312_goc_pmu"
-  },
-  {
-    "case": "case028_case2383wp_k_pmu",
-    "source": "pglib_opf_case2383wp_k",
-    "n_bus": 2383,
-    "solve_tier": "relaxed",
-    "path": "case028_case2383wp_k_pmu"
-  },
-  {
-    "case": "case029_case2736sp_k_pmu",
-    "source": "pglib_opf_case2736sp_k",
-    "n_bus": 2736,
-    "solve_tier": "relaxed",
-    "path": "case029_case2736sp_k_pmu"
-  },
-  {
-    "case": "case030_case2737sop_k_pmu",
-    "source": "pglib_opf_case2737sop_k",
-    "n_bus": 2737,
-    "solve_tier": "relaxed",
-    "path": "case030_case2737sop_k_pmu"
   },
   {
     "case": "case031_case2742_goc_pmu",
@@ -217,74 +14,11 @@
     "path": "case031_case2742_goc_pmu"
   },
   {
-    "case": "case032_case2746wop_k_pmu",
-    "source": "pglib_opf_case2746wop_k",
-    "n_bus": 2746,
-    "solve_tier": "relaxed",
-    "path": "case032_case2746wop_k_pmu"
-  },
-  {
-    "case": "case033_case2746wp_k_pmu",
-    "source": "pglib_opf_case2746wp_k",
-    "n_bus": 2746,
-    "solve_tier": "relaxed",
-    "path": "case033_case2746wp_k_pmu"
-  },
-  {
-    "case": "case034_case2848_rte_pmu",
-    "source": "pglib_opf_case2848_rte",
-    "n_bus": 2848,
-    "solve_tier": "relaxed",
-    "path": "case034_case2848_rte_pmu"
-  },
-  {
-    "case": "case035_case2853_sdet_pmu",
-    "source": "pglib_opf_case2853_sdet",
-    "n_bus": 2853,
-    "solve_tier": "relaxed",
-    "path": "case035_case2853_sdet_pmu"
-  },
-  {
-    "case": "case036_case2868_rte_pmu",
-    "source": "pglib_opf_case2868_rte",
-    "n_bus": 2868,
-    "solve_tier": "relaxed",
-    "path": "case036_case2868_rte_pmu"
-  },
-  {
     "case": "case037_case2869_pegase_pmu",
     "source": "pglib_opf_case2869_pegase",
     "n_bus": 2869,
     "solve_tier": "relaxed",
     "path": "case037_case2869_pegase_pmu"
-  },
-  {
-    "case": "case038_case3012wp_k_pmu",
-    "source": "pglib_opf_case3012wp_k",
-    "n_bus": 3012,
-    "solve_tier": "xlarge",
-    "path": "case038_case3012wp_k_pmu"
-  },
-  {
-    "case": "case039_case3022_goc_pmu",
-    "source": "pglib_opf_case3022_goc",
-    "n_bus": 3022,
-    "solve_tier": "xlarge",
-    "path": "case039_case3022_goc_pmu"
-  },
-  {
-    "case": "case040_case3120sp_k_pmu",
-    "source": "pglib_opf_case3120sp_k",
-    "n_bus": 3120,
-    "solve_tier": "xlarge",
-    "path": "case040_case3120sp_k_pmu"
-  },
-  {
-    "case": "case041_case3375wp_k_pmu",
-    "source": "pglib_opf_case3375wp_k",
-    "n_bus": 3374,
-    "solve_tier": "xlarge",
-    "path": "case041_case3375wp_k_pmu"
   },
   {
     "case": "case042_case3970_goc_pmu",
@@ -315,25 +49,11 @@
     "path": "case045_case4619_goc_pmu"
   },
   {
-    "case": "case046_case4661_sdet_pmu",
-    "source": "pglib_opf_case4661_sdet",
-    "n_bus": 4661,
-    "solve_tier": "xlarge",
-    "path": "case046_case4661_sdet_pmu"
-  },
-  {
     "case": "case047_case4837_goc_pmu",
     "source": "pglib_opf_case4837_goc",
     "n_bus": 4837,
     "solve_tier": "xlarge",
     "path": "case047_case4837_goc_pmu"
-  },
-  {
-    "case": "case048_case4917_goc_pmu",
-    "source": "pglib_opf_case4917_goc",
-    "n_bus": 4917,
-    "solve_tier": "xlarge",
-    "path": "case048_case4917_goc_pmu"
   },
   {
     "case": "case049_case5658_epigrids_pmu",
@@ -343,46 +63,11 @@
     "path": "case049_case5658_epigrids_pmu"
   },
   {
-    "case": "case050_case6468_rte_pmu",
-    "source": "pglib_opf_case6468_rte",
-    "n_bus": 6468,
-    "solve_tier": "xlarge",
-    "path": "case050_case6468_rte_pmu"
-  },
-  {
-    "case": "case051_case6470_rte_pmu",
-    "source": "pglib_opf_case6470_rte",
-    "n_bus": 6470,
-    "solve_tier": "xlarge",
-    "path": "case051_case6470_rte_pmu"
-  },
-  {
-    "case": "case052_case6495_rte_pmu",
-    "source": "pglib_opf_case6495_rte",
-    "n_bus": 6495,
-    "solve_tier": "xlarge",
-    "path": "case052_case6495_rte_pmu"
-  },
-  {
-    "case": "case053_case6515_rte_pmu",
-    "source": "pglib_opf_case6515_rte",
-    "n_bus": 6515,
-    "solve_tier": "xlarge",
-    "path": "case053_case6515_rte_pmu"
-  },
-  {
     "case": "case054_case7336_epigrids_pmu",
     "source": "pglib_opf_case7336_epigrids",
     "n_bus": 7336,
     "solve_tier": "xlarge",
     "path": "case054_case7336_epigrids_pmu"
-  },
-  {
-    "case": "case055_case8387_pegase_pmu",
-    "source": "pglib_opf_case8387_pegase",
-    "n_bus": 8387,
-    "solve_tier": "xlarge",
-    "path": "case055_case8387_pegase_pmu"
   },
   {
     "case": "case056_case9241_pegase_pmu",
@@ -399,13 +84,6 @@
     "path": "case057_case9591_goc_pmu"
   },
   {
-    "case": "case058_case10000_goc_pmu",
-    "source": "pglib_opf_case10000_goc",
-    "n_bus": 10000,
-    "solve_tier": "xlarge",
-    "path": "case058_case10000_goc_pmu"
-  },
-  {
     "case": "case059_case10192_epigrids_pmu",
     "source": "pglib_opf_case10192_epigrids",
     "n_bus": 10192,
@@ -418,13 +96,6 @@
     "n_bus": 10480,
     "solve_tier": "xlarge",
     "path": "case060_case10480_goc_pmu"
-  },
-  {
-    "case": "case061_case13659_pegase_pmu",
-    "source": "pglib_opf_case13659_pegase",
-    "n_bus": 13659,
-    "solve_tier": "xlarge",
-    "path": "case061_case13659_pegase_pmu"
   },
   {
     "case": "case062_case19402_goc_pmu",
@@ -446,13 +117,6 @@
     "n_bus": 24464,
     "solve_tier": "xlarge",
     "path": "case064_case24464_goc_pmu"
-  },
-  {
-    "case": "case065_case30000_goc_pmu",
-    "source": "pglib_opf_case30000_goc",
-    "n_bus": 30000,
-    "solve_tier": "xlarge",
-    "path": "case065_case30000_goc_pmu"
   },
   {
     "case": "case066_case78484_epigrids_pmu",

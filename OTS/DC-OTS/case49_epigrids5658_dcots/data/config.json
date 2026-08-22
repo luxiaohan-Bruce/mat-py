@@ -12,11 +12,26 @@
     624,
     625,
     633,
-    642
+    642,
+    7,
+    36,
+    8,
+    1768,
+    5713,
+    37,
+    138,
+    152,
+    170,
+    164,
+    59,
+    6,
+    66,
+    151,
+    201
   ],
-  "max_open": 1,
+  "max_open": 3,
   "mip_gap": 0.001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "indicator constraints (see model)",
@@ -36,7 +51,8 @@
     "No DCOPF probe (size/tier); ranking by inverse rateA.",
     "Skip branch id=526: opening would risk disconnect with set.",
     "Skip branch id=634: opening would risk disconnect with set.",
-    "Selected 10 switchable lines (wanted 10)."
+    "Selected 10 switchable lines (wanted 10).",
+    "harden: n_switchable=25 max_open=3 switchable_rate*0.95"
   ],
   "base_problem": "ots",
   "variant": {
@@ -56,11 +72,14 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 10,
-    "max_open": 1,
+    "n_switchable": 25,
+    "max_open": 3,
     "k": null,
-    "n_bin": 10,
+    "n_bin": 25,
     "math_class": "milp",
     "solver_family": "topology_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

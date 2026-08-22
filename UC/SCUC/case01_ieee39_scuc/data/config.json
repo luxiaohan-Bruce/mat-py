@@ -4,30 +4,30 @@
   "source": "pglib_opf_case39_epri",
   "T": 24,
   "load_mult": [
-    0.67,
-    0.63,
     0.6,
-    0.59,
-    0.59,
+    0.56,
+    0.54,
+    0.53,
+    0.55,
     0.62,
-    0.72,
-    0.85,
+    0.76,
+    0.88,
+    0.94,
+    0.96,
+    0.98,
+    1.0,
+    0.97,
     0.95,
-    0.99,
+    0.93,
+    0.92,
+    0.94,
+    0.98,
     1.0,
-    1.02,
-    1.05,
-    1.04,
-    1.02,
-    1.0,
-    1.03,
-    1.08,
-    1.1,
-    1.06,
     0.98,
     0.9,
-    0.8,
-    0.72
+    0.82,
+    0.72,
+    0.65
   ],
   "load_scale": 0.7,
   "contingencies": [
@@ -38,11 +38,23 @@
     42,
     19,
     23,
-    18
+    18,
+    10,
+    2,
+    11,
+    12,
+    15,
+    16,
+    17,
+    35,
+    39,
+    8,
+    24,
+    25
   ],
   "emergency_rate_factor": 1.0,
   "mip_gap": 0.0001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "notes": [
@@ -62,7 +74,8 @@
     "Gen bus 36: Pmin=116.0 Pmax=580.0 UT=3 DT=3 Sup=21864.5 u0=1",
     "Gen bus 37: Pmin=112.8 Pmax=564.0 UT=3 DT=3 Sup=37463.8 u0=0",
     "Gen bus 38: Pmin=173.0 Pmax=865.0 UT=3 DT=3 Sup=33091.9 u0=1",
-    "Gen bus 39: Pmin=220.0 Pmax=1100.0 UT=3 DT=3 Sup=45494.9 u0=0"
+    "Gen bus 39: Pmin=220.0 Pmax=1100.0 UT=3 DT=3 Sup=45494.9 u0=0",
+    "harden: T=24 n_cont=20"
   ],
   "base_problem": "uc",
   "variant": {
@@ -81,7 +94,7 @@
     "n_storage": 0,
     "n_candidate_branch": 0,
     "T": 24,
-    "n_contingency": 8,
+    "n_contingency": 20,
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": null,
@@ -90,5 +103,8 @@
     "math_class": "milp",
     "solver_family": "security_mip"
   },
-  "solve_tier": "full"
+  "solve_tier": "full",
+  "gurobi_parameters": {
+    "Threads": 1
+  }
 }

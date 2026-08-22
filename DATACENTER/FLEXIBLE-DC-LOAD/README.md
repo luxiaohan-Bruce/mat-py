@@ -2,7 +2,7 @@
 
 把数据中心柔性负荷接到已有 IEEE 网架上（Python + Gurobi）。支路用 MATPOWER 直流：\(f=b(\theta_f-\theta_t)\)，\(b=1/(x\cdot\mathrm{tap})\)。
 
-- **案例数**: 6
+- **案例数**: 3
 - **base_problem**: `datacenter_flex`
 - **网架**: PGLib IEEE 14 / IEEE 24（经仓库 `scuc_cases` 时序复用）
 - **来源**: Wan–Li 时空柔性（arXiv:2605.18517）

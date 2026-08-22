@@ -25,7 +25,8 @@
       "reuse_scuc_network",
       "flex_temporal",
       "uc",
-      "night_heavy_dc_profile"
+      "night_heavy_dc_profile",
+      "harden: tiled T=24->48"
     ]
   },
   "gurobi_parameters": {
@@ -36,10 +37,10 @@
   },
   "solve_tier": "full",
   "mip_gap": 0.0001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
-  "T": 24,
+  "T": 48,
   "source_network": "pglib_opf_case24_ieee_rts",
   "features": {
     "n_bus": 24,
@@ -47,7 +48,7 @@
     "n_gen": 33,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 48,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

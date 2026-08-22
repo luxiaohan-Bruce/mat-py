@@ -12,11 +12,31 @@
     1872,
     1662,
     2149,
-    1527
+    1527,
+    423,
+    1470,
+    429,
+    424,
+    1440,
+    1441,
+    1489,
+    1490,
+    428,
+    437,
+    438,
+    386,
+    395,
+    394,
+    1488,
+    1504,
+    1444,
+    1471,
+    1445,
+    1477
   ],
-  "max_open": 1,
+  "max_open": 4,
   "mip_gap": 0.001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "indicator constraints (see model)",
@@ -52,7 +72,8 @@
     "Skip branch id=1705: opening would risk disconnect with set.",
     "Skip branch id=1703: opening would risk disconnect with set.",
     "Skip branch id=1724: opening would risk disconnect with set.",
-    "Selected 10 switchable lines (wanted 10)."
+    "Selected 10 switchable lines (wanted 10).",
+    "harden: n_switchable=30 max_open=4 switchable_rate*0.95"
   ],
   "base_problem": "ots",
   "variant": {
@@ -72,11 +93,14 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 10,
-    "max_open": 1,
+    "n_switchable": 30,
+    "max_open": 4,
     "k": null,
-    "n_bin": 10,
+    "n_bin": 30,
     "math_class": "milp",
     "solver_family": "topology_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

@@ -27,7 +27,8 @@
       "linear_hydro_from_unit_max_ratio",
       "volume_hm3_flow_m3s",
       "networked_dc",
-      "deterministic_commitment"
+      "deterministic_commitment",
+      "harden: tiled T=48->96"
     ]
   },
   "gurobi_parameters": {
@@ -38,7 +39,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 0.001,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "commalab:D",
@@ -48,7 +49,7 @@
     "n_gen": 7,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 48,
+    "T": 96,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,
@@ -57,5 +58,6 @@
     "n_bin": 336,
     "math_class": "milp",
     "solver_family": "temporal_mip"
-  }
+  },
+  "T": 96
 }

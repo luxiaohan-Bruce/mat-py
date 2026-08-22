@@ -27,11 +27,26 @@
     56,
     48,
     137,
-    14
+    14,
+    237,
+    238,
+    18,
+    28,
+    159,
+    219,
+    4,
+    82,
+    111,
+    88,
+    17,
+    104,
+    175,
+    21,
+    102
   ],
-  "max_open": 2,
+  "max_open": 4,
   "mip_gap": 1e-05,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "indicator constraints (see model)",
@@ -44,7 +59,8 @@
   "notes": [
     "Switchable ranked by |f|/rateA under closed DCOPF.",
     "Selected 25 switchable lines (wanted 25).",
-    "Retuned: load_scale=0.95, rate_scale=1.0 after INFEASIBLE."
+    "Retuned: load_scale=0.95, rate_scale=1.0 after INFEASIBLE.",
+    "harden: n_switchable=40 max_open=4 switchable_rate*0.95"
   ],
   "base_problem": "ots",
   "variant": {
@@ -64,11 +80,14 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 25,
-    "max_open": 2,
+    "n_switchable": 40,
+    "max_open": 4,
     "k": null,
-    "n_bin": 25,
+    "n_bin": 40,
     "math_class": "milp",
     "solver_family": "topology_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

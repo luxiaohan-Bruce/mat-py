@@ -166,8 +166,12 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
             violations.append(
                 f"n_cont={actual_n_cont!r} expected_n_contingency={expected_n_cont!r}"
             )
+        variant = config.get("variant") if isinstance(config.get("variant"), dict) else {}
+        allow_nse = variant.get("recourse") == "corrective_limited_with_nse"
         for key, tolerance in (("load_shed_MW", 1e-4), ("flow_slack_pu", 1e-6)):
             value = block.get(key)
+            if isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(float(value)):
+                residuals[key] = float(value)
             if (
                 not isinstance(value, (int, float))
                 or isinstance(value, bool)
@@ -175,7 +179,10 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
             ):
                 violations.append(f"{key}={value!r}")
             elif abs(float(value)) > tolerance:
+                if key == "load_shed_MW" and allow_nse:
+                    continue
                 violations.append(f"{key}={value}")
+        out["residuals"] = residuals
 
     explicit = block.get("validation_passed")
     if explicit is None and isinstance(result.get("validation"), dict):

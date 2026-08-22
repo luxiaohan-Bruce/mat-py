@@ -9,24 +9,21 @@
   },
   "scacopf": {
     "status": "OPTIMAL",
-    "obj": 178253.47992450997,
-    "obj_bound": 178253.47991270572,
-    "mip_gap": 6.622171810489288e-11,
-    "runtime": 0.3458731174468994,
+    "obj": 1527363.4798630793,
+    "obj_bound": 1527363.4796849191,
+    "mip_gap": 1.1664554523377958e-10,
+    "runtime": 10.525524377822876,
     "n_bus": 500,
     "n_gen": 208,
     "n_branch": 733,
-    "n_cont": 5,
-    "load_shed_MW": -7.627636470705535e-09,
+    "n_cont": 15,
+    "load_shed_MW": 134.91099998630074,
     "flow_slack_pu": 0.0,
-    "opened_branches": [
-      59,
-      82
-    ],
+    "opened_branches": [],
     "enable_ots": true,
-    "n_binary": 8,
-    "n_variables": 16260,
-    "n_constraints": 22152,
+    "n_binary": 20,
+    "n_variables": 43012,
+    "n_constraints": 58554,
     "note": "linearized DC SC-OPF (not exact AC); documented approximation"
   }
 }

@@ -40,10 +40,7 @@
     ],
     "trust_metadata": {
       "required_packs": [
-        "DISTRIBUTION/DER-HOSTING",
-        "DISTRIBUTION/DISTRIBUTION-OPF",
-        "DISTRIBUTION/DNR",
-        "DISTRIBUTION/VOLT-VAR"
+        "DISTRIBUTION/DNR"
       ],
       "maturity_values": [
         "experimental",
@@ -81,9 +78,6 @@
     "coupled"
   ],
   "navigation_domains": {
-    "DISPATCH": {
-      "label": "Dispatch"
-    },
     "DISTRIBUTION": {
       "label": "Distribution systems"
     },
@@ -95,9 +89,6 @@
     },
     "MONITORING": {
       "label": "Monitoring and estimation"
-    },
-    "MULTI-ENERGY": {
-      "label": "Multi-energy systems"
     },
     "OPF": {
       "label": "Optimal power flow"
@@ -348,6 +339,7 @@
     ],
     "recourse": [
       "corrective_limited",
+      "corrective_limited_with_nse",
       "dispatch",
       "none",
       "operator_load_shed_lp",
@@ -417,64 +409,6 @@
         "formulation": "polar_ac_power_flow"
       }
     },
-    "DISPATCH/ECONOMIC-DISPATCH": {
-      "navigation_domain": "DISPATCH",
-      "base_problem": "economic_dispatch",
-      "default_math_class": "qp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "copperplate",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "DISTRIBUTION/DER-HOSTING": {
-      "navigation_domain": "DISTRIBUTION",
-      "base_problem": "der_hosting",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "topology_mip",
-      "allowed_solver_families": [
-        "topology_mip"
-      ],
-      "default_variant": {
-        "power_flow": "active_power_transport",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "DISTRIBUTION/DISTRIBUTION-OPF": {
-      "navigation_domain": "DISTRIBUTION",
-      "base_problem": "distribution_opf",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "topology_mip",
-      "allowed_solver_families": [
-        "topology_mip"
-      ],
-      "default_variant": {
-        "power_flow": "active_power_transport",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
     "DISTRIBUTION/DNR": {
       "navigation_domain": "DISTRIBUTION",
       "base_problem": "dnr",
@@ -486,27 +420,6 @@
       "default_solver_family": "topology_mip",
       "allowed_solver_families": [
         "none",
-        "topology_mip"
-      ],
-      "default_variant": {
-        "power_flow": "active_power_transport",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "DISTRIBUTION/VOLT-VAR": {
-      "navigation_domain": "DISTRIBUTION",
-      "base_problem": "volt_var",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "lp",
-        "milp"
-      ],
-      "default_solver_family": "topology_mip",
-      "allowed_solver_families": [
-        "convex_dispatch",
         "topology_mip"
       ],
       "default_variant": {
@@ -536,25 +449,6 @@
         "recourse": "none"
       }
     },
-    "MARKET/STRATEGIC-BIDDING": {
-      "navigation_domain": "MARKET",
-      "base_problem": "strategic_bidding",
-      "default_math_class": "bilevel",
-      "allowed_math_classes": [
-        "bilevel"
-      ],
-      "default_solver_family": "bilevel",
-      "allowed_solver_families": [
-        "bilevel"
-      ],
-      "default_variant": {
-        "power_flow": "dc",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
     "MONITORING/PMU-PLACEMENT": {
       "navigation_domain": "MONITORING",
       "base_problem": "pmu_placement",
@@ -568,45 +462,6 @@
       ],
       "default_variant": {
         "power_flow": "topological",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "MONITORING/STATE-ESTIMATION": {
-      "navigation_domain": "MONITORING",
-      "base_problem": "state_estimation",
-      "default_math_class": "qp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "dc",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "MULTI-ENERGY/INTEGRATED-ELECTRIC-GAS": {
-      "navigation_domain": "MULTI-ENERGY",
-      "base_problem": "integrated_electric_gas",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "coupled",
-      "allowed_solver_families": [
-        "coupled"
-      ],
-      "default_variant": {
-        "power_flow": "dc",
         "security": "none",
         "uncertainty": "deterministic",
         "horizon": "single_period",
@@ -774,44 +629,6 @@
         "recourse": "none"
       }
     },
-    "RESILIENCE/DISTRIBUTION-RESTORATION": {
-      "navigation_domain": "RESILIENCE",
-      "base_problem": "distribution_restoration",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "temporal_mip",
-      "allowed_solver_families": [
-        "temporal_mip"
-      ],
-      "default_variant": {
-        "power_flow": "lindistflow",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
-    "RESILIENCE/MAXIMUM-LOAD-DELIVERY": {
-      "navigation_domain": "RESILIENCE",
-      "base_problem": "maximum_load_delivery",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "topology_mip",
-      "allowed_solver_families": [
-        "topology_mip"
-      ],
-      "default_variant": {
-        "power_flow": "dc",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
     "RESILIENCE/NETWORK-INTERDICTION": {
       "navigation_domain": "RESILIENCE",
       "base_problem": "network_interdiction",
@@ -888,25 +705,6 @@
         "recourse": "dispatch"
       }
     },
-    "SCHEDULING/MAINTENANCE-SCHEDULING": {
-      "navigation_domain": "SCHEDULING",
-      "base_problem": "maintenance_scheduling",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "temporal_mip",
-      "allowed_solver_families": [
-        "temporal_mip"
-      ],
-      "default_variant": {
-        "power_flow": "copperplate",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
     "UC/RTS-SCUC": {
       "navigation_domain": "UC",
       "base_problem": "uc",
@@ -967,105 +765,6 @@
         "recourse": "none"
       }
     },
-    "DISPATCH/DEMAND-RESPONSE": {
-      "navigation_domain": "DISPATCH",
-      "base_problem": "demand_response",
-      "default_math_class": "qp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "copperplate",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
-    "SCHEDULING/STORAGE-SCHEDULING": {
-      "navigation_domain": "SCHEDULING",
-      "base_problem": "storage_scheduling",
-      "default_math_class": "qp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "copperplate",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
-    "PLANNING/DISTRIBUTION-EXPANSION": {
-      "navigation_domain": "PLANNING",
-      "base_problem": "distribution_expansion",
-      "default_math_class": "milp",
-      "allowed_math_classes": [
-        "milp"
-      ],
-      "default_solver_family": "topology_mip",
-      "allowed_solver_families": [
-        "topology_mip"
-      ],
-      "default_variant": {
-        "power_flow": "lindistflow",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
-    "DISTRIBUTION/MICROGRID": {
-      "navigation_domain": "DISTRIBUTION",
-      "base_problem": "microgrid",
-      "default_math_class": "qp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "copperplate",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none"
-      }
-    },
-    "DISTRIBUTION/UNBALANCED-DOPF": {
-      "navigation_domain": "DISTRIBUTION",
-      "base_problem": "distribution_opf",
-      "default_math_class": "lp",
-      "allowed_math_classes": [
-        "lp",
-        "qp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "lindistflow",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "single_period",
-        "recourse": "none"
-      }
-    },
     "OPF/SC-AC-OPF": {
       "navigation_domain": "OPF",
       "base_problem": "opf",
@@ -1083,48 +782,6 @@
         "uncertainty": "deterministic",
         "horizon": "single_period",
         "recourse": "preventive"
-      }
-    },
-    "DATACENTER/GEOGRAPHIC-LOAD-BALANCING": {
-      "navigation_domain": "DATACENTER",
-      "base_problem": "datacenter_glb",
-      "default_math_class": "lp",
-      "allowed_math_classes": [
-        "lp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch"
-      ],
-      "default_variant": {
-        "power_flow": "none",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none",
-        "formulation": "equity_aware_geographical_load_balancing"
-      }
-    },
-    "DATACENTER/GREEN-LLM": {
-      "navigation_domain": "DATACENTER",
-      "base_problem": "green_llm",
-      "default_math_class": "lp",
-      "allowed_math_classes": [
-        "lp",
-        "milp"
-      ],
-      "default_solver_family": "convex_dispatch",
-      "allowed_solver_families": [
-        "convex_dispatch",
-        "temporal_mip"
-      ],
-      "default_variant": {
-        "power_flow": "none",
-        "security": "none",
-        "uncertainty": "deterministic",
-        "horizon": "multi_period",
-        "recourse": "none",
-        "formulation": "weighted_llm_allocation"
       }
     },
     "DATACENTER/FLEXIBLE-DC-LOAD": {

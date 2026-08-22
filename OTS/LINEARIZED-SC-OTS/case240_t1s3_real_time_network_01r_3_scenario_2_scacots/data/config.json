@@ -16,20 +16,33 @@
     387,
     22,
     10,
-    206
+    206,
+    213,
+    228,
+    314,
+    35,
+    116,
+    227,
+    242,
+    36,
+    87,
+    232,
+    296,
+    298
   ],
-  "max_open": 2,
+  "max_open": 4,
   "mip_gap": 0.02,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
-  "threads": 0,
+  "threads": 1,
   "solve_tier": "relaxed",
   "load_shed_penalty": 10000.0,
   "construction": [
     "Linearized DC security-constrained OTS (NOT exact AC).",
     "Security constraints cover a sampled subset of case.con contingencies (branch + generator), not the complete N-1 set.",
     "OTS candidates = top rateA lines; max_open=2.",
-    "nB=500, nG=90 (77 online), nL=599, Nc=5, tier=relaxed"
+    "nB=500, nG=90 (77 online), nL=599, Nc=5, tier=relaxed",
+    "harden: n_switchable=20 max_open=4 n_cont=15"
   ],
   "base_problem": "ots",
   "variant": {
@@ -50,13 +63,16 @@
     "n_storage": 0,
     "n_candidate_branch": 0,
     "T": 1,
-    "n_contingency": 5,
+    "n_contingency": 15,
     "n_scenario": 1,
-    "n_switchable": 8,
-    "max_open": 2,
+    "n_switchable": 20,
+    "max_open": 4,
     "k": null,
-    "n_bin": 8,
+    "n_bin": 20,
     "math_class": "milp",
     "solver_family": "security_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

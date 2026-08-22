@@ -2,7 +2,7 @@
   "name": "rts_gmlc_2020-12-23",
   "source": {
     "network": "RTS-GMLC",
-    "uc": "\u6570\u636e\u96c6/pglib-uc-master/rts_gmlc/2020-12-23.json"
+    "uc": "数据集/pglib-uc-master/rts_gmlc/2020-12-23.json"
   },
   "baseMVA": 100.0,
   "buses": [

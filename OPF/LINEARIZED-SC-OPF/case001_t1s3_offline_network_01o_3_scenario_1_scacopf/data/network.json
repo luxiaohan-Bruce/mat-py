@@ -15790,12 +15790,762 @@
       "branch": null,
       "gen_bus": 17,
       "gen_id": "1"
+    },
+    {
+      "name": "syn_L_86",
+      "branch": {
+        "fbus": 80,
+        "tbus": 65,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_240",
+      "branch": {
+        "fbus": 232,
+        "tbus": 371,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_246",
+      "branch": {
+        "fbus": 235,
+        "tbus": 407,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_340",
+      "branch": {
+        "fbus": 332,
+        "tbus": 471,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_393",
+      "branch": {
+        "fbus": 386,
+        "tbus": 14,
+        "ckt": "2"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_27",
+      "branch": {
+        "fbus": 23,
+        "tbus": 471,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_158",
+      "branch": {
+        "fbus": 146,
+        "tbus": 162,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_176",
+      "branch": {
+        "fbus": 162,
+        "tbus": 220,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_425",
+      "branch": {
+        "fbus": 428,
+        "tbus": 151,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_163",
+      "branch": {
+        "fbus": 151,
+        "tbus": 23,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_175",
+      "branch": {
+        "fbus": 162,
+        "tbus": 195,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_188",
+      "branch": {
+        "fbus": 175,
+        "tbus": 220,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_405",
+      "branch": {
+        "fbus": 407,
+        "tbus": 80,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_25",
+      "branch": {
+        "fbus": 23,
+        "tbus": 386,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_26",
+      "branch": {
+        "fbus": 23,
+        "tbus": 464,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_64",
+      "branch": {
+        "fbus": 57,
+        "tbus": 123,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_180",
+      "branch": {
+        "fbus": 165,
+        "tbus": 386,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_241",
+      "branch": {
+        "fbus": 232,
+        "tbus": 453,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_271",
+      "branch": {
+        "fbus": 262,
+        "tbus": 232,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_430",
+      "branch": {
+        "fbus": 440,
+        "tbus": 386,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_6",
+      "branch": {
+        "fbus": 7,
+        "tbus": 262,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_46",
+      "branch": {
+        "fbus": 39,
+        "tbus": 332,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_47",
+      "branch": {
+        "fbus": 39,
+        "tbus": 428,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_72",
+      "branch": {
+        "fbus": 65,
+        "tbus": 297,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_159",
+      "branch": {
+        "fbus": 146,
+        "tbus": 195,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_177",
+      "branch": {
+        "fbus": 162,
+        "tbus": 232,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_179",
+      "branch": {
+        "fbus": 165,
+        "tbus": 123,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_232",
+      "branch": {
+        "fbus": 220,
+        "tbus": 471,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_245",
+      "branch": {
+        "fbus": 235,
+        "tbus": 271,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_260",
+      "branch": {
+        "fbus": 246,
+        "tbus": 332,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_261",
+      "branch": {
+        "fbus": 246,
+        "tbus": 471,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_309",
+      "branch": {
+        "fbus": 297,
+        "tbus": 440,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_423",
+      "branch": {
+        "fbus": 425,
+        "tbus": 297,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_429",
+      "branch": {
+        "fbus": 440,
+        "tbus": 57,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_448",
+      "branch": {
+        "fbus": 471,
+        "tbus": 464,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_92",
+      "branch": {
+        "fbus": 87,
+        "tbus": 141,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_93",
+      "branch": {
+        "fbus": 87,
+        "tbus": 143,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_156",
+      "branch": {
+        "fbus": 143,
+        "tbus": 401,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_421",
+      "branch": {
+        "fbus": 423,
+        "tbus": 496,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_312",
+      "branch": {
+        "fbus": 300,
+        "tbus": 141,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_154",
+      "branch": {
+        "fbus": 143,
+        "tbus": 247,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_23",
+      "branch": {
+        "fbus": 21,
+        "tbus": 196,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_157",
+      "branch": {
+        "fbus": 143,
+        "tbus": 452,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_262",
+      "branch": {
+        "fbus": 247,
+        "tbus": 401,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_467",
+      "branch": {
+        "fbus": 496,
+        "tbus": 143,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_371",
+      "branch": {
+        "fbus": 367,
+        "tbus": 15,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_439",
+      "branch": {
+        "fbus": 452,
+        "tbus": 76,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_456",
+      "branch": {
+        "fbus": 485,
+        "tbus": 454,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_457",
+      "branch": {
+        "fbus": 485,
+        "tbus": 499,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_149",
+      "branch": {
+        "fbus": 137,
+        "tbus": 426,
+        "ckt": "2"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_331",
+      "branch": {
+        "fbus": 322,
+        "tbus": 58,
+        "ckt": "2"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_407",
+      "branch": {
+        "fbus": 408,
+        "tbus": 399,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_7",
+      "branch": {
+        "fbus": 8,
+        "tbus": 287,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_31",
+      "branch": {
+        "fbus": 27,
+        "tbus": 68,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_36",
+      "branch": {
+        "fbus": 31,
+        "tbus": 85,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_121",
+      "branch": {
+        "fbus": 112,
+        "tbus": 236,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_139",
+      "branch": {
+        "fbus": 131,
+        "tbus": 333,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_142",
+      "branch": {
+        "fbus": 133,
+        "tbus": 369,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_144",
+      "branch": {
+        "fbus": 135,
+        "tbus": 287,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_256",
+      "branch": {
+        "fbus": 242,
+        "tbus": 320,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_263",
+      "branch": {
+        "fbus": 251,
+        "tbus": 360,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_274",
+      "branch": {
+        "fbus": 263,
+        "tbus": 476,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_275",
+      "branch": {
+        "fbus": 263,
+        "tbus": 491,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_319",
+      "branch": {
+        "fbus": 310,
+        "tbus": 281,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_328",
+      "branch": {
+        "fbus": 318,
+        "tbus": 336,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_357",
+      "branch": {
+        "fbus": 349,
+        "tbus": 403,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_440",
+      "branch": {
+        "fbus": 454,
+        "tbus": 29,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_453",
+      "branch": {
+        "fbus": 476,
+        "tbus": 486,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_454",
+      "branch": {
+        "fbus": 477,
+        "tbus": 295,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_461",
+      "branch": {
+        "fbus": 490,
+        "tbus": 117,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_12",
+      "branch": {
+        "fbus": 12,
+        "tbus": 304,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_377",
+      "branch": {
+        "fbus": 372,
+        "tbus": 112,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_13",
+      "branch": {
+        "fbus": 12,
+        "tbus": 441,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_458",
+      "branch": {
+        "fbus": 488,
+        "tbus": 156,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
+    },
+    {
+      "name": "syn_L_44",
+      "branch": {
+        "fbus": 37,
+        "tbus": 176,
+        "ckt": "1"
+      },
+      "gen_bus": null,
+      "gen_id": null
     }
   ],
   "source_files": {
-    "raw": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_1/case.raw",
-    "rop": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.rop",
-    "inl": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.inl",
-    "con": "/Users/bruce/Documents/mat-py/\u6570\u636e\u96c6/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_1/case.con"
+    "raw": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_1/case.raw",
+    "rop": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.rop",
+    "inl": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/case.inl",
+    "con": "/Users/bruce/Documents/mat-py/数据集/GO Competition Challenge 1/Challenge_1_Trial_Event_1_Used_Scenarios/T1S3_Offline/Network_01O-3/scenario_1/case.con"
   }
 }

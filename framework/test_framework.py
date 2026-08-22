@@ -78,16 +78,17 @@ class EvaluationTests(unittest.TestCase):
         n_cont: object = 5,
         load_shed_MW: object = 0.0,
         flow_slack_pu: object = 0.0,
+        variant: dict | None = None,
     ) -> Path:
         case = root / "case01_linearized_sc"
-        _write_json(
-            case / "data" / "config.json",
-            {
-                "solve_tier": "relaxed",
-                "problem": problem,
-                "features": {"n_contingency": 5},
-            },
-        )
+        config: dict = {
+            "solve_tier": "relaxed",
+            "problem": problem,
+            "features": {"n_contingency": 5},
+        }
+        if variant is not None:
+            config["variant"] = variant
+        _write_json(case / "data" / "config.json", config)
         _write_json(
             case / "results" / "python_result.json",
             {
@@ -119,6 +120,36 @@ class EvaluationTests(unittest.TestCase):
             ({"load_shed_MW": None}, "load_shed_MW=None"),
             ({"flow_slack_pu": 1.1e-6}, "flow_slack_pu=1.1e-06"),
             ({"flow_slack_pu": None}, "flow_slack_pu=None"),
+        )
+        for overrides, expected in cases:
+            with self.subTest(overrides=overrides), tempfile.TemporaryDirectory() as tmp:
+                result = evaluate(
+                    self._write_linearized_sc_case(Path(tmp), **overrides)
+                )
+                self.assertFalse(result["passed"])
+                self.assertIn(expected, result["violations"])
+
+    def test_linearized_sc_allows_load_shed_when_recourse_is_nse(self) -> None:
+        variant = {"recourse": "corrective_limited_with_nse"}
+        for problem in ("linearized_scacopf", "linearized_scacots"):
+            with self.subTest(problem=problem), tempfile.TemporaryDirectory() as tmp:
+                result = evaluate(
+                    self._write_linearized_sc_case(
+                        Path(tmp),
+                        problem=problem,
+                        load_shed_MW=80.63,
+                        variant=variant,
+                    )
+                )
+                self.assertTrue(result["passed"])
+                self.assertEqual(result["reason"], "ok")
+                self.assertEqual(result["residuals"].get("load_shed_MW"), 80.63)
+
+    def test_linearized_sc_nse_variant_still_rejects_flow_slack_and_missing_shed(self) -> None:
+        variant = {"recourse": "corrective_limited_with_nse"}
+        cases = (
+            ({"load_shed_MW": None, "variant": variant}, "load_shed_MW=None"),
+            ({"flow_slack_pu": 1.1e-6, "variant": variant}, "flow_slack_pu=1.1e-06"),
         )
         for overrides, expected in cases:
             with self.subTest(overrides=overrides), tempfile.TemporaryDirectory() as tmp:

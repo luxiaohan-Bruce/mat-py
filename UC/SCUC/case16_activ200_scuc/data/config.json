@@ -2,20 +2,32 @@
   "case": "case16_activ200_scuc",
   "problem": "scuc",
   "source": "pglib_opf_case200_activ",
-  "T": 12,
+  "T": 24,
   "load_mult": [
-    0.72,
-    0.85,
+    0.6,
+    0.56,
+    0.54,
+    0.53,
+    0.55,
+    0.62,
+    0.76,
+    0.88,
+    0.94,
+    0.96,
+    0.98,
+    1.0,
+    0.97,
     0.95,
-    0.99,
+    0.93,
+    0.92,
+    0.94,
+    0.98,
     1.0,
-    1.02,
-    1.05,
-    1.04,
-    1.02,
-    1.0,
-    1.03,
-    1.08
+    0.98,
+    0.9,
+    0.82,
+    0.72,
+    0.65
   ],
   "load_scale": 0.72,
   "contingencies": [
@@ -24,7 +36,13 @@
     237,
     235,
     234,
-    233
+    233,
+    26,
+    27,
+    71,
+    72,
+    73,
+    86
   ],
   "emergency_rate_factor": 1.0,
   "mip_gap": 0.0001,
@@ -40,7 +58,8 @@
     "bucket=M tier=full.",
     "Active gens=49; Pd0=1475.7 MW.",
     "UC: Pmin=max(pglib,0.2Pmax); RU=RD=0.5Pmax; startup=50*c1*sqrt(Pmax).",
-    "Contingencies: [241, 238, 237, 235, 234, 233]"
+    "Contingencies: [241, 238, 237, 235, 234, 233]",
+    "harden: T=24 n_cont=12"
   ],
   "base_problem": "uc",
   "variant": {
@@ -58,14 +77,17 @@
     "n_gen": 49,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 12,
-    "n_contingency": 6,
+    "T": 24,
+    "n_contingency": 12,
     "n_scenario": 1,
     "n_switchable": 0,
     "max_open": null,
     "k": null,
-    "n_bin": 588,
+    "n_bin": 1176,
     "math_class": "milp",
     "solver_family": "security_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

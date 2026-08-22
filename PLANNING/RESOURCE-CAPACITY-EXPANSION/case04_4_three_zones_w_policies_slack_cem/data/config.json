@@ -28,7 +28,8 @@
       "synthetic_tdr:even_sample_from_8760_to_24_weights_sum_8760.0",
       "policy_skipped_v1:energy_share_requirement",
       "policy_skipped_v1:capacity_reserve_margin",
-      "policy_skipped_v1:max_capacity_requirement"
+      "policy_skipped_v1:max_capacity_requirement",
+      "harden: CEM tiled T=24->2184"
     ]
   },
   "gurobi_parameters": {
@@ -39,7 +40,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "genx:4_three_zones_w_policies_slack",
@@ -49,7 +50,7 @@
     "n_gen": 7,
     "n_storage": 3,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 2184,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

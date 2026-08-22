@@ -9,20 +9,20 @@
   },
   "scuc": {
     "status": "OPTIMAL",
-    "obj": 1308139.4399999988,
+    "obj": 1308139.4400000004,
     "obj_bound": 1308139.4399999972,
-    "mip_gap": 1.245902734632853e-15,
-    "runtime": 1.0106191635131836,
+    "mip_gap": 2.491805469265703e-15,
+    "runtime": 6.23298454284668,
     "T": 24,
     "n_thermal": 73,
     "n_renewable": 81,
     "n_storage": 21,
-    "n_contingencies": 6,
+    "n_contingencies": 12,
     "load_shed_MW_total": 0.0,
-    "max_balance_residual_MW": 2.091837814077735e-11,
+    "max_balance_residual_MW": 1.4097167877480388e-11,
     "startups": 0,
     "n_binary": 5256,
-    "n_variables": 46392,
-    "n_constraints": 93789
+    "n_variables": 74184,
+    "n_constraints": 155997
   }
 }

@@ -22,11 +22,31 @@
     18,
     72,
     14,
-    60
+    60,
+    33,
+    1,
+    61,
+    53,
+    3,
+    51,
+    13,
+    49,
+    45,
+    52,
+    28,
+    79,
+    57,
+    48,
+    21,
+    40,
+    22,
+    26,
+    2,
+    15
   ],
-  "max_open": 3,
+  "max_open": 4,
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "bigM_policy": "indicator constraints (see model)",
@@ -81,7 +101,8 @@
     "id=56 41-43: rateA 72.000->57.600",
     "id=60 46-47: rateA 409.000->327.200",
     "id=72 44-45: rateA 212.000->169.600",
-    "id=74 56-41: rateA 38.000->30.400"
+    "id=74 56-41: rateA 38.000->30.400",
+    "harden: n_switchable=40 max_open=4 switchable_rate*0.95"
   ],
   "base_problem": "ots",
   "variant": {
@@ -101,11 +122,14 @@
     "T": 1,
     "n_contingency": 0,
     "n_scenario": 1,
-    "n_switchable": 20,
-    "max_open": 3,
+    "n_switchable": 40,
+    "max_open": 4,
     "k": null,
-    "n_bin": 20,
+    "n_bin": 40,
     "math_class": "milp",
     "solver_family": "topology_mip"
+  },
+  "gurobi_parameters": {
+    "Threads": 1
   }
 }

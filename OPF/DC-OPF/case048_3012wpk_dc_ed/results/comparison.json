@@ -1,9 +1,0 @@
-{
-  "case": "case048_3012wpk_dc_ed",
-  "tier": "skip",
-  "ok": true,
-  "issues": [],
-  "checks": {
-    "mode": "data_only_skip"
-  }
-}

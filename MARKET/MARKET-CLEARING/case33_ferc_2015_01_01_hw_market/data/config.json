@@ -24,7 +24,8 @@
     "transformations": [
       "pwl_production_to_truthful_step_offers",
       "renewable_zero_price_period_qty",
-      "synthetic_linear_demand_utility_voll"
+      "synthetic_linear_demand_utility_voll",
+      "harden: market tiled T=48->168"
     ],
     "voll_usd_per_mwh": 10000.0,
     "voll_source": "synthetic"
@@ -48,7 +49,7 @@
     "n_gen": 0,
     "n_storage": 0,
     "n_candidate_branch": 0,
-    "T": 48,
+    "T": 168,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,

@@ -38,7 +38,8 @@
       "vre_stor_standalone_as_storage:CT_storage_metalair_advanced",
       "vre_stor_standalone_as_storage:ME_storage_metalair_advanced",
       "time_series_kept_all_T=24_weight_each=365.0000",
-      "policy_skipped_v1:capacity_reserve_margin"
+      "policy_skipped_v1:capacity_reserve_margin",
+      "harden: CEM tiled T=24->672"
     ]
   },
   "gurobi_parameters": {
@@ -49,7 +50,7 @@
   },
   "solve_tier": "full",
   "mip_gap": 1e-06,
-  "time_limit": 600,
+  "time_limit": 600.0,
   "seed": 1,
   "threads": 1,
   "source_network": "genx:7_three_zones_w_colocated_VRE_storage",
@@ -59,7 +60,7 @@
     "n_gen": 13,
     "n_storage": 6,
     "n_candidate_branch": 0,
-    "T": 24,
+    "T": 672,
     "n_contingency": 0,
     "n_scenario": 1,
     "n_switchable": 0,
