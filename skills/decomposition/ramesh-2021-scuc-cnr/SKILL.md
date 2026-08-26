@@ -1,6 +1,6 @@
 # Ramesh 2021：主问题 UC + 事故可行割（无开关则不要 CNR）
 
-Arun Ramamurthy Ramesh, Xingpeng Li, Kory W. Hedman. *An Accelerated-Decomposition Approach for Security-Constrained Unit Commitment With Corrective Network Reconfiguration.* IEEE Trans. Power Syst., 2021.
+Arun Venkatesh Ramesh, Xingpeng Li, Kory W. Hedman. *An Accelerated-Decomposition Approach for Security-Constrained Unit Commitment With Corrective Network Reconfiguration.* IEEE Trans. Power Syst., 37(2), 887–900, 2022 (online 2021).
 
 ## 算法解读
 

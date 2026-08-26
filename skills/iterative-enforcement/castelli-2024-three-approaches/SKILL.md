@@ -1,6 +1,6 @@
 # Castelli 2024：在 MIP incumbent 上 lazy 加入违反热稳
 
-A. F. Castelli, I. Harjunkoski, J. Poland, M. Giuntoli, E. Martelli, I. E. Grossmann. *Solving the security constrained unit commitment problem: Three novel approaches.* Electric Power Systems Research, 2024.
+A. F. Castelli, I. Harjunkoski, J. Poland, M. Giuntoli, E. Martelli, I. E. Grossmann. *Solving the security constrained unit commitment problem: Three novel approaches.* Int. J. Electr. Power Energy Syst., 162, 110213, 2024.
 
 ## 算法解读
 
