@@ -1,36 +1,63 @@
-# skills 所用论文
+# Skills 论文索引
 
+27 篇论文对应 27 个 skill，按约束处理与变量处理分类。问题类型与方法选择见 [技能目录](README.md)；每条方法链接进入独立的 `SKILL.md`。
 
----
+## 约束处理 / 求解前约束筛选
 
-## constraint-screening（求解前筛热稳）
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 1 | [zhai-2010-inactive](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/zhai-2010-inactive/SKILL.md) | `screen_inactive_thermal_zhai` | Qiaozhu Zhai, Xiaohong Guan, Jinghui Cheng, Hongyu Wu. *Fast Identification of Inactive Security Constraints in SCUC Problems.* IEEE Trans. Power Syst., 25(2), 2010. |
+| 2 | [ding-2020-redundant-uncertainty](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/ding-2020-redundant-uncertainty/SKILL.md) | `screen_redundant_thermal_ding` | Tao Ding, Cheng Li, Fangxing Li, Tianen Chen, Rui Bo. *Fast identifying redundant security constraints in SCUC in the presence of uncertainties.* IET Gener. Transm. Distrib., 14(20), 2020. |
+| 3 | [ardakani-2015-umbrella](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/ardakani-2015-umbrella/SKILL.md) | `screen_umbrella_pucd` | Ali Jahanbani Ardakani, François Bouffard. *Acceleration of Umbrella Constraint Discovery in Generation Scheduling Problems.* IEEE Trans. Power Syst., 30(4), 2015. |
+| 4 | [porras-2021-cost-driven](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/porras-2021-cost-driven/SKILL.md) | `screen_cost_driven_porras` | Álvaro Porras, Salvador Pineda, Juan M. Morales, Asunción Jiménez-Cordero. *Cost-driven Screening of Network Constraints for the Unit Commitment Problem.* IEEE Trans. Power Syst., 2023. [arXiv:2104.05746](https://arxiv.org/abs/2104.05746) |
+| 5 | [awadalla-2023-tight-compact](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/awadalla-2023-tight-compact/SKILL.md) | `screen_tight_compact_awadalla` | Mohamed Awadalla, François Bouffard. *Tight and Compact Data-Driven Linear Relaxations for Constraint Screening in Unit Commitment.* IEEE Trans. Energy Markets, Policy and Regulation, 2024 (online 2023). |
+| 6 | [he-2025-vertex-guided](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2025-vertex-guided/SKILL.md) | `screen_vertex_guided_he2025` | Xuan He, Yuxin Pan, Yize Chen, Danny H.K. Tsang. *Vertex-Guided Redundant Constraints Identification for Unit Commitment.* [arXiv:2507.09280](https://arxiv.org/abs/2507.09280), 2025. |
+| 7 | [he-2023-multi-interval](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2023-multi-interval/SKILL.md) | `screen_multi_interval_he2023` | Xuan He, Jiayu Tian, Yufan Zhang, Honglin Wen, Yize Chen. *Fast Constraint Screening for Multi-Interval Unit Commitment.* [arXiv:2309.05894](https://arxiv.org/abs/2309.05894), 2023. |
+| 8 | [he-2026-screening-uncertainty](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2026-screening-uncertainty/SKILL.md) | `screen_uncertainty_he2026` | Xuan He, Honglin Wen, Yufan Zhang, Yize Chen, Danny H.K. Tsang. *Modeling and tackling unit commitment constraint screening under uncertainty.* Applied Energy, 2026. Preprint [arXiv:2408.05185](https://arxiv.org/abs/2408.05185). |
 
-| # | Skill | 工具 | 论文 |
-|---|-------|------|------|
-| 1 | [`zhai-2010-inactive`](constraint-screening/zhai-2010-inactive/SKILL.md) | `screen_inactive_thermal_zhai` | Qiaozhu Zhai, Xiaohong Guan, Jinghui Cheng, Hongyu Wu. *Fast Identification of Inactive Security Constraints in SCUC Problems.* IEEE Trans. Power Syst., 25(2), 2010. |
-| 2 | [`ding-2020-redundant-uncertainty`](constraint-screening/ding-2020-redundant-uncertainty/SKILL.md) | `screen_redundant_thermal_ding` | Tao Ding, Cheng Li, Fangxing Li, Tianen Chen, Rui Bo. *Fast identifying redundant security constraints in SCUC in the presence of uncertainties.* IET Gener. Transm. Distrib., 14(20), 2020. |
-| 3 | [`ardakani-2015-umbrella`](constraint-screening/ardakani-2015-umbrella/SKILL.md) | `screen_umbrella_pucd` | Ali Jahanbani Ardakani, François Bouffard. *Acceleration of Umbrella Constraint Discovery in Generation Scheduling Problems.* IEEE Trans. Power Syst., 30(4), 2015. |
-| 4 | [`porras-2021-cost-driven`](constraint-screening/porras-2021-cost-driven/SKILL.md) | `screen_cost_driven_porras` | Álvaro Porras, Salvador Pineda, Juan M. Morales, Asunción Jiménez-Cordero. *Cost-driven Screening of Network Constraints for the Unit Commitment Problem.* IEEE Trans. Power Syst., 2023. [arXiv:2104.05746](https://arxiv.org/abs/2104.05746) |
-| 5 | [`awadalla-2023-tight-compact`](constraint-screening/awadalla-2023-tight-compact/SKILL.md) | `screen_tight_compact_awadalla` | Mohamed Awadalla, François Bouffard. *Tight and Compact Data-Driven Linear Relaxations for Constraint Screening in Unit Commitment.* IEEE Trans. Energy Markets, Policy and Regulation, 2024 (online 2023). |
-| 6 | [`he-2025-vertex-guided`](constraint-screening/he-2025-vertex-guided/SKILL.md) | `screen_vertex_guided_he2025` | Xuan He, Yuxin Pan, Yize Chen, Danny H.K. Tsang. *Vertex-Guided Redundant Constraints Identification for Unit Commitment.* [arXiv:2507.09280](https://arxiv.org/abs/2507.09280), 2025. |
-| 7 | [`he-2023-multi-interval`](constraint-screening/he-2023-multi-interval/SKILL.md) | `screen_multi_interval_he2023` | Xuan He, Jiayu Tian, Yufan Zhang, Honglin Wen, Yize Chen. *Fast Constraint Screening for Multi-Interval Unit Commitment.* [arXiv:2309.05894](https://arxiv.org/abs/2309.05894), 2023. |
-| 8 | [`he-2026-screening-uncertainty`](constraint-screening/he-2026-screening-uncertainty/SKILL.md) | `screen_uncertainty_he2026` | Xuan He, Honglin Wen, Yufan Zhang, Yize Chen, Danny H.K. Tsang. *Modeling and tackling unit commitment constraint screening under uncertainty.* Applied Energy, 2026. Preprint [arXiv:2408.05185](https://arxiv.org/abs/2408.05185). |
+## 约束处理 / 迭代补充安全约束
 
-## iterative-enforcement（松弛先解，SFT 再加割）
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 9 | [holzer-2024-fast-sft](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/holzer-2024-fast-sft/SKILL.md) | `sft_lodf_holzer` | J. T. Holzer, Y. Chen, Z. Wu, C. Pan, A. Veeramany. *Fast Simultaneous Feasibility Test for Security Constrained Unit Commitment.* IEEE Trans. Power Syst., 39(1), 1068–1078, 2024. [doi:10.1109/TPWRS.2023.3265269](https://doi.org/10.1109/TPWRS.2023.3265269) |
+| 10 | [tejada-2018-lodf](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/tejada-2018-lodf/SKILL.md) | `select_all_violations_tejada` | Diego A. Tejada-Arango, Pedro Sánchez-Martín, Andres Ramos. *Security Constrained Unit Commitment Using Line Outage Distribution Factors.* IEEE Trans. Power Syst., 33(1), 2018. |
+| 11 | [xavier-2019-filter](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/xavier-2019-filter/SKILL.md) | `filter_transmission_constraints_xavier` | Alinson S. Xavier, Feng Qiu, Fengyu Wang, Prakash R. Thimmapuram. *Transmission Constraint Filtering in Large-Scale Security-Constrained Unit Commitment.* IEEE Trans. Power Syst., 34(3), 2457–2460, 2019 (PES Letters). [doi:10.1109/TPWRS.2019.2892620](https://doi.org/10.1109/TPWRS.2019.2892620) |
+| 12 | [chen-2016-miso](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/chen-2016-miso/SKILL.md) | `select_watchlist_then_sft_chen` | Yonghong Chen, Aaron Casto, Fengyu Wang, Qun Zhou Wang, Xing Wang, Jie Wan. *Improving Large-Scale Day-Ahead Security Constrained Unit Commitment Performance.* IEEE Trans. Power Syst., 31(6), 2016. |
+| 13 | [castelli-2024-three-approaches](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/castelli-2024-three-approaches/SKILL.md) | `lazy_thermal_from_incumbent_castelli` | A. F. Castelli, I. Harjunkoski, J. Poland, M. Giuntoli, E. Martelli, I. E. Grossmann. *Solving the security constrained unit commitment problem: Three novel approaches.* Int. J. Electr. Power Energy Syst., 162, 110213, 2024. [doi:10.1016/j.ijepes.2024.110213](https://doi.org/10.1016/j.ijepes.2024.110213) |
 
-| # | Skill | 工具 | 论文 |
-|---|-------|------|------|
-| 9 | [`holzer-2024-fast-sft`](iterative-enforcement/holzer-2024-fast-sft/SKILL.md) | `sft_lodf_holzer` | J. T. Holzer, Y. Chen, Z. Wu, C. Pan, A. Veeramany. *Fast Simultaneous Feasibility Test for Security Constrained Unit Commitment.* IEEE Trans. Power Syst., 39(1), 1068–1078, 2024. [doi:10.1109/TPWRS.2023.3265269](https://doi.org/10.1109/TPWRS.2023.3265269) |
-| 10 | [`tejada-2018-lodf`](iterative-enforcement/tejada-2018-lodf/SKILL.md) | `select_all_violations_tejada` | Diego A. Tejada-Arango, Pedro Sánchez-Martín, Andres Ramos. *Security Constrained Unit Commitment Using Line Outage Distribution Factors.* IEEE Trans. Power Syst., 33(1), 2018. |
-| 11 | [`xavier-2019-filter`](iterative-enforcement/xavier-2019-filter/SKILL.md) | `filter_transmission_constraints_xavier` | Alinson S. Xavier, Feng Qiu, Fengyu Wang, Prakash R. Thimmapuram. *Transmission Constraint Filtering in Large-Scale Security-Constrained Unit Commitment.* IEEE Trans. Power Syst., 34(3), 2457–2460, 2019 (PES Letters). [doi:10.1109/TPWRS.2019.2892620](https://doi.org/10.1109/TPWRS.2019.2892620) |
-| 12 | [`chen-2016-miso`](iterative-enforcement/chen-2016-miso/SKILL.md) | `select_watchlist_then_sft_chen` | Yonghong Chen, Aaron Casto, Fengyu Wang, Qun Zhou Wang, Xing Wang, Jie Wan. *Improving Large-Scale Day-Ahead Security Constrained Unit Commitment Performance.* IEEE Trans. Power Syst., 31(6), 2016. |
-| 13 | [`castelli-2024-three-approaches`](iterative-enforcement/castelli-2024-three-approaches/SKILL.md) | `lazy_thermal_from_incumbent_castelli` | A. F. Castelli, I. Harjunkoski, J. Poland, M. Giuntoli, E. Martelli, I. E. Grossmann. *Solving the security constrained unit commitment problem: Three novel approaches.* Int. J. Electr. Power Energy Syst., 162, 110213, 2024. [doi:10.1016/j.ijepes.2024.110213](https://doi.org/10.1016/j.ijepes.2024.110213) |
+## 约束处理 / 主问题与事故检查分解
 
-## decomposition（主问题 UC + 事故可行割）
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 14 | [ramesh-2021-scuc-cnr](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/decomposition/ramesh-2021-scuc-cnr/SKILL.md) | `benders_critical_cuts_ramesh` | Arun Venkatesh Ramesh, Xingpeng Li, Kory W. Hedman. *An Accelerated-Decomposition Approach for Security-Constrained Unit Commitment With Corrective Network Reconfiguration.* IEEE Trans. Power Syst., 37(2), 887–900, 2022 (online 2021). [doi:10.1109/TPWRS.2021.3098771](https://doi.org/10.1109/TPWRS.2021.3098771) · [arXiv:1912.01764](https://arxiv.org/abs/1912.01764) |
 
-| # | Skill | 工具 | 论文 |
-|---|-------|------|------|
-| 14 | [`ramesh-2021-scuc-cnr`](decomposition/ramesh-2021-scuc-cnr/SKILL.md) | `benders_critical_cuts_ramesh` | Arun Venkatesh Ramesh, Xingpeng Li, Kory W. Hedman. *An Accelerated-Decomposition Approach for Security-Constrained Unit Commitment With Corrective Network Reconfiguration.* IEEE Trans. Power Syst., 37(2), 887–900, 2022 (online 2021). [doi:10.1109/TPWRS.2021.3098771](https://doi.org/10.1109/TPWRS.2021.3098771) · [arXiv:1912.01764](https://arxiv.org/abs/1912.01764) |
+## 变量处理 / 变量固定与变量辨识
+
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 15 | [li-variable-reduction](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/variable-fixing-and-identification/li-variable-reduction/SKILL.md) | `rank_fixings` | Xuan Li, Qiaozhu Zhai, Jingxuan Zhou, Xiaohong Guan. *A Variable Reduction Method for Large-Scale Unit Commitment.* IEEE Transactions on Power Systems, 35(1), 2020（在线 2019）。[DOI](https://doi.org/10.1109/TPWRS.2019.2930571)。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E5%8F%98%E9%87%8F%E5%9B%BA%E5%AE%9A%3A%E5%8F%98%E9%87%8F%E8%BE%A8%E8%AF%86/li2020.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E5%8F%98%E9%87%8F%E5%9B%BA%E5%AE%9A%3A%E5%8F%98%E9%87%8F%E8%BE%A8%E8%AF%86/li2020.pdf-125eafb5-661f-45e5-9331-28cc1f7ff6a8/full.md) |
+| 16 | [li-hybrid-branching](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/variable-fixing-and-identification/li-hybrid-branching/SKILL.md) | `choose_uphb` | 李佩杰、葛佳伟、袁沐琛、徐胜男。《求解安全约束机组组合的定制化混合分支方法》。电工技术学报，41(11)，2026 年 6 月（年份取自原 PDF 首页）。[DOI](https://doi.org/10.19595/j.cnki.1000-6753.tces.250683)。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E5%8F%98%E9%87%8F%E5%9B%BA%E5%AE%9A%3A%E5%8F%98%E9%87%8F%E8%BE%A8%E8%AF%86/A%20Customized%20Hybrid%20Branching%20for%20Solving%20Security%20Constrained%20Unit%20Commitment%20Problems.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E5%8F%98%E9%87%8F%E5%9B%BA%E5%AE%9A%3A%E5%8F%98%E9%87%8F%E8%BE%A8%E8%AF%86/A%20Customized%20Hybrid%20Branching%20for%20Solving%20Security%20Constrained%20Unit%20Commitment%20Problems.pdf-e3b7ffa1-1afd-4f8e-81c7-9c81e1cc0c42/full.md) |
+
+## 变量处理 / 时段聚合
+
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 17 | [pineda-time-adaptive-uc](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/pineda-time-adaptive-uc/SKILL.md) | `ward_blocks` | Salvador Pineda, Ricardo Fernández-Blanco, Juan Miguel Morales. *Time-Adaptive Unit Commitment.* 2019。[本地全文对应 arXiv:1810.00206v2](https://arxiv.org/abs/1810.00206v2)，PDF 标注 2019-03-11；[期刊 DOI](https://doi.org/10.1109/TPWRS.2019.2903486)。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/1810.00206v2.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/1810.00206v2.pdf-2383ebd5-c3ff-4787-87fd-5184fa6a743e/full.md) |
+| 18 | [yu-network-flexible-time](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/yu-network-flexible-time/SKILL.md) | `optimal_blocks` | Zekuan Yu, Haiwang Zhong, Guangchun Ruan, Xinfei Yan. *Network-Constrained Unit Commitment With Flexible Temporal Resolution.* IEEE Transactions on Power Systems, 40(1), 2025（在线 2024；正式年份取自 PDF 首页）。[DOI](https://doi.org/10.1109/TPWRS.2024.3386867)。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/Network-Constrained-Unit-Commitment-With-Flexible-Temporal-Resolution.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/Network-Constrained-Unit-Commitment-With-Flexible-Temporal-Resolution.pdf-b88d0502-1773-4794-b212-5f7c8aa7c37d/full.md) |
+| 19 | [zhang-representative-scheduling-points](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/zhang-representative-scheduling-points/SKILL.md) | `monotone_assignment` | Menghan Zhang, Zhifang Yang, Wei Lin, Juan Yu, Wei Dai, Ershun Du. *Enhancing economics of power systems through fast unit commitment with high time resolution.* Applied Energy, 281, 116051, 2021（PDF 首页）。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/zhang2021.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/zhang2021.pdf-85cc9e69-8ea5-473c-9c2a-7b5b683ff8e5/full.md) |
+| 20 | [tao-cost-oriented-time](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/tao-cost-oriented-time/SKILL.md) | `combine_boundary_proposals` | Junyi Tao, Ran Li, Salvador Pineda. *Unit Commitment with Cost-Oriented Temporal Resolution.* arXiv:2506.02707v1, 2025。[预印本](https://arxiv.org/abs/2506.02707v1)。当前材料含投稿模板占位，未据此推定期刊录用。 [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/2506.02707v1.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%97%B6%E6%AE%B5%E8%81%9A%E5%90%88/2506.02707v1.pdf-339b6d4a-18a1-4334-99d3-9e5e92f6b7fe/full.md) |
+
+## 变量处理 / 机组聚合
+
+| # | Skill | 核心函数 | 论文与来源 |
+|---|-------|----------|------------|
+| 21 | [meus-clustered-uc-hybrid](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/meus-clustered-uc-hybrid/SKILL.md) | `count_couplings` | Jelle Meus, Kris Poncelet, Erik Delarue. Applicability of a Clustered Unit Commitment Model in Power System Modeling. IEEE Transactions on Power Systems, 2018. DOI: 10.1109/TPWRS.2017.2736441. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/applicability-of-a-clustered-unit-commitment-model-in-power-1k64mxirof.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/applicability-of-a-clustered-unit-commitment-model-in-power-1k64mxirof.pdf-a37ce388-b7f5-4b00-824d-7cb01d101bef/full.md) |
+| 22 | [du-network-clustered-uc](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/du-network-clustered-uc/SKILL.md) | `du_cluster_parameters` | Ershun Du, Ning Zhang, Chongqing Kang, Qing Xia. A High-Efficiency Network-Constrained Clustered Unit Commitment Model for Power System Planning Studies. IEEE Transactions on Power Systems 34(4), 2019. DOI: 10.1109/TPWRS.2018.2881512. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/du2019.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/du2019.pdf-a12685c9-5397-4a7c-8494-c4de313f9dbb/full.md) |
+| 23 | [knueven-identical-generators](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/knueven-identical-generators/SKILL.md) | `split_interval_solution` | Ben Knueven, Jim Ostrowski, Jean-Paul Watson. Exploiting Identical Generators in Unit Commitment. IEEE Transactions on Power Systems, 2018; 本地为2017年接收稿. DOI: 10.1109/TPWRS.2017.2783850. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/knueven2018.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/knueven2018.pdf-94bb774b-bf3e-431b-ac51-80222ea460f2/full.md) |
+| 24 | [koller-shifting-generation-levels](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/koller-shifting-generation-levels/SKILL.md) | `shifting_levels` | Martin Koller, René Hofmann. Efficient clustering of identical generating units for the MILP-UC with a shifting generation level method. Computers & Chemical Engineering 125 (2019), 415–426. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/koller2019.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/koller2019.pdf-1fbb1593-c84c-4a8d-adbe-082b07264508/full.md) |
+| 25 | [morales-espana-hidden-flexibility](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/morales-espana-hidden-flexibility/SKILL.md) | `available_upward` | Germán Morales-España, Diego A. Tejada-Arango. Modeling the Hidden Flexibility of Clustered Unit Commitment. IEEE Transactions on Power Systems 34(4), 2019, 3294–3296. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/morales-espana2019.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/morales-espana2019.pdf-5f9cc766-66d7-4b8c-9ec3-9a71911892d3/full.md) |
+| 26 | [palmintier-heterogeneous-clustering](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/palmintier-heterogeneous-clustering/SKILL.md) | `stratify_units` | Bryan S. Palmintier, Mort D. Webster. Heterogeneous Unit Clustering for Efficient Operational Flexibility Modeling. IEEE Transactions on Power Systems 29(3), 2014, 1089–1098. DOI: 10.1109/TPWRS.2013.2293127. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/palmintier2014.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/palmintier2014.pdf-f07a3ec0-4499-4507-8c38-ffba8e8311a5/full.md) |
+| 27 | [yin-power-flow-clustering](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/yin-power-flow-clustering/SKILL.md) | `split_by_electrical_distance` | Yue Yin, Chuan He, Tianqi Liu, Lei Wu. Risk-Averse Stochastic Midterm Scheduling of Thermal-Hydro-Wind System: A Network-Constrained Clustered Unit Commitment Approach. IEEE Transactions on Sustainable Energy 13(3), 2022, 1293–1304. DOI: 10.1109/TSTE.2022.3150918. [PDF](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/yin2022.pdf) · [MinerU](../%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86%E8%AE%BA%E6%96%87/%E6%9C%BA%E7%BB%84%E8%81%9A%E5%90%88/yin2022.pdf-b7b8581f-0f1a-4e49-af16-eb77fcf8499e/full.md) |
 
 ---
 
@@ -38,17 +65,30 @@
 
 | 年 | 论文 | Skill |
 |----|------|-------|
-| 2010 | Zhai et al., IEEE TPWRS | `zhai-2010-inactive` |
-| 2015 | Ardakani & Bouffard, IEEE TPWRS | `ardakani-2015-umbrella` |
-| 2016 | Chen et al., IEEE TPWRS | `chen-2016-miso` |
-| 2018 | Tejada-Arango et al., IEEE TPWRS | `tejada-2018-lodf` |
-| 2019 | Xavier et al., IEEE TPWRS (PES Letters) | `xavier-2019-filter` |
-| 2020 | Ding et al., IET GTD | `ding-2020-redundant-uncertainty` |
-| 2021 | Ramesh, Li & Hedman, IEEE TPWRS（正式刊 2022） | `ramesh-2021-scuc-cnr` |
-| 2023 | Porras et al., IEEE TPWRS | `porras-2021-cost-driven` |
-| 2023 | He et al., arXiv:2309.05894 | `he-2023-multi-interval` |
-| 2023/24 | Awadalla & Bouffard, IEEE TEMPR | `awadalla-2023-tight-compact` |
-| 2024 | Holzer et al., IEEE TPWRS | `holzer-2024-fast-sft` |
-| 2024 | Castelli et al., IJEPES | `castelli-2024-three-approaches` |
-| 2025 | He et al., arXiv:2507.09280 | `he-2025-vertex-guided` |
-| 2026 | He et al., Applied Energy | `he-2026-screening-uncertainty` |
+| 2010 | Zhai et al., IEEE TPWRS | [zhai-2010-inactive](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/zhai-2010-inactive/SKILL.md) |
+| 2014 | Palmintier & Webster，IEEE TPWRS | [palmintier-heterogeneous-clustering](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/palmintier-heterogeneous-clustering/SKILL.md) |
+| 2015 | Ardakani & Bouffard, IEEE TPWRS | [ardakani-2015-umbrella](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/ardakani-2015-umbrella/SKILL.md) |
+| 2016 | Chen et al., IEEE TPWRS | [chen-2016-miso](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/chen-2016-miso/SKILL.md) |
+| 2018 | Tejada-Arango et al., IEEE TPWRS | [tejada-2018-lodf](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/tejada-2018-lodf/SKILL.md) |
+| 2018 | Meus 等，IEEE TPWRS | [meus-clustered-uc-hybrid](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/meus-clustered-uc-hybrid/SKILL.md) |
+| 2018 | Knueven 等，IEEE TPWRS（本地2017接收稿） | [knueven-identical-generators](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/knueven-identical-generators/SKILL.md) |
+| 2019 | Xavier et al., IEEE TPWRS (PES Letters) | [xavier-2019-filter](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/xavier-2019-filter/SKILL.md) |
+| 2019 | Pineda 等，Time-Adaptive UC（arXiv v2 / 期刊2019） | [pineda-time-adaptive-uc](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/pineda-time-adaptive-uc/SKILL.md) |
+| 2019 | Du 等，IEEE TPWRS | [du-network-clustered-uc](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/du-network-clustered-uc/SKILL.md) |
+| 2019 | Koller & Hofmann，Computers & Chemical Engineering | [koller-shifting-generation-levels](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/koller-shifting-generation-levels/SKILL.md) |
+| 2019 | Morales-España & Tejada-Arango，IEEE TPWRS | [morales-espana-hidden-flexibility](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/morales-espana-hidden-flexibility/SKILL.md) |
+| 2020 | Ding et al., IET GTD | [ding-2020-redundant-uncertainty](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/ding-2020-redundant-uncertainty/SKILL.md) |
+| 2020 | Li 等，IEEE TPWRS（在线2019） | [li-variable-reduction](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/variable-fixing-and-identification/li-variable-reduction/SKILL.md) |
+| 2021 | Ramesh, Li & Hedman, IEEE TPWRS（正式刊 2022） | [ramesh-2021-scuc-cnr](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/decomposition/ramesh-2021-scuc-cnr/SKILL.md) |
+| 2021 | Zhang 等，Applied Energy | [zhang-representative-scheduling-points](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/zhang-representative-scheduling-points/SKILL.md) |
+| 2022 | Yin 等，IEEE TSTE | [yin-power-flow-clustering](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/unit-aggregation/yin-power-flow-clustering/SKILL.md) |
+| 2023 | Porras et al., IEEE TPWRS | [porras-2021-cost-driven](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/porras-2021-cost-driven/SKILL.md) |
+| 2023 | He et al., arXiv:2309.05894 | [he-2023-multi-interval](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2023-multi-interval/SKILL.md) |
+| 2023/24 | Awadalla & Bouffard, IEEE TEMPR | [awadalla-2023-tight-compact](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/awadalla-2023-tight-compact/SKILL.md) |
+| 2024 | Holzer et al., IEEE TPWRS | [holzer-2024-fast-sft](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/holzer-2024-fast-sft/SKILL.md) |
+| 2024 | Castelli et al., IJEPES | [castelli-2024-three-approaches](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/iterative-enforcement/castelli-2024-three-approaches/SKILL.md) |
+| 2025 | He et al., arXiv:2507.09280 | [he-2025-vertex-guided](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2025-vertex-guided/SKILL.md) |
+| 2025 | Yu 等，IEEE TPWRS（在线2024） | [yu-network-flexible-time](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/yu-network-flexible-time/SKILL.md) |
+| 2025 | Tao 等，arXiv预印本 | [tao-cost-oriented-time](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/time-aggregation/tao-cost-oriented-time/SKILL.md) |
+| 2026 | He et al., Applied Energy | [he-2026-screening-uncertainty](%E7%BA%A6%E6%9D%9F%E5%A4%84%E7%90%86/constraint-screening/he-2026-screening-uncertainty/SKILL.md) |
+| 2026 | 李佩杰等，电工技术学报 | [li-hybrid-branching](%E5%8F%98%E9%87%8F%E5%A4%84%E7%90%86/variable-fixing-and-identification/li-hybrid-branching/SKILL.md) |
