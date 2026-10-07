@@ -1,0 +1,8 @@
+{
+  "n_variables": 28040,
+  "n_constraints": 56925,
+  "n_nonzeros": 159397,
+  "n_binary": 3456,
+  "n_general_integer": 576,
+  "n_continuous": 24008
+}

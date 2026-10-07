@@ -618,9 +618,6 @@
       "UC/SCUC/case64_goc24464_scuc"
     ],
     "pglib_opf_case24_ieee_rts": [
-      "DATACENTER/FLEXIBLE-DC-LOAD/case004_ieee24_scuc_temporal",
-      "DATACENTER/FLEXIBLE-DC-LOAD/case005_ieee24_scuc_spatial_temporal",
-      "DATACENTER/FLEXIBLE-DC-LOAD/case006_ieee24_scuc_interruptible",
       "OPF/DC-OPF/case005_ieee24_dc_ed",
       "OPF/DC-OPF/case006_ieee24_lp_ed",
       "RESILIENCE/NETWORK-INTERDICTION/case007_ieee24_nk_int",
@@ -723,6 +720,9 @@
       "UC/SCUC/case42_goc3970_scuc"
     ],
     "pglib_opf_case39_epri": [
+      "DATACENTER/AIDC-39/case001_training_uc",
+      "DATACENTER/AIDC-39/case002_inference_n1",
+      "DATACENTER/AIDC-39/case003_stochastic_ups",
       "OPF/DC-OPF/case010_epri39_dc_ed",
       "RESILIENCE/NETWORK-INTERDICTION/case010_epri39_nk_int",
       "UC/SCUC/case01_ieee39_scuc"

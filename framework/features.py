@@ -186,7 +186,7 @@ def extract_features(
         net=net,
     )
 
-    return {
+    features = {
         "n_bus": int(n_bus),
         "n_branch": int(n_branch),
         "n_gen": int(n_gen),
@@ -200,6 +200,16 @@ def extract_features(
         "k": k_attack,
         "n_bin": int(n_bin),
     }
+    if pack == "DATACENTER/AIDC-39":
+        measured = cfg.get("model_size") or {}
+        features.update(
+            n_bin=int(measured.get("n_binary", 0)),
+            n_general_integer=int(measured.get("n_general_integer", 0)),
+            n_variables=int(measured.get("n_variables", 0)),
+            n_constraints=int(measured.get("n_constraints", 0)),
+            n_nonzeros=int(measured.get("n_nonzeros", 0)),
+        )
+    return features
 
 
 def _estimate_n_bin(

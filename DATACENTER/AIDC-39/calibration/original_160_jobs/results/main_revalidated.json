@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "residuals": {
+    "max_integer_violation": 0.0,
+    "max_uc_state_violation": 0.0,
+    "max_uc_transition_violation": 0.0,
+    "max_min_up_down_violation": 0.0,
+    "max_generator_bound_MW": 0.0,
+    "max_ramp_violation_MW": 0.0,
+    "max_pcc_bound_MW": 0.0,
+    "max_reference_angle_rad": 0.0,
+    "max_flow_equation_MW": 7.293721182577428e-12,
+    "max_power_balance_MW": 9.43600753089413e-12,
+    "max_thermal_violation_MW": 0.0,
+    "max_angle_violation_rad": 0.0,
+    "max_job_duration_slots": 0.0,
+    "max_job_window_slots": 0.0,
+    "max_job_count_violation": 0.0,
+    "max_compute_block_violation": 0.0,
+    "max_aidc_power_equation_MW": 2.842170943040401e-14,
+    "max_cost_decomposition_error_usd": 2.0954757928848267e-08,
+    "max_objective_error_usd": 2.468004822731018e-08
+  },
+  "tolerances": {
+    "max_integer_violation": 1e-06,
+    "max_uc_state_violation": 1e-06,
+    "max_uc_transition_violation": 1e-06,
+    "max_min_up_down_violation": 1e-06,
+    "max_generator_bound_MW": 0.0001,
+    "max_ramp_violation_MW": 0.0001,
+    "max_pcc_bound_MW": 0.0001,
+    "max_reference_angle_rad": 1e-07,
+    "max_flow_equation_MW": 0.0001,
+    "max_power_balance_MW": 0.0001,
+    "max_thermal_violation_MW": 0.0001,
+    "max_angle_violation_rad": 1e-07,
+    "max_job_duration_slots": 1e-06,
+    "max_job_window_slots": 1e-06,
+    "max_job_count_violation": 1e-06,
+    "max_compute_block_violation": 1e-06,
+    "max_aidc_power_equation_MW": 0.0001,
+    "max_cost_decomposition_error_usd": 0.00100342275,
+    "max_objective_error_usd": 0.003446801050157104
+  },
+  "violations": {},
+  "recomputed_costs": {
+    "startup": 5548.63845525,
+    "no_load": 84350.12024979001,
+    "energy": 2353479.5414520884,
+    "job_flow_time": 3422.75
+  },
+  "metrics": {
+    "jobs_completed": 160,
+    "peak_blocks": 64.0,
+    "aidc_energy_mwh": 5069.187499999996
+  }
+}

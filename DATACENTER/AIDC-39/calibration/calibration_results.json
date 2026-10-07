@@ -1,0 +1,233 @@
+{
+  "target_seconds": 100.0,
+  "calibration_band_seconds": [
+    80.0,
+    120.0
+  ],
+  "current_input_sha256": "52651b5f711e16f1b11292d6e8cdc9b4502edcd331a155a8af4faa2e62f35f9b",
+  "original_runtime": 9.625473022460938,
+  "formal_runtime": 95.54326510429382,
+  "n_jobs": 240,
+  "flow_time_cost_range": [
+    13.5,
+    54.0
+  ],
+  "solver_settings": {
+    "seed": 1,
+    "threads": 4,
+    "time_limit": 600.0,
+    "mip_gap": 0.001
+  },
+  "samples": [
+    {
+      "label": "jobs240_cost4p5",
+      "runtime": 92.00230383872986,
+      "status": "OPTIMAL",
+      "mip_gap": 0.0009998816767524707,
+      "objective": 2496198.5808000877,
+      "independently_passed": true,
+      "result": "calibration/jobs240_cost4p5/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost4p5_confirmation",
+      "runtime": 105.21264910697937,
+      "status": "OPTIMAL",
+      "mip_gap": 0.0009998816767524707,
+      "objective": 2496198.5808000877,
+      "independently_passed": true,
+      "result": "calibration/jobs240_cost4p5_confirmation/run_1/python_result.json"
+    },
+    {
+      "label": "正式入口 solve.py",
+      "runtime": 95.54326510429382,
+      "status": "OPTIMAL",
+      "mip_gap": 0.0009998816767524707,
+      "objective": 2496198.5808000877,
+      "independently_passed": true,
+      "result": "case001_training_uc/results/python_result.json"
+    }
+  ],
+  "median_seconds": 95.54326510429382,
+  "mean_seconds": 97.58607268333435,
+  "minimum_seconds": 92.00230383872986,
+  "maximum_seconds": 105.21264910697937,
+  "trials": [
+    {
+      "label": "jobs200_margin19",
+      "jobs": 200,
+      "wait_cost_scale": 1.0,
+      "window_margin_slots": 19,
+      "input_sha256": "aa1f3e940e2524d36ba980ac4417c90c891cd8a0f57f071622deb905512d6c19",
+      "status": "OPTIMAL",
+      "runtime": 13.692991971969604,
+      "obj": 2472013.664787728,
+      "objective_bound": 2469649.642301995,
+      "mip_gap": 0.000956314489441154,
+      "validation_passed": true,
+      "node_count": 498.0,
+      "n_binary": 11803,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs200_margin19/run_1/python_result.json"
+    },
+    {
+      "label": "jobs200_cost5",
+      "jobs": 200,
+      "wait_cost_scale": 5.0,
+      "window_margin_slots": 19,
+      "input_sha256": "efc1a59351fb6675d438f3a79edcf7eb69a070fb6076d9c857227964e915570d",
+      "status": "OPTIMAL",
+      "runtime": 28.002967834472656,
+      "obj": 2484595.4485833743,
+      "objective_bound": 2482203.500081473,
+      "mip_gap": 0.0009627114560098858,
+      "validation_passed": true,
+      "node_count": 3292.0,
+      "n_binary": 11803,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs200_cost5/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost5",
+      "jobs": 240,
+      "wait_cost_scale": 5.0,
+      "window_margin_slots": 19,
+      "input_sha256": "4680cdcf3cc910d8195f91645188e3524cf965a9f56bab526a82095d5cd5c1ef",
+      "status": "OPTIMAL",
+      "runtime": 69.52350401878357,
+      "obj": 2498637.5759261437,
+      "objective_bound": 2496150.908974132,
+      "mip_gap": 0.0009952091395607602,
+      "validation_passed": true,
+      "node_count": 6474.0,
+      "n_binary": 13975,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs240_cost5/run_1/python_result.json"
+    },
+    {
+      "label": "jobs250_cost5",
+      "jobs": 250,
+      "wait_cost_scale": 5.0,
+      "window_margin_slots": 19,
+      "input_sha256": "903dc2da0cb6d0b487bef5f09308c59bac974e2739c8dd94858980763828e5be",
+      "status": "OPTIMAL",
+      "runtime": 37.84215307235718,
+      "obj": 2501597.4397195065,
+      "objective_bound": 2499144.050563414,
+      "mip_gap": 0.0009807290002533389,
+      "validation_passed": true,
+      "node_count": 1307.0,
+      "n_binary": 14401,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs250_cost5/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost6",
+      "jobs": 240,
+      "wait_cost_scale": 6.0,
+      "window_margin_slots": 19,
+      "input_sha256": "41367fe9c6e6ad8f8676ac08cd1509024e772e5032d0500a069838fa6807a7d5",
+      "status": "OPTIMAL",
+      "runtime": 28.279408931732178,
+      "obj": 2501806.4528314876,
+      "objective_bound": 2499317.263939574,
+      "mip_gap": 0.000994956619884218,
+      "validation_passed": true,
+      "node_count": 1087.0,
+      "n_binary": 13975,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs240_cost6/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost4",
+      "jobs": 240,
+      "wait_cost_scale": 4.0,
+      "window_margin_slots": 19,
+      "input_sha256": "066d973a52cba6389e937b7afe0a45723029f580b01e4f1b1a237022cd8f3b17",
+      "status": "OPTIMAL",
+      "runtime": 134.80792808532715,
+      "obj": 2494530.611113466,
+      "objective_bound": 2492065.0622495674,
+      "mip_gap": 0.0009883818835151386,
+      "validation_passed": true,
+      "node_count": 55337.0,
+      "n_binary": 13975,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs240_cost4/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost4p5",
+      "jobs": 240,
+      "wait_cost_scale": 4.5,
+      "window_margin_slots": 19,
+      "input_sha256": "52651b5f711e16f1b11292d6e8cdc9b4502edcd331a155a8af4faa2e62f35f9b",
+      "status": "OPTIMAL",
+      "runtime": 92.00230383872986,
+      "obj": 2496198.5808000877,
+      "objective_bound": 2493702.67757761,
+      "mip_gap": 0.0009998816767524707,
+      "validation_passed": true,
+      "node_count": 20575.0,
+      "n_binary": 13975,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs240_cost4p5/run_1/python_result.json"
+    },
+    {
+      "label": "jobs240_cost4p5_confirmation",
+      "jobs": 240,
+      "wait_cost_scale": 4.5,
+      "window_margin_slots": 19,
+      "input_sha256": "52651b5f711e16f1b11292d6e8cdc9b4502edcd331a155a8af4faa2e62f35f9b",
+      "status": "OPTIMAL",
+      "runtime": 105.21264910697937,
+      "obj": 2496198.5808000877,
+      "objective_bound": 2493702.67757761,
+      "mip_gap": 0.0009998816767524707,
+      "validation_passed": true,
+      "node_count": 20575.0,
+      "n_binary": 13975,
+      "settings": {
+        "seed": 1,
+        "threads": 4,
+        "time_limit": 600.0,
+        "mip_gap": 0.001
+      },
+      "result": "calibration/jobs240_cost4p5_confirmation/run_1/python_result.json"
+    }
+  ],
+  "accepted": true
+}

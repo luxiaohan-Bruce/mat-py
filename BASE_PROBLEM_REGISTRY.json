@@ -284,7 +284,10 @@
       "lexicographic_llm_allocation",
       "dc_flexible_opf",
       "dc_flexible_scuc",
-      "grid_capacity_expansion_dc_eor"
+      "grid_capacity_expansion_dc_eor",
+      "aidc_training",
+      "aidc_inference",
+      "aidc_stochastic"
     ],
     "gas_model": [
       "pwl",
@@ -784,17 +787,15 @@
         "recourse": "preventive"
       }
     },
-    "DATACENTER/FLEXIBLE-DC-LOAD": {
+    "DATACENTER/AIDC-39": {
       "navigation_domain": "DATACENTER",
       "base_problem": "datacenter_flex",
-      "default_math_class": "lp",
+      "default_math_class": "milp",
       "allowed_math_classes": [
-        "lp",
         "milp"
       ],
-      "default_solver_family": "convex_dispatch",
+      "default_solver_family": "temporal_mip",
       "allowed_solver_families": [
-        "convex_dispatch",
         "temporal_mip"
       ],
       "default_variant": {
@@ -803,7 +804,7 @@
         "uncertainty": "deterministic",
         "horizon": "multi_period",
         "recourse": "none",
-        "formulation": "dc_flexible_opf"
+        "commitment": "binary"
       }
     },
     "PLANNING/GCEP-DC": {

@@ -1,0 +1,28 @@
+{
+  "label": "jobs240_cost4p5_confirmation",
+  "n_jobs": 240,
+  "window_margin_slots": 19,
+  "wait_cost_scale": 4.5,
+  "work_block_hours": 1368.5,
+  "start_mode_choices": 11095,
+  "edf_compute_feasible": true,
+  "input_sha256": "52651b5f711e16f1b11292d6e8cdc9b4502edcd331a155a8af4faa2e62f35f9b",
+  "settings": {
+    "seed": 1,
+    "threads": 4,
+    "time_limit": 600.0,
+    "mip_gap": 0.001
+  },
+  "runs": [
+    {
+      "status": "OPTIMAL",
+      "runtime": 105.21264910697937,
+      "obj": 2496198.5808000877,
+      "objective_bound": 2493702.67757761,
+      "mip_gap": 0.0009998816767524707,
+      "validation_passed": true,
+      "node_count": 20575.0,
+      "n_binary": 13975
+    }
+  ]
+}

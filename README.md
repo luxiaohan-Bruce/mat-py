@@ -16,7 +16,7 @@ github_cases/
   OPF/                 # 最优潮流（DC、精确 AC、精确 SC-AC、线性化安全约束）
   UC/                  # 机组组合族
   DISTRIBUTION/        # 配网重构
-  DATACENTER/          # 柔性数据中心负荷
+  DATACENTER/          # AIDC-39 电网—算力协同调度
   MONITORING/          # PMU 布点
   PLANNING/            # 输电扩展 / 容量扩展
   SCHEDULING/          # 水火调度
@@ -45,7 +45,7 @@ github_cases/
 |  | [`SCUC/`](UC/SCUC/) | 网络 SCUC + N-1 | 45 |
 |  | [`RTS-SCUC/`](UC/RTS-SCUC/) | RTS 网络 SCUC+储能+RE | 12 |
 | [`DISTRIBUTION/`](DISTRIBUTION/) | [`DNR/`](DISTRIBUTION/DNR/) | `dnr`：配网重构（实验模型） | 2 |
-| [`DATACENTER/`](DATACENTER/) | [`FLEXIBLE-DC-LOAD/`](DATACENTER/FLEXIBLE-DC-LOAD/) | `datacenter_flex`：DC-OPF / SCUC 上的时空柔性负荷 | 3 |
+| [`DATACENTER/`](DATACENTER/) | [`AIDC-39/`](DATACENTER/AIDC-39/) | `datacenter_flex`：39 节点训练、推理 N-1、风光随机追补 MILP | 3 |
 | [`MONITORING/`](MONITORING/) | [`PMU-PLACEMENT/`](MONITORING/PMU-PLACEMENT/) | 最优 PMU 布点 | 18 |
 | [`PLANNING/`](PLANNING/) | [`TRANSMISSION-EXPANSION/`](PLANNING/TRANSMISSION-EXPANSION/) | TEP / TNEP | 26 |
 |  | [`RESOURCE-CAPACITY-EXPANSION/`](PLANNING/RESOURCE-CAPACITY-EXPANSION/) | 资源容量扩展 CEM | 10 |
@@ -57,7 +57,7 @@ github_cases/
 |  | [`OPTIMAL-POWER-SHUTOFF/`](RESILIENCE/OPTIMAL-POWER-SHUTOFF/) | 最优主动停电（野火） | 2 |
 |  | [`NETWORK-INTERDICTION/`](RESILIENCE/NETWORK-INTERDICTION/) | N-k 网络拦截 | 63 |
 
-**合计 790 个案例**。
+**合计 790 个案例**。AIDC-39 的三个新案例已替换原 FLEXIBLE-DC-LOAD；数据、数学说明和正式对照结果见 [算例包](DATACENTER/AIDC-39/README.md) 与 [基准报告](DATACENTER/AIDC-39/BENCHMARK.md)。
 
 ---
 
@@ -79,7 +79,7 @@ github_cases/
 
 - Python 3.10+
 - Gurobi（建议 11+）及有效许可证
-- `gurobipy`（见 `requirements.txt`）
+- `gurobipy`、`numpy`（见 `requirements.txt`）
 
 ```bash
 python3 -m venv .venv

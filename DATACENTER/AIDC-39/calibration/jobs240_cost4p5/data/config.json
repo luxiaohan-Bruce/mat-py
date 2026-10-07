@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "case": "case001_training_uc",
+  "problem": "aidc39",
+  "base_problem": "datacenter_flex",
+  "source_network": "pglib_opf_case39_epri",
+  "source": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3/pglib_opf_case39_epri.m",
+  "T": 96,
+  "dt_hours": 0.25,
+  "n_scenarios": 1,
+  "contingencies": [],
+  "seed": 1,
+  "data_seed": 101,
+  "threads": 4,
+  "time_limit": 600.0,
+  "mip_gap": 0.001,
+  "solve_tier": "full",
+  "variant": {
+    "power_flow": "dc",
+    "security": "none",
+    "uncertainty": "deterministic",
+    "horizon": "multi_period",
+    "recourse": "none",
+    "formulation": "aidc_training",
+    "commitment": "binary",
+    "contingency_scope": "not_applicable"
+  },
+  "validation_scope": "independent_dc_and_business_residuals",
+  "physics_validated": true,
+  "known_limitations": [
+    "DC approximation; no voltage/reactive/transient certification",
+    "Synthetic workloads and UC operating parameters",
+    "No initial dispatch ramp boundary; initial on-status history specified",
+    "No N-1 constraints",
+    "Deterministic forecasts"
+  ],
+  "training_profile": {
+    "n_jobs": 240,
+    "wait_cost_scale": 4.5,
+    "window_margin_slots": 19
+  },
+  "model_size": {
+    "n_variables": 23191,
+    "n_constraints": 25084,
+    "n_nonzeros": 226445,
+    "n_binary": 13975,
+    "n_general_integer": 0,
+    "n_continuous": 9216
+  }
+}

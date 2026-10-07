@@ -4,7 +4,7 @@
 
 | 分类 | 案例数 | < 600s | 难求解 |
 |---|---:|---:|---:|
-| `DATACENTER/FLEXIBLE-DC-LOAD` | 3 | 3 | 0 |
+| `DATACENTER/AIDC-39` | 3 | 3 | 0 |
 | `DISTRIBUTION/DNR` | 2 | 2 | 0 |
 | `MARKET/MARKET-CLEARING` | 56 | 56 | 0 |
 | `MONITORING/PMU-PLACEMENT` | 18 | 10 | 8 |
@@ -28,13 +28,15 @@
 | `UC/SYSTEM-UC` | 56 | 56 | 0 |
 | **合计** | **790** | **651** | **139** |
 
-## DATACENTER/FLEXIBLE-DC-LOAD
+## DATACENTER/AIDC-39
+
+同一台 Apple M5，Gurobi 13.0.2，Seed=1、Threads=4、TimeLimit=600 秒、MIPGap=0.1%。以下均为通过独立校验的正式主模型；完整规模、界、间隙及对照见 [基准报告](DATACENTER/AIDC-39/BENCHMARK.md)。
 
 | 案例 | 时间 (s) |
 |---|---:|
-| `case004_ieee24_scuc_temporal` | 6.293 |
-| `case005_ieee24_scuc_spatial_temporal` | 8.746 |
-| `case006_ieee24_scuc_interruptible` | 1.587 |
+| `case001_training_uc` | 95.543 |
+| `case002_inference_n1` | 170.782 |
+| `case003_stochastic_ups` | 317.739 |
 
 ## DISTRIBUTION/DNR
 

@@ -7,3 +7,6 @@ venv/
 .env
 *.log
 .ipynb_checkpoints/
+
+# Preserve AIDC-39 benchmark and calibration solver logs.
+!DATACENTER/AIDC-39/**/*_gurobi.log

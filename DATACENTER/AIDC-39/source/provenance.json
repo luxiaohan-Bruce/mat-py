@@ -1,0 +1,14 @@
+{
+  "commit": "dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+  "sha256": "83a1a6ec49c9a0533b51e928f6bd95b93aea745a620e5123bedcd88f716c286b",
+  "source_url": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3/pglib_opf_case39_epri.m",
+  "source_version": "PGLib-OPF v23.07",
+  "grid_license": "CC BY 4.0, attribution retained in source",
+  "generator": "common/data.py",
+  "numpy_rng": "PCG64/default_rng",
+  "data_seeds": [
+    101,
+    202,
+    303
+  ]
+}

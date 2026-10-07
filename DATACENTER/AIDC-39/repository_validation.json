@@ -1,0 +1,1455 @@
+{
+  "total_issues": 289,
+  "new_aidc39_issues": [],
+  "other_pack_issue_types": {
+    "feature_mismatch": 38,
+    "manifest_mismatch": 251
+  },
+  "issues": [
+    {
+      "code": "feature_mismatch",
+      "path": "DATACENTER/FLEXIBLE-DC-LOAD/case004_ieee24_scuc_temporal",
+      "message": "features.n_bin=792; computed=1584"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case01_rcuc_100_50_1_w_ht",
+      "message": "features.n_bin=2400; computed=4800"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case02_rcuc_100_50_2_w_ht",
+      "message": "features.n_bin=2400; computed=4800"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case04_rcuc_150_75_2_w_ht",
+      "message": "features.n_bin=3600; computed=7200"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case05_rcuc_200_100_1_w_ht",
+      "message": "features.n_bin=4800; computed=9600"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case07_rcuc_20_10_1_w_ht",
+      "message": "features.n_bin=480; computed=960"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case08_rcuc_20_10_2_w_ht",
+      "message": "features.n_bin=480; computed=960"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case09_rcuc_50_20_1_w_ht",
+      "message": "features.n_bin=1200; computed=2400"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case11_rcuc_75_35_1_w_ht",
+      "message": "features.n_bin=1800; computed=3600"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case17_s46b_scen1_ht",
+      "message": "features.n_bin=672; computed=1344"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case25_s46d_scen1_ht",
+      "message": "features.n_bin=336; computed=672"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "SCHEDULING/HYDROTHERMAL-SCHEDULING/case29_s46e_scen1_ht",
+      "message": "features.n_bin=336; computed=672"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case01_rts_gmlc_2020_01_27_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case02_rts_gmlc_2020_02_09_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case03_rts_gmlc_2020_03_05_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case04_rts_gmlc_2020_04_03_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case05_rts_gmlc_2020_05_05_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case06_rts_gmlc_2020_06_09_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case07_rts_gmlc_2020_07_06_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case08_rts_gmlc_2020_08_12_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case09_rts_gmlc_2020_09_20_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case10_rts_gmlc_2020_10_27_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case11_rts_gmlc_2020_11_25_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case12_rts_gmlc_2020_12_23_uc",
+      "message": "features.n_bin=7392; computed=11088"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case13_ca_2014_09_01_reserves_0_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case14_ca_2014_09_01_reserves_1_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case17_ca_2014_12_01_reserves_0_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case19_ca_2014_12_01_reserves_3_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case20_ca_2014_12_01_reserves_5_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case21_ca_2015_03_01_reserves_0_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case22_ca_2015_03_01_reserves_1_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case23_ca_2015_03_01_reserves_3_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case24_ca_2015_03_01_reserves_5_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case25_ca_2015_06_01_reserves_0_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case27_ca_2015_06_01_reserves_3_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case28_ca_2015_06_01_reserves_5_uc",
+      "message": "features.n_bin=29280; computed=43920"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case29_ca_scenario400_reserves_0_uc",
+      "message": "features.n_bin=29328; computed=43992"
+    },
+    {
+      "code": "feature_mismatch",
+      "path": "UC/SYSTEM-UC/case30_ca_scenario400_reserves_1_uc",
+      "message": "features.n_bin=29328; computed=43992"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "DATACENTER/FLEXIBLE-DC-LOAD/MANIFEST.json:case004_ieee24_scuc_temporal",
+      "message": "n_bin: manifest=792; config=1584"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "DATACENTER/FLEXIBLE-DC-LOAD/MANIFEST.json:case004_ieee24_scuc_temporal",
+      "message": "T: manifest=24; config=48"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "DISTRIBUTION/DNR/MANIFEST.json:case03_mv_rural_dnr_ess",
+      "message": "T: manifest=4; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "DISTRIBUTION/DNR/MANIFEST.json:case06_lv_rural2_dnr_ess",
+      "message": "T: manifest=4; config=96"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case01_rts_gmlc_2020_01_27_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case02_rts_gmlc_2020_02_09_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case03_rts_gmlc_2020_03_05_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case04_rts_gmlc_2020_04_03_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case05_rts_gmlc_2020_05_05_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case06_rts_gmlc_2020_06_09_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case07_rts_gmlc_2020_07_06_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case08_rts_gmlc_2020_08_12_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case09_rts_gmlc_2020_09_20_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case10_rts_gmlc_2020_10_27_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case11_rts_gmlc_2020_11_25_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case12_rts_gmlc_2020_12_23_market",
+      "message": "T: manifest=48; config=4368"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case13_ca_2014_09_01_reserves_0_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case14_ca_2014_09_01_reserves_1_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case15_ca_2014_09_01_reserves_3_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case16_ca_2014_09_01_reserves_5_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case17_ca_2014_12_01_reserves_0_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case18_ca_2014_12_01_reserves_1_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case19_ca_2014_12_01_reserves_3_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case20_ca_2014_12_01_reserves_5_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case21_ca_2015_03_01_reserves_0_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case22_ca_2015_03_01_reserves_1_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case23_ca_2015_03_01_reserves_3_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case24_ca_2015_03_01_reserves_5_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case25_ca_2015_06_01_reserves_0_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case26_ca_2015_06_01_reserves_1_market",
+      "message": "T: manifest=48; config=2184"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case27_ca_2015_06_01_reserves_3_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case28_ca_2015_06_01_reserves_5_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case29_ca_scenario400_reserves_0_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case30_ca_scenario400_reserves_1_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case31_ca_scenario400_reserves_3_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case32_ca_scenario400_reserves_5_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case33_ferc_2015_01_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case34_ferc_2015_01_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case35_ferc_2015_02_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case36_ferc_2015_02_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case37_ferc_2015_03_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case38_ferc_2015_03_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case39_ferc_2015_04_01_hw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case40_ferc_2015_04_01_lw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case41_ferc_2015_05_01_hw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case42_ferc_2015_05_01_lw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case43_ferc_2015_06_01_hw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case44_ferc_2015_06_01_lw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case45_ferc_2015_07_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case46_ferc_2015_07_01_lw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case47_ferc_2015_08_01_hw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case48_ferc_2015_08_01_lw_market",
+      "message": "T: manifest=48; config=672"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case49_ferc_2015_09_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case50_ferc_2015_09_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case51_ferc_2015_10_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case52_ferc_2015_10_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case53_ferc_2015_11_02_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case54_ferc_2015_11_02_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case55_ferc_2015_12_01_hw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "MARKET/MARKET-CLEARING/MANIFEST.json:case56_ferc_2015_12_01_lw_market",
+      "message": "T: manifest=48; config=168"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case005_ieee24_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case006_ieee24_lp_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case007_as30_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case008_as30_lp_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case009_ieee30_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case010_epri39_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case011_ieee57_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case012_c60_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case013_ieee73_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case014_ieee73_lp_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case015_pegase89_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case016_ieee118_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case017_ieeedtc162_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case019_snem197_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case022_pserc240_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case023_ieee300_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case024_goc500_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case027_goc793_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case029_pegase1354_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case030_snem1803_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case031_rte1888_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case032_rte1951_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case033_goc2000_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case035_goc2312_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case037_2383wpk_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case044_rte2848_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case046_rte2868_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case047_pegase2869_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case049_goc3022_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case053_goc3970_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case055_goc4020_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case057_goc4601_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case059_goc4619_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case062_goc4837_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case064_goc4917_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case067_rte6468_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case068_rte6470_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case069_rte6495_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case070_rte6515_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case071_epigrids7336_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case074_goc9591_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case076_goc10000_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case078_epigrids10192_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/DC-OPF/MANIFEST.json:case080_goc10480_dc_ed",
+      "message": "variant.horizon: manifest='single_period'; config='multi_period'"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case001_t1s3_offline_network_01o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case003_t1s3_offline_network_01o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case005_t1s3_offline_network_01o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case007_t1s3_offline_network_02o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case009_t1s3_offline_network_02o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case011_t1s3_offline_network_02o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case013_t1s3_offline_network_03o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case015_t1s3_offline_network_03o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case017_t1s3_offline_network_03o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case031_t1s3_offline_network_07o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=3; config=20"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case079_t1s3_real_time_network_01r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case081_t1s3_real_time_network_01r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case083_t1s3_real_time_network_01r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case085_t1s3_real_time_network_02r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case087_t1s3_real_time_network_02r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case089_network_02r_3_scenario_2_scenario_30_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case091_t1s3_real_time_network_02r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case093_t1s3_real_time_network_03r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case095_t1s3_real_time_network_03r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case097_t1s3_real_time_network_03r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case111_t1s3_real_time_network_07r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=3; config=20"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case159_t1s3_offline_network_01o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case161_t1s3_offline_network_01o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case163_t1s3_offline_network_01o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case165_t1s3_offline_network_02o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case167_t1s3_offline_network_02o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case169_t1s3_offline_network_02o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case171_t1s3_offline_network_03o_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case173_t1s3_offline_network_03o_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case175_t1s3_offline_network_03o_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case237_t1s3_real_time_network_01r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case239_t1s3_real_time_network_01r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case241_t1s3_real_time_network_01r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case243_t1s3_real_time_network_02r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case245_t1s3_real_time_network_02r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case247_network_02r_3_scenario_2_scenario_30_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case249_t1s3_real_time_network_02r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case251_t1s3_real_time_network_03r_3_scenario_1_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case253_t1s3_real_time_network_03r_3_scenario_2_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case255_t1s3_real_time_network_03r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=5; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OPF/LINEARIZED-SC-OPF/MANIFEST.json:case303_t1s3_real_time_network_70r_3_scenario_3_scacopf",
+      "message": "n_cont: manifest=3; config=20"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case03_ieee118_dcots",
+      "message": "n_switchable: manifest=20; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case03_ieee118_dcots",
+      "message": "max_open: manifest=3; config=4"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case09_ieee57_dcots",
+      "message": "n_switchable: manifest=20; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case09_ieee57_dcots",
+      "message": "max_open: manifest=3; config=4"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case13_ieeedtc162_dcots",
+      "message": "n_switchable: manifest=25; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case13_ieeedtc162_dcots",
+      "message": "max_open: manifest=2; config=4"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case14_goc179_dcots",
+      "message": "n_switchable: manifest=25; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case14_goc179_dcots",
+      "message": "max_open: manifest=3; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case17_pserc240_dcots",
+      "message": "n_switchable: manifest=25; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case17_pserc240_dcots",
+      "message": "max_open: manifest=2; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case19_goc500_dcots",
+      "message": "n_switchable: manifest=25; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case19_goc500_dcots",
+      "message": "max_open: manifest=3; config=8"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case20_sdet588_dcots",
+      "message": "n_switchable: manifest=15; config=50"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case20_sdet588_dcots",
+      "message": "max_open: manifest=2; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case21_goc793_dcots",
+      "message": "n_switchable: manifest=15; config=50"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case21_goc793_dcots",
+      "message": "max_open: manifest=2; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case23_snem1803_dcots",
+      "message": "n_switchable: manifest=15; config=50"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case23_snem1803_dcots",
+      "message": "max_open: manifest=2; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case26_goc2000_dcots",
+      "message": "n_switchable: manifest=15; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case26_goc2000_dcots",
+      "message": "max_open: manifest=2; config=8"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case27_goc2312_dcots",
+      "message": "n_switchable: manifest=10; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case27_goc2312_dcots",
+      "message": "max_open: manifest=1; config=4"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case28_2383wpk_dcots",
+      "message": "n_switchable: manifest=10; config=50"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case28_2383wpk_dcots",
+      "message": "max_open: manifest=1; config=6"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case35_sdet2853_dcots",
+      "message": "n_switchable: manifest=10; config=80"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case35_sdet2853_dcots",
+      "message": "max_open: manifest=1; config=8"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case48_goc4917_dcots",
+      "message": "n_switchable: manifest=10; config=13"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case49_epigrids5658_dcots",
+      "message": "n_switchable: manifest=10; config=25"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/DC-OTS/MANIFEST.json:case49_epigrids5658_dcots",
+      "message": "max_open: manifest=1; config=3"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case002_t1s3_offline_network_01o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case004_t1s3_offline_network_01o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case006_t1s3_offline_network_01o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case008_t1s3_offline_network_02o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case010_t1s3_offline_network_02o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case012_t1s3_offline_network_02o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case014_t1s3_offline_network_03o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case016_t1s3_offline_network_03o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case018_t1s3_offline_network_03o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case080_t1s3_real_time_network_01r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case082_t1s3_real_time_network_01r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case084_t1s3_real_time_network_01r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case086_t1s3_real_time_network_02r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case088_t1s3_real_time_network_02r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case090_network_02r_3_scenario_2_scenario_30_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case092_t1s3_real_time_network_02r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case094_t1s3_real_time_network_03r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case096_t1s3_real_time_network_03r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case098_t1s3_real_time_network_03r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case160_t1s3_offline_network_01o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case162_t1s3_offline_network_01o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case164_t1s3_offline_network_01o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case166_t1s3_offline_network_02o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case168_t1s3_offline_network_02o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case170_t1s3_offline_network_02o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case172_t1s3_offline_network_03o_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case174_t1s3_offline_network_03o_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case176_t1s3_offline_network_03o_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case238_t1s3_real_time_network_01r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=30"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case240_t1s3_real_time_network_01r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case242_t1s3_real_time_network_01r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case244_t1s3_real_time_network_02r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case246_t1s3_real_time_network_02r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case248_network_02r_3_scenario_2_scenario_30_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case250_t1s3_real_time_network_02r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case252_t1s3_real_time_network_03r_3_scenario_1_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case254_t1s3_real_time_network_03r_3_scenario_2_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/LINEARIZED-SC-OTS/MANIFEST.json:case256_t1s3_real_time_network_03r_3_scenario_3_scacots",
+      "message": "n_cont: manifest=5; config=15"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/SC-OTS/MANIFEST.json:case11_c60_scots",
+      "message": "n_switchable: manifest=10; config=57"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/SC-OTS/MANIFEST.json:case11_c60_scots",
+      "message": "max_open: manifest=2; config=8"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "OTS/SC-OTS/MANIFEST.json:case11_c60_scots",
+      "message": "n_cont: manifest=10; config=40"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case08_as30_scuc",
+      "message": "T: manifest=24; config=48"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case08_as30_scuc",
+      "message": "n_cont: manifest=8; config=20"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case12_ieee118_scuc",
+      "message": "T: manifest=12; config=24"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case12_ieee118_scuc",
+      "message": "n_cont: manifest=6; config=12"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case13_ieeedtc162_scuc",
+      "message": "T: manifest=12; config=24"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case13_ieeedtc162_scuc",
+      "message": "n_cont: manifest=6; config=12"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case15_snem197_scuc",
+      "message": "T: manifest=12; config=24"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case15_snem197_scuc",
+      "message": "n_cont: manifest=6; config=20"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case16_activ200_scuc",
+      "message": "T: manifest=12; config=24"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SCUC/MANIFEST.json:case16_activ200_scuc",
+      "message": "n_cont: manifest=6; config=12"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case01_rts_gmlc_2020_01_27_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case02_rts_gmlc_2020_02_09_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case03_rts_gmlc_2020_03_05_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case04_rts_gmlc_2020_04_03_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case05_rts_gmlc_2020_05_05_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case06_rts_gmlc_2020_06_09_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case07_rts_gmlc_2020_07_06_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case08_rts_gmlc_2020_08_12_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case09_rts_gmlc_2020_09_20_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case10_rts_gmlc_2020_10_27_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case11_rts_gmlc_2020_11_25_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case12_rts_gmlc_2020_12_23_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case13_ca_2014_09_01_reserves_0_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case14_ca_2014_09_01_reserves_1_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case17_ca_2014_12_01_reserves_0_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case19_ca_2014_12_01_reserves_3_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case20_ca_2014_12_01_reserves_5_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case21_ca_2015_03_01_reserves_0_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case22_ca_2015_03_01_reserves_1_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case23_ca_2015_03_01_reserves_3_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case24_ca_2015_03_01_reserves_5_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case25_ca_2015_06_01_reserves_0_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case27_ca_2015_06_01_reserves_3_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case28_ca_2015_06_01_reserves_5_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case29_ca_scenario400_reserves_0_uc",
+      "message": "T: manifest=48; config=72"
+    },
+    {
+      "code": "manifest_mismatch",
+      "path": "UC/SYSTEM-UC/MANIFEST.json:case30_ca_scenario400_reserves_1_uc",
+      "message": "T: manifest=48; config=72"
+    }
+  ]
+}

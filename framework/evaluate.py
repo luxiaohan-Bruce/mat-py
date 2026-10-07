@@ -152,6 +152,33 @@ def evaluate(case_dir: str | Path, result_path: str | Path | None = None) -> dic
         if key in INT_KEYS and abs(val) > DEFAULT_INT_TOL:
             violations.append(f"{key}={val}")
 
+    if problem == "aidc39":
+        # Recompute from the saved full schedule; never trust a cached PASS.
+        import importlib
+        import importlib.util
+
+        package_name = "_aidc39_verification"
+        package_dir = Path(__file__).resolve().parents[1] / "DATACENTER" / "AIDC-39" / "common"
+        try:
+            if package_name not in sys.modules:
+                spec = importlib.util.spec_from_file_location(
+                    package_name, package_dir / "__init__.py", submodule_search_locations=[str(package_dir)]
+                )
+                if spec is None or spec.loader is None:
+                    raise ImportError("AIDC verifier is unavailable")
+                package = importlib.util.module_from_spec(spec)
+                sys.modules[package_name] = package
+                spec.loader.exec_module(package)
+            verifier = importlib.import_module(package_name + ".verify")
+            certificate = verifier.revalidate_saved(case, rpath)
+            out["independent_validation"] = certificate
+            if not certificate.get("passed"):
+                violations.append("aidc39 independent validation failed: " + str(certificate.get("violations")))
+            if block.get("validation_passed") is not True:
+                violations.append("aidc39 missing successful original validation")
+        except Exception as exc:
+            violations.append(f"aidc39 verification error: {exc}")
+
     if problem in {"linearized_scacopf", "linearized_scacots"}:
         features = config.get("features")
         expected_n_cont = features.get("n_contingency") if isinstance(features, dict) else None

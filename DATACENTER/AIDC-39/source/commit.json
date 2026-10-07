@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+    "node_id": "C_kwDOBbKbgdoAKGRjNmJlNGIyZjg1Y2EwZTc3Njk1MmVjMjJjYmQ0YzIyMzk2ZWE1YTM",
+    "commit": {
+      "author": {
+        "name": "Carleton Coffrin",
+        "email": "cjc@lanl.gov",
+        "date": "2023-07-24T16:12:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2023-07-24T16:12:04Z"
+      },
+      "message": "v23 Release (#39)\n\n* v23 release",
+      "tree": {
+        "sha": "0daac9121e18b2d5c37db5de15776ca1cd7e4be1",
+        "url": "https://api.github.com/repos/power-grid-lib/pglib-opf/git/trees/0daac9121e18b2d5c37db5de15776ca1cd7e4be1"
+      },
+      "url": "https://api.github.com/repos/power-grid-lib/pglib-opf/git/commits/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkvqLUCRBK7hj4Ov3rIwAALwwIAK2wxlrDsE9DlsBAn8FSTJms\nwGZmjMn+3MKPuDdLqQe6G7IdIuhRuFLgx/6XUvwds76FuBvFDWeZFMjfG+eNv0TX\nGr8IPKiHqweDHdouZA7Qyour/Fe6QHRMweN5ptb3HGx9eJfKO7XwuAnRLEbYTfcZ\nB5vy4i4vBRI7HX12vguuFyxoe8Z8icmVIj6tiXhB1iflct2xLYKwlnF/HinSyLKr\nP2qBE9gAlnJ5v+268QQ6tkuynRHltSc0gss/yvIlere8VemQ/3ycP5bf1SI90T4I\nmIsoogzF1Cy9KEq9lDklpVBlNs8NpZceeYvSe1xtu4ATdgkf7/n1eOD2Y9KYgQY=\n=0uiP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0daac9121e18b2d5c37db5de15776ca1cd7e4be1\nparent 01681386d084d8bd03b429abcd1ee6966f68b9a3\nauthor Carleton Coffrin <cjc@lanl.gov> 1690215124 -0600\ncommitter GitHub <noreply@github.com> 1690215124 -0600\n\nv23 Release (#39)\n\n* v23 release",
+        "verified_at": "2024-11-08T08:49:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/power-grid-lib/pglib-opf/commits/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+    "html_url": "https://github.com/power-grid-lib/pglib-opf/commit/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+    "comments_url": "https://api.github.com/repos/power-grid-lib/pglib-opf/commits/dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3/comments",
+    "author": {
+      "login": "ccoffrin",
+      "id": 1105578,
+      "node_id": "MDQ6VXNlcjExMDU1Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1105578?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ccoffrin",
+      "html_url": "https://github.com/ccoffrin",
+      "followers_url": "https://api.github.com/users/ccoffrin/followers",
+      "following_url": "https://api.github.com/users/ccoffrin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ccoffrin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ccoffrin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ccoffrin/subscriptions",
+      "organizations_url": "https://api.github.com/users/ccoffrin/orgs",
+      "repos_url": "https://api.github.com/users/ccoffrin/repos",
+      "events_url": "https://api.github.com/users/ccoffrin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ccoffrin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "01681386d084d8bd03b429abcd1ee6966f68b9a3",
+        "url": "https://api.github.com/repos/power-grid-lib/pglib-opf/commits/01681386d084d8bd03b429abcd1ee6966f68b9a3",
+        "html_url": "https://github.com/power-grid-lib/pglib-opf/commit/01681386d084d8bd03b429abcd1ee6966f68b9a3"
+      }
+    ]
+  }
+]
